@@ -1,0 +1,1304 @@
+[
+  {
+    "id": 4,
+    "data_name": "粗鋼生産",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 5,
+    "data_name": "船舶生産",
+    "unit": null,
+    "arrange_unit": null
+  },
+  {
+    "id": 6,
+    "data_name": "自動車の生産",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 7,
+    "data_name": "米(もみ)の生産",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 8,
+    "data_name": "米の輸出",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 9,
+    "data_name": "米輸入",
+    "unit": null,
+    "arrange_unit": null
+  },
+  {
+    "id": 10,
+    "data_name": "天然ゴムの生産",
+    "unit": "千t",
+    "arrange_unit": null
+  },
+  {
+    "id": 11,
+    "data_name": "天然ゴムの輸出",
+    "unit": "千t",
+    "arrange_unit": null
+  },
+  {
+    "id": 12,
+    "data_name": "天然ゴムの輸入",
+    "unit": "千t",
+    "arrange_unit": null
+  },
+  {
+    "id": 13,
+    "data_name": "さとうきびの生産",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 14,
+    "data_name": "パーム油の生産",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 15,
+    "data_name": "すず鉱の生産",
+    "unit": "千t",
+    "arrange_unit": null
+  },
+  {
+    "id": 16,
+    "data_name": "石炭の生産",
+    "unit": "百万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 17,
+    "data_name": "バナナの生産",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 18,
+    "data_name": "バナナの輸出",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 19,
+    "data_name": "コーヒー豆の生産",
+    "unit": "千t",
+    "arrange_unit": null
+  },
+  {
+    "id": 20,
+    "data_name": "バターの生産",
+    "unit": "千t",
+    "arrange_unit": null
+  },
+  {
+    "id": 21,
+    "data_name": "牛乳の生産",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 22,
+    "data_name": "綿花の生産",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 23,
+    "data_name": "ジュートの生産",
+    "unit": "千t",
+    "arrange_unit": null
+  },
+  {
+    "id": 24,
+    "data_name": "小麦の生産",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 25,
+    "data_name": "小麦の輸出",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 26,
+    "data_name": "茶の生産",
+    "unit": "千t",
+    "arrange_unit": null
+  },
+  {
+    "id": 27,
+    "data_name": "鶏肉の生産",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 28,
+    "data_name": "牛の頭数",
+    "unit": "万頭",
+    "arrange_unit": null
+  },
+  {
+    "id": 29,
+    "data_name": "牛肉の生産",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 30,
+    "data_name": "牛肉の輸出",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 31,
+    "data_name": "豚の頭数",
+    "unit": "万頭",
+    "arrange_unit": null
+  },
+  {
+    "id": 32,
+    "data_name": "豚肉の生産",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 33,
+    "data_name": "豚肉の輸出",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 34,
+    "data_name": "羊の頭数",
+    "unit": "万頭",
+    "arrange_unit": null
+  },
+  {
+    "id": 35,
+    "data_name": "羊毛の生産(脂付)",
+    "unit": "千t",
+    "arrange_unit": null
+  },
+  {
+    "id": 36,
+    "data_name": "羊肉の生産",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 37,
+    "data_name": "自動車の生産",
+    "unit": "千台",
+    "arrange_unit": "1"
+  },
+  {
+    "id": 38,
+    "data_name": "自動車の輸出",
+    "unit": "千台",
+    "arrange_unit": null
+  },
+  {
+    "id": 39,
+    "data_name": "ナツメヤシの生産",
+    "unit": "千t",
+    "arrange_unit": null
+  },
+  {
+    "id": 40,
+    "data_name": "日本の原油輸入先",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 41,
+    "data_name": "キャッサバの生産",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 42,
+    "data_name": "カカオの生産",
+    "unit": "千t",
+    "arrange_unit": null
+  },
+  {
+    "id": 43,
+    "data_name": "天然ガスの生産",
+    "unit": "億?",
+    "arrange_unit": null
+  },
+  {
+    "id": 44,
+    "data_name": "金鉱の生産",
+    "unit": "t",
+    "arrange_unit": null
+  },
+  {
+    "id": 45,
+    "data_name": "銀鉱の生産",
+    "unit": "t",
+    "arrange_unit": null
+  },
+  {
+    "id": 46,
+    "data_name": "銅鉱の生産",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 47,
+    "data_name": "ニッケル鉱の生産",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 48,
+    "data_name": "ダイヤモンドの生産",
+    "unit": "万カラット",
+    "arrange_unit": null
+  },
+  {
+    "id": 49,
+    "data_name": "カカオの輸出",
+    "unit": "千t",
+    "arrange_unit": null
+  },
+  {
+    "id": 50,
+    "data_name": "商船保有量",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 51,
+    "data_name": "ぶどうの生産",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 52,
+    "data_name": "小麦の生産",
+    "unit": "t/ha",
+    "arrange_unit": null
+  },
+  {
+    "id": 53,
+    "data_name": "とうもろこしの生産",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 54,
+    "data_name": "じゃがいもの生産",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 55,
+    "data_name": "ライ麦の生産",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 56,
+    "data_name": "オレンジ類の生産",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 57,
+    "data_name": "オリーブの生産",
+    "unit": "千t",
+    "arrange_unit": null
+  },
+  {
+    "id": 58,
+    "data_name": "チーズの生産",
+    "unit": "千t",
+    "arrange_unit": null
+  },
+  {
+    "id": 59,
+    "data_name": "アルミニウムの生産",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 60,
+    "data_name": "毛織物の生産",
+    "unit": "万㎡",
+    "arrange_unit": null
+  },
+  {
+    "id": 61,
+    "data_name": "パルプの生産",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 62,
+    "data_name": "ワインの生産",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 63,
+    "data_name": "ビールの生産",
+    "unit": "万kL",
+    "arrange_unit": null
+  },
+  {
+    "id": 64,
+    "data_name": "鉄鉱石の生産",
+    "unit": "百万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 65,
+    "data_name": "ヨーロッパの農業生産額上位国",
+    "unit": "億ドル",
+    "arrange_unit": null
+  },
+  {
+    "id": 66,
+    "data_name": "水産物輸出",
+    "unit": "百万ドル",
+    "arrange_unit": null
+  },
+  {
+    "id": 67,
+    "data_name": "ひまわりの種子",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 68,
+    "data_name": "アメリカの人種・民族構成",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 69,
+    "data_name": "大豆の生産",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 70,
+    "data_name": "大豆の輸入",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 71,
+    "data_name": "アメリカの輸出相手国",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 72,
+    "data_name": "アメリカの輸入相手国",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 73,
+    "data_name": "カナダの輸出相手国",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 74,
+    "data_name": "カナダの輸入相手国",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 75,
+    "data_name": "メキシコの輸出相手国",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 76,
+    "data_name": "メキシコの輸入相手国",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 77,
+    "data_name": "サトウキビの生産",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 78,
+    "data_name": "南アメリカ諸国の大豆生産量の推移",
+    "unit": "10000",
+    "arrange_unit": "10000"
+  },
+  {
+    "id": 79,
+    "data_name": "ブラジルの輸出農産物",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 80,
+    "data_name": "ブラジルの輸出相手国",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 81,
+    "data_name": "オーストラリアの輸出相手国(1965年)",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 82,
+    "data_name": "オーストラリアの輸出相手国(1990年)",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 83,
+    "data_name": "オーストラリアの輸出相手国",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 84,
+    "data_name": "日本の木材輸入先(1965年)",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 85,
+    "data_name": "日本の木材輸入先(1985年)",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 86,
+    "data_name": "日本の木材輸入先(2005年)",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 87,
+    "data_name": "日本の木材輸入先(2019年)",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 88,
+    "data_name": "日本の工業出荷額(1960年)",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 89,
+    "data_name": "日本の工業出荷額(1980年)",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 90,
+    "data_name": "日本の工業出荷額(2000年)",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 91,
+    "data_name": "日本の工業出荷額(2018年)",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 100,
+    "data_name": "工業地域ごとの出荷額割合(1960年)",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 101,
+    "data_name": "工業地域ごとの出荷額割合(1980年)",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 102,
+    "data_name": "工業地域ごとの出荷額割合(2000年)",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 103,
+    "data_name": "工業地域ごとの出荷額割合(2018年)",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 110,
+    "data_name": "日本の自動車メーカーの海外生産における地域割合(2000年)",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 111,
+    "data_name": "日本の自動車メーカーの海外生産における地域割合(2015年)",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 120,
+    "data_name": "日本の鉄鉱石輸入先",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 121,
+    "data_name": "日本の石炭輸入先",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 122,
+    "data_name": "日本の原油輸入先",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 130,
+    "data_name": "日本の一次エネルギー供給量(1960年)",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 131,
+    "data_name": "日本の一次エネルギー供給量(1970年)",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 132,
+    "data_name": "日本の一次エネルギー供給量(1980年)",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 133,
+    "data_name": "日本の一次エネルギー供給量(1990年)",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 134,
+    "data_name": "日本の一次エネルギー供給量(2000年)",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 135,
+    "data_name": "日本の一次エネルギー供給量(2010年)",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 136,
+    "data_name": "日本の一次エネルギー供給量(2019年)",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 140,
+    "data_name": "日本の旅客輸送(1960年)",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 141,
+    "data_name": "日本の旅客輸送(2020年)",
+    "unit": "百万人キロ",
+    "arrange_unit": null
+  },
+  {
+    "id": 145,
+    "data_name": "日本の貨物輸送(1960年)",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 146,
+    "data_name": "日本の貨物輸送(2020年)",
+    "unit": "百万トンキロ",
+    "arrange_unit": null
+  },
+  {
+    "id": 150,
+    "data_name": "日本の輸出品目(1935年)",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 151,
+    "data_name": "日本の輸出品目(1975年)",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 152,
+    "data_name": "日本の輸出品目(2019年)",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 155,
+    "data_name": "日本の輸入品目(1935年)",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 156,
+    "data_name": "日本の輸入品目(1975年)",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 157,
+    "data_name": "日本の輸入品目(2019年)",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 160,
+    "data_name": "日本の輸出相手国",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 161,
+    "data_name": "日本の輸入相手国",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 162,
+    "data_name": "米",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 163,
+    "data_name": "野菜",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 164,
+    "data_name": "牛乳・乳製品",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 165,
+    "data_name": "肉類",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 166,
+    "data_name": "果実",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 167,
+    "data_name": "供給熱量自給率",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 168,
+    "data_name": "小麦",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 169,
+    "data_name": "大豆",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 170,
+    "data_name": "とうもろこしの輸出",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 171,
+    "data_name": "とうもろこしの輸入",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 180,
+    "data_name": "てんさいの生産",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 190,
+    "data_name": "木材の輸出",
+    "unit": "万?",
+    "arrange_unit": null
+  },
+  {
+    "id": 191,
+    "data_name": "木材の輸入",
+    "unit": "万?",
+    "arrange_unit": null
+  },
+  {
+    "id": 192,
+    "data_name": "木材の生産",
+    "unit": "万?",
+    "arrange_unit": null
+  },
+  {
+    "id": 200,
+    "data_name": "サケ・マス類(日本の輸入先)",
+    "unit": "百万円",
+    "arrange_unit": null
+  },
+  {
+    "id": 201,
+    "data_name": "カツオ・マグロ類(日本の輸入先)",
+    "unit": "百万円",
+    "arrange_unit": null
+  },
+  {
+    "id": 202,
+    "data_name": "エビ(日本の輸入先)",
+    "unit": "百万円",
+    "arrange_unit": null
+  },
+  {
+    "id": 203,
+    "data_name": "カニ(日本の輸入先)",
+    "unit": "百万円",
+    "arrange_unit": null
+  },
+  {
+    "id": 204,
+    "data_name": "イカ(日本の輸入先)",
+    "unit": "百万円",
+    "arrange_unit": null
+  },
+  {
+    "id": 205,
+    "data_name": "タラ類(日本の輸入先)",
+    "unit": "百万円",
+    "arrange_unit": null
+  },
+  {
+    "id": 210,
+    "data_name": "フードマイレージ",
+    "unit": "百万t×㎞",
+    "arrange_unit": null
+  },
+  {
+    "id": 220,
+    "data_name": "原油の埋蔵",
+    "unit": "億t",
+    "arrange_unit": null
+  },
+  {
+    "id": 221,
+    "data_name": "原油の生産",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 222,
+    "data_name": "原油の輸出",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 223,
+    "data_name": "原油の輸入",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 230,
+    "data_name": "石炭可採埋蔵",
+    "unit": "億t",
+    "arrange_unit": null
+  },
+  {
+    "id": 231,
+    "data_name": "石炭の生産",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 232,
+    "data_name": "石炭の輸出",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 233,
+    "data_name": "石炭の輸入",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 240,
+    "data_name": "天然ガスの埋蔵",
+    "unit": "兆?",
+    "arrange_unit": null
+  },
+  {
+    "id": 241,
+    "data_name": "天然ガスの生産",
+    "unit": "億?",
+    "arrange_unit": null
+  },
+  {
+    "id": 242,
+    "data_name": "天然ガスの輸出",
+    "unit": "億?",
+    "arrange_unit": null
+  },
+  {
+    "id": 243,
+    "data_name": "天然ガスの輸入",
+    "unit": "億?",
+    "arrange_unit": null
+  },
+  {
+    "id": 250,
+    "data_name": "鉄鉱石の埋蔵",
+    "unit": "億t",
+    "arrange_unit": null
+  },
+  {
+    "id": 251,
+    "data_name": "鉄鉱石の生産",
+    "unit": "百万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 252,
+    "data_name": "鉄鉱石の輸出",
+    "unit": "百万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 253,
+    "data_name": "鉄鉱石の輸入",
+    "unit": "百万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 254,
+    "data_name": "粗鋼の生産",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 255,
+    "data_name": "鉄鋼の輸出",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 256,
+    "data_name": "鉄鋼の輸入",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 260,
+    "data_name": "銅鉱石の埋蔵",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 261,
+    "data_name": "銅鉱石の生産",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 262,
+    "data_name": "銅鉱の輸出",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 270,
+    "data_name": "ボーキサイトの生産",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 271,
+    "data_name": "アルミニウムの生産",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 272,
+    "data_name": "アルミニウムの輸出",
+    "unit": "万t",
+    "arrange_unit": null
+  },
+  {
+    "id": 280,
+    "data_name": "プラチナの生産",
+    "unit": "t",
+    "arrange_unit": null
+  },
+  {
+    "id": 281,
+    "data_name": "鶏の羽数",
+    "unit": "百万羽",
+    "arrange_unit": null
+  },
+  {
+    "id": 282,
+    "data_name": "造船竣工量",
+    "unit": "千総t",
+    "arrange_unit": "1"
+  },
+  {
+    "id": 283,
+    "data_name": "卸売業年間商品販売額",
+    "unit": "百万円",
+    "arrange_unit": "1"
+  },
+  {
+    "id": 284,
+    "data_name": "小売業年間商品販売額",
+    "unit": "百万円",
+    "arrange_unit": "1"
+  },
+  {
+    "id": 285,
+    "data_name": "保有船船腹量・便宜置籍船",
+    "unit": "万総トン",
+    "arrange_unit": null
+  },
+  {
+    "id": 290,
+    "data_name": "人口",
+    "unit": "億人",
+    "arrange_unit": "100000"
+  },
+  {
+    "id": 291,
+    "data_name": "移民",
+    "unit": "億人",
+    "arrange_unit": "100000"
+  },
+  {
+    "id": 292,
+    "data_name": "合計特殊出生率",
+    "unit": "人",
+    "arrange_unit": null
+  },
+  {
+    "id": 293,
+    "data_name": "人口",
+    "unit": "百万人",
+    "arrange_unit": null
+  },
+  {
+    "id": 294,
+    "data_name": "宗教",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 295,
+    "data_name": "世界の主な言語別人口",
+    "unit": "百万人",
+    "arrange_unit": null
+  },
+  {
+    "id": 300,
+    "data_name": "1人当たりGDP(名目値)",
+    "unit": "ドル",
+    "arrange_unit": null
+  },
+  {
+    "id": 301,
+    "data_name": "1人当たりGNI(名目値)",
+    "unit": "ドル",
+    "arrange_unit": null
+  },
+  {
+    "id": 310,
+    "data_name": "観光客数",
+    "unit": "万人",
+    "arrange_unit": null
+  },
+  {
+    "id": 311,
+    "data_name": "国際観光収入",
+    "unit": "億ドル",
+    "arrange_unit": null
+  },
+  {
+    "id": 312,
+    "data_name": "国際観光支出",
+    "unit": "億ドル",
+    "arrange_unit": null
+  },
+  {
+    "id": 313,
+    "data_name": "国際観光収支",
+    "unit": "億ドル",
+    "arrange_unit": null
+  },
+  {
+    "id": 314,
+    "data_name": "訪日外国人数",
+    "unit": "万人",
+    "arrange_unit": "10000"
+  },
+  {
+    "id": 315,
+    "data_name": "日本人海外旅行者数",
+    "unit": "万人",
+    "arrange_unit": "10000"
+  },
+  {
+    "id": 316,
+    "data_name": "各国・地域別日本人訪問者数",
+    "unit": "人",
+    "arrange_unit": null
+  },
+  {
+    "id": 320,
+    "data_name": "第1次産業就業者数",
+    "unit": "万人",
+    "arrange_unit": null
+  },
+  {
+    "id": 321,
+    "data_name": "第2次産業就業者数",
+    "unit": "万人",
+    "arrange_unit": null
+  },
+  {
+    "id": 322,
+    "data_name": "第3次産業就業者数",
+    "unit": "万人",
+    "arrange_unit": null
+  },
+  {
+    "id": 323,
+    "data_name": "旅客輸送の機関別輸送量(日本、人キロ)",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 324,
+    "data_name": "旅客輸送の機関別エネルギー消費(日本、キロカロリー)",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 325,
+    "data_name": "貨物輸送の機関別輸送量(日本、トンキロ)",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 326,
+    "data_name": "貨物輸送の機関別エネルギー消費量(日本、キロカロリー)",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 327,
+    "data_name": "鉄道輸送量(旅客)",
+    "unit": "億人㎞",
+    "arrange_unit": null
+  },
+  {
+    "id": 328,
+    "data_name": "旅客輸送量(貨物)",
+    "unit": "億t.㎞",
+    "arrange_unit": null
+  },
+  {
+    "id": 329,
+    "data_name": "自動車保有台数",
+    "unit": "千台",
+    "arrange_unit": null
+  },
+  {
+    "id": 330,
+    "data_name": "100人あたり固定電話契約数",
+    "unit": "件",
+    "arrange_unit": null
+  },
+  {
+    "id": 331,
+    "data_name": "100人あたり移動電話契約数",
+    "unit": "件",
+    "arrange_unit": null
+  },
+  {
+    "id": 332,
+    "data_name": "インターネット利用者数",
+    "unit": "万人",
+    "arrange_unit": null
+  },
+  {
+    "id": 333,
+    "data_name": "インターネット利用者率",
+    "unit": "%",
+    "arrange_unit": null
+  },
+  {
+    "id": 1000,
+    "data_name": "米の生産",
+    "unit": "千t",
+    "arrange_unit": null
+  },
+  {
+    "id": 1001,
+    "data_name": "米の輸出",
+    "unit": "千t",
+    "arrange_unit": null
+  },
+  {
+    "id": 1002,
+    "data_name": "米の輸入",
+    "unit": "千t",
+    "arrange_unit": null
+  },
+  {
+    "id": 1003,
+    "data_name": "小麦の生産",
+    "unit": "千t",
+    "arrange_unit": null
+  },
+  {
+    "id": 1004,
+    "data_name": "小麦の輸出",
+    "unit": "千t",
+    "arrange_unit": null
+  },
+  {
+    "id": 1005,
+    "data_name": "小麦の輸入",
+    "unit": "千t",
+    "arrange_unit": null
+  },
+  {
+    "id": 1006,
+    "data_name": "とうもろこしの生産",
+    "unit": "千t",
+    "arrange_unit": null
+  },
+  {
+    "id": 1007,
+    "data_name": "とうもろこしの輸出",
+    "unit": "千t",
+    "arrange_unit": null
+  },
+  {
+    "id": 1008,
+    "data_name": "とうもろこしの輸入",
+    "unit": "千t",
+    "arrange_unit": null
+  },
+  {
+    "id": 1009,
+    "data_name": "コーヒー豆の生産",
+    "unit": "千t",
+    "arrange_unit": null
+  },
+  {
+    "id": 1011,
+    "data_name": "カカオ豆の生産",
+    "unit": "千t",
+    "arrange_unit": null
+  },
+  {
+    "id": 1013,
+    "data_name": "茶の生産",
+    "unit": "千t",
+    "arrange_unit": null
+  },
+  {
+    "id": 1017,
+    "data_name": "バナナの生産",
+    "unit": "千t",
+    "arrange_unit": null
+  },
+  {
+    "id": 1018,
+    "data_name": "綿花の生産",
+    "unit": "千t",
+    "arrange_unit": null
+  },
+  {
+    "id": 1019,
+    "data_name": "大豆の生産",
+    "unit": "千t",
+    "arrange_unit": null
+  },
+  {
+    "id": 1030,
+    "data_name": "牛の頭数",
+    "unit": "千頭",
+    "arrange_unit": null
+  },
+  {
+    "id": 1033,
+    "data_name": "豚の頭数",
+    "unit": "千頭",
+    "arrange_unit": null
+  },
+  {
+    "id": 1036,
+    "data_name": "鶏の羽数",
+    "unit": "百万羽",
+    "arrange_unit": null
+  },
+  {
+    "id": 1039,
+    "data_name": "羊の頭数",
+    "unit": "千頭",
+    "arrange_unit": null
+  },
+  {
+    "id": 1040,
+    "data_name": "高等教育就学率",
+    "unit": "%",
+    "arrange_unit": null
+  }
+]

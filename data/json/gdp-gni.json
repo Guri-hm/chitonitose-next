@@ -1,0 +1,2468 @@
+[
+  {
+    "nation_cd": 4,
+    "gni": null,
+    "per_capita_gni": 530,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 4,
+    "gni": "196",
+    "per_capita_gni": 500,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 8,
+    "gni": "148",
+    "per_capita_gni": 5210,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 12,
+    "gni": null,
+    "per_capita_gni": 4010,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 12,
+    "gni": "1557",
+    "per_capita_gni": 3550,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 20,
+    "gni": "33",
+    "per_capita_gni": 40650,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 24,
+    "gni": "734",
+    "per_capita_gni": 2230,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 28,
+    "gni": "14",
+    "per_capita_gni": 14250,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 31,
+    "gni": "450",
+    "per_capita_gni": 4450,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 32,
+    "gni": null,
+    "per_capita_gni": 11130,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 32,
+    "gni": "4052",
+    "per_capita_gni": 8930,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 36,
+    "gni": null,
+    "per_capita_gni": 55100,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 36,
+    "gni": "13802",
+    "per_capita_gni": 53730,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 40,
+    "gni": null,
+    "per_capita_gni": 51460,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 40,
+    "gni": "4282",
+    "per_capita_gni": 48020,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 44,
+    "gni": "109",
+    "per_capita_gni": 27780,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 48,
+    "gni": "364",
+    "per_capita_gni": 22170,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 50,
+    "gni": null,
+    "per_capita_gni": 1940,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 50,
+    "gni": "3306",
+    "per_capita_gni": 2010,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 51,
+    "gni": "125",
+    "per_capita_gni": 4220,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 52,
+    "gni": "42",
+    "per_capita_gni": 14460,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 56,
+    "gni": null,
+    "per_capita_gni": 48030,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 56,
+    "gni": "5221",
+    "per_capita_gni": 45180,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 64,
+    "gni": "22",
+    "per_capita_gni": 2860,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 68,
+    "gni": null,
+    "per_capita_gni": 3520,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 68,
+    "gni": "374",
+    "per_capita_gni": 3200,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 70,
+    "gni": "200",
+    "per_capita_gni": 6090,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 72,
+    "gni": "156",
+    "per_capita_gni": 6640,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 76,
+    "gni": null,
+    "per_capita_gni": 9130,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 76,
+    "gni": "16691",
+    "per_capita_gni": 7850,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 84,
+    "gni": "16",
+    "per_capita_gni": 3970,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 90,
+    "gni": "16",
+    "per_capita_gni": 2300,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 96,
+    "gni": null,
+    "per_capita_gni": 32230,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 96,
+    "gni": "140",
+    "per_capita_gni": 32230,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 100,
+    "gni": null,
+    "per_capita_gni": 9570,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 100,
+    "gni": "661",
+    "per_capita_gni": 9540,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 104,
+    "gni": null,
+    "per_capita_gni": 1390,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 104,
+    "gni": "687",
+    "per_capita_gni": 1260,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 108,
+    "gni": "32",
+    "per_capita_gni": 270,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 112,
+    "gni": "595",
+    "per_capita_gni": 6330,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 116,
+    "gni": null,
+    "per_capita_gni": 1530,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 116,
+    "gni": "250",
+    "per_capita_gni": 1490,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 120,
+    "gni": null,
+    "per_capita_gni": 1500,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 120,
+    "gni": "397",
+    "per_capita_gni": 1500,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 124,
+    "gni": null,
+    "per_capita_gni": 46370,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 124,
+    "gni": "16543",
+    "per_capita_gni": 43530,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 132,
+    "gni": "17",
+    "per_capita_gni": 3060,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 136,
+    "gni": "44",
+    "per_capita_gni": 68200,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 140,
+    "gni": "25",
+    "per_capita_gni": 510,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 144,
+    "gni": null,
+    "per_capita_gni": 4020,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 144,
+    "gni": "815",
+    "per_capita_gni": 3720,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 148,
+    "gni": "109",
+    "per_capita_gni": 660,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 152,
+    "gni": null,
+    "per_capita_gni": 15010,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 152,
+    "gni": "2575",
+    "per_capita_gni": 13470,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 156,
+    "gni": null,
+    "per_capita_gni": 10390,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 156,
+    "gni": "148807",
+    "per_capita_gni": 10610,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 158,
+    "gni": "6875",
+    "per_capita_gni": 29153,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 170,
+    "gni": null,
+    "per_capita_gni": 6510,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 170,
+    "gni": "2942",
+    "per_capita_gni": 5780,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 174,
+    "gni": "13",
+    "per_capita_gni": 1450,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 178,
+    "gni": "101",
+    "per_capita_gni": 1830,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 180,
+    "gni": null,
+    "per_capita_gni": 530,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 180,
+    "gni": "493",
+    "per_capita_gni": 550,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 188,
+    "gni": null,
+    "per_capita_gni": 11700,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 188,
+    "gni": "584",
+    "per_capita_gni": 11460,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 191,
+    "gni": null,
+    "per_capita_gni": 14980,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 191,
+    "gni": "574",
+    "per_capita_gni": 14190,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 192,
+    "gni": null,
+    "per_capita_gni": 0,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 192,
+    "gni": "848",
+    "per_capita_gni": 7480,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 196,
+    "gni": null,
+    "per_capita_gni": 27710,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 196,
+    "gni": "233",
+    "per_capita_gni": 26110,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 203,
+    "gni": null,
+    "per_capita_gni": 21940,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 203,
+    "gni": "2361",
+    "per_capita_gni": 22070,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 204,
+    "gni": "155",
+    "per_capita_gni": 1280,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 208,
+    "gni": null,
+    "per_capita_gni": 63950,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 208,
+    "gni": "3678",
+    "per_capita_gni": 63070,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 212,
+    "gni": "5",
+    "per_capita_gni": 6870,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 214,
+    "gni": "788",
+    "per_capita_gni": 7260,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 218,
+    "gni": null,
+    "per_capita_gni": 6090,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 218,
+    "gni": "976",
+    "per_capita_gni": 5530,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 222,
+    "gni": null,
+    "per_capita_gni": 4000,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 222,
+    "gni": "236",
+    "per_capita_gni": 3650,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 226,
+    "gni": "81",
+    "per_capita_gni": 5810,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 231,
+    "gni": null,
+    "per_capita_gni": 850,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 231,
+    "gni": "1027",
+    "per_capita_gni": 890,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 232,
+    "gni": "19",
+    "per_capita_gni": 600,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 233,
+    "gni": null,
+    "per_capita_gni": 23260,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 233,
+    "gni": "311",
+    "per_capita_gni": 23370,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 242,
+    "gni": "42",
+    "per_capita_gni": 4720,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 246,
+    "gni": null,
+    "per_capita_gni": 50010,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 246,
+    "gni": "2749",
+    "per_capita_gni": 49700,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 250,
+    "gni": null,
+    "per_capita_gni": 42450,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 250,
+    "gni": "26551",
+    "per_capita_gni": 39400,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 258,
+    "gni": "38",
+    "per_capita_gni": 15770,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 262,
+    "gni": "33",
+    "per_capita_gni": 3320,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 266,
+    "gni": "155",
+    "per_capita_gni": 6970,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 268,
+    "gni": "159",
+    "per_capita_gni": 4290,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 270,
+    "gni": "18",
+    "per_capita_gni": 750,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 271,
+    "gni": "102",
+    "per_capita_gni": 66220,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 276,
+    "gni": null,
+    "per_capita_gni": 48580,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 276,
+    "gni": "39169",
+    "per_capita_gni": 47060,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 288,
+    "gni": null,
+    "per_capita_gni": 2220,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 288,
+    "gni": "692",
+    "per_capita_gni": 2230,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 296,
+    "gni": "4",
+    "per_capita_gni": 3010,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 300,
+    "gni": null,
+    "per_capita_gni": 19750,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 300,
+    "gni": "1937",
+    "per_capita_gni": 18080,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 304,
+    "gni": "20",
+    "per_capita_gni": 34800,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 308,
+    "gni": "10",
+    "per_capita_gni": 8740,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 320,
+    "gni": null,
+    "per_capita_gni": 4610,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 320,
+    "gni": "757",
+    "per_capita_gni": 4490,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 324,
+    "gni": "134",
+    "per_capita_gni": 1020,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 328,
+    "gni": "52",
+    "per_capita_gni": 6600,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 332,
+    "gni": "143",
+    "per_capita_gni": 1250,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 336,
+    "gni": null,
+    "per_capita_gni": 0,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 340,
+    "gni": "217",
+    "per_capita_gni": 2200,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 348,
+    "gni": null,
+    "per_capita_gni": 16500,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 348,
+    "gni": "1561",
+    "per_capita_gni": 16010,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 352,
+    "gni": "229",
+    "per_capita_gni": 62420,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 356,
+    "gni": null,
+    "per_capita_gni": 2120,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 356,
+    "gni": "26254",
+    "per_capita_gni": 1900,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 360,
+    "gni": null,
+    "per_capita_gni": 4050,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 360,
+    "gni": "10595",
+    "per_capita_gni": 3870,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 364,
+    "gni": null,
+    "per_capita_gni": 5300,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 364,
+    "gni": "2412",
+    "per_capita_gni": 2870,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 368,
+    "gni": null,
+    "per_capita_gni": 5740,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 368,
+    "gni": "1874",
+    "per_capita_gni": 4660,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 372,
+    "gni": null,
+    "per_capita_gni": 64000,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 372,
+    "gni": "3204",
+    "per_capita_gni": 64150,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 376,
+    "gni": null,
+    "per_capita_gni": 43110,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 376,
+    "gni": "3926",
+    "per_capita_gni": 42600,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 380,
+    "gni": null,
+    "per_capita_gni": 34530,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 380,
+    "gni": "19176",
+    "per_capita_gni": 32200,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 384,
+    "gni": null,
+    "per_capita_gni": 2290,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 384,
+    "gni": "602",
+    "per_capita_gni": 2280,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 388,
+    "gni": null,
+    "per_capita_gni": 5320,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 388,
+    "gni": "137",
+    "per_capita_gni": 4620,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 392,
+    "gni": null,
+    "per_capita_gni": 41710,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 392,
+    "gni": "51009",
+    "per_capita_gni": 40540,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 398,
+    "gni": "1628",
+    "per_capita_gni": 8680,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 400,
+    "gni": "440",
+    "per_capita_gni": 4310,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 404,
+    "gni": null,
+    "per_capita_gni": 1750,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 404,
+    "gni": "948",
+    "per_capita_gni": 1760,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 386.098,
+    "data_year": 1970
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 414.764,
+    "data_year": 1971
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 445.909,
+    "data_year": 1972
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 480.111,
+    "data_year": 1973
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 518.122,
+    "data_year": 1974
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 560.667,
+    "data_year": 1975
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 573.782,
+    "data_year": 1976
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 588.707,
+    "data_year": 1977
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 604.942,
+    "data_year": 1978
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 621.718,
+    "data_year": 1979
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 638.449,
+    "data_year": 1980
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 652.398,
+    "data_year": 1981
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 806.864,
+    "data_year": 1982
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 793.285,
+    "data_year": 1983
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 744.152,
+    "data_year": 1984
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 722.272,
+    "data_year": 1985
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 804.814,
+    "data_year": 1986
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 836.26,
+    "data_year": 1987
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 763.83,
+    "data_year": 1988
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 810.784,
+    "data_year": 1989
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 734.858,
+    "data_year": 1990
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 662.638,
+    "data_year": 1991
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 593.079,
+    "data_year": 1992
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 503.235,
+    "data_year": 1993
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 384.462,
+    "data_year": 1994
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 222.251,
+    "data_year": 1995
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 478.788,
+    "data_year": 1996
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 461.767,
+    "data_year": 1997
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 455.506,
+    "data_year": 1998
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 451.789,
+    "data_year": 1999
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 461.956,
+    "data_year": 2000
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 476.127,
+    "data_year": 2001
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 467.979,
+    "data_year": 2002
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 470.977,
+    "data_year": 2003
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 472.98,
+    "data_year": 2004
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 547.931,
+    "data_year": 2005
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 575.134,
+    "data_year": 2006
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 597.32,
+    "data_year": 2007
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 551.416,
+    "data_year": 2008
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 495.191,
+    "data_year": 2009
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 570.963,
+    "data_year": 2010
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 639.128,
+    "data_year": 2011
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 644.69,
+    "data_year": 2012
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 667.873,
+    "data_year": 2013
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 697.778,
+    "data_year": 2014
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 649.856,
+    "data_year": 2015
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 666.676,
+    "data_year": 2016
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 686.34,
+    "data_year": 2017
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 687.943,
+    "data_year": 2018
+  },
+  {
+    "nation_cd": 408,
+    "gni": null,
+    "per_capita_gni": 639.556,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 279.7,
+    "data_year": 1970
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 301.472,
+    "data_year": 1971
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 324.182,
+    "data_year": 1972
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 406.29,
+    "data_year": 1973
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 561.917,
+    "data_year": 1974
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 615.747,
+    "data_year": 1975
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 831.964,
+    "data_year": 1976
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 1054.04,
+    "data_year": 1977
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 1404.95,
+    "data_year": 1978
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 1784.71,
+    "data_year": 1979
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 1718.95,
+    "data_year": 1980
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 1889.36,
+    "data_year": 1981
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 2000.2,
+    "data_year": 1982
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 2207.94,
+    "data_year": 1983
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 2419.85,
+    "data_year": 1984
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 2482.48,
+    "data_year": 1985
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 2831.36,
+    "data_year": 1986
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 3549.07,
+    "data_year": 1987
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 4742.39,
+    "data_year": 1988
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 5811.29,
+    "data_year": 1989
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 6602.43,
+    "data_year": 1990
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 7623.31,
+    "data_year": 1991
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 8108.08,
+    "data_year": 1992
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 8856.78,
+    "data_year": 1993
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 10344,
+    "data_year": 1994
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 12509.4,
+    "data_year": 1995
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 13336.7,
+    "data_year": 1996
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 12333.4,
+    "data_year": 1997
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 8222.35,
+    "data_year": 1998
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 10581.6,
+    "data_year": 1999
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 12161,
+    "data_year": 2000
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 11479.8,
+    "data_year": 2001
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 13067.8,
+    "data_year": 2002
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 14560.8,
+    "data_year": 2003
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 16356.3,
+    "data_year": 2004
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 19196.7,
+    "data_year": 2005
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 21546.8,
+    "data_year": 2006
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 23913.9,
+    "data_year": 2007
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 21295,
+    "data_year": 2008
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 19128.5,
+    "data_year": 2009
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 23091.2,
+    "data_year": 2010
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 25172.1,
+    "data_year": 2011
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 25537.6,
+    "data_year": 2012
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 27227.6,
+    "data_year": 2013
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 29329.8,
+    "data_year": 2014
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 28840.7,
+    "data_year": 2015
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 29423.5,
+    "data_year": 2016
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 31781.1,
+    "data_year": 2017
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 33705.3,
+    "data_year": 2018
+  },
+  {
+    "nation_cd": 410,
+    "gni": null,
+    "per_capita_gni": 32234.5,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 410,
+    "gni": "17013",
+    "per_capita_gni": 32860,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 414,
+    "gni": null,
+    "per_capita_gni": 33590,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 414,
+    "gni": "1527",
+    "per_capita_gni": 36290,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 417,
+    "gni": "77",
+    "per_capita_gni": 1160,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 418,
+    "gni": null,
+    "per_capita_gni": 2570,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 418,
+    "gni": "180",
+    "per_capita_gni": 2480,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 422,
+    "gni": "376",
+    "per_capita_gni": 5510,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 426,
+    "gni": "24",
+    "per_capita_gni": 1100,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 428,
+    "gni": null,
+    "per_capita_gni": 17740,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 428,
+    "gni": "334",
+    "per_capita_gni": 17590,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 430,
+    "gni": null,
+    "per_capita_gni": 580,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 430,
+    "gni": "27",
+    "per_capita_gni": 530,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 434,
+    "gni": null,
+    "per_capita_gni": 7640,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 434,
+    "gni": "334",
+    "per_capita_gni": 4850,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 438,
+    "gni": "42",
+    "per_capita_gni": 116440,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 440,
+    "gni": null,
+    "per_capita_gni": 19080,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 440,
+    "gni": "542",
+    "per_capita_gni": 19410,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 442,
+    "gni": null,
+    "per_capita_gni": 73910,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 442,
+    "gni": "465",
+    "per_capita_gni": 73500,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 450,
+    "gni": null,
+    "per_capita_gni": 520,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 450,
+    "gni": "134",
+    "per_capita_gni": 480,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 454,
+    "gni": "110",
+    "per_capita_gni": 580,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 458,
+    "gni": null,
+    "per_capita_gni": 11230,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 458,
+    "gni": "3425",
+    "per_capita_gni": 10580,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 462,
+    "gni": "37",
+    "per_capita_gni": 6830,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 466,
+    "gni": null,
+    "per_capita_gni": 870,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 466,
+    "gni": "169",
+    "per_capita_gni": 830,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 470,
+    "gni": null,
+    "per_capita_gni": 28030,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 470,
+    "gni": "133",
+    "per_capita_gni": 25370,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 478,
+    "gni": "76",
+    "per_capita_gni": 1640,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 480,
+    "gni": "129",
+    "per_capita_gni": 10230,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 484,
+    "gni": null,
+    "per_capita_gni": 9480,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 484,
+    "gni": "10936",
+    "per_capita_gni": 8480,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 492,
+    "gni": "67",
+    "per_capita_gni": 186080,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 496,
+    "gni": null,
+    "per_capita_gni": 3790,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 496,
+    "gni": "120",
+    "per_capita_gni": 3670,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 498,
+    "gni": "120",
+    "per_capita_gni": 4570,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 499,
+    "gni": null,
+    "per_capita_gni": 9060,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 499,
+    "gni": "49",
+    "per_capita_gni": 7900,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 504,
+    "gni": null,
+    "per_capita_gni": 3190,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 504,
+    "gni": "1119",
+    "per_capita_gni": 2980,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 508,
+    "gni": null,
+    "per_capita_gni": 490,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 508,
+    "gni": "144",
+    "per_capita_gni": 460,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 512,
+    "gni": "704",
+    "per_capita_gni": 14150,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 516,
+    "gni": "115",
+    "per_capita_gni": 4520,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 520,
+    "gni": "2",
+    "per_capita_gni": 16630,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 524,
+    "gni": "347",
+    "per_capita_gni": 1190,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 528,
+    "gni": null,
+    "per_capita_gni": 53100,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 528,
+    "gni": "8906",
+    "per_capita_gni": 51060,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 531,
+    "gni": "32",
+    "per_capita_gni": 20370,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 533,
+    "gni": "29",
+    "per_capita_gni": 27120,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 534,
+    "gni": "11",
+    "per_capita_gni": 27680,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 540,
+    "gni": "30",
+    "per_capita_gni": 14020,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 548,
+    "gni": "9",
+    "per_capita_gni": 2780,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 554,
+    "gni": null,
+    "per_capita_gni": 42760,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 554,
+    "gni": "2101",
+    "per_capita_gni": 41330,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 558,
+    "gni": null,
+    "per_capita_gni": 1890,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 558,
+    "gni": "122",
+    "per_capita_gni": 1850,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 562,
+    "gni": "132",
+    "per_capita_gni": 540,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 566,
+    "gni": null,
+    "per_capita_gni": 2030,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 566,
+    "gni": "4128",
+    "per_capita_gni": 2000,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 578,
+    "gni": null,
+    "per_capita_gni": 82500,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 578,
+    "gni": "4206",
+    "per_capita_gni": 78180,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 583,
+    "gni": "5",
+    "per_capita_gni": 4010,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 584,
+    "gni": "3",
+    "per_capita_gni": 5010,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 585,
+    "gni": "3",
+    "per_capita_gni": 16500,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 586,
+    "gni": null,
+    "per_capita_gni": 1410,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 586,
+    "gni": "2829",
+    "per_capita_gni": 1280,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 591,
+    "gni": null,
+    "per_capita_gni": 14950,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 591,
+    "gni": "513",
+    "per_capita_gni": 11880,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 598,
+    "gni": null,
+    "per_capita_gni": 2750,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 598,
+    "gni": "238",
+    "per_capita_gni": 2660,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 600,
+    "gni": null,
+    "per_capita_gni": 5520,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 600,
+    "gni": "366",
+    "per_capita_gni": 5140,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 604,
+    "gni": null,
+    "per_capita_gni": 6740,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 604,
+    "gni": "1982",
+    "per_capita_gni": 6010,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 608,
+    "gni": null,
+    "per_capita_gni": 3850,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 608,
+    "gni": "3760",
+    "per_capita_gni": 3430,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 616,
+    "gni": null,
+    "per_capita_gni": 15350,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 616,
+    "gni": "5797",
+    "per_capita_gni": 15270,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 620,
+    "gni": null,
+    "per_capita_gni": 23200,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 620,
+    "gni": "2267",
+    "per_capita_gni": 22000,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 624,
+    "gni": "15",
+    "per_capita_gni": 760,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 626,
+    "gni": "24",
+    "per_capita_gni": 1830,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 630,
+    "gni": "695",
+    "per_capita_gni": 21740,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 634,
+    "gni": "1619",
+    "per_capita_gni": 56210,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 642,
+    "gni": null,
+    "per_capita_gni": 12630,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 642,
+    "gni": "2424",
+    "per_capita_gni": 12570,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 643,
+    "gni": null,
+    "per_capita_gni": 11260,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 643,
+    "gni": "15658",
+    "per_capita_gni": 10690,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 646,
+    "gni": null,
+    "per_capita_gni": 830,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 646,
+    "gni": "101",
+    "per_capita_gni": 780,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 659,
+    "gni": "9",
+    "per_capita_gni": 17400,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 662,
+    "gni": "16",
+    "per_capita_gni": 8790,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 670,
+    "gni": "8",
+    "per_capita_gni": 7340,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 674,
+    "gni": "16",
+    "per_capita_gni": 51810,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 678,
+    "gni": "5",
+    "per_capita_gni": 2070,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 682,
+    "gni": null,
+    "per_capita_gni": 22840,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 682,
+    "gni": "7636",
+    "per_capita_gni": 21930,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 686,
+    "gni": null,
+    "per_capita_gni": 1460,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 686,
+    "gni": "240",
+    "per_capita_gni": 1430,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 688,
+    "gni": null,
+    "per_capita_gni": 7030,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 688,
+    "gni": "511",
+    "per_capita_gni": 7400,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 690,
+    "gni": "13",
+    "per_capita_gni": 12720,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 694,
+    "gni": "39",
+    "per_capita_gni": 490,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 702,
+    "gni": null,
+    "per_capita_gni": 59590,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 702,
+    "gni": "3123",
+    "per_capita_gni": 54920,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 703,
+    "gni": null,
+    "per_capita_gni": 19210,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 703,
+    "gni": "1021",
+    "per_capita_gni": 18700,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 704,
+    "gni": null,
+    "per_capita_gni": 2590,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 704,
+    "gni": "2593",
+    "per_capita_gni": 2660,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 705,
+    "gni": null,
+    "per_capita_gni": 25940,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 705,
+    "gni": "521",
+    "per_capita_gni": 24800,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 706,
+    "gni": null,
+    "per_capita_gni": 0,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 706,
+    "gni": "49",
+    "per_capita_gni": 310,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 710,
+    "gni": null,
+    "per_capita_gni": 6040,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 710,
+    "gni": "3209",
+    "per_capita_gni": 5410,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 716,
+    "gni": null,
+    "per_capita_gni": 1390,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 716,
+    "gni": "162",
+    "per_capita_gni": 1090,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 724,
+    "gni": null,
+    "per_capita_gni": 30390,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 724,
+    "gni": "12936",
+    "per_capita_gni": 27320,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 728,
+    "gni": "117",
+    "per_capita_gni": 1090,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 729,
+    "gni": null,
+    "per_capita_gni": 590,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 729,
+    "gni": "285",
+    "per_capita_gni": 650,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 740,
+    "gni": "32",
+    "per_capita_gni": 5510,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 748,
+    "gni": "41",
+    "per_capita_gni": 3580,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 752,
+    "gni": null,
+    "per_capita_gni": 55780,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 752,
+    "gni": "5597",
+    "per_capita_gni": 54060,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 756,
+    "gni": "7282",
+    "per_capita_gni": 84310,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 760,
+    "gni": "362",
+    "per_capita_gni": 1820,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 762,
+    "gni": "101",
+    "per_capita_gni": 1060,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 764,
+    "gni": null,
+    "per_capita_gni": 7260,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 764,
+    "gni": "4919",
+    "per_capita_gni": 7050,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 768,
+    "gni": "76",
+    "per_capita_gni": 920,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 776,
+    "gni": "5",
+    "per_capita_gni": 5000,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 780,
+    "gni": "216",
+    "per_capita_gni": 15410,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 784,
+    "gni": null,
+    "per_capita_gni": 43470,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 784,
+    "gni": "4248",
+    "per_capita_gni": 43470,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 788,
+    "gni": null,
+    "per_capita_gni": 3370,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 788,
+    "gni": "367",
+    "per_capita_gni": 3100,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 792,
+    "gni": null,
+    "per_capita_gni": 9690,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 792,
+    "gni": "7633",
+    "per_capita_gni": 9050,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 795,
+    "gni": "429",
+    "per_capita_gni": 7220,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 796,
+    "gni": "12",
+    "per_capita_gni": 30700,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 798,
+    "gni": "1",
+    "per_capita_gni": 5820,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 800,
+    "gni": "364",
+    "per_capita_gni": 800,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 804,
+    "gni": null,
+    "per_capita_gni": 3370,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 804,
+    "gni": "1477",
+    "per_capita_gni": 3540,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 807,
+    "gni": "119",
+    "per_capita_gni": 5720,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 818,
+    "gni": null,
+    "per_capita_gni": 2690,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 818,
+    "gni": "3069",
+    "per_capita_gni": 3000,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 826,
+    "gni": null,
+    "per_capita_gni": 42220,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 826,
+    "gni": "26183",
+    "per_capita_gni": 38950,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 833,
+    "gni": "70",
+    "per_capita_gni": 83160,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 834,
+    "gni": null,
+    "per_capita_gni": 1080,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 834,
+    "gni": "624",
+    "per_capita_gni": 1080,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 840,
+    "gni": null,
+    "per_capita_gni": 65850,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 840,
+    "gni": "212616",
+    "per_capita_gni": 64530,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 854,
+    "gni": "165",
+    "per_capita_gni": 790,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 858,
+    "gni": null,
+    "per_capita_gni": 16230,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 858,
+    "gni": "550",
+    "per_capita_gni": 15830,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 860,
+    "gni": null,
+    "per_capita_gni": 1800,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 860,
+    "gni": "573",
+    "per_capita_gni": 1670,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 862,
+    "gni": null,
+    "per_capita_gni": 0,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 862,
+    "gni": "3929",
+    "per_capita_gni": 13080,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 882,
+    "gni": "8",
+    "per_capita_gni": 4070,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 887,
+    "gni": "267",
+    "per_capita_gni": 940,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 894,
+    "gni": null,
+    "per_capita_gni": 1430,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 894,
+    "gni": "219",
+    "per_capita_gni": 1190,
+    "data_year": 2020
+  }
+]

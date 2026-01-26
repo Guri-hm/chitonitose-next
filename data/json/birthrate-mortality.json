@@ -1,0 +1,1248 @@
+[
+  {
+    "nation_cd": 4,
+    "data_year": 2020,
+    "birthrate": 32.9,
+    "mortality": 6.5,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 8,
+    "data_year": 2020,
+    "birthrate": 11.8,
+    "mortality": 7.8,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 12,
+    "data_year": 2020,
+    "birthrate": 24.7,
+    "mortality": 4.7,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 24,
+    "data_year": 2020,
+    "birthrate": 40.9,
+    "mortality": 8.3,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 31,
+    "data_year": 2020,
+    "birthrate": 17.1,
+    "mortality": 6.8,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 32,
+    "data_year": 2020,
+    "birthrate": 17.1,
+    "mortality": 7.6,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 36,
+    "data_year": 2020,
+    "birthrate": 12.9,
+    "mortality": 6.6,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 40,
+    "data_year": 2020,
+    "birthrate": 9.9,
+    "mortality": 9.9,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 44,
+    "data_year": 2020,
+    "birthrate": 14,
+    "mortality": 6.7,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 48,
+    "data_year": 2020,
+    "birthrate": 14.2,
+    "mortality": 2.4,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 50,
+    "data_year": 2020,
+    "birthrate": 18.4,
+    "mortality": 5.5,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 51,
+    "data_year": 2020,
+    "birthrate": 14.2,
+    "mortality": 9.9,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 52,
+    "data_year": 2020,
+    "birthrate": 10.7,
+    "mortality": 9,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 56,
+    "data_year": 2020,
+    "birthrate": 10.9,
+    "mortality": 9.8,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 64,
+    "data_year": 2020,
+    "birthrate": 17.5,
+    "mortality": 6.3,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 68,
+    "data_year": 2020,
+    "birthrate": 21.9,
+    "mortality": 6.8,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 70,
+    "data_year": 2020,
+    "birthrate": 8.2,
+    "mortality": 10.6,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 72,
+    "data_year": 2020,
+    "birthrate": 25.1,
+    "mortality": 5.8,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 76,
+    "data_year": 2020,
+    "birthrate": 14.1,
+    "mortality": 6.4,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 84,
+    "data_year": 2020,
+    "birthrate": 20.9,
+    "mortality": 4.7,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 90,
+    "data_year": 2020,
+    "birthrate": 32.7,
+    "mortality": 4.3,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 96,
+    "data_year": 2020,
+    "birthrate": 15,
+    "mortality": 4.4,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 100,
+    "data_year": 2020,
+    "birthrate": 9,
+    "mortality": 15.4,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 104,
+    "data_year": 2020,
+    "birthrate": 17.7,
+    "mortality": 8.2,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 108,
+    "data_year": 2020,
+    "birthrate": 39.3,
+    "mortality": 8,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 112,
+    "data_year": 2020,
+    "birthrate": 11.8,
+    "mortality": 12.6,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 116,
+    "data_year": 2020,
+    "birthrate": 22.7,
+    "mortality": 6,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 120,
+    "data_year": 2020,
+    "birthrate": 35.6,
+    "mortality": 9.4,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 124,
+    "data_year": 2020,
+    "birthrate": 10.5,
+    "mortality": 7.7,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 132,
+    "data_year": 2020,
+    "birthrate": 19.7,
+    "mortality": 5.6,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 144,
+    "data_year": 2020,
+    "birthrate": 16,
+    "mortality": 6.6,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 148,
+    "data_year": 2020,
+    "birthrate": 42.4,
+    "mortality": 12.2,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 152,
+    "data_year": 2020,
+    "birthrate": 12.5,
+    "mortality": 6.1,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 156,
+    "data_year": 2020,
+    "birthrate": 11.9,
+    "mortality": 7.1,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 170,
+    "data_year": 2020,
+    "birthrate": 15,
+    "mortality": 5.5,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 174,
+    "data_year": 2020,
+    "birthrate": 32.1,
+    "mortality": 7.3,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 178,
+    "data_year": 2020,
+    "birthrate": 33.1,
+    "mortality": 6.8,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 180,
+    "data_year": 2020,
+    "birthrate": 41.4,
+    "mortality": 9.6,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 188,
+    "data_year": 2020,
+    "birthrate": 14.1,
+    "mortality": 5,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 191,
+    "data_year": 2020,
+    "birthrate": 8.9,
+    "mortality": 13.1,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 192,
+    "data_year": 2020,
+    "birthrate": 10.2,
+    "mortality": 8.9,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 196,
+    "data_year": 2020,
+    "birthrate": 10.6,
+    "mortality": 7,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 203,
+    "data_year": 2020,
+    "birthrate": 10.5,
+    "mortality": 10.5,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 204,
+    "data_year": 2020,
+    "birthrate": 36.4,
+    "mortality": 9,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 208,
+    "data_year": 2020,
+    "birthrate": 10.7,
+    "mortality": 9.7,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 214,
+    "data_year": 2020,
+    "birthrate": 19.7,
+    "mortality": 6.1,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 218,
+    "data_year": 2020,
+    "birthrate": 19.9,
+    "mortality": 5.1,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 222,
+    "data_year": 2020,
+    "birthrate": 18.4,
+    "mortality": 7,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 226,
+    "data_year": 2020,
+    "birthrate": 33.5,
+    "mortality": 9.4,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 231,
+    "data_year": 2020,
+    "birthrate": 32.6,
+    "mortality": 6.7,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 232,
+    "data_year": 2020,
+    "birthrate": 30.6,
+    "mortality": 7.2,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 233,
+    "data_year": 2020,
+    "birthrate": 10.4,
+    "mortality": 11.6,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 242,
+    "data_year": 2020,
+    "birthrate": 21.5,
+    "mortality": 8.1,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 246,
+    "data_year": 2020,
+    "birthrate": 9.4,
+    "mortality": 9.7,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 250,
+    "data_year": 2020,
+    "birthrate": 11.2,
+    "mortality": 9.3,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 262,
+    "data_year": 2020,
+    "birthrate": 21.7,
+    "mortality": 7.1,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 266,
+    "data_year": 2020,
+    "birthrate": 32,
+    "mortality": 6.9,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 268,
+    "data_year": 2020,
+    "birthrate": 13.6,
+    "mortality": 12.8,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 270,
+    "data_year": 2020,
+    "birthrate": 38.8,
+    "mortality": 8,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 276,
+    "data_year": 2020,
+    "birthrate": 9.4,
+    "mortality": 11.2,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 288,
+    "data_year": 2020,
+    "birthrate": 29.6,
+    "mortality": 7.3,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 296,
+    "data_year": 2020,
+    "birthrate": 28.1,
+    "mortality": 6.3,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 300,
+    "data_year": 2020,
+    "birthrate": 7.8,
+    "mortality": 10.8,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 308,
+    "data_year": 2020,
+    "birthrate": 16.6,
+    "mortality": 9.5,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 320,
+    "data_year": 2020,
+    "birthrate": 24.8,
+    "mortality": 4.8,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 324,
+    "data_year": 2020,
+    "birthrate": 36.6,
+    "mortality": 8.5,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 328,
+    "data_year": 2020,
+    "birthrate": 20.1,
+    "mortality": 7.4,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 332,
+    "data_year": 2020,
+    "birthrate": 24.5,
+    "mortality": 8.6,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 340,
+    "data_year": 2020,
+    "birthrate": 21.8,
+    "mortality": 4.4,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 348,
+    "data_year": 2020,
+    "birthrate": 9.5,
+    "mortality": 12.5,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 356,
+    "data_year": 2020,
+    "birthrate": 18,
+    "mortality": 7.2,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 360,
+    "data_year": 2020,
+    "birthrate": 18.2,
+    "mortality": 6.4,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 364,
+    "data_year": 2020,
+    "birthrate": 19.1,
+    "mortality": 4.9,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 368,
+    "data_year": 2020,
+    "birthrate": 29.1,
+    "mortality": 4.8,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 372,
+    "data_year": 2020,
+    "birthrate": 13,
+    "mortality": 6,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 376,
+    "data_year": 2020,
+    "birthrate": 20.4,
+    "mortality": 5.3,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 380,
+    "data_year": 2020,
+    "birthrate": 7.6,
+    "mortality": 10.5,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 384,
+    "data_year": 2020,
+    "birthrate": 35.9,
+    "mortality": 10.2,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 388,
+    "data_year": 2020,
+    "birthrate": 16.2,
+    "mortality": 7.6,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 392,
+    "data_year": 2020,
+    "birthrate": 7.5,
+    "mortality": 10.4,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 398,
+    "data_year": 2020,
+    "birthrate": 21.4,
+    "mortality": 7.1,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 400,
+    "data_year": 2020,
+    "birthrate": 22,
+    "mortality": 3.9,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 404,
+    "data_year": 2020,
+    "birthrate": 28.9,
+    "mortality": 5.5,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 408,
+    "data_year": 2020,
+    "birthrate": 13.9,
+    "mortality": 9.1,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 410,
+    "data_year": 2020,
+    "birthrate": 7.4,
+    "mortality": 5.9,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 414,
+    "data_year": 2020,
+    "birthrate": 14.4,
+    "mortality": 2.7,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 417,
+    "data_year": 2020,
+    "birthrate": 24.8,
+    "mortality": 6.1,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 418,
+    "data_year": 2020,
+    "birthrate": 23.8,
+    "mortality": 6.5,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 422,
+    "data_year": 2020,
+    "birthrate": 17.6,
+    "mortality": 4.3,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 426,
+    "data_year": 2020,
+    "birthrate": 27,
+    "mortality": 14.3,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 428,
+    "data_year": 2020,
+    "birthrate": 10.8,
+    "mortality": 14.6,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 430,
+    "data_year": 2020,
+    "birthrate": 33.2,
+    "mortality": 7.6,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 434,
+    "data_year": 2020,
+    "birthrate": 19,
+    "mortality": 5.1,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 440,
+    "data_year": 2020,
+    "birthrate": 10.3,
+    "mortality": 13.6,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 442,
+    "data_year": 2020,
+    "birthrate": 10.7,
+    "mortality": 7.1,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 450,
+    "data_year": 2020,
+    "birthrate": 32.8,
+    "mortality": 6.1,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 454,
+    "data_year": 2020,
+    "birthrate": 34.3,
+    "mortality": 6.8,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 458,
+    "data_year": 2020,
+    "birthrate": 16.8,
+    "mortality": 5.1,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 462,
+    "data_year": 2020,
+    "birthrate": 14.4,
+    "mortality": 2.8,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 466,
+    "data_year": 2020,
+    "birthrate": 41.8,
+    "mortality": 9.8,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 470,
+    "data_year": 2020,
+    "birthrate": 9.8,
+    "mortality": 8.2,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 478,
+    "data_year": 2020,
+    "birthrate": 33.9,
+    "mortality": 7.3,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 480,
+    "data_year": 2020,
+    "birthrate": 10.2,
+    "mortality": 8.3,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 484,
+    "data_year": 2020,
+    "birthrate": 17.7,
+    "mortality": 6,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 496,
+    "data_year": 2020,
+    "birthrate": 24.4,
+    "mortality": 6.3,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 498,
+    "data_year": 2020,
+    "birthrate": 10.2,
+    "mortality": 11.6,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 499,
+    "data_year": 2020,
+    "birthrate": 11.8,
+    "mortality": 10.7,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 504,
+    "data_year": 2020,
+    "birthrate": 19.1,
+    "mortality": 5.1,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 508,
+    "data_year": 2020,
+    "birthrate": 37.7,
+    "mortality": 8.6,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 512,
+    "data_year": 2020,
+    "birthrate": 19.6,
+    "mortality": 2.4,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 516,
+    "data_year": 2020,
+    "birthrate": 28.8,
+    "mortality": 8.2,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 524,
+    "data_year": 2020,
+    "birthrate": 20,
+    "mortality": 6.4,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 528,
+    "data_year": 2020,
+    "birthrate": 10.1,
+    "mortality": 8.7,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 548,
+    "data_year": 2020,
+    "birthrate": 29.8,
+    "mortality": 5.3,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 554,
+    "data_year": 2020,
+    "birthrate": 12.6,
+    "mortality": 7,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 558,
+    "data_year": 2020,
+    "birthrate": 20.9,
+    "mortality": 5.1,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 562,
+    "data_year": 2020,
+    "birthrate": 46.3,
+    "mortality": 8.4,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 566,
+    "data_year": 2020,
+    "birthrate": 38.1,
+    "mortality": 12,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 578,
+    "data_year": 2020,
+    "birthrate": 11.1,
+    "mortality": 8,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 583,
+    "data_year": 2020,
+    "birthrate": 22.9,
+    "mortality": 6.6,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 586,
+    "data_year": 2020,
+    "birthrate": 28.5,
+    "mortality": 7,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 591,
+    "data_year": 2020,
+    "birthrate": 19.1,
+    "mortality": 5.1,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 598,
+    "data_year": 2020,
+    "birthrate": 27.2,
+    "mortality": 7.5,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 600,
+    "data_year": 2020,
+    "birthrate": 20.7,
+    "mortality": 5.5,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 604,
+    "data_year": 2020,
+    "birthrate": 18.1,
+    "mortality": 5.5,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 608,
+    "data_year": 2020,
+    "birthrate": 20.6,
+    "mortality": 5.8,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 616,
+    "data_year": 2020,
+    "birthrate": 9.9,
+    "mortality": 10.1,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 620,
+    "data_year": 2020,
+    "birthrate": 7.8,
+    "mortality": 10.6,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 624,
+    "data_year": 2020,
+    "birthrate": 35.4,
+    "mortality": 9.7,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 626,
+    "data_year": 2020,
+    "birthrate": 29.7,
+    "mortality": 6,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 634,
+    "data_year": 2020,
+    "birthrate": 9.7,
+    "mortality": 1.2,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 642,
+    "data_year": 2020,
+    "birthrate": 9.8,
+    "mortality": 13,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 643,
+    "data_year": 2020,
+    "birthrate": 12.8,
+    "mortality": 12.7,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 646,
+    "data_year": 2020,
+    "birthrate": 32.1,
+    "mortality": 5.3,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 662,
+    "data_year": 2020,
+    "birthrate": 12.1,
+    "mortality": 7.1,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 678,
+    "data_year": 2020,
+    "birthrate": 31.8,
+    "mortality": 4.9,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 682,
+    "data_year": 2020,
+    "birthrate": 18,
+    "mortality": 3.5,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 686,
+    "data_year": 2020,
+    "birthrate": 34.7,
+    "mortality": 5.8,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 688,
+    "data_year": 2020,
+    "birthrate": 9.6,
+    "mortality": 13.2,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 690,
+    "data_year": 2020,
+    "birthrate": 16.8,
+    "mortality": 7.8,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 694,
+    "data_year": 2020,
+    "birthrate": 33.7,
+    "mortality": 11.9,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 702,
+    "data_year": 2020,
+    "birthrate": 8.8,
+    "mortality": 4.4,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 703,
+    "data_year": 2020,
+    "birthrate": 10.5,
+    "mortality": 9.9,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 704,
+    "data_year": 2020,
+    "birthrate": 16.9,
+    "mortality": 6.3,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 705,
+    "data_year": 2020,
+    "birthrate": 9.7,
+    "mortality": 9.9,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 706,
+    "data_year": 2020,
+    "birthrate": 41.9,
+    "mortality": 10.9,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 710,
+    "data_year": 2020,
+    "birthrate": 20.7,
+    "mortality": 9.5,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 716,
+    "data_year": 2020,
+    "birthrate": 30.8,
+    "mortality": 8.1,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 724,
+    "data_year": 2020,
+    "birthrate": 8.5,
+    "mortality": 9,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 728,
+    "data_year": 2020,
+    "birthrate": 35.2,
+    "mortality": 10.6,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 729,
+    "data_year": 2020,
+    "birthrate": 32.4,
+    "mortality": 7.2,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 740,
+    "data_year": 2020,
+    "birthrate": 18.7,
+    "mortality": 7.3,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 748,
+    "data_year": 2020,
+    "birthrate": 26.7,
+    "mortality": 9.4,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 752,
+    "data_year": 2020,
+    "birthrate": 11.9,
+    "mortality": 9.2,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 756,
+    "data_year": 2020,
+    "birthrate": 10.3,
+    "mortality": 8,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 760,
+    "data_year": 2020,
+    "birthrate": 24,
+    "mortality": 5.5,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 762,
+    "data_year": 2020,
+    "birthrate": 31.2,
+    "mortality": 4.9,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 764,
+    "data_year": 2020,
+    "birthrate": 10.5,
+    "mortality": 7.6,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 768,
+    "data_year": 2020,
+    "birthrate": 33.3,
+    "mortality": 8.6,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 776,
+    "data_year": 2020,
+    "birthrate": 24.5,
+    "mortality": 7.2,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 784,
+    "data_year": 2020,
+    "birthrate": 10.4,
+    "mortality": 1.5,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 788,
+    "data_year": 2020,
+    "birthrate": 17.7,
+    "mortality": 6.3,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 792,
+    "data_year": 2020,
+    "birthrate": 16.2,
+    "mortality": 5.4,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 795,
+    "data_year": 2020,
+    "birthrate": 24,
+    "mortality": 7.1,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 800,
+    "data_year": 2020,
+    "birthrate": 38.4,
+    "mortality": 6.7,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 804,
+    "data_year": 2020,
+    "birthrate": 9.6,
+    "mortality": 15.2,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 807,
+    "data_year": 2020,
+    "birthrate": 10.9,
+    "mortality": 10,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 818,
+    "data_year": 2020,
+    "birthrate": 26.5,
+    "mortality": 5.8,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 826,
+    "data_year": 2020,
+    "birthrate": 11.5,
+    "mortality": 9.4,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 834,
+    "data_year": 2020,
+    "birthrate": 36.9,
+    "mortality": 6.5,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 840,
+    "data_year": 2020,
+    "birthrate": 12,
+    "mortality": 8.7,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 854,
+    "data_year": 2020,
+    "birthrate": 38.2,
+    "mortality": 8.3,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 858,
+    "data_year": 2020,
+    "birthrate": 13.9,
+    "mortality": 9.5,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 860,
+    "data_year": 2020,
+    "birthrate": 21.8,
+    "mortality": 5.8,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 862,
+    "data_year": 2020,
+    "birthrate": 18,
+    "mortality": 7,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 882,
+    "data_year": 2020,
+    "birthrate": 24.5,
+    "mortality": 5.2,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 887,
+    "data_year": 2020,
+    "birthrate": 30.7,
+    "mortality": 6,
+    "total_fertility_rate": null
+  },
+  {
+    "nation_cd": 894,
+    "data_year": 2020,
+    "birthrate": 36.3,
+    "mortality": 6.6,
+    "total_fertility_rate": null
+  }
+]

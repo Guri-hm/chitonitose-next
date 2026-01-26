@@ -38,4 +38,4 @@ next-env.d.ts
 # sqlite
 *.db
 *.sqlite
-*.sqlite3
+# *.sqlite3

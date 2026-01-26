@@ -1,0 +1,602 @@
+[
+  {
+    "statistics_id": 1000,
+    "nation_cd": 50,
+    "data_year": 2020,
+    "value": 54906
+  },
+  {
+    "statistics_id": 1000,
+    "nation_cd": 156,
+    "data_year": 2020,
+    "value": 211860
+  },
+  {
+    "statistics_id": 1000,
+    "nation_cd": 356,
+    "data_year": 2020,
+    "value": 178305
+  },
+  {
+    "statistics_id": 1000,
+    "nation_cd": 360,
+    "data_year": 2020,
+    "value": 54649
+  },
+  {
+    "statistics_id": 1000,
+    "nation_cd": 704,
+    "data_year": 2020,
+    "value": 42759
+  },
+  {
+    "statistics_id": 1000,
+    "nation_cd": 764,
+    "data_year": 2020,
+    "value": 30231
+  },
+  {
+    "statistics_id": 1000,
+    "nation_cd": 999,
+    "data_year": 2020,
+    "value": 756744
+  },
+  {
+    "statistics_id": 1001,
+    "nation_cd": 156,
+    "data_year": 2020,
+    "value": 2271
+  },
+  {
+    "statistics_id": 1001,
+    "nation_cd": 356,
+    "data_year": 2020,
+    "value": 14463
+  },
+  {
+    "statistics_id": 1001,
+    "nation_cd": 586,
+    "data_year": 2020,
+    "value": 3944
+  },
+  {
+    "statistics_id": 1001,
+    "nation_cd": 704,
+    "data_year": 2020,
+    "value": 5686
+  },
+  {
+    "statistics_id": 1001,
+    "nation_cd": 764,
+    "data_year": 2020,
+    "value": 5665
+  },
+  {
+    "statistics_id": 1001,
+    "nation_cd": 840,
+    "data_year": 2020,
+    "value": 2792
+  },
+  {
+    "statistics_id": 1001,
+    "nation_cd": 999,
+    "data_year": 2020,
+    "value": 45595
+  },
+  {
+    "statistics_id": 1003,
+    "nation_cd": 124,
+    "data_year": 2020,
+    "value": 35183
+  },
+  {
+    "statistics_id": 1003,
+    "nation_cd": 156,
+    "data_year": 2020,
+    "value": 134250
+  },
+  {
+    "statistics_id": 1003,
+    "nation_cd": 250,
+    "data_year": 2020,
+    "value": 30144
+  },
+  {
+    "statistics_id": 1003,
+    "nation_cd": 356,
+    "data_year": 2020,
+    "value": 107590
+  },
+  {
+    "statistics_id": 1003,
+    "nation_cd": 586,
+    "data_year": 2020,
+    "value": 25248
+  },
+  {
+    "statistics_id": 1003,
+    "nation_cd": 643,
+    "data_year": 2020,
+    "value": 85896
+  },
+  {
+    "statistics_id": 1003,
+    "nation_cd": 840,
+    "data_year": 2020,
+    "value": 49691
+  },
+  {
+    "statistics_id": 1003,
+    "nation_cd": 999,
+    "data_year": 2020,
+    "value": 760926
+  },
+  {
+    "statistics_id": 1004,
+    "nation_cd": 32,
+    "data_year": 2020,
+    "value": 10197
+  },
+  {
+    "statistics_id": 1004,
+    "nation_cd": 36,
+    "data_year": 2020,
+    "value": 10400
+  },
+  {
+    "statistics_id": 1004,
+    "nation_cd": 124,
+    "data_year": 2020,
+    "value": 26111
+  },
+  {
+    "statistics_id": 1004,
+    "nation_cd": 250,
+    "data_year": 2020,
+    "value": 19793
+  },
+  {
+    "statistics_id": 1004,
+    "nation_cd": 643,
+    "data_year": 2020,
+    "value": 37267
+  },
+  {
+    "statistics_id": 1004,
+    "nation_cd": 804,
+    "data_year": 2020,
+    "value": 18056
+  },
+  {
+    "statistics_id": 1004,
+    "nation_cd": 840,
+    "data_year": 2020,
+    "value": 26132
+  },
+  {
+    "statistics_id": 1004,
+    "nation_cd": 999,
+    "data_year": 2020,
+    "value": 198527
+  },
+  {
+    "statistics_id": 1006,
+    "nation_cd": 32,
+    "data_year": 2020,
+    "value": 58396
+  },
+  {
+    "statistics_id": 1006,
+    "nation_cd": 76,
+    "data_year": 2020,
+    "value": 103964
+  },
+  {
+    "statistics_id": 1006,
+    "nation_cd": 156,
+    "data_year": 2020,
+    "value": 260670
+  },
+  {
+    "statistics_id": 1006,
+    "nation_cd": 356,
+    "data_year": 2020,
+    "value": 30160
+  },
+  {
+    "statistics_id": 1006,
+    "nation_cd": 804,
+    "data_year": 2020,
+    "value": 30290
+  },
+  {
+    "statistics_id": 1006,
+    "nation_cd": 840,
+    "data_year": 2020,
+    "value": 360252
+  },
+  {
+    "statistics_id": 1006,
+    "nation_cd": 999,
+    "data_year": 2020,
+    "value": 1162350
+  },
+  {
+    "statistics_id": 1007,
+    "nation_cd": 32,
+    "data_year": 2020,
+    "value": 36882
+  },
+  {
+    "statistics_id": 1007,
+    "nation_cd": 76,
+    "data_year": 2020,
+    "value": 34432
+  },
+  {
+    "statistics_id": 1007,
+    "nation_cd": 250,
+    "data_year": 2020,
+    "value": 4559
+  },
+  {
+    "statistics_id": 1007,
+    "nation_cd": 642,
+    "data_year": 2020,
+    "value": 5651
+  },
+  {
+    "statistics_id": 1007,
+    "nation_cd": 804,
+    "data_year": 2020,
+    "value": 27952
+  },
+  {
+    "statistics_id": 1007,
+    "nation_cd": 840,
+    "data_year": 2020,
+    "value": 51839
+  },
+  {
+    "statistics_id": 1007,
+    "nation_cd": 999,
+    "data_year": 2020,
+    "value": 192891
+  },
+  {
+    "statistics_id": 1009,
+    "nation_cd": 76,
+    "data_year": 2020,
+    "value": 3700
+  },
+  {
+    "statistics_id": 1009,
+    "nation_cd": 170,
+    "data_year": 2020,
+    "value": 833
+  },
+  {
+    "statistics_id": 1009,
+    "nation_cd": 231,
+    "data_year": 2020,
+    "value": 585
+  },
+  {
+    "statistics_id": 1009,
+    "nation_cd": 360,
+    "data_year": 2020,
+    "value": 773
+  },
+  {
+    "statistics_id": 1009,
+    "nation_cd": 604,
+    "data_year": 2020,
+    "value": 377
+  },
+  {
+    "statistics_id": 1009,
+    "nation_cd": 704,
+    "data_year": 2020,
+    "value": 1763
+  },
+  {
+    "statistics_id": 1009,
+    "nation_cd": 999,
+    "data_year": 2020,
+    "value": 10688
+  },
+  {
+    "statistics_id": 1011,
+    "nation_cd": 120,
+    "data_year": 2020,
+    "value": 290
+  },
+  {
+    "statistics_id": 1011,
+    "nation_cd": 218,
+    "data_year": 2020,
+    "value": 328
+  },
+  {
+    "statistics_id": 1011,
+    "nation_cd": 288,
+    "data_year": 2020,
+    "value": 800
+  },
+  {
+    "statistics_id": 1011,
+    "nation_cd": 360,
+    "data_year": 2020,
+    "value": 739
+  },
+  {
+    "statistics_id": 1011,
+    "nation_cd": 384,
+    "data_year": 2020,
+    "value": 2200
+  },
+  {
+    "statistics_id": 1011,
+    "nation_cd": 566,
+    "data_year": 2020,
+    "value": 340
+  },
+  {
+    "statistics_id": 1011,
+    "nation_cd": 999,
+    "data_year": 2020,
+    "value": 10688
+  },
+  {
+    "statistics_id": 1013,
+    "nation_cd": 32,
+    "data_year": 2020,
+    "value": 335
+  },
+  {
+    "statistics_id": 1013,
+    "nation_cd": 144,
+    "data_year": 2020,
+    "value": 278
+  },
+  {
+    "statistics_id": 1013,
+    "nation_cd": 156,
+    "data_year": 2020,
+    "value": 2970
+  },
+  {
+    "statistics_id": 1013,
+    "nation_cd": 356,
+    "data_year": 2020,
+    "value": 1425
+  },
+  {
+    "statistics_id": 1013,
+    "nation_cd": 404,
+    "data_year": 2020,
+    "value": 570
+  },
+  {
+    "statistics_id": 1013,
+    "nation_cd": 792,
+    "data_year": 2020,
+    "value": 255
+  },
+  {
+    "statistics_id": 1013,
+    "nation_cd": 999,
+    "data_year": 2020,
+    "value": 10688
+  },
+  {
+    "statistics_id": 1017,
+    "nation_cd": 76,
+    "data_year": 2020,
+    "value": 6637
+  },
+  {
+    "statistics_id": 1017,
+    "nation_cd": 156,
+    "data_year": 2020,
+    "value": 11513
+  },
+  {
+    "statistics_id": 1017,
+    "nation_cd": 218,
+    "data_year": 2020,
+    "value": 6023
+  },
+  {
+    "statistics_id": 1017,
+    "nation_cd": 356,
+    "data_year": 2020,
+    "value": 31504
+  },
+  {
+    "statistics_id": 1017,
+    "nation_cd": 360,
+    "data_year": 2020,
+    "value": 8183
+  },
+  {
+    "statistics_id": 1017,
+    "nation_cd": 608,
+    "data_year": 2020,
+    "value": 5955
+  },
+  {
+    "statistics_id": 1017,
+    "nation_cd": 999,
+    "data_year": 2020,
+    "value": 119834
+  },
+  {
+    "statistics_id": 1018,
+    "nation_cd": 76,
+    "data_year": 2019,
+    "value": 2688
+  },
+  {
+    "statistics_id": 1018,
+    "nation_cd": 156,
+    "data_year": 2019,
+    "value": 4892
+  },
+  {
+    "statistics_id": 1018,
+    "nation_cd": 356,
+    "data_year": 2019,
+    "value": 6033
+  },
+  {
+    "statistics_id": 1018,
+    "nation_cd": 586,
+    "data_year": 2019,
+    "value": 1556
+  },
+  {
+    "statistics_id": 1018,
+    "nation_cd": 792,
+    "data_year": 2019,
+    "value": 814
+  },
+  {
+    "statistics_id": 1018,
+    "nation_cd": 840,
+    "data_year": 2019,
+    "value": 4335
+  },
+  {
+    "statistics_id": 1018,
+    "nation_cd": 860,
+    "data_year": 2019,
+    "value": 769
+  },
+  {
+    "statistics_id": 1018,
+    "nation_cd": 999,
+    "data_year": 2019,
+    "value": 25515
+  },
+  {
+    "statistics_id": 1019,
+    "nation_cd": 32,
+    "data_year": 2020,
+    "value": 48797
+  },
+  {
+    "statistics_id": 1019,
+    "nation_cd": 76,
+    "data_year": 2020,
+    "value": 121798
+  },
+  {
+    "statistics_id": 1019,
+    "nation_cd": 156,
+    "data_year": 2020,
+    "value": 19600
+  },
+  {
+    "statistics_id": 1019,
+    "nation_cd": 356,
+    "data_year": 2020,
+    "value": 11226
+  },
+  {
+    "statistics_id": 1019,
+    "nation_cd": 600,
+    "data_year": 2020,
+    "value": 11024
+  },
+  {
+    "statistics_id": 1019,
+    "nation_cd": 840,
+    "data_year": 2020,
+    "value": 112549
+  },
+  {
+    "statistics_id": 1019,
+    "nation_cd": 999,
+    "data_year": 2020,
+    "value": 353464
+  },
+  {
+    "statistics_id": 1030,
+    "nation_cd": 76,
+    "data_year": 2020,
+    "value": 218150
+  },
+  {
+    "statistics_id": 1030,
+    "nation_cd": 156,
+    "data_year": 2020,
+    "value": 60976
+  },
+  {
+    "statistics_id": 1030,
+    "nation_cd": 231,
+    "data_year": 2020,
+    "value": 70292
+  },
+  {
+    "statistics_id": 1030,
+    "nation_cd": 356,
+    "data_year": 2020,
+    "value": 194482
+  },
+  {
+    "statistics_id": 1030,
+    "nation_cd": 840,
+    "data_year": 2020,
+    "value": 93793
+  },
+  {
+    "statistics_id": 1030,
+    "nation_cd": 999,
+    "data_year": 2020,
+    "value": 1525940
+  },
+  {
+    "statistics_id": 1033,
+    "nation_cd": 76,
+    "data_year": 2020,
+    "value": 41124
+  },
+  {
+    "statistics_id": 1033,
+    "nation_cd": 156,
+    "data_year": 2020,
+    "value": 406500
+  },
+  {
+    "statistics_id": 1033,
+    "nation_cd": 276,
+    "data_year": 2020,
+    "value": 26070
+  },
+  {
+    "statistics_id": 1033,
+    "nation_cd": 724,
+    "data_year": 2020,
+    "value": 32796
+  },
+  {
+    "statistics_id": 1033,
+    "nation_cd": 840,
+    "data_year": 2020,
+    "value": 77312
+  },
+  {
+    "statistics_id": 1033,
+    "nation_cd": 999,
+    "data_year": 2020,
+    "value": 952632
+  },
+  {
+    "statistics_id": 1036,
+    "nation_cd": 76,
+    "data_year": 2020,
+    "value": 1479
+  }
+]

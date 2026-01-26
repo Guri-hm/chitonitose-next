@@ -37,29 +37,68 @@
 
 ---
 
-## フェーズ2: データベース移行（次のステップ）
+## フェーズ2: データベース移行 ✅ 完了 (2026/01/26)
+
+### 完了したタスク
+
+1. **MySQL → SQLite 変換** ✅
+   - ✅ mysql3107_db_sakura_ne_jp.sql を SQLite形式に変換
+   - ✅ mysql3107_db_sakura_ne_jp.json から直接インポート
+   - ✅ data.sqlite3 ファイルにデータ格納
+   - ✅ 60テーブル、20,962行のデータをインポート成功
+
+**インポートされたテーブル詳細:**
+- `nation_info` (251件) - 国情報
+- `city` (315件) - 都市情報  
+- `page` (409件) - ページ情報
+- `statistics_data` (2,941件) - 統計データ
+- `statistics_changes_data` (6,153件) - 統計変動データ
+- `one_q_one_a` (2,444件) - 問題データ
+- その他54テーブル
+
+2. **JSON データ生成** ✅
+   - ✅ ニュースデータ抽出 (35件)
+   - ✅ グラフ用データ抽出 (10ファイル)
+   - ✅ 統計データ抽出 (2ファイル)
+   - ✅ 貿易データ抽出 (3ファイル)
+   - ✅ 20個のJSONファイル生成成功
+
+**生成されたJSONファイル:**
+- 基本データ: news.json, pages.json, nations.json, cities.json, climate-classifications.json
+- グラフデータ: aging-society.json, birthrate-mortality.json, gdp-gni.json, urban-population.json等
+- 統計データ: statistics-info.json, statistics-data-sample.json
+- 貿易データ: export-items.json, import-items.json, trade-balance.json
+
+**実行コマンド:**
+```bash
+npm run db:import      # JSON→SQLite変換
+npm run data:convert   # SQLite→JSON変換
+```
+
+---
+
+## フェーズ3: 共通コンポーネント強化（次のステップ）
 
 ### 計画中のタスク
 
-1. **MySQL → SQLite変換**
-   - [ ] mysql3107_db_sakura_ne_jp.sql を SQLite形式に変換
-   - [ ] database.sqlite ファイル作成
-   - [ ] データ整合性チェック
+### 完了した作業 (2026/01/26)
 
-2. **JSON データ生成**
-   - [ ] ニュースデータ抽出
-   - [ ] グラフ用データ抽出
-   - [ ] 各種統計データ抽出
+1. **グラフ機能の実装** ✅
+   - ✅ GoogleChartコンポーネント作成 (components/charts/GoogleChart.tsx)
+   - ✅ データ読み込みユーティリティ (lib/dataLoader.ts)
+   - ✅ グラフサンプルページ (/charts)
+   - ✅ 高齢化社会、出生率・死亡率グラフの表示確認
 
-### 実行手順
+2. **ナビゲーション改善** ✅
+   - ✅ ヘッダーにグラフページリンク追加
+   - ✅ トップページにデータ統計表示
+   - ✅ ニュース表示機能（データ駆動型）
 
-```bash
-# 1. MySQL→SQLite変換
-npm run db:convert
+3. **テストページ** ✅
+   - ✅ データテストページ (/data-test)
+   - ✅ 全JSONファイルの確認
 
-# 2. SQLite→JSON変換
-npm run data:convert
-```
+### 次のタスク
 
 ---
 

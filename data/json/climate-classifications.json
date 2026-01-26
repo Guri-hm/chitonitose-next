@@ -1,0 +1,77 @@
+[
+  {
+    "cd": 10,
+    "name_alphabet": "Af",
+    "name_jp": "熱帯雨林気候"
+  },
+  {
+    "cd": 11,
+    "name_alphabet": "Am",
+    "name_jp": "熱帯モンスーン気候"
+  },
+  {
+    "cd": 12,
+    "name_alphabet": "Aw",
+    "name_jp": "サバナ気候"
+  },
+  {
+    "cd": 20,
+    "name_alphabet": "BS",
+    "name_jp": "ステップ気候"
+  },
+  {
+    "cd": 21,
+    "name_alphabet": "BW",
+    "name_jp": "砂漠気候"
+  },
+  {
+    "cd": 30,
+    "name_alphabet": "Cs",
+    "name_jp": "地中海性気候"
+  },
+  {
+    "cd": 31,
+    "name_alphabet": "Cw",
+    "name_jp": "温暖冬季少雨気候"
+  },
+  {
+    "cd": 32,
+    "name_alphabet": "Cfa",
+    "name_jp": "温暖湿潤気候"
+  },
+  {
+    "cd": 33,
+    "name_alphabet": "Cfb",
+    "name_jp": "西岸海洋性気候"
+  },
+  {
+    "cd": 34,
+    "name_alphabet": "Cfc",
+    "name_jp": "西岸海洋性気候"
+  },
+  {
+    "cd": 40,
+    "name_alphabet": "Dw",
+    "name_jp": "亜寒帯冬季少雨気候"
+  },
+  {
+    "cd": 41,
+    "name_alphabet": "Df",
+    "name_jp": "亜寒帯湿潤気候"
+  },
+  {
+    "cd": 50,
+    "name_alphabet": "ET",
+    "name_jp": "ツンドラ気候"
+  },
+  {
+    "cd": 51,
+    "name_alphabet": "EF",
+    "name_jp": "氷雪気候"
+  },
+  {
+    "cd": 60,
+    "name_alphabet": "H",
+    "name_jp": "高山気候"
+  }
+]

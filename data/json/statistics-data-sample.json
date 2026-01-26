@@ -1,0 +1,602 @@
+[
+  {
+    "statistics_id": 0,
+    "data_year": 2019,
+    "nation_name": "世界",
+    "data_val": 165444
+  },
+  {
+    "statistics_id": 4,
+    "data_year": 2020,
+    "nation_name": "アメリカ",
+    "data_val": 3.9
+  },
+  {
+    "statistics_id": 4,
+    "data_year": 2020,
+    "nation_name": "インド",
+    "data_val": 5.3
+  },
+  {
+    "statistics_id": 4,
+    "data_year": 2020,
+    "nation_name": "ロシア",
+    "data_val": 3.8
+  },
+  {
+    "statistics_id": 4,
+    "data_year": 2020,
+    "nation_name": "中国",
+    "data_val": 56.6
+  },
+  {
+    "statistics_id": 4,
+    "data_year": 2020,
+    "nation_name": "日本",
+    "data_val": 4.4
+  },
+  {
+    "statistics_id": 4,
+    "data_year": 2020,
+    "nation_name": "韓国",
+    "data_val": 3.6
+  },
+  {
+    "statistics_id": 5,
+    "data_year": 2020,
+    "nation_name": "中国",
+    "data_val": 39.9
+  },
+  {
+    "statistics_id": 5,
+    "data_year": 2020,
+    "nation_name": "日本",
+    "data_val": 22.2
+  },
+  {
+    "statistics_id": 5,
+    "data_year": 2020,
+    "nation_name": "韓国",
+    "data_val": 31.3
+  },
+  {
+    "statistics_id": 6,
+    "data_year": 2020,
+    "nation_name": "アメリカ",
+    "data_val": 11.8
+  },
+  {
+    "statistics_id": 6,
+    "data_year": 2020,
+    "nation_name": "インド",
+    "data_val": 4.9
+  },
+  {
+    "statistics_id": 6,
+    "data_year": 2020,
+    "nation_name": "ドイツ",
+    "data_val": 5.4
+  },
+  {
+    "statistics_id": 6,
+    "data_year": 2020,
+    "nation_name": "メキシコ",
+    "data_val": 4.4
+  },
+  {
+    "statistics_id": 6,
+    "data_year": 2020,
+    "nation_name": "中国",
+    "data_val": 27.9
+  },
+  {
+    "statistics_id": 6,
+    "data_year": 2020,
+    "nation_name": "日本",
+    "data_val": 10.5
+  },
+  {
+    "statistics_id": 6,
+    "data_year": 2020,
+    "nation_name": "韓国",
+    "data_val": 4.3
+  },
+  {
+    "statistics_id": 7,
+    "data_year": 2019,
+    "nation_name": "インド",
+    "data_val": 17765
+  },
+  {
+    "statistics_id": 7,
+    "data_year": 2019,
+    "nation_name": "インドネシア",
+    "data_val": 5460
+  },
+  {
+    "statistics_id": 7,
+    "data_year": 2019,
+    "nation_name": "タイ",
+    "data_val": 2836
+  },
+  {
+    "statistics_id": 7,
+    "data_year": 2019,
+    "nation_name": "バングラデシュ",
+    "data_val": 5459
+  },
+  {
+    "statistics_id": 7,
+    "data_year": 2019,
+    "nation_name": "ベトナム",
+    "data_val": 4345
+  },
+  {
+    "statistics_id": 7,
+    "data_year": 2019,
+    "nation_name": "中国",
+    "data_val": 20961
+  },
+  {
+    "statistics_id": 8,
+    "data_year": 2019,
+    "nation_name": "アメリカ",
+    "data_val": 305
+  },
+  {
+    "statistics_id": 8,
+    "data_year": 2019,
+    "nation_name": "インド",
+    "data_val": 973
+  },
+  {
+    "statistics_id": 8,
+    "data_year": 2019,
+    "nation_name": "タイ",
+    "data_val": 685
+  },
+  {
+    "statistics_id": 8,
+    "data_year": 2019,
+    "nation_name": "パキスタン",
+    "data_val": 456
+  },
+  {
+    "statistics_id": 8,
+    "data_year": 2019,
+    "nation_name": "ベトナム",
+    "data_val": 545
+  },
+  {
+    "statistics_id": 8,
+    "data_year": 2019,
+    "nation_name": "中国",
+    "data_val": 272
+  },
+  {
+    "statistics_id": 10,
+    "data_year": 1990,
+    "nation_name": "インド",
+    "data_val": 297
+  },
+  {
+    "statistics_id": 10,
+    "data_year": 1990,
+    "nation_name": "インドネシア",
+    "data_val": 1275
+  },
+  {
+    "statistics_id": 10,
+    "data_year": 1990,
+    "nation_name": "コートジボワール",
+    "data_val": 74
+  },
+  {
+    "statistics_id": 10,
+    "data_year": 1990,
+    "nation_name": "タイ",
+    "data_val": 1418
+  },
+  {
+    "statistics_id": 10,
+    "data_year": 1990,
+    "nation_name": "ベトナム",
+    "data_val": 58
+  },
+  {
+    "statistics_id": 10,
+    "data_year": 1990,
+    "nation_name": "マレーシア",
+    "data_val": 1292
+  },
+  {
+    "statistics_id": 10,
+    "data_year": 1990,
+    "nation_name": "中国",
+    "data_val": 264
+  },
+  {
+    "statistics_id": 10,
+    "data_year": 2019,
+    "nation_name": "インド",
+    "data_val": 1001
+  },
+  {
+    "statistics_id": 10,
+    "data_year": 2019,
+    "nation_name": "インドネシア",
+    "data_val": 3449
+  },
+  {
+    "statistics_id": 10,
+    "data_year": 2019,
+    "nation_name": "コートジボワール",
+    "data_val": 665
+  },
+  {
+    "statistics_id": 10,
+    "data_year": 2019,
+    "nation_name": "タイ",
+    "data_val": 4840
+  },
+  {
+    "statistics_id": 10,
+    "data_year": 2019,
+    "nation_name": "ベトナム",
+    "data_val": 1185
+  },
+  {
+    "statistics_id": 10,
+    "data_year": 2019,
+    "nation_name": "マレーシア",
+    "data_val": 640
+  },
+  {
+    "statistics_id": 10,
+    "data_year": 2019,
+    "nation_name": "中国",
+    "data_val": 840
+  },
+  {
+    "statistics_id": 11,
+    "data_year": 2019,
+    "nation_name": "インドネシア",
+    "data_val": 2580
+  },
+  {
+    "statistics_id": 11,
+    "data_year": 2019,
+    "nation_name": "カンボジア",
+    "data_val": 164
+  },
+  {
+    "statistics_id": 11,
+    "data_year": 2019,
+    "nation_name": "コートジボワール",
+    "data_val": 876
+  },
+  {
+    "statistics_id": 11,
+    "data_year": 2019,
+    "nation_name": "タイ",
+    "data_val": 3117
+  },
+  {
+    "statistics_id": 11,
+    "data_year": 2019,
+    "nation_name": "ベトナム",
+    "data_val": 750
+  },
+  {
+    "statistics_id": 11,
+    "data_year": 2019,
+    "nation_name": "マレーシア",
+    "data_val": 631
+  },
+  {
+    "statistics_id": 11,
+    "data_year": 2019,
+    "nation_name": "ラオス",
+    "data_val": 224
+  },
+  {
+    "statistics_id": 13,
+    "data_year": 2019,
+    "nation_name": "インドネシア",
+    "data_val": 40542
+  },
+  {
+    "statistics_id": 13,
+    "data_year": 2019,
+    "nation_name": "タイ",
+    "data_val": 13100
+  },
+  {
+    "statistics_id": 13,
+    "data_year": 2019,
+    "nation_name": "パキスタン",
+    "data_val": 6688
+  },
+  {
+    "statistics_id": 13,
+    "data_year": 2019,
+    "nation_name": "ブラジル",
+    "data_val": 75290
+  },
+  {
+    "statistics_id": 13,
+    "data_year": 2019,
+    "nation_name": "中国",
+    "data_val": 10939
+  },
+  {
+    "statistics_id": 14,
+    "data_year": 2019,
+    "nation_name": "インドネシア",
+    "data_val": 4287
+  },
+  {
+    "statistics_id": 14,
+    "data_year": 2019,
+    "nation_name": "コロンビア",
+    "data_val": 153
+  },
+  {
+    "statistics_id": 14,
+    "data_year": 2019,
+    "nation_name": "タイ",
+    "data_val": 304
+  },
+  {
+    "statistics_id": 14,
+    "data_year": 2019,
+    "nation_name": "ナイジェリア",
+    "data_val": 122
+  },
+  {
+    "statistics_id": 14,
+    "data_year": 2019,
+    "nation_name": "マレーシア",
+    "data_val": 1986
+  },
+  {
+    "statistics_id": 15,
+    "data_year": 2019,
+    "nation_name": "インドネシア",
+    "data_val": 76.4
+  },
+  {
+    "statistics_id": 15,
+    "data_year": 2019,
+    "nation_name": "ペルー",
+    "data_val": 19.6
+  },
+  {
+    "statistics_id": 15,
+    "data_year": 2019,
+    "nation_name": "ボリビア",
+    "data_val": 14
+  },
+  {
+    "statistics_id": 15,
+    "data_year": 2019,
+    "nation_name": "マレーシア",
+    "data_val": 24.3
+  },
+  {
+    "statistics_id": 15,
+    "data_year": 2019,
+    "nation_name": "中国",
+    "data_val": 166
+  },
+  {
+    "statistics_id": 16,
+    "data_year": 2018,
+    "nation_name": "アフガニスタン",
+    "data_val": 2.4
+  },
+  {
+    "statistics_id": 16,
+    "data_year": 2018,
+    "nation_name": "アメリカ合衆国",
+    "data_val": 325.8
+  },
+  {
+    "statistics_id": 16,
+    "data_year": 2018,
+    "nation_name": "アルゼンチン",
+    "data_val": 0.1
+  },
+  {
+    "statistics_id": 16,
+    "data_year": 2018,
+    "nation_name": "アルバニア",
+    "data_val": 0.1
+  },
+  {
+    "statistics_id": 16,
+    "data_year": 2018,
+    "nation_name": "イギリス",
+    "data_val": 2.6
+  },
+  {
+    "statistics_id": 16,
+    "data_year": 2018,
+    "nation_name": "イラン",
+    "data_val": 1.6
+  },
+  {
+    "statistics_id": 16,
+    "data_year": 2018,
+    "nation_name": "インド",
+    "data_val": 728.7
+  },
+  {
+    "statistics_id": 16,
+    "data_year": 2018,
+    "nation_name": "インドネシア",
+    "data_val": 548
+  },
+  {
+    "statistics_id": 16,
+    "data_year": 2018,
+    "nation_name": "ウクライナ",
+    "data_val": 25.2
+  },
+  {
+    "statistics_id": 16,
+    "data_year": 2018,
+    "nation_name": "ウズベキスタン",
+    "data_val": 0.2
+  },
+  {
+    "statistics_id": 16,
+    "data_year": 2018,
+    "nation_name": "エスワティニ",
+    "data_val": 0.1
+  },
+  {
+    "statistics_id": 16,
+    "data_year": 2018,
+    "nation_name": "オーストラリア",
+    "data_val": 410.9
+  },
+  {
+    "statistics_id": 16,
+    "data_year": 2018,
+    "nation_name": "カザフスタン",
+    "data_val": 101.1
+  },
+  {
+    "statistics_id": 16,
+    "data_year": 2018,
+    "nation_name": "カナダ",
+    "data_val": 35.7
+  },
+  {
+    "statistics_id": 16,
+    "data_year": 2018,
+    "nation_name": "キルギス",
+    "data_val": 0.3
+  },
+  {
+    "statistics_id": 16,
+    "data_year": 2018,
+    "nation_name": "コロンビア",
+    "data_val": 84.3
+  },
+  {
+    "statistics_id": 16,
+    "data_year": 2018,
+    "nation_name": "ザンビア",
+    "data_val": 1.2
+  },
+  {
+    "statistics_id": 16,
+    "data_year": 2018,
+    "nation_name": "ジンバブエ",
+    "data_val": 3.3
+  },
+  {
+    "statistics_id": 16,
+    "data_year": 2018,
+    "nation_name": "スペイン",
+    "data_val": 0.8
+  },
+  {
+    "statistics_id": 16,
+    "data_year": 2018,
+    "nation_name": "タジキスタン",
+    "data_val": 1.8
+  },
+  {
+    "statistics_id": 16,
+    "data_year": 2018,
+    "nation_name": "タンザニア",
+    "data_val": 0.6
+  },
+  {
+    "statistics_id": 16,
+    "data_year": 2018,
+    "nation_name": "チェコ",
+    "data_val": 4.6
+  },
+  {
+    "statistics_id": 16,
+    "data_year": 2018,
+    "nation_name": "チリ",
+    "data_val": 2.3
+  },
+  {
+    "statistics_id": 16,
+    "data_year": 2018,
+    "nation_name": "トルコ",
+    "data_val": 1.1
+  },
+  {
+    "statistics_id": 16,
+    "data_year": 2018,
+    "nation_name": "ドイツ",
+    "data_val": 2.8
+  },
+  {
+    "statistics_id": 16,
+    "data_year": 2018,
+    "nation_name": "ニジェール",
+    "data_val": 0.3
+  },
+  {
+    "statistics_id": 16,
+    "data_year": 2018,
+    "nation_name": "ニュージーランド",
+    "data_val": 1.4
+  },
+  {
+    "statistics_id": 16,
+    "data_year": 2018,
+    "nation_name": "ノルウェー",
+    "data_val": 0.2
+  },
+  {
+    "statistics_id": 16,
+    "data_year": 2018,
+    "nation_name": "バングラデシュ",
+    "data_val": 0.9
+  },
+  {
+    "statistics_id": 16,
+    "data_year": 2018,
+    "nation_name": "パキスタン",
+    "data_val": 4.5
+  },
+  {
+    "statistics_id": 16,
+    "data_year": 2018,
+    "nation_name": "ブラジル",
+    "data_val": 4.8
+  },
+  {
+    "statistics_id": 16,
+    "data_year": 2018,
+    "nation_name": "ブルガリア",
+    "data_val": 0.3
+  },
+  {
+    "statistics_id": 16,
+    "data_year": 2018,
+    "nation_name": "ブータン",
+    "data_val": 0.2
+  },
+  {
+    "statistics_id": 16,
+    "data_year": 2018,
+    "nation_name": "ベトナム",
+    "data_val": 42
+  },
+  {
+    "statistics_id": 16,
+    "data_year": 2018,
+    "nation_name": "ベネズエラ",
+    "data_val": 0.2
+  }
+]

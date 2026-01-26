@@ -1,0 +1,1402 @@
+[
+  {
+    "nation_cd": 12,
+    "data_year": 2017,
+    "lank": 1,
+    "item_name": "原油",
+    "ratio": 36.1
+  },
+  {
+    "nation_cd": 12,
+    "data_year": 2017,
+    "lank": 2,
+    "item_name": "天然ガス",
+    "ratio": 20.3
+  },
+  {
+    "nation_cd": 12,
+    "data_year": 2017,
+    "lank": 3,
+    "item_name": "石油製品",
+    "ratio": 18.3
+  },
+  {
+    "nation_cd": 12,
+    "data_year": 2017,
+    "lank": 4,
+    "item_name": "液化天然ガス",
+    "ratio": 10.4
+  },
+  {
+    "nation_cd": 12,
+    "data_year": 2017,
+    "lank": 5,
+    "item_name": "液化石油ガス",
+    "ratio": 9
+  },
+  {
+    "nation_cd": 31,
+    "data_year": 2020,
+    "lank": 1,
+    "item_name": "原油",
+    "ratio": 68.1
+  },
+  {
+    "nation_cd": 31,
+    "data_year": 2020,
+    "lank": 2,
+    "item_name": "天然ガス",
+    "ratio": 15.9
+  },
+  {
+    "nation_cd": 31,
+    "data_year": 2020,
+    "lank": 3,
+    "item_name": "果実",
+    "ratio": 2.6
+  },
+  {
+    "nation_cd": 31,
+    "data_year": 2020,
+    "lank": 4,
+    "item_name": "石油製品",
+    "ratio": 2.1
+  },
+  {
+    "nation_cd": 31,
+    "data_year": 2020,
+    "lank": 5,
+    "item_name": "野菜",
+    "ratio": 1.9
+  },
+  {
+    "nation_cd": 32,
+    "data_year": 2020,
+    "lank": 1,
+    "item_name": "大豆飼料",
+    "ratio": 13.7
+  },
+  {
+    "nation_cd": 32,
+    "data_year": 2020,
+    "lank": 2,
+    "item_name": "とうもろこし",
+    "ratio": 11
+  },
+  {
+    "nation_cd": 32,
+    "data_year": 2020,
+    "lank": 3,
+    "item_name": "大豆油",
+    "ratio": 6.8
+  },
+  {
+    "nation_cd": 32,
+    "data_year": 2020,
+    "lank": 4,
+    "item_name": "自動車",
+    "ratio": 5
+  },
+  {
+    "nation_cd": 32,
+    "data_year": 2020,
+    "lank": 5,
+    "item_name": "牛肉",
+    "ratio": 4.9
+  },
+  {
+    "nation_cd": 36,
+    "data_year": 2020,
+    "lank": 1,
+    "item_name": "鉄鉱石",
+    "ratio": 32.7
+  },
+  {
+    "nation_cd": 36,
+    "data_year": 2020,
+    "lank": 2,
+    "item_name": "石炭",
+    "ratio": 12.3
+  },
+  {
+    "nation_cd": 36,
+    "data_year": 2020,
+    "lank": 3,
+    "item_name": "金(非貨幣用)",
+    "ratio": 7.2
+  },
+  {
+    "nation_cd": 36,
+    "data_year": 2020,
+    "lank": 4,
+    "item_name": "肉類",
+    "ratio": 4.1
+  },
+  {
+    "nation_cd": 36,
+    "data_year": 2020,
+    "lank": 5,
+    "item_name": "機械類",
+    "ratio": 3
+  },
+  {
+    "nation_cd": 50,
+    "data_year": 2019,
+    "lank": 1,
+    "item_name": "衣類",
+    "ratio": 84.2
+  },
+  {
+    "nation_cd": 50,
+    "data_year": 2019,
+    "lank": 2,
+    "item_name": "繊維品",
+    "ratio": 5.1
+  },
+  {
+    "nation_cd": 50,
+    "data_year": 2019,
+    "lank": 3,
+    "item_name": "履物",
+    "ratio": 2.2
+  },
+  {
+    "nation_cd": 50,
+    "data_year": 2019,
+    "lank": 4,
+    "item_name": "冷凍エビ",
+    "ratio": 1.2
+  },
+  {
+    "nation_cd": 50,
+    "data_year": 2019,
+    "lank": 5,
+    "item_name": "皮革製品",
+    "ratio": 1.1
+  },
+  {
+    "nation_cd": 56,
+    "data_year": 2020,
+    "lank": 1,
+    "item_name": "医薬品",
+    "ratio": 16.4
+  },
+  {
+    "nation_cd": 56,
+    "data_year": 2020,
+    "lank": 2,
+    "item_name": "自動車",
+    "ratio": 11.7
+  },
+  {
+    "nation_cd": 56,
+    "data_year": 2020,
+    "lank": 3,
+    "item_name": "機械類",
+    "ratio": 11.1
+  },
+  {
+    "nation_cd": 56,
+    "data_year": 2020,
+    "lank": 4,
+    "item_name": "有機化合物",
+    "ratio": 6.3
+  },
+  {
+    "nation_cd": 56,
+    "data_year": 2020,
+    "lank": 5,
+    "item_name": "プラスチック",
+    "ratio": 5
+  },
+  {
+    "nation_cd": 68,
+    "data_year": 2019,
+    "lank": 1,
+    "item_name": "天然ガス",
+    "ratio": 28.3
+  },
+  {
+    "nation_cd": 68,
+    "data_year": 2019,
+    "lank": 2,
+    "item_name": "金(非貨幣用)",
+    "ratio": 17.5
+  },
+  {
+    "nation_cd": 68,
+    "data_year": 2019,
+    "lank": 3,
+    "item_name": "亜鉛鉱",
+    "ratio": 11.7
+  },
+  {
+    "nation_cd": 68,
+    "data_year": 2019,
+    "lank": 4,
+    "item_name": "大豆飼料",
+    "ratio": 7
+  },
+  {
+    "nation_cd": 68,
+    "data_year": 2019,
+    "lank": 5,
+    "item_name": "銀鉱",
+    "ratio": 6.9
+  },
+  {
+    "nation_cd": 76,
+    "data_year": 2020,
+    "lank": 1,
+    "item_name": "大豆",
+    "ratio": 13.7
+  },
+  {
+    "nation_cd": 76,
+    "data_year": 2020,
+    "lank": 2,
+    "item_name": "鉄鉱石",
+    "ratio": 12.3
+  },
+  {
+    "nation_cd": 76,
+    "data_year": 2020,
+    "lank": 3,
+    "item_name": "原油",
+    "ratio": 9.4
+  },
+  {
+    "nation_cd": 76,
+    "data_year": 2020,
+    "lank": 4,
+    "item_name": "肉類",
+    "ratio": 8.1
+  },
+  {
+    "nation_cd": 76,
+    "data_year": 2020,
+    "lank": 5,
+    "item_name": "機械類",
+    "ratio": 5.5
+  },
+  {
+    "nation_cd": 124,
+    "data_year": 2020,
+    "lank": 1,
+    "item_name": "原油",
+    "ratio": 12.3
+  },
+  {
+    "nation_cd": 124,
+    "data_year": 2020,
+    "lank": 2,
+    "item_name": "自動車",
+    "ratio": 11.5
+  },
+  {
+    "nation_cd": 124,
+    "data_year": 2020,
+    "lank": 3,
+    "item_name": "機械類",
+    "ratio": 10.4
+  },
+  {
+    "nation_cd": 124,
+    "data_year": 2020,
+    "lank": 4,
+    "item_name": "金(非貨幣用)",
+    "ratio": 4.3
+  },
+  {
+    "nation_cd": 124,
+    "data_year": 2020,
+    "lank": 5,
+    "item_name": "航空機",
+    "ratio": 2.5
+  },
+  {
+    "nation_cd": 144,
+    "data_year": 2019,
+    "lank": 1,
+    "item_name": "衣類",
+    "ratio": 42.5
+  },
+  {
+    "nation_cd": 144,
+    "data_year": 2019,
+    "lank": 2,
+    "item_name": "茶",
+    "ratio": 12.4
+  },
+  {
+    "nation_cd": 144,
+    "data_year": 2019,
+    "lank": 3,
+    "item_name": "ゴム製品",
+    "ratio": 5.3
+  },
+  {
+    "nation_cd": 144,
+    "data_year": 2019,
+    "lank": 4,
+    "item_name": "繊維品",
+    "ratio": 4.3
+  },
+  {
+    "nation_cd": 144,
+    "data_year": 2019,
+    "lank": 5,
+    "item_name": "機械類",
+    "ratio": 3.8
+  },
+  {
+    "nation_cd": 152,
+    "data_year": 2019,
+    "lank": 1,
+    "item_name": "銅鉱石",
+    "ratio": 26.5
+  },
+  {
+    "nation_cd": 152,
+    "data_year": 2019,
+    "lank": 2,
+    "item_name": "銅",
+    "ratio": 21.5
+  },
+  {
+    "nation_cd": 152,
+    "data_year": 2019,
+    "lank": 3,
+    "item_name": "果実",
+    "ratio": 8.9
+  },
+  {
+    "nation_cd": 152,
+    "data_year": 2019,
+    "lank": 4,
+    "item_name": "魚介類",
+    "ratio": 8.8
+  },
+  {
+    "nation_cd": 152,
+    "data_year": 2019,
+    "lank": 5,
+    "item_name": "パルプ",
+    "ratio": 3.9
+  },
+  {
+    "nation_cd": 156,
+    "data_year": 2020,
+    "lank": 1,
+    "item_name": "機械類\r\n\r\n",
+    "ratio": 44.5
+  },
+  {
+    "nation_cd": 156,
+    "data_year": 2020,
+    "lank": 2,
+    "item_name": "繊維品",
+    "ratio": 6
+  },
+  {
+    "nation_cd": 156,
+    "data_year": 2020,
+    "lank": 3,
+    "item_name": "衣類",
+    "ratio": 5.5
+  },
+  {
+    "nation_cd": 156,
+    "data_year": 2020,
+    "lank": 4,
+    "item_name": "自動車",
+    "ratio": 3.2
+  },
+  {
+    "nation_cd": 156,
+    "data_year": 2020,
+    "lank": 5,
+    "item_name": "精密機械",
+    "ratio": 3.1
+  },
+  {
+    "nation_cd": 170,
+    "data_year": 2020,
+    "lank": 1,
+    "item_name": "原油",
+    "ratio": 23
+  },
+  {
+    "nation_cd": 170,
+    "data_year": 2020,
+    "lank": 2,
+    "item_name": "石炭",
+    "ratio": 13.4
+  },
+  {
+    "nation_cd": 170,
+    "data_year": 2020,
+    "lank": 3,
+    "item_name": "金(非貨幣用)",
+    "ratio": 9.4
+  },
+  {
+    "nation_cd": 170,
+    "data_year": 2020,
+    "lank": 4,
+    "item_name": "コーヒー豆",
+    "ratio": 7.9
+  },
+  {
+    "nation_cd": 170,
+    "data_year": 2020,
+    "lank": 5,
+    "item_name": "石油製品",
+    "ratio": 5
+  },
+  {
+    "nation_cd": 203,
+    "data_year": 2020,
+    "lank": 1,
+    "item_name": "機械類",
+    "ratio": 38
+  },
+  {
+    "nation_cd": 203,
+    "data_year": 2020,
+    "lank": 2,
+    "item_name": "自動車",
+    "ratio": 20.3
+  },
+  {
+    "nation_cd": 203,
+    "data_year": 2020,
+    "lank": 3,
+    "item_name": "金属製品",
+    "ratio": 4.7
+  },
+  {
+    "nation_cd": 203,
+    "data_year": 2020,
+    "lank": 4,
+    "item_name": "鉄鋼",
+    "ratio": 2.3
+  },
+  {
+    "nation_cd": 203,
+    "data_year": 2020,
+    "lank": 5,
+    "item_name": "精密機械",
+    "ratio": 2.2
+  },
+  {
+    "nation_cd": 208,
+    "data_year": 2020,
+    "lank": 1,
+    "item_name": "機械類",
+    "ratio": 21.4
+  },
+  {
+    "nation_cd": 208,
+    "data_year": 2020,
+    "lank": 2,
+    "item_name": "医薬品",
+    "ratio": 18.1
+  },
+  {
+    "nation_cd": 208,
+    "data_year": 2020,
+    "lank": 3,
+    "item_name": "肉類",
+    "ratio": 4.5
+  },
+  {
+    "nation_cd": 208,
+    "data_year": 2020,
+    "lank": 4,
+    "item_name": "衣類",
+    "ratio": 4.2
+  },
+  {
+    "nation_cd": 208,
+    "data_year": 2020,
+    "lank": 5,
+    "item_name": "魚介類",
+    "ratio": 3.3
+  },
+  {
+    "nation_cd": 218,
+    "data_year": 2019,
+    "lank": 1,
+    "item_name": "原油",
+    "ratio": 34.6
+  },
+  {
+    "nation_cd": 218,
+    "data_year": 2019,
+    "lank": 2,
+    "item_name": "魚介類",
+    "ratio": 24.4
+  },
+  {
+    "nation_cd": 218,
+    "data_year": 2019,
+    "lank": 3,
+    "item_name": "バナナ",
+    "ratio": 14.8
+  },
+  {
+    "nation_cd": 218,
+    "data_year": 2019,
+    "lank": 4,
+    "item_name": "石油製品",
+    "ratio": 4.2
+  },
+  {
+    "nation_cd": 218,
+    "data_year": 2019,
+    "lank": 5,
+    "item_name": "切花",
+    "ratio": 4
+  },
+  {
+    "nation_cd": 231,
+    "data_year": 2019,
+    "lank": 1,
+    "item_name": "コーヒー豆",
+    "ratio": 24.3
+  },
+  {
+    "nation_cd": 231,
+    "data_year": 2019,
+    "lank": 2,
+    "item_name": "ごま",
+    "ratio": 18.2
+  },
+  {
+    "nation_cd": 231,
+    "data_year": 2019,
+    "lank": 3,
+    "item_name": "野菜",
+    "ratio": 17.2
+  },
+  {
+    "nation_cd": 231,
+    "data_year": 2019,
+    "lank": 4,
+    "item_name": "肉類",
+    "ratio": 6.6
+  },
+  {
+    "nation_cd": 231,
+    "data_year": 2019,
+    "lank": 5,
+    "item_name": "機械類",
+    "ratio": 5.1
+  },
+  {
+    "nation_cd": 246,
+    "data_year": 2020,
+    "lank": 1,
+    "item_name": "機械類",
+    "ratio": 24.2
+  },
+  {
+    "nation_cd": 246,
+    "data_year": 2020,
+    "lank": 2,
+    "item_name": "紙・同製品",
+    "ratio": 10
+  },
+  {
+    "nation_cd": 246,
+    "data_year": 2020,
+    "lank": 3,
+    "item_name": "自動車",
+    "ratio": 6.4
+  },
+  {
+    "nation_cd": 246,
+    "data_year": 2020,
+    "lank": 4,
+    "item_name": "石油製品",
+    "ratio": 6
+  },
+  {
+    "nation_cd": 246,
+    "data_year": 2020,
+    "lank": 5,
+    "item_name": "鉄鋼",
+    "ratio": 5.1
+  },
+  {
+    "nation_cd": 250,
+    "data_year": 2020,
+    "lank": 1,
+    "item_name": "機械類",
+    "ratio": 19.3
+  },
+  {
+    "nation_cd": 250,
+    "data_year": 2020,
+    "lank": 2,
+    "item_name": "自動車",
+    "ratio": 8.7
+  },
+  {
+    "nation_cd": 250,
+    "data_year": 2020,
+    "lank": 3,
+    "item_name": "医薬品",
+    "ratio": 7.9
+  },
+  {
+    "nation_cd": 250,
+    "data_year": 2020,
+    "lank": 4,
+    "item_name": "航空機",
+    "ratio": 5.9
+  },
+  {
+    "nation_cd": 250,
+    "data_year": 2020,
+    "lank": 5,
+    "item_name": "化学品",
+    "ratio": 3.1
+  },
+  {
+    "nation_cd": 276,
+    "data_year": 2020,
+    "lank": 1,
+    "item_name": "機械類",
+    "ratio": 28.5
+  },
+  {
+    "nation_cd": 276,
+    "data_year": 2020,
+    "lank": 2,
+    "item_name": "自動車",
+    "ratio": 14.7
+  },
+  {
+    "nation_cd": 276,
+    "data_year": 2020,
+    "lank": 3,
+    "item_name": "医薬品",
+    "ratio": 7.3
+  },
+  {
+    "nation_cd": 276,
+    "data_year": 2020,
+    "lank": 4,
+    "item_name": "精密機械",
+    "ratio": 4.5
+  },
+  {
+    "nation_cd": 276,
+    "data_year": 2020,
+    "lank": 5,
+    "item_name": "金属製品",
+    "ratio": 3.1
+  },
+  {
+    "nation_cd": 348,
+    "data_year": 2020,
+    "lank": 1,
+    "item_name": "機械類",
+    "ratio": 40.3
+  },
+  {
+    "nation_cd": 348,
+    "data_year": 2020,
+    "lank": 2,
+    "item_name": "自動車",
+    "ratio": 16.4
+  },
+  {
+    "nation_cd": 348,
+    "data_year": 2020,
+    "lank": 3,
+    "item_name": "医薬品",
+    "ratio": 5.9
+  },
+  {
+    "nation_cd": 348,
+    "data_year": 2020,
+    "lank": 4,
+    "item_name": "精密機械",
+    "ratio": 2.9
+  },
+  {
+    "nation_cd": 348,
+    "data_year": 2020,
+    "lank": 5,
+    "item_name": "金属製品",
+    "ratio": 2.2
+  },
+  {
+    "nation_cd": 352,
+    "data_year": 2020,
+    "lank": 1,
+    "item_name": "魚介類",
+    "ratio": 44.3
+  },
+  {
+    "nation_cd": 352,
+    "data_year": 2020,
+    "lank": 2,
+    "item_name": "アルミニウム",
+    "ratio": 35
+  },
+  {
+    "nation_cd": 352,
+    "data_year": 2020,
+    "lank": 3,
+    "item_name": "機械類",
+    "ratio": 3.5
+  },
+  {
+    "nation_cd": 352,
+    "data_year": 2020,
+    "lank": 4,
+    "item_name": "鉄鋼",
+    "ratio": 2.7
+  },
+  {
+    "nation_cd": 352,
+    "data_year": 2020,
+    "lank": 5,
+    "item_name": "飼料",
+    "ratio": 2.4
+  },
+  {
+    "nation_cd": 356,
+    "data_year": 2019,
+    "lank": 1,
+    "item_name": "機械類",
+    "ratio": 11.8
+  },
+  {
+    "nation_cd": 356,
+    "data_year": 2019,
+    "lank": 2,
+    "item_name": "石油製品",
+    "ratio": 9.5
+  },
+  {
+    "nation_cd": 356,
+    "data_year": 2019,
+    "lank": 3,
+    "item_name": "医薬品",
+    "ratio": 7.3
+  },
+  {
+    "nation_cd": 356,
+    "data_year": 2019,
+    "lank": 4,
+    "item_name": "有機化合物",
+    "ratio": 5.8
+  },
+  {
+    "nation_cd": 356,
+    "data_year": 2019,
+    "lank": 5,
+    "item_name": "ダイヤモンド",
+    "ratio": 5.5
+  },
+  {
+    "nation_cd": 360,
+    "data_year": 1984,
+    "lank": 1,
+    "item_name": "原油",
+    "ratio": 50.4
+  },
+  {
+    "nation_cd": 360,
+    "data_year": 1984,
+    "lank": 2,
+    "item_name": "石油ガス",
+    "ratio": 16.2
+  },
+  {
+    "nation_cd": 360,
+    "data_year": 1984,
+    "lank": 3,
+    "item_name": "石油製品",
+    "ratio": 6.7
+  },
+  {
+    "nation_cd": 360,
+    "data_year": 1984,
+    "lank": 4,
+    "item_name": "天然ゴム",
+    "ratio": 4.3
+  },
+  {
+    "nation_cd": 360,
+    "data_year": 2019,
+    "lank": 1,
+    "item_name": "パーム油",
+    "ratio": 10.6
+  },
+  {
+    "nation_cd": 360,
+    "data_year": 2019,
+    "lank": 2,
+    "item_name": "石炭",
+    "ratio": 10.1
+  },
+  {
+    "nation_cd": 360,
+    "data_year": 2019,
+    "lank": 3,
+    "item_name": "機械類",
+    "ratio": 8.9
+  },
+  {
+    "nation_cd": 360,
+    "data_year": 2019,
+    "lank": 4,
+    "item_name": "鉄鋼",
+    "ratio": 6.9
+  },
+  {
+    "nation_cd": 360,
+    "data_year": 2019,
+    "lank": 5,
+    "item_name": "衣類",
+    "ratio": 4.6
+  },
+  {
+    "nation_cd": 364,
+    "data_year": 2019,
+    "lank": 1,
+    "item_name": "原油",
+    "ratio": 52.6
+  },
+  {
+    "nation_cd": 364,
+    "data_year": 2019,
+    "lank": 2,
+    "item_name": "石油製品",
+    "ratio": 9.3
+  },
+  {
+    "nation_cd": 364,
+    "data_year": 2019,
+    "lank": 3,
+    "item_name": "プラスチック類",
+    "ratio": 4.8
+  },
+  {
+    "nation_cd": 364,
+    "data_year": 2019,
+    "lank": 4,
+    "item_name": "鉄鋼",
+    "ratio": 4.3
+  },
+  {
+    "nation_cd": 364,
+    "data_year": 2019,
+    "lank": 5,
+    "item_name": "有機化合物",
+    "ratio": 4.2
+  },
+  {
+    "nation_cd": 372,
+    "data_year": 2020,
+    "lank": 1,
+    "item_name": "医薬品",
+    "ratio": 31.7
+  },
+  {
+    "nation_cd": 372,
+    "data_year": 2020,
+    "lank": 2,
+    "item_name": "化学薬品",
+    "ratio": 20.6
+  },
+  {
+    "nation_cd": 372,
+    "data_year": 2020,
+    "lank": 3,
+    "item_name": "機械類",
+    "ratio": 12.6
+  },
+  {
+    "nation_cd": 372,
+    "data_year": 2020,
+    "lank": 4,
+    "item_name": "食品用香料",
+    "ratio": 4.8
+  },
+  {
+    "nation_cd": 372,
+    "data_year": 2020,
+    "lank": 5,
+    "item_name": "医療用機器",
+    "ratio": 3.8
+  },
+  {
+    "nation_cd": 376,
+    "data_year": 2019,
+    "lank": 1,
+    "item_name": "機械類",
+    "ratio": 27.1
+  },
+  {
+    "nation_cd": 376,
+    "data_year": 2019,
+    "lank": 2,
+    "item_name": "ダイヤモンド",
+    "ratio": 10.9
+  },
+  {
+    "nation_cd": 376,
+    "data_year": 2019,
+    "lank": 3,
+    "item_name": "精密機械",
+    "ratio": 9.5
+  },
+  {
+    "nation_cd": 376,
+    "data_year": 2019,
+    "lank": 4,
+    "item_name": "有機化合物",
+    "ratio": 8.3
+  },
+  {
+    "nation_cd": 376,
+    "data_year": 2019,
+    "lank": 5,
+    "item_name": "化学品",
+    "ratio": 5.1
+  },
+  {
+    "nation_cd": 380,
+    "data_year": 2020,
+    "lank": 1,
+    "item_name": "機械類",
+    "ratio": 24.7
+  },
+  {
+    "nation_cd": 380,
+    "data_year": 2020,
+    "lank": 2,
+    "item_name": "医薬品",
+    "ratio": 7.6
+  },
+  {
+    "nation_cd": 380,
+    "data_year": 2020,
+    "lank": 3,
+    "item_name": "自動車",
+    "ratio": 7.3
+  },
+  {
+    "nation_cd": 380,
+    "data_year": 2020,
+    "lank": 4,
+    "item_name": "衣類",
+    "ratio": 4.5
+  },
+  {
+    "nation_cd": 380,
+    "data_year": 2020,
+    "lank": 5,
+    "item_name": "金属製品",
+    "ratio": 3.7
+  },
+  {
+    "nation_cd": 404,
+    "data_year": 2019,
+    "lank": 1,
+    "item_name": "茶",
+    "ratio": 20.3
+  },
+  {
+    "nation_cd": 404,
+    "data_year": 2019,
+    "lank": 2,
+    "item_name": "切花",
+    "ratio": 9.5
+  },
+  {
+    "nation_cd": 404,
+    "data_year": 2019,
+    "lank": 3,
+    "item_name": "石油製品",
+    "ratio": 6.7
+  },
+  {
+    "nation_cd": 404,
+    "data_year": 2019,
+    "lank": 4,
+    "item_name": "衣類",
+    "ratio": 5.1
+  },
+  {
+    "nation_cd": 404,
+    "data_year": 2019,
+    "lank": 5,
+    "item_name": "野菜",
+    "ratio": 4.9
+  },
+  {
+    "nation_cd": 410,
+    "data_year": 2020,
+    "lank": 1,
+    "item_name": "機械類",
+    "ratio": 44.7
+  },
+  {
+    "nation_cd": 410,
+    "data_year": 2020,
+    "lank": 2,
+    "item_name": "自動車",
+    "ratio": 10.4
+  },
+  {
+    "nation_cd": 410,
+    "data_year": 2020,
+    "lank": 3,
+    "item_name": "プラスチック類",
+    "ratio": 5.4
+  },
+  {
+    "nation_cd": 410,
+    "data_year": 2020,
+    "lank": 4,
+    "item_name": "石油製品",
+    "ratio": 4.5
+  },
+  {
+    "nation_cd": 410,
+    "data_year": 2020,
+    "lank": 5,
+    "item_name": "鉄鋼",
+    "ratio": 4.3
+  },
+  {
+    "nation_cd": 434,
+    "data_year": 2018,
+    "lank": 1,
+    "item_name": "原油",
+    "ratio": 84.2
+  },
+  {
+    "nation_cd": 434,
+    "data_year": 2018,
+    "lank": 2,
+    "item_name": "液化天然ガス",
+    "ratio": 3.9
+  },
+  {
+    "nation_cd": 434,
+    "data_year": 2018,
+    "lank": 3,
+    "item_name": "石油製品",
+    "ratio": 3.6
+  },
+  {
+    "nation_cd": 434,
+    "data_year": 2018,
+    "lank": 4,
+    "item_name": "金(非貨幣用)",
+    "ratio": 2.7
+  },
+  {
+    "nation_cd": 434,
+    "data_year": 2018,
+    "lank": 5,
+    "item_name": "液化石油ガス",
+    "ratio": 1
+  },
+  {
+    "nation_cd": 450,
+    "data_year": 2019,
+    "lank": 1,
+    "item_name": "バニラ",
+    "ratio": 21.7
+  },
+  {
+    "nation_cd": 450,
+    "data_year": 2019,
+    "lank": 2,
+    "item_name": "衣類",
+    "ratio": 18.4
+  },
+  {
+    "nation_cd": 450,
+    "data_year": 2019,
+    "lank": 3,
+    "item_name": "ニッケル",
+    "ratio": 16.8
+  },
+  {
+    "nation_cd": 450,
+    "data_year": 2019,
+    "lank": 4,
+    "item_name": "魚介類",
+    "ratio": 5.7
+  },
+  {
+    "nation_cd": 450,
+    "data_year": 2019,
+    "lank": 5,
+    "item_name": "希少金属鉱",
+    "ratio": 4.5
+  },
+  {
+    "nation_cd": 458,
+    "data_year": 1984,
+    "lank": 1,
+    "item_name": "原油",
+    "ratio": 24
+  },
+  {
+    "nation_cd": 458,
+    "data_year": 1984,
+    "lank": 2,
+    "item_name": "機械類",
+    "ratio": 16.2
+  },
+  {
+    "nation_cd": 458,
+    "data_year": 1984,
+    "lank": 3,
+    "item_name": "木材",
+    "ratio": 12.7
+  },
+  {
+    "nation_cd": 458,
+    "data_year": 1984,
+    "lank": 4,
+    "item_name": "天然ゴム",
+    "ratio": 11.2
+  },
+  {
+    "nation_cd": 458,
+    "data_year": 1984,
+    "lank": 5,
+    "item_name": "パーム油",
+    "ratio": 9.1
+  },
+  {
+    "nation_cd": 458,
+    "data_year": 2019,
+    "lank": 1,
+    "item_name": "機械類",
+    "ratio": 45.4
+  },
+  {
+    "nation_cd": 458,
+    "data_year": 2019,
+    "lank": 2,
+    "item_name": "石油製品",
+    "ratio": 5.5
+  },
+  {
+    "nation_cd": 458,
+    "data_year": 2019,
+    "lank": 3,
+    "item_name": "精密機械",
+    "ratio": 4.2
+  },
+  {
+    "nation_cd": 458,
+    "data_year": 2019,
+    "lank": 4,
+    "item_name": "パーム油",
+    "ratio": 4.2
+  },
+  {
+    "nation_cd": 458,
+    "data_year": 2019,
+    "lank": 5,
+    "item_name": "衣類",
+    "ratio": 4.2
+  },
+  {
+    "nation_cd": 484,
+    "data_year": 2020,
+    "lank": 1,
+    "item_name": "機械類",
+    "ratio": 36
+  },
+  {
+    "nation_cd": 484,
+    "data_year": 2020,
+    "lank": 2,
+    "item_name": "自動車",
+    "ratio": 23.3
+  },
+  {
+    "nation_cd": 484,
+    "data_year": 2020,
+    "lank": 3,
+    "item_name": "精密機械",
+    "ratio": 3.8
+  },
+  {
+    "nation_cd": 484,
+    "data_year": 2020,
+    "lank": 4,
+    "item_name": "原油",
+    "ratio": 3.6
+  },
+  {
+    "nation_cd": 484,
+    "data_year": 2020,
+    "lank": 5,
+    "item_name": "金属製品",
+    "ratio": 2.1
+  },
+  {
+    "nation_cd": 504,
+    "data_year": 2019,
+    "lank": 1,
+    "item_name": "機械類",
+    "ratio": 19.7
+  },
+  {
+    "nation_cd": 504,
+    "data_year": 2019,
+    "lank": 2,
+    "item_name": "自動車",
+    "ratio": 13
+  },
+  {
+    "nation_cd": 504,
+    "data_year": 2019,
+    "lank": 3,
+    "item_name": "衣類",
+    "ratio": 11
+  },
+  {
+    "nation_cd": 504,
+    "data_year": 2019,
+    "lank": 4,
+    "item_name": "化学肥料",
+    "ratio": 9.9
+  },
+  {
+    "nation_cd": 504,
+    "data_year": 2019,
+    "lank": 5,
+    "item_name": "魚介類",
+    "ratio": 6.9
+  },
+  {
+    "nation_cd": 528,
+    "data_year": 2020,
+    "lank": 1,
+    "item_name": "機械類",
+    "ratio": 25.7
+  },
+  {
+    "nation_cd": 528,
+    "data_year": 2020,
+    "lank": 2,
+    "item_name": "石油製品",
+    "ratio": 6.3
+  },
+  {
+    "nation_cd": 528,
+    "data_year": 2020,
+    "lank": 3,
+    "item_name": "医薬品",
+    "ratio": 6.3
+  },
+  {
+    "nation_cd": 528,
+    "data_year": 2020,
+    "lank": 4,
+    "item_name": "精密機械",
+    "ratio": 4.1
+  },
+  {
+    "nation_cd": 528,
+    "data_year": 2020,
+    "lank": 5,
+    "item_name": "自動車",
+    "ratio": 3.9
+  },
+  {
+    "nation_cd": 554,
+    "data_year": 2020,
+    "lank": 1,
+    "item_name": "乳製品",
+    "ratio": 18.3
+  },
+  {
+    "nation_cd": 554,
+    "data_year": 2020,
+    "lank": 2,
+    "item_name": "木材",
+    "ratio": 6.8
+  },
+  {
+    "nation_cd": 554,
+    "data_year": 2020,
+    "lank": 3,
+    "item_name": "果実",
+    "ratio": 6.5
+  },
+  {
+    "nation_cd": 554,
+    "data_year": 2020,
+    "lank": 4,
+    "item_name": "羊・ヤギ肉",
+    "ratio": 6.5
+  },
+  {
+    "nation_cd": 554,
+    "data_year": 2020,
+    "lank": 5,
+    "item_name": "牛肉",
+    "ratio": 6.2
+  },
+  {
+    "nation_cd": 566,
+    "data_year": 2019,
+    "lank": 1,
+    "item_name": "原油",
+    "ratio": 76.5
+  },
+  {
+    "nation_cd": 566,
+    "data_year": 2019,
+    "lank": 2,
+    "item_name": "液化天然ガス",
+    "ratio": 9.3
+  },
+  {
+    "nation_cd": 566,
+    "data_year": 2019,
+    "lank": 3,
+    "item_name": "船舶",
+    "ratio": 5.9
+  },
+  {
+    "nation_cd": 566,
+    "data_year": 2019,
+    "lank": 4,
+    "item_name": "金属製品",
+    "ratio": 3.9
+  },
+  {
+    "nation_cd": 566,
+    "data_year": 2019,
+    "lank": 5,
+    "item_name": "ガス状炭化水素",
+    "ratio": 0.6
+  },
+  {
+    "nation_cd": 578,
+    "data_year": 2020,
+    "lank": 1,
+    "item_name": "原油",
+    "ratio": 27.5
+  }
+]

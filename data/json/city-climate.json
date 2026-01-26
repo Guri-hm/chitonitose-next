@@ -1,0 +1,370 @@
+[
+  {
+    "id": 1,
+    "nation_cd": 372,
+    "city_name_eg": "Dublin",
+    "city_name": "ダブリン",
+    "class_cd": 33,
+    "explanation": "暖流と偏西風の影響で、気温の年較差が小さく、年間を通して降水があります。"
+  },
+  {
+    "id": 2,
+    "nation_cd": 380,
+    "city_name_eg": "Rome",
+    "city_name": "ローマ",
+    "class_cd": 30,
+    "explanation": "夏は北上した中緯度高圧帯（亜熱帯高圧帯）の影響で乾燥します。"
+  },
+  {
+    "id": 3,
+    "nation_cd": 392,
+    "city_name_eg": "Tokyo",
+    "city_name": "東京",
+    "class_cd": 32,
+    "explanation": "年間を通して湿潤ですが、夏は太平洋からの季節風で多雨です。"
+  },
+  {
+    "id": 4,
+    "nation_cd": 410,
+    "city_name_eg": "Busan",
+    "city_name": "プサン〔釜山〕",
+    "class_cd": 32,
+    "explanation": "年間を通して湿潤です。冬は北西季節風の影響でやや少雨になりますが、亜寒帯冬季湿潤になるほどではありません。"
+  },
+  {
+    "id": 5,
+    "nation_cd": 604,
+    "city_name_eg": "Lima",
+    "city_name": "リマ",
+    "class_cd": 21,
+    "explanation": "ペルー沖を流れる寒流の影響で降水がありません。"
+  },
+  {
+    "id": 6,
+    "nation_cd": 512,
+    "city_name_eg": "Salalah",
+    "city_name": "サーラーラ",
+    "class_cd": 21,
+    "explanation": "海洋に面した場所のため、気温の年較差が小さいです。降水は年間を通してほとんどありません。ただし、夏に吹く季節風が湿った風をもたらし、イエメンとの国境付近のドファール山岳地帯にぶつかってわずかな降水をもたらします。"
+  },
+  {
+    "id": 7,
+    "nation_cd": 792,
+    "city_name_eg": "Istanbul",
+    "city_name": "イスタンブール",
+    "class_cd": 30,
+    "explanation": "夏は北上した中緯度高圧帯（亜熱帯高圧帯）の影響で乾燥します。冬は偏西風の影響で低気圧が周期的に通過し、降水をもたらします。"
+  },
+  {
+    "id": 8,
+    "nation_cd": 364,
+    "city_name_eg": "Tehran",
+    "city_name": "テヘラン",
+    "class_cd": 20,
+    "explanation": "内陸にあるため、気温の年較差が大きくなります。 夏は中緯度高圧帯（亜熱帯高圧帯）の影響を受けて乾燥します"
+  },
+  {
+    "id": 9,
+    "nation_cd": 682,
+    "city_name_eg": "Riyadh",
+    "city_name": "リヤド",
+    "class_cd": 21,
+    "explanation": "年間を通して中緯度高圧帯（亜熱帯高圧帯）に覆われて乾燥します。"
+  },
+  {
+    "id": 10,
+    "nation_cd": 586,
+    "city_name_eg": "Karachi",
+    "city_name": "カラチ",
+    "class_cd": 21,
+    "explanation": "季節風が吹いても上昇気流を発生させる山脈などがないため降水が得られません。"
+  },
+  {
+    "id": 11,
+    "nation_cd": 356,
+    "city_name_eg": "Mumbai",
+    "city_name": "ムンバイ",
+    "class_cd": 12,
+    "explanation": "夏の南西季節風が西ガーツ山脈西側に降水をもたらすため、インド亜大陸西岸では夏の降水量が多くなります。"
+  },
+  {
+    "id": 12,
+    "nation_cd": 144,
+    "city_name_eg": "Colombo",
+    "city_name": "コロンボ",
+    "class_cd": 10,
+    "explanation": "低緯度のため気温の年較差が小さくなります。夏は南西季節風によって多雨、冬は北東季節風によって多雨になります。"
+  },
+  {
+    "id": 13,
+    "nation_cd": 356,
+    "city_name_eg": "Kolkata",
+    "city_name": "コルカタ",
+    "class_cd": 12,
+    "explanation": "夏は南西季節風の影響で多雨になります。冬は内陸からの北東季節風で乾燥します。"
+  },
+  {
+    "id": 14,
+    "nation_cd": 524,
+    "city_name_eg": "Kathmandu",
+    "city_name": "カトマンズ",
+    "class_cd": 31,
+    "explanation": "夏は南西季節風の影響で多雨になります。冬は内陸からの北東季節風で乾燥します。インドのコルカタと比べて緯度が高いため、温帯になります。"
+  },
+  {
+    "id": 15,
+    "nation_cd": 706,
+    "city_name_eg": "Mogadishu",
+    "city_name": "モガディシュ",
+    "class_cd": 21,
+    "explanation": "いわゆる「アフリカの角」には乾燥地帯が広がります。大陸東岸ですが、冬に吹き込む風がインド洋上ではなくアラビア半島上を吹くため水蒸気が少なく、雨があまり降りません。"
+  },
+  {
+    "id": 16,
+    "nation_cd": 710,
+    "city_name_eg": "CapeTown",
+    "city_name": "ケープタウン",
+    "class_cd": 30,
+    "explanation": "７月が最寒月であることから南半球の都市だとわかります。冬には降水がありますが、夏には亜熱帯高圧帯（中緯度高圧帯）が南下して乾燥します。"
+  },
+  {
+    "id": 17,
+    "nation_cd": 710,
+    "city_name_eg": "Toamasina",
+    "city_name": "トゥアマシナ",
+    "class_cd": 10,
+    "explanation": "７月が最寒月であることから南半球の都市だとわかります。年間を通して南東貿易風がインド洋から吹くため湿潤です。"
+  },
+  {
+    "id": 18,
+    "nation_cd": 124,
+    "city_name_eg": "Vancouver",
+    "city_name": "バンクーバー",
+    "class_cd": 30,
+    "explanation": "カナダ西岸の沖合は暖流のアラスカ海流が流れるため、高緯度でありながら比較的温暖で、年間を通して降水があります。夏に降水が少なくなり、図のデータではCsに該当しますが、データによってはCfb（西岸海洋性気候）になります。"
+  },
+  {
+    "id": 19,
+    "nation_cd": 840,
+    "city_name_eg": "Miami",
+    "city_name": "マイアミ",
+    "class_cd": 11,
+    "explanation": "熱帯に属し、年間を通して気温が高いです。弱い乾季があり、降水量が少ない月があります。"
+  },
+  {
+    "id": 20,
+    "nation_cd": 124,
+    "city_name_eg": "Winnipeg",
+    "city_name": "ウィニペグ",
+    "class_cd": 41,
+    "explanation": "亜寒帯の都市で、内陸に位置するため気温の年較差が大きくなります。亜寒帯低圧帯の影響で降水がありますが、内陸のためやや少ない量になっています。"
+  },
+  {
+    "id": 21,
+    "nation_cd": 840,
+    "city_name_eg": "LasVegas",
+    "city_name": "ラスヴェガス",
+    "class_cd": 21,
+    "explanation": "寒流のカリフォルニア海流の影響で、そもそも湿った風が運ばれにくく、さらにシエラネヴァダ山脈を吹き越す時に風が乾きます（雨陰）。雨が降りにくい、乾燥した都市です。"
+  },
+  {
+    "id": 22,
+    "nation_cd": 32,
+    "city_name_eg": "BuenosAires",
+    "city_name": "ブエノスアイレス",
+    "class_cd": 32,
+    "explanation": "日本と同様に、明瞭な四季があります。南アメリカ大陸の東岸に位置し、季節風が卓越します。海に近く、年間を通して降水がありますが、熱帯低気圧がないため極端に多い月はありません。"
+  },
+  {
+    "id": 23,
+    "nation_cd": 218,
+    "city_name_eg": "Quito",
+    "city_name": "キト",
+    "class_cd": 60,
+    "explanation": "赤道直下の都市ですが、標高が2,850mあり、気温は常春になります。"
+  },
+  {
+    "id": 24,
+    "nation_cd": 36,
+    "city_name_eg": "Perth",
+    "city_name": "パース",
+    "class_cd": 30,
+    "explanation": "７月が最寒月のため、南半球の都市です。大陸の西岸に位置し、夏は南下した中緯度高圧帯（亜熱帯高圧帯）の影響で乾燥します。"
+  },
+  {
+    "id": 25,
+    "nation_cd": 404,
+    "city_name_eg": "Nairobi",
+    "city_name": "ナイロビ",
+    "class_cd": 60,
+    "explanation": "低緯度で赤道に近い都市ですが、高地にあるため年間を通して気温が一定になります。ただし、同じ高山気候のキトと比べて気温が高く、常春とは言えません。"
+  },
+  {
+    "id": 26,
+    "nation_cd": 156,
+    "city_name_eg": "Lhasa",
+    "city_name": "ラサ",
+    "class_cd": 60,
+    "explanation": "標高3,600mの高地に位置します。エクアドルのキトのような赤道直下の高山都市ではないので、常春になりません。温帯のグラフと似た形をしていますが、気温が全体的に低くなっています。また、冬はシベリアから吹く風の影響で乾燥します。"
+  },
+  {
+    "id": 27,
+    "nation_cd": 36,
+    "city_name_eg": "Darwin",
+    "city_name": "ダーウィン",
+    "class_cd": 12,
+    "explanation": "7月が最観月なので南半球の都市だと分かります。赤道に近いため年間を通して気温が高くなります。冬は中緯度高圧帯（亜熱帯高圧帯）の影響で乾燥します。"
+  },
+  {
+    "id": 28,
+    "nation_cd": 554,
+    "city_name_eg": "Wellington",
+    "city_name": "ウェリントン",
+    "class_cd": 33,
+    "explanation": "暖流の東オーストラリア海流と、その海流の上を吹く偏西風の影響で、年中湿潤で温暖な気候になります。"
+  },
+  {
+    "id": 29,
+    "nation_cd": 392,
+    "city_name_eg": "Sapporo",
+    "city_name": "札幌",
+    "class_cd": 41,
+    "explanation": "日本のなかでは高緯度に位置するため、最寒月平均気温が-3℃を下回ります。夏は太平洋側からの風を、冬は日本海側からの風を受け、年中湿潤です。"
+  },
+  {
+    "id": 30,
+    "nation_cd": 156,
+    "city_name_eg": "Shanghai",
+    "city_name": "シャンハイ[上海]",
+    "class_cd": 32,
+    "explanation": "温暖で年間を通して降水がありますが、冬はやや降水量が少なくなります。"
+  },
+  {
+    "id": 31,
+    "nation_cd": 704,
+    "city_name_eg": "Hanoi",
+    "city_name": "ハノイ",
+    "class_cd": 31,
+    "explanation": "冬に南下した中緯度高圧帯（亜熱帯高圧帯）と北東季節風の影響で乾燥します。"
+  },
+  {
+    "id": 32,
+    "nation_cd": 104,
+    "city_name_eg": "Yangon",
+    "city_name": "ヤンゴン",
+    "class_cd": 11,
+    "explanation": "夏は南西季節風やサイクロンの影響で多雨になります。冬は北東季節風の影響で乾燥します。"
+  },
+  {
+    "id": 33,
+    "nation_cd": 152,
+    "city_name_eg": "Santiago",
+    "city_name": "サンティアゴ",
+    "class_cd": 30,
+    "explanation": "7月が最寒月なので南半球の都市とわかります。1月頃（夏）に中緯度高圧帯（亜熱帯高圧帯）の影響で乾燥します。比較的冷涼で降水も少なく、統計データによってはステップ気候（BS）に分類されます。"
+  },
+  {
+    "id": 34,
+    "nation_cd": 643,
+    "city_name_eg": "Irkutsk",
+    "city_name": "イルクーツク",
+    "class_cd": 40,
+    "explanation": "高緯度で内陸に位置するため、冷涼で気温の年較差が大きいです。冬はシベリア高気圧の影響で乾燥します。"
+  },
+  {
+    "id": 35,
+    "nation_cd": 643,
+    "city_name_eg": "Dikson",
+    "city_name": "ディクソン",
+    "class_cd": 50,
+    "explanation": "ロシア連邦で最北に位置する港町で、北極に近い世界有数の都市です。12月上旬から1月上旬まで極夜になり、市民薄明（灯火なしで屋外の活動ができるほどの明るさのことで、日の出前、日の入後30分間程度の明るさ）が一切見られません。"
+  },
+  {
+    "id": 36,
+    "nation_cd": 10,
+    "city_name_eg": "Syowa_station",
+    "city_name": "昭和基地",
+    "class_cd": 51,
+    "explanation": "日本の南極観測基地です。南緯69°の高緯度に位置し、最暖月でも気温は氷点下です。降水がほとんどなく、雪の捕捉も難しいため降水量の観測を実施していません。"
+  },
+  {
+    "id": 37,
+    "nation_cd": 578,
+    "city_name_eg": "Svalbard_Islands",
+    "city_name": "スバーバル諸島",
+    "class_cd": 50,
+    "explanation": "世界最北の定住地域で、石炭が産出します。2008年にスバーバル世界種子貯蔵庫が設立され、全世界から集められた様々な食物の種子、原種が冷凍保存されています。永久凍土で覆われているため、冷却系統の故障時にも氷点下の低温が維持されます。"
+  },
+  {
+    "id": 38,
+    "nation_cd": 702,
+    "city_name_eg": "Singapore",
+    "city_name": "シンガポール",
+    "class_cd": 10,
+    "explanation": "マレー半島の先端付近の島国で、北緯1.5°の位置にあります。気温の年較差はほとんどなく、典型的な熱帯雨林気候の特色を示します。"
+  },
+  {
+    "id": 39,
+    "nation_cd": 360,
+    "city_name_eg": "Jakarta",
+    "city_name": "ジャカルタ",
+    "class_cd": 11,
+    "explanation": "気温の年較差がほとんどなく、年間を通して降水があります。4～10月は熱帯収束帯（赤道低圧帯）が北上するため、やや弱い乾季になります。"
+  },
+  {
+    "id": 40,
+    "nation_cd": 36,
+    "city_name_eg": "Alice_Springs",
+    "city_name": "アリススプリングス",
+    "class_cd": 20,
+    "explanation": "年間を通して中緯度高圧帯（亜熱帯高圧帯）に覆われて乾燥し、砂漠（亜熱帯砂漠）が付近に広がります。ウルル（エアーズロック）の拠点都市でもあり、観光客が多く訪れます。"
+  },
+  {
+    "id": 41,
+    "nation_cd": 583,
+    "city_name_eg": "Chuuk_Lagoon",
+    "city_name": "チューク（トラック）諸島",
+    "class_cd": 10,
+    "explanation": "周囲は200㎞に及ぶ世界最大の環礁に囲まれています。第一次世界大戦後に日本領となり、その頃はトラック諸島と呼ばれていました。気温が年中高く、また、その年較差がほとんどありません。また、雨季と乾季の区別もありません。です。"
+  },
+  {
+    "id": 42,
+    "nation_cd": 12,
+    "city_name_eg": "Algiers",
+    "city_name": "アルジェ",
+    "class_cd": 30,
+    "explanation": "夏に中緯度高圧帯（亜熱帯高圧帯）の影響で乾燥します。イスラーム都市の特徴である迷路上の市街地が残存していて、世界遺産に登録されています。"
+  },
+  {
+    "id": 43,
+    "nation_cd": 694,
+    "city_name_eg": "Freetown",
+    "city_name": "フリータウン",
+    "class_cd": 11,
+    "explanation": "熱帯収束帯（赤道低圧帯）の影響で高温多湿です。冬には南下した中緯度高圧帯（亜熱帯高圧帯）の影響で弱い乾季があります。"
+  },
+  {
+    "id": 44,
+    "nation_cd": 860,
+    "city_name_eg": "Samarkand",
+    "city_name": "サマルカンド",
+    "class_cd": 30,
+    "explanation": "紀元前６世紀より前から知られる中央アジアの古都です。乾燥地域で交通の拠点となるオアシスを中心に形成された都市で、都市名の「サマル」は「行き交う人々が出会う」、「カンド」は「街」を意味します。気候は地中海性気候ですが、隔海度が高く、砂漠気候に近い地域です。なお、地中海性気候区はヨーロッパから黒海・カスピ海の南側を経て中央アジアまで帯状に伸びています。"
+  },
+  {
+    "id": 45,
+    "nation_cd": 804,
+    "city_name_eg": "Kiev",
+    "city_name": "キーウ（キエフ）",
+    "class_cd": 41,
+    "explanation": "高緯度で冬の寒さが厳しく、偏西風の影響で年中降水のある地域です。なお、ウクライナ中心部から南部は、BS（ステップ気候）に属し、肥沃な土壌のチェルノーゼムが広がります。"
+  },
+  {
+    "id": 46,
+    "nation_cd": 231,
+    "city_name_eg": "Addis_Ababa",
+    "city_name": "アディスアベバ",
+    "class_cd": 60,
+    "explanation": "平均標高2300mのエチオピア高原に位置しているため、気温の年変化が少なく温和です。"
+  }
+]

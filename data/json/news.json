@@ -1,0 +1,282 @@
+[
+  {
+    "id": 35,
+    "date": "2023-11-10",
+    "news_type": "変更",
+    "news_title": "大地形と変動帯",
+    "news_text": "資料を増加しました。また、安定陸塊と造山運動を別ページに分離しました。",
+    "path": "geo/geo_lessons_major_landforms.html.html"
+  },
+  {
+    "id": 36,
+    "date": "2023-11-10",
+    "news_type": "作成",
+    "news_title": "安定陸塊と造山運動",
+    "news_text": "安定陸塊と造山運動のページを作成しました。",
+    "path": "geo/geo_lessons_craton_orogeny.html"
+  },
+  {
+    "id": 33,
+    "date": "2022-12-01",
+    "news_type": "変更",
+    "news_title": "ハイサーグラフの演習",
+    "news_text": "答えに都市の地図を表示するようにしました。",
+    "path": "geo/geo_exercises_hythergraph.html"
+  },
+  {
+    "id": 34,
+    "date": "2022-12-01",
+    "news_type": "変更",
+    "news_title": "ハイサーグラフの演習",
+    "news_text": "正解以外の選択肢について、都市名と気候区分を表示するように変更しました。",
+    "path": "geo/geo_exercises_hythergraph.html"
+  },
+  {
+    "id": 32,
+    "date": "2022-11-30",
+    "news_type": "新規作成",
+    "news_title": "極地方",
+    "news_text": "北極圏・南極圏の解説",
+    "path": "geo/geo_lessons_Polar_Regions.html"
+  },
+  {
+    "id": 31,
+    "date": "2022-11-23",
+    "news_type": "新規作成",
+    "news_title": "主要統計データ",
+    "news_text": "人口と1人あたりGNIを作成",
+    "path": "geo/geo_statistical_data_main.html"
+  },
+  {
+    "id": 30,
+    "date": "2022-10-16",
+    "news_type": "更新",
+    "news_title": "平野の地形",
+    "news_text": "内容の加筆修正、画像の軽量化および着色",
+    "path": "geo/geo_lessons_plain.html"
+  },
+  {
+    "id": 29,
+    "date": "2022-10-13",
+    "news_type": "新規作成",
+    "news_title": "日本地誌－交通・貿易",
+    "news_text": null,
+    "path": "geo/geo_lessons_Japan5.html"
+  },
+  {
+    "id": 26,
+    "date": "2022-10-11",
+    "news_type": "新規作成",
+    "news_title": "日本地誌－人口",
+    "news_text": null,
+    "path": "geo/geo_lessons_Japan2.html"
+  },
+  {
+    "id": 27,
+    "date": "2022-10-11",
+    "news_type": "新規作成",
+    "news_title": "日本地誌－農林水産業",
+    "news_text": null,
+    "path": "geo/geo_lessons_Japan3.html"
+  },
+  {
+    "id": 28,
+    "date": "2022-10-11",
+    "news_type": "新規作成",
+    "news_title": "日本地誌－鉱工業",
+    "news_text": null,
+    "path": "geo/geo_lessons_Japan4.html"
+  },
+  {
+    "id": 25,
+    "date": "2022-10-09",
+    "news_type": "新規作成",
+    "news_title": "日本地誌－地形・気候・自然環境",
+    "news_text": null,
+    "path": "geo/geo_lessons_Japan1.html"
+  },
+  {
+    "id": 24,
+    "date": "2022-10-08",
+    "news_type": "新規作成",
+    "news_title": "オセアニア地誌",
+    "news_text": null,
+    "path": "geo/geo_lessons_Oceania.html"
+  },
+  {
+    "id": 23,
+    "date": "2022-10-01",
+    "news_type": "新規作成",
+    "news_title": "ラテンアメリカ地誌－各国",
+    "news_text": null,
+    "path": "geo/geo_lessons_Latin_America_countries.html"
+  },
+  {
+    "id": 22,
+    "date": "2022-09-30",
+    "news_type": "新規作成",
+    "news_title": "ラテンアメリカ地誌－概説",
+    "news_text": null,
+    "path": "geo/geo_lessons_Latin_America.html"
+  },
+  {
+    "id": 21,
+    "date": "2022-09-27",
+    "news_type": "新規作成",
+    "news_title": "アングロアメリカの地誌－各国",
+    "news_text": null,
+    "path": "geo/geo_lessons_Anglo_America_countries.html"
+  },
+  {
+    "id": 20,
+    "date": "2022-09-24",
+    "news_type": "新規作成",
+    "news_title": "アングロアメリカの地誌－概説",
+    "news_text": null,
+    "path": "geo/geo_lessons_Anglo_America.html"
+  },
+  {
+    "id": 18,
+    "date": "2022-09-23",
+    "news_type": "新規作成",
+    "news_title": "ロシアと周辺国の地誌－概説",
+    "news_text": null,
+    "path": "geo/geo_lessons_Russia_neighboring_countries1.html"
+  },
+  {
+    "id": 17,
+    "date": "2022-09-21",
+    "news_type": "新規作成",
+    "news_title": "ヨーロッパ地誌－各国②",
+    "news_text": null,
+    "path": "geo/geo_lessons_Europa_countries2.html"
+  },
+  {
+    "id": 16,
+    "date": "2022-09-19",
+    "news_type": "新規作成",
+    "news_title": "ヨーロッパ地誌ー各国①",
+    "news_text": null,
+    "path": "geo/geo_lessons_Europa_countries1.html"
+  },
+  {
+    "id": 15,
+    "date": "2022-09-08",
+    "news_type": "新規作成",
+    "news_title": "アフリカ地誌",
+    "news_text": null,
+    "path": "geo/geo_lessons_Africa.html"
+  },
+  {
+    "id": 14,
+    "date": "2022-09-05",
+    "news_type": "新規作成",
+    "news_title": "西アジア・中央アジア地誌",
+    "news_text": null,
+    "path": "geo/geo_lessons_West_Asia.html"
+  },
+  {
+    "id": 13,
+    "date": "2022-09-04",
+    "news_type": "新規作成",
+    "news_title": "南アジアの地誌",
+    "news_text": null,
+    "path": "geo/geo_lessons_South_Asia.html"
+  },
+  {
+    "id": 11,
+    "date": "2022-06-25",
+    "news_type": "新規作成",
+    "news_title": "地誌（中国）",
+    "news_text": null,
+    "path": "geo/geo_lessons_China.html"
+  },
+  {
+    "id": 12,
+    "date": "2022-06-25",
+    "news_type": "新規作成",
+    "news_title": "地誌（朝鮮半島）",
+    "news_text": null,
+    "path": "geo/geo_lessons_Korea.html"
+  },
+  {
+    "id": 10,
+    "date": "2022-05-03",
+    "news_type": "新規作成",
+    "news_title": "更新",
+    "news_text": "地理|人口と労働力の移動",
+    "path": "geo/geo_lessons_migration_labor.html"
+  },
+  {
+    "id": 9,
+    "date": "2022-04-29",
+    "news_type": "更新",
+    "news_title": "地理|世界の地理",
+    "news_text": "説明文の更新など",
+    "path": "geo/geo_lessons_trade.html"
+  },
+  {
+    "id": 8,
+    "date": "2021-09-27",
+    "news_type": "誤植修正",
+    "news_title": "世界史No52",
+    "news_text": "「ボッカチオ」→「デカメロン」",
+    "path": "https://chitonitose.com/wh/wh_lessons52.html"
+  },
+  {
+    "id": 7,
+    "date": "2021-09-03",
+    "news_type": "誤植修正",
+    "news_title": "日本史短期攻略「室町時代②」",
+    "news_text": "「享徳の乱」が「応仁の乱」になっていました。山本様、ご指摘ありがとうございます。",
+    "path": "https://chitonitose.com/jh/jh_omnibus10.html"
+  },
+  {
+    "id": 6,
+    "date": "2021-08-29",
+    "news_type": "新規作成",
+    "news_title": "世界史授業プリント",
+    "news_text": "順次アップロードしていきます。",
+    "path": "https://chitonitose.com/wh/wh_print.html"
+  },
+  {
+    "id": 3,
+    "date": "2021-08-22",
+    "news_type": "新規作成",
+    "news_title": "日本史|日本の国際貢献",
+    "news_text": null,
+    "path": "jh/jh_lessons170.html"
+  },
+  {
+    "id": 4,
+    "date": "2021-08-22",
+    "news_type": "更新",
+    "news_title": "入試傾向",
+    "news_text": "日本史の内容に大学共通テストの出題内容を反映しました。",
+    "path": null
+  },
+  {
+    "id": 5,
+    "date": "2021-08-22",
+    "news_type": null,
+    "news_title": "日本史授業プリント",
+    "news_text": "当面の間、印刷できるように変更しました。",
+    "path": "https://chitonitose.com/jh/pdf/jh_print.html"
+  },
+  {
+    "id": 1,
+    "date": "2021-06-07",
+    "news_type": "新規作成",
+    "news_title": "世界史|\n\nアフリカの内戦と対テロ戦争",
+    "news_text": "世界史が一通り完成です。",
+    "path": "wh/wh_lessons114.html"
+  },
+  {
+    "id": 2,
+    "date": "2021-06-07",
+    "news_type": null,
+    "news_title": "世界史|群雄割拠と初の中国統一",
+    "news_text": "ルビと画像の追加",
+    "path": "https://chitonitose.com/wh/wh_lessons19.html"
+  }
+]

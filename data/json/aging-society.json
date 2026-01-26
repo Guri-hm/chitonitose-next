@@ -1,0 +1,27 @@
+[
+  {
+    "nation_cd": 250,
+    "7percent": 1864,
+    "14percent": 1979
+  },
+  {
+    "nation_cd": 276,
+    "7percent": 1932,
+    "14percent": 1972
+  },
+  {
+    "nation_cd": 380,
+    "7percent": 1927,
+    "14percent": 1988
+  },
+  {
+    "nation_cd": 392,
+    "7percent": 1970,
+    "14percent": 1994
+  },
+  {
+    "nation_cd": 752,
+    "7percent": 1887,
+    "14percent": 1972
+  }
+]

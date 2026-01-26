@@ -1,0 +1,74 @@
+[
+  {
+    "data_year": 1960,
+    "population_statistical_method": 14541600,
+    "population": 0,
+    "elderly": 2538440
+  },
+  {
+    "data_year": 1965,
+    "population_statistical_method": 11514000,
+    "population": 0,
+    "elderly": 2531510
+  },
+  {
+    "data_year": 1970,
+    "population_statistical_method": 10352000,
+    "population": 0,
+    "elderly": 2796600
+  },
+  {
+    "data_year": 1975,
+    "population_statistical_method": 7907490,
+    "population": 0,
+    "elderly": 1659890
+  },
+  {
+    "data_year": 1980,
+    "population_statistical_method": 6973080,
+    "population": 0,
+    "elderly": 1711350
+  },
+  {
+    "data_year": 1985,
+    "population_statistical_method": 6363230,
+    "population": 0,
+    "elderly": 1854620
+  },
+  {
+    "data_year": 1990,
+    "population_statistical_method": 4818920,
+    "population": 0,
+    "elderly": 1597280
+  },
+  {
+    "data_year": 1995,
+    "population_statistical_method": 0,
+    "population": 4139810,
+    "elderly": 1799640
+  },
+  {
+    "data_year": 2000,
+    "population_statistical_method": 0,
+    "population": 3891220,
+    "elderly": 2057520
+  },
+  {
+    "data_year": 2005,
+    "population_statistical_method": 0,
+    "population": 3352590,
+    "elderly": 1950520
+  },
+  {
+    "data_year": 2010,
+    "population_statistical_method": 0,
+    "population": 2605740,
+    "elderly": 1605040
+  },
+  {
+    "data_year": 2015,
+    "population_statistical_method": 0,
+    "population": 2096660,
+    "elderly": 1330680
+  }
+]

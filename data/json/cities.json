@@ -1,0 +1,2522 @@
+[
+  {
+    "nation_cd": 4,
+    "city_name_eg": "Kabul",
+    "data_year": 2020,
+    "city_name": "カブール",
+    "population": 4434,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 8,
+    "city_name_eg": "Tirana",
+    "data_year": 2011,
+    "city_name": "ティラナ",
+    "population": 418,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 12,
+    "city_name_eg": "Algiers",
+    "data_year": 2008,
+    "city_name": "アルジェ",
+    "population": 2364,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 20,
+    "city_name_eg": "Andorra la Vella",
+    "data_year": 2020,
+    "city_name": "アンドララベリャ",
+    "population": 19,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 24,
+    "city_name_eg": "Luanda",
+    "data_year": 2014,
+    "city_name": "ルアンダ",
+    "population": 6760,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 31,
+    "city_name_eg": "Baku",
+    "data_year": 2020,
+    "city_name": "バクー",
+    "population": 2293,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 32,
+    "city_name_eg": "Buenos Aires",
+    "data_year": 2019,
+    "city_name": "ブエノスアイレス",
+    "population": 3072,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 32,
+    "city_name_eg": "Cordoba",
+    "data_year": 2018,
+    "city_name": "コルドバ",
+    "population": 1438,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 32,
+    "city_name_eg": "Rosario",
+    "data_year": 2018,
+    "city_name": "ロサリオ",
+    "population": 1277,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 36,
+    "city_name_eg": "Adelaide",
+    "data_year": 2017,
+    "city_name": "アデレード",
+    "population": 1333,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 36,
+    "city_name_eg": "Brisbane",
+    "data_year": 2017,
+    "city_name": "ブリズベン",
+    "population": 2408,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 36,
+    "city_name_eg": "Canberra",
+    "data_year": 2020,
+    "city_name": "キャンベラ",
+    "population": 431,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 36,
+    "city_name_eg": "Melbourne",
+    "data_year": 2017,
+    "city_name": "メルボルン",
+    "population": 4850,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 36,
+    "city_name_eg": "Perth",
+    "data_year": 2017,
+    "city_name": "パース",
+    "population": 2043,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 36,
+    "city_name_eg": "Sydney",
+    "data_year": 2017,
+    "city_name": "シドニー",
+    "population": 5131,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 40,
+    "city_name_eg": "Vienna",
+    "data_year": 2021,
+    "city_name": "ウィーン",
+    "population": 1921,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 44,
+    "city_name_eg": "Nassau",
+    "data_year": 2016,
+    "city_name": "ナッソー",
+    "population": 266,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 48,
+    "city_name_eg": "Manama",
+    "data_year": 2006,
+    "city_name": "マナーマ",
+    "population": 176,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 50,
+    "city_name_eg": "Chittagong",
+    "data_year": 2011,
+    "city_name": "チッタゴン",
+    "population": 2592,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 50,
+    "city_name_eg": "Dhaka",
+    "data_year": 2011,
+    "city_name": "ダッカ",
+    "population": 7033,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 51,
+    "city_name_eg": "Yerevan",
+    "data_year": 2020,
+    "city_name": "エレバン",
+    "population": 1084,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 52,
+    "city_name_eg": "Bridgetown",
+    "data_year": 2000,
+    "city_name": "ブリッジタウン",
+    "population": 5,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 56,
+    "city_name_eg": "Antwerpen",
+    "data_year": 2018,
+    "city_name": "アントウェルペン",
+    "population": 523,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 56,
+    "city_name_eg": "Brussels",
+    "data_year": 2020,
+    "city_name": "ブリュッセル",
+    "population": 1218,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 64,
+    "city_name_eg": "Thimphu",
+    "data_year": 2017,
+    "city_name": "ティンプー",
+    "population": 114,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 68,
+    "city_name_eg": "La Paz",
+    "data_year": 2012,
+    "city_name": "ラパス",
+    "population": 757,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 68,
+    "city_name_eg": "Santa Cruz",
+    "data_year": 2012,
+    "city_name": "サンタクルス",
+    "population": 1441,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 70,
+    "city_name_eg": "Sarajevo",
+    "data_year": 2012,
+    "city_name": "サラエボ",
+    "population": 310,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 72,
+    "city_name_eg": "Gaborone",
+    "data_year": 2020,
+    "city_name": "ハボローネ",
+    "population": 274,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 76,
+    "city_name_eg": "Belo Horizonte",
+    "data_year": 2018,
+    "city_name": "ベロオリゾンテ",
+    "population": 2501,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 76,
+    "city_name_eg": "Brasilia",
+    "data_year": 2020,
+    "city_name": "ブラジリア",
+    "population": 3055,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 76,
+    "city_name_eg": "Fortaleza",
+    "data_year": 2018,
+    "city_name": "フォルタレーザ",
+    "population": 2643,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 76,
+    "city_name_eg": "Manaus",
+    "data_year": 2018,
+    "city_name": "マナオス",
+    "population": 2145,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 76,
+    "city_name_eg": "Rio de Janeiro",
+    "data_year": 2018,
+    "city_name": "リオデジャネイロ",
+    "population": 6688,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 76,
+    "city_name_eg": "Salvador",
+    "data_year": 2018,
+    "city_name": "サルヴァドル",
+    "population": 2857,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 76,
+    "city_name_eg": "Sao Paulo",
+    "data_year": 2018,
+    "city_name": "サンパウロ",
+    "population": 12176,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 84,
+    "city_name_eg": "Belmopan",
+    "data_year": 2020,
+    "city_name": "ベルモパン",
+    "population": 25,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 90,
+    "city_name_eg": "Honiara",
+    "data_year": 2019,
+    "city_name": "ホニアラ",
+    "population": 130,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 96,
+    "city_name_eg": "Bandar Seri Begawan",
+    "data_year": 2016,
+    "city_name": "バンダルスリブガワン",
+    "population": 202,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 100,
+    "city_name_eg": "Sofia",
+    "data_year": 2020,
+    "city_name": "ソフィア",
+    "population": 1249,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 104,
+    "city_name_eg": "Naypyidaw",
+    "data_year": 2014,
+    "city_name": "ネーピードー",
+    "population": 375,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 104,
+    "city_name_eg": "Yangon",
+    "data_year": 2014,
+    "city_name": "ヤンゴン",
+    "population": 5160,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 108,
+    "city_name_eg": "Bujumbura",
+    "data_year": 2008,
+    "city_name": "ブジュンブラ",
+    "population": 497,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 112,
+    "city_name_eg": "Minsk",
+    "data_year": 2020,
+    "city_name": "ミンスク",
+    "population": 2020,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 116,
+    "city_name_eg": "Phnom Penh",
+    "data_year": 2019,
+    "city_name": "プノンペン",
+    "population": 2189,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 120,
+    "city_name_eg": "Yaounde",
+    "data_year": 2019,
+    "city_name": "ヤウンデ",
+    "population": 3158,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 124,
+    "city_name_eg": "Calgary",
+    "data_year": 2020,
+    "city_name": "カルガリー",
+    "population": 1362,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 124,
+    "city_name_eg": "Edmonton",
+    "data_year": 2020,
+    "city_name": "エドモントン",
+    "population": 1047,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 124,
+    "city_name_eg": "Montreal",
+    "data_year": 2020,
+    "city_name": "モントリオール",
+    "population": 1821,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 124,
+    "city_name_eg": "Ottawa",
+    "data_year": 2020,
+    "city_name": "オタワ",
+    "population": 1043,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 124,
+    "city_name_eg": "Toronto",
+    "data_year": 2020,
+    "city_name": "トロント",
+    "population": 2988,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 124,
+    "city_name_eg": "Vancouver",
+    "data_year": 2020,
+    "city_name": "ヴァンクーヴァー",
+    "population": 697,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 132,
+    "city_name_eg": "Praia",
+    "data_year": 2010,
+    "city_name": "プライア",
+    "population": 127,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 140,
+    "city_name_eg": "Bangui",
+    "data_year": 2014,
+    "city_name": "バンギ",
+    "population": 781,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 144,
+    "city_name_eg": "Colombo",
+    "data_year": 2012,
+    "city_name": "コロンボ",
+    "population": 561,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 144,
+    "city_name_eg": "Sri Jayawardenapura-Kotte",
+    "data_year": 2012,
+    "city_name": "スリジャヤワルダナプラコッテ",
+    "population": 107,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 148,
+    "city_name_eg": "N'Djamena",
+    "data_year": 2019,
+    "city_name": "ンジャメナ",
+    "population": 1521,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 152,
+    "city_name_eg": "Santiago",
+    "data_year": 2020,
+    "city_name": "サンティアゴ",
+    "population": 5995,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 156,
+    "city_name_eg": "Beijing",
+    "data_year": 2019,
+    "city_name": "ペキン",
+    "population": 13920,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 156,
+    "city_name_eg": "Changchun",
+    "data_year": 2016,
+    "city_name": "チャンチュン〔長春〕",
+    "population": 4360,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 156,
+    "city_name_eg": "Chengdu",
+    "data_year": 2016,
+    "city_name": "チョントゥー〔成都〕",
+    "population": 7740,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 156,
+    "city_name_eg": "Chongqing",
+    "data_year": 2016,
+    "city_name": "チョンチン〔重慶〕",
+    "population": 24488,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 156,
+    "city_name_eg": "Dalian",
+    "data_year": 2016,
+    "city_name": "ターリエン〔大連〕",
+    "population": 3980,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 156,
+    "city_name_eg": "Foshan",
+    "data_year": 2016,
+    "city_name": "フォーシャン〔仏山〕",
+    "population": 4000,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 156,
+    "city_name_eg": "Guangzhou",
+    "data_year": 2016,
+    "city_name": "コワンチョウ〔広州〕",
+    "population": 8700,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 156,
+    "city_name_eg": "Hangzhou",
+    "data_year": 2016,
+    "city_name": "ハンチョウ〔杭州〕",
+    "population": 5450,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 156,
+    "city_name_eg": "Harbin",
+    "data_year": 2016,
+    "city_name": "ハルビン〔哈爾浜〕",
+    "population": 5510,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 156,
+    "city_name_eg": "Hong Kong",
+    "data_year": 2018,
+    "city_name": "ホンコン〔香港〕",
+    "population": 7482,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 156,
+    "city_name_eg": "Nanjing",
+    "data_year": 2016,
+    "city_name": "ナンキン〔南京〕",
+    "population": 6630,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 156,
+    "city_name_eg": "Qingdao",
+    "data_year": 2016,
+    "city_name": "チンタオ〔青島〕",
+    "population": 3790,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 156,
+    "city_name_eg": "Shanghai",
+    "data_year": 2016,
+    "city_name": "シャンハイ〔上海〕",
+    "population": 14500,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 156,
+    "city_name_eg": "Shantou",
+    "data_year": 2016,
+    "city_name": "スワトウ〔汕頭〕",
+    "population": 5520,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 156,
+    "city_name_eg": "Shenyang",
+    "data_year": 2016,
+    "city_name": "シェンヤン〔瀋陽〕",
+    "population": 5860,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 156,
+    "city_name_eg": "Shenzhen",
+    "data_year": 2016,
+    "city_name": "シェンチェン〔深?〕",
+    "population": 3850,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 156,
+    "city_name_eg": "Tianjin",
+    "data_year": 2016,
+    "city_name": "テンチン〔天津〕",
+    "population": 10444,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 156,
+    "city_name_eg": "Wuhan",
+    "data_year": 2016,
+    "city_name": "ウーハン〔武漢〕",
+    "population": 5180,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 156,
+    "city_name_eg": "Xi'an",
+    "data_year": 2016,
+    "city_name": "シーアン〔西安〕",
+    "population": 6290,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 158,
+    "city_name_eg": "Kaohsiung",
+    "data_year": 2019,
+    "city_name": "カオシュン〔高雄〕",
+    "population": 2773,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 158,
+    "city_name_eg": "New Taipei",
+    "data_year": 2019,
+    "city_name": "シンペイ〔新北〕",
+    "population": 3997,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 158,
+    "city_name_eg": "Taichung",
+    "data_year": 2019,
+    "city_name": "タイジョン〔台中〕",
+    "population": 2806,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 158,
+    "city_name_eg": "Taipei",
+    "data_year": 2019,
+    "city_name": "タイペイ〔台北〕",
+    "population": 2666,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 170,
+    "city_name_eg": "Bogota",
+    "data_year": 2020,
+    "city_name": "ボゴタ",
+    "population": 7715,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 170,
+    "city_name_eg": "Cali",
+    "data_year": 2018,
+    "city_name": "カリ",
+    "population": 2408,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 170,
+    "city_name_eg": "Medellin",
+    "data_year": 2018,
+    "city_name": "メデジン",
+    "population": 2501,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 174,
+    "city_name_eg": "Moroni",
+    "data_year": 2014,
+    "city_name": "モロニ",
+    "population": 56,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 178,
+    "city_name_eg": "Brazzaville",
+    "data_year": 2007,
+    "city_name": "ブラザビル",
+    "population": 1373,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 180,
+    "city_name_eg": "Kinshasa",
+    "data_year": 2010,
+    "city_name": "キンシャサ",
+    "population": 8415,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 184,
+    "city_name_eg": "Avarua",
+    "data_year": 2016,
+    "city_name": "アバルア",
+    "population": 4,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 188,
+    "city_name_eg": "San Jose",
+    "data_year": 2020,
+    "city_name": "サンホセ",
+    "population": 347,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 191,
+    "city_name_eg": "Zagreb",
+    "data_year": 2019,
+    "city_name": "ザグレブ",
+    "population": 809,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 192,
+    "city_name_eg": "Havana",
+    "data_year": 2019,
+    "city_name": "ハバナ",
+    "population": 2132,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 196,
+    "city_name_eg": "Nicosia",
+    "data_year": 2011,
+    "city_name": "ニコシア",
+    "population": 55,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 203,
+    "city_name_eg": "Prague",
+    "data_year": 2020,
+    "city_name": "プラハ",
+    "population": 1324,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 204,
+    "city_name_eg": "Porto-Novo",
+    "data_year": 2013,
+    "city_name": "ポルトノボ",
+    "population": 264,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 208,
+    "city_name_eg": "Copenhagen",
+    "data_year": 2020,
+    "city_name": "コペンハーゲン",
+    "population": 793,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 212,
+    "city_name_eg": "Roseau",
+    "data_year": 2011,
+    "city_name": "ロゾー",
+    "population": 14,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 214,
+    "city_name_eg": "Santo Domingo",
+    "data_year": 2010,
+    "city_name": "サントドミンゴ",
+    "population": 965,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 218,
+    "city_name_eg": "Guayaquil",
+    "data_year": 2017,
+    "city_name": "グアヤキル",
+    "population": 2556,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 218,
+    "city_name_eg": "Quito",
+    "data_year": 2019,
+    "city_name": "キト",
+    "population": 1817,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 222,
+    "city_name_eg": "San Salvador",
+    "data_year": 2017,
+    "city_name": "サンサルバドル",
+    "population": 238,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 226,
+    "city_name_eg": "Malabo",
+    "data_year": 2014,
+    "city_name": "マラボ",
+    "population": 145,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 231,
+    "city_name_eg": "Addis Ababa",
+    "data_year": 2019,
+    "city_name": "アディスアベバ",
+    "population": 3603,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 232,
+    "city_name_eg": "Asmara",
+    "data_year": 2019,
+    "city_name": "アスマラ",
+    "population": 512,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 233,
+    "city_name_eg": "Tallinn",
+    "data_year": 2020,
+    "city_name": "タリン",
+    "population": 437,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 242,
+    "city_name_eg": "Suva",
+    "data_year": 2017,
+    "city_name": "スバ",
+    "population": 93,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 246,
+    "city_name_eg": "Helsinki",
+    "data_year": 2020,
+    "city_name": "ヘルシンキ",
+    "population": 656,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 250,
+    "city_name_eg": "Lyon",
+    "data_year": 2016,
+    "city_name": "リヨン",
+    "population": 515,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 250,
+    "city_name_eg": "Marseille",
+    "data_year": 2016,
+    "city_name": "マルセイユ",
+    "population": 862,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 250,
+    "city_name_eg": "Paris",
+    "data_year": 2018,
+    "city_name": "パリ",
+    "population": 2175,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 262,
+    "city_name_eg": "Djibouti",
+    "data_year": 2009,
+    "city_name": "ジブチ",
+    "population": 475,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 266,
+    "city_name_eg": "Libreville",
+    "data_year": 2013,
+    "city_name": "リーブルビル",
+    "population": 703,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 268,
+    "city_name_eg": "Tbilisi",
+    "data_year": 2020,
+    "city_name": "トビリシ",
+    "population": 1154,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 270,
+    "city_name_eg": "Banjul",
+    "data_year": 2013,
+    "city_name": "バンジュール",
+    "population": 31,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 276,
+    "city_name_eg": "Berlin",
+    "data_year": 2019,
+    "city_name": "ベルリン",
+    "population": 3669,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 276,
+    "city_name_eg": "Hamburg",
+    "data_year": 2017,
+    "city_name": "ハンブルク",
+    "population": 1830,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 276,
+    "city_name_eg": "Munich",
+    "data_year": 2017,
+    "city_name": "ミュンヘン",
+    "population": 1456,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 288,
+    "city_name_eg": "Accra",
+    "data_year": 2010,
+    "city_name": "アクラ",
+    "population": 2070,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 296,
+    "city_name_eg": "Tarawa",
+    "data_year": 2015,
+    "city_name": "タラワ",
+    "population": 63,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 300,
+    "city_name_eg": "Athens",
+    "data_year": 2011,
+    "city_name": "アテネ",
+    "population": 664,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 308,
+    "city_name_eg": "St. George's",
+    "data_year": 2011,
+    "city_name": "セントジョージズ",
+    "population": 36,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 320,
+    "city_name_eg": "Guatemala City",
+    "data_year": 2018,
+    "city_name": "グアテマラシティ",
+    "population": 923,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 324,
+    "city_name_eg": "Conakry",
+    "data_year": 2014,
+    "city_name": "コナクリ",
+    "population": 1659,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 328,
+    "city_name_eg": "Georgetown",
+    "data_year": 2012,
+    "city_name": "ジョージタウン",
+    "population": 118,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 332,
+    "city_name_eg": "Port-au-Prince",
+    "data_year": 2015,
+    "city_name": "ポルトープランス",
+    "population": 977,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 336,
+    "city_name_eg": "Vatican City",
+    "data_year": 2018,
+    "city_name": "バチカン",
+    "population": 1,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 340,
+    "city_name_eg": "Tegucigalpa",
+    "data_year": 2020,
+    "city_name": "テグシガルパ",
+    "population": 1157,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 348,
+    "city_name_eg": "Budapest",
+    "data_year": 2020,
+    "city_name": "ブダペスト",
+    "population": 1750,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 352,
+    "city_name_eg": "Reykjavik",
+    "data_year": 2020,
+    "city_name": "レイキャビク",
+    "population": 129,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 356,
+    "city_name_eg": "Ahmedabad",
+    "data_year": 2011,
+    "city_name": "アーメダーバード",
+    "population": 5577,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 356,
+    "city_name_eg": "Bruhat Bengaluru Mahanagara Pa",
+    "data_year": 2011,
+    "city_name": "ベンガルール（バンガロール）",
+    "population": 8443,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 356,
+    "city_name_eg": "Chennai",
+    "data_year": 2011,
+    "city_name": "チェンナイ（マドラス）",
+    "population": 4646,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 356,
+    "city_name_eg": "Delhi Municipal Corporation (D",
+    "data_year": 2011,
+    "city_name": "デリー",
+    "population": 11034,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 356,
+    "city_name_eg": "Greater Hyderabad Municipal Co",
+    "data_year": 2011,
+    "city_name": "ハイデラバード",
+    "population": 6731,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 356,
+    "city_name_eg": "Greater Mumbai",
+    "data_year": 2011,
+    "city_name": "ムンバイ（ボンベイ）",
+    "population": 12442,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 356,
+    "city_name_eg": "Jaipur",
+    "data_year": 2011,
+    "city_name": "ジャイプル",
+    "population": 3046,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 356,
+    "city_name_eg": "Kolkata",
+    "data_year": 2011,
+    "city_name": "コルカタ（カルカッタ）",
+    "population": 4496,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 356,
+    "city_name_eg": "Pune",
+    "data_year": 2011,
+    "city_name": "プネ",
+    "population": 3124,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 356,
+    "city_name_eg": "Surat",
+    "data_year": 2011,
+    "city_name": "スーラト",
+    "population": 4467,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 360,
+    "city_name_eg": "Bandung",
+    "data_year": 2016,
+    "city_name": "バンドン",
+    "population": 2497,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 360,
+    "city_name_eg": "Jakarta",
+    "data_year": 2018,
+    "city_name": "ジャカルタ",
+    "population": 10428,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 360,
+    "city_name_eg": "Makassar",
+    "data_year": 2016,
+    "city_name": "マカッサル",
+    "population": 1489,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 360,
+    "city_name_eg": "Medan",
+    "data_year": 2016,
+    "city_name": "メダン",
+    "population": 2247,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 360,
+    "city_name_eg": "Palembang",
+    "data_year": 2016,
+    "city_name": "パレンバン",
+    "population": 1623,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 360,
+    "city_name_eg": "Semarang",
+    "data_year": 2016,
+    "city_name": "スマラン",
+    "population": 1757,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 360,
+    "city_name_eg": "Surabaya",
+    "data_year": 2016,
+    "city_name": "スラバヤ",
+    "population": 2874,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 364,
+    "city_name_eg": "Isfahan",
+    "data_year": 2016,
+    "city_name": "イスファハーン",
+    "population": 1961,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 364,
+    "city_name_eg": "Mashhad",
+    "data_year": 2016,
+    "city_name": "マシュハド",
+    "population": 3001,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 364,
+    "city_name_eg": "Tehran",
+    "data_year": 2016,
+    "city_name": "テヘラン",
+    "population": 8693,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 368,
+    "city_name_eg": "Al-Mosul Qadha Center",
+    "data_year": 2015,
+    "city_name": "モスル",
+    "population": 1384,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 368,
+    "city_name_eg": "Baghdad",
+    "data_year": 2011,
+    "city_name": "バグダッド",
+    "population": 6152,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 372,
+    "city_name_eg": "Dublin",
+    "data_year": 2016,
+    "city_name": "ダブリン",
+    "population": 544,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 376,
+    "city_name_eg": "Jerusalem",
+    "data_year": 2019,
+    "city_name": "エルサレム",
+    "population": 936,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 380,
+    "city_name_eg": "Milano",
+    "data_year": 2018,
+    "city_name": "ミラノ",
+    "population": 1366,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 380,
+    "city_name_eg": "Napoli",
+    "data_year": 2018,
+    "city_name": "ナポリ",
+    "population": 966,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 380,
+    "city_name_eg": "Rome",
+    "data_year": 2019,
+    "city_name": "ローマ",
+    "population": 2808,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 384,
+    "city_name_eg": "Abidjan",
+    "data_year": 2014,
+    "city_name": "アビジャン",
+    "population": 4395,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 384,
+    "city_name_eg": "Yamoussoukro",
+    "data_year": 2014,
+    "city_name": "ヤムスクロ",
+    "population": 212,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 388,
+    "city_name_eg": "Kingston",
+    "data_year": 2019,
+    "city_name": "キングストン",
+    "population": 662,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 392,
+    "city_name_eg": "Tokyo",
+    "data_year": 2021,
+    "city_name": "東京",
+    "population": 9572,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 398,
+    "city_name_eg": "Almaty",
+    "data_year": 2018,
+    "city_name": "アルマティ",
+    "population": 1801,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 398,
+    "city_name_eg": "Nur-Sultan",
+    "data_year": 2019,
+    "city_name": "ヌルスルタン",
+    "population": 1107,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 400,
+    "city_name_eg": "Amman",
+    "data_year": 2015,
+    "city_name": "アンマン",
+    "population": 1812,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 404,
+    "city_name_eg": "Nairobi",
+    "data_year": 2019,
+    "city_name": "ナイロビ",
+    "population": 4397,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 408,
+    "city_name_eg": "Pyongyang",
+    "data_year": 2008,
+    "city_name": "ピョンヤン",
+    "population": 2581,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 410,
+    "city_name_eg": "Busan",
+    "data_year": 2018,
+    "city_name": "プサン〔釜山〕",
+    "population": 3473,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 410,
+    "city_name_eg": "Daegu",
+    "data_year": 2018,
+    "city_name": "テグ〔大邱〕",
+    "population": 2479,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 410,
+    "city_name_eg": "Incheon",
+    "data_year": 2018,
+    "city_name": "インチョン〔仁川〕",
+    "population": 2977,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 410,
+    "city_name_eg": "Seoul",
+    "data_year": 2019,
+    "city_name": "ソウル",
+    "population": 9639,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 414,
+    "city_name_eg": "Kuwait City",
+    "data_year": 2017,
+    "city_name": "クウェート",
+    "population": 60,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 417,
+    "city_name_eg": "Bishkek",
+    "data_year": 2020,
+    "city_name": "ビシュケク",
+    "population": 1049,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 418,
+    "city_name_eg": "Vientiane",
+    "data_year": 2015,
+    "city_name": "ビエンチャン",
+    "population": 639,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 422,
+    "city_name_eg": "Beirut",
+    "data_year": 2019,
+    "city_name": "ベイルート",
+    "population": 421,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 426,
+    "city_name_eg": "Maseru",
+    "data_year": 2016,
+    "city_name": "マセル",
+    "population": 330,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 428,
+    "city_name_eg": "Riga",
+    "data_year": 2020,
+    "city_name": "リガ",
+    "population": 627,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 430,
+    "city_name_eg": "Monrovia",
+    "data_year": 2008,
+    "city_name": "モンロビア",
+    "population": 1011,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 434,
+    "city_name_eg": "Tripoli",
+    "data_year": 2012,
+    "city_name": "トリポリ",
+    "population": 940,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 438,
+    "city_name_eg": "Vaduz",
+    "data_year": 2019,
+    "city_name": "ファドーツ",
+    "population": 5,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 440,
+    "city_name_eg": "Vilnius",
+    "data_year": 2021,
+    "city_name": "ビリニュス",
+    "population": 559,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 442,
+    "city_name_eg": "Luxembourg",
+    "data_year": 2021,
+    "city_name": "ルクセンブルク",
+    "population": 124,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 450,
+    "city_name_eg": "Antananarivo",
+    "data_year": 2018,
+    "city_name": "アンタナナリボ",
+    "population": 1274,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 454,
+    "city_name_eg": "Lilongwe",
+    "data_year": 2018,
+    "city_name": "リロングウェ",
+    "population": 989,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 458,
+    "city_name_eg": "Kuala Lumpur",
+    "data_year": 2019,
+    "city_name": "クアラルンプール",
+    "population": 1839,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 462,
+    "city_name_eg": "Male",
+    "data_year": 2019,
+    "city_name": "マレ",
+    "population": 221,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 466,
+    "city_name_eg": "Bamako",
+    "data_year": 2009,
+    "city_name": "バマコ",
+    "population": 1810,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 470,
+    "city_name_eg": "Valletta",
+    "data_year": 2019,
+    "city_name": "バレッタ",
+    "population": 5,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 478,
+    "city_name_eg": "Nouakchott",
+    "data_year": 2018,
+    "city_name": "ヌアクショット",
+    "population": 1155,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 480,
+    "city_name_eg": "Port Louis",
+    "data_year": 2019,
+    "city_name": "ポートルイス",
+    "population": 146,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 484,
+    "city_name_eg": "Guadalajara",
+    "data_year": 2018,
+    "city_name": "グアダラハラ",
+    "population": 1530,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 484,
+    "city_name_eg": "Juarez",
+    "data_year": 2018,
+    "city_name": "シウダーファレス",
+    "population": 1447,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 484,
+    "city_name_eg": "Mexico City",
+    "data_year": 2020,
+    "city_name": "メキシコシティ",
+    "population": 8843,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 484,
+    "city_name_eg": "Puebla",
+    "data_year": 2018,
+    "city_name": "プエブラ",
+    "population": 1536,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 484,
+    "city_name_eg": "Tijuana",
+    "data_year": 2018,
+    "city_name": "ティファナ",
+    "population": 1434,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 492,
+    "city_name_eg": "Monaco",
+    "data_year": 2019,
+    "city_name": "モナコ",
+    "population": 38,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 496,
+    "city_name_eg": "Ulan Bator",
+    "data_year": 2019,
+    "city_name": "ウランバートル",
+    "population": 1539,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 499,
+    "city_name_eg": "Podgorica",
+    "data_year": 2019,
+    "city_name": "ポドゴリツァ",
+    "population": 189,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 504,
+    "city_name_eg": "Casablanca",
+    "data_year": 2014,
+    "city_name": "カサブランカ",
+    "population": 3359,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 504,
+    "city_name_eg": "Rabat",
+    "data_year": 2014,
+    "city_name": "ラバト",
+    "population": 577,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 508,
+    "city_name_eg": "Maputo",
+    "data_year": 2019,
+    "city_name": "マプト",
+    "population": 1122,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 512,
+    "city_name_eg": "Muscat",
+    "data_year": 2019,
+    "city_name": "マスカット",
+    "population": 76,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 516,
+    "city_name_eg": "Windhoek",
+    "data_year": 2011,
+    "city_name": "ウィントフック",
+    "population": 325,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 520,
+    "city_name_eg": "Yaren",
+    "data_year": 2011,
+    "city_name": "ヤレン",
+    "population": 1,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 524,
+    "city_name_eg": "Kathmandu",
+    "data_year": 2011,
+    "city_name": "カトマンズ",
+    "population": 1003,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 528,
+    "city_name_eg": "Amsterdam",
+    "data_year": 2019,
+    "city_name": "アムステルダム",
+    "population": 862,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 528,
+    "city_name_eg": "Rotterdam",
+    "data_year": 2017,
+    "city_name": "ロッテルダム",
+    "population": 634,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 548,
+    "city_name_eg": "Port Vila",
+    "data_year": 2016,
+    "city_name": "ポートビラ",
+    "population": 51,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 554,
+    "city_name_eg": "Auckland",
+    "data_year": 2018,
+    "city_name": "オークランド",
+    "population": 1695,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 554,
+    "city_name_eg": "Wellington",
+    "data_year": 2020,
+    "city_name": "ウェリントン",
+    "population": 216,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 558,
+    "city_name_eg": "Managua",
+    "data_year": 2019,
+    "city_name": "マナグア",
+    "population": 1041,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 562,
+    "city_name_eg": "Niamey",
+    "data_year": 2017,
+    "city_name": "ニアメ",
+    "population": 1203,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 566,
+    "city_name_eg": "Abuja",
+    "data_year": 2010,
+    "city_name": "アブジャ",
+    "population": 2010,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 566,
+    "city_name_eg": "Lagos",
+    "data_year": 2010,
+    "city_name": "ラゴス",
+    "population": 10788,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 570,
+    "city_name_eg": "Alofi",
+    "data_year": 2017,
+    "city_name": "アロフィ",
+    "population": 1,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 578,
+    "city_name_eg": "Oslo",
+    "data_year": 2021,
+    "city_name": "オスロ",
+    "population": 697,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 583,
+    "city_name_eg": "Palikir",
+    "data_year": 2010,
+    "city_name": "パリキール",
+    "population": 6,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 584,
+    "city_name_eg": "Majuro",
+    "data_year": 2011,
+    "city_name": "マジュロ",
+    "population": 27,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 585,
+    "city_name_eg": "Melekeok",
+    "data_year": 2015,
+    "city_name": "マルキョク",
+    "population": 0,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 586,
+    "city_name_eg": "Islamabad",
+    "data_year": 2017,
+    "city_name": "イスラマバード",
+    "population": 1009,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 586,
+    "city_name_eg": "Karachi",
+    "data_year": 2017,
+    "city_name": "カラチ",
+    "population": 14916,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 586,
+    "city_name_eg": "Lahore",
+    "data_year": 2017,
+    "city_name": "ラホール",
+    "population": 11126,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 591,
+    "city_name_eg": "Panama City",
+    "data_year": 2019,
+    "city_name": "パナマシティ",
+    "population": 434,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 598,
+    "city_name_eg": "Port Moresby",
+    "data_year": 2011,
+    "city_name": "ポートモレスビー",
+    "population": 364,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 600,
+    "city_name_eg": "Asuncion",
+    "data_year": 2020,
+    "city_name": "アスンシオン",
+    "population": 521,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 604,
+    "city_name_eg": "Lima",
+    "data_year": 2018,
+    "city_name": "リマ",
+    "population": 10350,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 608,
+    "city_name_eg": "Davao City",
+    "data_year": 2015,
+    "city_name": "ケソンシティ",
+    "population": 2936,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 608,
+    "city_name_eg": "Manila",
+    "data_year": 2015,
+    "city_name": "マニラ",
+    "population": 1780,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 608,
+    "city_name_eg": "Quezon City",
+    "data_year": 2015,
+    "city_name": "ダヴァオ",
+    "population": 1632,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 616,
+    "city_name_eg": "Warsaw",
+    "data_year": 2019,
+    "city_name": "ワルシャワ",
+    "population": 1790,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 620,
+    "city_name_eg": "Lisbon",
+    "data_year": 2019,
+    "city_name": "リスボン",
+    "population": 509,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 624,
+    "city_name_eg": "Bissau",
+    "data_year": 2009,
+    "city_name": "ビサウ",
+    "population": 387,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 626,
+    "city_name_eg": "Dili",
+    "data_year": 2015,
+    "city_name": "ディリ",
+    "population": 222,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 634,
+    "city_name_eg": "Doha",
+    "data_year": 2015,
+    "city_name": "ドーハ",
+    "population": 956,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 642,
+    "city_name_eg": "Bucharest",
+    "data_year": 2019,
+    "city_name": "ブカレスト",
+    "population": 1829,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 643,
+    "city_name_eg": "Ekaterinburg",
+    "data_year": 2018,
+    "city_name": "エカテリンブルク",
+    "population": 1468,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 643,
+    "city_name_eg": "Moscow",
+    "data_year": 2020,
+    "city_name": "モスクワ",
+    "population": 12480,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 643,
+    "city_name_eg": "Nizhny Novgorod",
+    "data_year": 2018,
+    "city_name": "ニジニーノヴゴロド",
+    "population": 1259,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 643,
+    "city_name_eg": "Novosibirsk",
+    "data_year": 2018,
+    "city_name": "ノヴォシビルスク",
+    "population": 1612,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 643,
+    "city_name_eg": "Saint Petersburg",
+    "data_year": 2018,
+    "city_name": "サンクトペテルブルク",
+    "population": 5351,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 646,
+    "city_name_eg": "Kigali",
+    "data_year": 2012,
+    "city_name": "キガリ",
+    "population": 859,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 662,
+    "city_name_eg": "Castries",
+    "data_year": 2010,
+    "city_name": "カストリーズ",
+    "population": 22,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 674,
+    "city_name_eg": "San Marino",
+    "data_year": 2020,
+    "city_name": "サンマリノ",
+    "population": 4,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 678,
+    "city_name_eg": "Sao Tome",
+    "data_year": 2012,
+    "city_name": "サントメ",
+    "population": 69,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 682,
+    "city_name_eg": "Jeddah",
+    "data_year": 2010,
+    "city_name": "ジッダ",
+    "population": 3430,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 682,
+    "city_name_eg": "Makkah",
+    "data_year": 2010,
+    "city_name": "メッカ（マッカ）",
+    "population": 1534,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 682,
+    "city_name_eg": "Riyadh",
+    "data_year": 2010,
+    "city_name": "リヤド",
+    "population": 5188,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 686,
+    "city_name_eg": "Dakar",
+    "data_year": 2013,
+    "city_name": "ダカール",
+    "population": 2646,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 688,
+    "city_name_eg": "Belgrade",
+    "data_year": 2019,
+    "city_name": "ベオグラード",
+    "population": 1694,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 690,
+    "city_name_eg": "Victoria",
+    "data_year": 2020,
+    "city_name": "ビクトリア",
+    "population": 26,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 694,
+    "city_name_eg": "Freetown",
+    "data_year": 2015,
+    "city_name": "フリータウン",
+    "population": 1055,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 702,
+    "city_name_eg": "Singapore",
+    "data_year": 2019,
+    "city_name": "シンガポール",
+    "population": 5703,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 703,
+    "city_name_eg": "Bratislava",
+    "data_year": 2019,
+    "city_name": "ブラチスラバ",
+    "population": 437,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 704,
+    "city_name_eg": "Hanoi",
+    "data_year": 2019,
+    "city_name": "ハノイ",
+    "population": 3605,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 704,
+    "city_name_eg": "Ho Chi Minh City",
+    "data_year": 2009,
+    "city_name": "ホーチミン",
+    "population": 5880,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 705,
+    "city_name_eg": "Ljubljana",
+    "data_year": 2015,
+    "city_name": "リュブリャナ",
+    "population": 278,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 706,
+    "city_name_eg": "Mogadishu",
+    "data_year": 2014,
+    "city_name": "モガディシュ",
+    "population": 1650,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 710,
+    "city_name_eg": "Cape Town",
+    "data_year": 2016,
+    "city_name": "ケープタウン",
+    "population": 4004,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 710,
+    "city_name_eg": "Johannesburg",
+    "data_year": 2016,
+    "city_name": "ヨハネスバーグ",
+    "population": 4949,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 710,
+    "city_name_eg": "Pretoria",
+    "data_year": 2016,
+    "city_name": "プレトリア",
+    "population": 3275,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 716,
+    "city_name_eg": "Harare",
+    "data_year": 2012,
+    "city_name": "ハラレ",
+    "population": 1485,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 724,
+    "city_name_eg": "Barcelona",
+    "data_year": 2017,
+    "city_name": "バルセロナ",
+    "population": 1620,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 724,
+    "city_name_eg": "Madrid",
+    "data_year": 2020,
+    "city_name": "マドリード",
+    "population": 3334,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 728,
+    "city_name_eg": "Juba",
+    "data_year": 2008,
+    "city_name": "ジュバ",
+    "population": 230,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 729,
+    "city_name_eg": "Khartoum",
+    "data_year": 2008,
+    "city_name": "ハルツーム",
+    "population": 1410,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 729,
+    "city_name_eg": "Omdurman",
+    "data_year": 2008,
+    "city_name": "オムドゥルマン",
+    "population": 1849,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 740,
+    "city_name_eg": "Paramaribo",
+    "data_year": 2012,
+    "city_name": "パラマリボ",
+    "population": 240,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 748,
+    "city_name_eg": "Mbabane",
+    "data_year": 2017,
+    "city_name": "ムババーネ",
+    "population": 60,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 752,
+    "city_name_eg": "G?teborg",
+    "data_year": 2017,
+    "city_name": "イェーテボリ",
+    "population": 564,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 752,
+    "city_name_eg": "Stockholm",
+    "data_year": 2019,
+    "city_name": "ストックホルム",
+    "population": 975,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 756,
+    "city_name_eg": "Bern",
+    "data_year": 2019,
+    "city_name": "ベルン",
+    "population": 134,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 756,
+    "city_name_eg": "Z?rich",
+    "data_year": 2017,
+    "city_name": "チューリヒ",
+    "population": 409,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 760,
+    "city_name_eg": "Aleppo",
+    "data_year": 2011,
+    "city_name": "ハラブ（アレッポ）",
+    "population": 5927,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 760,
+    "city_name_eg": "Damascus",
+    "data_year": 2011,
+    "city_name": "ダマスカス",
+    "population": 1780,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 762,
+    "city_name_eg": "Dushanbe",
+    "data_year": 2019,
+    "city_name": "ドゥシャンベ",
+    "population": 846,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 764,
+    "city_name_eg": "Bangkok",
+    "data_year": 2019,
+    "city_name": "バンコク",
+    "population": 5666,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 768,
+    "city_name_eg": "Lome",
+    "data_year": 2020,
+    "city_name": "ロメ",
+    "population": 2173,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 776,
+    "city_name_eg": "Nuku'alofa",
+    "data_year": 2016,
+    "city_name": "ヌクアロファ",
+    "population": 23,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 780,
+    "city_name_eg": "Port of Spain",
+    "data_year": 2011,
+    "city_name": "ポートオブスペイン",
+    "population": 37,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 784,
+    "city_name_eg": "Abu Dhabi",
+    "data_year": 2016,
+    "city_name": "アブダビ",
+    "population": 1266,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 784,
+    "city_name_eg": "Dubai",
+    "data_year": 2017,
+    "city_name": "ドバイ",
+    "population": 2976,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 788,
+    "city_name_eg": "Tunis",
+    "data_year": 2014,
+    "city_name": "チュニス",
+    "population": 638,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 792,
+    "city_name_eg": "Ankara",
+    "data_year": 2020,
+    "city_name": "アンカラ",
+    "population": 5350,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 792,
+    "city_name_eg": "Istanbul",
+    "data_year": 2018,
+    "city_name": "イスタンブール",
+    "population": 15067,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 792,
+    "city_name_eg": "Izmir",
+    "data_year": 2018,
+    "city_name": "イズミル",
+    "population": 3749,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 795,
+    "city_name_eg": "Ashgabat",
+    "data_year": 2012,
+    "city_name": "アシガバット",
+    "population": 701,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 798,
+    "city_name_eg": "Funafuti",
+    "data_year": 2017,
+    "city_name": "フナフティ",
+    "population": 6,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 800,
+    "city_name_eg": "Kampala",
+    "data_year": 2020,
+    "city_name": "カンパラ",
+    "population": 1680,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 804,
+    "city_name_eg": "Kharkiv",
+    "data_year": 2019,
+    "city_name": "ハリコフ",
+    "population": 1446,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 804,
+    "city_name_eg": "Kiev",
+    "data_year": 2020,
+    "city_name": "キエフ",
+    "population": 2967,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 804,
+    "city_name_eg": "Odesa",
+    "data_year": 2019,
+    "city_name": "オデッサ",
+    "population": 1013,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 807,
+    "city_name_eg": "Skopje",
+    "data_year": 2019,
+    "city_name": "スコピエ",
+    "population": 554,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 818,
+    "city_name_eg": "Alexandria",
+    "data_year": 2006,
+    "city_name": "アレクサンドリア",
+    "population": 4028,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 818,
+    "city_name_eg": "Cairo",
+    "data_year": 2017,
+    "city_name": "カイロ",
+    "population": 9539,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 818,
+    "city_name_eg": "Giza",
+    "data_year": 2006,
+    "city_name": "ギーザ（アルギザ）",
+    "population": 3022,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 826,
+    "city_name_eg": "Birmingham",
+    "data_year": 2017,
+    "city_name": "バーミンガム",
+    "population": 1137,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 826,
+    "city_name_eg": "London",
+    "data_year": 2019,
+    "city_name": "ロンドン",
+    "population": 8961,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 834,
+    "city_name_eg": "Dodoma",
+    "data_year": 2018,
+    "city_name": "ダルエスサラーム",
+    "population": 5147,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 840,
+    "city_name_eg": "Chicago",
+    "data_year": 2017,
+    "city_name": "シカゴ",
+    "population": 2716,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 840,
+    "city_name_eg": "Dallas",
+    "data_year": 2017,
+    "city_name": "ダラス",
+    "population": 1341,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 840,
+    "city_name_eg": "Detroit",
+    "data_year": 2017,
+    "city_name": "デトロイト",
+    "population": 673,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 840,
+    "city_name_eg": "Houston",
+    "data_year": 2017,
+    "city_name": "ヒューストン",
+    "population": 2312,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 840,
+    "city_name_eg": "Los Angeles",
+    "data_year": 2017,
+    "city_name": "ロサンゼルス",
+    "population": 3999,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 840,
+    "city_name_eg": "New York City",
+    "data_year": 2017,
+    "city_name": "ニューヨーク",
+    "population": 8622,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 840,
+    "city_name_eg": "Philadelphia",
+    "data_year": 2017,
+    "city_name": "フィラデルフィア",
+    "population": 1580,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 840,
+    "city_name_eg": "Phoenix",
+    "data_year": 2017,
+    "city_name": "フェニックス",
+    "population": 1626,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 840,
+    "city_name_eg": "San Diego",
+    "data_year": 2017,
+    "city_name": "サンディエゴ",
+    "population": 1419,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 840,
+    "city_name_eg": "San Francisco",
+    "data_year": 2017,
+    "city_name": "サンフランシスコ",
+    "population": 884,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 840,
+    "city_name_eg": "Seattle",
+    "data_year": 2017,
+    "city_name": "シアトル",
+    "population": 724,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 840,
+    "city_name_eg": "Washington, D.C.",
+    "data_year": 2019,
+    "city_name": "ワシントンD.C.",
+    "population": 705,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 854,
+    "city_name_eg": "Ouagadougou",
+    "data_year": 2019,
+    "city_name": "ワガドゥグー",
+    "population": 2453,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 858,
+    "city_name_eg": "Montevideo",
+    "data_year": 2011,
+    "city_name": "モンテビデオ",
+    "population": 1304,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 860,
+    "city_name_eg": "Tashkent",
+    "data_year": 2020,
+    "city_name": "タシケント",
+    "population": 2571,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 862,
+    "city_name_eg": "Caracas",
+    "data_year": 2015,
+    "city_name": "カラカス",
+    "population": 2082,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 862,
+    "city_name_eg": "Maracaibo",
+    "data_year": 2015,
+    "city_name": "マラカイボ",
+    "population": 1653,
+    "capital_flg": 0
+  },
+  {
+    "nation_cd": 882,
+    "city_name_eg": "Apia",
+    "data_year": 2016,
+    "city_name": "アピア",
+    "population": 37,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 887,
+    "city_name_eg": "Sana'a",
+    "data_year": 2009,
+    "city_name": "サヌア",
+    "population": 1976,
+    "capital_flg": 1
+  },
+  {
+    "nation_cd": 894,
+    "city_name_eg": "Lusaka",
+    "data_year": 2010,
+    "city_name": "ルサカ",
+    "population": 1747,
+    "capital_flg": 1
+  }
+]

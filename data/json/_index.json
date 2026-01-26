@@ -1,0 +1,49 @@
+{
+  "generated": "2026-01-26T13:57:12.351Z",
+  "database": "data.sqlite3",
+  "files": {
+    "basic": [
+      "news.json",
+      "pages.json",
+      "nations.json",
+      "cities.json",
+      "climate-classifications.json"
+    ],
+    "views": [
+      "area-population.json",
+      "basic-data.json"
+    ],
+    "charts": [
+      "aging-society.json",
+      "birthrate-mortality.json",
+      "agricultural-workforce.json",
+      "gdp-gni.json",
+      "urban-population.json"
+    ],
+    "statistics": [
+      "statistics-info.json",
+      "statistics-data-sample.json"
+    ],
+    "trade": [
+      "export-items.json",
+      "import-items.json",
+      "trade-balance.json"
+    ],
+    "production": [
+      "production.json"
+    ],
+    "climate": [
+      "city-climate.json"
+    ],
+    "japan": [
+      "prefectures.json",
+      "foreign-population-prefecture.json"
+    ]
+  },
+  "counts": {
+    "nations": 251,
+    "cities": 315,
+    "pages": 409,
+    "news": 35
+  }
+}

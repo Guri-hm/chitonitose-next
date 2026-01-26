@@ -1,0 +1,644 @@
+[
+  {
+    "nation_cd": 8,
+    "data_year": 2019,
+    "export": 2515,
+    "import": 5602
+  },
+  {
+    "nation_cd": 20,
+    "data_year": 2019,
+    "export": 165,
+    "import": 1499
+  },
+  {
+    "nation_cd": 28,
+    "data_year": 2019,
+    "export": 22,
+    "import": 494
+  },
+  {
+    "nation_cd": 31,
+    "data_year": 2019,
+    "export": 13470,
+    "import": 10731
+  },
+  {
+    "nation_cd": 32,
+    "data_year": 2019,
+    "export": 54884,
+    "import": 42354
+  },
+  {
+    "nation_cd": 36,
+    "data_year": 2019,
+    "export": 250419,
+    "import": 202927
+  },
+  {
+    "nation_cd": 48,
+    "data_year": 2019,
+    "export": 14066,
+    "import": 14193
+  },
+  {
+    "nation_cd": 50,
+    "data_year": 2019,
+    "export": 30768,
+    "import": 45777
+  },
+  {
+    "nation_cd": 56,
+    "data_year": 2019,
+    "export": 419365,
+    "import": 394703
+  },
+  {
+    "nation_cd": 68,
+    "data_year": 2019,
+    "export": 6953,
+    "import": 7115
+  },
+  {
+    "nation_cd": 70,
+    "data_year": 2019,
+    "export": 6149,
+    "import": 9868
+  },
+  {
+    "nation_cd": 72,
+    "data_year": 2019,
+    "export": 4127,
+    "import": 6433
+  },
+  {
+    "nation_cd": 76,
+    "data_year": 2019,
+    "export": 209891,
+    "import": 166280
+  },
+  {
+    "nation_cd": 84,
+    "data_year": 2019,
+    "export": 200,
+    "import": 793
+  },
+  {
+    "nation_cd": 100,
+    "data_year": 2019,
+    "export": 31802,
+    "import": 34881
+  },
+  {
+    "nation_cd": 112,
+    "data_year": 2019,
+    "export": 29044,
+    "import": 32595
+  },
+  {
+    "nation_cd": 116,
+    "data_year": 2019,
+    "export": 17153,
+    "import": 18883
+  },
+  {
+    "nation_cd": 124,
+    "data_year": 2019,
+    "export": 392129,
+    "import": 405169
+  },
+  {
+    "nation_cd": 132,
+    "data_year": 2019,
+    "export": 53,
+    "import": 735
+  },
+  {
+    "nation_cd": 156,
+    "data_year": 2019,
+    "export": 2590650,
+    "import": 2055610
+  },
+  {
+    "nation_cd": 170,
+    "data_year": 2019,
+    "export": 31057,
+    "import": 43489
+  },
+  {
+    "nation_cd": 184,
+    "data_year": 2019,
+    "export": 19,
+    "import": 105
+  },
+  {
+    "nation_cd": 188,
+    "data_year": 2019,
+    "export": 12443,
+    "import": 15237
+  },
+  {
+    "nation_cd": 191,
+    "data_year": 2019,
+    "export": 16835,
+    "import": 25635
+  },
+  {
+    "nation_cd": 196,
+    "data_year": 2019,
+    "export": 3113,
+    "import": 8617
+  },
+  {
+    "nation_cd": 203,
+    "data_year": 2019,
+    "export": 192566,
+    "import": 170992
+  },
+  {
+    "nation_cd": 208,
+    "data_year": 2019,
+    "export": 107227,
+    "import": 96800
+  },
+  {
+    "nation_cd": 212,
+    "data_year": 2019,
+    "export": 14,
+    "import": 197
+  },
+  {
+    "nation_cd": 214,
+    "data_year": 2019,
+    "export": 10297,
+    "import": 17047
+  },
+  {
+    "nation_cd": 218,
+    "data_year": 2019,
+    "export": 20225,
+    "import": 17959
+  },
+  {
+    "nation_cd": 222,
+    "data_year": 2019,
+    "export": 5044,
+    "import": 10326
+  },
+  {
+    "nation_cd": 233,
+    "data_year": 2019,
+    "export": 16375,
+    "import": 17335
+  },
+  {
+    "nation_cd": 246,
+    "data_year": 2019,
+    "export": 65668,
+    "import": 68085
+  },
+  {
+    "nation_cd": 250,
+    "data_year": 2019,
+    "export": 478333,
+    "import": 572028
+  },
+  {
+    "nation_cd": 258,
+    "data_year": 2019,
+    "export": 71,
+    "import": 1701
+  },
+  {
+    "nation_cd": 276,
+    "data_year": 2019,
+    "export": 1380380,
+    "import": 1170730
+  },
+  {
+    "nation_cd": 300,
+    "data_year": 2019,
+    "export": 35170,
+    "import": 55695
+  },
+  {
+    "nation_cd": 308,
+    "data_year": 2019,
+    "export": 24,
+    "import": 396
+  },
+  {
+    "nation_cd": 328,
+    "data_year": 2019,
+    "export": 2556,
+    "import": 2064
+  },
+  {
+    "nation_cd": 340,
+    "data_year": 2019,
+    "export": 4259,
+    "import": 8958
+  },
+  {
+    "nation_cd": 348,
+    "data_year": 2019,
+    "export": 119412,
+    "import": 110443
+  },
+  {
+    "nation_cd": 352,
+    "data_year": 2019,
+    "export": 4592,
+    "import": 5719
+  },
+  {
+    "nation_cd": 356,
+    "data_year": 2019,
+    "export": 276214,
+    "import": 372318
+  },
+  {
+    "nation_cd": 360,
+    "data_year": 2019,
+    "export": 163308,
+    "import": 141568
+  },
+  {
+    "nation_cd": 372,
+    "data_year": 2019,
+    "export": 178734,
+    "import": 97969
+  },
+  {
+    "nation_cd": 376,
+    "data_year": 2019,
+    "export": 49372,
+    "import": 69810
+  },
+  {
+    "nation_cd": 380,
+    "data_year": 2019,
+    "export": 494934,
+    "import": 421945
+  },
+  {
+    "nation_cd": 388,
+    "data_year": 2019,
+    "export": 1194,
+    "import": 4655
+  },
+  {
+    "nation_cd": 392,
+    "data_year": 2019,
+    "export": 641341,
+    "import": 634431
+  },
+  {
+    "nation_cd": 400,
+    "data_year": 2019,
+    "export": 7603,
+    "import": 17011
+  },
+  {
+    "nation_cd": 404,
+    "data_year": 2019,
+    "export": 6034,
+    "import": 15435
+  },
+  {
+    "nation_cd": 410,
+    "data_year": 2019,
+    "export": 509347,
+    "import": 471115
+  },
+  {
+    "nation_cd": 428,
+    "data_year": 2019,
+    "export": 15101,
+    "import": 17264
+  },
+  {
+    "nation_cd": 440,
+    "data_year": 2019,
+    "export": 32768,
+    "import": 33141
+  },
+  {
+    "nation_cd": 442,
+    "data_year": 2019,
+    "export": 13646,
+    "import": 20930
+  },
+  {
+    "nation_cd": 450,
+    "data_year": 2019,
+    "export": 2006,
+    "import": 3219
+  },
+  {
+    "nation_cd": 458,
+    "data_year": 2019,
+    "export": 234158,
+    "import": 189902
+  },
+  {
+    "nation_cd": 470,
+    "data_year": 2019,
+    "export": 3355,
+    "import": 5627
+  },
+  {
+    "nation_cd": 484,
+    "data_year": 2019,
+    "export": 416235,
+    "import": 381851
+  },
+  {
+    "nation_cd": 496,
+    "data_year": 2019,
+    "export": 7576,
+    "import": 5294
+  },
+  {
+    "nation_cd": 498,
+    "data_year": 2019,
+    "export": 2485,
+    "import": 5416
+  },
+  {
+    "nation_cd": 499,
+    "data_year": 2019,
+    "export": 420,
+    "import": 2402
+  },
+  {
+    "nation_cd": 500,
+    "data_year": 2019,
+    "export": 5,
+    "import": 31
+  },
+  {
+    "nation_cd": 504,
+    "data_year": 2019,
+    "export": 27049,
+    "import": 43433
+  },
+  {
+    "nation_cd": 516,
+    "data_year": 2019,
+    "export": 5414,
+    "import": 6620
+  },
+  {
+    "nation_cd": 524,
+    "data_year": 2019,
+    "export": 849,
+    "import": 9684
+  },
+  {
+    "nation_cd": 528,
+    "data_year": 2019,
+    "export": 551303,
+    "import": 484785
+  },
+  {
+    "nation_cd": 533,
+    "data_year": 2019,
+    "export": 66,
+    "import": 940
+  },
+  {
+    "nation_cd": 540,
+    "data_year": 2019,
+    "export": 1634,
+    "import": 2599
+  },
+  {
+    "nation_cd": 554,
+    "data_year": 2019,
+    "export": 38897,
+    "import": 37135
+  },
+  {
+    "nation_cd": 578,
+    "data_year": 2019,
+    "export": 82699,
+    "import": 81312
+  },
+  {
+    "nation_cd": 586,
+    "data_year": 2019,
+    "export": 22188,
+    "import": 45778
+  },
+  {
+    "nation_cd": 591,
+    "data_year": 2019,
+    "export": 1726,
+    "import": 8077
+  },
+  {
+    "nation_cd": 600,
+    "data_year": 2019,
+    "export": 8518,
+    "import": 10217
+  },
+  {
+    "nation_cd": 608,
+    "data_year": 2019,
+    "export": 63902,
+    "import": 90791
+  },
+  {
+    "nation_cd": 616,
+    "data_year": 2019,
+    "export": 270939,
+    "import": 257064
+  },
+  {
+    "nation_cd": 620,
+    "data_year": 2019,
+    "export": 61510,
+    "import": 77515
+  },
+  {
+    "nation_cd": 626,
+    "data_year": 2019,
+    "export": 254,
+    "import": 487
+  },
+  {
+    "nation_cd": 634,
+    "data_year": 2019,
+    "export": 51504,
+    "import": 25835
+  },
+  {
+    "nation_cd": 642,
+    "data_year": 2019,
+    "export": 71146,
+    "import": 92187
+  },
+  {
+    "nation_cd": 643,
+    "data_year": 2019,
+    "export": 324477,
+    "import": 236593
+  },
+  {
+    "nation_cd": 646,
+    "data_year": 2019,
+    "export": 1099,
+    "import": 3531
+  },
+  {
+    "nation_cd": 660,
+    "data_year": 2019,
+    "export": 2,
+    "import": 148
+  },
+  {
+    "nation_cd": 662,
+    "data_year": 2019,
+    "export": 65,
+    "import": 517
+  },
+  {
+    "nation_cd": 670,
+    "data_year": 2019,
+    "export": 54,
+    "import": 321
+  },
+  {
+    "nation_cd": 682,
+    "data_year": 2019,
+    "export": 175349,
+    "import": 131354
+  },
+  {
+    "nation_cd": 688,
+    "data_year": 2019,
+    "export": 19526,
+    "import": 26274
+  },
+  {
+    "nation_cd": 702,
+    "data_year": 2019,
+    "export": 363330,
+    "import": 329299
+  },
+  {
+    "nation_cd": 703,
+    "data_year": 2019,
+    "export": 83272,
+    "import": 86476
+  },
+  {
+    "nation_cd": 704,
+    "data_year": 2019,
+    "export": 282529,
+    "import": 262673
+  },
+  {
+    "nation_cd": 705,
+    "data_year": 2019,
+    "export": 37345,
+    "import": 36354
+  },
+  {
+    "nation_cd": 724,
+    "data_year": 2019,
+    "export": 306752,
+    "import": 325193
+  },
+  {
+    "nation_cd": 752,
+    "data_year": 2019,
+    "export": 154297,
+    "import": 148940
+  },
+  {
+    "nation_cd": 756,
+    "data_year": 2019,
+    "export": 319174,
+    "import": 291672
+  },
+  {
+    "nation_cd": 764,
+    "data_year": 2019,
+    "export": 229511,
+    "import": 208769
+  },
+  {
+    "nation_cd": 788,
+    "data_year": 2019,
+    "export": 13834,
+    "import": 18366
+  },
+  {
+    "nation_cd": 792,
+    "data_year": 2019,
+    "export": 169835,
+    "import": 219758
+  },
+  {
+    "nation_cd": 796,
+    "data_year": 2019,
+    "export": 4,
+    "import": 350
+  },
+  {
+    "nation_cd": 800,
+    "data_year": 2019,
+    "export": 4177,
+    "import": 8303
+  },
+  {
+    "nation_cd": 804,
+    "data_year": 2019,
+    "export": 49213,
+    "import": 54091
+  },
+  {
+    "nation_cd": 807,
+    "data_year": 2019,
+    "export": 6633,
+    "import": 8709
+  },
+  {
+    "nation_cd": 826,
+    "data_year": 2019,
+    "export": 381130,
+    "import": 543961
+  },
+  {
+    "nation_cd": 840,
+    "data_year": 2019,
+    "export": 1434120,
+    "import": 2334330
+  },
+  {
+    "nation_cd": 858,
+    "data_year": 2019,
+    "export": 6854,
+    "import": 7564
+  },
+  {
+    "nation_cd": 860,
+    "data_year": 2019,
+    "export": 13127,
+    "import": 19949
+  },
+  {
+    "nation_cd": 882,
+    "data_year": 2019,
+    "export": 37,
+    "import": 312
+  },
+  {
+    "nation_cd": 894,
+    "data_year": 2019,
+    "export": 7772,
+    "import": 5308
+  }
+]

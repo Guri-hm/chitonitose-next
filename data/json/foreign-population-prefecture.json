@@ -1,0 +1,282 @@
+[
+  {
+    "prefecture_cd": 0,
+    "nationality_cd": 1,
+    "population": 786241
+  },
+  {
+    "prefecture_cd": 0,
+    "nationality_cd": 2,
+    "population": 480518
+  },
+  {
+    "prefecture_cd": 0,
+    "nationality_cd": 3,
+    "population": 277409
+  },
+  {
+    "prefecture_cd": 0,
+    "nationality_cd": 4,
+    "population": 58484
+  },
+  {
+    "prefecture_cd": 0,
+    "nationality_cd": 5,
+    "population": 206886
+  },
+  {
+    "prefecture_cd": 0,
+    "nationality_cd": 6,
+    "population": 48517
+  },
+  {
+    "prefecture_cd": 0,
+    "nationality_cd": 99,
+    "population": 971361
+  },
+  {
+    "prefecture_cd": 10,
+    "nationality_cd": 1,
+    "population": 7627
+  },
+  {
+    "prefecture_cd": 10,
+    "nationality_cd": 2,
+    "population": 2555
+  },
+  {
+    "prefecture_cd": 10,
+    "nationality_cd": 3,
+    "population": 7929
+  },
+  {
+    "prefecture_cd": 10,
+    "nationality_cd": 4,
+    "population": 535
+  },
+  {
+    "prefecture_cd": 10,
+    "nationality_cd": 5,
+    "population": 12894
+  },
+  {
+    "prefecture_cd": 10,
+    "nationality_cd": 6,
+    "population": 4827
+  },
+  {
+    "prefecture_cd": 10,
+    "nationality_cd": 99,
+    "population": 23801
+  },
+  {
+    "prefecture_cd": 13,
+    "nationality_cd": 1,
+    "population": 226319
+  },
+  {
+    "prefecture_cd": 13,
+    "nationality_cd": 2,
+    "population": 101610
+  },
+  {
+    "prefecture_cd": 13,
+    "nationality_cd": 3,
+    "population": 34311
+  },
+  {
+    "prefecture_cd": 13,
+    "nationality_cd": 4,
+    "population": 20224
+  },
+  {
+    "prefecture_cd": 13,
+    "nationality_cd": 5,
+    "population": 3817
+  },
+  {
+    "prefecture_cd": 13,
+    "nationality_cd": 6,
+    "population": 2049
+  },
+  {
+    "prefecture_cd": 13,
+    "nationality_cd": 99,
+    "population": 193116
+  },
+  {
+    "prefecture_cd": 22,
+    "nationality_cd": 1,
+    "population": 12000
+  },
+  {
+    "prefecture_cd": 22,
+    "nationality_cd": 2,
+    "population": 5252
+  },
+  {
+    "prefecture_cd": 22,
+    "nationality_cd": 3,
+    "population": 17335
+  },
+  {
+    "prefecture_cd": 22,
+    "nationality_cd": 4,
+    "population": 849
+  },
+  {
+    "prefecture_cd": 22,
+    "nationality_cd": 5,
+    "population": 30486
+  },
+  {
+    "prefecture_cd": 22,
+    "nationality_cd": 6,
+    "population": 4762
+  },
+  {
+    "prefecture_cd": 22,
+    "nationality_cd": 99,
+    "population": 25970
+  },
+  {
+    "prefecture_cd": 23,
+    "nationality_cd": 1,
+    "population": 50049
+  },
+  {
+    "prefecture_cd": 23,
+    "nationality_cd": 2,
+    "population": 32045
+  },
+  {
+    "prefecture_cd": 23,
+    "nationality_cd": 3,
+    "population": 38479
+  },
+  {
+    "prefecture_cd": 23,
+    "nationality_cd": 4,
+    "population": 2661
+  },
+  {
+    "prefecture_cd": 23,
+    "nationality_cd": 5,
+    "population": 61435
+  },
+  {
+    "prefecture_cd": 23,
+    "nationality_cd": 6,
+    "population": 7798
+  },
+  {
+    "prefecture_cd": 23,
+    "nationality_cd": 99,
+    "population": 80388
+  },
+  {
+    "prefecture_cd": 25,
+    "nationality_cd": 1,
+    "population": 5541
+  },
+  {
+    "prefecture_cd": 25,
+    "nationality_cd": 2,
+    "population": 4587
+  },
+  {
+    "prefecture_cd": 25,
+    "nationality_cd": 3,
+    "population": 2571
+  },
+  {
+    "prefecture_cd": 25,
+    "nationality_cd": 4,
+    "population": 359
+  },
+  {
+    "prefecture_cd": 25,
+    "nationality_cd": 5,
+    "population": 9455
+  },
+  {
+    "prefecture_cd": 25,
+    "nationality_cd": 6,
+    "population": 1597
+  },
+  {
+    "prefecture_cd": 25,
+    "nationality_cd": 99,
+    "population": 8331
+  },
+  {
+    "prefecture_cd": 27,
+    "nationality_cd": 1,
+    "population": 65394
+  },
+  {
+    "prefecture_cd": 27,
+    "nationality_cd": 2,
+    "population": 104407
+  },
+  {
+    "prefecture_cd": 27,
+    "nationality_cd": 3,
+    "population": 8896
+  },
+  {
+    "prefecture_cd": 27,
+    "nationality_cd": 4,
+    "population": 3144
+  },
+  {
+    "prefecture_cd": 27,
+    "nationality_cd": 5,
+    "population": 2759
+  },
+  {
+    "prefecture_cd": 27,
+    "nationality_cd": 6,
+    "population": 1266
+  },
+  {
+    "prefecture_cd": 27,
+    "nationality_cd": 99,
+    "population": 61318
+  },
+  {
+    "prefecture_cd": 47,
+    "nationality_cd": 1,
+    "population": 2741
+  },
+  {
+    "prefecture_cd": 47,
+    "nationality_cd": 2,
+    "population": 1512
+  },
+  {
+    "prefecture_cd": 47,
+    "nationality_cd": 3,
+    "population": 2253
+  },
+  {
+    "prefecture_cd": 47,
+    "nationality_cd": 4,
+    "population": 2542
+  },
+  {
+    "prefecture_cd": 47,
+    "nationality_cd": 5,
+    "population": 464
+  },
+  {
+    "prefecture_cd": 47,
+    "nationality_cd": 6,
+    "population": 265
+  },
+  {
+    "prefecture_cd": 47,
+    "nationality_cd": 99,
+    "population": 9583
+  }
+]
