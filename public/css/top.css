@@ -1,0 +1,179 @@
+@charset "utf-8";
+
+h1 {
+	display: table;
+	width: 100%;
+
+	background-image: url(/images/share/background1.webp);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+}
+
+h1 .inner {
+	display: table-cell;
+	vertical-align: middle;
+	margin: auto;
+}
+
+h2 {
+	text-align: center;
+	vertical-align: middle;
+}
+
+h2 div.first-line {
+	font-size: 2.7rem;
+	letter-spacing: 0.12em;
+}
+
+h2 div.second-line {
+	letter-spacing: 0.07em;
+	font-size: 1.4rem;
+	font-weight: 600;
+	margin-top: 3px;
+
+}
+
+div.intro .message {
+	width: 85%;
+	max-width: 1000px;
+}
+
+div.intro .message p {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	margin-left: 20px;
+}
+
+div.news {
+	width: 100%;
+	background-image: url(/images/share/background2.webp);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+	padding: 40px 0;
+}
+
+div.news div#koushin {
+	margin: 0 auto;
+}
+
+div.news div.unit {
+	margin: 15px 0;
+}
+
+div.news .news {
+	width: 100px;
+	float: left;
+}
+
+div.news div.outer-box {
+	margin-bottom: 50px;
+	background-color: rgba(255, 255, 255, 0.8);
+	background-blend-mode: lighten;
+	border: solid 3px #808080;
+	border-radius: 20px;
+	padding: 30px;
+}
+
+div.news div.inner-box {
+	float: left;
+	margin-left: 30px;
+}
+
+div.news .clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+div.news .link-image {
+	max-width: 300px;
+}
+
+div.icon-group {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+div.guide-icon {
+	width: 150px;
+	height: 150px;
+	display: inline-block;
+	background-blend-mode: lighten;
+	border: solid 5px #FFFFFF;
+	border-radius: 50%;
+	position: relative;
+}
+
+div.guide-icon div {
+	position: absolute;
+	left: 40%;
+	bottom: 10%;
+}
+
+div.guide-icon img {
+	position: absolute;
+	max-width: 50%;
+	width: auto;
+	left: 25%;
+	bottom: 30%;
+}
+
+@media screen and (min-width: 961px) {
+	h1 {
+		height: 700px;
+	}
+
+	h1 .inner {
+		max-width: 500px;
+	}
+
+	div.news div#koushin {
+		width: 60%;
+	}
+}
+
+@media screen and (min-width: 561px) and (max-width: 960px) {
+	h1 {
+		height: 700px;
+	}
+
+	h1 .inner {
+		max-width: 500px;
+	}
+
+	div.news .link-image {
+		width: 80%;
+		max-width: 600px;
+	}
+
+	div.news div#koushin {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 560px) {
+	h1 {
+		height: 600px;
+	}
+
+	h1 .inner {
+		max-width: 80%;
+	}
+
+	div.news div#koushin {
+		width: 90%;
+	}
+
+	div.news .news {
+		width: 50px;
+		float: left;
+	}
+
+	div.news .link-image {
+		width: 80%;
+	}
+}

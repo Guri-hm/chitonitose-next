@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import BodyClassManager from "@/components/BodyClassManager";
 
 export const metadata: Metadata = {
   title: "ちとにとせ｜地理と日本史と世界史のまとめサイト",
@@ -18,13 +19,17 @@ export default function RootLayout({
     <html lang="ja">
       <head>
         <link rel="icon" href="/favicon.ico" />
+        {/* 元サイトのCSSを読み込み */}
+        <link href="/css/common.css" rel="stylesheet" type="text/css" />
       </head>
-      <body className="antialiased min-h-screen flex flex-col">
+      <body suppressHydrationWarning>
+        <BodyClassManager />
         <Header />
-        <main className="flex-grow">
+        <main>
           {children}
         </main>
         <Footer />
+        <script src="/js/common.js"></script>
       </body>
     </html>
   );

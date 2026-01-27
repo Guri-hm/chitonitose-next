@@ -1,0 +1,90 @@
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 62px;
+  height: 34px;
+  cursor: pointer;
+}
+
+.theme-switch-input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.theme-switch-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #aab4be;
+  transition: 0.4s;
+  border-radius: 34px;
+  padding: 7px;
+}
+
+.theme-switch-slider::before {
+  position: absolute;
+  content: "";
+  height: 32px;
+  width: 32px;
+  left: 1px;
+  bottom: 1px;
+  background-color: #001e3c;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+
+.theme-switch-input:checked + .theme-switch-slider {
+  background-color: #aab4be;
+}
+
+.theme-switch-input:checked + .theme-switch-slider::before {
+  transform: translateX(28px);
+  background-color: #001e3c;
+}
+
+.theme-switch-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-switch-icon-light {
+  left: 8px;
+  opacity: 1;
+}
+
+.theme-switch-icon-dark {
+  right: 8px;
+  opacity: 0;
+}
+
+.theme-switch-input:checked ~ .theme-switch-slider .theme-switch-icon-light {
+  opacity: 0;
+}
+
+.theme-switch-input:checked ~ .theme-switch-slider .theme-switch-icon-dark {
+  opacity: 1;
+}
+
+/* ダークモード対応 */
+[data-theme="dark"] .theme-switch-slider {
+  background-color: #8796A5;
+}
+
+[data-theme="dark"] .theme-switch-slider::before {
+  background-color: #003892;
+}
+
+[data-theme="dark"] .theme-switch-input:checked + .theme-switch-slider {
+  background-color: #8796A5;
+}

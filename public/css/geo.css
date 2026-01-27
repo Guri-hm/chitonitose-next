@@ -1,0 +1,10 @@
+@charset "utf-8";
+:root {
+    --subject-color: #1AAB12;
+    --subject-color-rgb: 26, 171, 18;
+}
+/* 地理のみNo.がないため */
+ul.circle li {
+    padding-left: 1em !important;
+    text-indent: -1em !important;
+}

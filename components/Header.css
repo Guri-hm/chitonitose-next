@@ -1,0 +1,223 @@
+#top-head {
+  width: 100%;
+  z-index: 999;
+  border-bottom: solid 1px #F2F2F2;
+  font-size: initial;
+}
+
+#top-head.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: top 0.65s ease-in;
+}
+
+#top-head .inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#mobile-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+#head-logo img {
+  height: 50px;
+  width: auto;
+}
+
+#nav-toggle {
+  cursor: pointer;
+}
+
+#nav-toggle div {
+  text-align: center;
+}
+
+#nav-toggle p {
+  font-size: 12px;
+  margin: 0 0 5px 0;
+  color: #444;
+}
+
+#nav-toggle span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #444;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+
+@media (min-width: 768px) {
+  #nav-toggle {
+    display: none;
+  }
+}
+
+#global-nav {
+  display: none;
+}
+
+#global-nav.open {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  #global-nav {
+    display: block !important;
+  }
+
+  #mobile-head {
+    display: none;
+  }
+}
+
+#global-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #f8f8f8;
+}
+
+#global-nav li {
+  margin: 0;
+}
+
+#global-nav a {
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #444;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+#global-nav a:hover {
+  background-color: var(--light-blue);
+  color: #fff;
+}
+
+#global-nav .first-line {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+#global-nav .second-line {
+  font-size: 1.0rem;
+  margin-top: 3px;
+}
+
+#head-logo img.smaller {
+  height: 35px;
+  width: auto;
+  transition: height 0.3s ease;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  background-color: #f8f8f8;
+  flex-wrap: wrap;
+}
+
+.font-size-control,
+.theme-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.theme-control {
+  margin-left: 10px;
+}
+
+.font-size-control span {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.font-size-control button {
+  padding: 5px 12px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+}
+
+.font-size-control button:hover {
+  background-color: var(--light-blue);
+  color: #fff;
+  border-color: var(--light-blue);
+}
+
+.font-size-control button.active {
+  background-color: var(--light-blue);
+  color: #fff;
+  border-color: var(--light-blue);
+  font-weight: bold;
+}
+
+/* ダークモードのスタイル */
+[data-theme="dark"] #top-head {
+  background-color: #1a1a1a;
+  border-bottom-color: #333;
+}
+
+[data-theme="dark"] #top-head.fixed {
+  background-color: rgba(26, 26, 26, 0.95);
+}
+
+[data-theme="dark"] #mobile-head {
+  background-color: #1a1a1a;
+}
+
+[data-theme="dark"] .controls {
+  background-color: #2a2a2a;
+}
+
+[data-theme="dark"] .font-size-control button {
+  background-color: #333;
+  border-color: #444;
+  color: #e0e0e0;
+}
+
+[data-theme="dark"] .font-size-control span {
+  color: #aaa;
+}
+
+[data-theme="dark"] #global-nav {
+  background-color: #1a1a1a;
+}
+
+[data-theme="dark"] #global-nav ul {
+  background-color: #2a2a2a;
+}
+
+[data-theme="dark"] #global-nav a {
+  color: #e0e0e0;
+}
+
+[data-theme="dark"] #global-nav a:hover {
+  background-color: #4a90a4;
+}
+
+[data-theme="dark"] #nav-toggle p,
+[data-theme="dark"] #nav-toggle span {
+  color: #e0e0e0;
+  background-color: #e0e0e0;
+}

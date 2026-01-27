@@ -1,0 +1,112 @@
+/* 画像モーダルのスタイル */
+
+.image-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.image-modal-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: zoomIn 0.3s ease-in-out;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.image-modal-close {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  line-height: 1;
+  transition: transform 0.2s;
+}
+
+.image-modal-close:hover {
+  transform: scale(1.2);
+}
+
+.image-modal-image {
+  max-width: 100%;
+  max-height: calc(90vh - 60px);
+  object-fit: contain;
+  border-radius: 4px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.image-modal-caption {
+  margin-top: 15px;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  max-width: 100%;
+  padding: 0 20px;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .image-modal-content {
+    max-width: 95vw;
+    max-height: 95vh;
+  }
+
+  .image-modal-close {
+    top: -35px;
+    font-size: 35px;
+    width: 35px;
+    height: 35px;
+  }
+
+  .image-modal-image {
+    max-height: calc(95vh - 50px);
+  }
+
+  .image-modal-caption {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+}
+
+/* ダークモード対応 */
+[data-theme="dark"] .image-modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.95);
+}

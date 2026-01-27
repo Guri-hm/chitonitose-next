@@ -1,0 +1,256 @@
+/* トップページ専用スタイル */
+
+h1#top {
+  display: table;
+  width: 100%;
+  background-image: url(/images/share/background1.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h1#top .inner {
+  display: table-cell;
+  vertical-align: middle;
+  margin: auto;
+}
+
+h1#top img {
+  max-width: 600px;
+  width: 90%;
+  height: auto;
+}
+
+h2 {
+  text-align: center;
+  vertical-align: middle;
+  padding: 30px 0;
+}
+
+h2 div.first-line {
+  font-size: 2.7rem;
+  letter-spacing: 0.12em;
+}
+
+h2 div.second-line {
+  letter-spacing: 0.07em;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 3px;
+}
+
+.intro .message {
+  width: 85%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.intro .message p {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+}
+
+.intro .message img {
+  width: 100%;
+  max-width: 700px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* news-sectionを中央寄せ */
+.news-section {
+  width: 100%;
+  background-image: url(/images/share/background2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  padding: 40px 0;
+}
+
+.news-section #koushin {
+  margin: 0 auto;
+  width: 85%;
+  max-width: 1000px;
+}
+
+.news-section .outer-box {
+  margin-bottom: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: lighten;
+  border: solid 3px #808080;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.news-section .unit {
+  margin: 15px 0;
+  display: flex;
+  align-items: flex-start;
+}
+
+.news-section .date {
+  width: 120px;
+  flex-shrink: 0;
+  color: #666;
+}
+
+.news-section .content {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.icon-group {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.guide-icon {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-blend-mode: lighten;
+  border: solid 5px #FFFFFF;
+  border-radius: 50%;
+  position: relative;
+  margin-bottom: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.icon-wrapper:hover .guide-icon {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* 詳細度を高めてバッティングを防ぐ */
+.icon-wrapper .guide-icon img,
+.guide-icon img {
+  width: 60% !important;
+  height: auto !important;
+  max-width: none !important;
+  object-fit: contain;
+}
+
+.icon-label {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--darkgray);
+}
+
+/* レスポンシブデザイン */
+@media screen and (min-width: 961px) {
+  h1#top {
+    height: 700px;
+  }
+
+  h1#top .inner {
+    max-width: 500px;
+  }
+
+  .news-section #koushin {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 561px) and (max-width: 960px) {
+  h1#top {
+    height: 700px;
+  }
+
+  h1#top .inner {
+    max-width: 500px;
+  }
+
+  .news-section #koushin {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  h1#top {
+    height: 600px;
+  }
+
+  h1#top .inner {
+    max-width: 80%;
+  }
+
+  .news-section #koushin {
+    width: 90%;
+  }
+
+  .news-section .date {
+    width: 80px;
+    font-size: 1.2rem;
+  }
+}
+
+/* ダークモード対応 */
+[data-theme="dark"] h1#top {
+  /* 背景画像を暗くしない */
+  filter: none;
+}
+
+[data-theme="dark"] h2 {
+  color: var(--foreground);
+}
+
+[data-theme="dark"] .bg-gray {
+  background-color: var(--gray);
+}
+
+[data-theme="dark"] .bg-white {
+  background-color: #2a2a2a;
+}
+
+[data-theme="dark"] .bg-pale-blue {
+  background-color: #2c4a5a;
+}
+
+[data-theme="dark"] .guide-icon {
+  border-color: #444;
+}
+
+[data-theme="dark"] .icon-label {
+  color: var(--foreground);
+}
+
+[data-theme="dark"] .news-section {
+  background-color: rgba(42, 42, 42, 0.8);
+}
+
+[data-theme="dark"] .news-section .outer-box {
+  background-color: rgba(42, 42, 42, 0.9);
+  border-color: #555;
+}
+
+[data-theme="dark"] .news-section .date {
+  color: #aaa;
+}
+
+[data-theme="dark"] .news-section .content {
+  color: var(--foreground);
+}
+
+[data-theme="dark"] a {
+  color: var(--link);
+}
+
+[data-theme="dark"] p {
+  color: var(--foreground);
+}

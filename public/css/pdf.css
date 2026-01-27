@@ -1,0 +1,12 @@
+.table_pdflist {
+	margin-left: auto;
+	margin-right: auto;
+}
+.table_pdflist tr th {
+	vertical-align: top;
+	background-color: unset;
+}
+.table_pdflist {
+	border-collapse: separate;
+	border-spacing: 10px 10px;
+}

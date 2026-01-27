@@ -1,6 +1,5 @@
+// PostCSSプラグインは使用しません
 module.exports = {
-  plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
-  },
+  plugins: {},
 }
+

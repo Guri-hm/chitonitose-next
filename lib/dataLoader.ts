@@ -65,11 +65,18 @@ export interface NewsItem {
 }
 
 export interface PageInfo {
-  subject: string;
+  subject: number;
   no: number;
   title: string;
-  description?: string;
-  keywords?: string;
+  directory: string;
+  filename: string;
+}
+
+export interface LessonCategory {
+  era: string;
+  period: string;
+  lessons: PageInfo[];
+  image?: string;
 }
 
 export interface Nation {
@@ -120,6 +127,15 @@ export interface GDPGNI {
 
 export const loadNews = () => loadJSON<NewsItem[]>('news.json');
 export const loadPages = () => loadJSON<PageInfo[]>('pages.json');
+
+/**
+ * 特定科目のページ情報を読み込む
+ * @param subject - 科目ID (1: 世界史, 2: 日本史, 3: 地理)
+ */
+export async function loadSubjectPages(subject: number): Promise<PageInfo[]> {
+  const allPages = await loadPages();
+  return allPages.filter(page => page.subject === subject);
+}
 export const loadNations = () => loadJSON<Nation[]>('nations.json');
 export const loadCities = () => loadJSON<City[]>('cities.json');
 export const loadClimateClassifications = () => loadJSON<ClimateClassification[]>('climate-classifications.json');
