@@ -7,122 +7,226 @@
  */
 
 /**
- * カスタムMarkdownをHTMLに変換
+ * カスタムMarkdownをHTMLに変換（一行ずつパース版）
  * @param {string} markdown - カスタムMarkdown記法のテキスト
  * @returns {string} - 変換後のHTML
  */
 function parseCustomMarkdown(markdown) {
-  let html = markdown;
-
-  // 1. 概要セクション
-  html = html.replace(
-    /---overview---\n([\s\S]*?)\n---/g,
-    '<div className="overview">\n\t<div className="title">概要</div>\n\t$1\n</div>'
-  );
-
-  // 2. 見出し（h2, h3）はそのまま
-  html = html.replace(/^## (.+)$/gm, '<h2>$1</h2>');
-  html = html.replace(/^### (.+)$/gm, '<h3>$1</h3>');
-
-  // 3. 矢印
-  html = html.replace(/^---arrow---$/gm, '<div className="arrow"></div>');
-
-  // 4. double（2カラムレイアウト）
-  html = html.replace(
-    /::double\n([\s\S]*?)---image---\n!\[([^\]]*)\]\(([^)]+)\)(?:\{\.([^}]+)\})?\n([\s\S]*?)::/g,
-    (match, textContent, alt, imgSrc, imgClass, caption) => {
-      // 改行を<br />に変換
-      const formattedText = textContent.trim().replace(/\n\n/g, '<br />');
-      const classNames = ['lazyload', 'popup-img'];
-      if (imgClass) classNames.push(imgClass);
-      
-      return `<div className="double">
-\t<div className="top">${formattedText}</div>
-\t<div className="text-center gazo"><img src="${imgSrc}" alt="${alt}" className="${classNames.join(' ')}" /></div>
-</div>`;
+  // Normalize line endings
+  let text = markdown.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
+  
+  const lines = text.split('\n');
+  const result = [];
+  let i = 0;
+  
+  while (i < lines.length) {
+    const line = lines[i];
+    
+    // 概要セクション
+    if (line === '---overview---') {
+      result.push('<div class="overview">');
+      result.push('\t<div class="title">概要</div>');
+      i++;
+      while (i < lines.length && lines[i] !== '---') {
+        result.push('\t' + convertInlineMarkdown(lines[i]));
+        i++;
+      }
+      result.push('</div>');
+      i++;
+      continue;
     }
-  );
-
-  // 5. gazo（画像）
-  html = html.replace(
-    /::gazo\n!\[([^\]]*)\]\(([^)]+)\)(?:\{\.([^}]+)\})?\n([\s\S]*?)::/g,
-    (match, alt, imgSrc, imgClass, caption) => {
-      const classNames = ['lazyload', 'popup-img'];
-      if (imgClass) {
-        imgClass.split('.').filter(c => c).forEach(c => classNames.push(c));
+    
+    // 見出し
+    if (line.startsWith('## ')) {
+      result.push('<h2>' + convertInlineMarkdown(line.substring(3)) + '</h2>');
+      i++;
+      continue;
+    }
+    if (line.startsWith('### ')) {
+      result.push('<h3>' + convertInlineMarkdown(line.substring(4)) + '</h3>');
+      i++;
+      continue;
+    }
+    
+    // 矢印
+    if (line === '---arrow---') {
+      result.push('<div class="arrow"></div>');
+      i++;
+      continue;
+    }
+    
+    // ::double ブロック
+    if (line === '::double') {
+      const content = [];
+      i++;
+      while (i < lines.length && !lines[i].startsWith('---image---')) {
+        content.push(lines[i]);
+        i++;
       }
       
-      // キャプションの各行を<br />で区切る
-      const lines = caption.trim().split('\n').filter(line => line.trim());
-      const captionHtml = lines.join('\n\t<br />\n\t');
+      // 画像行を解析
+      if (i < lines.length && lines[i].startsWith('---image---')) {
+        i++;
+        const imgMatch = lines[i].match(/!\[([^\]]*)\]\(([^)]+)\)(?:\{\.([^}]+)\})?/);
+        if (imgMatch) {
+          const [, alt, imgSrc, imgClass] = imgMatch;
+          const classNames = ['lazyload', 'popup-img'];
+          if (imgClass) classNames.push(imgClass);
+          
+          i++;
+          const caption = [];
+          while (i < lines.length && lines[i] !== '::') {
+            caption.push(lines[i]);
+            i++;
+          }
+          
+          const formattedText = content.join('\n').trim().replace(/\n\n/g, '<br />');
+          result.push('<div class="double">');
+          result.push(`\t<div class="top">${convertInlineMarkdown(formattedText)}</div>`);
+          result.push(`\t<div class="text-center gazo"><img src="${imgSrc}" alt="${alt}" class="${classNames.join(' ')}" /></div>`);
+          result.push('</div>');
+          i++;
+          continue;
+        }
+      }
+    }
+    
+    // ::gazo ブロック
+    if (line === '::gazo') {
+      i++;
+      const imgMatch = lines[i].match(/!\[([^\]]*)\]\(([^)]+)\)(?:\{\.([^}]+)\})?/);
+      if (imgMatch) {
+        const [, alt, imgSrc, imgClass] = imgMatch;
+        const classNames = ['lazyload', 'popup-img'];
+        if (imgClass) {
+          imgClass.split('.').filter(c => c).forEach(c => classNames.push(c));
+        }
+        
+        i++;
+        const caption = [];
+        while (i < lines.length && lines[i] !== '::') {
+          caption.push(lines[i]);
+          i++;
+        }
+        
+        result.push('<div class="gazo">');
+        result.push(`\t<img class="${classNames.join(' ')}" src="${imgSrc}" alt="${alt}" />`);
+        result.push('\t<br />');
+        caption.forEach(cap => {
+          if (cap.trim()) {
+            result.push('\t' + convertInlineMarkdown(cap));
+            result.push('\t<br />');
+          }
+        });
+        result.pop(); // 最後の<br />を削除
+        result.push('</div>');
+        i++;
+        continue;
+      }
+    }
+    
+    // ::sup ブロック
+    if (line === '::sup') {
+      const content = [];
+      i++;
       
-      return `<div className="gazo">
-\t<img className="${classNames.join(' ')}" src="${imgSrc}" alt="${alt}" />
-\t<br />
-\t${captionHtml}
-</div>`;
-    }
-  );
-
-  // 6. sup（補足説明）- lead入れ子対応
-  html = html.replace(
-    /::sup\n([\s\S]*?):::lead\n([\s\S]*?):::\n([\s\S]*?)::/g,
-    (match, before, leadContent, after) => {
-      const beforeText = before.trim();
-      const afterText = after.trim();
-      let content = beforeText;
-      if (leadContent.trim()) {
-        content += `<div className="lead">${leadContent.trim()}</div>`;
+      while (i < lines.length && lines[i] !== '::') {
+        content.push(lines[i]);
+        i++;
       }
-      if (afterText) {
-        content += afterText;
-      }
-      return `<div className="sup">${content}</div>`;
+      
+      // content を1つの文字列に結合して :::lead...:::を処理
+      let html = content.join('').replace(/:::lead(.*?):::/g, '<div class="lead">$1</div>');
+      html = convertInlineMarkdown(html);
+      
+      result.push('<div class="sup">' + html + '</div>');
+      i++;
+      continue;
     }
-  );
+    
+    // ::top ブロック
+    if (line === '::top') {
+      const content = [];
+      i++;
+      while (i < lines.length && lines[i] !== '::') {
+        content.push(lines[i]);
+        i++;
+      }
+      result.push('<div class="top">' + content.map(l => convertInlineMarkdown(l)).join('') + '</div>');
+      i++;
+      continue;
+    }
+    
+    // ::middle ブロック
+    if (line === '::middle') {
+      const content = [];
+      i++;
+      while (i < lines.length && lines[i] !== '::') {
+        content.push(lines[i]);
+        i++;
+      }
+      result.push('<div class="middle">' + content.map(l => convertInlineMarkdown(l)).join('') + '</div>');
+      i++;
+      continue;
+    }
+    
+    // ::last ブロック
+    if (line === '::last') {
+      const content = [];
+      i++;
+      while (i < lines.length && lines[i] !== '::') {
+        content.push(lines[i]);
+        i++;
+      }
+      result.push('<div class="last">' + content.map(l => convertInlineMarkdown(l)).join('') + '</div>');
+      i++;
+      continue;
+    }
+    
+    // 空行
+    if (line.trim() === '') {
+      i++;
+      continue;
+    }
+    
+    // その他の行
+    result.push(convertInlineMarkdown(line));
+    i++;
+  }
+  
+  return result.join('\n');
+}
 
-  // 7. sup（シンプル版）
-  html = html.replace(
-    /::sup\n([\s\S]*?)::/g,
-    '<div className="sup">$1</div>'
-  );
-
-  // 8. パラグラフ（top, middle, last）
-  html = html.replace(/::top\n([\s\S]*?)::/g, '<div className="top">$1</div>');
-  html = html.replace(/::middle\n([\s\S]*?)::/g, '<div className="middle">$1</div>');
-  html = html.replace(/::last\n([\s\S]*?)::/g, '<div className="last">$1</div>');
-
-  // 9. マーカー（蛍光ペン）
-  html = html.replace(/==([^=]+)==/g, '<span className="marker">$1</span>');
-
-  // 10. クリック表示/非表示（赤字用語）- ルビ付き
-  html = html.replace(
-    /\[\[([^\|]+)\|([^\]]+)\]\]/g,
-    '<span onClick="chg(this)" className="all"><ruby>$1<rt>$2</rt></ruby></span>'
-  );
-
-  // 11. クリック表示/非表示（赤字用語）- ルビなし
-  html = html.replace(
-    /\[\[([^\]]+)\]\]/g,
-    '<span onClick="chg(this)" className="all">$1</span>'
-  );
-
-  // 12. ルビ（ふりがな）
-  html = html.replace(
-    /\{\{([^\|]+)\|([^\}]+)\}\}/g,
-    '<ruby>$1<rt>$2</rt></ruby>'
-  );
-
-  // 13. 赤文字
-  html = html.replace(
-    /\*\*([^\*]+)\*\*/g,
-    '<span style={{color:"#FF0000"}}>$1</span>'
-  );
-
-  // 14. 改行の正規化（段落内の改行を削除）
-  html = html.replace(/<div className="(top|middle|last|sup)">\n/g, '<div className="$1">');
-  html = html.replace(/\n<\/div>/g, '</div>');
-
+/**
+ * インラインMarkdown記法をHTMLに変換
+ * @param {string} text - 変換するテキスト
+ * @returns {string} - 変換後のHTML
+ */
+function convertInlineMarkdown(text) {
+  let html = text;
+  
+  // 1. マーカー（==...==）- 内部の記法も処理
+  html = html.replace(/==([^=]+)==/g, (match, content) => {
+    let processed = content;
+    processed = processed.replace(/\{\{([^\|]+)\|([^\}]+)\}\}/g, '<ruby>$1<rt>$2</rt></ruby>');
+    processed = processed.replace(/\[\[([^\|\]]+)\|([^\]]+)\]\]/g, '<span onclick="chg(this)" class="all"><ruby>$1<rt>$2</rt></ruby></span>');
+    processed = processed.replace(/\[\[([^\]]+)\]\]/g, '<span onclick="chg(this)" class="all">$1</span>');
+    return `<span class="marker">${processed}</span>`;
+  });
+  
+  // 2. 赤文字 - ルビ付き
+  html = html.replace(/\*\*\{\{([^\|]+)\|([^\}]+)\}\}\*\*/g, '<font color="#FF0000"><ruby>$1<rt>$2</rt></ruby></font>');
+  html = html.replace(/\*\*([^\*]+)\*\*/g, '<font color="#FF0000">$1</font>');
+  
+  // 3. ルビ（{{term|reading}}）
+  html = html.replace(/\{\{([^\|]+)\|([^\}]+)\}\}/g, '<ruby>$1<rt>$2</rt></ruby>');
+  
+  // 4. クリック用語 - ルビ付き（[[term|reading]]）
+  html = html.replace(/\[\[([^\|\]]+)\|([^\]]+)\]\]/g, '<span onclick="chg(this)" class="all"><ruby>$1<rt>$2</rt></ruby></span>');
+  
+  // 5. クリック用語 - ルビなし（[[term]]）
+  html = html.replace(/\[\[([^\]]+)\]\]/g, '<span onclick="chg(this)" class="all">$1</span>');
+  
   return html;
 }
 
@@ -132,147 +236,282 @@ function parseCustomMarkdown(markdown) {
  * @returns {string} - カスタムMarkdown記法
  */
 function htmlToCustomMarkdown(html) {
-  let markdown = html;
-
-  // PHPタグを削除
-  markdown = markdown.replace(/<\?php[\s\S]*?\?>/g, '');
+  // contentsクラス内のコンテンツだけを抽出
+  const contentMatch = html.match(/<div id='toc-range' class="contents">([\s\S]*?)(?:<\/div>)?<!-- \/contents -->/);
+  if (!contentMatch) {
+    console.error('コンテンツが見つかりません');
+    return '';
+  }
   
-  // HTMLコメントを削除
-  markdown = markdown.replace(/<!--[\s\S]*?-->/g, '');
+  let content = contentMatch[1].trim();
+  
+  // PHPタグとコメントを削除
+  content = content.replace(/<\?php[\s\S]*?\?>/g, '');
+  content = content.replace(/<!--[\s\S]*?-->/g, '');
 
-  // 1. 概要セクション
-  markdown = markdown.replace(
-    /<div className="overview">\s*<div className="title">概要<\/div>\s*([\s\S]*?)\s*<\/div>/g,
-    '---overview---\n$1\n---\n'
-  );
-
-  // 2. 見出し
-  markdown = markdown.replace(/<h2>([^<]+)<\/h2>/g, '## $1');
-  markdown = markdown.replace(/<h3>([^<]+)<\/h3>/g, '### $1');
-
-  // 3. arrow
-  markdown = markdown.replace(/<div className="arrow"><\/div>/g, '\n---arrow---\n');
-
-  // 4. sup（補足）- lead入れ子
-  markdown = markdown.replace(
-    /<div className="sup">([^<]*?)<div className="lead">([^<]*?)<\/div>([^<]*?)<\/div>/g,
-    (match, before, lead, after) => {
-      let content = '';
-      if (before && before.trim()) content += before.trim() + '\n';
-      content += `:::lead\n${lead.trim()}\n:::\n`;
-      if (after && after.trim()) content += after.trim();
-      return `::sup\n${content}::`;
+  // PHPタグとコメントを削除
+  content = content.replace(/<\?php[\s\S]*?\?>/g, '');
+  content = content.replace(/<!--[\s\S]*?-->/g, '');
+  
+  // 一行ずつパースして変換
+  const lines = content.split('\n');
+  const result = [];
+  let i = 0;
+  
+  while (i < lines.length) {
+    let line = lines[i].trim();
+    
+    // 空行
+    if (!line) {
+      i++;
+      continue;
     }
-  );
-
-  // 5. sup（シンプル）- 内部のタグを先に処理する必要があるので後回し
-
-  // 6. gazo（画像）- 複数パターンに対応
-  // パターン1: imgタグが先にある場合
-  markdown = markdown.replace(
-    /<div className="gazo">\s*<img[^>]*?className="([^"]*)"[^>]*?src="([^"]+)"[^>]*?\/>\s*<br\s*\/>\s*([^<]*?)(?:<br\s*\/>\s*([^<]*?))?(?:<\/div>|$)/g,
-    (match, imgClasses, imgSrc, line1, line2) => {
-      // クラス名から必要な部分を抽出
-      const classMatch = imgClasses.match(/\b(border|twice|half)\b/);
-      const classAttr = classMatch ? `{.${classMatch[1]}}` : '';
+    
+    // 概要セクション
+    if (line.startsWith('<div class="overview">')) {
+      result.push('---overview---');
+      i++;
+      // <div class="title">概要</div>をスキップ
+      if (lines[i] && lines[i].includes('<div class="title">概要</div>')) {
+        i++;
+      }
+      // 概要の内容を取得
+      while (i < lines.length && !lines[i].includes('</div>')) {
+        const overviewLine = lines[i].trim();
+        if (overviewLine) {
+          result.push(convertHtmlToMarkdownInline(overviewLine));
+        }
+        i++;
+      }
+      result.push('---');
+      i++; // </div>をスキップ
+      continue;
+    }
+    
+    // TOC
+    if (line.includes('<div id="toc"></div>')) {
+      result.push('<div id="toc"></div>');
+      i++;
+      continue;
+    }
+    
+    // 見出し
+    if (line.startsWith('<h2>')) {
+      const text = line.replace(/<\/?h2>/g, '');
+      result.push('## ' + convertHtmlToMarkdownInline(text));
+      i++;
+      continue;
+    }
+    if (line.startsWith('<h3>')) {
+      const text = line.replace(/<\/?h3>/g, '');
+      result.push('### ' + convertHtmlToMarkdownInline(text));
+      i++;
+      continue;
+    }
+    if (line.startsWith('<h4>')) {
+      const text = line.replace(/<\/?h4>/g, '');
+      result.push('<h4>' + convertHtmlToMarkdownInline(text) + '</h4>');
+      i++;
+      continue;
+    }
+    
+    // arrow
+    if (line.includes('<div class="arrow"></div>')) {
+      result.push('---arrow---');
+      i++;
+      continue;
+    }
+    
+    // div class="top/middle/last/sup"
+    const divMatch = line.match(/<div class="(top|middle|last|sup)">([\s\S]*)/);
+    if (divMatch) {
+      const type = divMatch[1];
+      let content = divMatch[2];
       
-      let caption = line1.trim();
-      if (line2 && line2.trim()) {
-        caption += '\n' + line2.trim();
+      // 同じ行に</div>がある場合
+      if (content.includes('</div>')) {
+        content = content.replace(/<\/div>.*$/, '');
+        const converted = convertDivContent(content);
+        result.push(`::${type}`);
+        if (converted) result.push(converted);
+        result.push('::');
+        i++;
+        continue;
       }
       
-      return `::gazo\n![](${imgSrc})${classAttr}\n${caption}\n::`;
-    }
-  );
-  
-  // パターン2: src属性が先の場合
-  markdown = markdown.replace(
-    /<div className="gazo">\s*<img[^>]*?src="([^"]+)"[^>]*?className="([^"]*)"[^>]*?\/>\s*<br\s*\/>\s*([^<]*?)(?:<br\s*\/>\s*([^<]*?))?<\/div>/g,
-    (match, imgSrc, imgClasses, line1, line2) => {
-      const classMatch = imgClasses.match(/\b(border|twice|half)\b/);
-      const classAttr = classMatch ? `{.${classMatch[1]}}` : '';
-      
-      let caption = line1.trim();
-      if (line2 && line2.trim()) {
-        caption += '\n' + line2.trim();
+      // 複数行にまたがる場合
+      const contentLines = [content];
+      i++;
+      while (i < lines.length && !lines[i].includes('</div>')) {
+        contentLines.push(lines[i]);
+        i++;
+      }
+      // 最後の行（</div>を含む）
+      if (i < lines.length) {
+        const lastLine = lines[i].replace(/<\/div>.*$/, '');
+        if (lastLine.trim()) contentLines.push(lastLine);
       }
       
-      return `::gazo\n![](${imgSrc})${classAttr}\n${caption}\n::`;
+      result.push(`::${type}`);
+      const converted = convertDivContent(contentLines.join('\n'));
+      if (converted) result.push(converted);
+      result.push('::');
+      i++;
+      continue;
     }
-  );
-
-  // 7. double（2カラム）
-  markdown = markdown.replace(
-    /<div className="double">\s*<div className="top">([\s\S]*?)<\/div>\s*<div className="text-center gazo">\s*<img[^>]*?src="([^"]+)"[^>]*?className="([^"]*)"[^>]*?\/>\s*<\/div>\s*<\/div>/g,
-    (match, text, imgSrc, imgClasses) => {
-      const formattedText = text.replace(/<br\s*\/?>\s*/g, '\n\n').trim();
-      const classMatch = imgClasses.match(/\b(half|twice)\b/);
-      const classAttr = classMatch ? `{.${classMatch[1]}}` : '';
-      return `::double\n${formattedText}\n\n---image---\n![](${imgSrc})${classAttr}\n::`;
+    
+    // gazo
+    if (line.startsWith('<div class="gazo">')) {
+      i++;
+      result.push('::gazo');
+      
+      // 画像行を取得
+      let imgLine = lines[i].trim();
+      const imgMatch = imgLine.match(/<img[^>]*?(?:data-)?src="([^"]+)"[^>]*?(?:class="([^"]*)")?[^>]*?\/>/);
+      if (imgMatch) {
+        const src = imgMatch[1];
+        const classes = imgMatch[2] || '';
+        const classMatch = classes.match(/\b(border|twice|half)\b/);
+        const classAttr = classMatch ? `{.${classMatch[1]}}` : '';
+        result.push(`![](${src})${classAttr}`);
+      }
+      i++;
+      
+      // キャプションを取得
+      while (i < lines.length && !lines[i].includes('</div>')) {
+        const capLine = lines[i].trim();
+        if (capLine && capLine !== '<br />' && capLine !== '<br>') {
+          result.push(convertHtmlToMarkdownInline(capLine));
+        }
+        i++;
+      }
+      result.push('::');
+      i++;
+      continue;
     }
-  );
-
-  // 8. マーカー（span className="marker"）
-  markdown = markdown.replace(
-    /<span className="marker">([\s\S]*?)<\/span>/g,
-    '==$1=='
-  );
-
-  // 9. ルビ（通常）- 先に処理
-  markdown = markdown.replace(
-    /<ruby>([^<]+?)<rt>([^<]+?)<\/rt>\s*<\/ruby>/g,
-    '{{$1|$2}}'
-  );
-
-  // 10. クリック表示/非表示 - ルビ付き（{{}}記法になっている）
-  markdown = markdown.replace(
-    /<span onClick="chg\(this\)" className="all">\{\{([^\|]+)\|([^\}]+)\}\}<\/span>/g,
-    '[[$1|$2]]'
-  );
-
-  // 11. クリック表示/非表示 - ルビなし
-  markdown = markdown.replace(
-    /<span onClick="chg\(this\)" className="all">([^<]+?)<\/span>/g,
-    '[[$1]]'
-  );
-
-  // 12. 赤文字（span style）- 色指定の形式に対応
-  markdown = markdown.replace(
-    /<span style=\{\{color:"#FF0000"\}\}>([^<]+?)<\/span>/g,
-    '**$1**'
-  );
-  markdown = markdown.replace(
-    /<span style="color:#FF0000">([^<]+?)<\/span>/g,
-    '**$1**'
-  );
-
-  // 13. パラグラフ（top, middle, last）- 内部タグが処理された後
-  markdown = markdown.replace(
-    /<div className="top">([\s\S]*?)<\/div>/g,
-    '::top\n$1\n::'
-  );
-  markdown = markdown.replace(
-    /<div className="middle">([\s\S]*?)<\/div>/g,
-    '::middle\n$1\n::'
-  );
-  markdown = markdown.replace(
-    /<div className="last">([\s\S]*?)<\/div>/g,
-    '::last\n$1\n::'
-  );
-
-  // 14. sup（シンプル）- 内部タグが処理された後
-  markdown = markdown.replace(
-    /<div className="sup">([\s\S]*?)<\/div>/g,
-    '::sup\n$1\n::'
-  );
-
-  // 15. 不要な改行とタブを整理
-  markdown = markdown.replace(/\t+/g, '');
-  markdown = markdown.replace(/\n{3,}/g, '\n\n');
-  markdown = markdown.trim();
-
-  return markdown;
+    
+    // double
+    if (line.startsWith('<div class="double">')) {
+      i++;
+      result.push('::double');
+      
+      // topの内容
+      if (lines[i] && lines[i].includes('<div class="top">')) {
+        i++;
+        const topLines = [];
+        while (i < lines.length && !lines[i].includes('</div>')) {
+          topLines.push(lines[i].trim());
+          i++;
+        }
+        const topText = convertDivContent(topLines.join('\n'));
+        if (topText) {
+          result.push(topText);
+          result.push('');
+        }
+        i++; // </div>
+      }
+      
+      // 画像
+      result.push('---image---');
+      if (lines[i] && lines[i].includes('<div class="text-center gazo">')) {
+        i++;
+        const imgLine = lines[i].trim();
+        const imgMatch = imgLine.match(/<img[^>]*?src="([^"]+)"[^>]*?(?:class="([^"]*)")?[^>]*?\/>/);
+        if (imgMatch) {
+          const src = imgMatch[1];
+          const classes = imgMatch[2] || '';
+          const classMatch = classes.match(/\b(border|twice|half)\b/);
+          const classAttr = classMatch ? `{.${classMatch[1]}}` : '';
+          result.push(`![](${src})${classAttr}`);
+        }
+        i++;
+        // </div> for gazo
+        if (lines[i] && lines[i].includes('</div>')) i++;
+      }
+      
+      // </div> for double
+      if (lines[i] && lines[i].includes('</div>')) i++;
+      result.push('::');
+      continue;
+    }
+    
+    // ul/li などのHTML要素はそのまま保持
+    if (line.startsWith('<ul') || line.startsWith('<li') || line.startsWith('</ul') || line.startsWith('</li')) {
+      result.push(line);
+      i++;
+      continue;
+    }
+    
+    // その他のHTMLタグを含む行
+    if (line.includes('<') && line.includes('>')) {
+      // そのまま出力（後で手動修正が必要）
+      result.push(line);
+      i++;
+      continue;
+    }
+    
+    // 通常のテキスト
+    result.push(convertHtmlToMarkdownInline(line));
+    i++;
+  }
+  
+  return result.join('\n');
 }
+
+/**
+ * div内のコンテンツをMarkdownに変換（leadなどの入れ子に対応）
+ */
+function convertDivContent(html) {
+  let content = html.trim();
+  
+  // leadを処理
+  content = content.replace(/<div class="lead">([\s\S]*?)<\/div>/g, (match, leadContent) => {
+    return `:::lead\n${convertHtmlToMarkdownInline(leadContent.trim())}\n:::`;
+  });
+  
+  return convertHtmlToMarkdownInline(content);
+}
+
+/**
+ * インラインHTMLをMarkdownに変換
+ */
+function convertHtmlToMarkdownInline(text) {
+  let result = text;
+  
+  // marker
+  result = result.replace(/<span class="marker">([\s\S]*?)<\/span>/g, (match, content) => {
+    let inner = content;
+    inner = inner.replace(/<ruby>\s*([^<]+?)\s*<rt>\s*([^<]+?)\s*<\/rt>\s*<\/ruby>/g, '{{$1|$2}}');
+    inner = inner.replace(/<span\s+onclick="chg\(this\)"\s+class="all">\s*<ruby>\s*([^<]+?)\s*<rt>\s*([^<]+?)\s*<\/rt>\s*<\/ruby>\s*<\/span>/g, '[[$1|$2]]');
+    inner = inner.replace(/<span\s+onclick="chg\(this\)"\s+class="all">\s*([^<]+?)\s*<\/span>/g, '[[$1]]');
+    return `==${inner}==`;
+  });
+  
+  // 赤文字（ruby付き）
+  result = result.replace(/<font color="#FF0000">\s*<ruby>\s*([^<]+?)\s*<rt>\s*([^<]+?)\s*<\/rt>\s*<\/ruby>\s*<\/font>/g, '**{{$1|$2}}**');
+  
+  // 赤文字（通常）
+  result = result.replace(/<font color="#FF0000">([^<]+?)<\/font>/g, '**$1**');
+  
+  // ruby
+  result = result.replace(/<ruby>\s*([^<]+?)\s*<rt>\s*([^<]+?)\s*<\/rt>\s*<\/ruby>/g, '{{$1|$2}}');
+  
+  // クリック用語（ruby付き）
+  result = result.replace(/<span\s+onclick="chg\(this\)"\s+class="all">\s*<ruby>\s*([^<]+?)\s*<rt>\s*([^<]+?)\s*<\/rt>\s*<\/ruby>\s*<\/span>/g, '[[$1|$2]]');
+  
+  // クリック用語（通常）
+  result = result.replace(/<span\s+onclick="chg\(this\)"\s+class="all">\s*([^<]+?)\s*<\/span>/g, '[[$1]]');
+  
+  // 不要なタグ削除
+  result = result.replace(/<br\s*\/?>/g, '');
+  
+  return result.trim();
+}
+
+module.exports = {
+  parseCustomMarkdown,
+  htmlToCustomMarkdown
+};
 
 module.exports = {
   parseCustomMarkdown,

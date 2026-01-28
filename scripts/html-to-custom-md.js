@@ -24,7 +24,8 @@ console.log(`変換中: ${htmlFilePath} → ${outputPath}`);
 let html = fs.readFileSync(htmlFilePath, 'utf-8');
 
 // コンテンツ部分のみを抽出（<div id='toc-range' class="contents">内）
-const contentMatch = html.match(/<div id='toc-range' class="contents">([\s\S]*?)<!-- \/contents -->/);
+// </div><!-- /contents --> または <!-- /contents -->の前まで
+const contentMatch = html.match(/<div id='toc-range' class="contents">([\s\S]*?)(?:<\/div>)?<!-- \/contents -->/);
 if (!contentMatch) {
   console.error('エラー: コンテンツセクションが見つかりません');
   console.error('HTMLファイルの構造を確認してください');
@@ -37,6 +38,7 @@ let content = contentMatch[1];
 content = content.replace(/<\?php[\s\S]*?\?>/g, '');
 content = content.replace(/<!--[\s\S]*?-->/g, '');
 content = content.replace(/<div id="toc"><\/div>/g, '');
+content = content.replace(/<div id="toc"\/>/g, ''); // 自己閉じタグの場合も対応
 
 // ファイル番号を抽出（例: jh_lessons1.html → 1）
 const lessonMatch = htmlFilePath.match(/lessons(\d+)\.html/);
@@ -53,17 +55,12 @@ content = content.replace(/data-src="/g, 'src="');
 // loading.svgを削除（lazyload用のプレースホルダー）
 content = content.replace(/\s*src="[^"]*loading\.svg"\s*/g, '');
 
-// 画像パスを修正（img/ → /share/img/1/）
-content = content.replace(/src="img\//g, `src="/share/img/${lessonNo}/`);
+// 画像パスを修正（img/ → /share/img/）
+// 注意: 元のHTMLは既に img/1/1.svg のように番号を含んでいる
+content = content.replace(/src="img\//g, 'src="/share/img/');
 
-// fontタグを完全に削除して中身だけ残す（後でカスタム記法に変換）
-content = content.replace(/<font color="([^"]+)">([^<]+(?:<[^\/][^>]*>[^<]*<\/[^>]*>)*[^<]*)<\/font>/g, '$2');
-
-// class を className に変換（JavaScriptでの処理を考慮）
-content = content.replace(/class="/g, 'className="');
-
-// onclick を onClick に変換
-content = content.replace(/onclick="/g, 'onClick="');
+// fontタグ内のルビを保持しながら赤文字マーカーに変換
+content = content.replace(/<font color="#FF0000">([^<]+)<\/font>/g, '**$1**');
 
 // カスタムMarkdownに変換
 const markdown = htmlToCustomMarkdown(content);
