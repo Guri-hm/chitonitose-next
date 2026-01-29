@@ -4,6 +4,8 @@ import { loadLesson, getAllLessonPaths } from '@/lib/markdownLoader';
 import type { Metadata } from 'next';
 import LessonContent from '@/components/lessons/LessonContent';
 import MarkdownContent from '@/components/MarkdownContent';
+import AnswerButtons from '@/components/AnswerButtons';
+import { PenIcon, ListIcon, RightIcon, LeftIcon } from '@/components/ui/Icons';
 
 interface LessonPageProps {
   params: Promise<{
@@ -72,23 +74,68 @@ export default async function JHLessonPage({ params }: LessonPageProps) {
       
       <div id="toc-range" className="contents">
         {lessonData ? (
-          <MarkdownContent htmlContent={lessonData.content} />
+          <>
+            {/* 答えの一括表示/非表示ボタン */}
+            <AnswerButtons />
+            
+            {/* 概要 */}
+            {lessonData.overview && (
+              <div className="overview">
+                <div className="title">概要</div>
+                {lessonData.overview}
+              </div>
+            )}
+            
+            {/* コンテンツ（目次も含む） */}
+            <MarkdownContent htmlContent={lessonData.content} showAnswerButtons={false} />
+          </>
         ) : (
           <p>レッスンの内容を読み込めませんでした。</p>
         )}
-        
-        <nav className="lesson-pagination">
+
+        {/* 一問一答リンク */}
+        <div className="d-flex flex-wrap justify-content-center gy-10 mt-10 mb-20">
+          <div className="d-flex align-center order-2 mx-10 border border-2 border-subject-color p-10 border-radius-5">
+            <a href={`/jh/exercises/q-a?page=${lessonNo}`} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <PenIcon size={20} />
+              <span>このページの一問一答</span>
+            </a>
+          </div>
+        </div>
+
+        {/* ナビゲーション */}
+        <div className="text-center d-flex flex-wrap sm-flex-column justify-content-center gy-10 my-10">
           {prevLesson && (
-            <a href={`/jh/lessons/${prevLesson.no}`} className="btn-prev">
-              ← 前へ: {prevLesson.title}
-            </a>
+            <div className="d-flex flex-column align-center order-1 mx-10 border border-2 border-subject-color p-10 border-radius-5">
+              <a className="w-100" href={`/jh/lessons/${prevLesson.no}`} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <LeftIcon size={20} />
+                <div>
+                  <div>前の内容</div>
+                  <div>{prevLesson.title}</div>
+                </div>
+              </a>
+            </div>
           )}
+          
+          <div className="d-flex align-center order-2 mx-10 border border-2 border-subject-color p-10 border-radius-5">
+            <a className="w-100" href="/jh" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <ListIcon size={20} />
+              <span>一覧</span>
+            </a>
+          </div>
+          
           {nextLesson && (
-            <a href={`/jh/lessons/${nextLesson.no}`} className="btn-next">
-              次へ: {nextLesson.title} →
-            </a>
+            <div className="d-flex flex-column align-center order-3 mx-10 border border-2 border-subject-color p-10 border-radius-5">
+              <a className="w-100" href={`/jh/lessons/${nextLesson.no}`} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <div>
+                  <div>次の内容</div>
+                  <div>{nextLesson.title}</div>
+                </div>
+                <RightIcon size={20} />
+              </a>
+            </div>
           )}
-        </nav>
+        </div>
       </div>
     </>
   );

@@ -1,9 +1,9 @@
 import { notFound } from 'next/navigation';
 import { loadSubjectPages } from '@/lib/dataLoader';
-import { getMDXLesson } from '@/lib/mdxLoader';
-import { serialize } from 'next-mdx-remote/serialize';
+import { loadLesson } from '@/lib/markdownLoader';
 import type { Metadata } from 'next';
 import LessonContent from '@/components/lessons/LessonContent';
+import { ImageGalleryProvider } from '@/contexts/ImageGalleryContext';
 
 interface LessonPageProps {
   params: {
@@ -51,16 +51,16 @@ export default async function WHLessonPage({ params }: LessonPageProps) {
   const prevLesson = pages.find(p => p.no === lessonNo - 1);
   const nextLesson = pages.find(p => p.no === lessonNo + 1);
 
-  // MDXファイルを読み込む
-  const mdxData = await getMDXLesson('wh', id);
-  let mdxSource = null;
-  
-  if (mdxData) {
-    mdxSource = await serialize(mdxData.content);
+  // カスタムMarkdownを読み込んでHTMLに変換
+  let lessonData = null;
+  try {
+    lessonData = await loadLesson('wh', lessonNo);
+  } catch (error) {
+    console.error(`Failed to load lesson ${lessonNo}:`, error);
   }
 
   return (
-    <>
+    <ImageGalleryProvider>
       <link rel="stylesheet" href="/css/subject.css" />
       <link rel="stylesheet" href="/css/wh.css" />
       
@@ -71,8 +71,8 @@ export default async function WHLessonPage({ params }: LessonPageProps) {
         subjectColor="#3366cc"
         prevLesson={prevLesson}
         nextLesson={nextLesson}
-        mdxSource={mdxSource || undefined}
+        htmlContent={lessonData?.content}
       />
-    </>
+    </ImageGalleryProvider>
   );
 }

@@ -347,29 +347,6 @@ ins>div {
 	width: 100%;
 }
 
-.list-icon:before {
-	font-family: "Font Awesome 6 Free";
-	font-weight: bold;
-	content: "\f03a";
-}
-
-.left-icon:before {
-	font-family: "Font Awesome 6 Free";
-	font-weight: bold;
-	content: "\f104　";
-}
-
-.right-icon:after {
-	font-family: "Font Awesome 6 Free";
-	font-weight: bold;
-	content: "　\f105";
-}
-
-.pen-icon:before {
-	font-family: "Font Awesome 6 Free";
-	content: "\f044";
-}
-
 .d-flex {
 	display: flex;
 }

@@ -7,11 +7,28 @@
  */
 
 /**
+ * 画像パスを適切な形式に変換
+ * @param {string} imgPath - 元の画像パス
+ * @param {string} subject - 科目 (jh/wh/geo)
+ * @returns {string} - 変換後の画像パス
+ */
+function convertToWebP(imgPath, subject = '') {
+  // 相対パスの場合は/images/科目/を追加
+  if (!imgPath.startsWith('/') && !imgPath.startsWith('http') && subject) {
+    imgPath = `/images/${subject}/${imgPath}`;
+  }
+  
+  // WebP変換は現時点では無効化（元の拡張子を使用）
+  return imgPath;
+}
+
+/**
  * カスタムMarkdownをHTMLに変換（一行ずつパース版）
  * @param {string} markdown - カスタムMarkdown記法のテキスト
+ * @param {string} subject - 科目 (jh/wh/geo)
  * @returns {string} - 変換後のHTML
  */
-function parseCustomMarkdown(markdown) {
+function parseCustomMarkdown(markdown, subject = '') {
   // Normalize line endings
   let text = markdown.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
   
@@ -22,17 +39,13 @@ function parseCustomMarkdown(markdown) {
   while (i < lines.length) {
     const line = lines[i];
     
-    // 概要セクション
+    // 概要セクション - スキップ（page.tsxで別途表示）
     if (line === '---overview---') {
-      result.push('<div class="overview">');
-      result.push('\t<div class="title">概要</div>');
       i++;
       while (i < lines.length && lines[i] !== '---') {
-        result.push('\t' + convertInlineMarkdown(lines[i]));
         i++;
       }
-      result.push('</div>');
-      i++;
+      i++; // skip closing ---
       continue;
     }
     
@@ -70,6 +83,8 @@ function parseCustomMarkdown(markdown) {
         const imgMatch = lines[i].match(/!\[([^\]]*)\]\(([^)]+)\)(?:\{\.([^}]+)\})?/);
         if (imgMatch) {
           const [, alt, imgSrc, imgClass] = imgMatch;
+          // 画像パスをWebPに変換
+          const webpSrc = convertToWebP(imgSrc, subject);
           const classNames = ['lazyload', 'popup-img'];
           if (imgClass) classNames.push(imgClass);
           
@@ -83,7 +98,7 @@ function parseCustomMarkdown(markdown) {
           const formattedText = content.join('\n').trim().replace(/\n\n/g, '<br />');
           result.push('<div class="double">');
           result.push(`\t<div class="top">${convertInlineMarkdown(formattedText)}</div>`);
-          result.push(`\t<div class="text-center gazo"><img src="${imgSrc}" alt="${alt}" class="${classNames.join(' ')}" /></div>`);
+          result.push(`\t<div class="text-center gazo"><img src="${webpSrc}" alt="${alt}" class="${classNames.join(' ')}" /></div>`);
           result.push('</div>');
           i++;
           continue;
@@ -97,6 +112,9 @@ function parseCustomMarkdown(markdown) {
       const imgMatch = lines[i].match(/!\[([^\]]*)\]\(([^)]+)\)(?:\{\.([^}]+)\})?/);
       if (imgMatch) {
         const [, alt, imgSrc, imgClass] = imgMatch;
+        // 画像パスをWebPに変換
+        const webpSrc = convertToWebP(imgSrc, subject);
+        const originalSrc = `/images/${subject}/${imgSrc}`; // 元画像パス
         const classNames = ['lazyload', 'popup-img'];
         if (imgClass) {
           imgClass.split('.').filter(c => c).forEach(c => classNames.push(c));
@@ -109,17 +127,9 @@ function parseCustomMarkdown(markdown) {
           i++;
         }
         
-        result.push('<div class="gazo">');
-        result.push(`\t<img class="${classNames.join(' ')}" src="${imgSrc}" alt="${alt}" />`);
-        result.push('\t<br />');
-        caption.forEach(cap => {
-          if (cap.trim()) {
-            result.push('\t' + convertInlineMarkdown(cap));
-            result.push('\t<br />');
-          }
-        });
-        result.pop(); // 最後の<br />を削除
-        result.push('</div>');
+        // カスタムdata属性付きdivとして出力（data-src=WebP, data-original=元画像）
+        const captionHtml = caption.map(cap => cap.trim() ? convertInlineMarkdown(cap) : '').filter(c => c).join('<br />');
+        result.push(`<div class="gazo lesson-image-placeholder" data-src="${webpSrc}" data-original="${originalSrc}" data-alt="${alt}" data-class="${classNames.join(' ')}" data-caption="${captionHtml.replace(/"/g, '&quot;')}"></div>`);
         i++;
         continue;
       }

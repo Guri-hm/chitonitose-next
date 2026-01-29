@@ -1,9 +1,10 @@
 'use client';
 
 import Link from 'next/link';
-import { useEffect } from 'react';
-import MDXContent from './MDXContent';
-import { MDXRemoteSerializeResult } from 'next-mdx-remote';
+import { useEffect, useRef } from 'react';
+import { createRoot } from 'react-dom/client';
+import LessonImage from '@/components/LessonImage';
+import { useImageGallery } from '@/contexts/ImageGalleryContext';
 
 interface LessonContentProps {
   lesson: {
@@ -23,7 +24,7 @@ interface LessonContentProps {
     no: number;
     title: string;
   };
-  mdxSource?: MDXRemoteSerializeResult;
+  htmlContent?: string;
 }
 
 /**
@@ -36,12 +37,50 @@ export default function LessonContent({
   subjectColor,
   prevLesson,
   nextLesson,
-  mdxSource,
+  htmlContent,
 }: LessonContentProps) {
+  const contentRef = useRef<HTMLDivElement>(null);
+  const { setImages } = useImageGallery();
   
   useEffect(() => {
-    // 目次生成などのクライアントサイド処理をここに追加
-  }, []);
+    if (!contentRef.current || !htmlContent) return;
+
+    // 画像プレースホルダーを収集
+    const placeholders = contentRef.current.querySelectorAll('.lesson-image-placeholder');
+    const imageDataList: Array<{ src: string; alt: string; caption: string }> = [];
+    const roots: any[] = [];
+    
+    placeholders.forEach((placeholder, index) => {
+      const src = placeholder.getAttribute('data-src') || '';
+      const alt = placeholder.getAttribute('data-alt') || '';
+      const className = placeholder.getAttribute('data-class') || '';
+      const caption = placeholder.getAttribute('data-caption') || '';
+      
+      // 画像データを収集
+      imageDataList.push({ src, alt, caption });
+      
+      // Reactコンポーネントとしてマウント
+      const root = createRoot(placeholder);
+      roots.push(root);
+      root.render(
+        <LessonImage
+          src={src}
+          alt={alt}
+          className={className}
+          caption={caption}
+          imageIndex={index}
+        />
+      );
+    });
+
+    // Contextに画像一覧を登録
+    setImages(imageDataList);
+
+    // クリーンアップ
+    return () => {
+      roots.forEach(root => root.unmount());
+    };
+  }, [htmlContent, setImages]);
 
   return (
     <div className="lesson-page">
@@ -52,13 +91,13 @@ export default function LessonContent({
       </h1>
 
       {/* コンテンツエリア */}
-      <div className="contents" id="toc-range">
+      <div className="contents" id="toc-range" ref={contentRef}>
         
-        {mdxSource ? (
-          // MDXコンテンツをレンダリング
-          <MDXContent source={mdxSource} />
+        {htmlContent ? (
+          // HTMLコンテンツをレンダリング
+          <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
         ) : (
-          // MDXファイルが存在しない場合のフォールバック
+          // コンテンツが存在しない場合のフォールバック
           <>
             {/* 概要セクション */}
             <div className="overview">
@@ -67,12 +106,9 @@ export default function LessonContent({
                 このレッスンでは「{lesson.title.trim()}」について学習します。
               </p>
               <p className="text-gray-500 text-sm mt-4">
-                ※ このレッスンページは現在準備中です。元のHTMLコンテンツをMDX形式に変換中です。
+                ※ このレッスンページは現在準備中です。
               </p>
             </div>
-
-            {/* 目次 */}
-            <div id="toc"></div>
 
             {/* サンプルセクション */}
             <h2>学習内容</h2>

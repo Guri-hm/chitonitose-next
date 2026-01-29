@@ -40,16 +40,17 @@ const jhCategories = [
   {
     era: '近代',
     sections: [
-      { period: '明治時代（前期）', image: '/share/img/meiji.jpg', start: 112, end: 126 },
-      { period: '明治時代（後期）', image: '/share/img/nisshinsen.jpg', start: 127, end: 138 },
-      { period: '大正時代', image: '/share/img/taisho.jpg', start: 139, end: 148 },
+      { period: '明治時代（前期）', image: '/share/img/meiji.jpg', start: 112, end: 118 },
+      { period: '明治時代（憲法発布後）', image: '/share/img/kenpo.jpg', start: 119, end: 136 },
+      { period: '大正時代', image: '/share/img/typist.jpg', start: 137, end: 145 },
     ],
   },
   {
     era: '現代',
     sections: [
-      { period: '昭和時代（戦前）', image: '/share/img/showa.jpg', start: 149, end: 158 },
-      { period: '昭和時代（戦後）', image: '/share/img/showa_sengo.jpg', start: 159, end: 172 },
+      { period: '昭和時代（戦前）', image: '/share/img/tokko.jpg', start: 146, end: 158 },
+      { period: '昭和時代（占領期）', image: '/share/img/senryo.jpg', start: 159, end: 165 },
+      { period: '昭和時代（独立後）', image: '/share/img/anpo.jpg', start: 166, end: 172 },
     ],
   },
 ];

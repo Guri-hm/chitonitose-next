@@ -1,11 +1,11 @@
 import fs from 'fs';
 import path from 'path';
-import matter from 'gray-matter';
 
 export interface LessonData {
   subject: string;
   lessonNo: number;
-  content: string; // HTML形式
+  content: string; // HTML形式（本文のみ、overviewは含まない）
+  overview?: string; // 概要テキスト
   rawMarkdown: string; // 元のMarkdown
 }
 
@@ -13,11 +13,11 @@ export interface LessonData {
  * カスタムMarkdownをHTMLに変換
  * スクリプトから関数を同期的に読み込み
  */
-function parseCustomMarkdown(markdown: string): string {
+function parseCustomMarkdown(markdown: string, subject: string): string {
   // scripts/markdown-to-html.js をrequireで読み込み
   // eslint-disable-next-line @typescript-eslint/no-var-requires
   const { parseCustomMarkdown: parser } = require('../scripts/markdown-to-html.js');
-  return parser(markdown);
+  return parser(markdown, subject);
 }
 
 /**
@@ -32,16 +32,22 @@ export async function loadLesson(subject: string, lessonNo: number): Promise<Les
   
   const fileContent = fs.readFileSync(filePath, 'utf-8');
   
-  // フロントマターをパース
-  const { data, content: rawMarkdown } = matter(fileContent);
+  // overviewを抽出
+  const overviewMatch = fileContent.match(/---overview---\n([\s\S]*?)\n---/);
+  const overview = overviewMatch ? overviewMatch[1].trim() : undefined;
   
-  // カスタムMarkdownをHTMLに変換
-  const htmlContent = parseCustomMarkdown(rawMarkdown);
+  // gray-matterは使わず、直接Markdownとして扱う
+  // （カスタムMarkdown形式のため、フロントマターは使用しない）
+  const rawMarkdown = fileContent;
+  
+  // カスタムMarkdownをHTMLに変換（科目情報を渡す）
+  const htmlContent = parseCustomMarkdown(rawMarkdown, subject);
   
   return {
-    subject: data.subject || subject,
-    lessonNo: data.lessonNo || lessonNo,
+    subject: subject,
+    lessonNo: lessonNo,
     content: htmlContent,
+    overview,
     rawMarkdown
   };
 }
