@@ -94,87 +94,80 @@ export default function MarkdownContent({ htmlContent }: MarkdownContentProps) {
     setProcessedHtml(html);
   }, [htmlContent]);
 
-  useEffect(() => {
+    useEffect(() => {
     if (!contentRef.current || !processedHtml) return;
 
-    console.log('[MarkdownContent] イベントリスナー追加開始');
+    console.log('[MarkdownContent] イベントリスナー追加開始！！');
 
-    // DOMの更新を待つ
+    const root = contentRef.current;
+    let mounted = true;
+
+    // タイマーでDOM安定を待って画像データを収集（setImagesのみ）
     const timer = setTimeout(() => {
-      if (!contentRef.current) return;
+      if (!root || !mounted) return;
 
-      // 1. 画像クリックイベント（イベントデリゲーション）
-      const imageDataList: ImageData[] = [];
-      const placeholders = contentRef.current.querySelectorAll('.lesson-image-wrapper');
-      
+      const placeholders = root.querySelectorAll('.lesson-image-wrapper');
       console.log(`[MarkdownContent] 画像プレースホルダー数: ${placeholders.length}`);
-      
-      placeholders.forEach((placeholder, index) => {
-        const webpSrc = placeholder.getAttribute('data-src') || '';
-        const originalSrc = placeholder.getAttribute('data-original') || webpSrc;
-        const alt = placeholder.getAttribute('data-alt') || '';
-        const caption = placeholder.getAttribute('data-caption') || '';
-        
-        // 画像データを収集（元画像を保存）
-        imageDataList.push({ src: originalSrc, alt, caption });
+
+      const imageDataList: ImageData[] = Array.from(placeholders).map((placeholder) => {
+        const webpSrc = (placeholder as HTMLElement).getAttribute('data-src') || '';
+        const originalSrc = (placeholder as HTMLElement).getAttribute('data-original') || webpSrc;
+        const alt = (placeholder as HTMLElement).getAttribute('data-alt') || '';
+        const caption = (placeholder as HTMLElement).getAttribute('data-caption') || '';
+        return { src: originalSrc, alt, caption };
       });
-      
+
       setImages(imageDataList);
       console.log('[MarkdownContent] 画像データ一覧:', imageDataList);
 
-      // 2. イベントデリゲーションでクリックイベントを追加
-      const handleClick = (e: Event) => {
-        const target = e.target as HTMLElement;
-        
-        // 画像クリック処理（親要素.lesson-image-wrapperをクリック）
-        const imageWrapper = target.closest('.lesson-image-wrapper') as HTMLElement;
-        if (imageWrapper) {
-          const index = Array.from(placeholders).indexOf(imageWrapper);
-          if (index !== -1) {
-            console.log(`[MarkdownContent] 画像クリック: index=${index}`);
-            setCurrentIndex(index);
-            setIsFullscreen(true);
-          }
-          return;
-        }
-        
-        // 赤字クリック処理（.all要素）
-        const allElement = target.closest('.all') as HTMLElement;
-        if (allElement) {
-          console.log('[MarkdownContent] 赤字クリック:', allElement.textContent);
-          if (allElement.style.color === 'red' || allElement.style.color === 'rgb(255, 0, 0)') {
-            allElement.style.color = 'transparent';
-          } else {
-            allElement.style.color = 'red';
-          }
-        }
-      };
-
-      contentRef.current.addEventListener('click', handleClick);
-      
       // カーソルスタイルを設定
-      placeholders.forEach(placeholder => {
-        (placeholder as HTMLElement).style.cursor = 'pointer';
-      });
-      
-      const allElements = contentRef.current.querySelectorAll('.all');
-      allElements.forEach(element => {
-        (element as HTMLElement).style.cursor = 'pointer';
-      });
-      
-      console.log(`[MarkdownContent] .all要素数: ${allElements.length}`);
+      placeholders.forEach(p => (p as HTMLElement).style.cursor = 'pointer');
 
-      // クリーンアップ関数を返す
-      return () => {
-        if (contentRef.current) {
-          contentRef.current.removeEventListener('click', handleClick);
-        }
-      };
+      const allElements = root.querySelectorAll('.all');
+      allElements.forEach(el => (el as HTMLElement).style.cursor = 'pointer');
+      console.log(`[MarkdownContent] .all要素数: ${allElements.length}`);
     }, 100); // 100ms待機
+
+    // イベントデリゲーション用ハンドラ（親1つで画像・赤字を処理）
+    const handleClick = (e: Event) => {
+      const target = e.target as HTMLElement;
+      if (!root) return;
+
+      // 画像クリック（.lesson-image-wrapper）
+      const imageWrapper = target.closest('.lesson-image-wrapper') as HTMLElement | null;
+      if (imageWrapper) {
+        const placeholders = root.querySelectorAll('.lesson-image-wrapper');
+        const index = Array.from(placeholders).indexOf(imageWrapper);
+        if (index !== -1) {
+          console.log(`[MarkdownContent] 画像クリック: index=${index}`);
+          setCurrentIndex(index);
+          setIsFullscreen(true);
+        }
+        return;
+      }
+
+      // 赤字クリック（.all）
+      const allElement = target.closest('.all') as HTMLElement | null;
+      if (allElement) {
+        console.log('[MarkdownContent] 赤字クリック:', allElement.textContent);
+        const current = allElement.style.color;
+        // 比較でrgb表記も扱う
+        if (current === 'red' || current === 'rgb(255, 0, 0)') {
+          allElement.style.color = 'transparent';
+        } else {
+          allElement.style.color = 'red';
+        }
+      }
+    };
+
+    // 登録（タイマー開始直後でも root が有効なら先に登録して良い）
+    root.addEventListener('click', handleClick);
 
     // クリーンアップ
     return () => {
+      mounted = false;
       clearTimeout(timer);
+      if (root) root.removeEventListener('click', handleClick);
     };
   }, [processedHtml]);
 
