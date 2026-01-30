@@ -219,8 +219,8 @@ function convertInlineMarkdown(text) {
   html = html.replace(/==([^=]+)==/g, (match, content) => {
     let processed = content;
     processed = processed.replace(/\{\{([^\|]+)\|([^\}]+)\}\}/g, '<ruby>$1<rt>$2</rt></ruby>');
-    processed = processed.replace(/\[\[([^\|\]]+)\|([^\]]+)\]\]/g, '<span onclick="chg(this)" class="all"><ruby>$1<rt>$2</rt></ruby></span>');
-    processed = processed.replace(/\[\[([^\]]+)\]\]/g, '<span onclick="chg(this)" class="all">$1</span>');
+    processed = processed.replace(/\[\[([^\|\]]+)\|([^\]]+)\]\]/g, '<span class="all"><ruby>$1<rt>$2</rt></ruby></span>');
+    processed = processed.replace(/\[\[([^\]]+)\]\]/g, '<span class="all">$1</span>');
     return `<span class="marker">${processed}</span>`;
   });
   
@@ -231,11 +231,11 @@ function convertInlineMarkdown(text) {
   // 3. ルビ（{{term|reading}}）
   html = html.replace(/\{\{([^\|]+)\|([^\}]+)\}\}/g, '<ruby>$1<rt>$2</rt></ruby>');
   
-  // 4. クリック用語 - ルビ付き（[[term|reading]]）
-  html = html.replace(/\[\[([^\|\]]+)\|([^\]]+)\]\]/g, '<span onclick="chg(this)" class="all"><ruby>$1<rt>$2</rt></ruby></span>');
+  // 4. クリック用語 - ルビ付き（[[term|reading]]）- onclick属性削除
+  html = html.replace(/\[\[([^\|\]]+)\|([^\]]+)\]\]/g, '<span class="all"><ruby>$1<rt>$2</rt></ruby></span>');
   
-  // 5. クリック用語 - ルビなし（[[term]]）
-  html = html.replace(/\[\[([^\]]+)\]\]/g, '<span onclick="chg(this)" class="all">$1</span>');
+  // 5. クリック用語 - ルビなし（[[term]]）- onclick属性削除
+  html = html.replace(/\[\[([^\]]+)\]\]/g, '<span class="all">$1</span>');
   
   return html;
 }

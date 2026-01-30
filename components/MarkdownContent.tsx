@@ -28,23 +28,6 @@ export default function MarkdownContent({ htmlContent }: MarkdownContentProps) {
 
   const [processedHtml, setProcessedHtml] = useState<string>('');
 
-  // グローバルにchg関数を定義（onclick="chg(this)"用）
-  useEffect(() => {
-    // @ts-ignore
-    window.chg = (obj: HTMLElement) => {
-      if (obj.style.color !== 'red' && obj.style.color !== 'rgb(255, 0, 0)') {
-        obj.style.color = 'red';
-      } else {
-        obj.style.color = 'transparent';
-      }
-    };
-
-    return () => {
-      // @ts-ignore
-      delete window.chg;
-    };
-  }, []);
-
   // HTMLを前処理してプレースホルダーを実際の画像タグに変換 + 目次を生成
   useEffect(() => {
     // 1. 画像プレースホルダーを変換
@@ -120,10 +103,9 @@ export default function MarkdownContent({ htmlContent }: MarkdownContentProps) {
     const timer = setTimeout(() => {
       if (!contentRef.current) return;
 
-      // 画像プレースホルダーを収集
-      const placeholders = contentRef.current.querySelectorAll('.lesson-image-wrapper');
+      // 1. 画像クリックイベント（イベントデリゲーション）
       const imageDataList: ImageData[] = [];
-      const imageListeners: Array<{ element: HTMLElement; listener: () => void }> = [];
+      const placeholders = contentRef.current.querySelectorAll('.lesson-image-wrapper');
       
       console.log(`[MarkdownContent] 画像プレースホルダー数: ${placeholders.length}`);
       
@@ -133,35 +115,60 @@ export default function MarkdownContent({ htmlContent }: MarkdownContentProps) {
         const alt = placeholder.getAttribute('data-alt') || '';
         const caption = placeholder.getAttribute('data-caption') || '';
         
-        console.log(`[MarkdownContent] 画像 ${index}: webp=${webpSrc}, original=${originalSrc}`);
-        
         // 画像データを収集（元画像を保存）
         imageDataList.push({ src: originalSrc, alt, caption });
-        
-        // 親要素（div.gazo）にクリックイベントを追加（lazyloadの影響を受けない）
-        const htmlElement = placeholder as HTMLElement;
-        htmlElement.style.cursor = 'pointer';
-        
-        const listener = () => {
-          console.log(`[MarkdownContent] 画像クリック: ${originalSrc}`);
-          setCurrentIndex(index);
-          setIsFullscreen(true);
-        };
-        
-        htmlElement.addEventListener('click', listener);
-        imageListeners.push({ element: htmlElement, listener });
-        console.log(`[MarkdownContent] イベントリスナー追加完了 ${index}`);
       });
-
-      console.log('[MarkdownContent] 画像データ一覧:', imageDataList);
-      // 画像一覧を保存
+      
       setImages(imageDataList);
+      console.log('[MarkdownContent] 画像データ一覧:', imageDataList);
+
+      // 2. イベントデリゲーションでクリックイベントを追加
+      const handleClick = (e: Event) => {
+        const target = e.target as HTMLElement;
+        
+        // 画像クリック処理（親要素.lesson-image-wrapperをクリック）
+        const imageWrapper = target.closest('.lesson-image-wrapper') as HTMLElement;
+        if (imageWrapper) {
+          const index = Array.from(placeholders).indexOf(imageWrapper);
+          if (index !== -1) {
+            console.log(`[MarkdownContent] 画像クリック: index=${index}`);
+            setCurrentIndex(index);
+            setIsFullscreen(true);
+          }
+          return;
+        }
+        
+        // 赤字クリック処理（.all要素）
+        const allElement = target.closest('.all') as HTMLElement;
+        if (allElement) {
+          console.log('[MarkdownContent] 赤字クリック:', allElement.textContent);
+          if (allElement.style.color === 'red' || allElement.style.color === 'rgb(255, 0, 0)') {
+            allElement.style.color = 'transparent';
+          } else {
+            allElement.style.color = 'red';
+          }
+        }
+      };
+
+      contentRef.current.addEventListener('click', handleClick);
+      
+      // カーソルスタイルを設定
+      placeholders.forEach(placeholder => {
+        (placeholder as HTMLElement).style.cursor = 'pointer';
+      });
+      
+      const allElements = contentRef.current.querySelectorAll('.all');
+      allElements.forEach(element => {
+        (element as HTMLElement).style.cursor = 'pointer';
+      });
+      
+      console.log(`[MarkdownContent] .all要素数: ${allElements.length}`);
 
       // クリーンアップ関数を返す
       return () => {
-        imageListeners.forEach(({ element, listener }) => {
-          element.removeEventListener('click', listener);
-        });
+        if (contentRef.current) {
+          contentRef.current.removeEventListener('click', handleClick);
+        }
       };
     }, 100); // 100ms待機
 
