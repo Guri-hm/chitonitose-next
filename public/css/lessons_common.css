@@ -838,6 +838,214 @@ div.iframeWrapper iframe {
 	border-color: var(--subject-color) !important;
 }
 
+/* 3カラムレイアウト */
+.sidebar-toggle-btn {
+	position: fixed;
+	top: 80px;
+	left: 10px;
+	z-index: 1000;
+	background: var(--subject-color, #337ab7);
+	border: none;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+	cursor: pointer;
+	transition: transform 0.2s;
+}
+
+.sidebar-toggle-btn:hover {
+	transform: scale(1.1);
+}
+
+@media screen and (min-width: 561px) {
+	.sidebar-toggle-btn {
+		display: none;
+	}
+}
+
+.sidebar-modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 9998;
+	display: flex;
+}
+
+.sidebar-modal {
+	background: white;
+	width: 80%;
+	max-width: 320px;
+	height: 100%;
+	overflow-y: auto;
+	box-shadow: 2px 0 8px rgba(0,0,0,0.2);
+}
+
+.sidebar-modal-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 16px;
+	border-bottom: 1px solid #e0e0e0;
+	position: sticky;
+	top: 0;
+	background: white;
+	z-index: 1;
+}
+
+.sidebar-modal-header h2 {
+	font-size: 1.6rem;
+	margin: 0;
+}
+
+.sidebar-modal-header button {
+	background: none;
+	border: none;
+	font-size: 32px;
+	cursor: pointer;
+	color: #666;
+	padding: 0;
+	width: 32px;
+	height: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media screen and (min-width: 561px) {
+	.sidebar-modal-overlay {
+		display: none;
+	}
+}
+
+.three-column-layout {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 0;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+@media screen and (min-width: 561px) and (max-width: 960px) {
+	.three-column-layout {
+		grid-template-columns: 240px 1fr;
+		gap: 20px;
+		max-width: 960px;
+		padding: 0 15px;
+	}
+}
+
+@media screen and (min-width: 961px) {
+	.three-column-layout {
+		grid-template-columns: 280px 1fr 280px;
+		gap: 30px;
+		max-width: 1400px;
+		padding: 0 20px;
+	}
+}
+
+.left-column {
+	display: none;
+}
+
+@media screen and (min-width: 561px) {
+	.left-column {
+		display: block;
+	}
+}
+
+.sidebar-sticky {
+	position: sticky;
+	top: 80px;
+}
+
+.sidebar-title {
+	font-size: 1.6rem;
+	font-weight: bold;
+	margin-bottom: 12px;
+	padding-bottom: 8px;
+	border-bottom: 2px solid var(--subject-color, #337ab7);
+}
+
+.sidebar-nav {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+}
+
+.sidebar-nav a {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 6px 8px;
+	text-decoration: none;
+	color: #333;
+	border-radius: 3px;
+	transition: background 0.2s;
+	font-size: 1.3rem;
+}
+
+.sidebar-nav a:hover {
+	background: #f5f5f5;
+}
+
+.sidebar-nav a.active {
+	background: #e8e8e8;
+	color: #333;
+}
+
+.sidebar-nav a.active .lesson-title {
+	text-decoration: underline;
+	font-weight: normal;
+}
+
+.lesson-no {
+	flex-shrink: 0;
+	width: 28px;
+	height: 28px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #e0e0e0;
+	border-radius: 3px;
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+.sidebar-nav a.active .lesson-no {
+	background: #999;
+	color: white;
+}
+
+.lesson-title {
+	flex: 1;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	line-height: 1.4;
+}
+
+.center-column {
+	min-width: 0;
+}
+
+.right-column {
+	display: none;
+}
+
+@media screen and (min-width: 961px) {
+	.right-column {
+		display: block;
+	}
+}
+
 /* 画像拡大用モーダル */
 .modal-wrapper {
 	width: 100%;

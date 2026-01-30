@@ -97,7 +97,7 @@ export default function MarkdownContent({ htmlContent }: MarkdownContentProps) {
     useEffect(() => {
     if (!contentRef.current || !processedHtml) return;
 
-    console.log('[MarkdownContent] イベントリスナー追加開始！！');
+  console.log('[MarkdownContent] イベントリスナー追加開始！！');
 
     const root = contentRef.current;
     let mounted = true;
@@ -137,9 +137,19 @@ export default function MarkdownContent({ htmlContent }: MarkdownContentProps) {
       const imageWrapper = target.closest('.lesson-image-wrapper') as HTMLElement | null;
       if (imageWrapper) {
         const placeholders = root.querySelectorAll('.lesson-image-wrapper');
+        // クリック時に最新の画像リストを DOM から即時構築（クロージャの古い images に依存しない）
+        const currentImageList: ImageData[] = Array.from(placeholders).map((placeholder) => {
+          const webpSrc = (placeholder as HTMLElement).getAttribute('data-src') || '';
+          const originalSrc = (placeholder as HTMLElement).getAttribute('data-original') || webpSrc;
+          const alt = (placeholder as HTMLElement).getAttribute('data-alt') || '';
+          const caption = (placeholder as HTMLElement).getAttribute('data-caption') || '';
+          return { src: originalSrc, alt, caption };
+        });
         const index = Array.from(placeholders).indexOf(imageWrapper);
         if (index !== -1) {
-          console.log(`[MarkdownContent] 画像クリック: index=${index}`);
+          console.log(`[MarkdownContent] 画像クリック: index=${index}, list length=${currentImageList.length}`);
+          // images state を最新リストで更新してから index をセット
+          setImages(currentImageList);
           setCurrentIndex(index);
           setIsFullscreen(true);
         }
@@ -189,6 +199,36 @@ export default function MarkdownContent({ htmlContent }: MarkdownContentProps) {
 
   const currentImage = images[currentIndex];
 
+  // モーダル表示中はbodyのスクロールを無効化（ちらつき防止）
+  useEffect(() => {
+    if (isFullscreen) {
+      // スクロールバーの幅を計測してpaddingで調整（ちらつき防止）
+      const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+      document.body.style.overflow = 'hidden';
+      document.body.style.paddingRight = `${scrollbarWidth}px`;
+    } else {
+      document.body.style.overflow = '';
+      document.body.style.paddingRight = '';
+    }
+    
+    return () => {
+      document.body.style.overflow = '';
+      document.body.style.paddingRight = '';
+    };
+  }, [isFullscreen]);
+
+  // ESCキーでモーダルを閉じる
+  useEffect(() => {
+    if (!isFullscreen) return;
+    
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') closeFullscreen();
+    };
+    
+    window.addEventListener('keydown', handleEscape);
+    return () => window.removeEventListener('keydown', handleEscape);
+  }, [isFullscreen]);
+
   return (
     <>
       <div
@@ -197,14 +237,39 @@ export default function MarkdownContent({ htmlContent }: MarkdownContentProps) {
         dangerouslySetInnerHTML={{ __html: processedHtml }}
       />
       
-      {/* フルスクリーンモーダル */}
+      {/* フルスクリーンモーダル（画面全体を覆うオーバーレイ） */}
       {isFullscreen && currentImage && (
         <div 
-          className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center"
+          style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundColor: '#F5F5F5',
+            zIndex: 9999,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            flexDirection: 'column'
+          }}
           onClick={closeFullscreen}
         >
+          {/* 閉じるボタン */}
           <button
-            className="absolute top-4 right-4 text-white text-4xl hover:text-gray-300 z-10"
+            style={{
+              position: 'absolute',
+              top: '20px',
+              right: '20px',
+              background: 'none',
+              border: 'none',
+              color: '#121212',
+              fontSize: '40px',
+              cursor: 'pointer',
+              zIndex: 10000,
+              padding: '10px',
+              lineHeight: '1'
+            }}
             onClick={closeFullscreen}
             aria-label="閉じる"
           >
@@ -212,51 +277,100 @@ export default function MarkdownContent({ htmlContent }: MarkdownContentProps) {
           </button>
           
           {/* 前へボタン */}
-          <button
-            className="absolute left-4 top-1/2 -translate-y-1/2 text-white text-5xl hover:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed"
-            onClick={(e) => {
-              e.stopPropagation();
-              goToPrev();
-            }}
-            disabled={currentIndex === 0}
-            aria-label="前の画像"
-          >
-            ‹
-          </button>
+          {currentIndex > 0 && (
+            <button
+              style={{
+                position: 'absolute',
+                left: '20px',
+                top: '50%',
+                transform: 'translateY(-50%)',
+                background: '#121212',
+                border: 'none',
+                color: '#F5F5F5',
+                fontSize: '48px',
+                cursor: 'pointer',
+                zIndex: 10000,
+                padding: '20px 15px',
+                borderRadius: '8px',
+                lineHeight: '1'
+              }}
+              onClick={(e) => {
+                e.stopPropagation();
+                goToPrev();
+              }}
+              aria-label="前の画像"
+            >
+              ‹
+            </button>
+          )}
           
-          {/* 画像表示 */}
+          {/* 画像とキャプション */}
           <div 
-            className="relative max-w-[90vw] max-h-[90vh] flex flex-col items-center"
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              maxWidth: '90vw',
+              maxHeight: '90vh',
+              gap: '16px'
+            }}
             onClick={(e) => e.stopPropagation()}
           >
             <img
               src={currentImage.src}
               alt={currentImage.alt}
-              className="max-w-full max-h-[85vh] object-contain"
+              style={{
+                maxWidth: '90vw',
+                maxHeight: '80vh',
+                objectFit: 'contain',
+                display: 'block'
+              }}
             />
             {currentImage.caption && (
               <p 
-                className="text-white mt-4 text-center max-w-2xl"
+                style={{
+                  color: '#121212',
+                  textAlign: 'center',
+                  maxWidth: '800px',
+                  margin: '0',
+                  padding: '0 20px',
+                  fontSize: '14px'
+                }}
                 dangerouslySetInnerHTML={{ __html: currentImage.caption }}
               />
             )}
-            <div className="text-white mt-2 text-sm">
+            <div style={{ color: '#121212', fontSize: '14px', opacity: 0.8 }}>
               {currentIndex + 1} / {images.length}
             </div>
           </div>
           
           {/* 次へボタン */}
-          <button
-            className="absolute right-4 top-1/2 -translate-y-1/2 text-white text-5xl hover:text-gray-300 disabled:opacity-50 disabled:cursor-not-allowed"
-            onClick={(e) => {
-              e.stopPropagation();
-              goToNext();
-            }}
-            disabled={currentIndex === images.length - 1}
-            aria-label="次の画像"
-          >
-            ›
-          </button>
+          {currentIndex < images.length - 1 && (
+            <button
+              style={{
+                position: 'absolute',
+                right: '20px',
+                top: '50%',
+                transform: 'translateY(-50%)',
+                background: '#121212',
+                border: 'none',
+                color: '#F5F5F5',
+                fontSize: '48px',
+                cursor: 'pointer',
+                zIndex: 10000,
+                padding: '20px 15px',
+                borderRadius: '8px',
+                lineHeight: '1'
+              }}
+              onClick={(e) => {
+                e.stopPropagation();
+                goToNext();
+              }}
+              aria-label="次の画像"
+            >
+              ›
+            </button>
+          )}
         </div>
       )}
     </>
