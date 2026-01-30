@@ -12,8 +12,20 @@ const nextConfig = {
 const withMDX = require('@next/mdx')({
   extension: /\.mdx?$/,
   options: {
-    remarkPlugins: [],
-    rehypePlugins: [],
+    remarkPlugins: [
+      require('remark-gfm'),
+      // require('remark-directive'),
+      // require('./lib/remark-custom-directives.js').remarkCustomDirectives,
+      // require('./lib/remark-custom-directives.js').remarkTerms,
+      // require('./lib/remark-custom-directives.js').remarkMarkers,
+      // require('./lib/remark-custom-directives.js').remarkRedText,
+      // require('./lib/remark-custom-directives.js').remarkCustomImages,
+      // require('./lib/remark-custom-directives.js').remarkArrows,
+    ],
+    rehypePlugins: [
+      require('rehype-slug'),
+      [require('rehype-autolink-headings'), { behavior: 'wrap' }],
+    ],
   },
 })
 

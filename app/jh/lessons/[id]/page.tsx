@@ -1,12 +1,11 @@
 import { notFound } from 'next/navigation';
 import { loadSubjectPages } from '@/lib/dataLoader';
-import { loadLesson, getAllLessonPaths } from '@/lib/markdownLoader';
+import { getMDXLesson } from '@/lib/mdxLoader';
 import type { Metadata } from 'next';
-import LessonContent from '@/components/lessons/LessonContent';
-import MarkdownContent from '@/components/MarkdownContent';
 import AnswerButtons from '@/components/AnswerButtons';
 import ThreeColumnLayout from '@/components/lessons/ThreeColumnLayout';
 import { PenIcon, ListIcon, RightIcon, LeftIcon } from '@/components/ui/Icons';
+import TOC from '@/components/lessons/TOC';
 
 interface LessonPageProps {
   params: Promise<{
@@ -57,12 +56,12 @@ export default async function JHLessonPage({ params }: LessonPageProps) {
   const prevLesson = pages.find(p => p.no === lessonNo - 1);
   const nextLesson = pages.find(p => p.no === lessonNo + 1);
 
-  // カスタムMarkdownファイルを読み込んでHTMLに変換
-  let lessonData = null;
+  // MDXファイルを読み込む
+  let mdxData = null;
   try {
-    lessonData = await loadLesson('jh', lessonNo);
+    mdxData = await getMDXLesson('jh', id);
   } catch (error) {
-    console.error(`Failed to load lesson ${lessonNo}:`, error);
+    console.error(`Failed to load MDX lesson ${lessonNo}:`, error);
   }
 
   return (
@@ -73,21 +72,26 @@ export default async function JHLessonPage({ params }: LessonPageProps) {
       
       <ThreeColumnLayout subject="jh" currentLessonNo={lessonNo} pages={pages} title={lesson.title}>
         <div id="toc-range" className="contents">
-          {lessonData ? (
+          {mdxData ? (
             <>
               {/* 答えの一括表示/非表示ボタン */}
               <AnswerButtons />
               
               {/* 概要 */}
-              {lessonData.overview && (
+              {mdxData.frontMatter.overview && (
                 <div className="overview">
                   <div className="title">概要</div>
-                  {lessonData.overview}
+                  {mdxData.frontMatter.overview}
                 </div>
               )}
               
-              {/* コンテンツ（目次も含む） */}
-              <MarkdownContent htmlContent={lessonData.content} showAnswerButtons={false} />
+              {/* 目次 */}
+              <TOC />
+              
+              {/* MDXコンテンツ */}
+              <div className="markdown-content">
+                {mdxData.content}
+              </div>
             </>
           ) : (
             <p>レッスンの内容を読み込めませんでした。</p>

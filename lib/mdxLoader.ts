@@ -1,11 +1,28 @@
-import fs from 'fs';
+import fs from 'fs/promises';
 import path from 'path';
-import matter from 'gray-matter';
+import { compileMDX } from 'next-mdx-remote/rsc';
+import remarkGfm from 'remark-gfm';
+// import remarkDirective from 'remark-directive';
+import rehypeSlug from 'rehype-slug';
+import rehypeAutolinkHeadings from 'rehype-autolink-headings';
+// const {
+//   remarkCustomDirectives,
+//   remarkTerms,
+//   remarkMarkers,
+//   remarkRedText,
+//   remarkCustomImages,
+//   remarkArrows,
+// } = require('./remark-custom-directives.js');
 
 const contentDir = path.join(process.cwd(), 'content');
 
+export interface LessonFrontmatter {
+  title: string;
+  overview?: string;
+}
+
 /**
- * MDXレッスンファイルを読み込む
+ * MDXレッスンファイルを読み込んでコンパイルする
  */
 export async function getMDXLesson(subject: string, lessonId: string) {
   try {
@@ -13,25 +30,39 @@ export async function getMDXLesson(subject: string, lessonId: string) {
     
     if (subject === 'geo') {
       // 地理はファイル名ベース
-      filePath = path.join(contentDir, subject, `${lessonId}.mdx`);
+      filePath = path.join(contentDir, subject, `${lessonId}.md`);
     } else {
       // 日本史・世界史は番号ベース
-      filePath = path.join(contentDir, subject, 'lessons', `${lessonId}.mdx`);
+      filePath = path.join(contentDir, subject, 'lessons', `${lessonId}.md`);
     }
 
-    // ファイルの存在確認
-    if (!fs.existsSync(filePath)) {
-      return null;
-    }
-
-    // ファイルを読み込み
-    const fileContent = fs.readFileSync(filePath, 'utf-8');
+    const source = await fs.readFile(filePath, 'utf-8');
     
-    // フロントマターとコンテンツを分離
-    const { data, content } = matter(fileContent);
-
+    const { content, frontmatter } = await compileMDX<LessonFrontmatter>({
+      source,
+      options: {
+        parseFrontmatter: true,
+        mdxOptions: {
+          remarkPlugins: [
+            remarkGfm,
+            // remarkDirective,
+            // remarkCustomDirectives,
+            // remarkTerms,
+            // remarkMarkers,
+            // remarkRedText,
+            // remarkCustomImages,
+            // remarkArrows,
+          ],
+          rehypePlugins: [
+            rehypeSlug,
+            [rehypeAutolinkHeadings, { behavior: 'wrap' }],
+          ],
+        },
+      },
+    });
+    
     return {
-      frontMatter: data,
+      frontMatter: frontmatter,
       content,
     };
   } catch (error) {
@@ -44,6 +75,8 @@ export async function getMDXLesson(subject: string, lessonId: string) {
  * すべてのMDXレッスンファイルのパスを取得
  */
 export async function getAllMDXLessonPaths(subject: string) {
+  const fsSync = await import('fs');
+  
   try {
     let lessonsDir: string;
     
@@ -54,15 +87,15 @@ export async function getAllMDXLessonPaths(subject: string) {
     }
 
     // ディレクトリが存在しない場合は空配列を返す
-    if (!fs.existsSync(lessonsDir)) {
+    if (!fsSync.existsSync(lessonsDir)) {
       return [];
     }
 
-    const files = fs.readdirSync(lessonsDir);
+    const files = fsSync.readdirSync(lessonsDir);
     
     return files
-      .filter(file => file.endsWith('.mdx'))
-      .map(file => file.replace('.mdx', ''));
+      .filter((file: string) => file.endsWith('.md'))
+      .map((file: string) => file.replace('.md', ''));
   } catch (error) {
     console.error(`Error getting MDX lesson paths: ${error}`);
     return [];
