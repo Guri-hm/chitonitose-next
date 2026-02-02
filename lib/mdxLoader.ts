@@ -2,17 +2,18 @@ import fs from 'fs/promises';
 import path from 'path';
 import { compileMDX } from 'next-mdx-remote/rsc';
 import remarkGfm from 'remark-gfm';
-// import remarkDirective from 'remark-directive';
+import remarkDirective from 'remark-directive';
+import remarkFrontmatter from 'remark-frontmatter';
 import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
-// const {
-//   remarkCustomDirectives,
-//   remarkTerms,
-//   remarkMarkers,
-//   remarkRedText,
-//   remarkCustomImages,
-//   remarkArrows,
-// } = require('./remark-custom-directives.js');
+const {
+  remarkCustomDirectives,
+  // remarkTerms,
+  // remarkMarkers,
+  // remarkRedText,
+  // remarkCustomImages,
+  // remarkArrows,
+} = require('./remark-custom-directives.js');
 
 const contentDir = path.join(process.cwd(), 'content');
 
@@ -44,9 +45,10 @@ export async function getMDXLesson(subject: string, lessonId: string) {
         parseFrontmatter: true,
         mdxOptions: {
           remarkPlugins: [
+            remarkFrontmatter,
             remarkGfm,
-            // remarkDirective,
-            // remarkCustomDirectives,
+            remarkDirective,
+            remarkCustomDirectives,
             // remarkTerms,
             // remarkMarkers,
             // remarkRedText,
