@@ -10,7 +10,8 @@ const {
   remarkCustomDirectives,
   remarkTerms,
   remarkMarkers,
-  // remarkRedText,
+  remarkRedText,
+  remarkListClasses,
   // remarkCustomImages,
 } = require('./remark-custom-directives.js');
 
@@ -53,9 +54,10 @@ export async function getMDXLesson(subject: string, lessonId: string) {
             remarkGfm,
             remarkDirective,
             remarkCustomDirectives,
+            remarkListClasses,
             remarkTerms,
             remarkMarkers,
-            // remarkRedText,
+            remarkRedText,
             // remarkCustomImages,
           ],
           rehypePlugins: [
