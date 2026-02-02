@@ -3,13 +3,13 @@ import path from 'path';
 import { compileMDX } from 'next-mdx-remote/rsc';
 import remarkGfm from 'remark-gfm';
 import remarkDirective from 'remark-directive';
-import remarkFrontmatter from 'remark-frontmatter';
 import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
+import matter from 'gray-matter';
 const {
   remarkCustomDirectives,
-  // remarkTerms,
-  // remarkMarkers,
+  remarkTerms,
+  remarkMarkers,
   // remarkRedText,
   // remarkCustomImages,
   // remarkArrows,
@@ -39,18 +39,23 @@ export async function getMDXLesson(subject: string, lessonId: string) {
 
     const source = await fs.readFile(filePath, 'utf-8');
     
-    const { content, frontmatter } = await compileMDX<LessonFrontmatter>({
-      source,
+    // Parse frontmatter manually with gray-matter
+    const { data: frontmatterData, content: mdxContent } = matter(source);
+    
+    console.log(`[MDX] Loading file: ${filePath}`);
+    console.log(`[MDX] Frontmatter:`, frontmatterData);
+    
+    const { content } = await compileMDX<LessonFrontmatter>({
+      source: mdxContent,
       options: {
-        parseFrontmatter: true,
+        parseFrontmatter: false,
         mdxOptions: {
           remarkPlugins: [
-            remarkFrontmatter,
             remarkGfm,
             remarkDirective,
             remarkCustomDirectives,
-            // remarkTerms,
-            // remarkMarkers,
+            remarkTerms,
+            remarkMarkers,
             // remarkRedText,
             // remarkCustomImages,
             // remarkArrows,
@@ -63,12 +68,19 @@ export async function getMDXLesson(subject: string, lessonId: string) {
       },
     });
     
+    console.log(`[MDX] Compilation successful`);
+    
     return {
-      frontMatter: frontmatter,
+      frontMatter: frontmatterData as LessonFrontmatter,
       content,
     };
   } catch (error) {
-    console.error(`Error loading MDX lesson: ${error}`);
+    console.error(`[MDX ERROR] File: ${subject}/lessons/${lessonId}.md`);
+    console.error(`[MDX ERROR] Error type: ${error instanceof Error ? error.name : 'Unknown'}`);
+    console.error(`[MDX ERROR] Message: ${error instanceof Error ? error.message : String(error)}`);
+    if (error instanceof Error && error.stack) {
+      console.error(`[MDX ERROR] Stack trace:`, error.stack);
+    }
     return null;
   }
 }
