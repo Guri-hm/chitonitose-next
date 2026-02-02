@@ -55,22 +55,35 @@
 
 #### ネストディレクティブ - 複数の子要素
 
-**複数の子ディレクティブがある場合**:
+**複数の子ディレクティブがある場合（doubleパターン）**:
+```markdown
+:::double
+:::top
+テキスト1
+:::gazo-center{size="half"}
+![](/images/jh/img/1/9.jpg)
+:::
+:::
+```
+
+**重要**: 
+- `:::top`の閉じタグは不要（次のディレクティブ開始で自動的に閉じられる）
+- `:::gazo-center`を閉じてから`:::double`を閉じる
+- 出力: `<div class="double"><div class="top">テキスト1</div><div class="text-center gazo"><img.../></div></div>`
+
+**従来の書き方（両方のディレクティブを明示的に閉じる）**:
 ```markdown
 :::double
 :::top
 テキスト1
 :::
-:::text-center
-:::gazo{size="half"}
-![画像](path.jpg)
-:::
+:::gazo-center{size="half"}
+![](/images/jh/img/1/9.jpg)
 :::
 :::
 ```
-**出力**: `<div class="double"><div class="top">テキスト1</div><div class="text-center"><div class="gazo">...</div></div></div>`
 
-**閉じタグの数**: gazo(1) + text-center(1) + double(1) = 3つの`:::`
+**どちらでも可** - remarkDirectiveが適切に処理する
 
 ```markdown
 :::sup
@@ -104,11 +117,18 @@
 
 ```markdown
 :::gazo
-![代替テキスト](/images/path/to/image.svg)
+![](/images/path/to/image.svg)
+
+画像の説明文
 :::
 ```
 
-**出力**: `<div class="gazo"><img class="lazyload popup-img" src="..." /></div>`
+**出力**: `<div class="gazo"><img class="lazyload popup-img" src="..." /><div>画像の説明文</div></div>`
+
+**重要**: 
+- 画像の説明文は画像の下に配置（alt属性は空にする）
+- 説明文は自動的に`<div>`で囲まれる
+- `<br>`タグは使わない
 
 ### サイズ指定画像
 
@@ -118,19 +138,35 @@
 
 ```markdown
 :::gazo{size="twice"}
-![代替テキスト](/images/path/to/image.svg)
+![](/images/path/to/image.svg)
+
+画像の説明文
 :::
 ```
 
-**出力**: `<img class="lazyload popup-img twice" />`
+**出力**: `<img class="lazyload popup-img twice" /><div>画像の説明文</div>`
 
 ```markdown
 :::gazo{size="half"}
-![代替テキスト](/images/path/to/image.svg)
+![](/images/path/to/image.svg)
+
+画像の説明文
 :::
 ```
 
-**出力**: `<img class="lazyload popup-img half" />`
+**出力**: `<img class="lazyload popup-img half" /><div>画像の説明文</div>`
+
+### 中央寄せ画像（text-center gazo）
+
+```markdown
+:::gazo-center{size="half"}
+![](/images/path/to/image.jpg)
+:::
+```
+
+**出力**: `<div class="text-center gazo"><img class="lazyload popup-img half" src="..." /></div>`
+
+**用途**: `:::double`内で画像を配置する場合に使用
 
 ---
 
@@ -342,10 +378,26 @@ overview: "約１万年前に地球は完新世になりました。"
 :::
 
 :::gazo{size="twice"}
-![鉱物産地の分布](/images/jh/img/2/5.svg)
+![](/images/jh/img/2/5.svg)
+
+鉱物産地の分布
 :::
 
 ::arrow
+
+:::double
+:::top
+批難に屈しない考古学への情熱―相沢忠洋
+
+独学の末に石器を発見した相沢忠洋は、1949年に明治大学の学者たちと岩宿遺跡を調査、日本の旧石器時代の存在を証明しました。しかし、報告は大学の名義でなされ、相沢は調査の単なる付き添い役として、学界から存在を無視されました。加えて、功績をねたむ学者・地元住民から売名行為と批難を浴びました。
+
+その後も相沢はアマチュアとして地道な調査活動を続け、多くの遺跡発見に貢献しました。やがて相沢への批難は消え、正当な評価がなされました。
+
+下図は岩宿遺跡の相沢の像。常識を覆した石器を手に、じっと見つめています。
+:::gazo-center{size="half"}
+![](/images/jh/img/1/9.jpg)
+:::
+:::
 
 :::sup
 中期
@@ -357,6 +409,96 @@ overview: "約１万年前に地球は完新世になりました。"
   :::lead
   大型動物が絶滅し、==中・小型動物が多く生息==
   :::
+```
+
+---
+
+## 禁止事項
+
+### HTMLタグを直接使わない
+
+**NG**: 
+```markdown
+<div className="top">テキスト</div>
+<div className="text-center gazo"><img ... /></div>
+```
+
+**理由**: 
+- MDXでHTMLを直接書くとReact構文（className, style={{}}）が必要
+- 保守性が低い
+- ディレクティブの方が簡潔
+
+**OK**: 
+```markdown
+:::top
+テキスト
+:::
+:::gazo-center{size="half"}
+![](/images/path.jpg)
+:::
+```
+
+### インラインstyleを使わない
+
+**NG**: 
+```markdown
+<img style="cursor: pointer;" />
+<div style="text-align: center;">
+```
+
+**理由**: 
+- CSSファイルで管理すべき
+- インラインstyleはメンテナンス困難
+- remarkプラグインで自動付与しない
+
+**OK**: 
+- CSSクラスで制御
+- `:hover { cursor: pointer; }` をCSSに記述
+
+### <br>タグで改行しない
+
+**NG**: 
+```markdown
+:::gazo
+![](/images/path.jpg)<br />画像の説明
+:::
+```
+
+**理由**: 
+- remarkプラグインが自動的にdivで囲む
+- セマンティックHTML違反
+
+**OK**: 
+```markdown
+:::gazo
+![](/images/path.jpg)
+
+画像の説明
+:::
+```
+
+**出力**: `<div class="gazo"><img /><div>画像の説明</div></div>`
+
+### 画像のalt属性に説明を入れない
+
+**NG**: 
+```markdown
+![約２万年前の日本列島](/images/jh/img/1/1.svg)
+```
+
+**理由**: 
+- 説明文は画像の下に表示する仕様
+- alt属性は空にする
+
+**OK**: 
+```markdown
+:::gazo
+![](/images/jh/img/1/1.svg)
+
+約２万年前の日本列島
+
+＊細線は現在の海岸線
+:::
 ```
 
 ---
