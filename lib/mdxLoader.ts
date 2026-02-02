@@ -12,7 +12,6 @@ const {
   remarkMarkers,
   remarkRedText,
   remarkListClasses,
-  // remarkCustomImages,
 } = require('./remark-custom-directives.js');
 
 const contentDir = path.join(process.cwd(), 'content');
@@ -58,7 +57,6 @@ export async function getMDXLesson(subject: string, lessonId: string) {
             remarkTerms,
             remarkMarkers,
             remarkRedText,
-            // remarkCustomImages,
           ],
           rehypePlugins: [
             rehypeSlug,

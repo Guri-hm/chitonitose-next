@@ -3,9 +3,9 @@ import type { Metadata } from 'next';
 import LessonContent from '@/components/lessons/LessonContent';
 
 interface LessonPageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 // 地理のレッスンはファイル名ベース
