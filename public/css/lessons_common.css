@@ -4,6 +4,10 @@ th {
 	background-color: #CCC;
 }
 
+ruby{
+	pointer-events: none;
+}
+
 h2 {
 	padding: 0px 10px;
 	margin-top: 10px;
