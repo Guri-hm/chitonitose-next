@@ -156,94 +156,74 @@ function remarkCustomDirectives() {
 
 /**
  * Remark plugin to convert [[term]] to clickable spans
- * Works across text and html nodes (for ruby tags)
  */
 function remarkTerms() {
-  return (tree) => {
-    let changed = true;
-    while (changed) {
-      changed = false;
-      visit(tree, (parent) => {
-        if (!parent.children) return;
+  return (tree, file) => {
+    visit(tree, 'text', (node, index, parent) => {
+      if (!parent || index === null) return;
+      
+      const text = node.value;
+      const regex = /\[\[([^\]]+)\]\]/g;
+      
+      if (!regex.test(text)) return;
+      
+      try {
+        console.log(`[remarkTerms] Processing text at line ${node.position?.start.line}: "${text.substring(0, 50)}${text.length > 50 ? '...' : ''}"`);
+        console.log(`[remarkTerms]   Parent type: ${parent.type}`);
         
-        const children = parent.children;
-        let i = 0;
+        const newNodes = [];
+        let lastIndex = 0;
         
-        while (i < children.length) {
-          const child = children[i];
-          
-          if (child.type === 'text') {
-            const text = child.value;
-            const startIdx = text.indexOf('[[');
-            
-            if (startIdx >= 0) {
-              const beforeText = text.slice(0, startIdx);
-              const afterStart = text.slice(startIdx + 2);
-              const endIdx = afterStart.indexOf(']]');
-              
-              if (endIdx >= 0) {
-                // Simple case: [[term]] within one text node
-                const term = afterStart.slice(0, endIdx);
-                const afterText = afterStart.slice(endIdx + 2);
-                
-                const newNodes = [];
-                if (beforeText) newNodes.push({ type: 'text', value: beforeText });
-                newNodes.push({
-                  type: 'emphasis',
-                  data: { hName: 'span', hProperties: { className: 'all' } },
-                  children: [{ type: 'text', value: term }],
-                });
-                if (afterText) newNodes.push({ type: 'text', value: afterText });
-                
-                children.splice(i, 1, ...newNodes);
-                changed = true;
-                i += newNodes.length;
-                continue;
-              } else {
-                // Complex: [[ starts here but ]] is in later nodes
-                const collected = [];
-                if (afterStart) collected.push({ type: 'text', value: afterStart });
-                
-                let found = false;
-                for (let j = i + 1; j < children.length; j++) {
-                  const next = children[j];
-                  if (next.type === 'text') {
-                    const endIdx2 = next.value.indexOf(']]');
-                    if (endIdx2 >= 0) {
-                      const before = next.value.slice(0, endIdx2);
-                      if (before) collected.push({ type: 'text', value: before });
-                      
-                      const newNodes = [];
-                      if (beforeText) newNodes.push({ type: 'text', value: beforeText });
-                      newNodes.push({
-                        type: 'emphasis',
-                        data: { hName: 'span', hProperties: { className: 'all' } },
-                        children: collected,
-                      });
-                      
-                      const after = next.value.slice(endIdx2 + 2);
-                      if (after) newNodes.push({ type: 'text', value: after });
-                      
-                      children.splice(i, j - i + 1, ...newNodes);
-                      changed = true;
-                      i += newNodes.length;
-                      found = true;
-                      break;
-                    } else {
-                      collected.push(next);
-                    }
-                  } else {
-                    collected.push(next);
-                  }
-                }
-                if (found) continue;
-              }
-            }
+        // Reset regex for replace
+        text.replace(regex, (match, term, offset) => {
+          const beforeText = text.slice(lastIndex, offset);
+          if (beforeText) {
+            newNodes.push({
+              type: 'text',
+              value: beforeText,
+            });
           }
-          i++;
+          
+          console.log(`[remarkTerms]   Converting [[${term}]] to <span class="all">`);
+          
+          // Create a span using hast (HTML AST)
+          newNodes.push({
+            type: 'emphasis',
+            data: {
+              hName: 'span',
+              hProperties: {
+                className: 'all',
+              },
+            },
+            children: [{
+              type: 'text',
+              value: term,
+            }],
+          });
+          
+          lastIndex = offset + match.length;
+          return match;
+        });
+        
+        const afterText = text.slice(lastIndex);
+        if (afterText) {
+          newNodes.push({
+            type: 'text',
+            value: afterText,
+          });
         }
-      });
-    }
+        
+        if (newNodes.length > 0) {
+          console.log(`[remarkTerms]   Replacing with ${newNodes.length} nodes`);
+          parent.children.splice(index, 1, ...newNodes);
+          return [visit.SKIP, index + newNodes.length];
+        }
+      } catch (error) {
+        console.error(`[remarkTerms ERROR] at line ${node.position?.start.line}: ${error.message}`);
+        console.error(`[remarkTerms ERROR] Text content: "${text}"`);
+        throw error;
+      }
+    });
   };
 }
 
@@ -322,187 +302,94 @@ function remarkRuby() {
 
 /**
  * Remark plugin to convert ==marked text== to spans with marker class
- * Works across text and html nodes (for ruby tags)
  */
 function remarkMarkers() {
   return (tree) => {
-    let changed = true;
-    while (changed) {
-      changed = false;
-      visit(tree, (parent) => {
-        if (!parent.children) return;
-        
-        const children = parent.children;
-        let i = 0;
-        
-        while (i < children.length) {
-          const child = children[i];
-          
-          if (child.type === 'text') {
-            const text = child.value;
-            const startIdx = text.indexOf('==');
-            
-            if (startIdx >= 0) {
-              const beforeText = text.slice(0, startIdx);
-              const afterStart = text.slice(startIdx + 2);
-              const endIdx = afterStart.indexOf('==');
-              
-              if (endIdx >= 0) {
-                // Simple: ==text== in one node
-                const marked = afterStart.slice(0, endIdx);
-                const afterText = afterStart.slice(endIdx + 2);
-                
-                const newNodes = [];
-                if (beforeText) newNodes.push({ type: 'text', value: beforeText });
-                newNodes.push({
-                  type: 'emphasis',
-                  data: { hName: 'span', hProperties: { className: 'marker' } },
-                  children: [{ type: 'text', value: marked }],
-                });
-                if (afterText) newNodes.push({ type: 'text', value: afterText });
-                
-                children.splice(i, 1, ...newNodes);
-                changed = true;
-                i += newNodes.length;
-                continue;
-              } else {
-                // Complex: == starts but ends in later nodes
-                const collected = [];
-                if (afterStart) collected.push({ type: 'text', value: afterStart });
-                
-                let found = false;
-                for (let j = i + 1; j < children.length; j++) {
-                  const next = children[j];
-                  if (next.type === 'text') {
-                    const endIdx2 = next.value.indexOf('==');
-                    if (endIdx2 >= 0) {
-                      const before = next.value.slice(0, endIdx2);
-                      if (before) collected.push({ type: 'text', value: before });
-                      
-                      const newNodes = [];
-                      if (beforeText) newNodes.push({ type: 'text', value: beforeText });
-                      newNodes.push({
-                        type: 'emphasis',
-                        data: { hName: 'span', hProperties: { className: 'marker' } },
-                        children: collected,
-                      });
-                      
-                      const after = next.value.slice(endIdx2 + 2);
-                      if (after) newNodes.push({ type: 'text', value: after });
-                      
-                      children.splice(i, j - i + 1, ...newNodes);
-                      changed = true;
-                      i += newNodes.length;
-                      found = true;
-                      break;
-                    } else {
-                      collected.push(next);
-                    }
-                  } else {
-                    collected.push(next);
-                  }
-                }
-                if (found) continue;
-              }
-            }
-          }
-          i++;
+    visit(tree, 'text', (node, index, parent) => {
+      if (!parent || index === null) return;
+      
+      const text = node.value;
+      const regex = /==([^=]+)==/g;
+      
+      if (!regex.test(text)) return;
+      
+      const newNodes = [];
+      let lastIndex = 0;
+      
+      // Reset regex for replace
+      text.replace(regex, (match, markedText, offset) => {
+        const beforeText = text.slice(lastIndex, offset);
+        if (beforeText) {
+          newNodes.push({
+            type: 'text',
+            value: beforeText,
+          });
         }
+        
+        // Create a span using hast (HTML AST)
+        newNodes.push({
+          type: 'emphasis',
+          data: {
+            hName: 'span',
+            hProperties: {
+              className: 'marker',
+            },
+          },
+          children: [{
+            type: 'text',
+            value: markedText,
+          }],
+        });
+        
+        lastIndex = offset + match.length;
+        return match;
       });
-    }
+      
+      const afterText = text.slice(lastIndex);
+      if (afterText) {
+        newNodes.push({
+          type: 'text',
+          value: afterText,
+        });
+      }
+      
+      if (newNodes.length > 1) {
+        parent.children.splice(index, 1, ...newNodes);
+        return index + newNodes.length;
+      }
+    });
   };
 }
 
 /**
  * Remark plugin to convert **red text** to red font
- * Works across text and html nodes (for ruby tags)
  */
 function remarkRedText() {
   return (tree) => {
-    let changed = true;
-    while (changed) {
-      changed = false;
-      visit(tree, (parent) => {
-        if (!parent.children) return;
-        
-        const children = parent.children;
-        let i = 0;
-        
-        while (i < children.length) {
-          const child = children[i];
-          
-          if (child.type === 'text') {
-            const text = child.value;
-            const startIdx = text.indexOf('**');
-            
-            if (startIdx >= 0) {
-              const beforeText = text.slice(0, startIdx);
-              const afterStart = text.slice(startIdx + 2);
-              const endIdx = afterStart.indexOf('**');
-              
-              if (endIdx >= 0) {
-                // Simple: **text** in one node
-                const redText = afterStart.slice(0, endIdx);
-                const afterText = afterStart.slice(endIdx + 2);
-                
-                const newNodes = [];
-                if (beforeText) newNodes.push({ type: 'text', value: beforeText });
-                newNodes.push({
-                  type: 'emphasis',
-                  data: { hName: 'font', hProperties: { color: '#FF0000' } },
-                  children: [{ type: 'text', value: redText }],
-                });
-                if (afterText) newNodes.push({ type: 'text', value: afterText });
-                
-                children.splice(i, 1, ...newNodes);
-                changed = true;
-                i += newNodes.length;
-                continue;
-              } else {
-                // Complex: ** starts but ends in later nodes
-                const collected = [];
-                if (afterStart) collected.push({ type: 'text', value: afterStart });
-                
-                let found = false;
-                for (let j = i + 1; j < children.length; j++) {
-                  const next = children[j];
-                  if (next.type === 'text') {
-                    const endIdx2 = next.value.indexOf('**');
-                    if (endIdx2 >= 0) {
-                      const before = next.value.slice(0, endIdx2);
-                      if (before) collected.push({ type: 'text', value: before });
-                      
-                      const newNodes = [];
-                      if (beforeText) newNodes.push({ type: 'text', value: beforeText });
-                      newNodes.push({
-                        type: 'emphasis',
-                        data: { hName: 'font', hProperties: { color: '#FF0000' } },
-                        children: collected,
-                      });
-                      
-                      const after = next.value.slice(endIdx2 + 2);
-                      if (after) newNodes.push({ type: 'text', value: after });
-                      
-                      children.splice(i, j - i + 1, ...newNodes);
-                      changed = true;
-                      i += newNodes.length;
-                      found = true;
-                      break;
-                    } else {
-                      collected.push(next);
-                    }
-                  } else {
-                    collected.push(next);
-                  }
-                }
-                if (found) continue;
-              }
-            }
-          }
-          i++;
-        }
-      });
-    }
+    visit(tree, 'strong', (node, index, parent) => {
+      if (!parent || index === null) return;
+      
+      // Get the text content
+      const textNode = node.children[0];
+      if (!textNode || textNode.type !== 'text') return;
+      
+      // Convert to red text using hast data
+      const newNode = {
+        type: 'emphasis',
+        data: {
+          hName: 'font',
+          hProperties: {
+            color: '#FF0000',
+          },
+        },
+        children: [{
+          type: 'text',
+          value: textNode.value,
+        }],
+      };
+      
+      parent.children[index] = newNode;
+    });
   };
 }
 

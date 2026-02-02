@@ -71,9 +71,9 @@ export async function getMDXLesson(subject: string, lessonId: string): Promise<L
             remarkToc,  // Generate TOC data
             remarkCustomDirectives,
             remarkListClasses,
-            remarkTerms,
-            remarkMarkers,
-            remarkRedText,
+            remarkMarkers,  // Process == first (wraps content)
+            remarkTerms,    // Process [[ second (wraps content)
+            remarkRedText,  // Process ** last (wraps content)
           ],
           rehypePlugins: [
             rehypeSlug,
