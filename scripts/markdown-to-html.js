@@ -61,8 +61,8 @@ function parseCustomMarkdown(markdown, subject = '') {
       continue;
     }
     
-    // 矢印
-    if (line === '---arrow---') {
+    // 矢印（新旧両対応）
+    if (line === '::arrow' || line === '---arrow---') {
       result.push('<div class="arrow"></div>');
       i++;
       continue;
@@ -106,95 +106,151 @@ function parseCustomMarkdown(markdown, subject = '') {
       }
     }
     
-    // ::gazo ブロック
-    if (line === '::gazo') {
+    // :::gazo ブロック（新旧両対応）
+    if (line === ':::gazo' || line.startsWith(':::gazo{') || line === '::gazo') {
+      // サイズ指定を抽出
+      const sizeMatch = line.match(/\{size="([^"]+)"\}/);
+      const sizeClass = sizeMatch ? sizeMatch[1] : '';
+      
       i++;
-      const imgMatch = lines[i].match(/!\[([^\]]*)\]\(([^)]+)\)(?:\{\.([^}]+)\})?/);
-      if (imgMatch) {
-        const [, alt, imgSrc, imgClass] = imgMatch;
-        // 画像パスをWebPに変換
-        const webpSrc = convertToWebP(imgSrc, subject);
-        const originalSrc = `/images/${subject}/${imgSrc}`; // 元画像パス
-        const classNames = ['lazyload', 'popup-img'];
-        if (imgClass) {
-          imgClass.split('.').filter(c => c).forEach(c => classNames.push(c));
-        }
+      const images = [];
+      const explanations = [];
+      let inExplanation = false;
+      
+      while (i < lines.length && lines[i] !== ':::' && lines[i] !== '::') {
+        const currentLine = lines[i];
         
-        i++;
-        const caption = [];
-        while (i < lines.length && lines[i] !== '::') {
-          caption.push(lines[i]);
+        // 画像行を検出
+        if (currentLine.match(/^!\[/)) {
+          images.push(currentLine);
           i++;
+          continue;
         }
         
-        // カスタムdata属性付きdivとして出力（data-src=WebP, data-original=元画像）
-        const captionHtml = caption.map(cap => cap.trim() ? convertInlineMarkdown(cap) : '').filter(c => c).join('<br />');
-        result.push(`<div class="gazo lesson-image-placeholder" data-src="${webpSrc}" data-original="${originalSrc}" data-alt="${alt}" data-class="${classNames.join(' ')}" data-caption="${captionHtml.replace(/"/g, '&quot;')}"></div>`);
+        // 空行はスキップ
+        if (currentLine.trim() === '') {
+          i++;
+          continue;
+        }
+        
+        // それ以外は説明文
+        explanations.push(currentLine);
         i++;
-        continue;
       }
+      
+      // 画像HTMLを生成
+      const imageHtmls = images.map(imgLine => {
+        const imgMatch = imgLine.match(/!\[([^\]]*)\]\(([^)]+)\)/);
+        if (imgMatch) {
+          const [, alt, imgSrc] = imgMatch;
+          const webpSrc = convertToWebP(imgSrc, subject);
+          const classNames = ['lazyload', 'popup-img'];
+          if (sizeClass) classNames.push(sizeClass);
+          return `<img src="${webpSrc}" alt="${alt}" class="${classNames.join(' ')}">`;
+        }
+        return '';
+      }).filter(h => h);
+      
+      // 説明文HTMLを生成
+      const explanationHtmls = explanations.map(exp => {
+        return `<div>${convertInlineMarkdown(exp.trim())}</div>`;
+      });
+      
+      // gazo divを出力
+      result.push('<div class="gazo">' + imageHtmls.join('') + explanationHtmls.join('') + '</div>');
+      i++; // skip closing :::
+      continue;
     }
     
-    // ::sup ブロック
-    if (line === '::sup') {
+    // :::sup ブロック（新形式）
+    if (line === ':::sup' || line === '::sup') {
       const content = [];
       i++;
       
-      while (i < lines.length && lines[i] !== '::') {
+      while (i < lines.length && lines[i] !== ':::' && lines[i] !== '::') {
         content.push(lines[i]);
         i++;
       }
       
-      // content を1つの文字列に結合して :::lead...:::を処理
-      let html = content.join('').replace(/:::lead(.*?):::/g, '<div class="lead">$1</div>');
-      html = convertInlineMarkdown(html);
+      // content を1つの文字列に結合
+      let contentStr = content.join('\n');
+      
+      // ネストされた:::lead...:::を処理
+      contentStr = contentStr.replace(/:::lead\n([\s\S]*?)\n:::/g, '<div class="lead">$1</div>');
+      
+      // インラインMarkdownを変換
+      const html = convertInlineMarkdown(contentStr);
       
       result.push('<div class="sup">' + html + '</div>');
-      i++;
+      i++; // skip closing :::
       continue;
     }
     
-    // ::top ブロック
-    if (line === '::top') {
+    // :::top ブロック（新形式）
+    if (line === ':::top' || line === '::top') {
       const content = [];
       i++;
-      while (i < lines.length && lines[i] !== '::') {
+      while (i < lines.length && lines[i] !== ':::' && lines[i] !== '::') {
         content.push(lines[i]);
         i++;
       }
-      result.push('<div class="top">' + content.map(l => convertInlineMarkdown(l)).join('') + '</div>');
-      i++;
+      
+      // ネストされた:::lead...:::を処理
+      let contentStr = content.join('\n');
+      contentStr = contentStr.replace(/:::lead\n([\s\S]*?)\n:::/g, '<div class="lead">$1</div>');
+      
+      const html = convertInlineMarkdown(contentStr);
+      result.push('<div class="top">' + html + '</div>');
+      i++; // skip closing :::
       continue;
     }
     
-    // ::middle ブロック
-    if (line === '::middle') {
+    // :::middle ブロック（新形式）
+    if (line === ':::middle' || line === '::middle') {
       const content = [];
       i++;
-      while (i < lines.length && lines[i] !== '::') {
+      while (i < lines.length && lines[i] !== ':::' && lines[i] !== '::') {
         content.push(lines[i]);
         i++;
       }
-      result.push('<div class="middle">' + content.map(l => convertInlineMarkdown(l)).join('') + '</div>');
-      i++;
+      
+      // ネストされた:::lead...:::を処理
+      let contentStr = content.join('\n');
+      contentStr = contentStr.replace(/:::lead\n([\s\S]*?)\n:::/g, '<div class="lead">$1</div>');
+      
+      const html = convertInlineMarkdown(contentStr);
+      result.push('<div class="middle">' + html + '</div>');
+      i++; // skip closing :::
       continue;
     }
     
-    // ::last ブロック
-    if (line === '::last') {
+    // :::last ブロック（新形式）
+    if (line === ':::last' || line === '::last') {
       const content = [];
       i++;
-      while (i < lines.length && lines[i] !== '::') {
+      while (i < lines.length && lines[i] !== ':::' && lines[i] !== '::') {
         content.push(lines[i]);
         i++;
       }
-      result.push('<div class="last">' + content.map(l => convertInlineMarkdown(l)).join('') + '</div>');
-      i++;
+      
+      // ネストされた:::lead...:::を処理
+      let contentStr = content.join('\n');
+      contentStr = contentStr.replace(/:::lead\n([\s\S]*?)\n:::/g, '<div class="lead">$1</div>');
+      
+      const html = convertInlineMarkdown(contentStr);
+      result.push('<div class="last">' + html + '</div>');
+      i++; // skip closing :::
       continue;
     }
     
     // 空行
     if (line.trim() === '') {
+      i++;
+      continue;
+    }
+    
+    // :::単独行（閉じタグ）をスキップ（処理漏れ防止）
+    if (line === ':::' || line === '::') {
       i++;
       continue;
     }
