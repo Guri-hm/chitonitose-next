@@ -7,6 +7,9 @@
   --light-blue: #72c1d7;
   --background: #fefefe;
   --foreground: #444444;
+  /* 科目カラー - 日本史 */
+  --subject-color: #cc3366;
+  --subject-color-rgb: 204, 51, 102;
 }
 
 /* ダークモード */

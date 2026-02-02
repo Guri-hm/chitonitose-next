@@ -13,18 +13,31 @@ const {
   remarkRedText,
   remarkListClasses,
 } = require('./remark-custom-directives.js');
+const { remarkToc } = require('./remark-toc.js');
 
 const contentDir = path.join(process.cwd(), 'content');
 
+export interface TocItem {
+  id: string;
+  text: string;
+  children?: TocItem[];
+}
+
 export interface LessonFrontmatter {
   title: string;
-  overview?: string;
+  overview: string;
+}
+
+export interface LessonData {
+  frontmatter: LessonFrontmatter;
+  content: React.ReactElement;
+  toc: TocItem[];
 }
 
 /**
  * MDXレッスンファイルを読み込んでコンパイルする
  */
-export async function getMDXLesson(subject: string, lessonId: string) {
+export async function getMDXLesson(subject: string, lessonId: string): Promise<LessonData | null> {
   try {
     let filePath: string;
     
@@ -44,6 +57,9 @@ export async function getMDXLesson(subject: string, lessonId: string) {
     console.log(`[MDX] Loading file: ${filePath}`);
     console.log(`[MDX] Frontmatter:`, frontmatterData);
     
+    // Store for accessing vfile data
+    let tocData: TocItem[] = [];
+    
     const { content } = await compileMDX<LessonFrontmatter>({
       source: mdxContent,
       options: {
@@ -52,6 +68,7 @@ export async function getMDXLesson(subject: string, lessonId: string) {
           remarkPlugins: [
             remarkGfm,
             remarkDirective,
+            remarkToc,  // Generate TOC data
             remarkCustomDirectives,
             remarkListClasses,
             remarkTerms,
@@ -65,21 +82,41 @@ export async function getMDXLesson(subject: string, lessonId: string) {
         },
       },
     });
+
+    // Extract TOC from the compilation result
+    // Note: We need to parse the file again to get vfile.data
+    const { unified } = await import('unified');
+    const remarkParse = (await import('remark-parse')).default;
+    const remarkStringify = (await import('remark-stringify')).default;
+    const processor = unified()
+      .use(remarkParse)
+      .use(remarkStringify)
+      .use(remarkGfm)
+      .use(remarkDirective)
+      .use(remarkToc);
     
+    const vfile = await processor.process(mdxContent);
+    tocData = (vfile.data.toc as TocItem[]) || [];
+
     console.log(`[MDX] Compilation successful`);
+    console.log(`[MDX] TOC items:`, tocData.length);
     
     return {
-      frontMatter: frontmatterData as LessonFrontmatter,
+      frontmatter: frontmatterData as LessonFrontmatter,
       content,
+      toc: tocData,
     };
   } catch (error) {
+    console.error(`[MDX ERROR] ============================================`);
     console.error(`[MDX ERROR] File: ${subject}/lessons/${lessonId}.md`);
     console.error(`[MDX ERROR] Error type: ${error instanceof Error ? error.name : 'Unknown'}`);
     console.error(`[MDX ERROR] Message: ${error instanceof Error ? error.message : String(error)}`);
     if (error instanceof Error && error.stack) {
-      console.error(`[MDX ERROR] Stack trace:`, error.stack);
+      console.error(`[MDX ERROR] Stack trace:`);
+      console.error(error.stack);
     }
-    return null;
+    console.error(`[MDX ERROR] ============================================`);
+    throw error; // Re-throw to propagate to page component
   }
 }
 

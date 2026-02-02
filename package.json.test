@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "test:mdx": "node scripts/test-mdx.js",
+    "test:mdx:jh2": "node scripts/test-mdx.js jh 2",
+    "test:mdx:jh1": "node scripts/test-mdx.js jh 1"
+  }
+}

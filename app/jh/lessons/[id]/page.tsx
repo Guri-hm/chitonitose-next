@@ -8,6 +8,7 @@ import { PenIcon, ListIcon, RightIcon, LeftIcon } from '@/components/ui/Icons';
 import TOC from '@/components/lessons/TOC';
 import TermClickHandler from '@/components/lessons/TermClickHandler';
 import ImageClickHandler from '@/components/lessons/ImageClickHandler';
+import TableOfContents from '@/components/lessons/TableOfContents';
 
 interface LessonPageProps {
   params: Promise<{
@@ -60,10 +61,12 @@ export default async function JHLessonPage({ params }: LessonPageProps) {
 
   // MDXファイルを読み込む
   let mdxData = null;
+  let mdxError = null;
   try {
     mdxData = await getMDXLesson('jh', id);
   } catch (error) {
-    console.error(`Failed to load MDX lesson ${lessonNo}:`, error);
+    console.error(`[PAGE ERROR] Failed to load MDX lesson ${lessonNo}:`, error);
+    mdxError = error instanceof Error ? error.message : String(error);
   }
 
   return (
@@ -82,15 +85,15 @@ export default async function JHLessonPage({ params }: LessonPageProps) {
               <AnswerButtons />
               
               {/* 概要 */}
-              {mdxData.frontMatter.overview && (
+              {mdxData.frontmatter.overview && (
                 <div className="overview">
                   <div className="title">概要</div>
-                  {mdxData.frontMatter.overview}
+                  {mdxData.frontmatter.overview}
                 </div>
               )}
               
               {/* 目次 */}
-              <TOC />
+              <TableOfContents toc={mdxData.toc} />
               
               {/* MDXコンテンツ */}
               <div className="markdown-content">
@@ -98,7 +101,20 @@ export default async function JHLessonPage({ params }: LessonPageProps) {
               </div>
             </>
           ) : (
-            <p>レッスンの内容を読み込めませんでした。</p>
+            <div className="error-container" style={{ padding: '2rem', border: '2px solid red', borderRadius: '8px', margin: '2rem 0' }}>
+              <h2 style={{ color: 'red' }}>❌ レッスンの内容を読み込めませんでした</h2>
+              {mdxError && (
+                <div style={{ marginTop: '1rem', padding: '1rem', backgroundColor: '#fff3cd', borderRadius: '4px' }}>
+                  <strong>エラー詳細:</strong>
+                  <pre style={{ marginTop: '0.5rem', whiteSpace: 'pre-wrap', wordBreak: 'break-word' }}>
+                    {mdxError}
+                  </pre>
+                </div>
+              )}
+              <p style={{ marginTop: '1rem' }}>
+                ターミナルのログを確認してください。詳細なエラー情報が出力されています。
+              </p>
+            </div>
           )}
 
           {/* 一問一答リンク */}
