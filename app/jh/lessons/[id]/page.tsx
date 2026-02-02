@@ -6,6 +6,7 @@ import AnswerButtons from '@/components/AnswerButtons';
 import ThreeColumnLayout from '@/components/lessons/ThreeColumnLayout';
 import { PenIcon, ListIcon, RightIcon, LeftIcon } from '@/components/ui/Icons';
 import TOC from '@/components/lessons/TOC';
+import TermClickHandler from '@/components/lessons/TermClickHandler';
 
 interface LessonPageProps {
   params: Promise<{
@@ -71,6 +72,7 @@ export default async function JHLessonPage({ params }: LessonPageProps) {
       <link rel="stylesheet" href="/css/lessons_common.css" />
       
       <ThreeColumnLayout subject="jh" currentLessonNo={lessonNo} pages={pages} title={lesson.title}>
+        <TermClickHandler />
         <div id="toc-range" className="contents">
           {mdxData ? (
             <>
