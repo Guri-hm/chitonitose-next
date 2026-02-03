@@ -17,18 +17,7 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { compile } from '@mdx-js/mdx';
-import remarkGfm from 'remark-gfm';
-import remarkDirective from 'remark-directive';
-import { createRequire } from 'module';
-
-const require = createRequire(import.meta.url);
-const {
-  remarkCustomDirectives,
-  remarkTerms,
-  remarkMarkers,
-  remarkRedText,
-  remarkListClasses,
-} = require('../lib/remark-custom-directives.js');
+import { remarkPlugins, rehypePlugins } from '../lib/mdx-config.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -60,15 +49,8 @@ async function checkMDXFile(filePath, relativePath) {
     
     // MDXをコンパイル（frontmatter処理なし - シンプルにチェックのみ）
     await compile(content, {
-      remarkPlugins: [
-        remarkGfm,
-        remarkDirective,
-        remarkCustomDirectives,
-        remarkTerms,
-        remarkMarkers,
-        remarkRedText,
-        remarkListClasses,
-      ],
+      remarkPlugins,
+      rehypePlugins,
       development: false,
     });
     

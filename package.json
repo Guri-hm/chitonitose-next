@@ -12,10 +12,10 @@
     "db:import": "node scripts/json-to-sqlite.js",
     "db:add-views": "node scripts/add-views.js",
     "data:convert": "node scripts/sqlite-to-json.js",
-    "test:mdx": "node scripts/test-mdx-compilation.js",
-    "test:mdx:jh": "node scripts/test-mdx-compilation.js jh",
-    "test:mdx:wh": "node scripts/test-mdx-compilation.js wh",
-    "test:mdx:geo": "node scripts/test-mdx-compilation.js geo"
+    "test:mdx": "node scripts/test-mdx-compilation.mjs",
+    "test:mdx:jh": "node scripts/test-mdx-compilation.mjs jh",
+    "test:mdx:wh": "node scripts/test-mdx-compilation.mjs wh",
+    "test:mdx:geo": "node scripts/test-mdx-compilation.mjs geo"
   },
   "dependencies": {
     "cheerio": "^1.0.0",

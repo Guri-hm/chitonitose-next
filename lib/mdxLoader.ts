@@ -1,22 +1,11 @@
 import fs from 'fs/promises';
 import path from 'path';
 import { compileMDX } from 'next-mdx-remote/rsc';
+import matter from 'gray-matter';
+import { remarkPlugins, rehypePlugins } from './mdx-config.mjs';
+import { remarkToc } from './remark-toc.mjs';
 import remarkGfm from 'remark-gfm';
 import remarkDirective from 'remark-directive';
-import rehypeSlug from 'rehype-slug';
-import rehypeAutolinkHeadings from 'rehype-autolink-headings';
-import matter from 'gray-matter';
-const {
-  remarkCustomDirectives,
-  remarkTerms,
-  remarkMarkers,
-  remarkRedText,
-  remarkListClasses,
-} = require('./remark-custom-directives.js');
-const { remarkToc } = require('./remark-toc.js');
-const { rehypeStrongToRed } = require('./rehype-strong-to-red.js');
-const { rehypeTermClickHandler } = require('./rehype-term-click-handler.js');
-const { rehypeTableAlign } = require('./rehype-table-align.js');
 
 const contentDir = path.join(process.cwd(), 'content');
 
@@ -68,23 +57,8 @@ export async function getMDXLesson(subject: string, lessonId: string): Promise<L
       options: {
         parseFrontmatter: false,
         mdxOptions: {
-          remarkPlugins: [
-            remarkGfm,
-            remarkDirective,
-            remarkToc,  // Generate TOC data
-            remarkCustomDirectives,
-            remarkListClasses,
-            remarkMarkers,  // Process == first (wraps content)
-            remarkTerms,    // Process [[ second (wraps content)
-            remarkRedText,  // Process ** last (wraps content)
-          ],
-          rehypePlugins: [
-            rehypeSlug,
-            [rehypeAutolinkHeadings, { behavior: 'wrap' }],
-            rehypeStrongToRed,        // Convert <strong> to <font color="#FF0000">
-            rehypeTermClickHandler,   // Add onclick to <span class="all">
-            rehypeTableAlign,         // Convert style to align attributes
-          ],
+          remarkPlugins,
+          rehypePlugins,
         },
       },
     });
