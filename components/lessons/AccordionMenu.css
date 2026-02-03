@@ -133,17 +133,17 @@
 }
 
 .accordion-content .lesson-no {
-  display: inline-block;
+  /* display: inline-block; */
   min-width: 3rem;
   padding: 0.25rem 0.5rem;
-  font-size: 0.875rem;
+  /* font-size: 0.875rem; */
   font-weight: 600;
   color: #6c757d;
   background-color: #f1f3f5;
   border-radius: 0.25rem;
   margin-right: 0.75rem;
   text-align: center;
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
 }
 
 .accordion-content a.active .lesson-no {
