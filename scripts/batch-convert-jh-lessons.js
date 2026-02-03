@@ -509,10 +509,10 @@ ${body.trim()}`;
           const inner = this.convertInnerHTML($node);
           result += `**${inner}**`;
         }
-        // ruby: そのまま保持
+        // ruby: そのまま保持（改行・タブ・余分な空白を削除）
         else if (tagName === 'ruby') {
-          const base = $node.contents().filter((i, n) => n.type === 'text' || n.name !== 'rt').text();
-          const rt = $node.find('rt').text();
+          const base = $node.contents().filter((i, n) => n.type === 'text' || n.name !== 'rt').text().replace(/[\r\n\t]+/g, '').trim();
+          const rt = $node.find('rt').text().replace(/[\r\n\t]+/g, '').trim();
           result += `<ruby>${base}<rt>${rt}</rt></ruby>`;
         }
         // 再帰的にネストディレクティブを処理

@@ -305,6 +305,60 @@ MDX内でHTMLタグとして直接記述可能
 
 **出力**: `<ul class="custom-class"><li>項目1</li><li>項目2</li></ul>`
 
+### リスト項目内のディレクティブ（継続テキスト）
+
+**元のHTML構造**:
+```html
+<ul class="en">
+  <li>メインテキスト<div class="last">継続テキスト</div></li>
+</ul>
+```
+
+**MDX形式**:
+```markdown
+:::list{class="en"}
+- メインテキスト
+  :::last
+  継続テキスト
+:::
+```
+
+**出力**: `<ul class="en"><li>メインテキスト<div class="last">継続テキスト</div></li></ul>`
+
+**実例（jh/lessons/85.md）**:
+```markdown
+:::list{class="en"}
+- 諸藩の大名は領内の年貢米・特産物の倉庫兼取引所である蔵屋敷を置き、蔵物と総称されるこれら年貢米・特産物を販売して貨幣を獲得
+  :::last
+  [[蔵元]]と呼ばれる商人が蔵物の販売・保管をおこない、[[掛屋]]と呼ばれる商人がその販売代金の<ruby>出納<rt>すいとう</rt></ruby>・藩への送金を担当
+- 商人が全国から大坂に集めた商品を<ruby>納屋物<rt>なやもの</rt></ruby>と呼び、江戸や全国に出荷
+:::
+```
+
+**重要な注意点**:
+- `:::last`, `:::middle`, `:::top`はリスト項目内で**2スペースインデント**
+- リスト項目の一部として扱われる（サブリストではない）
+- CSS `.last::before { content: "⇒"; }` で矢印マーカーが自動付与される
+
+**他の継続ディレクティブ**:
+- `:::last` - 最後の補足情報（⇒マーカー付き）
+- `:::middle` - 中間の補足情報（→マーカー付き）
+- `:::top` - 最初の情報（マーカーなし）
+
+**変換ロジック（batch-convert-jh-lessons.js）**:
+```javascript
+// convertList()メソッド内
+else if (className?.match(/^(last|middle|top)$/)) {
+  nestedDirectives.push(this.convertElement($node));
+}
+
+// 出力時にインデント
+if (nestedDirectives.length > 0) {
+  const nested = nestedDirectives.map(d => '  ' + d.split('\n').join('\n  ')).join('\n');
+  itemText += '\n' + nested;
+}
+```
+
 ---
 
 ## テーブル構文
@@ -388,12 +442,114 @@ HTMLで1行目が空セルで始まる場合、2次元テーブルとして認�
 2. ヘッダー行を「項目」+ 1行目の2列目以降で構成
 3. 2行目以降を通常のデータ行として出力
 
+**実例（jh/lessons/85.md - 三貨の表）**:
+```markdown
+| 項目 | 金貨 | 銀貨 | 銭貨 |
+| :---: | :--- | :--- | :--- |
+| 鋳造所 | [[金座]] | [[銀座]] | [[銭座]] |
+| 場所 | 江戸・京都 | <ruby>駿府<rt>すんぷ</rt></ruby>・伏見 ＊のちに江戸・京都 | 江戸・近江坂本 ＊のちに全国各地 |
+| 流通圏 | 主に==東日本== （金遣い） | 主に==西日本== （銀遣い） | 全国で流通 |
+```
+
 ### rowspan/colspanを含むテーブル
 
-MDXテーブルでは`rowspan`/`colspan`を表現できないため、HTMLテーブルをそのまま保持する。
+MDXテーブルでは`rowspan`/`colspan`を表現できないため、**HTMLテーブルをそのまま保持**する。
 
 **元HTML**:
 ```html
+<table>
+  <tr>
+    <th rowspan="2">天皇</th>
+    <th colspan="2">政権担当者</th>
+  </tr>
+  <tr>
+    <th>藤原氏</th>
+    <th>その他</th>
+  </tr>
+</table>
+```
+
+**変換後MDX**:
+```markdown
+<table>
+  <tr>
+    <th rowspan="2">天皇</th>
+    <th colspan="2">政権担当者</th>
+  </tr>
+  <tr>
+    <th>藤原氏</th>
+    <th>その他</th>
+  </tr>
+</table>
+```
+
+**重要**: 
+- HTMLテーブルとして保持される（Markdownテーブルには変換されない）
+- `rehype-raw`プラグインによってHTMLが処理される
+- セル内の`<span class="all">`などの特殊構文も変換処理が必要
+
+**変換ロジック（batch-convert-jh-lessons.js）**:
+```javascript
+convertTable($table) {
+  const hasRowspan = $table.find('[rowspan]').length > 0;
+  const hasColspan = $table.find('[colspan]').length > 0;
+  
+  if (hasRowspan || hasColspan) {
+    // HTMLテーブルとして保持
+    let tableHtml = '<table>\n';
+    
+    $table.children('tr').each((i, tr) => {
+      tableHtml += '  <tr>\n';
+      this.$(tr).children('th, td').each((j, cell) => {
+        const $cell = this.$(cell);
+        const tagName = cell.name;
+        const rowspan = $cell.attr('rowspan');
+        const colspan = $cell.attr('colspan');
+        const align = $cell.attr('align');
+        
+        let attrs = '';
+        if (rowspan) attrs += ` rowspan="${rowspan}"`;
+        if (colspan) attrs += ` colspan="${colspan}"`;
+        if (align) attrs += ` align="${align}"`;
+        
+        const content = this.convertInnerHTML($cell);
+        tableHtml += `    <${tagName}${attrs}>${content}</${tagName}>\n`;
+      });
+      tableHtml += '  </tr>\n';
+    });
+    
+    tableHtml += '</table>';
+    return tableHtml;
+  }
+  
+  // rowspan/colspanがない場合はMarkdownテーブルに変換
+  // ...（通常のテーブル変換ロジック）
+}
+```
+
+### テーブル変換の注意点
+
+**セル内容の処理**:
+```javascript
+// convertInnerHTML()でセル内容を変換
+// - [[用語]] → <span class="all">用語</span>
+// - **赤文字** → <font color="#FF0000">赤文字</font>
+// - ==マーカー== → <span class="marker">マーカー</span>
+// - <ruby> タグはそのまま保持（改行・空白を削除）
+```
+
+**改行・空白の処理**:
+```javascript
+// テーブルセル内の改行とインデントは削除
+cellText = cellText.replace(/[\r\n\t]+/g, ' ').replace(/\s+/g, ' ').trim();
+```
+
+**空セルの扱い**:
+```markdown
+| 項目 | 金貨 | 銀貨 | 銭貨 |
+|:---:|:---|:---|:---|
+| 統括者 | 後藤庄三郎 |  |  |  ← 空セルはスペース2つ
+```
 <table>
   <tr>
     <th rowspan="2">天皇</th>

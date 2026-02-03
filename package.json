@@ -11,7 +11,11 @@
     "db:convert": "node scripts/mysql-to-sqlite.js",
     "db:import": "node scripts/json-to-sqlite.js",
     "db:add-views": "node scripts/add-views.js",
-    "data:convert": "node scripts/sqlite-to-json.js"
+    "data:convert": "node scripts/sqlite-to-json.js",
+    "test:mdx": "node scripts/test-mdx-compilation.js",
+    "test:mdx:jh": "node scripts/test-mdx-compilation.js jh",
+    "test:mdx:wh": "node scripts/test-mdx-compilation.js wh",
+    "test:mdx:geo": "node scripts/test-mdx-compilation.js geo"
   },
   "dependencies": {
     "cheerio": "^1.0.0",
