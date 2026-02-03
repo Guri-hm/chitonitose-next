@@ -1,6 +1,13 @@
 /**
  * バッチ変換スクリプト: jh_lessons*.html → content/jh/lessons/*.md
  * MDX_SYNTAX_RULES.mdのルールに従って変換し、エラーチェックも実行
+ * 
+ * テーブル変換ルール:
+ * - 基本テーブル: Markdownテーブル形式に変換
+ * - rowspan/colspan検出時: HTMLテーブルをそのまま保持
+ * - 空セルで始まる行: 2次元テーブルとして「項目」列を追加
+ * - セル内の改行・余分な空白: 自動削除（連続空白を1つに圧縮）
+ * - 1行目をヘッダーとして使用（<th>タグがなくても）
  */
 
 const fs = require('fs');
@@ -382,6 +389,17 @@ ${body.trim()}`;
   }
   
   convertTable($el) {
+    // rowspan/colspanがある場合はHTMLのまま返す（MDXテーブルでは表現不可）
+    const hasRowspan = $el.find('[rowspan]').length > 0;
+    const hasColspan = $el.find('[colspan]').length > 0;
+    
+    if (hasRowspan || hasColspan) {
+      console.log('      [TABLE] rowspan/colspan detected - keeping HTML format');
+      // HTMLテーブルをそのまま返す（整形して）
+      const tableHtml = this.$.html($el);
+      return '\n' + tableHtml + '\n';
+    }
+    
     const rows = [];
     
     // thead, tbody, または直接のtr要素を取得
@@ -397,7 +415,9 @@ ${body.trim()}`;
       
       $tr.find('td, th').each((j, cell) => {
         const $cell = this.$(cell);
-        const content = this.convertInnerHTML($cell).trim();
+        let content = this.convertInnerHTML($cell).trim();
+        // テーブルセル内の改行と余分な空白を削除（MDXテーブルでは改行不可）
+        content = content.replace(/\s+/g, ' ').trim();
         cells.push(content);
       });
       
@@ -413,10 +433,34 @@ ${body.trim()}`;
     const numColumns = rows[0].length;
     const hasHeader = $el.find('th').length > 0;
     
+    // thead省略判定: 1行目の最初のセルが空の場合（hasHeaderに関わらず）
+    const firstCellEmpty = rows[0][0].trim() === '';
+    
+    if (firstCellEmpty && rows.length > 1) {
+      // 1行目が空セルで始まる場合、2次元テーブルとして扱う
+      // ヘッダー: [項目] + [1行目の2列目以降]
+      // データ: [2行目以降の全列]
+      console.log('      [TABLE] 2D table detected (empty first cell) - adding "項目" header');
+      
+      // ヘッダー行: 「項目」+ 1行目の2列目以降
+      const headerRow = ['項目', ...rows[0].slice(1)];
+      mdTable.push('| ' + headerRow.join(' | ') + ' |');
+      
+      // セパレーター: 1列目中央寄せ、2列目以降左寄せ
+      const separator = Array(numColumns).fill('').map((_, idx) => idx === 0 ? ':---:' : ':---');
+      mdTable.push('| ' + separator.join(' | ') + ' |');
+      
+      // 2行目以降をデータ行として追加
+      for (let i = 1; i < rows.length; i++) {
+        mdTable.push('| ' + rows[i].join(' | ') + ' |');
+      }
+      
+      return mdTable.join('\n');
+    }
+    
     if (!hasHeader) {
-      // ヘッダー行を自動生成（列数に応じて「人物」「説明」など）
-      const headers = numColumns === 2 ? ['人物', '説明'] : Array(numColumns).fill('').map((_, i) => `列${i + 1}`);
-      mdTable.push('| ' + headers.join(' | ') + ' |');
+      // ヘッダー行がない場合、1行目をヘッダーとして使用
+      mdTable.push('| ' + rows[0].join(' | ') + ' |');
     } else {
       // 既存のヘッダーを使用
       mdTable.push('| ' + rows[0].join(' | ') + ' |');

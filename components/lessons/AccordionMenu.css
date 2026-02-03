@@ -16,17 +16,17 @@
 }
 
 .accordion-menu::-webkit-scrollbar-thumb {
-  background: transparent;
+  background: transparent !important;
   border-radius: 2px;
   transition: background 0.3s ease;
 }
 
 .accordion-menu:hover::-webkit-scrollbar-thumb {
-  background: var(--scrollbar-color, rgba(0, 0, 0, 0.3));
+  background: var(--scrollbar-color, rgba(0, 0, 0, 0.3)) !important;
 }
 
 .accordion-menu::-webkit-scrollbar-thumb:hover {
-  background: var(--scrollbar-hover-color, rgba(0, 0, 0, 0.5));
+  background: var(--scrollbar-hover-color, rgba(0, 0, 0, 0.5)) !important;
 }
 
 /* Firefox用 */
@@ -36,7 +36,7 @@
 }
 
 .accordion-menu:hover {
-  scrollbar-color: var(--scrollbar-color, rgba(0, 0, 0, 0.3)) transparent;
+  scrollbar-color: var(--scrollbar-color, rgba(0, 0, 0, 0.3)) transparent !important;
 }
 
 .accordion-item {
@@ -62,8 +62,8 @@
   font-size: 1rem;
   font-weight: 500;
   text-align: left;
-  color: #212529;
-  background-color: #f8f9fa;
+  color: #495057;
+  background-color: #fafbfc;
   border: none;
   cursor: pointer;
   display: flex;
@@ -73,11 +73,11 @@
 }
 
 .accordion-header:hover {
-  background-color: #e9ecef;
+  background-color: #f1f3f5;
 }
 
 .accordion-item.open .accordion-header {
-  background-color: #e9ecef;
+  background-color: #f1f3f5;
   border-bottom: 1px solid #dee2e6;
 }
 
@@ -126,10 +126,10 @@
 }
 
 .accordion-content a.active {
-  background-color: #e7f3ff;
-  color: #0056b3;
+  background-color: var(--active-bg-color, #e7f3ff);
+  color: var(--active-text-color, #0056b3);
   font-weight: 500;
-  border-left: 3px solid #0056b3;
+  border-left: 3px solid var(--active-border-color, #0056b3);
 }
 
 .accordion-content .lesson-no {
@@ -143,16 +143,18 @@
   border-radius: 0.25rem;
   margin-right: 0.75rem;
   text-align: center;
+  vertical-align: middle;
 }
 
 .accordion-content a.active .lesson-no {
-  background-color: #0056b3;
+  background-color: var(--active-text-color, #0056b3);
   color: #fff;
 }
 
 .accordion-content .lesson-title {
   flex: 1;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 /* レスポンシブ対応 */

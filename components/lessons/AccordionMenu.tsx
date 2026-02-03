@@ -45,14 +45,32 @@ const GEO_ERAS: Era[] = [
 export default function AccordionMenu({ subject, pages, currentLessonNo }: AccordionMenuProps) {
   const eras = subject === 'jh' ? JH_ERAS : subject === 'wh' ? WH_ERAS : GEO_ERAS;
   
-  // 科目ごとのスクロールバーの色
-  const scrollbarColors: Record<string, { normal: string; hover: string }> = {
-    jh: { normal: 'rgba(0, 123, 255, 0.3)', hover: 'rgba(0, 123, 255, 0.6)' },      // 青
-    wh: { normal: 'rgba(220, 53, 69, 0.3)', hover: 'rgba(220, 53, 69, 0.6)' },      // 赤
-    geo: { normal: 'rgba(40, 167, 69, 0.3)', hover: 'rgba(40, 167, 69, 0.6)' },     // 緑
+  // 科目別のスクロールバー色とアクティブ色（規定カラーに基づく淡い色）
+  const subjectColors = {
+    jh: { 
+      scrollNormal: 'rgba(204, 51, 102, 0.3)',  // #cc3366 (jh.css --subject-color)
+      scrollHover: 'rgba(204, 51, 102, 0.6)',
+      activeBg: '#fce4ec',                       // 淡いピンク
+      activeText: '#c2185b',                     // 濃いピンク
+      activeBorder: '#cc3366',                   // jh規定カラー
+    },
+    wh: { 
+      scrollNormal: 'rgba(0, 153, 255, 0.3)',   // #0099FF (wh.css --subject-color)
+      scrollHover: 'rgba(0, 153, 255, 0.6)',
+      activeBg: '#e3f2fd',                       // 淡い青
+      activeText: '#1976d2',                     // 濃い青
+      activeBorder: '#0099FF',                   // wh規定カラー
+    },
+    geo: { 
+      scrollNormal: 'rgba(26, 171, 18, 0.3)',   // #1AAB12 (geo.css --subject-color)
+      scrollHover: 'rgba(26, 171, 18, 0.6)',
+      activeBg: '#e8f5e9',                       // 淡い緑
+      activeText: '#388e3c',                     // 濃い緑
+      activeBorder: '#1AAB12',                   // geo規定カラー
+    },
   };
   
-  const colors = scrollbarColors[subject];
+  const colors = subjectColors[subject];
   
   // 現在のレッスンが属する時代を初期状態で開く
   const currentEraIndex = eras.findIndex(era => 
@@ -79,8 +97,11 @@ export default function AccordionMenu({ subject, pages, currentLessonNo }: Accor
     <div 
       className="accordion-menu"
       style={{
-        '--scrollbar-color': colors.normal,
-        '--scrollbar-hover-color': colors.hover,
+        '--scrollbar-color': colors.scrollNormal,
+        '--scrollbar-hover-color': colors.scrollHover,
+        '--active-bg-color': colors.activeBg,
+        '--active-text-color': colors.activeText,
+        '--active-border-color': colors.activeBorder,
       } as React.CSSProperties}
     >
       {eras.map((era, eraIndex) => {
