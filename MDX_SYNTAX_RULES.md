@@ -168,6 +168,27 @@
 
 **用途**: `:::double`内で画像を配置する場合に使用
 
+### 画像説明（explanation）
+
+```markdown
+:::gazo{size="half"}
+![](/images/jh/img/6/1.jpg)
+:::explanation
+好太王（広開土王）碑
+
+「倭は391年よりこのかた、海を渡り、百済を破り、新羅を□□して臣民とした」とある。読解では、碑文内容と当時の情勢の食い違いに留意したい。
+:::
+```
+
+**出力**: `<div class="gazo"><img .../><div class="explanation">好太王（広開土王）碑<br/>「倭は...</div></div>`
+
+**用途**: 画像の下に詳細な説明文を配置する場合（HTML元の`<div class="explanation">`に対応）
+
+**重要**: 
+- `:::explanation`は`:::gazo`の直後に配置
+- 説明文内で改行が必要な場合は通常の改行でOK（自動的に`<br/>`に変換される）
+- explanationクラスは`text-align: left;`がCSSで定義される
+
 ---
 
 ## インライン構文
@@ -259,6 +280,73 @@ MDX内でHTMLタグとして直接記述可能
 **出力**: `<ul class="en"><li>項目名<div class="lead">説明文</div></li></ul>`
 
 **注意**: `<li><p>`のネストを避けるため、remarkListClassesがpタグを自動削除
+
+### カスタムクラス付きリスト（:::list ディレクティブ）
+
+```markdown
+:::list{class="en"}
+- ヤマト政権の５人の王讃・珍・済・興・武（倭の五王）が、５世紀初めから約１世紀間、相次いで中国南朝に朝貢
+- 倭の五王の武が過去の征服事実を中国南朝に報告
+- 478年、武が安東大将軍の称号を中国南朝から獲得
+:::
+```
+
+**出力**: `<ul class="en"><li>ヤマト政権の...</li><li>倭の五王の...</li><li>478年、武が...</li></ul>`
+
+**用途**: `:::lead`ディレクティブを使わずにリスト全体にクラスを付与したい場合
+
+**他のクラス例**:
+```markdown
+:::list{class="custom-class"}
+- 項目1
+- 項目2
+:::
+```
+
+**出力**: `<ul class="custom-class"><li>項目1</li><li>項目2</li></ul>`
+
+---
+
+## テーブル構文
+
+### 基本テーブル
+
+```markdown
+| 人物 | 説明 |
+|:---:|:---|
+| **<ruby>王仁<rt>わに</rt></ruby>** | [[<ruby>西文氏<rt>かわちのふみうじ</rt></ruby>]]の祖、『論語』を伝える |
+| 阿知使主 | [[<ruby>東漢氏<rt>やまとのあやうじ</rt></ruby>]]の祖、財務に携わる |
+| **弓月君** | [[<ruby>秦氏<rt>はたうじ</rt></ruby>]]の祖、養蚕・機織を伝える |
+```
+
+**出力**: 
+```html
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:center">人物</th>
+      <th style="text-align:left">説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center"><font color="#FF0000"><ruby>王仁<rt>わに</rt></ruby></font></td>
+      <td style="text-align:left"><span class="all"><ruby>西文氏<rt>かわちのふみうじ</rt></ruby></span>の祖、『論語』を伝える</td>
+    </tr>
+    <!-- 以下省略 -->
+  </tbody>
+</table>
+```
+
+**セル内で使用可能な構文**:
+- `**テキスト**` - 赤文字（`<font color="#FF0000">`に変換）
+- `[[用語]]` - `.all`クラス（`<span class="all">`に変換）
+- `<ruby>漢字<rt>よみ</rt></ruby>` - ルビ
+
+**アライメント**:
+- `:---:` - 中央寄せ
+- `:---` - 左寄せ
+- `---:` - 右寄せ
 
 ---
 

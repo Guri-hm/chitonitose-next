@@ -1,0 +1,178 @@
+/* アコーディオンメニューのスタイル（Bootstrapライク） */
+.accordion-menu {
+  width: 100%;
+  max-height: calc(100vh - 180px); /* ヘッダーとタイトル分を引く */
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* 極細スクロールバー（スクロール時のみ表示） */
+.accordion-menu::-webkit-scrollbar {
+  width: 4px;
+}
+
+.accordion-menu::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.accordion-menu::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 2px;
+  transition: background 0.3s ease;
+}
+
+.accordion-menu:hover::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-color, rgba(0, 0, 0, 0.3));
+}
+
+.accordion-menu::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-hover-color, rgba(0, 0, 0, 0.5));
+}
+
+/* Firefox用 */
+.accordion-menu {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+.accordion-menu:hover {
+  scrollbar-color: var(--scrollbar-color, rgba(0, 0, 0, 0.3)) transparent;
+}
+
+.accordion-item {
+  border: 1px solid #dee2e6;
+  border-bottom: 0;
+  background-color: #fff;
+}
+
+.accordion-item:last-child {
+  border-bottom: 1px solid #dee2e6;
+  border-bottom-left-radius: 0.375rem;
+  border-bottom-right-radius: 0.375rem;
+}
+
+.accordion-item:first-child {
+  border-top-left-radius: 0.375rem;
+  border-top-right-radius: 0.375rem;
+}
+
+.accordion-header {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: left;
+  color: #212529;
+  background-color: #f8f9fa;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.accordion-header:hover {
+  background-color: #e9ecef;
+}
+
+.accordion-item.open .accordion-header {
+  background-color: #e9ecef;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.accordion-title {
+  flex: 1;
+}
+
+.accordion-icon {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #6c757d;
+  min-width: 1.5rem;
+  text-align: center;
+}
+
+.accordion-content {
+  padding: 0;
+  background-color: #fff;
+  animation: slideDown 0.2s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 1000px;
+  }
+}
+
+.accordion-content a {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1.25rem;
+  color: #495057;
+  text-decoration: none;
+  border-bottom: 1px solid #f1f3f5;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.accordion-content a:hover {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.accordion-content a.active {
+  background-color: #e7f3ff;
+  color: #0056b3;
+  font-weight: 500;
+  border-left: 3px solid #0056b3;
+}
+
+.accordion-content .lesson-no {
+  display: inline-block;
+  min-width: 3rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #6c757d;
+  background-color: #f1f3f5;
+  border-radius: 0.25rem;
+  margin-right: 0.75rem;
+  text-align: center;
+}
+
+.accordion-content a.active .lesson-no {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+.accordion-content .lesson-title {
+  flex: 1;
+  font-size: 0.9rem;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .accordion-header {
+    padding: 0.875rem 1rem;
+    font-size: 0.95rem;
+  }
+  
+  .accordion-content a {
+    padding: 0.625rem 1rem;
+  }
+  
+  .accordion-content .lesson-no {
+    min-width: 2.5rem;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+  }
+  
+  .accordion-content .lesson-title {
+    font-size: 0.85rem;
+  }
+}

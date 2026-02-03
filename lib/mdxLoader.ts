@@ -14,6 +14,9 @@ const {
   remarkListClasses,
 } = require('./remark-custom-directives.js');
 const { remarkToc } = require('./remark-toc.js');
+const { rehypeStrongToRed } = require('./rehype-strong-to-red.js');
+const { rehypeTermClickHandler } = require('./rehype-term-click-handler.js');
+const { rehypeTableAlign } = require('./rehype-table-align.js');
 
 const contentDir = path.join(process.cwd(), 'content');
 
@@ -78,6 +81,9 @@ export async function getMDXLesson(subject: string, lessonId: string): Promise<L
           rehypePlugins: [
             rehypeSlug,
             [rehypeAutolinkHeadings, { behavior: 'wrap' }],
+            rehypeStrongToRed,        // Convert <strong> to <font color="#FF0000">
+            rehypeTermClickHandler,   // Add onclick to <span class="all">
+            rehypeTableAlign,         // Convert style to align attributes
           ],
         },
       },

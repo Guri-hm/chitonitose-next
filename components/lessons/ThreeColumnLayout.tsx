@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { ListIcon } from '@/components/ui/Icons';
+import AccordionMenu from './AccordionMenu';
 
 interface Page {
   no: number;
@@ -53,18 +54,11 @@ export default function ThreeColumnLayout({
               <h2>{subjectNames[subject]}コンテンツ一覧</h2>
               <button onClick={() => setIsSidebarOpen(false)} aria-label="閉じる">×</button>
             </div>
-            <nav className="sidebar-nav">
-              {pages.map((page) => (
-                <a
-                  key={page.no}
-                  href={`/${subject}/lessons/${page.no}`}
-                  className={currentLessonNo === page.no ? 'active' : ''}
-                >
-                  <span className="lesson-no">{page.no}</span>
-                  <span className="lesson-title">{page.title}</span>
-                </a>
-              ))}
-            </nav>
+            <AccordionMenu 
+              subject={subject} 
+              pages={pages} 
+              currentLessonNo={currentLessonNo} 
+            />
           </div>
         </div>
       )}
@@ -75,18 +69,11 @@ export default function ThreeColumnLayout({
         <aside className="left-column">
           <div className="sidebar-sticky">
             <h2 className="sidebar-title">{subjectNames[subject]}コンテンツ一覧</h2>
-            <nav className="sidebar-nav">
-              {pages.map((page) => (
-                <a
-                  key={page.no}
-                  href={`/${subject}/lessons/${page.no}`}
-                  className={currentLessonNo === page.no ? 'active' : ''}
-                >
-                  <span className="lesson-no">{page.no}</span>
-                  <span className="lesson-title">{page.title}</span>
-                </a>
-              ))}
-            </nav>
+            <AccordionMenu 
+              subject={subject} 
+              pages={pages} 
+              currentLessonNo={currentLessonNo} 
+            />
           </div>
         </aside>
 

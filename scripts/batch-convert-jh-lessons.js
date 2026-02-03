@@ -36,6 +36,13 @@ class MDXRuleChecker {
               directiveStack.pop(); // 外側も閉じる
             }
           }
+          // explanationの閉じタグはgazoも一緒に閉じる
+          if (popped.directive.startsWith(':::explanation') && directiveStack.length > 0) {
+            const outer = directiveStack[directiveStack.length - 1];
+            if (outer.directive.startsWith(':::gazo')) {
+              directiveStack.pop(); // gazoも閉じる
+            }
+          }
         }
       }
     });
@@ -130,12 +137,14 @@ class HtmlToMdxConverter {
         
         // explanationは前の要素（gazo）で処理済みの場合はスキップ
         if ($el.hasClass('explanation')) {
-          // 前の要素がgazoでない場合のみ処理
-          if (i === 0 || !this.$(children[i - 1]).hasClass('gazo')) {
-            const content = this.convertInnerHTML($el);
-            if (content) {
-              body += content + '\n\n';
-            }
+          // 前の要素がgazoの場合、既にconvertGazoで処理済みなのでスキップ
+          if (i > 0 && this.$(children[i - 1]).hasClass('gazo')) {
+            continue; // スキップ
+          }
+          // 前の要素がgazoでない場合は独立したexplanationとして処理
+          const content = this.convertInnerHTML($el);
+          if (content) {
+            body += content + '\n\n';
           }
           continue;
         }
@@ -161,11 +170,14 @@ class HtmlToMdxConverter {
         
         // explanationは前の要素（gazo）で処理済みの場合はスキップ
         if (className === 'explanation') {
-          if (i === 0 || !this.$(children[i - 1]).hasClass('gazo')) {
-            const content = this.convertInnerHTML($el);
-            if (content) {
-              body += content + '\n\n';
-            }
+          // 前の要素がgazoの場合、既にconvertGazoで処理済みなのでスキップ
+          if (i > 0 && this.$(children[i - 1]).hasClass('gazo')) {
+            continue; // スキップ
+          }
+          // 前の要素がgazoでない場合は独立したexplanationとして処理
+          const content = this.convertInnerHTML($el);
+          if (content) {
+            body += content + '\n\n';
           }
           continue;
         }
@@ -202,24 +214,14 @@ ${body.trim()}`;
     
     // gazo（画像） - 次の要素がexplanationの場合は一緒に処理
     if (className.includes('gazo')) {
-      let result = this.convertGazo($el);
-      
-      // 次の要素がexplanationの場合、その内容を追加
-      if ($nextEl && $nextEl.hasClass('explanation')) {
-        const explanationContent = this.convertInnerHTML($nextEl);
-        if (explanationContent) {
-          // :::の直前に説明文を挿入
-          result = result.replace(/\n:::$/, `\n\n${explanationContent}\n:::`);
-        }
-      }
-      
+      let result = this.convertGazo($el, $nextEl);
       return result;
     }
     
-    // explanation（説明文）- gazoの後に続く説明
+    // explanation（説明文）- gazoの後に続く説明（スキップされる）
     if (className === 'explanation') {
-      const content = this.convertInnerHTML($el);
-      return content; // ディレクティブで囲まず、そのまま出力
+      // convertElementの呼び出し側でスキップされるため、ここには到達しない
+      return '';
     }
     
     // ディレクティブ（top, middle, last, sup, lead）
@@ -250,7 +252,12 @@ ${body.trim()}`;
     
     // リスト
     if (tagName === 'ul' || tagName === 'ol') {
-      return this.convertList($el);
+      return this.convertList($el, tagName);
+    }
+    
+    // テーブル
+    if (tagName === 'table') {
+      return this.convertTable($el);
     }
     
     // その他のテキスト
@@ -262,7 +269,7 @@ ${body.trim()}`;
     return '';
   }
   
-  convertGazo($el) {
+  convertGazo($el, $nextEl = null) {
     const $imgs = $el.find('img');
     if ($imgs.length === 0) return '';
     
@@ -307,11 +314,26 @@ ${body.trim()}`;
     
     const imagePath = `/images/jh/${src}`;
     
-    return `:::gazo${sizeAttr}\n![](${imagePath})${captionText}\n:::`;
+    // 次の要素がexplanationの場合、入れ子にする
+    let explanationContent = '';
+    if ($nextEl && $nextEl.hasClass('explanation')) {
+      explanationContent = this.convertInnerHTML($nextEl);
+      if (explanationContent) {
+        // <br>を改行に変換（元のHTMLに<br>がある場合）
+        explanationContent = explanationContent.replace(/<br\s*\/?>/gi, '\n');
+        // :::explanationディレクティブとして追加（最後の:::は:::gazoと共有）
+        explanationContent = `:::explanation\n${explanationContent}\n`;
+      }
+    }
+    
+    // explanationがある場合、最後の:::はgazoとexplanation両方を閉じる
+    return `:::gazo${sizeAttr}\n![](${imagePath})${captionText}\n${explanationContent}:::`;
   }
   
-  convertList($el) {
+  convertList($el, tagName = 'ul') {
     const items = [];
+    const hasEnClass = $el.hasClass('en');
+    
     $el.children('li').each((i, li) => {
       const $li = this.$(li);
       
@@ -344,7 +366,73 @@ ${body.trim()}`;
         items.push(`- ${mainText}`);
       }
     });
-    return items.join('\n');
+    
+    const listContent = items.join('\n');
+    
+    // class="en"の場合は、:::list{class="en"}で囲む
+    // :::leadがある項目はremarkListClassesが自動で class="en"を付けるので、
+    // :::leadがない場合のみ:::listディレクティブを使用
+    const hasAnyLead = items.some(item => item.includes(':::lead'));
+    
+    if (hasEnClass && !hasAnyLead) {
+      return `:::list{class="en"}\n${listContent}\n:::`;
+    }
+    
+    return listContent;
+  }
+  
+  convertTable($el) {
+    const rows = [];
+    
+    // thead, tbody, または直接のtr要素を取得
+    let $rows = $el.find('tr');
+    if ($rows.length === 0) {
+      $rows = $el.children('tr');
+    }
+    
+    // 各行を変換
+    $rows.each((i, tr) => {
+      const $tr = this.$(tr);
+      const cells = [];
+      
+      $tr.find('td, th').each((j, cell) => {
+        const $cell = this.$(cell);
+        const content = this.convertInnerHTML($cell).trim();
+        cells.push(content);
+      });
+      
+      rows.push(cells);
+    });
+    
+    if (rows.length === 0) return '';
+    
+    // Markdownテーブル形式に変換
+    const mdTable = [];
+    
+    // HTMLにヘッダー行がない場合（すべて<td>）、自動でヘッダーを追加
+    const numColumns = rows[0].length;
+    const hasHeader = $el.find('th').length > 0;
+    
+    if (!hasHeader) {
+      // ヘッダー行を自動生成（列数に応じて「人物」「説明」など）
+      const headers = numColumns === 2 ? ['人物', '説明'] : Array(numColumns).fill('').map((_, i) => `列${i + 1}`);
+      mdTable.push('| ' + headers.join(' | ') + ' |');
+    } else {
+      // 既存のヘッダーを使用
+      mdTable.push('| ' + rows[0].join(' | ') + ' |');
+    }
+    
+    // セパレーター（中央寄せを最初のカラムに、左寄せを2列目以降に適用）
+    const separator = Array(numColumns).fill('').map((_, idx) => idx === 0 ? ':---:' : ':---');
+    mdTable.push('| ' + separator.join(' | ') + ' |');
+    
+    // データ行
+    const startRow = hasHeader ? 1 : 0;
+    for (let i = startRow; i < rows.length; i++) {
+      mdTable.push('| ' + rows[i].join(' | ') + ' |');
+    }
+    
+    return mdTable.join('\n');
   }
   
   convertInnerHTML($el) {
@@ -423,8 +511,14 @@ async function main() {
   
   const checker = new MDXRuleChecker();
   const skipFiles = ['jh_lessons1.html', 'jh_lessons2.html', 'jh_lessons3.html'];
+  const onlyConvert = null; // デバッグ用: nullなら全ファイル処理
   
   for (const htmlFile of htmlFiles) {
+    // デバッグ用: onlyConvertが設定されている場合、そのファイルのみ処理
+    if (onlyConvert && !onlyConvert.includes(htmlFile)) {
+      continue;
+    }
+    
     if (skipFiles.includes(htmlFile)) {
       console.log(`⏭️  スキップ: ${htmlFile} (既に変換済み)`);
       continue;

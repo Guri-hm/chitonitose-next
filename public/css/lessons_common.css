@@ -498,6 +498,7 @@ div.contents span.choice::after {
 	margin-right: auto;
 	padding: 5px;
 	margin-bottom: 30px;
+	text-align: left;
 }
 
 .explanation:first-line {
@@ -840,6 +841,40 @@ div.iframeWrapper iframe {
 
 .border-subject-color {
 	border-color: var(--subject-color) !important;
+}
+
+/* テーブルスタイル */
+.contents table {
+	width: 100%;
+	border-collapse: collapse;
+	border: 1px solid #dee2e6;
+	margin: 1rem 0;
+}
+
+.contents table th,
+.contents table td {
+	padding: 0.75rem;
+	border: 1px solid #dee2e6;
+}
+
+.contents table th {
+	background-color: #f8f9fa;
+	font-weight: 600;
+}
+
+.contents table td[align="center"],
+.contents table th[align="center"] {
+	text-align: center;
+}
+
+.contents table td[align="left"],
+.contents table th[align="left"] {
+	text-align: left;
+}
+
+.contents table td[align="right"],
+.contents table th[align="right"] {
+	text-align: right;
 }
 
 /* 3カラムレイアウト */

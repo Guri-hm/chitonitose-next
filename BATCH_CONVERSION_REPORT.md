@@ -41,6 +41,7 @@
 - `<div class="lead">` → `:::lead`
 - `<div class="arrow">` → `::arrow`
 - `<div class="gazo">` → `:::gazo`
+- `<div class="explanation">` → `:::explanation` **（2026年2月更新）**
 
 #### インライン構文変換
 - `<span class="all">用語</span>` → `[[用語]]`
@@ -57,6 +58,10 @@
 - サイズクラス: `half`, `twice`, `quarter` → `{size="..."}`
 - alt属性: 空に設定
 - 説明文: `<br>`区切りで画像下に配置
+- **画像説明ボックス**: `<div class="explanation">` → `:::explanation` ディレクティブで変換（2026年2月更新）
+  - `<div class="gazo">` + `<div class="explanation">` → `:::gazo` + `:::explanation` の連続ディレクティブ
+  - 改行は自動的に `<br/>` に変換される
+  - `text-align: left;` が CSS で適用される
 
 #### ネストディレクティブ
 - `<li>` 内の `<div class="last">` → インデントして `:::last` に変換

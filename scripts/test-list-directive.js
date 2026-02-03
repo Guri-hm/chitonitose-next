@@ -1,0 +1,47 @@
+const fs = require('fs');
+const path = require('path');
+
+// テスト用のMDXコンテンツ
+const testMdx = `---
+title: "リストディレクティブテスト"
+overview: ":::list{class=\\"en\\"}ディレクティブの動作確認"
+---
+
+## 通常のリスト（クラスなし）
+
+- 項目1
+- 項目2
+- 項目3
+
+## :::list{class="en"}ディレクティブ使用
+
+:::list{class="en"}
+- ヤマト政権の５人の王讃・珍・済・興・武（倭の五王）が、５世紀初めから約１世紀間、相次いで中国南朝に朝貢
+- 倭の五王の武が過去の征服事実（日本列島東の毛人もうじん・西の衆夷しゅういの平定、朝鮮半島南部の諸国の平定）を中国南朝に報告
+- 478年、武が安東大将軍の称号を中国南朝から獲得
+:::
+
+## :::leadディレクティブ使用（自動でclass="en"が付く）
+
+- 動物の変化
+  :::lead
+  大型動物が絶滅し、==中・小型動物が多く生息==
+  :::
+
+- 植生の変化
+  :::lead
+  寒冷な気候に適した==針葉樹林の分布が狭まり==、東日本に落葉広葉樹林、西日本に照葉樹林が分布
+  :::
+`;
+
+// テストファイルを作成
+const testFilePath = path.join(__dirname, '..', 'content', 'jh', 'lessons', 'test-list.md');
+fs.writeFileSync(testFilePath, testMdx, 'utf8');
+
+console.log('✅ テストファイルを作成しました:', testFilePath);
+console.log('\n次のステップ:');
+console.log('1. npm run dev を実行');
+console.log('2. http://localhost:3000/jh/lessons/test-list にアクセス');
+console.log('3. リストが正しく表示されるか確認');
+console.log('   - 2番目のリストに class="en" が付いているか');
+console.log('   - 3番目のリストにも class="en" が付いているか');
