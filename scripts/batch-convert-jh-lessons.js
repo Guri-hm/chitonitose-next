@@ -80,9 +80,22 @@ class MDXRuleChecker {
     }
     
     // 6. HTMLタグの直接使用チェック（ruby以外）
+    // 例外: リスト内の<div class="last">、<div class="middle">、<div class="top">は許可
     const htmlTags = mdxContent.match(/<(div|span)[^>]*class/g);
     if (htmlTags) {
-      this.errors.push(`HTMLタグの直接使用（ディレクティブを使うべき）: ${htmlTags.join(', ')}`);
+      // <div class="last">などが含まれているか確認（完全なタグ形式で検索）
+      const hasContinuationDiv = mdxContent.match(/<div class="(last|middle|top)"/);
+      
+      const invalidTags = htmlTags.filter(tag => {
+        // 許可されたdivタグかチェック（MDX内の完全な文脈で）
+        const tagStart = mdxContent.indexOf(tag);
+        const fullTag = mdxContent.substring(tagStart, tagStart + 30); // タグの最初の30文字
+        return !fullTag.match(/^<div class="(last|middle|top)"/);
+      });
+      
+      if (invalidTags.length > 0) {
+        this.errors.push(`HTMLタグの直接使用（ディレクティブを使うべき）: ${invalidTags.join(', ')}`);
+      }
     }
     
     // 7. <p>:::</p>を生成する可能性のあるパターンをチェック
@@ -346,7 +359,8 @@ ${body.trim()}`;
       
       // li内のテキストとネストされたdivを分離
       let mainText = '';
-      const nestedDivs = [];
+      const leadDivs = [];  // leadディレクティブのみ
+      const continuationDivs = [];  // last, middle, topなどはdivタグとして保持
       
       $li.contents().each((j, node) => {
         if (node.type === 'text') {
@@ -355,10 +369,20 @@ ${body.trim()}`;
           const $node = this.$(node);
           const className = $node.attr('class');
           
-          // ネストされたディレクティブ（lead, last, sup）
-          if (className?.match(/^(lead|last|sup)$/)) {
-            nestedDivs.push(this.convertElement($node));
-          } else {
+          // leadディレクティブのみネスト構造として保持
+          if (className === 'lead') {
+            leadDivs.push(this.convertElement($node));
+          }
+          // last, middle, topなどのクラスはdivタグとして保持（CSSの::beforeで記号が付く）
+          else if (className?.match(/^(last|middle|top)$/)) {
+            const content = this.convertInnerHTML($node);
+            continuationDivs.push(`<div class="${className}">${content}</div>`);
+          }
+          // supはネストディレクティブとして保持
+          else if (className === 'sup') {
+            leadDivs.push(this.convertElement($node));
+          }
+          else {
             mainText += this.convertInnerHTML($node);
           }
         }
@@ -366,12 +390,21 @@ ${body.trim()}`;
       
       mainText = mainText.trim();
       
-      if (nestedDivs.length > 0) {
-        const nested = nestedDivs.map(d => '  ' + d.split('\n').join('\n  ')).join('\n');
-        items.push(`- ${mainText}\n${nested}`);
-      } else {
-        items.push(`- ${mainText}`);
+      // メインテキスト + leadディレクティブ + 継続divの順で構築
+      let itemText = `- ${mainText}`;
+      
+      // 継続divを追加（改行なしで連結）
+      if (continuationDivs.length > 0) {
+        itemText += continuationDivs.join('');
       }
+      
+      // leadディレクティブを追加（改行してインデント）
+      if (leadDivs.length > 0) {
+        const nested = leadDivs.map(d => '  ' + d.split('\n').join('\n  ')).join('\n');
+        itemText += '\n' + nested;
+      }
+      
+      items.push(itemText);
     });
     
     const listContent = items.join('\n');
