@@ -4,15 +4,12 @@ import { useEffect } from 'react';
 
 export default function TermClickHandler() {
   useEffect(() => {
-    // Original chg() function from PHP site
+    // Handle click on .all elements to toggle red text visibility using CSS classes
     const handleTermClick = (event: MouseEvent) => {
       const target = event.target as HTMLElement;
       if (target && target.classList.contains('all')) {
-        if (target.style.color === 'rgb(255, 0, 0)' || target.style.color === 'red') {
-          target.style.color = '';
-        } else {
-          target.style.color = '#FF0000';
-        }
+        // Toggle 'show' class instead of using inline styles
+        target.classList.toggle('show');
       }
     };
 

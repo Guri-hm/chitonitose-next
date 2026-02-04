@@ -472,6 +472,15 @@ div.contents span.all {
 	cursor: pointer;
 }
 
+div.contents span.all.show {
+	color: #FF0000;
+}
+
+div.contents span.red-text {
+	color: #FF0000;
+	cursor: default;
+}
+
 div.contents span.true_choice,
 span.false_choice {
 	padding-left: 1em;

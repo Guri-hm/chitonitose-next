@@ -2,15 +2,14 @@
 
 /**
  * 答えの一括表示/非表示ボタンコンポーネント
- * 元HTMLのon()、off()関数を再実装
+ * クラス名の切り替えで表示/非表示を制御
  */
 export default function AnswerButtons() {
   // 答えの一括表示
   const showAllAnswers = () => {
     const allElements = document.querySelectorAll('.all');
     allElements.forEach(element => {
-      const htmlElement = element as HTMLElement;
-      htmlElement.style.color = '#FF0000';
+      element.classList.add('show');
     });
   };
 
@@ -18,8 +17,7 @@ export default function AnswerButtons() {
   const hideAllAnswers = () => {
     const allElements = document.querySelectorAll('.all');
     allElements.forEach(element => {
-      const htmlElement = element as HTMLElement;
-      htmlElement.style.color = '#FFFFFF';
+      element.classList.remove('show');
     });
   };
 
