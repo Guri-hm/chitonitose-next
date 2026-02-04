@@ -6,9 +6,9 @@ import LessonContent from '@/components/lessons/LessonContent';
 import { ImageGalleryProvider } from '@/contexts/ImageGalleryContext';
 
 interface LessonPageProps {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 }
 
 export async function generateMetadata({ params }: LessonPageProps): Promise<Metadata> {
