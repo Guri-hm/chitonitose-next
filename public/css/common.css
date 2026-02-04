@@ -290,7 +290,7 @@ h1 {
 
 ul.circle>li:before {
 	content: "●";
-	font-size: 0.7em;
+	font-size: 1em;
 	padding-left: 0.15em;
 	padding-right: 0.15em;
 }
