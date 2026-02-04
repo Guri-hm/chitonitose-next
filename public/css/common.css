@@ -289,9 +289,7 @@ h1 {
 }
 
 ul.circle>li:before {
-	font-family: "Font Awesome 6 Free";
-	font-weight: bold;
-	content: "\f111";
+	content: "●";
 	font-size: 0.7em;
 	padding-left: 0.15em;
 	padding-right: 0.15em;
@@ -311,15 +309,6 @@ h4+h5 {
 
 h5+h6 {
 	margin-top: 0;
-}
-
-h6:before {
-	font-family: "Font Awesome 6 Free";
-	font-weight: bold;
-	content: "\f111";
-	font-size: 0.7em;
-	padding-left: 0.15em;
-	padding-right: 0.15em;
 }
 
 h6 {

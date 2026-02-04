@@ -9,6 +9,7 @@ import TOC from '@/components/lessons/TOC';
 import TermClickHandler from '@/components/lessons/TermClickHandler';
 import ImageClickHandler from '@/components/lessons/ImageClickHandler';
 import TableOfContents from '@/components/lessons/TableOfContents';
+import NotationGuide from '@/components/lessons/NotationGuide';
 
 interface LessonPageProps {
   params: Promise<{
@@ -83,6 +84,9 @@ export default async function JHLessonPage({ params }: LessonPageProps) {
             <>
               {/* 答えの一括表示/非表示ボタン */}
               <AnswerButtons />
+              
+              {/* 表記説明 */}
+              <NotationGuide />
               
               {/* 概要 */}
               {mdxData.frontmatter.overview && (

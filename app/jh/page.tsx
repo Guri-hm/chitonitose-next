@@ -55,6 +55,76 @@ const jhCategories = [
   },
 ];
 
+// 復習・演習セクション
+const reviewSections = [
+  {
+    title: '短期攻略',
+    image: '/share/img/omnibus.svg',
+    items: [
+      { title: '旧石器時代～弥生時代', href: '/jh/omnibus/1' },
+      { title: '古墳時代', href: '/jh/omnibus/2' },
+      { title: '飛鳥時代', href: '/jh/omnibus/3' },
+      { title: '奈良時代', href: '/jh/omnibus/4' },
+      { title: '平安時代①', href: '/jh/omnibus/5' },
+      { title: '平安時代②', href: '/jh/omnibus/6' },
+      { title: '鎌倉時代①', href: '/jh/omnibus/7' },
+      { title: '鎌倉時代②', href: '/jh/omnibus/8' },
+      { title: '室町時代①', href: '/jh/omnibus/9' },
+      { title: '室町時代②', href: '/jh/omnibus/10' },
+      { title: '戦国時代', href: '/jh/omnibus/11' },
+      { title: '江戸時代①', href: '/jh/omnibus/12' },
+      { title: '江戸時代②', href: '/jh/omnibus/13' },
+      { title: '江戸時代③', href: '/jh/omnibus/14' },
+      { title: '江戸時代④', href: '/jh/omnibus/15' },
+      { title: '江戸時代⑤', href: '/jh/omnibus/16' },
+      { title: '明治時代①', href: '/jh/omnibus/17' },
+      { title: '明治時代②', href: '/jh/omnibus/18' },
+      { title: '明治時代③', href: '/jh/omnibus/19' },
+      { title: '明治時代④（明治の内閣）', href: '/jh/omnibus/20' },
+      { title: '大正時代①（大正の内閣）', href: '/jh/omnibus/21' },
+      { title: '大正時代②', href: '/jh/omnibus/22' },
+      { title: '昭和時代①', href: '/jh/omnibus/23' },
+      { title: '昭和時代②', href: '/jh/omnibus/24' },
+      { title: '昭和時代③', href: '/jh/omnibus/25' },
+      { title: '戦後史①', href: '/jh/omnibus/26' },
+    ],
+  },
+  {
+    title: 'テーマ史',
+    image: '/share/img/omnibus.svg',
+    items: [
+      { title: '文化史（飛鳥文化～室町文化）', href: '/jh/cultural-history/1' },
+      { title: '文化史（桃山文化～化政文化）', href: '/jh/cultural-history/2' },
+      { title: '文化史（明治～現代）', href: '/jh/cultural-history/3' },
+      { title: '農業・産業史', href: '/jh/agriculture-industrial-history' },
+    ],
+  },
+  {
+    title: '一問一答',
+    image: '/share/img/test.svg',
+    items: [
+      { title: '旧石器時代', href: '/jh/q-a/1' },
+      { title: '古墳時代', href: '/jh/q-a/2' },
+      { title: '奈良時代', href: '/jh/q-a/3' },
+      { title: '平安時代', href: '/jh/q-a/4' },
+      { title: '平安時代（院政期）', href: '/jh/q-a/5' },
+      { title: '鎌倉時代', href: '/jh/q-a/6' },
+      { title: '建武の新政', href: '/jh/q-a/7' },
+      { title: '室町時代', href: '/jh/q-a/8' },
+      { title: '戦国時代・安土桃山時代', href: '/jh/q-a/9' },
+      { title: '江戸時代', href: '/jh/q-a/10' },
+      { title: '江戸時代（動揺期）', href: '/jh/q-a/11' },
+      { title: '江戸時代（幕末）', href: '/jh/q-a/12' },
+      { title: '明治時代', href: '/jh/q-a/13' },
+      { title: '明治時代（憲法発布後）', href: '/jh/q-a/14' },
+      { title: '大正時代', href: '/jh/q-a/15' },
+      { title: '昭和（戦前）', href: '/jh/q-a/16' },
+      { title: '昭和（占領期）', href: '/jh/q-a/17' },
+      { title: '昭和（独立後）', href: '/jh/q-a/18' },
+    ],
+  },
+];
+
 export default async function JapaneseHistory() {
   const pages = await loadSubjectPages(2); // 2 = 日本史
 
@@ -107,6 +177,28 @@ export default async function JapaneseHistory() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* 復習・演習セクション */}
+        <div className="lessons">
+          <h2>復習・演習</h2>
+          <div className="outer-block clearfix">
+            {reviewSections.map((section) => (
+              <dl key={section.title} className="inner-block">
+                <img src={section.image} alt={section.title} />
+                <div>
+                  <dt className="ribbon">{section.title}</dt>
+                  <ul>
+                    {section.items.map((item) => (
+                      <li key={item.href}>
+                        <Link href={item.href}>{item.title}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </dl>
+            ))}
+          </div>
         </div>
       </div>
     </>
