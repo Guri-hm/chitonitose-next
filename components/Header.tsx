@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import ThemeSwitch from './ui/ThemeSwitch';
@@ -82,7 +83,7 @@ export default function Header() {
       <div className="inner">
         <div id="mobile-head">
           <div id="head-logo">
-            <a href="/">
+            <Link href="/">
               <Image 
                 src="/images/share/header-logo.png" 
                 alt="ちとにとせ"
@@ -90,7 +91,7 @@ export default function Header() {
                 height={50}
                 className={mounted && isFixed ? 'smaller' : ''}
               />
-            </a>
+            </Link>
           </div>
           <div id="nav-toggle" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
             <div>
@@ -104,28 +105,28 @@ export default function Header() {
         <nav id="global-nav" className={mobileMenuOpen ? 'open' : ''}>
           <ul>
             <li>
-              <a href="/">
+              <Link href="/">
                 <div className="first-line">トップ</div>
                 <div className="second-line">Top</div>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/geo">
+              <Link href="/geo">
                 <div className="first-line">地理</div>
                 <div className="second-line">Geography</div>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/jh">
+              <Link href="/jh">
                 <div className="first-line">日本史</div>
                 <div className="second-line">Japanese history</div>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/wh">
+              <Link href="/wh">
                 <div className="first-line">世界史</div>
                 <div className="second-line">World history</div>
-              </a>
+              </Link>
             </li>
             <li>
               <a href="/charts">

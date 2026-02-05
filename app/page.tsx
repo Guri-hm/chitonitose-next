@@ -1,4 +1,5 @@
 import { loadNews, loadDataIndex } from '@/lib/dataLoader';
+import Link from 'next/link';
 import Image from 'next/image';
 import './page.css';
 
@@ -48,7 +49,7 @@ export default async function Home() {
           />
           <p>科目ごとのページはこちらです。学習する科目を選んでください。</p>
           <div className="icon-group">
-            <a href="/geo" className="icon-wrapper">
+            <Link href="/geo" className="icon-wrapper">
               <div className="guide-icon bg-white">
                 <Image 
                   src="/images/share/study-icon-geo.svg" 
@@ -58,8 +59,8 @@ export default async function Home() {
                 />
               </div>
               <div className="icon-label">地理</div>
-            </a>
-            <a href="/jh" className="icon-wrapper">
+            </Link>
+            <Link href="/jh" className="icon-wrapper">
               <div className="guide-icon bg-white">
                 <Image 
                   src="/images/share/study-icon-jh.svg" 
@@ -69,8 +70,8 @@ export default async function Home() {
                 />
               </div>
               <div className="icon-label">日本史</div>
-            </a>
-            <a href="/wh" className="icon-wrapper">
+            </Link>
+            <Link href="/wh" className="icon-wrapper">
               <div className="guide-icon bg-white">
                 <Image 
                   src="/images/share/study-icon-wh.svg" 
@@ -80,7 +81,7 @@ export default async function Home() {
                 />
               </div>
               <div className="icon-label">世界史</div>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

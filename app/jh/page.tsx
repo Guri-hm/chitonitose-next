@@ -50,7 +50,8 @@ const jhCategories = [
     sections: [
       { period: '昭和時代（戦前）', image: '/share/img/tokko.jpg', start: 146, end: 158 },
       { period: '昭和時代（占領期）', image: '/share/img/senryo.jpg', start: 159, end: 165 },
-      { period: '昭和時代（独立後）', image: '/share/img/anpo.jpg', start: 166, end: 172 },
+      { period: '昭和時代（独立後）', image: '/share/img/anpo.jpg', start: 166, end: 169 },
+      { period: '平成', image: '/share/img/heisei.jpg', start: 170, end: 170 },
     ],
   },
 ];
@@ -125,6 +126,26 @@ const reviewSections = [
   },
 ];
 
+// その他のセクション
+const otherSections = [
+  {
+    title: 'PDFの配布',
+    image: '/share/img/print.gif',
+    items: [
+      { title: '授業プリント', href: '/jh/print' },
+    ],
+  },
+  {
+    title: '役立つコンテンツ',
+    image: '/share/img/test.gif',
+    items: [
+      { title: '旧国名', href: '/jh/old-country-name' },
+      { title: '歴代首相', href: '/jh/cabinet' },
+      { title: '組閣中の出来事', href: '/jh/cabinet-events' },
+    ],
+  },
+];
+
 export default async function JapaneseHistory() {
   const pages = await loadSubjectPages(2); // 2 = 日本史
 
@@ -184,6 +205,28 @@ export default async function JapaneseHistory() {
           <h2>復習・演習</h2>
           <div className="outer-block clearfix">
             {reviewSections.map((section) => (
+              <dl key={section.title} className="inner-block">
+                <img src={section.image} alt={section.title} />
+                <div>
+                  <dt className="ribbon">{section.title}</dt>
+                  <ul>
+                    {section.items.map((item) => (
+                      <li key={item.href}>
+                        <Link href={item.href}>{item.title}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </dl>
+            ))}
+          </div>
+        </div>
+
+        {/* その他セクション */}
+        <div className="lessons">
+          <h2>その他</h2>
+          <div className="outer-block clearfix">
+            {otherSections.map((section) => (
               <dl key={section.title} className="inner-block">
                 <img src={section.image} alt={section.title} />
                 <div>

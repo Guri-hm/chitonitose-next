@@ -1,5 +1,5 @@
 {
-  "generated": "2026-01-26T13:57:12.351Z",
+  "generated": "2026-02-05T04:53:48.064Z",
   "database": "data.sqlite3",
   "files": {
     "basic": [
@@ -43,7 +43,7 @@
   "counts": {
     "nations": 251,
     "cities": 315,
-    "pages": 409,
+    "pages": 410,
     "news": 35
   }
 }

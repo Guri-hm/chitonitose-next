@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BodyClassManager from "@/components/BodyClassManager";
+import { ImageGalleryProvider } from "@/contexts/ImageGalleryContext";
 
 export const metadata: Metadata = {
   title: "ちとにとせ｜地理と日本史と世界史のまとめサイト",
@@ -23,12 +24,14 @@ export default function RootLayout({
         <link href="/css/common.css" rel="stylesheet" type="text/css" />
       </head>
       <body suppressHydrationWarning>
-        <BodyClassManager />
-        <Header />
-        <main>
-          {children}
-        </main>
-        <Footer />
+        <ImageGalleryProvider>
+          <BodyClassManager />
+          <Header />
+          <main>
+            {children}
+          </main>
+          <Footer />
+        </ImageGalleryProvider>
         <script src="/js/common.js"></script>
       </body>
     </html>

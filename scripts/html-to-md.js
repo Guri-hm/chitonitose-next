@@ -151,10 +151,10 @@ function convertHtmlToMarkdown(htmlPath) {
         i++;
       }
       
-      result.push('::gazo');
+      result.push(':::gazo');
       if (img) result.push(img);
       if (caption) result.push(caption);
-      result.push('::');
+      result.push(':::');
       i++;
       continue;
     }
@@ -177,11 +177,11 @@ function convertHtmlToMarkdown(htmlPath) {
         i++;
       }
       
-      result.push('::double');
+      result.push(':::double');
       if (textLines.length > 0) result.push(textLines.join('\n'));
       result.push('---image---');
       if (img) result.push(img);
-      result.push('::');
+      result.push(':::');
       i++; // </div>
       continue;
     }
@@ -194,9 +194,9 @@ function convertHtmlToMarkdown(htmlPath) {
       // 同じ行に</div>
       if (content.endsWith('</div>')) {
         content = content.replace('</div>', '');
-        result.push('::' + type);
+        result.push(':::' + type);
         result.push(processLeadDiv(content));
-        result.push('::');
+        result.push(':::');
         i++;
         continue;
       }
@@ -218,9 +218,9 @@ function convertHtmlToMarkdown(htmlPath) {
       
       // 結合して処理
       const fullText = allLines.join('');
-      result.push('::' + type);
+      result.push(':::' + type);
       result.push(processLeadDiv(fullText));
-      result.push('::');
+      result.push(':::');
       i++;
       continue;
     }

@@ -2,6 +2,7 @@ import fs from 'fs/promises';
 import path from 'path';
 import { compileMDX } from 'next-mdx-remote/rsc';
 import matter from 'gray-matter';
+import type { Pluggable } from 'unified';
 import { remarkPlugins, rehypePlugins } from './mdx-config.mjs';
 import { remarkToc } from './remark-toc.mjs';
 import remarkGfm from 'remark-gfm';
@@ -36,6 +37,9 @@ export async function getMDXLesson(subject: string, lessonId: string): Promise<L
     if (subject === 'geo') {
       // 地理はファイル名ベース
       filePath = path.join(contentDir, subject, `${lessonId}.md`);
+    } else if (subject.includes('/')) {
+      // スラッシュを含む場合（jh/omnibus, jh/cultural-historyなど）
+      filePath = path.join(contentDir, subject, `${lessonId}.md`);
     } else {
       // 日本史・世界史は番号ベース
       filePath = path.join(contentDir, subject, 'lessons', `${lessonId}.md`);
@@ -57,8 +61,8 @@ export async function getMDXLesson(subject: string, lessonId: string): Promise<L
       options: {
         parseFrontmatter: false,
         mdxOptions: {
-          remarkPlugins,
-          rehypePlugins,
+          remarkPlugins: remarkPlugins as Pluggable[],
+          rehypePlugins: rehypePlugins as Pluggable[],
         },
       },
     });

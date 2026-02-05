@@ -72,11 +72,18 @@ export default async function JHLessonPage({ params }: LessonPageProps) {
 
   return (
     <>
-      <link rel="stylesheet" href="/css/common.css" />
       <link rel="stylesheet" href="/css/jh.css" />
-      <link rel="stylesheet" href="/css/lessons_common.css" />
+      <link rel="stylesheet" href="/css/content_common.css" />
       
-      <ThreeColumnLayout subject="jh" currentLessonNo={lessonNo} pages={pages} title={lesson.title}>
+      <ThreeColumnLayout 
+        subject="jh" 
+        currentLessonNo={lessonNo} 
+        currentSection="lessons"
+        pages={pages} 
+        title={lesson.title}
+        prevLesson={prevLesson ? { no: prevLesson.no, title: prevLesson.title, href: `/jh/lessons/${prevLesson.no}` } : undefined}
+        nextLesson={nextLesson ? { no: nextLesson.no, title: nextLesson.title, href: `/jh/lessons/${nextLesson.no}` } : undefined}
+      >
         <TermClickHandler />
         <ImageClickHandler />
         <div id="toc-range" className="contents">

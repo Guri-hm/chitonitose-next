@@ -61,7 +61,6 @@ export default async function WHLessonPage({ params }: LessonPageProps) {
 
   return (
     <ImageGalleryProvider>
-      <link rel="stylesheet" href="/css/subject.css" />
       <link rel="stylesheet" href="/css/wh.css" />
       
       <LessonContent

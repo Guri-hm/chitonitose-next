@@ -15,7 +15,6 @@ export interface LessonData {
  */
 function parseCustomMarkdown(markdown: string, subject: string): string {
   // scripts/markdown-to-html.js をrequireで読み込み
-  // eslint-disable-next-line @typescript-eslint/no-var-requires
   const { parseCustomMarkdown: parser } = require('../scripts/markdown-to-html.js');
   return parser(markdown, subject);
 }

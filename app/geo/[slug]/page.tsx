@@ -72,7 +72,6 @@ export default async function GeoLessonPage({ params }: LessonPageProps) {
 
   return (
     <>
-      <link rel="stylesheet" href="/css/subject.css" />
       <link rel="stylesheet" href="/css/geo.css" />
       
       <LessonContent

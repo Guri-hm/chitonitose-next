@@ -136,6 +136,27 @@ export async function loadSubjectPages(subject: number): Promise<PageInfo[]> {
   const allPages = await loadPages();
   return allPages.filter(page => page.subject === subject);
 }
+
+/**
+ * アコーディオンメニュー用のページ情報を取得
+ * @param subject - 科目コード ('jh' | 'wh' | 'geo')
+ */
+export async function getPages(subject: 'jh' | 'wh' | 'geo'): Promise<Array<{ no: number; title: string }>> {
+  const subjectMap: Record<string, number> = {
+    wh: 1, // 世界史
+    jh: 2, // 日本史
+    geo: 3, // 地理
+  };
+  
+  const subjectId = subjectMap[subject];
+  const pages = await loadSubjectPages(subjectId);
+  
+  return pages.map(page => ({
+    no: page.no,
+    title: page.title,
+  }));
+}
+
 export const loadNations = () => loadJSON<Nation[]>('nations.json');
 export const loadCities = () => loadJSON<City[]>('cities.json');
 export const loadClimateClassifications = () => loadJSON<ClimateClassification[]>('climate-classifications.json');

@@ -2,26 +2,40 @@
 
 import { useState } from 'react';
 import { ListIcon } from '@/components/ui/Icons';
-import AccordionMenu from './AccordionMenu';
+import EnhancedAccordionMenu from './EnhancedAccordionMenu';
 
 interface Page {
   no: number;
   title: string;
 }
 
+interface LessonNavigation {
+  no: number;
+  title: string;
+  href: string;
+}
+
 interface ThreeColumnLayoutProps {
   subject: 'jh' | 'wh' | 'geo';
-  currentLessonNo: number;
+  currentLessonNo?: number;
+  currentSection?: 'lessons' | 'omnibus' | 'cultural-history' | 'q-a';
+  currentItemId?: number | string;
   pages: Page[];
   title: string;
+  prevLesson?: LessonNavigation;
+  nextLesson?: LessonNavigation;
   children: React.ReactNode;
 }
 
 export default function ThreeColumnLayout({
   subject,
   currentLessonNo,
+  currentSection = 'lessons',
+  currentItemId,
   pages,
   title,
+  prevLesson,
+  nextLesson,
   children
 }: ThreeColumnLayoutProps) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -54,10 +68,12 @@ export default function ThreeColumnLayout({
               <h2>{subjectNames[subject]}コンテンツ一覧</h2>
               <button onClick={() => setIsSidebarOpen(false)} aria-label="閉じる">×</button>
             </div>
-            <AccordionMenu 
+            <EnhancedAccordionMenu 
               subject={subject} 
               pages={pages} 
-              currentLessonNo={currentLessonNo} 
+              currentLessonNo={currentLessonNo}
+              currentSection={currentSection}
+              currentItemId={currentItemId}
             />
           </div>
         </div>
@@ -69,10 +85,12 @@ export default function ThreeColumnLayout({
         <aside className="left-column">
           <div className="sidebar-sticky">
             <h2 className="sidebar-title">{subjectNames[subject]}コンテンツ一覧</h2>
-            <AccordionMenu 
+            <EnhancedAccordionMenu 
               subject={subject} 
               pages={pages} 
-              currentLessonNo={currentLessonNo} 
+              currentLessonNo={currentLessonNo}
+              currentSection={currentSection}
+              currentItemId={currentItemId}
             />
           </div>
         </aside>
@@ -80,6 +98,26 @@ export default function ThreeColumnLayout({
         {/* 中央カラム：メインコンテンツ */}
         <main className="center-column">
           {children}
+          
+          {/* ページネーション（前後のページへのリンク） */}
+          {(prevLesson || nextLesson) && (
+            <div className="pagination">
+              {prevLesson ? (
+                <a href={prevLesson.href} className="prev-link">
+                  ← {prevLesson.no}. {prevLesson.title}
+                </a>
+              ) : (
+                <span className="prev-link disabled"></span>
+              )}
+              {nextLesson ? (
+                <a href={nextLesson.href} className="next-link">
+                  {nextLesson.no}. {nextLesson.title} →
+                </a>
+              ) : (
+                <span className="next-link disabled"></span>
+              )}
+            </div>
+          )}
         </main>
 
         {/* 右カラム：広告・その他（将来用） */}

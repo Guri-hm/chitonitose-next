@@ -179,3 +179,173 @@
     font-size: 0.85rem;
   }
 }
+
+/* ===== 拡張アコーディオンメニュー用のスタイル ===== */
+
+/* セクション（本編、短期攻略など） */
+.accordion-section {
+  border-bottom: 1px solid #dee2e6;
+}
+
+.accordion-section:last-child {
+  border-bottom: none;
+}
+
+/* セクションヘッダー（本編、短期攻略など） */
+.accordion-section > .accordion-header {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: left;
+  color: #212529;
+  background-color: #f8f9fa;
+  border: none;
+  border-bottom: 1px solid #dee2e6;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.accordion-section > .accordion-header:hover {
+  background-color: #e9ecef;
+}
+
+.accordion-section > .accordion-header .accordion-title {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.accordion-arrow {
+  font-size: 1.2rem;
+  color: #6c757d;
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+.accordion-arrow.open {
+  transform: rotate(180deg);
+}
+
+/* 時代セクション（原始・古代など） */
+.era-section {
+  border-bottom: 1px solid #f1f3f5;
+}
+
+.era-section:last-child {
+  border-bottom: none;
+}
+
+.era-header {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-align: left;
+  color: #495057;
+  background-color: #fafbfc;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.era-header:hover {
+  background-color: #f1f3f5;
+}
+
+.era-header span:first-child {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.era-arrow {
+  font-size: 1rem;
+  color: #6c757d;
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+.era-arrow.open {
+  transform: rotate(90deg);
+}
+
+/* レッスンリスト */
+.lesson-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lesson-list li {
+  border-bottom: 1px solid #f8f9fa;
+}
+
+.lesson-list li:last-child {
+  border-bottom: none;
+}
+
+.lesson-list a {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 2rem;
+  color: #495057;
+  text-decoration: none;
+  border-left: 3px solid transparent;
+  transition: all 0.15s ease-in-out;
+}
+
+.lesson-list a:hover {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.lesson-list a.active {
+  background-color: var(--active-bg, #e7f3ff);
+  color: var(--active-text, #0056b3);
+  font-weight: 500;
+  border-left: 3px solid var(--active-border, #0056b3);
+}
+
+.lesson-list .lesson-no {
+  min-width: 3rem;
+  padding: 0.25rem 0.5rem;
+  font-weight: 600;
+  color: #6c757d;
+  background-color: #f1f3f5;
+  border-radius: 0.25rem;
+  margin-right: 0.75rem;
+  text-align: center;
+}
+
+.lesson-list a.active .lesson-no {
+  background-color: var(--active-text, #0056b3);
+  color: #fff;
+}
+
+.lesson-list .lesson-title {
+  flex: 1;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+/* アニメーション */
+.accordion-content {
+  animation: slideDown 0.2s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 2000px;
+  }
+}
+
