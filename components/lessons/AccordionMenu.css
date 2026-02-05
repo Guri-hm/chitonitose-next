@@ -82,11 +82,12 @@
 }
 
 .accordion-title {
+  font-size: 1.6rem;
   flex: 1;
 }
 
 .accordion-icon {
-  font-size: 1.25rem;
+  font-size: 1.6rem;
   font-weight: bold;
   color: #6c757d;
   min-width: 1.5rem;
