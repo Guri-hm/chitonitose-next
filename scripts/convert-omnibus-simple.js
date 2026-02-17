@@ -15,7 +15,11 @@ const path = require('path');
  */
 
 function convertOmnibusHtml(htmlPath) {
-  const html = fs.readFileSync(htmlPath, 'utf-8');
+  let html = fs.readFileSync(htmlPath, 'utf-8');
+  
+  // **前処理**: ネストしたdivをspanに置換（MDXではディレクティブ内にブロック要素を入れられない）
+  // シンプルな戦略：<div class="last|lead|middle|sup">...</div> のペアをまとめて置換
+  html = html.replace(/<div class="(last|lead|middle|sup)">([^]*?)<\/div>/g, '<span class="$1">$2</span>');
   
   // コンテンツ部分を抽出
   const match = html.match(/<div id='toc-range'[^>]*>([\s\S]*?)<\/div><!-- \/contents -->/);

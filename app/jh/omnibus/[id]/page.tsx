@@ -103,7 +103,7 @@ export default async function OmnibusPage({ params }: OmnibusPageProps) {
       <ThreeColumnLayout
         subject="jh"
         pages={pages}
-        title="日本史 短期攻略"
+        title={mdxData?.frontmatter.title || omnibus.title}
         currentSection="omnibus"
         currentItemId={omnibusId}
         prevLesson={prevOmnibus ? { no: prevOmnibus.id, title: prevOmnibus.title, href: `/jh/omnibus/${prevOmnibus.id}` } : undefined}

@@ -98,26 +98,6 @@ export default function ThreeColumnLayout({
         {/* 中央カラム：メインコンテンツ */}
         <main className="center-column">
           {children}
-          
-          {/* ページネーション（前後のページへのリンク） */}
-          {(prevLesson || nextLesson) && (
-            <div className="pagination">
-              {prevLesson ? (
-                <a href={prevLesson.href} className="prev-link">
-                  ← {prevLesson.no}. {prevLesson.title}
-                </a>
-              ) : (
-                <span className="prev-link disabled"></span>
-              )}
-              {nextLesson ? (
-                <a href={nextLesson.href} className="next-link">
-                  {nextLesson.no}. {nextLesson.title} →
-                </a>
-              ) : (
-                <span className="next-link disabled"></span>
-              )}
-            </div>
-          )}
         </main>
 
         {/* 右カラム：広告・その他（将来用） */}

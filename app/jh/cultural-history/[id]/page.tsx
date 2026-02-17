@@ -80,7 +80,7 @@ export default async function CulturalHistoryPage({ params }: CulturalHistoryPag
       <ThreeColumnLayout
         subject="jh"
         pages={pages}
-        title="日本史 テーマ史"
+        title={mdxData?.frontmatter.title || history.title}
         currentSection="cultural-history"
         currentItemId={historyId}
         prevLesson={prevHistory ? { no: prevHistory.id, title: prevHistory.title, href: `/jh/cultural-history/${prevHistory.id}` } : undefined}
