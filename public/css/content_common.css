@@ -179,6 +179,34 @@ div.contents>ul {
 	padding-left: 1em;
 }
 
+/* div.contents直下のulは丸数字連番リストとして扱う（ul.enと同じ） */
+div.contents>ul li,
+div.contents .markdown-content>ul li {
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+div.contents>ul li:first-child:before,
+div.contents .markdown-content>ul li:first-child:before { content: "\2460"; }
+div.contents>ul li:first-child+li:before,
+div.contents .markdown-content>ul li:first-child+li:before { content: "\2461"; }
+div.contents>ul li:first-child+li+li:before,
+div.contents .markdown-content>ul li:first-child+li+li:before { content: "\2462"; }
+div.contents>ul li:first-child+li+li+li:before,
+div.contents .markdown-content>ul li:first-child+li+li+li:before { content: "\2463"; }
+div.contents>ul li:first-child+li+li+li+li:before,
+div.contents .markdown-content>ul li:first-child+li+li+li+li:before { content: "\2464"; }
+div.contents>ul li:first-child+li+li+li+li+li:before,
+div.contents .markdown-content>ul li:first-child+li+li+li+li+li:before { content: "\2465"; }
+div.contents>ul li:first-child+li+li+li+li+li+li:before,
+div.contents .markdown-content>ul li:first-child+li+li+li+li+li+li:before { content: "\2466"; }
+div.contents>ul li:first-child+li+li+li+li+li+li+li:before,
+div.contents .markdown-content>ul li:first-child+li+li+li+li+li+li+li:before { content: "\2467"; }
+div.contents>ul li:first-child+li+li+li+li+li+li+li+li:before,
+div.contents .markdown-content>ul li:first-child+li+li+li+li+li+li+li+li:before { content: "\2468"; }
+div.contents>ul li:first-child+li+li+li+li+li+li+li+li+li:before,
+div.contents .markdown-content>ul li:first-child+li+li+li+li+li+li+li+li+li:before { content: "\2469"; }
+
 div.contents div.gazo img.half {
 	width: 150px;
 }

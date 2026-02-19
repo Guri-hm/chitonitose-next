@@ -193,7 +193,21 @@ function convertHtmlToMarkdown(htmlPath) {
       
       // 同じ行に</div>
       if (content.endsWith('</div>')) {
-        content = content.replace('</div>', '');
+        // 入れ子<div class="lead">がある場合、末尾の</div>は内側のleadタグのもの
+        // なのでcontentをそのままprocessLeadDivに渡し、次行の</div>を消費する
+        if (content.includes('<div class="lead">')) {
+          // 内側のleadタグ含むケース: contentの末尾</div>はleadの閉じタグ
+          result.push(':::' + type);
+          result.push(processLeadDiv(content));
+          result.push(':::');
+          i++;
+          // 次行が</div>（外側の閉じタグ）なら消費する
+          if (i < lines.length && lines[i].trim() === '</div>') {
+            i++;
+          }
+          continue;
+        }
+        content = content.slice(0, content.lastIndexOf('</div>'));
         result.push(':::' + type);
         result.push(processLeadDiv(content));
         result.push(':::');
