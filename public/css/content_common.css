@@ -267,6 +267,10 @@ div.contents div.arrow:before {
 	content: "▼";
 }
 
+div.contents div.blank {
+	height: 1em;
+}
+
 div.contents div.gazo {
 	margin-top: 10px;
 	margin-bottom: 20px;

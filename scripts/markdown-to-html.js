@@ -68,6 +68,13 @@ function parseCustomMarkdown(markdown, subject = '') {
       continue;
     }
     
+    // 空行スペーサー
+    if (line === '::blank') {
+      result.push('<br />');
+      i++;
+      continue;
+    }
+    
     // ::double ブロック
     if (line === '::double') {
       const content = [];
