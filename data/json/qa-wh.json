@@ -1,0 +1,74 @@
+[
+  {
+    "subject_id": 1,
+    "unit_id": 2,
+    "page_no": 19,
+    "id": 1,
+    "question": "秦が滅亡するきっかけとなった農民反乱を指揮した人物を２人答えよ。",
+    "answer": "陳勝・呉広",
+    "image1": null,
+    "image2": null,
+    "image3": null,
+    "image4": null
+  },
+  {
+    "subject_id": 1,
+    "unit_id": 2,
+    "page_no": 20,
+    "id": 1,
+    "question": "前154年、漢の高祖の死後に皇帝と諸王が衝突した出来事は何か。",
+    "answer": "呉楚七国の乱",
+    "image1": null,
+    "image2": null,
+    "image3": null,
+    "image4": null
+  },
+  {
+    "subject_id": 1,
+    "unit_id": 2,
+    "page_no": 20,
+    "id": 2,
+    "question": "武帝が始めた、地方長官の推薦で官吏を選任する人事制度は何か。",
+    "answer": "郷挙里選",
+    "image1": null,
+    "image2": null,
+    "image3": null,
+    "image4": null
+  },
+  {
+    "subject_id": 1,
+    "unit_id": 10,
+    "page_no": 51,
+    "id": 1,
+    "question": "1497～98年、イギリス王の援助で北アメリカを探検したイタリア人は誰か。",
+    "answer": "カボット",
+    "image1": null,
+    "image2": null,
+    "image3": null,
+    "image4": null
+  },
+  {
+    "subject_id": 1,
+    "unit_id": 10,
+    "page_no": 51,
+    "id": 2,
+    "question": "1500年、ブラジルに漂着した人物は誰か。",
+    "answer": "カブラル",
+    "image1": null,
+    "image2": null,
+    "image3": null,
+    "image4": null
+  },
+  {
+    "subject_id": 1,
+    "unit_id": 10,
+    "page_no": 53,
+    "id": 1,
+    "question": "ドイツ農民戦争において、農奴制の廃止など十二カ条の要求を掲げた指導者は誰か。",
+    "answer": "ミュンツァー",
+    "image1": null,
+    "image2": null,
+    "image3": null,
+    "image4": null
+  }
+]

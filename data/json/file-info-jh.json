@@ -1,0 +1,832 @@
+[
+  {
+    "unit_id": 1,
+    "page_no": 1,
+    "title": "日本史の始まり"
+  },
+  {
+    "unit_id": 1,
+    "page_no": 2,
+    "title": "縄文文化の成立"
+  },
+  {
+    "unit_id": 1,
+    "page_no": 3,
+    "title": "弥生文化の成立"
+  },
+  {
+    "unit_id": 1,
+    "page_no": 4,
+    "title": "クニと邪馬台国"
+  },
+  {
+    "unit_id": 2,
+    "page_no": 5,
+    "title": "古墳とヤマト政権"
+  },
+  {
+    "unit_id": 2,
+    "page_no": 6,
+    "title": "東アジアのヤマト政権"
+  },
+  {
+    "unit_id": 2,
+    "page_no": 7,
+    "title": "古墳時代の生活"
+  },
+  {
+    "unit_id": 2,
+    "page_no": 8,
+    "title": "ヤマト政権の体制と仏教公伝"
+  },
+  {
+    "unit_id": 2,
+    "page_no": 9,
+    "title": "ヤマト政権の新たな外交"
+  },
+  {
+    "unit_id": 2,
+    "page_no": 10,
+    "title": "飛鳥文化"
+  },
+  {
+    "unit_id": 3,
+    "page_no": 11,
+    "title": "大化改新"
+  },
+  {
+    "unit_id": 3,
+    "page_no": 12,
+    "title": "ヤマト政権から日本へ"
+  },
+  {
+    "unit_id": 3,
+    "page_no": 13,
+    "title": "白鳳文化"
+  },
+  {
+    "unit_id": 3,
+    "page_no": 14,
+    "title": "律令国家"
+  },
+  {
+    "unit_id": 3,
+    "page_no": 15,
+    "title": "民衆と税制度"
+  },
+  {
+    "unit_id": 3,
+    "page_no": 16,
+    "title": "人々の往来"
+  },
+  {
+    "unit_id": 3,
+    "page_no": 17,
+    "title": "拡大する東と西の境界"
+  },
+  {
+    "unit_id": 3,
+    "page_no": 18,
+    "title": "国家の動揺と鎮護国家"
+  },
+  {
+    "unit_id": 3,
+    "page_no": 19,
+    "title": "女帝と道鏡"
+  },
+  {
+    "unit_id": 3,
+    "page_no": 20,
+    "title": "民衆の暮らし"
+  },
+  {
+    "unit_id": 3,
+    "page_no": 21,
+    "title": "天平文化（1）"
+  },
+  {
+    "unit_id": 3,
+    "page_no": 22,
+    "title": "天平文化（2）"
+  },
+  {
+    "unit_id": 3,
+    "page_no": 23,
+    "title": "天平文化（3）"
+  },
+  {
+    "unit_id": 4,
+    "page_no": 24,
+    "title": "新しい都を求めて"
+  },
+  {
+    "unit_id": 4,
+    "page_no": 25,
+    "title": "二所朝廷と万代宮</a>"
+  },
+  {
+    "unit_id": 4,
+    "page_no": 26,
+    "title": "律令国家の暗雲"
+  },
+  {
+    "unit_id": 4,
+    "page_no": 27,
+    "title": "秘密の教えと影響"
+  },
+  {
+    "unit_id": 4,
+    "page_no": 28,
+    "title": "漢詩好みと影響"
+  },
+  {
+    "unit_id": 4,
+    "page_no": 29,
+    "title": "藤原氏北家の台頭"
+  },
+  {
+    "unit_id": 4,
+    "page_no": 30,
+    "title": "平安の貴族"
+  },
+  {
+    "unit_id": 4,
+    "page_no": 31,
+    "title": "加速する国風化"
+  },
+  {
+    "unit_id": 4,
+    "page_no": 32,
+    "title": "公田の変化―口分田編"
+  },
+  {
+    "unit_id": 4,
+    "page_no": 33,
+    "title": "私田の変化―荘園編"
+  },
+  {
+    "unit_id": 4,
+    "page_no": 34,
+    "title": "武士の登場"
+  },
+  {
+    "unit_id": 4,
+    "page_no": 35,
+    "title": "清和源氏の勢力拡大"
+  },
+  {
+    "unit_id": 4,
+    "page_no": 36,
+    "title": "荘園公領制の成立"
+  },
+  {
+    "unit_id": 5,
+    "page_no": 37,
+    "title": "院政の開始"
+  },
+  {
+    "unit_id": 5,
+    "page_no": 38,
+    "title": "武者ノ世ニナリニケル"
+  },
+  {
+    "unit_id": 5,
+    "page_no": 39,
+    "title": "平氏政権"
+  },
+  {
+    "unit_id": 5,
+    "page_no": 40,
+    "title": "院政期の文化"
+  },
+  {
+    "unit_id": 6,
+    "page_no": 41,
+    "title": "源平の争乱"
+  },
+  {
+    "unit_id": 6,
+    "page_no": 42,
+    "title": "鎌倉幕府"
+  },
+  {
+    "unit_id": 6,
+    "page_no": 43,
+    "title": "北条氏の台頭"
+  },
+  {
+    "unit_id": 6,
+    "page_no": 44,
+    "title": "執権政治"
+  },
+  {
+    "unit_id": 6,
+    "page_no": 45,
+    "title": "武士社会"
+  },
+  {
+    "unit_id": 6,
+    "page_no": 46,
+    "title": "蒙古襲来"
+  },
+  {
+    "unit_id": 6,
+    "page_no": 47,
+    "title": "社会の変化と問題"
+  },
+  {
+    "unit_id": 6,
+    "page_no": 48,
+    "title": "鎌倉文化―公家文化の自覚"
+  },
+  {
+    "unit_id": 6,
+    "page_no": 49,
+    "title": "鎌倉文化―鎌倉仏教の展開（1）"
+  },
+  {
+    "unit_id": 6,
+    "page_no": 50,
+    "title": "鎌倉文化―鎌倉仏教の展開（2）"
+  },
+  {
+    "unit_id": 6,
+    "page_no": 51,
+    "title": "鎌倉文化―美術の革新"
+  },
+  {
+    "unit_id": 6,
+    "page_no": 52,
+    "title": "鎌倉幕府の倒壊"
+  },
+  {
+    "unit_id": 7,
+    "page_no": 53,
+    "title": "建武の新政"
+  },
+  {
+    "unit_id": 8,
+    "page_no": 54,
+    "title": "南北朝の動乱"
+  },
+  {
+    "unit_id": 8,
+    "page_no": 55,
+    "title": "室町幕府"
+  },
+  {
+    "unit_id": 8,
+    "page_no": 56,
+    "title": "室町時代の貿易（1）"
+  },
+  {
+    "unit_id": 8,
+    "page_no": 57,
+    "title": "室町時代の貿易（2）"
+  },
+  {
+    "unit_id": 8,
+    "page_no": 58,
+    "title": "大乱と京中焼亡"
+  },
+  {
+    "unit_id": 8,
+    "page_no": 59,
+    "title": "室町時代の村落"
+  },
+  {
+    "unit_id": 8,
+    "page_no": 60,
+    "title": "室町時代の生産活動"
+  },
+  {
+    "unit_id": 8,
+    "page_no": 61,
+    "title": "室町文化－南北朝文化・北山文化"
+  },
+  {
+    "unit_id": 8,
+    "page_no": 62,
+    "title": "室町文化－東山文化"
+  },
+  {
+    "unit_id": 8,
+    "page_no": 63,
+    "title": "室町文化－文化の諸相"
+  },
+  {
+    "unit_id": 9,
+    "page_no": 64,
+    "title": "戦国大名の登場"
+  },
+  {
+    "unit_id": 9,
+    "page_no": 65,
+    "title": "戦国大名の政策・都市の形成"
+  },
+  {
+    "unit_id": 9,
+    "page_no": 66,
+    "title": "国際関係の新展開"
+  },
+  {
+    "unit_id": 9,
+    "page_no": 67,
+    "title": "信長の天下統一"
+  },
+  {
+    "unit_id": 9,
+    "page_no": 68,
+    "title": "秀吉の天下統一"
+  },
+  {
+    "unit_id": 9,
+    "page_no": 69,
+    "title": "秀吉の国内・対外政策"
+  },
+  {
+    "unit_id": 9,
+    "page_no": 70,
+    "title": "桃山文化"
+  },
+  {
+    "unit_id": 9,
+    "page_no": 71,
+    "title": "南蛮文化"
+  },
+  {
+    "unit_id": 10,
+    "page_no": 72,
+    "title": "幕藩体制の成立"
+  },
+  {
+    "unit_id": 10,
+    "page_no": 73,
+    "title": "江戸幕府の機構"
+  },
+  {
+    "unit_id": 10,
+    "page_no": 74,
+    "title": "江戸幕府による統制"
+  },
+  {
+    "unit_id": 10,
+    "page_no": 75,
+    "title": "鎖国にいたる道"
+  },
+  {
+    "unit_id": 10,
+    "page_no": 76,
+    "title": "四つの窓口"
+  },
+  {
+    "unit_id": 10,
+    "page_no": 77,
+    "title": "寛永期の文化"
+  },
+  {
+    "unit_id": 10,
+    "page_no": 78,
+    "title": "江戸時代の身分"
+  },
+  {
+    "unit_id": 10,
+    "page_no": 79,
+    "title": "江戸時代の村と町"
+  },
+  {
+    "unit_id": 10,
+    "page_no": 80,
+    "title": "江戸時代初頭の諸産業"
+  },
+  {
+    "unit_id": 10,
+    "page_no": 81,
+    "title": "幕藩体制の安定"
+  },
+  {
+    "unit_id": 10,
+    "page_no": 82,
+    "title": "文治主義の政治"
+  },
+  {
+    "unit_id": 10,
+    "page_no": 83,
+    "title": "江戸時代中期の諸産業"
+  },
+  {
+    "unit_id": 10,
+    "page_no": 84,
+    "title": "交通と商業の発達"
+  },
+  {
+    "unit_id": 10,
+    "page_no": 85,
+    "title": "金融と三都の発達"
+  },
+  {
+    "unit_id": 10,
+    "page_no": 86,
+    "title": "元禄文化－文学と学問"
+  },
+  {
+    "unit_id": 10,
+    "page_no": 87,
+    "title": "元禄文化－美術"
+  },
+  {
+    "unit_id": 11,
+    "page_no": 88,
+    "title": "享保の改革"
+  },
+  {
+    "unit_id": 11,
+    "page_no": 89,
+    "title": "幕藩体制の曲がり角"
+  },
+  {
+    "unit_id": 11,
+    "page_no": 90,
+    "title": "田沼意次の政権"
+  },
+  {
+    "unit_id": 11,
+    "page_no": 91,
+    "title": "宝暦・天明期の文化－学問と思想"
+  },
+  {
+    "unit_id": 11,
+    "page_no": 92,
+    "title": "宝暦・天明期の文化－教育と文芸"
+  },
+  {
+    "unit_id": 11,
+    "page_no": 93,
+    "title": "宝暦・天明期の文化－美術"
+  },
+  {
+    "unit_id": 11,
+    "page_no": 94,
+    "title": "寛政の改革"
+  },
+  {
+    "unit_id": 11,
+    "page_no": 95,
+    "title": "異国の接近"
+  },
+  {
+    "unit_id": 11,
+    "page_no": 96,
+    "title": "大御所時代"
+  },
+  {
+    "unit_id": 11,
+    "page_no": 97,
+    "title": "天保の改革"
+  },
+  {
+    "unit_id": 11,
+    "page_no": 98,
+    "title": "雄藩と朝廷の台頭"
+  },
+  {
+    "unit_id": 11,
+    "page_no": 99,
+    "title": "化政文化―学問と思想"
+  },
+  {
+    "unit_id": 11,
+    "page_no": 100,
+    "title": "化政文化―文芸と美術"
+  },
+  {
+    "unit_id": 11,
+    "page_no": 101,
+    "title": "化政文化―庶民の娯楽と信仰"
+  },
+  {
+    "unit_id": 12,
+    "page_no": 102,
+    "title": "開国への道"
+  },
+  {
+    "unit_id": 12,
+    "page_no": 103,
+    "title": "日本の全面的開国"
+  },
+  {
+    "unit_id": 12,
+    "page_no": 104,
+    "title": "公武合体と幕政反対"
+  },
+  {
+    "unit_id": 12,
+    "page_no": 105,
+    "title": "薩長同盟の成立"
+  },
+  {
+    "unit_id": 12,
+    "page_no": 106,
+    "title": "江戸幕府の滅亡"
+  },
+  {
+    "unit_id": 13,
+    "page_no": 107,
+    "title": "明治維新―戊辰戦争"
+  },
+  {
+    "unit_id": 13,
+    "page_no": 108,
+    "title": "明治維新―政治の刷新"
+  },
+  {
+    "unit_id": 13,
+    "page_no": 109,
+    "title": "国民皆兵と士族の没落"
+  },
+  {
+    "unit_id": 13,
+    "page_no": 110,
+    "title": "地租改正"
+  },
+  {
+    "unit_id": 13,
+    "page_no": 111,
+    "title": "富国強兵と殖産興業（１）"
+  },
+  {
+    "unit_id": 13,
+    "page_no": 112,
+    "title": "富国強兵と殖産興業（２）"
+  },
+  {
+    "unit_id": 13,
+    "page_no": 113,
+    "title": "文明開化"
+  },
+  {
+    "unit_id": 13,
+    "page_no": 114,
+    "title": "明治初期の対外関係"
+  },
+  {
+    "unit_id": 13,
+    "page_no": 115,
+    "title": "西南戦争と言論の目覚め"
+  },
+  {
+    "unit_id": 14,
+    "page_no": 119,
+    "title": "大日本帝国憲法"
+  },
+  {
+    "unit_id": 14,
+    "page_no": 120,
+    "title": "諸法典と条約改正"
+  },
+  {
+    "unit_id": 14,
+    "page_no": 121,
+    "title": "初期議会"
+  },
+  {
+    "unit_id": 14,
+    "page_no": 122,
+    "title": "朝鮮問題"
+  },
+  {
+    "unit_id": 14,
+    "page_no": 123,
+    "title": "日清戦争"
+  },
+  {
+    "unit_id": 14,
+    "page_no": 124,
+    "title": "強まるロシアの脅威"
+  },
+  {
+    "unit_id": 14,
+    "page_no": 125,
+    "title": "日清戦後経営"
+  },
+  {
+    "unit_id": 14,
+    "page_no": 126,
+    "title": "日露戦争"
+  },
+  {
+    "unit_id": 14,
+    "page_no": 127,
+    "title": "大陸への進出"
+  },
+  {
+    "unit_id": 14,
+    "page_no": 128,
+    "title": "日露戦後経営"
+  },
+  {
+    "unit_id": 14,
+    "page_no": 129,
+    "title": "日本の産業革命"
+  },
+  {
+    "unit_id": 14,
+    "page_no": 130,
+    "title": "近代産業―紡績・製糸・輸送"
+  },
+  {
+    "unit_id": 14,
+    "page_no": 131,
+    "title": "近代産業―重工業・農業"
+  },
+  {
+    "unit_id": 14,
+    "page_no": 132,
+    "title": "労働運動の始まり"
+  },
+  {
+    "unit_id": 14,
+    "page_no": 133,
+    "title": "明治の文化―思想と信教"
+  },
+  {
+    "unit_id": 14,
+    "page_no": 134,
+    "title": "明治の文化―教育と科学"
+  },
+  {
+    "unit_id": 14,
+    "page_no": 135,
+    "title": "明治の文化―報道と文学"
+  },
+  {
+    "unit_id": 14,
+    "page_no": 136,
+    "title": "明治の文化―芸術"
+  },
+  {
+    "unit_id": 15,
+    "page_no": 137,
+    "title": "大正政変"
+  },
+  {
+    "unit_id": 15,
+    "page_no": 138,
+    "title": "第一次世界大戦"
+  },
+  {
+    "unit_id": 15,
+    "page_no": 139,
+    "title": "大戦景気"
+  },
+  {
+    "unit_id": 15,
+    "page_no": 140,
+    "title": "本格的な政党内閣"
+  },
+  {
+    "unit_id": 15,
+    "page_no": 141,
+    "title": "新秩序の模索と民族自決"
+  },
+  {
+    "unit_id": 15,
+    "page_no": 142,
+    "title": "社会運動の勃興"
+  },
+  {
+    "unit_id": 15,
+    "page_no": 143,
+    "title": "護憲三派内閣の成立"
+  },
+  {
+    "unit_id": 15,
+    "page_no": 144,
+    "title": "大衆文化の成立"
+  },
+  {
+    "unit_id": 15,
+    "page_no": 145,
+    "title": "大正期の学問と芸術"
+  },
+  {
+    "unit_id": 16,
+    "page_no": 146,
+    "title": "戦後恐慌から金融恐慌へ"
+  },
+  {
+    "unit_id": 16,
+    "page_no": 147,
+    "title": "北伐と中国統一"
+  },
+  {
+    "unit_id": 16,
+    "page_no": 148,
+    "title": "金輸出解禁と協調外交の挫折"
+  },
+  {
+    "unit_id": 16,
+    "page_no": 149,
+    "title": "満州事変と軍部の台頭"
+  },
+  {
+    "unit_id": 16,
+    "page_no": 150,
+    "title": "金輸出再禁止と恐慌脱出"
+  },
+  {
+    "unit_id": 16,
+    "page_no": 151,
+    "title": "二・二六事件と近衛の登場"
+  },
+  {
+    "unit_id": 16,
+    "page_no": 152,
+    "title": "日中戦争"
+  },
+  {
+    "unit_id": 16,
+    "page_no": 153,
+    "title": "戦時統制の強化"
+  },
+  {
+    "unit_id": 16,
+    "page_no": 154,
+    "title": "戦時下の文化"
+  },
+  {
+    "unit_id": 16,
+    "page_no": 155,
+    "title": "日独伊三国同盟"
+  },
+  {
+    "unit_id": 16,
+    "page_no": 156,
+    "title": "大東亜戦争"
+  },
+  {
+    "unit_id": 16,
+    "page_no": 157,
+    "title": "絶対国防圏の崩壊"
+  },
+  {
+    "unit_id": 16,
+    "page_no": 158,
+    "title": "敗戦"
+  },
+  {
+    "unit_id": 17,
+    "page_no": 159,
+    "title": "占領政策の開始"
+  },
+  {
+    "unit_id": 17,
+    "page_no": 160,
+    "title": "民主化政策"
+  },
+  {
+    "unit_id": 17,
+    "page_no": 161,
+    "title": "日本国憲法"
+  },
+  {
+    "unit_id": 17,
+    "page_no": 162,
+    "title": "経済の混乱と労働運動"
+  },
+  {
+    "unit_id": 17,
+    "page_no": 163,
+    "title": "占領政策の転換"
+  },
+  {
+    "unit_id": 17,
+    "page_no": 164,
+    "title": "朝鮮戦争と占領終結"
+  },
+  {
+    "unit_id": 17,
+    "page_no": 165,
+    "title": "占領期の文化"
+  },
+  {
+    "unit_id": 18,
+    "page_no": 166,
+    "title": "55年体制の成立"
+  },
+  {
+    "unit_id": 18,
+    "page_no": 167,
+    "title": "安保闘争と保守安定政権"
+  },
+  {
+    "unit_id": 18,
+    "page_no": 168,
+    "title": "高度経済成長"
+  },
+  {
+    "unit_id": 18,
+    "page_no": 169,
+    "title": "激動の時代の終わり"
+  }
+]

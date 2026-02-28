@@ -163,3 +163,71 @@ export const loadClimateClassifications = () => loadJSON<ClimateClassification[]
 export const loadAgingSociety = () => loadJSON<AgingSociety[]>('aging-society.json');
 export const loadBirthrateMortality = () => loadJSON<BirthrateMortality[]>('birthrate-mortality.json');
 export const loadGDPGNI = () => loadJSON<GDPGNI[]>('gdp-gni.json');
+
+// ===== 一問一答 =====
+
+export interface QAItem {
+  subject_id: number;
+  unit_id: number;
+  page_no: number;
+  id: number;
+  question: string;
+  answer: string;
+  image1: string | null;
+  image2: string | null;
+  image3: string | null;
+  image4: string | null;
+}
+
+export interface UnitInfo {
+  subject_id: number;
+  unit_id: number;
+  big_unit_id: number;
+  unit_name: string;
+  big_unit_name: string | null;
+}
+
+export interface FileInfo {
+  subject_id: number;
+  unit_id: string | number;
+  page_no: number;
+  title: string;
+}
+
+/**
+ * 一問一答データを読み込む
+ * @param subject - 科目コード ('jh' | 'wh')
+ * @param unitId - 単元ID（省略時は全単元）
+ */
+export async function loadQAData(
+  subject: 'jh' | 'wh',
+  unitId?: number
+): Promise<QAItem[]> {
+  const filename = subject === 'jh' ? 'qa-jh.json' : 'qa-wh.json';
+  const all = await loadJSON<QAItem[]>(filename);
+  if (unitId !== undefined) {
+    return all.filter(item => item.unit_id === unitId);
+  }
+  return all;
+}
+
+/**
+ * 単元情報を読み込む
+ * @param subjectId - 科目ID（1: 世界史, 2: 日本史）
+ */
+export async function loadUnitInfo(subjectId?: number): Promise<UnitInfo[]> {
+  const all = await loadJSON<UnitInfo[]>('unit-info.json');
+  if (subjectId !== undefined) {
+    return all.filter(u => u.subject_id === subjectId);
+  }
+  return all;
+}
+
+/**
+ * 授業番号情報を読み込む
+ * @param subject - 科目コード ('jh' | 'wh')
+ */
+export async function loadFileInfo(subject: 'jh' | 'wh'): Promise<FileInfo[]> {
+  const filename = subject === 'jh' ? 'file-info-jh.json' : 'file-info-wh.json';
+  return loadJSON<FileInfo[]>(filename);
+}

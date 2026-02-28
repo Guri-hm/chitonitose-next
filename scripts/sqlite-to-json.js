@@ -206,6 +206,56 @@ async function main() {
     if (cityClimate.length > 0) writeJSON('city-climate.json', cityClimate);
     filesCreated++;
 
+    // ===== 一問一答データ =====
+    console.log('\n❓ Q&A Data:');
+
+    // 教科情報
+    const subjects = safeQuery(db, 'SELECT * FROM subject ORDER BY id', 'subjects');
+    if (subjects.length > 0) writeJSON('subjects.json', subjects);
+    filesCreated++;
+
+    // 単元情報（big_unit_name付き）
+    const unitInfo = safeQuery(db,
+      'SELECT u.subject_id, u.unit_id, u.big_unit_id, u.unit_name, b.big_unit_name' +
+      ' FROM unit_info u' +
+      ' LEFT JOIN big_unit_info b ON u.subject_id = b.subject_id AND u.big_unit_id = b.big_unit_id' +
+      ' ORDER BY u.subject_id, u.unit_id',
+      'unit_info');
+    if (unitInfo.length > 0) writeJSON('unit-info.json', unitInfo);
+    filesCreated++;
+
+    // 授業番号情報（日本史: subject_id=2） ※ one_q_one_a に存在するpage_noのみ
+    const fileInfoJh = safeQuery(db,
+      'SELECT DISTINCT q.unit_id, q.page_no, f.title' +
+      ' FROM one_q_one_a q' +
+      ' LEFT JOIN file_info f ON f.subject_id = q.subject_id AND f.page_no = q.page_no' +
+      ' WHERE q.subject_id = 2' +
+      ' ORDER BY CAST(q.unit_id AS INTEGER), CAST(q.page_no AS INTEGER)',
+      'file_info jh');
+    if (fileInfoJh.length > 0) writeJSON('file-info-jh.json', fileInfoJh);
+    filesCreated++;
+
+    // 授業番号情報（世界史: subject_id=1） ※ one_q_one_a に存在するpage_noのみ
+    const fileInfoWh = safeQuery(db,
+      'SELECT DISTINCT q.unit_id, q.page_no, f.title' +
+      ' FROM one_q_one_a q' +
+      ' LEFT JOIN file_info f ON f.subject_id = q.subject_id AND f.page_no = q.page_no' +
+      ' WHERE q.subject_id = 1' +
+      ' ORDER BY CAST(q.unit_id AS INTEGER), CAST(q.page_no AS INTEGER)',
+      'file_info wh');
+    if (fileInfoWh.length > 0) writeJSON('file-info-wh.json', fileInfoWh);
+    filesCreated++;
+
+    // 一問一答（世界史: subject_id=1）
+    const qaWh = safeQuery(db, 'SELECT subject_id, unit_id, page_no, id, question, answer, image1, image2, image3, image4 FROM one_q_one_a WHERE subject_id = 1 ORDER BY unit_id, page_no, id', 'Q&A world history');
+    if (qaWh.length > 0) writeJSON('qa-wh.json', qaWh);
+    filesCreated++;
+
+    // 一問一答（日本史: subject_id=2）
+    const qaJh = safeQuery(db, 'SELECT subject_id, unit_id, page_no, id, question, answer, image1, image2, image3, image4 FROM one_q_one_a WHERE subject_id = 2 ORDER BY unit_id, page_no, id', 'Q&A japan history');
+    if (qaJh.length > 0) writeJSON('qa-jh.json', qaJh);
+    filesCreated++;
+
     // ===== 日本関連データ =====
     console.log('\n🗾 Japan Data:');
 

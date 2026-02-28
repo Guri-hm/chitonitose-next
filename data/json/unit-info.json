@@ -1,0 +1,268 @@
+[
+  {
+    "subject_id": 1,
+    "unit_id": 1,
+    "big_unit_id": 1,
+    "unit_name": "オリエントと地中海世界",
+    "big_unit_name": null
+  },
+  {
+    "subject_id": 1,
+    "unit_id": 2,
+    "big_unit_id": 1,
+    "unit_name": "アジア・アメリカの古代文明",
+    "big_unit_name": null
+  },
+  {
+    "subject_id": 1,
+    "unit_id": 3,
+    "big_unit_id": 1,
+    "unit_name": "内陸アジアと周辺世界",
+    "big_unit_name": null
+  },
+  {
+    "subject_id": 1,
+    "unit_id": 4,
+    "big_unit_id": 2,
+    "unit_name": "イスラーム世界",
+    "big_unit_name": null
+  },
+  {
+    "subject_id": 1,
+    "unit_id": 5,
+    "big_unit_id": 2,
+    "unit_name": "内陸アジア世界・東アジア世界",
+    "big_unit_name": null
+  },
+  {
+    "subject_id": 1,
+    "unit_id": 6,
+    "big_unit_id": 2,
+    "unit_name": "西ヨーロッパ世界",
+    "big_unit_name": null
+  },
+  {
+    "subject_id": 1,
+    "unit_id": 7,
+    "big_unit_id": 3,
+    "unit_name": "東アジア世界の動向",
+    "big_unit_name": null
+  },
+  {
+    "subject_id": 1,
+    "unit_id": 8,
+    "big_unit_id": 3,
+    "unit_name": "啓蒙専制主義",
+    "big_unit_name": null
+  },
+  {
+    "subject_id": 1,
+    "unit_id": 9,
+    "big_unit_id": 3,
+    "unit_name": "イラン世界・トルコ世界の発展",
+    "big_unit_name": null
+  },
+  {
+    "subject_id": 1,
+    "unit_id": 10,
+    "big_unit_id": 3,
+    "unit_name": "ヨーロッパ世界の拡大",
+    "big_unit_name": null
+  },
+  {
+    "subject_id": 1,
+    "unit_id": 11,
+    "big_unit_id": 3,
+    "unit_name": "近代世界の成立",
+    "big_unit_name": null
+  },
+  {
+    "subject_id": 1,
+    "unit_id": 12,
+    "big_unit_id": 3,
+    "unit_name": "国民国家の発展",
+    "big_unit_name": null
+  },
+  {
+    "subject_id": 1,
+    "unit_id": 13,
+    "big_unit_id": 3,
+    "unit_name": "南北アメリカの発展",
+    "big_unit_name": null
+  },
+  {
+    "subject_id": 1,
+    "unit_id": 14,
+    "big_unit_id": 3,
+    "unit_name": "アジア諸地域の動揺",
+    "big_unit_name": null
+  },
+  {
+    "subject_id": 1,
+    "unit_id": 15,
+    "big_unit_id": 4,
+    "unit_name": "帝国主義と民族運動",
+    "big_unit_name": null
+  },
+  {
+    "subject_id": 1,
+    "unit_id": 16,
+    "big_unit_id": 4,
+    "unit_name": "世界恐慌とファシズム諸国",
+    "big_unit_name": null
+  },
+  {
+    "subject_id": 1,
+    "unit_id": 17,
+    "big_unit_id": 4,
+    "unit_name": "最初の世界大戦と新しい秩序の模索",
+    "big_unit_name": null
+  },
+  {
+    "subject_id": 1,
+    "unit_id": 18,
+    "big_unit_id": 5,
+    "unit_name": "冷戦の展開と第三世界の台頭",
+    "big_unit_name": null
+  },
+  {
+    "subject_id": 1,
+    "unit_id": 19,
+    "big_unit_id": 5,
+    "unit_name": "世界の一体化",
+    "big_unit_name": null
+  },
+  {
+    "subject_id": 2,
+    "unit_id": 1,
+    "big_unit_id": 1,
+    "unit_name": "旧石器～弥生時代",
+    "big_unit_name": "古代"
+  },
+  {
+    "subject_id": 2,
+    "unit_id": 2,
+    "big_unit_id": 1,
+    "unit_name": "古墳時代",
+    "big_unit_name": "古代"
+  },
+  {
+    "subject_id": 2,
+    "unit_id": 3,
+    "big_unit_id": 1,
+    "unit_name": "奈良時代",
+    "big_unit_name": "古代"
+  },
+  {
+    "subject_id": 2,
+    "unit_id": 4,
+    "big_unit_id": 1,
+    "unit_name": "平安時代",
+    "big_unit_name": "古代"
+  },
+  {
+    "subject_id": 2,
+    "unit_id": 5,
+    "big_unit_id": 1,
+    "unit_name": "平安時代（院政期）",
+    "big_unit_name": "古代"
+  },
+  {
+    "subject_id": 2,
+    "unit_id": 6,
+    "big_unit_id": 2,
+    "unit_name": "鎌倉時代",
+    "big_unit_name": "中世"
+  },
+  {
+    "subject_id": 2,
+    "unit_id": 7,
+    "big_unit_id": 2,
+    "unit_name": "建武の新政",
+    "big_unit_name": "中世"
+  },
+  {
+    "subject_id": 2,
+    "unit_id": 8,
+    "big_unit_id": 2,
+    "unit_name": "室町時代",
+    "big_unit_name": "中世"
+  },
+  {
+    "subject_id": 2,
+    "unit_id": 9,
+    "big_unit_id": 2,
+    "unit_name": "戦国時代・安土桃山時代",
+    "big_unit_name": "中世"
+  },
+  {
+    "subject_id": 2,
+    "unit_id": 10,
+    "big_unit_id": 3,
+    "unit_name": "江戸時代",
+    "big_unit_name": "近世"
+  },
+  {
+    "subject_id": 2,
+    "unit_id": 11,
+    "big_unit_id": 3,
+    "unit_name": "江戸時代（動揺期）",
+    "big_unit_name": "近世"
+  },
+  {
+    "subject_id": 2,
+    "unit_id": 12,
+    "big_unit_id": 3,
+    "unit_name": "江戸時代（幕末）",
+    "big_unit_name": "近世"
+  },
+  {
+    "subject_id": 2,
+    "unit_id": 13,
+    "big_unit_id": 4,
+    "unit_name": "明治時代",
+    "big_unit_name": "近代（明治）"
+  },
+  {
+    "subject_id": 2,
+    "unit_id": 14,
+    "big_unit_id": 4,
+    "unit_name": "明治時代（憲法発布後）",
+    "big_unit_name": "近代（明治）"
+  },
+  {
+    "subject_id": 2,
+    "unit_id": 15,
+    "big_unit_id": 5,
+    "unit_name": "大正時代",
+    "big_unit_name": "近代（大正）"
+  },
+  {
+    "subject_id": 2,
+    "unit_id": 16,
+    "big_unit_id": 6,
+    "unit_name": "昭和（戦前）",
+    "big_unit_name": "近代・現代（昭和）"
+  },
+  {
+    "subject_id": 2,
+    "unit_id": 17,
+    "big_unit_id": 6,
+    "unit_name": "昭和（占領期）",
+    "big_unit_name": "近代・現代（昭和）"
+  },
+  {
+    "subject_id": 2,
+    "unit_id": 18,
+    "big_unit_id": 6,
+    "unit_name": "昭和（独立後）",
+    "big_unit_name": "近代・現代（昭和）"
+  },
+  {
+    "subject_id": 2,
+    "unit_id": 19,
+    "big_unit_id": 6,
+    "unit_name": "平成",
+    "big_unit_name": "近代・現代（昭和）"
+  }
+]
