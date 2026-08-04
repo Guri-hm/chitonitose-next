@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import OldCountryMap from '@/components/lessons/OldCountryMap';
 
 export const metadata: Metadata = {
   title: '旧国名 | ちとにとせ',
@@ -11,17 +12,17 @@ export default async function OldCountryNamePage() {
     <>
       <link rel="stylesheet" href="/css/subject.css" />
       <link rel="stylesheet" href="/css/jh.css" />
-      
+
       <h1>
         <div className="first-line">旧国名</div>
       </h1>
-      
+
       <div className="main-block bg-gray">
         <div className="lessons">
-          <h2>日本の旧国名</h2>
-          <p style={{ padding: '20px', textAlign: 'center' }}>
-            このページは準備中です。元のHTMLファイル（jh_old_country_name.html）から旧国名の情報を移植する必要があります。
-          </p>
+          <div className="overview">
+            地図上をクリックして、旧国名を確認しましょう。基本的には、京に近い方が「上」、遠い方が「下」という漢字が頭につきます。
+          </div>
+          <OldCountryMap />
         </div>
       </div>
     </>

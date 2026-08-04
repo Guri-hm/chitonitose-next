@@ -231,3 +231,20 @@ export async function loadFileInfo(subject: 'jh' | 'wh'): Promise<FileInfo[]> {
   const filename = subject === 'jh' ? 'file-info-jh.json' : 'file-info-wh.json';
   return loadJSON<FileInfo[]>(filename);
 }
+
+// ===== 授業プリント（PDF） =====
+
+export interface PdfItem {
+  no: number;
+  file: string;
+  title: string;
+}
+
+/**
+ * 授業プリント（PDF）の一覧を読み込む
+ * @param subject - 科目コード ('jh' | 'wh')
+ */
+export async function loadPdfList(subject: 'jh' | 'wh'): Promise<PdfItem[]> {
+  const filename = subject === 'jh' ? 'pdf-jh.json' : 'pdf-wh.json';
+  return loadJSON<PdfItem[]>(filename);
+}
