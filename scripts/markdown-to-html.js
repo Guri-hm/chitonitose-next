@@ -37,12 +37,12 @@ function parseCustomMarkdown(markdown, subject = '') {
   let i = 0;
   
   while (i < lines.length) {
-    const line = lines[i];
+    const line = lines[i].trim();
     
     // 概要セクション - スキップ（page.tsxで別途表示）
     if (line === '---overview---') {
       i++;
-      while (i < lines.length && lines[i] !== '---') {
+      while (i < lines.length && lines[i].trim() !== '---') {
         i++;
       }
       i++; // skip closing ---
@@ -57,6 +57,18 @@ function parseCustomMarkdown(markdown, subject = '') {
     }
     if (line.startsWith('### ')) {
       result.push('<h3>' + convertInlineMarkdown(line.substring(4)) + '</h3>');
+      i++;
+      continue;
+    }
+    if (line.startsWith('#### ')) {
+      result.push('<h4>' + convertInlineMarkdown(line.substring(5)) + '</h4>');
+      i++;
+      continue;
+    }
+    // 旧形式の<h4>タグをそのまま持つ行（html-to-md.jsの変換残淟対策）
+    if (line.startsWith('<h4>') && line.endsWith('</h4>')) {
+      const text = line.slice(4, -5);
+      result.push('<h4>' + convertInlineMarkdown(text) + '</h4>');
       i++;
       continue;
     }
@@ -75,19 +87,44 @@ function parseCustomMarkdown(markdown, subject = '') {
       continue;
     }
     
+    // 箱書きリスト（- item、ネストした:::leadも導入）
+    if (line.startsWith('- ')) {
+      const items = [];
+      while (i < lines.length && lines[i].trim().startsWith('- ')) {
+        const itemText = lines[i].trim().substring(2).trim();
+        i++;
+        let leadHtml = '';
+        if (i < lines.length && (lines[i].trim() === ':::lead' || lines[i].trim() === '::lead')) {
+          i++;
+          const leadContent = [];
+          while (i < lines.length && lines[i].trim() !== ':::' && lines[i].trim() !== '::' && !lines[i].trim().startsWith('- ')) {
+            if (lines[i].trim() !== '') leadContent.push(lines[i].trim());
+            i++;
+          }
+          if (i < lines.length && (lines[i].trim() === ':::' || lines[i].trim() === '::')) {
+            i++;
+          }
+          leadHtml = `<div class="lead">${convertInlineMarkdown(leadContent.join(''))}</div>`;
+        }
+        items.push(`<li>${convertInlineMarkdown(itemText)}${leadHtml}</li>`);
+      }
+      result.push('<ul>' + items.join('') + '</ul>');
+      continue;
+    }
+    
     // ::double ブロック
     if (line === '::double') {
       const content = [];
       i++;
-      while (i < lines.length && !lines[i].startsWith('---image---')) {
+      while (i < lines.length && !lines[i].trim().startsWith('---image---')) {
         content.push(lines[i]);
         i++;
       }
       
       // 画像行を解析
-      if (i < lines.length && lines[i].startsWith('---image---')) {
+      if (i < lines.length && lines[i].trim().startsWith('---image---')) {
         i++;
-        const imgMatch = lines[i].match(/!\[([^\]]*)\]\(([^)]+)\)(?:\{\.([^}]+)\})?/);
+        const imgMatch = lines[i].trim().match(/!\[([^\]]*)\]\(([^)]+)\)(?:\{\.([^}]+)\})?/);
         if (imgMatch) {
           const [, alt, imgSrc, imgClass] = imgMatch;
           // 画像パスをWebPに変換
@@ -97,7 +134,7 @@ function parseCustomMarkdown(markdown, subject = '') {
           
           i++;
           const caption = [];
-          while (i < lines.length && lines[i] !== '::') {
+          while (i < lines.length && lines[i].trim() !== '::') {
             caption.push(lines[i]);
             i++;
           }
@@ -124,8 +161,8 @@ function parseCustomMarkdown(markdown, subject = '') {
       const explanations = [];
       let inExplanation = false;
       
-      while (i < lines.length && lines[i] !== ':::' && lines[i] !== '::') {
-        const currentLine = lines[i];
+      while (i < lines.length && lines[i].trim() !== ':::' && lines[i].trim() !== '::') {
+        const currentLine = lines[i].trim();
         
         // 画像行を検出
         if (currentLine.match(/^!\[/)) {
@@ -135,7 +172,7 @@ function parseCustomMarkdown(markdown, subject = '') {
         }
         
         // 空行はスキップ
-        if (currentLine.trim() === '') {
+        if (currentLine === '') {
           i++;
           continue;
         }
@@ -174,7 +211,7 @@ function parseCustomMarkdown(markdown, subject = '') {
       const content = [];
       i++;
       
-      while (i < lines.length && lines[i] !== ':::' && lines[i] !== '::') {
+      while (i < lines.length && lines[i].trim() !== ':::' && lines[i].trim() !== '::') {
         content.push(lines[i]);
         i++;
       }
@@ -182,8 +219,8 @@ function parseCustomMarkdown(markdown, subject = '') {
       // content を1つの文字列に結合
       let contentStr = content.join('\n');
       
-      // ネストされた:::lead...:::を処理
-      contentStr = contentStr.replace(/:::lead\n([\s\S]*?)\n:::/g, '<div class="lead">$1</div>');
+      // ネストされた:::lead...を処理（閉じタグは:: / :::とも対応し、閉じ忘れの場合は末尾までを含む）
+      contentStr = contentStr.replace(/:{2,3}\s*lead\s*\n([\s\S]*?)(?:\n\s*:{2,3}(?!\S)|$)/g, '<div class="lead">$1</div>');
       
       // インラインMarkdownを変換
       const html = convertInlineMarkdown(contentStr);
@@ -197,14 +234,14 @@ function parseCustomMarkdown(markdown, subject = '') {
     if (line === ':::top' || line === '::top') {
       const content = [];
       i++;
-      while (i < lines.length && lines[i] !== ':::' && lines[i] !== '::') {
+      while (i < lines.length && lines[i].trim() !== ':::' && lines[i].trim() !== '::') {
         content.push(lines[i]);
         i++;
       }
       
-      // ネストされた:::lead...:::を処理
+      // ネストされた:::lead...を処理
       let contentStr = content.join('\n');
-      contentStr = contentStr.replace(/:::lead\n([\s\S]*?)\n:::/g, '<div class="lead">$1</div>');
+      contentStr = contentStr.replace(/:{2,3}\s*lead\s*\n([\s\S]*?)(?:\n\s*:{2,3}(?!\S)|$)/g, '<div class="lead">$1</div>');
       
       const html = convertInlineMarkdown(contentStr);
       result.push('<div class="top">' + html + '</div>');
@@ -216,14 +253,14 @@ function parseCustomMarkdown(markdown, subject = '') {
     if (line === ':::middle' || line === '::middle') {
       const content = [];
       i++;
-      while (i < lines.length && lines[i] !== ':::' && lines[i] !== '::') {
+      while (i < lines.length && lines[i].trim() !== ':::' && lines[i].trim() !== '::') {
         content.push(lines[i]);
         i++;
       }
       
       // ネストされた:::lead...:::を処理
       let contentStr = content.join('\n');
-      contentStr = contentStr.replace(/:::lead\n([\s\S]*?)\n:::/g, '<div class="lead">$1</div>');
+      contentStr = contentStr.replace(/:{2,3}\s*lead\s*\n([\s\S]*?)(?:\n\s*:{2,3}(?!\S)|$)/g, '<div class="lead">$1</div>');
       
       const html = convertInlineMarkdown(contentStr);
       result.push('<div class="middle">' + html + '</div>');
@@ -235,14 +272,14 @@ function parseCustomMarkdown(markdown, subject = '') {
     if (line === ':::last' || line === '::last') {
       const content = [];
       i++;
-      while (i < lines.length && lines[i] !== ':::' && lines[i] !== '::') {
+      while (i < lines.length && lines[i].trim() !== ':::' && lines[i].trim() !== '::') {
         content.push(lines[i]);
         i++;
       }
       
       // ネストされた:::lead...:::を処理
       let contentStr = content.join('\n');
-      contentStr = contentStr.replace(/:::lead\n([\s\S]*?)\n:::/g, '<div class="lead">$1</div>');
+      contentStr = contentStr.replace(/:{2,3}\s*lead\s*\n([\s\S]*?)(?:\n\s*:{2,3}(?!\S)|$)/g, '<div class="lead">$1</div>');
       
       const html = convertInlineMarkdown(contentStr);
       result.push('<div class="last">' + html + '</div>');
@@ -277,6 +314,10 @@ function parseCustomMarkdown(markdown, subject = '') {
  */
 function convertInlineMarkdown(text) {
   let html = text;
+  
+  // 0. 旧変換の残淟で残った、閉じられていない onclick="chg(this)" class="all"> 断片を除去
+  // （例: "n onclick=\"chg(this)\" class=\"all\">本文" のように先頭の<spanタグが欠落したまま残るケース）
+  html = html.replace(/[A-Za-z]{0,3}\s*onclick="chg\(this\)"\s+class="all">/g, '');
   
   // 1. マーカー（==...==）- 内部の記法も処理
   html = html.replace(/==([^=]+)==/g, (match, content) => {
@@ -583,10 +624,6 @@ function convertHtmlToMarkdownInline(text) {
 
 module.exports = {
   parseCustomMarkdown,
-  htmlToCustomMarkdown
-};
-
-module.exports = {
-  parseCustomMarkdown,
+  convertInlineMarkdown,
   htmlToCustomMarkdown
 };

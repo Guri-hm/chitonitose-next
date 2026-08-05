@@ -4,8 +4,8 @@ import path from 'path';
 export interface LessonData {
   subject: string;
   lessonNo: number;
-  content: string; // HTML形式（本文のみ、overviewは含まない）
-  overview?: string; // 概要テキスト
+  content: string; // HTML形式(本文のみ、overviewは含まない)
+  overview?: string; // 概要HTML(ruby/用語クリック記法を変換済み。dangerouslySetInnerHTMLで表示する)
   rawMarkdown: string; // 元のMarkdown
 }
 
@@ -20,28 +20,35 @@ function parseCustomMarkdown(markdown: string, subject: string): string {
 }
 
 /**
- * カスタムMarkdownファイルを読み込んでHTMLに変換
+ * 概要テキスト中のカスタムMarkdown記法(ruby/クリック用語など)をHTMLに変換
  */
-export async function loadLesson(subject: string, lessonNo: number): Promise<LessonData> {
-  const filePath = path.join(process.cwd(), 'content', subject, 'lessons', `${lessonNo}.md`);
-  
+function convertOverview(overview: string): string {
+  const { convertInlineMarkdown } = require('../scripts/markdown-to-html.js');
+  return convertInlineMarkdown(overview);
+}
+
+/**
+ * カスタムMarkdownファイルを読み込んでHTMLに変換（内部共通処理）
+ */
+function loadCustomMarkdownFile(filePath: string, subject: string, lessonNo: number): LessonData {
   if (!fs.existsSync(filePath)) {
-    throw new Error(`Lesson file not found: ${filePath}`);
+    throw new Error(`File not found: ${filePath}`);
   }
-  
+
   const fileContent = fs.readFileSync(filePath, 'utf-8');
-  
-  // overviewを抽出
-  const overviewMatch = fileContent.match(/---overview---\n([\s\S]*?)\n---/);
-  const overview = overviewMatch ? overviewMatch[1].trim() : undefined;
-  
+
+  // overviewを抽出（CRLF/LF両対応のため改行コードを正規化してから照合）
+  const normalized = fileContent.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
+  const overviewMatch = normalized.match(/---overview---\n([\s\S]*?)\n---/);
+  const overview = overviewMatch ? convertOverview(overviewMatch[1].trim()) : undefined;
+
   // gray-matterは使わず、直接Markdownとして扱う
   // （カスタムMarkdown形式のため、フロントマターは使用しない）
   const rawMarkdown = fileContent;
-  
+
   // カスタムMarkdownをHTMLに変換（科目情報を渡す）
   const htmlContent = parseCustomMarkdown(rawMarkdown, subject);
-  
+
   return {
     subject: subject,
     lessonNo: lessonNo,
@@ -49,6 +56,26 @@ export async function loadLesson(subject: string, lessonNo: number): Promise<Les
     overview,
     rawMarkdown
   };
+}
+
+/**
+ * カスタムMarkdownファイルを読み込んでHTMLに変換
+ */
+export async function loadLesson(subject: string, lessonNo: number): Promise<LessonData> {
+  const filePath = path.join(process.cwd(), 'content', subject, 'lessons', `${lessonNo}.md`);
+  return loadCustomMarkdownFile(filePath, subject, lessonNo);
+}
+
+/**
+ * テーマ史（短期攻略）などのカスタムMarkdownファイルを読み込んでHTMLに変換
+ * @param subject - 科目コード ('jh' | 'wh' | 'geo')
+ * @param dir - content/{subject}配下のディレクトリ名（例: 'omnibus'）
+ * @param id - ファイル名（拡張子抜き）
+ */
+export async function loadCustomLesson(subject: string, dir: string, id: string | number): Promise<LessonData> {
+  const filePath = path.join(process.cwd(), 'content', subject, dir, `${id}.md`);
+  const lessonNo = typeof id === 'number' ? id : parseInt(String(id), 10) || 0;
+  return loadCustomMarkdownFile(filePath, subject, lessonNo);
 }
 
 /**

@@ -39,6 +39,15 @@ const JH_ERAS: Era[] = [
   { name: '現代', range: [161, 170] },
 ];
 
+// 世界史の時代区分
+const WH_ERAS: Era[] = [
+  { name: '古代', range: [1, 26] },
+  { name: '中世', range: [27, 44] },
+  { name: '近世・近代', range: [45, 81] },
+  { name: '近代（２つの大戦）', range: [82, 99] },
+  { name: '現代', range: [100, 114] },
+];
+
 // 短期攻略の項目
 const JH_OMNIBUS_ITEMS = [
   { id: 1, title: '旧石器時代～弥生時代', href: '/jh/omnibus/1' },
@@ -84,6 +93,17 @@ const JH_QA_ITEMS = Array.from({ length: 18 }, (_, i) => ({
   href: `/jh/q-a/${i + 1}`,
 }));
 
+// 世界史のテーマ史の項目
+const WH_OMNIBUS_ITEMS = [
+  { id: 1, title: '遊牧民', href: '/wh/omnibus/1' },
+];
+
+// 世界史の一問一答の項目
+const WH_QA_ITEMS = [
+  { id: 2, title: 'アジア・アメリカの古代文明', href: '/wh/q-a?unit=2' },
+  { id: 10, title: 'ヨーロッパ世界の拡大', href: '/wh/q-a?unit=10' },
+];
+
 export default function EnhancedAccordionMenu({
   subject,
   pages,
@@ -91,7 +111,9 @@ export default function EnhancedAccordionMenu({
   currentSection = 'lessons',
   currentItemId,
 }: EnhancedAccordionMenuProps) {
-  const eras = JH_ERAS; // 他の科目は後で対応
+  const eras = subject === 'wh' ? WH_ERAS : JH_ERAS;
+  const omnibusItems = subject === 'wh' ? WH_OMNIBUS_ITEMS : JH_OMNIBUS_ITEMS;
+  const qaItems = subject === 'wh' ? WH_QA_ITEMS : JH_QA_ITEMS;
   
   const subjectColors = {
     jh: { 
@@ -221,21 +243,21 @@ export default function EnhancedAccordionMenu({
         )}
       </div>
 
-      {/* 短期攻略セクション */}
-      {subject === 'jh' && (
+      {/* 短期攻略・テーマ史セクション */}
+      {(subject === 'jh' || subject === 'wh') && (
         <div className="accordion-section">
           <button 
             className="accordion-header" 
             onClick={() => toggleSection('omnibus')}
           >
-            <span className="accordion-title">短期攻略</span>
+            <span className="accordion-title">{subject === 'jh' ? '短期攻略' : 'テーマ史'}</span>
             <span className={`accordion-arrow ${openSections.has('omnibus') ? 'open' : ''}`}>▼</span>
           </button>
           
           {openSections.has('omnibus') && (
             <div className="accordion-content">
               <ul className="lesson-list">
-                {JH_OMNIBUS_ITEMS.map(item => (
+                {omnibusItems.map(item => (
                   <li key={item.id}>
                     <a 
                       href={item.href}
@@ -291,7 +313,7 @@ export default function EnhancedAccordionMenu({
       )}
 
       {/* 一問一答セクション */}
-      {subject === 'jh' && (
+      {(subject === 'jh' || subject === 'wh') && (
         <div className="accordion-section">
           <button 
             className="accordion-header" 
@@ -304,7 +326,7 @@ export default function EnhancedAccordionMenu({
           {openSections.has('q-a') && (
             <div className="accordion-content">
               <ul className="lesson-list">
-                {JH_QA_ITEMS.map(item => (
+                {qaItems.map(item => (
                   <li key={item.id}>
                     <a 
                       href={item.href}

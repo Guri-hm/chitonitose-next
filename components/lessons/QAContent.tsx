@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useCallback, useMemo } from 'react';
+import { useState, useCallback, useMemo, useEffect } from 'react';
 
 export interface QAItem {
   subject_id: number;
@@ -45,6 +45,15 @@ export default function QAContent({ allItems, units, fileInfo }: QAContentProps)
   const [openItems, setOpenItems] = useState<Set<string>>(new Set());
   const [allOpen, setAllOpen] = useState(false);
   const [shuffled, setShuffled] = useState<QAItem[] | null>(null);
+
+  // URLの?unit=で単元を初期選択（静的書き出しのためsearchParamsではなくクライアント側で読む）
+  useEffect(() => {
+    const unitParam = new URLSearchParams(window.location.search).get('unit');
+    if (unitParam) {
+      const unitId = parseInt(unitParam, 10);
+      if (!isNaN(unitId)) setSelectedUnit(unitId);
+    }
+  }, []);
 
   // 単元を変えたら授業番号をリセット
   const handleUnitChange = (unitId: number | null) => {
