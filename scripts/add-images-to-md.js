@@ -23,7 +23,7 @@ function extractImageInfo(htmlPath) {
     const caption = text || '';
     
     images.push({
-      src: src ? src.replace('../share/img/loading.svg', '') : '',
+      src: src ? src.replace('../share/img/loading.svg', '').replace(/^img\//, '') : '',
       alt,
       classes: classes.split(' ').filter(c => c && c !== 'lazyload' && c !== 'popup-img'),
       caption
@@ -121,8 +121,8 @@ function processDirectory(category) {
   
   for (const htmlFile of htmlFiles) {
     // ファイル名から対応するMDファイルを推測
-    // 例: jh_lessons1.html → 1.md
-    const match = htmlFile.match(/^(jh|geo|wh)_lessons(.+)\.html$/);
+    // 例: jh_lessons1.html → 1.md, geo_lessons_map_history.html → map_history.md
+    const match = htmlFile.match(/^(jh|geo|wh)_lessons_?(.+)\.html$/);
     if (!match) continue;
     
     const lessonName = match[2];

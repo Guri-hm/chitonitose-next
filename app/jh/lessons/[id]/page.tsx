@@ -1,4 +1,6 @@
 import { notFound } from 'next/navigation';
+import fs from 'fs';
+import path from 'path';
 import { loadSubjectPages } from '@/lib/dataLoader';
 import { getMDXLesson } from '@/lib/mdxLoader';
 import type { Metadata } from 'next';
@@ -40,10 +42,13 @@ export async function generateMetadata({ params }: LessonPageProps): Promise<Met
 // 静的パスを生成（ビルド時）
 export async function generateStaticParams() {
   const pages = await loadSubjectPages(2); // 日本史
+  const contentDir = path.join(process.cwd(), 'content', 'jh', 'lessons');
   
-  return pages.map((page) => ({
-    id: page.no.toString(),
-  }));
+  return pages
+    .filter((page) => fs.existsSync(path.join(contentDir, `${page.no}.md`)))
+    .map((page) => ({
+      id: page.no.toString(),
+    }));
 }
 
 export default async function JHLessonPage({ params }: LessonPageProps) {

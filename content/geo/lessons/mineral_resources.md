@@ -8,6 +8,8 @@
 ::
 #### 鉄山の分布
 ::gazo
+![鉄山の分布](iron_mine.webp){.twice.border.border-1}
+鉄山の分布
 ::
 #### 生産国・輸出国
 ### 銅鉱
@@ -22,12 +24,16 @@
 ::
 #### 銅山の分布
 ::gazo
+![安定陸塊](craton_for_iron.webp){.twice.border.border-1}
+安定陸塊
 ::
 ::last
 ラトソルが見られるような熱帯・亜熱帯の地域、特にサバナ気候の地域に多く分布します。
 ::
 #### ボーキサイトの分布
 ::gazo
+![銅山の分布](copper_mine.webp){.twice.border.border-1}
+銅山の分布
 ::
 ::middle
 そのためアルミニウム生産の過程では、大量の電力が必要になります。
@@ -38,18 +44,24 @@
 #### 生産国・輸出国
 ### すず
 ::gazo
+![ボーキサイトの分布](bauxite_distribution.webp){.twice.border.border-1}
+ボーキサイトの分布
 ::
 ::last
 装飾品をはじめ、スマートフォンや電気自動車などにも利用されます。
 ::
 #### 金鉱の分布
 ::gazo
+![すずの分布](tin.webp){.twice.border.border-1}
+すずの分布
 ::
 ::last
 例えば、アフリカでは南アフリカ共和国とジンバブエに産地が限られます。
 ::
 #### プラチナの分布
 ::gazo
+![金鉱の分布](gold_mine.webp){.twice.border.border-1}
+金鉱の分布
 ::
 ::last
 チタン・クロム・ニッケルなどが該当します。
@@ -71,10 +83,14 @@
 ::
 ### ニッケル
 ::gazo
+![プラチナの分布](platinum_mine.webp){.twice.border.border-1}
+プラチナの分布
 ::
 #### ダイヤモンド
 ::top
 ダイヤモンドは、装飾用だけでなく、高硬度ゆえに工業用でも重要です。
 ::
 ::gazo
+![ニッケルの分布](nickel.webp){.twice.border.border-1}
+ニッケルの分布
 ::

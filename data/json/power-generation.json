@@ -1,0 +1,178 @@
+[
+  {
+    "nation_cd": 76,
+    "data_year": 2019,
+    "thermal_power": 920,
+    "hydroelectricity": 3979,
+    "nuclear_power": 161,
+    "wind_power": 560,
+    "solar_power": 67,
+    "geothermal_power": 0,
+    "biomass_power": 573
+  },
+  {
+    "nation_cd": 124,
+    "data_year": 2019,
+    "thermal_power": 1165,
+    "hydroelectricity": 3797,
+    "nuclear_power": 1012,
+    "wind_power": 327,
+    "solar_power": 41,
+    "geothermal_power": 0,
+    "biomass_power": 111
+  },
+  {
+    "nation_cd": 156,
+    "data_year": 2019,
+    "thermal_power": 50988.8,
+    "hydroelectricity": 13044.4,
+    "nuclear_power": 3483.6,
+    "wind_power": 4060.3,
+    "solar_power": 2250.9,
+    "geothermal_power": 1.3,
+    "biomass_power": 1211.4
+  },
+  {
+    "nation_cd": 208,
+    "data_year": 2019,
+    "thermal_power": 57,
+    "hydroelectricity": 0.17,
+    "nuclear_power": 0,
+    "wind_power": 161,
+    "solar_power": 10,
+    "geothermal_power": 0,
+    "biomass_power": 67
+  },
+  {
+    "nation_cd": 250,
+    "data_year": 2019,
+    "thermal_power": 511,
+    "hydroelectricity": 616,
+    "nuclear_power": 3990,
+    "wind_power": 347,
+    "solar_power": 122,
+    "geothermal_power": 1,
+    "biomass_power": 110
+  },
+  {
+    "nation_cd": 276,
+    "data_year": 2019,
+    "thermal_power": 2774,
+    "hydroelectricity": 257,
+    "nuclear_power": 751,
+    "wind_power": 1259,
+    "solar_power": 464,
+    "geothermal_power": 2,
+    "biomass_power": 570
+  },
+  {
+    "nation_cd": 352,
+    "data_year": 2019,
+    "thermal_power": 0.03,
+    "hydroelectricity": 135,
+    "nuclear_power": 0,
+    "wind_power": 0.07,
+    "solar_power": 0,
+    "geothermal_power": 60,
+    "biomass_power": 0
+  },
+  {
+    "nation_cd": 380,
+    "data_year": 2019,
+    "thermal_power": 1731,
+    "hydroelectricity": 482,
+    "nuclear_power": 0,
+    "wind_power": 202,
+    "solar_power": 237,
+    "geothermal_power": 61,
+    "biomass_power": 220
+  },
+  {
+    "nation_cd": 392,
+    "data_year": 2019,
+    "thermal_power": 7508.3,
+    "hydroelectricity": 872.6,
+    "nuclear_power": 637.8,
+    "wind_power": 76.7,
+    "solar_power": 689.5,
+    "geothermal_power": 28.3,
+    "biomass_power": 445.9
+  },
+  {
+    "nation_cd": 554,
+    "data_year": 2019,
+    "thermal_power": 82,
+    "hydroelectricity": 256,
+    "nuclear_power": 0,
+    "wind_power": 23,
+    "solar_power": 1,
+    "geothermal_power": 80,
+    "biomass_power": 6
+  },
+  {
+    "nation_cd": 578,
+    "data_year": 2019,
+    "thermal_power": 26,
+    "hydroelectricity": 1264,
+    "nuclear_power": 0,
+    "wind_power": 55,
+    "solar_power": 0.13,
+    "geothermal_power": 0,
+    "biomass_power": 5
+  },
+  {
+    "nation_cd": 616,
+    "data_year": 2019,
+    "thermal_power": 1370,
+    "hydroelectricity": 27,
+    "nuclear_power": 0,
+    "wind_power": 151,
+    "solar_power": 7,
+    "geothermal_power": 0,
+    "biomass_power": 83
+  },
+  {
+    "nation_cd": 643,
+    "data_year": 2019,
+    "thermal_power": 7111,
+    "hydroelectricity": 1965,
+    "nuclear_power": 2090,
+    "wind_power": 3,
+    "solar_power": 13,
+    "geothermal_power": 4,
+    "biomass_power": 29
+  },
+  {
+    "nation_cd": 724,
+    "data_year": 2019,
+    "thermal_power": 1106,
+    "hydroelectricity": 269,
+    "nuclear_power": 583,
+    "wind_power": 556,
+    "solar_power": 151,
+    "geothermal_power": 0,
+    "biomass_power": 66
+  },
+  {
+    "nation_cd": 752,
+    "data_year": 2019,
+    "thermal_power": 17,
+    "hydroelectricity": 654,
+    "nuclear_power": 661,
+    "wind_power": 198,
+    "solar_power": 7,
+    "geothermal_power": 0,
+    "biomass_power": 147
+  },
+  {
+    "nation_cd": 826,
+    "data_year": 2019,
+    "thermal_power": 1397,
+    "hydroelectricity": 77,
+    "nuclear_power": 562,
+    "wind_power": 643,
+    "solar_power": 129,
+    "geothermal_power": 0,
+    "biomass_power": 420
+  }
+]

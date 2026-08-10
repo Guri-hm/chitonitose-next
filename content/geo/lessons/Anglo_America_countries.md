@@ -1,6 +1,8 @@
 ## アメリカ合衆国
 ### 基礎データ
 ::gazo
+![アメリカ合衆国](map_US.webp){.border.border-1}
+アメリカ合衆国
 ::
 ::middle
 1776年、植民地の人々はイギリス本国からの独立を勝ち取り、13州からなる連邦国家としてアメリカ合衆国が成立しました。
@@ -9,12 +11,16 @@
 独立後、アメリカ合衆国は他国の領土を買収や戦争による割譲で獲得し、その国土は太平洋に至りました。
 ::
 ::gazo
+![アメリカ合衆国の領土拡大の歴史](US_history.webp){.border.border-1.twice}
+アメリカ合衆国の領土拡大の歴史
 ::
 #### 行政
 ::top
 現在、アメリカ合衆国は50州で構成されます。
 ::
 ::gazo
+![アメリカ合衆国の旧領土保有国](US_old_territory.webp){.border.border-1.twice}
+アメリカ合衆国の旧領土保有国
 ::
 ### 人種・民族
 ::top
@@ -24,6 +30,8 @@
 この言葉は多数の人種・民族が文化的特色を失わすに共存する様を指しています。
 ::
 ::gazo
+![アメリカ合衆国の州](US_state.webp){.border.border-1.twice}
+アメリカ合衆国の州＊地理で登場する代表的な州のみ
 ::
 ::middle
 ヨーロッパ系のうち、アングロサクソン系の白人プロテスタント（[[WASP]]）と呼ばれる人々は、建国以来アメリカ合衆国の主流を占めてきました。
@@ -111,8 +119,12 @@ White Anglo-Saxon Protestantの略
 しかし同時に、地価の再高騰で低所得者層が居住地を手放さざるを得なくなるジェントリフィケーションが生じました。
 ::
 ::gazo
+![アメリカ合衆国の地域区分](US_geographic_division.webp){.border.border-1.twice}
+アメリカ合衆国の地域区分
 ::
 ::gazo
+![アメリカ合衆国の人種・民族の居住分布](US_distribution_of_people.webp){.border.border-1.twice}
+アメリカ合衆国の人種・民族の居住分布
 ::
 ::top
 人口が集中する北東部、フロリダ州、メキシコ湾岸
@@ -151,15 +163,23 @@ White Anglo-Saxon Protestantの略
 カリフォルニア州でブドウ・オレンジなどを栽培
 ::
 ::gazo
+![ニューヨーク市のセグリゲーション](segregation_New_York_City.webp){.border.border-1}
+ニューヨーク市のセグリゲーション＊黄色部分がニューヨーク市の市域
 ::
 ::gazo
+![アメリカ合衆国の農業](US_agriculture.webp){.border.border-1.twice}
+アメリカ合衆国の農業
 ::
 ::last
 等高線に沿って帯状に畑をつくり、雨によって土壌が下に流されるのを防ぎます。
 ::
 ::gazo
+![グレートプレーンズとプレーリー](Great_Plains_Prairie.webp){.border.border-1.twice}
+グレートプレーンズとプレーリー
 ::
 ::gazo
+![フィードロット](feedlot.webp)
+フィードロット
 ::
 ::top
 ニューヨーク
@@ -231,6 +251,8 @@ onclick="chg(this)" class="all">サンノゼエレクトロニクス産業
 水産物の食品加工業が盛んです。
 ::
 ::gazo
+![コロラド州のセンターピボット](center_pivot_Colorado.webp)
+コロラド州のセンターピボット
 ::
 ::middle
 特にカリフォルニア州サンノゼ付近には、Google、Apple、Facebook、Adobeの本社があり、一帯は[[シリコンバレー]]と呼ばれています。
@@ -239,14 +261,20 @@ onclick="chg(this)" class="all">サンノゼエレクトロニクス産業
 サンノゼ付近以外では、合衆国西岸のシアトルにはAmazon、Microsoftの本社があります。
 ::
 ::gazo
+![](center_pivot_shaft.webp){.half}
+センターピボットの中心
 ::
 ---arrow---
 ::top
 今日、シリコンバレーの成功にあやかって、先端技術産業が盛んな地域には「シリコン〇〇」「エレクトロニクス〇〇」という呼称がつけられています。
 ::
 ::gazo
+![等高線耕作](contour-plowin.webp)
+等高線耕作
 ::
 ::gazo
+![等高線耕作](contour_plowin_illust.webp)
+等高線耕作の図解
 ::
 ### 歴史
 ::top
@@ -283,6 +311,8 @@ onclick="chg(this)" class="all">サンノゼエレクトロニクス産業
 カナダは、対立緩和のために、フランス語・英語を公用語にし、２言語教育を実施
 ::
 ::gazo
+![等高線耕作でない場合](not_contour_plowin_illust.webp)
+等高線耕作でない場合
 ::
 ::middle
 イヌイットの人々は、約3万年〜1.5万年前にアメリカ大陸にやってきたモンゴロイド
@@ -294,8 +324,12 @@ onclick="chg(this)" class="all">サンノゼエレクトロニクス産業
 現在定住化も進み、政府管理下での自治権を得てヌイブト準州が発足
 ::
 ::gazo
+![アメリカ合衆国の工業](US_industry.webp){.border.border-1.twice}
+アメリカ合衆国の工業
 ::
 ::gazo
+![Google本社](Google.webp)
+Google本社
 ::
 ::middle
 ケベック州ではフランス系が多数を占めることから、フランス系のケベック州とイギリス系のオンタリオ州の州境に位置するオタワが首都に選ばれました。

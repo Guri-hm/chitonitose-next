@@ -24,6 +24,8 @@
 古くから発展していた京浜工業地帯・中京工業地帯・阪神工業地帯・北九州工業地帯のうち、近年生産額が低い北九州工業地帯を除いた３地帯を、三大工業地帯と呼びます。
 ::
 ::gazo
+![太平洋ベルト](pacific_belt.webp){.border.border-1}
+太平洋ベルト
 ::
 ::last
 輸送用機械（自動車など）や電気機械などのエネルギー消費が比較的少ない加工組立型産業が発達するようになりました。
@@ -52,25 +54,37 @@
 原料指向型で、石灰岩が採れる山口県・福岡県・埼玉県に多く立地します。
 ::
 ::gazo
+![セメント](JP_cement_industry.webp){.border-1.border}
+セメント
 ::
 ::gazo
+![パルプ・製紙工場](JP_pulp_industry.webp){.border-1.border}
+パルプ・製紙工場
 ::
 ::last
 近年は原料輸入に適した臨海指向型の立地に変わり、交通の便がよい太平洋ベルトに立地します。
 ::
 ::gazo
+![製鉄所](JP_ironworks.webp){.border-1.border}
+製鉄所
 ::
 ::gazo
+![石油化学コンビナート](JP_petrochemical_complex.webp){.border-1.border}
+石油化学コンビナート
 ::
 ::last
 臨空港指向で、地方の空港や空港に運ぶために高速道路付近に立地します。
 ::
 ::gazo
+![IC工場](JP_ic.webp){.border-1.border}
+IC工場
 ::
 ::last
 工場が集まる場所は、日本では各メーカーの創業地と強く結びついています。
 ::
 ::gazo
+![自動車組立工場](JP_car.webp){.border-1.border}
+自動車組立工場
 ::
 ::last
 海外に進出する理由は次の３つです。
@@ -81,6 +95,8 @@
 - 市場の確保
 
 ::gazo
+![日本企業の海外進出先](overseas_expansion_of_jp_companies.webp){.twice}
+日本企業の海外進出先
 ::
 ::last
 貿易摩擦を解消するために、日本は現地法人を設立し、現地生産をおこないました。
@@ -113,6 +129,8 @@
 企業の海外進出は[[産業の空洞化]]を引き起こします。
 ::
 ::gazo
+![産業の空洞化](hollowing_out_of_industry.webp){.twice}
+産業の空洞化
 ::
 ::last
 大分・山口に多く分布しています。

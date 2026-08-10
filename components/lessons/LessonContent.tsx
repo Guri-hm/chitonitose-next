@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useEffect, useRef } from 'react';
 import { createRoot } from 'react-dom/client';
 import LessonImage from '@/components/LessonImage';
+import LessonChart from '@/components/charts/LessonChart';
 import { useImageGallery } from '@/contexts/ImageGalleryContext';
 
 interface LessonContentProps {
@@ -25,6 +26,8 @@ interface LessonContentProps {
     title: string;
   };
   htmlContent?: string;
+  /** ::chart{...} ディレクティブ用データセット（dataset名をキーにしたレコード配列） */
+  chartDatasets?: Record<string, any[]>;
 }
 
 /**
@@ -38,6 +41,7 @@ export default function LessonContent({
   prevLesson,
   nextLesson,
   htmlContent,
+  chartDatasets,
 }: LessonContentProps) {
   const contentRef = useRef<HTMLDivElement>(null);
   const { setImages } = useImageGallery();
@@ -76,11 +80,34 @@ export default function LessonContent({
     // Contextに画像一覧を登録
     setImages(imageDataList);
 
+    // グラフプレースホルダーを収集してマウント
+    const chartPlaceholders = contentRef.current.querySelectorAll('.lesson-chart-placeholder');
+    chartPlaceholders.forEach((placeholder) => {
+      const chartType = (placeholder.getAttribute('data-chart-type') || 'PieChart') as any;
+      const dataset = placeholder.getAttribute('data-chart-dataset') || '';
+      const filter = placeholder.getAttribute('data-chart-filter') || '';
+      const fields = placeholder.getAttribute('data-chart-fields') || '';
+      const title = placeholder.getAttribute('data-chart-title') || '';
+      const rows = chartDatasets?.[dataset] || [];
+
+      const root = createRoot(placeholder);
+      roots.push(root);
+      root.render(
+        <LessonChart
+          chartType={chartType}
+          rows={rows}
+          filter={filter}
+          fields={fields}
+          title={title}
+        />
+      );
+    });
+
     // クリーンアップ
     return () => {
       roots.forEach(root => root.unmount());
     };
-  }, [htmlContent, setImages]);
+  }, [htmlContent, setImages, chartDatasets]);
 
   return (
     <div className="lesson-page">

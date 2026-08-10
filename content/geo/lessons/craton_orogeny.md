@@ -21,6 +21,8 @@
   :::
 
 ::gazo
+![造山運動](orogeny.webp){.twice}
+造山運動
 ::
 ### 安定陸塊
 ::top
@@ -33,12 +35,16 @@
 侵食が進み、鉄鉱石の採掘が容易で採算性が高いため
 ::
 ::gazo
+![安定陸塊の分布](stable_land_mass.webp){.twice.border.border-1}
+安定陸塊の分布
 ::
 ---arrow---
 ::top
 安定陸塊は地層の状態でさらに楯状地と卓状地に分類されます。
 ::
 ::gazo
+![楯状地と卓状地](shield_platform.webp){.twice.border.border-1}
+楯状地と卓状地
 ::
 #### 楯状地
 ::top
@@ -48,8 +54,12 @@
 この呼称は、地形が横から見ると中央から海に向かって傾斜をとり、西洋の楯を伏せた形に見えるからです。
 ::
 ::gazo
+![楯状地](shield.webp){.twice.border.border-1}
+楯状地
 ::
 ::gazo
+![楯状地の由来](shield_illustration.webp)
+楯状地の由来
 ::
 ---arrow---
 ::top
@@ -62,6 +72,8 @@
 巨大地震も少なく安定していますが、技術革新が起こるまで不毛な土地とされていました。
 ::
 ::gazo
+![カナダ楯状地](Canadian_Shield.webp)
+カナダ楯状地
 ::
 ---arrow---
 ::top
@@ -71,8 +83,12 @@
 残丘の代表例は、オーストラリアのウルルが有名です。
 ::
 ::gazo
+![残丘](peneplain.webp)
+残丘
 ::
 ::gazo
+![ウルル](Ayers_Rock.webp)
+ウルル*アボリジニ―による呼称
 ::
 #### 卓状地
 ::top
@@ -82,8 +98,12 @@
 これは、陸地が古生代・中生代に海面下に沈降し、先カンブリア時代の地層の上に、ほぼ水平に土砂が堆積したからです。
 ::
 ::gazo
+![卓状地](platform.webp){.twice.border.border-1}
+卓状地
 ::
 ::gazo
+![東ヨーロッパ平原](East_European_Plain.webp)
+東ヨーロッパ平原
 ::
 ---arrow---
 ::top
@@ -95,8 +115,13 @@
 スペイン語でテーブルの意味
 ::
 ::gazo
+![メサとビュート](mesa_butte_illustration.webp){.twice}
+メサとビュート
 ::
 ::gazo
+![コロラド高原のモニュメントバレー
+](Monument_Valley.webp)
+コロラド高原のモニュメントバレー*写真中にメサとビュート
 ::
 ::top
 卓状地のなかで、軟層・硬層の地層が交互に緩傾斜をなしているとき、軟層部分が速く侵食されて、硬層部分が取り残されます。
@@ -110,6 +135,8 @@
 スペイン語で長い斜面の意味
 ::
 ::gazo
+![ケスタ](cuesta.webp)
+ケスタ
 ::
 ---arrow---
 ::top
@@ -119,8 +146,12 @@
 崖部分の水はけ、日照に対しての適度な傾斜を利用して、[[ブドウ]]を栽培しています。
 ::
 ::gazo
+![傾斜面の日照](sunshine_slope.webp)
+傾斜面の日照
 ::
 ::gazo
+![シャンパーニュ地方（パリ盆地東部）](Vineyards_of_Champagne .webp)
+シャンパーニュ地方（パリ盆地東部）
 ::
 ### 古期造山帯
 ::top
@@ -130,13 +161,21 @@
 資源の産地としては、鉄山/炭田/油田が分布します。
 ::
 ::gazo
+![古期造山帯の分布](ancient_orogen.webp){.twice.border.border-1}
+古期造山帯の分布
 ::
 ::gazo
+![グレートディバイディング山脈](Great_Dividing_Range.webp)
+グレートディバイディング山脈
 ::
 ::gazo
+![ウラル山脈](Ural_Mountains.webp)
+ウラル山脈
 ::
 #### 代表的な古期造山帯の山脈
 ::gazo
+![代表的な古期造山帯の山脈](old_orogenic_belt_example.webp){.twice.border.border-1}
+代表的な古期造山帯の山脈
 ::
 
 - [[スカンディナヴィア山脈]]
@@ -150,14 +189,20 @@
 古期造山帯の山脈は、断面図を見るとその緩やかさがわかります。
 ::
 ::gazo
+![代表的な古期造山帯の山脈](cross-section_diagram_of_the_Ural_Mountains_map.webp){.border.border-1}
+ウラル山脈の断面図の始点と終点*地理院地図で作成
 ::
 ::gazo
+![代表的な古期造山帯の山脈](cross-section_diagram_of_the_Ural_Mountains_graph.webp)
+ウラル山脈の断面図*地理院地図で作成
 ::
 #### 古期造山帯だけど険しい山脈
 ::top
 [[テンシャン山脈]]は、インド亜大陸がユーラシア大陸に衝突したことで再隆起し、古期造山帯の他の山脈より起伏が大きい山脈です（平均標高3500～5000m）。
 ::
 ::gazo
+![インド亜大陸の北上](northward_movement_of_the_Indian_subcontinent.webp){.border.border-1}
+インド亜大陸の北上
 ::
 ### 新期造山帯
 ::top
@@ -170,6 +215,8 @@
 例：環太平洋造山帯、アルプス＝ヒマラヤ造山帯
 ::
 ::gazo
+![新期造山帯の分布](new_orogen.webp){.twice.border.border-1}
+新期造山帯の分布
 ::
 ---arrow---
 ::top
@@ -195,13 +242,23 @@
 対して安定陸塊・古期造山帯は、地震と火山活動が少ないです。
 ::
 ::gazo
+![主な地震の分布](earthquake_distribution.webp){.twice.border.border-1}
+主な地震の分布
 ::
 ::gazo
+![主な火山の分布](distribution_of_volcanoes.webp){.twice.border.border-1}
+主な火山活動の分布
 ::
 ## プレート・境界・造山運動の分布まとめ
 ::gazo
+![主要なプレート](plate_world.webp){.twice.border-1.border}
+主要なプレート
 ::
 ::gazo
+![プレートの境界](boundary.webp){.twice.border-1.border}
+プレートの境界
 ::
 ::gazo
+![造山運動](major_landforms.webp){.twice.border-1.border}
+造山運動
 ::

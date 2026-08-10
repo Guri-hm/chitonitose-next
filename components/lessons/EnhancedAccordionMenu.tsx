@@ -2,10 +2,12 @@
 
 import { useState } from 'react';
 import './AccordionMenu.css';
+import { GEO_CATEGORIES } from '@/lib/geoLessons';
 
 interface Page {
   no: number;
   title: string;
+  slug?: string; // geo用のslugベースナビゲーション
 }
 
 interface Era {
@@ -28,6 +30,7 @@ interface EnhancedAccordionMenuProps {
   currentLessonNo?: number;
   currentSection?: string; // 'lessons' | 'omnibus' | 'cultural-history' | 'q-a'
   currentItemId?: number | string;
+  currentSlug?: string; // geo用
 }
 
 // 日本史の時代区分
@@ -104,12 +107,57 @@ const WH_QA_ITEMS = [
   { id: 10, title: 'ヨーロッパ世界の拡大', href: '/wh/q-a?unit=10' },
 ];
 
+// geo用：カテゴリ内アコーディオンセクション
+function GeoAccordionSection({
+  category,
+  currentSlug,
+}: {
+  category: import('@/lib/geoLessons').GeoCategory;
+  currentSlug?: string;
+}) {
+  const [open, setOpen] = useState(() =>
+    category.sections.some((sec) => sec.lessons.some((l) => l.slug === currentSlug))
+  );
+  return (
+    <div className="accordion-section">
+      <button className="accordion-header" onClick={() => setOpen((v) => !v)}>
+        <span className="accordion-title">{category.title}</span>
+        <span className={`accordion-arrow ${open ? 'open' : ''}`}>▼</span>
+      </button>
+      {open && (
+        <div className="accordion-content">
+          {category.sections.map((sec) => (
+            <div key={sec.period} className="era-section">
+              <div className="era-header" style={{ cursor: 'default' }}>
+                <span>{sec.period}</span>
+              </div>
+              <ul className="lesson-list">
+                {sec.lessons.map((lesson) => (
+                  <li key={lesson.slug}>
+                    <a
+                      href={`/geo/${lesson.slug}`}
+                      className={currentSlug === lesson.slug ? 'active' : ''}
+                    >
+                      <span className="lesson-title">{lesson.title}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
 export default function EnhancedAccordionMenu({
   subject,
   pages,
   currentLessonNo,
   currentSection = 'lessons',
   currentItemId,
+  currentSlug,
 }: EnhancedAccordionMenuProps) {
   const eras = subject === 'wh' ? WH_ERAS : JH_ERAS;
   const omnibusItems = subject === 'wh' ? WH_OMNIBUS_ITEMS : JH_OMNIBUS_ITEMS;
@@ -178,6 +226,30 @@ export default function EnhancedAccordionMenu({
       return newSet;
     });
   };
+
+  // geo はカテゴリ別グループ表示
+  if (subject === 'geo') {
+    return (
+      <div
+        className="accordion-menu"
+        style={{
+          '--scrollbar-color': colors.scrollNormal,
+          '--scrollbar-hover-color': colors.scrollHover,
+          '--active-bg': colors.activeBg,
+          '--active-text': colors.activeText,
+          '--active-border': colors.activeBorder,
+        } as React.CSSProperties}
+      >
+        {GEO_CATEGORIES.map((category) => (
+          <GeoAccordionSection
+            key={category.title}
+            category={category}
+            currentSlug={currentSlug}
+          />
+        ))}
+      </div>
+    );
+  }
 
   return (
     <div 

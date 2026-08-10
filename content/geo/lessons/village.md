@@ -31,6 +31,8 @@
 特に扇状地では、谷からの水が地下に伏流する前に得やすい[[扇頂]]と、伏流した水が湧出する[[扇端]]に集落が立地します。
 ::
 ::gazo
+![扇状地の村落の立地](alluvial_fan_village.svg)
+扇状地の集落の立地（赤枠）
 ::
 ::top
 ただし、扇状地も含め沖積平野では水害が心配されます。
@@ -39,8 +41,12 @@
 集落は、氾濫原の[[自然堤防]]のような微高地、河岸段丘の段丘面に立地します。
 ::
 ::gazo
+![滋賀県高島市](Takashima_City_GoogleEarth.webp)
+滋賀県高島市＊GoogleEarthより
 ::
 ::gazo
+![自然堤防の集落の立地](natural_levee.webp)
+自然堤防の集落の立地
 ::
 #### 社会条件
 ::top
@@ -60,20 +66,32 @@
 
 #### 塊村
 ::gazo
+![青森県岩木川](Iwaki_river_GoogleEarth.webp)
+青森県岩木川＊GoogleEarthより
 ::
 #### 路村
 ::gazo
+![河岸段丘の集落の立地](river_terraces_village.svg)
+河岸段丘の集落の立地（赤枠）
 ::
 #### 街村
 ::gazo
+![新潟県津南町](TsunanTown.jpg)
+新潟県津南町＊GoogleEarthより
 ::
 #### 列村
 ::gazo
+![塊村](irregular_clustered_village.jpg)
+塊村（ドイツ ミュンヘン郊外）＊GoogleEarthより
 ::
 #### 散村
 ::gazo
+![路村](Santomishinden.jpg)
+路村（埼玉県三富新田）＊GoogleEarthより
 ::
 ::gazo
+![路村](Beinberg.jpg)
+路村（ドイツ バインベルク）＊GoogleEarthより
 ::
 ::last
 その名残が現在の奈良盆地などに見られます。
@@ -84,11 +102,15 @@
 碁盤状の田地で、東西の列を「１条、２条、３条…」、南北の列を「１里、２里、３里…」と管理
 ::
 ::gazo
+![街村](tsumagojuku1.jpg)
+街村（長野県妻籠宿）
 ::
 ::top
 なお、古代の都市である「平城京」「平安京」は唐の長安に倣っており、碁盤上の区画で管理されました。
 ::
 ::gazo
+![街村](tsumagojuku2.jpg)
+街村（長野県妻籠宿）＊GoogleEarthより
 ::
 #### 近世（江戸時代）
 ::top

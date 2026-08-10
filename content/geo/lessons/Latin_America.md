@@ -6,11 +6,15 @@
 このような背景から、中央アメリカおよび南アメリカ大陸はラテンアメリカと呼ばれています。
 ::
 ::gazo
+![ラテンアメリカの地形](Latin_America_terrain.webp){.border.border-1.twice}
+ラテンアメリカの地形
 ::
 ::last
 境界に並行して海底に海溝が分布
 ::
 ::gazo
+![ナスカプレートと南アメリカプレート](Latin_America_plate.webp){.border.border-1}
+ナスカプレートと南アメリカプレート
 ::
 #### 西インド諸島
 ::top
@@ -39,15 +43,22 @@
 アマゾン川の河口が赤道付近と押さえておくと、白地図での北半球・南半球の判断に役立つ
 ::
 ::gazo
+![アマゾン川とセルバ](Amazon_River.webp)
+アマゾン川とセルバ
 ::
 ::last
 河口に[[エスチュアリー]]が発達しています。
 ::
 ::gazo
+![ラプラタ川](La_Plata_River.webp)
+ラプラタ川
 ::
 ::gazo
+![ギアナ高地](Guiana_Highlands.webp)
+ギアナ高地＊ロライマ山
 ::
 ::gazo
+![ラテンアメリカの断面図（地図）](Latin_America_cross_section_map.webp){.border.border-1}
 ::
 ::top
 太平洋岸はアンデス山脈が走って標高が高く、東部はブラジル高原が広がって標高300～500mの低地の山地が入り組んでいます。
@@ -81,8 +92,11 @@
   :::
 
 ::gazo
+![ラテンアメリカの断面](Latin_America_cross_section.webp){.twice}
 ::
 ::gazo
+![ラテンアメリカの草原](Latin_America_meadow.webp){.border.border-1.twice}
+ラテンアメリカの草原
 ::
 ### 大陸別の気候区分の割合
 ::top
@@ -113,6 +127,8 @@
 [[砂漠]]気候（[[BW]]）
 ::
 ::gazo
+![カンポ](campo.webp)
+カンポ
 ::
 ::top
 偏西風の影響を受けて[[西岸海洋性]]気候（[[Cfb]]）
@@ -129,9 +145,13 @@
 大航海時代に、大足パタゴン族が住むと報告されたことに由来
 ::
 ::gazo
+![セラード](cerrado.webp)
+セラード
 ::
 ### 各都市の雨温図
 ::gazo
+![ラテンアメリカの気候](Latin_America_climate.webp){.border.border-1.twice}
+ラテンアメリカの気候
 ::
 ::middle
 メキシコの都市のなかで人口が一極集中するプライメートシティであり、スラムや大気汚染などの都市問題を抱えています。
@@ -140,21 +160,29 @@
 標高が高いため年間を通して涼しく、冬季は南下した中緯度高圧帯の影響で乾燥します。
 ::
 ::gazo
+![アタカマ砂漠](Atacama_desert.webp)
+アタカマ砂漠
 ::
 ::last
 赤道直下ですが、標高2,850mに位置するため、気温は１年を通して10～15℃の常春です。
 ::
 ::gazo
+![パタゴニアのウシュアイアの樹木](Ushuaïa.webp)
+偏西風で曲がった木＊パタゴニアのウシュアイア
 ::
 ::last
 寒流のペルー海流の影響で乾燥し、付近にはアタカマ砂漠が形成されています。
 ::
 ::gazo
+![ラテンアメリカの砂漠](Latin_America_desert.webp){.border.border-1.twice}
+ラテンアメリカの砂漠
 ::
 ::last
 赤道付近に位置し、年間を通して高温・湿潤です。
 ::
 ::gazo
+![ラテンアメリカの都市](Latin_America_city.webp){.border.border-1.twice}
+ラテンアメリカの都市
 ::
 ::middle
 日本の気候に似た地域があり、はっきりとした四季があります。
@@ -163,16 +191,22 @@
 なお、緯度は東京と同じ35度です。
 ::
 ::gazo
+![メキシコシティの雨温図](Mexico_City_climograph.webp)
+メキシコシティの雨温図（Cw）
 ::
 ::last
 標高約3,600mの都市で高山気候に属し、気温は常春です。
 ::
 ::gazo
+![キトの雨温図](Quito_climograph.webp)
+キトの雨温図（H）
 ::
 ::last
 夏季に中緯度高圧帯の影響で乾燥します。
 ::
 ::gazo
+![リマの雨温図](Lima_climograph.webp)
+リマの雨温図（BW）
 ::
 
 - インディオ（先住民の総称）
@@ -194,6 +228,8 @@
 
 #### 先住民の文明
 ::gazo
+![マナオス（マナウス）の雨温図](Manaus_climograph.webp)
+マナオス（マナウス）の雨温図（Af）
 ::
 ### 混血の進行
 ::top
@@ -217,6 +253,8 @@
   :::
 
 ::gazo
+![ブエノスアイレスの雨温図](Buenos_Aires_climograph.webp)
+ブエノスアイレスの雨温図（Cfa）
 ::
 ## 言語・宗教
 ### 旧宗主国
@@ -228,11 +266,17 @@
 - スリナム：オランダの旧植民地
 
 ::gazo
+![ラパスの雨温図](La_Paz_climograph.webp)
+ラパスの雨温図（H）
 ::
 ::gazo
+![サンティアゴの雨温図](Santiago_climograph.webp)
+サンティアゴの雨温図（Cs）
 ::
 ## 農業
 ::gazo
+![アステカ王国のククルカン神殿](Kukulcan.webp)
+アステカ王国のククルカン神殿
 ::
 #### 熱帯の海岸付近
 ::top
@@ -263,8 +307,12 @@
 リャマやアルパカなどの放牧
 ::
 ::gazo
+![インカ帝国のマチュピチュ](Machu_Picchu.webp)
+インカ帝国のマチュピチュ
 ::
 ::gazo
+![混血](miscegenation.webp){.twice}
+混血
 ::
 ### 経済発展の遅れ
 ::top
@@ -281,12 +329,18 @@
   :::
 
 ::gazo
+![ラテンアメリカの人種の分布](Latin_America_peaple.webp){.border.border-1.twice}
+ラテンアメリカの人種の分布
 ::
 ### 鉱産資源の分布
 ::top
 原油・鉄鉱石のほかに、メキシコ・ペルーでは銀鉱が、ペルー・チリでは銅鉱が豊富です。
 ::
 ::gazo
+![ラテンアメリカの旧宗主国](Latin_America_suzerain_state.webp){.border.border-1.twice}
+ラテンアメリカの旧宗主国
 ::
 ::gazo
+![ラテンアメリカの公用語](Latin_America_language.webp){.border.border-1.twice}
+ラテンアメリカの公用語
 ::

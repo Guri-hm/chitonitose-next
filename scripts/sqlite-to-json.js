@@ -154,6 +154,11 @@ async function main() {
     if (gdpGni.length > 0) writeJSON('gdp-gni.json', gdpGni);
     filesCreated++;
 
+    // 発電構成（火力・水力・原子力・風力・太陽光・地熱・バイオマス）
+    const powerGeneration = safeQuery(db, 'SELECT * FROM power_generation', 'power generation');
+    if (powerGeneration.length > 0) writeJSON('power-generation.json', powerGeneration);
+    filesCreated++;
+
     // 都市人口（大きいテーブルなので制限）
     const urbanPopulation = safeQuery(db, 'SELECT * FROM urban_population LIMIT 200', 'urban population (limited)');
     if (urbanPopulation.length > 0) writeJSON('urban-population.json', urbanPopulation);
@@ -292,6 +297,7 @@ async function main() {
           'birthrate-mortality.json',
           'agricultural-workforce.json',
           'gdp-gni.json',
+          'power-generation.json',
           'urban-population.json'
         ],
         statistics: [

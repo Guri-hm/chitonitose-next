@@ -7,10 +7,11 @@ import EnhancedAccordionMenu from './EnhancedAccordionMenu';
 interface Page {
   no: number;
   title: string;
+  slug?: string; // geo用
 }
 
 interface LessonNavigation {
-  no: number;
+  no?: number;
   title: string;
   href: string;
 }
@@ -20,6 +21,7 @@ interface ThreeColumnLayoutProps {
   currentLessonNo?: number;
   currentSection?: 'lessons' | 'omnibus' | 'cultural-history' | 'q-a';
   currentItemId?: number | string;
+  currentSlug?: string; // geo用
   pages: Page[];
   title: string;
   prevLesson?: LessonNavigation;
@@ -32,6 +34,7 @@ export default function ThreeColumnLayout({
   currentLessonNo,
   currentSection = 'lessons',
   currentItemId,
+  currentSlug,
   pages,
   title,
   prevLesson,
@@ -74,6 +77,7 @@ export default function ThreeColumnLayout({
               currentLessonNo={currentLessonNo}
               currentSection={currentSection}
               currentItemId={currentItemId}
+              currentSlug={currentSlug}
             />
           </div>
         </div>
@@ -91,6 +95,7 @@ export default function ThreeColumnLayout({
               currentLessonNo={currentLessonNo}
               currentSection={currentSection}
               currentItemId={currentItemId}
+              currentSlug={currentSlug}
             />
           </div>
         </aside>

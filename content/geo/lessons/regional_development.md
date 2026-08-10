@@ -37,25 +37,37 @@
 五大湖付近では水運が発達し、湖面の高度差を活かした水力発電もおこなわれています。
 ::
 ::gazo
+![アングロアメリカの河川・五大湖](Anglo_America_river_lake.webp){.border.border-1.twice}
+アングロアメリカの河川・五大湖
 ::
 ::last
 2000年以降、東部沿岸部との経済格差・社会格差を縮小させるために、[[西部大開発]]が取り組まれました。
 ::
 ::gazo
+![西部大開発](China_western_development.webp){.twice.border.border-1}
+西部大開発
 ::
 ::last
 この鉄道の敷設で、チベットの観光業の発展を期待しました。
 ::
 ::gazo
+![青蔵鉄道](Qinghai_Tibet_railway.webp)
+青蔵鉄道
 ::
 ::gazo
+![西気東輸](west_east_gas_pipeline.webp)
+西気東輸
 ::
 ::gazo
+![南水北調](south_north_water_transfer.webp)
+南水北調
 ::
 ::last
 計画の一環として、長江中流域に水力発電所として[[サンシャダム]]が建設されました。
 ::
 ::gazo
+![サンシャダム](three_gorges_dam.webp)
+サンシャダム
 ::
 ## エジプト
 ### ナイル川
@@ -80,6 +92,8 @@
 - 土砂の供給が減り、河口の三角州が縮小（海岸の縮小）
 
 ::gazo
+![西電東送](west_east_electric_power.webp)
+西電東送
 ::
 ### スエズ運河
 ::top
@@ -89,11 +103,17 @@
 海運ではアジアとヨーロッパを最短距離で結ぶ重要な運河で、東京・ロンドン間であれば、アフリカ大陸南端の喜望峰を通るよりも距離が約５分の１になります。
 ::
 ::gazo
+![アスワンハイダム](Aswan_High_Dam.webp)
+アスワンハイダム
 ::
 ::gazo
+![ナイル川](Nile_river.webp)
+ナイル川
 ::
 ::last
 ニューヨーク・サンフランシスコ間であれば、南アメリカ大陸南端のホーン岬・ドレーク海峡を通るよりも距離が約５分の２になります。
 ::
 ::gazo
+![スエズ運河](Suez_Canal.webp)
+スエズ運河
 ::

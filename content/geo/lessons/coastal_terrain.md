@@ -6,12 +6,16 @@
 離水海岸のうち、平野の場所を海岸平野、段丘の場所を[[海岸段丘]]と区別します。
 ::
 ::gazo
+![離水海岸・沈水海岸](submergent_emergent_coastline.webp){.twice}
+離水海岸・沈水海岸
 ::
 ### 海岸平野
 ::top
 代表的な海岸平野は、千葉県東岸の九十九里浜です。
 ::
 ::gazo
+![九十九里浜](Kujukuri_beach.webp)
+九十九里浜
 ::
 ### 海岸段丘
 ::top
@@ -24,14 +28,20 @@
 なお、海岸段丘は洪積台地の１つです。
 ::
 ::gazo
+![海岸段丘](coastal_terrace.webp){.twice}
+海岸段丘
 ::
 ::gazo
+![室戸岬](Murotomisaki.webp)
+室戸岬
 ::
 ## 沈水海岸
 ::top
 陸地の沈降や海面の上昇した海岸を沈水海岸と呼びます。
 ::
 ::gazo
+![離水海岸・沈水海岸](submergent_emergent_coastline.webp){.twice}
+離水海岸・沈水海岸
 ::
 ::top
 沈水海岸には、主に次の３つがあります。
@@ -55,6 +65,8 @@
 河川の侵食で形成された谷を[[V字谷]]、氷河による侵食で形成された谷を[[U字谷]]と呼びます。
 ::
 ::gazo
+![Ｖ字谷・Ｕ字谷](V_U_shaped_valley.webp)
+V字谷・U字谷
 ::
 ::top
 このうちで、[[V]]字谷が沈水したのこぎりの歯状の海岸をリアス海岸と呼びます。
@@ -66,6 +78,8 @@
 リアス海岸は、日本国内でも見られ、三陸海岸（岩手・宮城）、志摩半島（三重）、若狭湾（京都・福井）が代表的です。
 ::
 ::gazo
+![Ｖ字谷の沈水](V_shaped_valley_submerged.webp)
+Ｖ字谷の沈水
 ::
 ::top
 リアス海岸は、波が遮られて入り江が穏やかになるため、==良港がよく立地します==。
@@ -77,16 +91,24 @@
 時には、10階建てのビルも越える高さになります。
 ::
 ::gazo
+![リアスバハス](rias_bajas.webp){.border.border-1}
+リアスバハス
 ::
 ::gazo
+![リアス海岸（伊勢）](rias_coast.webp)
+リアス海岸（伊勢）
 ::
 ::gazo
+![リアス海岸の津波](tsunami_v.webp)
+リアス海岸の津波
 ::
 ### フィヨルド
 ::top
 河川の侵食で形成された谷を[[Ｖ字谷]]、氷河による侵食で形成された谷を[[Ｕ字谷]]と呼びます。
 ::
 ::gazo
+![Ｖ字谷・Ｕ字谷](V_U_shaped_valley.webp)
+Ｖ字谷・Ｕ字谷
 ::
 ::top
 このうちで、[[Ｕ]]字谷に海水が流入して形成された地形をフィヨルドと呼びます。
@@ -98,10 +120,16 @@
 上記以外の場所でも、基本的には==かつて氷河があった高緯度の地域==で見られます。
 ::
 ::gazo
+![Ｕ字谷の沈水](U_shaped_valley_submerged.webp)
+Ｕ字谷の沈水
 ::
 ::gazo
+![U字谷](U_shaped_valley.webp)
+U字谷
 ::
 ::gazo
+![フィヨルド](fjord.webp)
+フィヨルド
 ::
 ### エスチュアリー
 ::gazo
@@ -134,6 +162,7 @@ src="../share/img/loading.svg" />
 代表例は、エルベ川・テムズ川・ジロンド川・セーヌ川などです。
 ::
 ::gazo
+![](estuary1.svg)
 ::
 ::top
 ただし、エスチュアリーが見られない例外的なヨーロッパの川が、[[ライン]]川です。
@@ -145,6 +174,7 @@ src="../share/img/loading.svg" />
 急峻な山地であるため、土砂の供給が多くなります。
 ::
 ::gazo
+![](estuary2.svg)
 ::
 #### エスチュアリーと産業
 ::top
@@ -177,21 +207,33 @@ src="../share/img/loading.svg" />
   :::
 
 ::gazo
+![イギリスのテムズ川のエスチュアリー](Thames_estuary.webp)
+イギリスのテムズ川のエスチュアリー*GoogleEarthより
 ::
 ### 微地形の代表例
 #### 砂嘴
 ::gazo
+![ヨーロッパ中部の河川](rivers_Europe.webp){.border.border-1}
+ヨーロッパ中部の河川
 ::
 #### 砂州
 ::gazo
+![](bichikei.webp){.twice}
+微地形
 ::
 #### 陸繋島
 ::gazo
+![](notsuke.webp)
+野付半島（北海道）
 ::
 ::gazo
+![](amanohashidate.webp)
+天橋立（京都）
 ::
 #### 潟湖（ラグーン）
 ::gazo
+![](enoshima.webp)
+江ノ島（神奈川）
 ::
 ## サンゴ礁
 ### サンゴ礁の分布
@@ -205,8 +247,12 @@ src="../share/img/loading.svg" />
 日本では==北緯30度以南==のトカラ列島が北限で、奄美・沖縄と小笠原の島々に限られています。
 ::
 ::gazo
+![](hakodate.webp)
+函館山（北海道）
 ::
 ::gazo
+![](lagoon.webp)
+ラグーン
 ::
 ### サンゴ礁の発達
 ::top
@@ -237,6 +283,8 @@ src="../share/img/loading.svg" />
 これはA・Bの海域にはそれぞれ暖流/寒流の[[ペルー海流]]と[[ベンゲラ海流]]が流れているからです。
 ::
 ::gazo
+![サンゴ礁](coral_reef.webp)
+サンゴ礁
 ::
 ### 代表例
 #### 裾礁
@@ -244,6 +292,8 @@ src="../share/img/loading.svg" />
 日本では小笠原や沖縄で裾礁が見られます。
 ::
 ::gazo
+![サンゴ礁の分布](map_coral_reef.webp){.border.border-1.twice}
+サンゴ礁の分布
 ::
 #### 堡礁
 ::top
@@ -253,12 +303,17 @@ src="../share/img/loading.svg" />
 別名は大堡礁
 ::
 ::gazo
+![](coralreef.svg){.twice}
 ::
 ::gazo
+![サンゴ礁の分布](coral_reef_world_map.webp){.border.border-1.twice}
+サンゴ礁の分布
 ::
 #### 環礁
 ::top
 モルディブやミクロネシアでは環礁が多く見られます。
 ::
 ::gazo
+![石垣島の裾礁](fringing_reef_Ishigaki.webp)
+石垣島の裾礁
 ::

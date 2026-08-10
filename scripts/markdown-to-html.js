@@ -86,6 +86,32 @@ function parseCustomMarkdown(markdown, subject = '') {
       i++;
       continue;
     }
+
+    // ::chart{...} ブロック（DBデータをJSでGoogle Chartsに渡すプレースホルダー）
+    // 例: ::chart{type="Pie" dataset="power_generation" filter="nation_cd=578" fields="hydroelectricity:水力,thermal_power:火力" title="ノルウェーの発電構成"}
+    if (line.startsWith('::chart{')) {
+      const attrsMatch = line.match(/^::chart\{([\s\S]*)\}$/);
+      const attrs = {};
+      if (attrsMatch) {
+        const attrRegex = /(\w+)="([^"]*)"/g;
+        let m;
+        while ((m = attrRegex.exec(attrsMatch[1])) !== null) {
+          attrs[m[1]] = m[2];
+        }
+      }
+      const escapeAttr = (s) => String(s || '').replace(/"/g, '&quot;');
+      result.push(
+        `<div class="lesson-chart-placeholder" data-chart-type="${escapeAttr(attrs.type)}" ` +
+        `data-chart-dataset="${escapeAttr(attrs.dataset)}" data-chart-filter="${escapeAttr(attrs.filter)}" ` +
+        `data-chart-fields="${escapeAttr(attrs.fields)}" data-chart-title="${escapeAttr(attrs.title)}"></div>`
+      );
+      i++;
+      // 閉じの「::」があれば読み飛ばす（任意）
+      if (i < lines.length && lines[i].trim() === '::') {
+        i++;
+      }
+      continue;
+    }
     
     // 箱書きリスト（- item、ネストした:::leadも導入）
     if (line.startsWith('- ')) {

@@ -123,6 +123,18 @@ export interface GDPGNI {
   gni_per_capita?: number;
 }
 
+export interface PowerGeneration {
+  nation_cd: number;
+  data_year: number;
+  thermal_power?: number;
+  hydroelectricity?: number;
+  nuclear_power?: number;
+  wind_power?: number;
+  solar_power?: number;
+  geothermal_power?: number;
+  biomass_power?: number;
+}
+
 // データ読み込み関数
 
 export const loadNews = () => loadJSON<NewsItem[]>('news.json');
@@ -163,6 +175,20 @@ export const loadClimateClassifications = () => loadJSON<ClimateClassification[]
 export const loadAgingSociety = () => loadJSON<AgingSociety[]>('aging-society.json');
 export const loadBirthrateMortality = () => loadJSON<BirthrateMortality[]>('birthrate-mortality.json');
 export const loadGDPGNI = () => loadJSON<GDPGNI[]>('gdp-gni.json');
+export const loadPowerGeneration = () => loadJSON<PowerGeneration[]>('power-generation.json');
+
+/**
+ * レッスン本文に埋め込む::chart{...}ディレクティブ用のデータセットをまとめて読み込む
+ * dataset名(power_generationなど)をキーにしたレコード配列を返す
+ */
+export async function loadLessonChartDatasets(): Promise<Record<string, any[]>> {
+  const [powerGeneration] = await Promise.all([
+    loadPowerGeneration(),
+  ]);
+  return {
+    power_generation: powerGeneration,
+  };
+}
 
 // ===== 一問一答 =====
 

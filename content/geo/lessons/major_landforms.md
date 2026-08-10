@@ -12,6 +12,8 @@
 それ以前のすべての大陸が衝突して誕生
 ::
 ::gazo
+![パンゲア](continental_drift_Pangaea.webp)
+パンゲア
 ::
 ::top
 パンゲアは、やがて北半球のローラシアと南半球のゴンドワナの２つの大陸に分裂しました。
@@ -23,15 +25,23 @@
 ゴンドワナは、現在の南アメリカ・アフリカ・マダガスカル・オーストラリア・インド亜大陸・南極大陸で構成されました。
 ::
 ::gazo
+![中生代中期(約1億8000万年前)](continental_drift_Mid_Mesogenesis.webp)
+中生代中期(約1億8000万年前)
 ::
 ::top
 現在の大陸は、ローラシア・ゴンドワナがさらに分裂して形成されたと考えられています。
 ::
 ::gazo
+![新生代初期(約6500万年前)](continental_drift_Early_Cenogenesis.webp)
+新生代初期(約6500万年前)
 ::
 ::gazo
+![現在](continental_drift_modern.webp)
+現在
 ::
 ::gazo
+![大陸移動説](pangea.gif)
+大陸移動説
 ::
 ### プレートテクトニクス
 #### 大陸移動説
@@ -59,6 +69,7 @@ src="../share/img/loading.svg" />
 src="../share/img/loading.svg" />
 ::
 ::gazo
+![大陸移動説](Wegener_Findings.webp)
 ::
 ::top
 プレートのうち、大陸側にあって軽いものを大陸プレートと呼び、海側にあって重いものを海洋プレートと呼びます。
@@ -84,8 +95,11 @@ src="../share/img/loading.svg" />
 ウェゲナーが主張した大陸の移動は、プレートの動きによって生じていたのです。
 ::
 ::gazo
+![ひび割れた卵](cracked_egg.webp){.half}
 ::
 ::gazo
+![地球の断面とプレート](plate.webp)
+地球の断面とプレート*厳密な意味でのプレートとは少し異なる
 ::
 ### 現在の大陸
 #### 大陸名
@@ -111,6 +125,8 @@ src="../share/img/loading.svg" />
 「陸地の表面積＝1.5億㎢」となり、表面積は北半球に偏ります。
 ::
 ::gazo
+![プレートとマントル対流](mantle_convection.webp)
+プレートとマントル対流
 ::
 ## プレートの境界
 ### ３つの分類
@@ -127,6 +143,8 @@ src="../share/img/loading.svg" />
 境界が陸上か海洋上かで形成されるものが異なります。
 ::
 ::gazo
+![主要なプレート](plate_world.webp){.twice.border-1.border}
+主要なプレート*矢印は移動方向
 ::
 #### 境界が大陸上の場合
 ::top
@@ -141,14 +159,20 @@ src="../share/img/loading.svg" />
 地溝帯アフリカ大陸を南北に縦断する巨大な谷で、現在はプレートの境界ではないとされているが、将来的になる地域
 ::
 ::gazo
+![緯度ごとの陸地・海洋の比](riku_umi.svg)
+緯度ごとの陸地・海洋の比
 ::
 ---arrow---
 ::top
 アフリカ大地溝帯では、プレートの広がりを埋めようとマグマやマントルが上昇し、==中央部に巨大な谷、周囲に高い山・火山・温泉が見られます==。
 ::
 ::gazo
+![広がる境界](expanding_boundaries_map.webp){.twice.border.border-1}
+広がる境界
 ::
 ::gazo
+![陸上の広がる境界](graben.webp)
+陸上の広がる境界
 ::
 #### 境界が海底の場合
 ::top
@@ -158,6 +182,8 @@ src="../share/img/loading.svg" />
 大西洋の[[大西洋中央海嶺]]が代表的です。
 ::
 ::gazo
+![アフリカ大地溝帯](african_great_rift_valley.webp){.border-1.border}
+アフリカ大地溝帯
 ::
 ---arrow---
 ::top
@@ -167,8 +193,12 @@ src="../share/img/loading.svg" />
 ギャオと呼ばれる大地の裂け目が見られ、マグマの影響で==温泉・火山が分布します==。
 ::
 ::gazo
+![アフリカ大地溝帯](african_great_rift_valley_Kenya.webp)
+アフリカ大地溝帯で見られる大地の裂け目（ケニア）
 ::
 ::gazo
+![海洋上の広がる境界](oceanic_ridge.webp)
+海洋上の広がる境界
 ::
 ### 狭まる境界
 ::top
@@ -178,6 +208,8 @@ src="../share/img/loading.svg" />
 境界が陸上か海洋上かで形成されるものが異なります。
 ::
 ::gazo
+![大西洋中央海嶺とアイスランド](iceland.webp){.border.border-1}
+大西洋中央海嶺とアイスランド
 ::
 #### 大陸プレートと大陸プレートの場合
 ::top
@@ -187,8 +219,12 @@ src="../share/img/loading.svg" />
 例えば、ヨーロッパの[[アルプス山脈]]やアジアのヒマラヤ山脈が該当します。
 ::
 ::gazo
+![温泉と地熱の蒸気（アイスランド）](Iceland_hot_springs.webp)
+温泉と地熱の蒸気（アイスランド）
 ::
 ::gazo
+![狭まる境界](convergent_boundary_map.webp){.twice.border.border-1}
+狭まる境界
 ::
 ::top
 大陸プレート同士の狭まる境界では、火山が見られます/見られません。
@@ -213,6 +249,8 @@ src="../share/img/loading.svg" />
 火山フロント）海溝に平行するように分布する火山のうち、最も海溝側に近いもの同士を結んだ線
 ::
 ::gazo
+![陸上の狭まる境界](convergent_boundary_continent.webp)
+陸上の狭まる境界
 ::
 ---arrow---
 ::top
@@ -222,18 +260,28 @@ src="../share/img/loading.svg" />
 マリアナ海溝の最深部がチャレンジャー海淵（-10920m）
 ::
 ::gazo
+![褶曲](fold.webp)
+褶曲で形成された地形
 ::
 ### ずれる境界
 ::last
 ずれる境界の代表的な場所は、アメリカのカリフォルニア州のサンアンドレアス断層であり、この付近では==地震がよく発生します==。
 ::
 ::gazo
+![海洋上の狭まる境界](convergent_boundary_sea.webp)
+海洋上の狭まる境界
 ::
 ::gazo
+![マリアナ海溝](mariana_trench.webp){.border.border-1}
+マリアナ海溝
 ::
 ::gazo
+![ずれる境界](transform_boundary_map.webp){.twice.border.border-1}
+ずれる境界*破線は不明瞭な境界
 ::
 ::gazo
+![ずれる境界](transform_boundary.webp)
+ずれる境界
 ::
 ::top
 ずれる境界では、火山が見られます/見られません。
@@ -251,8 +299,12 @@ src="../share/img/loading.svg" />
 変動帯のうち、火山が分布するのは大陸・大陸/海洋・大陸プレート同士の広がる/狭まる/ずれる境界付近と、大陸上の広がる/狭まる/ずれる境界付近です。
 ::
 ::gazo
+![サンアンドレアス断層](san_andreas_fault.webp){.border.border-1}
+サンアンドレアス断層*青線がずれる境界
 ::
 ::gazo
+![サンアンドレアス断層](san_andreas_fault_sky.webp)
+サンアンドレアス断層
 ::
 #### 変動帯以外の火山の分布
 ::top
@@ -265,6 +317,8 @@ src="../share/img/loading.svg" />
 ホットスポットによってできた場所として、ハワイ諸島が有名です。
 ::
 ::gazo
+![プレートの境界](boundary.webp){.twice.border-1.border}
+プレートの境界
 ::
 ::top
 ハワイ諸島は北西から南東にかけてほぼ一直線に島が連なります。
@@ -276,10 +330,14 @@ src="../share/img/loading.svg" />
 ハワイ諸島が乗る太平洋プレートは北西へと移動を続けており、過去に形成された島はホットスポットから遠ざかるとマグマの供給を絶たれるため、侵食によっていずれ消える運命にあります。
 ::
 ::gazo
+![主な火山の分布](distribution_of_volcanoes.webp){.twice.border.border-1}
+主な火山活動の分布
 ::
 ### 地震の分布
 ::top
 変動帯のうち、地震が分布するのは広がる/狭まる/ずれる境界付近です。
 ::
 ::gazo
+![ホットスポット](hotspot.webp)
+ホットスポット
 ::

@@ -1,4 +1,6 @@
 import { notFound } from 'next/navigation';
+import fs from 'fs';
+import path from 'path';
 import { loadSubjectPages } from '@/lib/dataLoader';
 import { loadLesson } from '@/lib/markdownLoader';
 import type { Metadata } from 'next';
@@ -36,10 +38,13 @@ export async function generateMetadata({ params }: LessonPageProps): Promise<Met
 
 export async function generateStaticParams() {
   const pages = await loadSubjectPages(1);
+  const contentDir = path.join(process.cwd(), 'content', 'wh', 'lessons');
   
-  return pages.map((page) => ({
-    id: page.no.toString(),
-  }));
+  return pages
+    .filter((page) => fs.existsSync(path.join(contentDir, `${page.no}.md`)))
+    .map((page) => ({
+      id: page.no.toString(),
+    }));
 }
 
 export default async function WHLessonPage({ params }: LessonPageProps) {
