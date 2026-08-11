@@ -7,6 +7,9 @@ import ThreeColumnLayout from '@/components/lessons/ThreeColumnLayout';
 import GeoLessonContent from '@/components/lessons/GeoLessonContent';
 import TermClickHandler from '@/components/lessons/TermClickHandler';
 import ImageClickHandler from '@/components/lessons/ImageClickHandler';
+import AnswerButtons from '@/components/AnswerButtons';
+import NotationGuide from '@/components/lessons/NotationGuide';
+import TableOfContents from '@/components/TableOfContents';
 import { loadCustomLesson } from '@/lib/markdownLoader';
 import { loadLessonChartDatasets } from '@/lib/dataLoader';
 import { GEO_LESSONS } from '@/lib/geoLessons';
@@ -73,10 +76,21 @@ export default async function GeoLessonPage({ params }: LessonPageProps) {
         <ImageClickHandler />
         <div id="toc-range" className="contents">
           {lessonData ? (
-            <GeoLessonContent
-              htmlContent={lessonData.content}
-              chartDatasets={chartDatasets}
-            />
+            <>
+              {/* 答えの一括表示/非表示ボタン */}
+              <AnswerButtons />
+
+              {/* 表記説明 */}
+              <NotationGuide />
+
+              {/* 目次 */}
+              <TableOfContents />
+
+              <GeoLessonContent
+                htmlContent={lessonData.content}
+                chartDatasets={chartDatasets}
+              />
+            </>
           ) : (
             <p>コンテンツを読み込めませんでした。</p>
           )}
