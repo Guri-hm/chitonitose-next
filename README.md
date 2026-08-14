@@ -59,6 +59,11 @@ npm run dev
 npm run build
 ```
 
+### 出力された静的サイトの確認
+```bash
+npx serve out
+```
+
 ### データ変換
 
 SQLiteデータベースからJSONファイルを生成：
