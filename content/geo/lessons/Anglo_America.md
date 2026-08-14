@@ -3,8 +3,13 @@
 北アメリカ大陸は、ヨーロッパから入植したイギリスの主要民族アングロサクソン人が広く開拓したことから、アングロアメリカとも呼ばれます。
 ::
 ::gazo
-![アングロアメリカの地形](Anglo_America_terrain.webp){.border.border-1.twice}
+![](Anglo_America_terrain.webp){.border}
 アングロアメリカの地形
+::
+### 大地形
+#### 北東部
+::top
+カナダ楯状地など安定陸塊が広く分布します。
 ::
 ::last
 鉱産資源の[[鉄鉱石]]が産出し、特にラブラドル高原には多く埋蔵されています。
@@ -23,14 +28,16 @@
 フィラデルフィア・ボルティモア・ワシントンD.C.などは、滝線に沿って発達した都市（滝線都市）に起源をもっています。
 ::
 ::sup
-滝線
-:::lead
-急流が一直線上に並んで分布する地形
-:::
+滝線<div class="lead">急流が一直線上に並んで分布する地形
 ::
+</div>
 ::gazo
-![滝線都市](fall_line_city.webp){.border.border-1}
+![](fall_line_city.webp){.border}
 滝線都市
+::
+#### 西部
+::top
+環太平洋造山帯に属する[[新期]]造山帯が分布します。
 ::
 ::last
 ロッキー山脈など険しい山脈が太平洋海岸に沿って走るため、アングロアメリカは西高東低の形をしています。
@@ -44,10 +51,13 @@
 ::
 #### 西高東低
 ::top
-次の図の間の断面は、下図のようになります。
+次の図の<i class="fa-regular fa-circle"></i><i class="fa-solid fa-circle"></i>間の断面は、下図のようになります。
 ::
 ::gazo
-![アングロアメリカの断面図（地図）](Anglo_America_cross_section_map.webp){.border.border-1}
+![](Anglo_America_cross_section_map.webp){.border}
+::
+::gazo
+![](Anglo_America_cross_section.webp){.twice}
 ::
 ::top
 太平洋岸からシエラネヴァダ山脈～ロッキー山脈と標高が高い地域が続きます。
@@ -60,23 +70,34 @@
 ::
 ### ずれる境界
 ::top
-カリフォルニア州は[[ずれる]]境界のサンアンドレアス断層が縦断します。
+カリフォルニア州は[[ずれる]]境界<a href="geo_lessons_major_landforms.html#transform_boundary" class="link-active link-icon"></a>のサンアンドレアス断層が縦断します。
 ::
 ::last
 付近では==地震が多発します==。
 ::
 ::gazo
-![アングロアメリカの断面](Anglo_America_cross_section.webp){.twice}
+![](san_andreas_fault.webp){.border}
+サンアンドレアス断層
+＊青線がずれる境界
+::
+### 河川
+#### ミシシッピ川
+::top
+長い流域に大規模な構造平野が形成され、河口には{{鳥趾状|ちょうしじょう}}三角州が発達しています。
 ::
 ::sup
 ミシシッピ川の河口がほぼ西経90度、北緯30度と覚えておくと、地図の位置関係の把握に役立つ
 ::
 ::gazo
-![サンアンドレアス断層](san_andreas_fault.webp){.border.border-1}
-サンアンドレアス断層＊青線がずれる境界
+![](Mississippi_River.webp){.border}
+ミシシッピ川の河口
+::
+#### セントローレンス川
+::top
+五大湖の１つスペリオル湖から流出し、大西洋に注ぐ川です。
 ::
 ::last
-カナダとアメリカ合衆国の国境の一部をなし、河口には[[エスチュアリー]]が発達しています。
+カナダとアメリカ合衆国の国境の一部をなし、河口には[[エスチュアリー]]<a href="geo_lessons_coastal_terrain.html#estuary" class="link-active link-icon"></a>が発達しています。
 ::
 #### コロンビア川
 ::top
@@ -103,8 +124,13 @@
 覆われた地域にはやせ地が分布し、五大湖のような氷河湖など氷河地形が見られます。
 ::
 ::gazo
-![ミシシッピ川の河口](Mississippi_River.webp){.border.border-1}
-ミシシッピ川の河口
+![](Anglo_America_glacier.webp){.border}
+氷河の最大範囲
+::
+## 気候
+::gazo
+![](Anglo_America_climate.webp){.border}
+アングロアメリカの地形
 ::
 ### カナダ・アラスカ州（アメリカ合衆国）
 ::top
@@ -132,12 +158,18 @@
 肥沃なプレーリー土が分布します。
 ::
 ::gazo
-![氷河の最大範囲](Anglo_America_glacier.webp){.border.border-1.twice}
-氷河の最大範囲
+![](Great_Plains_Prairie.webp){.border}
+グレートプレーンズとプレーリー
 ::
+<h5>北緯40度の北側の気候</h5>
+::top
+[[亜寒帯湿潤]]気候（[[Df]]）
+::
+<h5>北緯40度の南側の気候</h5>
 ::top
 [[温暖湿潤]]気候（[[Cfa]]）・[[西岸海洋性]]気候（[[Cfb]]）
 ::
+<h5>フロリダ半島</h5>
 ::top
 [[熱帯モンスーン気候]]（[[Am]]）
 ::
@@ -153,15 +185,23 @@
 西岸海洋性気候、もしくは統計データによって地中海性気候になります。
 ::
 ::gazo
-![アングロアメリカの地形](Anglo_America_climate.webp){.border.border-1.twice}
-アングロアメリカの地形
+![](Anglo_America_Cfb.webp){.border}
+アングロアメリカのCfbの分布
+::
+::top
+カナダ西岸の都市バンクーバーと東岸の都市セントジョンズの雨温図を比較すると、暖流の影響がよくわかります。
 ::
 ::sup
-各都市の位置はページの下方で確認
+各都市の位置はページの下方で確認<a href="#city" class="link-active link-icon"></a>
 ::
 ::gazo
-![グレートプレーンズとプレーリー](Great_Plains_Prairie.webp){.border.border-1.twice}
-グレートプレーンズとプレーリー
+![](Vancouver_climograph.webp)
+バンクーバーの雨温図（Cs）
+＊統計データによってはCfb
+::
+::gazo
+![](StJohns.webp)
+セントジョンズの雨温図（Df）
 ::
 #### カリフォルニア州（アメリカ合衆国）
 ::top
@@ -174,6 +214,8 @@
 結果、夏季がやや涼しい[[地中海性]]気候（[[Cs]]）になります。
 ::
 ### 各都市の雨温図
+<div class="gazo" id="city"><img class="lazyload popup-img border border-1 twice" data-src="img/Anglo_America_city.webp" alt="アングロアメリカの都市" src="../share/img/loading.svg" /><br>アングロアメリカの都市</div>
+<h5>バロー</h5>
 ::top
 バローは、アメリカ合衆国アラスカ州の最北部にある都市です。
 ::
@@ -181,15 +223,23 @@
 北極海に面し、氷点下を下回る日が続きます。
 ::
 ::gazo
-![アングロアメリカのCfbの分布](Anglo_America_Cfb.webp){.border.border-1.twice}
-アングロアメリカのCfbの分布
+![](Borough_climograph.webp)
+バローの雨温図（ET）
+::
+<h5>サンフランシスコ</h5>
+::top
+サンフランシスコは、アメリカ合衆国カリフォルニア州の都市です。
 ::
 ::last
 夏季は中緯度高圧帯によって乾燥します。
 ::
 ::gazo
-![バンクーバーの雨温図](Vancouver_climograph.webp)
-バンクーバーの雨温図（Cs）＊統計データによってはCfb
+![](San_Francisco_climograph.webp)
+サンフランシスコの雨温図（Cs）
+::
+<h5>ラスヴェガス</h5>
+::top
+ラスヴェガスは、アメリカ合衆国ネバダ州の都市です。
 ::
 ::middle
 アメリカ大陸西岸に沿って寒流のカリフォルニア海流が南下するため、カリフォルニア半島上昇気流が発生しにくく乾燥します。
@@ -198,8 +248,12 @@
 加えて雨陰（山脈風下が乾燥すること）のため、砂漠気候になります。
 ::
 ::gazo
-![セントジョンズの雨温図](StJohns.webp)
-セントジョンズの雨温図（Df）
+![](Las_Vegas_climograph.webp)
+ラスヴェガスの雨温図（BW）
+::
+<h5>ニューオーリンズ</h5>
+::top
+ニューオーリンズは、アメリカ合衆国ルイジアナ州の都市で、ミシシッピ川の河口に位置します。
 ::
 ::middle
 もとはフランスの植民地で、現在もその影響が残っています。
@@ -208,15 +262,23 @@
 気候は、暖流のメキシコ湾流の影響で、年間を通して温暖で多雨になります。
 ::
 ::gazo
-![アングロアメリカの都市](Anglo_America_city.webp){.border.border-1.twice}
-アングロアメリカの都市
+![](New_Orlean_climograph.webp)
+ニューオーリンズの雨温図（Cfa）
+::
+<h5>マイアミ</h5>
+::top
+マイアミは、アメリカ合衆国フロリダ州の都市です。
 ::
 ::last
 年間を通して気温が高く、降水量も多い気候ですが、弱い乾季があります。
 ::
 ::gazo
-![バローの雨温図](Borough_climograph.webp)
-バローの雨温図（ET）
+![](Miami_climograph.webp)
+マイアミの雨温図（Am）
+::
+<h5>ケベック</h5>
+::top
+ケベックは、カナダのケベック州の州都です。
 ::
 ::middle
 都市の歴史は古く、1608年にフランス人植民者が建設しました。
@@ -225,6 +287,11 @@
 カナダがイギリス領、そして独立した後もフランス文化が根付いています。
 ::
 ::gazo
-![サンフランシスコの雨温図](San_Francisco_climograph.webp)
-サンフランシスコの雨温図（Cs）
+![](Quebec_climograph.webp)
+ケベックの雨温図（Df）
 ::
+## 国家群
+### 北米自由貿易協定
+<div class="top" 　id="nafta">1994年、<span onclick="chg(this)" class="all">　北米自由貿易協定　</span>（<span onclick="chg(this)" class="all">　NAFTA　</span>）結成<div class="lead">アメリカ・メキシコ・カナダが、EUに対抗して結んだ自由貿易協定</div>
+<div class="lead">2020年、<span onclick="chg(this)" class="all">USMCA</span>に移行</div>
+</div>

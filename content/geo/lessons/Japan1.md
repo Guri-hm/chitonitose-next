@@ -4,18 +4,25 @@
 ::top
 日本列島の地理的な位置は、次の３点で把握しましょう。
 ::
-
-- 日本の北端：北緯[[45]]度
-- 九州の南端：北緯[[30]]度
-- 日本の標準時子午線：東経[[135]]度（兵庫県明石市あたり）
-
+<ul class="circle">
+<li>日本の北端：北緯[[45]]度</li>
+<li>九州の南端：北緯[[30]]度</li>
+<li>日本の標準時子午線：東経[[135]]度（兵庫県明石市あたり）</li>
+</ul>
 ::gazo
-![日本の位置](jp_45n30n_135e.webp){.border.border-1}
+![](jp_45n30n_135e.webp){.border}
 日本の地理的な位置（北緯・東経）
 ::
+::top
+日本列島とほぼ同じ北緯40度（日本の秋田県・秋田県）には、アメリカのニューヨーク～イベリア半島～トルコ～中国北京が位置しています。
+::
 ::gazo
-![北緯40度付近の都市](jp_40N.webp){.border.border-1.twice}
+![](jp_40N.webp){.border}
 北緯40度付近の都市
+::
+### 領域
+::top
+北端：択捉島（45°33′N）
 ::
 ::top
 東端：南鳥島（153°59′E）
@@ -27,8 +34,12 @@
 西端：与那国島（122°56′E）
 ::
 ::gazo
-![沖ノ鳥島（北小島）](Okinotorishima.webp)
+![](Okinotorishima.webp)
 沖ノ鳥島（北小島）
+::
+::gazo
+![](JP_EEZ.webp){.border}
+日本の排他的経済水域
 ::
 ### 領土問題
 ::top
@@ -46,18 +57,24 @@
 日本列島は４つのプレート上にある弧状列島（島弧）で、環太平洋造山帯の新期造山帯に属します。
 ::
 ::last
-大陸プレートと海洋プレートが衝突するため、太平洋側には海溝が形成され、それに平行して火山前線が分布します。
+大陸プレートと海洋プレートが衝突するため、太平洋側には海溝が形成され、それに平行して火山前線が分布します。<a href="geo_lessons_major_landforms.html#convergent_boundary_ocean" class="link-active link-icon"></a>
 ::
 ::gazo
-![日本の排他的経済水域](JP_EEZ.webp){.border.border-1.twice}
-日本の排他的経済水域
+![](JP_plate.webp){.border}
+日本列島付近のプレート
 ::
+::gazo
+![](JP_fault.webp){.border}
+フォッサマグナと中央構造線
+::
+<h5>火山前線</h5>
 ::top
 火山前線が走る日本列島には多くの火山が分布しますが、==四国には存在しません==。
 ::
 ::last
 火山は火山活動によって降灰による農業への被害をもたらしたりします。
 ::
+<h5>フォッサマグナ</h5>
 ::top
 日本の中央部を通る大きな地溝で、日本列島が大陸から切り離された時にできた裂け目と言われています。
 ::
@@ -65,10 +82,11 @@
 東縁ははっきりしていませんが、西縁は糸魚川・静岡構造線です。
 ::
 ::sup
-糸魚川・静岡構造線
-:::lead
-岡構造線日本列島を地質学的な東北日本と西南日本に分ける断層
+糸魚川・静岡構造線<div class="lead">日本列島を地質学的な東北日本と西南日本に分ける断層
 ::
+<div class="lead">北アメリカプレートとユーラシアプレートの境界（諸説あり）</div>
+</div>
+<h5>中央構造線</h5>
 ::top
 西南日本を東西に走る断層で、この断層の北側を内帯、南側を外帯と呼びます。
 ::
@@ -83,24 +101,39 @@
 河川は短く、その{{勾配|こうばい}}が大きくなります（急流）。
 ::
 ::gazo
-![日本列島付近のプレート](JP_plate.webp){.border.border-1.twice}
-日本列島付近のプレート
+![](river_slope.webp){.twice}
+河川の勾配
+::
+## 気候
+### 気候区分
+::top
+日本列島は大陸東部に位置し、季節風が卓越します。
 ::
 ::last
 気温の年較差が大きく、明瞭な四季があります。
 ::
-
-- 北海道：[[亜寒帯湿潤]]気候（[[Df]]）
-- 本州以南：[[温暖湿潤]]気候（[[Cfa]]）
-
+<ul class="circle">
+<li>北海道：[[亜寒帯湿潤]]気候（[[Df]]）</li>
+<li>本州以南：[[温暖湿潤]]気候（[[Cfa]]）</li>
+</ul>
 ::gazo
-![フォッサマグナと中央構造線](JP_fault.webp){.border.border-1.twice}
-フォッサマグナと中央構造線
+![](JP_climate.webp){.border}
+日本列島の気候区分
+::
+#### 季節風
+<h5>夏季</h5>
+::top
+暖かく湿った南東季節風が吹き、太平洋側が多雨になります。
 ::
 ::gazo
-![河川の勾配](river_slope.webp){.twice}
-河川の勾配
+![](JP_seasonal_wind_summer.webp){.twice}
+夏の季節風
 ::
+::gazo
+![](JP_summer.webp){.border}
+夏の季節風
+::
+<h5>冬季</h5>
 ::top
 シベリア高気圧からの冷たい北西季節風が、日本海上で水蒸気を補給します。
 ::
@@ -108,8 +141,12 @@
 湿った風となり、日本海側に降水（または雪）をもたらします。
 ::
 ::gazo
-![日本列島の気候区分](JP_climate.webp){.border.border-1.twice}
-日本列島の気候区分
+![](JP_seasonal_wind_winter.webp){.twice}
+冬の季節風
+::
+::gazo
+![](JP_winter.webp){.border}
+冬の季節風
 ::
 ::top
 新潟市はソウルとほぼ同緯度です。
@@ -118,30 +155,46 @@
 しかし、冬の北西季節風が日本海上で水蒸気を補給するため、１年を通して湿潤になります。
 ::
 ::gazo
-![夏の季節風](JP_seasonal_wind_summer.webp){.twice}
-夏の季節風
+![](Niigata_climograph.webp)
+新潟の雨温図（Cfa）
+::
+::gazo
+![](Soul_climograph.webp)
+ソウルの雨温図（Cw）
 ::
 ### 季節ごとの天気
 ::top
 日本列島の天気は、夏と冬で変化する季節風や付近の気団の影響をうけます。
 ::
 ::gazo
-![夏の季節風](JP_summer.webp){.border.border-1.twice}
-夏の季節風
+![](JP_airmass.webp){.border}
+４つの気団
+::
+#### 初夏
+::top
+小笠原気団とオホーツク気団の間に梅雨前線ができます。
 ::
 ::last
 停滞して、日本列島に集中豪雨をもたらします。
 ::
 ::gazo
-![冬の季節風](JP_seasonal_wind_winter.webp){.twice}
-冬の季節風
+![](JP_rainy_season.webp){.border}
+梅雨
+::
+#### 夏
+::top
+小笠原気団の勢力が強まり、オホーツク気団を北に押し上げて梅雨明けになります。
 ::
 ::last
 時に晴天が続く猛暑になります。
 ::
 ::gazo
-![冬の季節風](JP_winter.webp){.border.border-1.twice}
-冬の季節風
+![](JP_scorching.webp){.border}
+晴天が続く猛暑
+::
+#### 夏～秋
+::top
+台風が小笠原気団のへりに沿って襲来します。
 ::
 #### 冬
 ::top
@@ -151,36 +204,66 @@
 大陸からの季節風で、日本海付近に筋状の雲がかかります。
 ::
 ::gazo
-![新潟の雨温図](Niigata_climograph.webp)
-新潟の雨温図（Cfa）
+![](JP_cold_weather.webp){.border}
+冬の寒波
+::
+### 地域別の気候
+::gazo
+![](JP_city_climograph.webp){.border}
+日本列島の都市・地点
 ::
 #### 松江
 ::top
 日本海側に位置し、冬も降水量が多いです。
 ::
 ::gazo
-![ソウルの雨温図](Soul_climograph.webp)
-ソウルの雨温図（Cw）
+![](Matsue_climograph.webp)
+松江の雨温図
+::
+#### 室戸岬
+::top
+太平洋側に位置し、６月は梅雨、９月は台風の影響で降水量が多いです。
 ::
 ::gazo
-![４つの気団](JP_airmass.webp){.border.border-1}
-４つの気団
+![](Murotomisaki_climograph.webp)
+室戸岬の雨温図
+::
+#### 岡山
+::top
+瀬戸内は、中国山地と四国山地に挟まれ、日本海側と太平洋側に比べて降水量が少ないです。
 ::
 ::gazo
-![梅雨](JP_rainy_season.webp){.border.border-1}
-梅雨
+![](Okayama_climograph.webp)
+岡山の雨温図
 ::
 ::gazo
-![晴天が続く猛暑](JP_scorching.webp){.border.border-1}
-晴天が続く猛暑
+![](JP_Setouchi.webp){.border}
+瀬戸内
 ::
 ::gazo
-![冬の寒波](JP_cold_weather.webp){.border.border-1}
-冬の寒波
+![](JP_Setouchi_rain.webp){.twice}
+瀬戸内と降水
+::
+#### 金沢
+::top
+日本海側に位置し、冬も降水量が多いです。
 ::
 ::gazo
-![日本列島の都市](JP_city_climograph.webp){.border.border-1}
-日本列島の都市・地点
+![](Kanazawa_climograph.webp)
+金沢の雨温図
+::
+#### 松本
+::top
+内陸も瀬戸内も降水量が少なくなりますが、特に内陸は気温の年較差が大きくなります。
+::
+::gazo
+![](Matsumoto_climograph.webp)
+松本の雨温図
+::
+## 自然環境（災害）
+### 火山
+::top
+火山は==四国以外の==日本列島の各地に分布します。
 ::
 ::middle
 火山活動は、火山灰の降下や火砕流で、人やその営み（農業など）に被害をもたらします。
@@ -189,26 +272,38 @@
 一方で、温泉や景勝地など観光の場、[[地熱]]発電による電力供給といった恩恵も生み出しています。
 ::
 ::gazo
-![松江の雨温図](Matsue_climograph.webp)
-松江の雨温図
+![](Mount_Ontake.webp)
+御嶽山の噴火（2014年）
+::
+::gazo
+![](Kurokami_Buried_Torii_Gate.webp)
+１日で火山灰に埋もれた鳥居（桜島）
 ::
 ### 地震
 ::top
 地震には次の２種類があります。
 ::
-
-- 活断層型地震
-  :::lead
-  大陸プレート内部での断層運動によって発生する地震
-  :::
-- 海溝型地震
-  :::lead
-  大陸プレートと海洋プレートの境界である海溝やトラフ付近で発生する地震
-  :::
-
+<ul class="en">
+<li>活断層型地震:::lead
+大陸プレート内部での断層運動によって発生する地震
+:::
+:::lead
+代表的な地震は阪神淡路大震災
+:::</li>
+<li>海溝型地震:::lead
+大陸プレートと海洋プレートの境界である海溝やトラフ付近で発生する地震
+:::
+:::lead
+代表的な地震は東日本大震災
+:::</li>
+</ul>
 ::gazo
-![室戸岬の雨温図](Murotomisaki_climograph.webp)
-室戸岬の雨温図
+![](earthquake_mechanism.webp)
+活断層型地震と海溝型地震
+::
+### 津波
+::top
+海溝型地震は発生に伴って海水を大きく動かします。
 ::
 ::middle
 海水の動きは、周囲に波として広がる津波になり、地震後に遅れて沿岸に到達します。
@@ -217,8 +312,12 @@
 リアス海岸ではV字型の湾の奥に向かって津波が集中するため、波高が高くなって大きな被害をもたらします。
 ::
 ::gazo
-![岡山の雨温図](Okayama_climograph.webp)
-岡山の雨温図
+![](tsunami_earthquake_mechanism.webp)
+海溝型地震と津波のメカニズム
+::
+::gazo
+![](tsunami_v.webp)
+リアス海岸の津波
 ::
 ### 干ばつ
 ::top
@@ -228,8 +327,12 @@
 水不足によって農作物が枯死します。
 ::
 ::gazo
-![瀬戸内](JP_Setouchi.webp){.border.border-1}
-瀬戸内
+![](drought.webp)
+干ばつ
+::
+### 台風
+::top
+台風は、東経180°以西の北太平洋で発生する熱帯低気圧のうち、最大風速が17.2m/s以上のものを指します。
 ::
 ::middle
 小笠原気団（太平洋高気圧の西部の一部）に沿うように西進・北上し、日本付近では偏西風によって北または北東に進みます。
@@ -241,18 +344,28 @@
 台風が近づくと、集中豪雨や土砂災害、高潮をもたらします。
 ::
 ::sup
-高潮
-:::lead
-==台風などの低気圧によって==海面が高くなる現象
+高潮<div class="lead">==台風などの低気圧によって==海面が高くなる現象
+::
+<div class="lead"><span class="marker">大雨が原因ではないことに注意</span>
+</div>
+</div>
+::gazo
+![](JP_typhoon.webp)
+台風
+＊2014年台風８号（気象庁ホームページより）
 ::
 ::gazo
-![瀬戸内と降水](JP_Setouchi_rain.webp){.twice}
-瀬戸内と降水
+![](typhoon_course.webp){.border}
+台風の進路
 ::
 #### 土砂災害
 ::gazo
-![金沢の雨温図](Kanazawa_climograph.webp)
-金沢の雨温図
+![](landslide_disaster.webp){.twice}
+土砂災害
+::
+### やませ
+::top
+やませは、親潮やオホーツク海気団によって、初夏に北日本の太平洋側に吹く冷涼で湿った北東風です。
 ::
 ::middle
 霧などが発生しやすくなり、日照不足や気温の低下を起こします。
@@ -261,15 +374,24 @@
 これらは、農作物が育ちにくくなったり、収穫量が少なくなったりする冷害につながります。
 ::
 ::gazo
-![松本の雨温図](Matsumoto_climograph.webp)
-松本の雨温図
+![](yamase.webp){.border}
+やませ
+::
+### 液状化現象
+::top
+液状化現象とは、地震の振動で地盤が液体状になる現象です。
 ::
 ::last
 埋立地や大都市で発生します。
 ::
 ::gazo
-![御嶽山の噴火（2014年）](Mount_Ontake.webp)
-御嶽山の噴火（2014年）
+![](liquefaction_phenomenon.webp){.twice}
+液状化現象
+::
+::gazo
+![](liquefaction_phenomenon_GEJE.webp)
+東日本大震災の液状化現象
+＊道路上の自動車が傾く
 ::
 ### 都市型水害
 ::top

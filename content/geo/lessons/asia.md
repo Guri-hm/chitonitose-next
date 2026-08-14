@@ -9,11 +9,35 @@
 ::sup
 ==ダムには急勾配が必要であり、ダムの存在＝急勾配の河川==
 ::
+<span onclick="choice(this)" class="choice"> <span class="true_choice">aaaa</span>/<span class="false_choice">bbbb</span> </span>
 ---arrow---
 ::top
 また、長江の上流にはツンドラ気候（ET）、中流には温暖冬季少雨気候（Cw)などが分布し、特に冬季は流量が少なくなります。
 ::
 ::gazo
-![長江と黄河](yangtze_and_yellow_river.svg){.border.border-1}
+![](yangtze_and_yellow_river.svg){.border}
 長江と黄河
 ::
+<script>
+//下線空欄クリック
+function choice(obj) {
+let elms = obj.querySelectorAll('span');
+for (let i = 0; i < elms.length; i++) {
+if (elms[i].className.indexOf('true_choice') != -1) {
+elms[i].style.border = "1px solid #FF0000";
+elms[i].style.borderRadius = "5px";
+}
+if (elms[i].className.indexOf('false_choice') != -1) {
+elms[i].style.textDecoration = "line-through";
+}
+}
+}
+function reset_choice(obj) {
+let elms = obj.querySelectorAll('span');
+for (let i = 0; i < elms.length; i++) {
+elms[i].style.border = "";
+elms[i].style.borderRadius = "";
+elms[i].style.textDecoration = "";
+}
+}
+</script>

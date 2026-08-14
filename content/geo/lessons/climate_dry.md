@@ -3,16 +3,14 @@
 ::top
 乾燥帯（Ｂ）には、次の２つがあります。
 ::
-
-- BS
-  :::lead
-  [[ステップ気候]]
-  :::
-- BW
-  :::lead
-  [[砂漠気候]]
-  :::
-
+<ul class="en">
+<li>BS:::lead
+[[ステップ気候]]
+:::</li>
+<li>BW:::lead
+[[砂漠気候]]
+:::</li>
+</ul>
 ---arrow---
 ::top
 気候帯が寒帯（Ｅ）でない場合、次に乾燥帯（Ｂ）かどうかを疑いましょう。
@@ -74,8 +72,12 @@ BS・BWの判定は数値の計算が必要ですが、入試問題ではおお�
 ::
 ## BS（ステップ気候）
 ::gazo
-![ステップ気候の分布](BS.webp){.twice.border.border-1}
+![](BS.webp){.twice}
 ステップ気候の分布
+::
+### 特色・成因
+::top
+BW（砂漠気候）の周辺部に形成されます。
 ::
 ---arrow---
 ::top
@@ -95,15 +97,23 @@ BS・BWの判定は数値の計算が必要ですが、入試問題ではおお�
 このような草原を==ステップ==と言います。
 ::
 ::gazo
-![ケニアのステップ](Steppe.webp)
+![](Steppe.webp)
 ケニアのステップ
+::
+### 土壌
+::top
+有機養分（腐植）が表層に多い、==肥沃で黒色の==土壌が存在します。
 ::
 ::last
 ==ウクライナ==～西シベリア南部の[[チェルノーゼム]]、北アメリカの[[プレーリー土]]が該当します。
 ::
 ::gazo
-![チェルノーゼム](chernozem.webp)
+![](chernozem.webp)
 チェルノーゼム
+::
+::gazo
+![](prairie.webp)
+プレーリー土
 ::
 ### 生活
 ::top
@@ -114,12 +124,22 @@ BS・BWの判定は数値の計算が必要ですが、入試問題ではおお�
 ::
 ### 分布・都市
 ::gazo
-![プレーリー土](prairie.webp)
-プレーリー土
+![](BS_city.webp){.twice}
+BSが該当する主な都市
+::
+### 代表都市の雨温図・ハイサーグラフ
+::gazo
+![](Lahore-uonzu.svg)
+雨温図（ラホール）
 ::
 ::gazo
-![BSが該当する主な都市](BS_city.webp){.twice.border.border-1}
-BSが該当する主な都市
+![](Lahore-hythergraph.svg)
+ハイサーグラフ（ラホール）
+::
+## BW（砂漠気候）
+::gazo
+![](BW.webp){.twice}
+砂漠気候の分布
 ::
 ### 特色・成因
 ::top
@@ -136,27 +156,55 @@ BSが該当する主な都市
 従って、==気温の日較差・年較差は大きくなります==。
 ::
 ---arrow---
-
-- 年間を通して[[中緯度高圧]]（[[亜熱帯高圧帯]]）帯に覆われて乾燥
-  :::lead
-  亜熱帯砂漠（中緯度砂漠）
-  :::
-- 隔海度（陸地のある地点の海からの距離）が大きく、雨を降らす湿った空気が供給されず乾燥
-  :::lead
-  大陸内部砂漠
-  :::
-- 山脈の風下で乾燥
-  :::lead
-  {{雨陰|ういん}}砂漠
-  :::
-
+<div class="top" id="desert">砂漠気候の成因は、主に４つあります。</div>
+<ul class="en">
+<li>年間を通して[[中緯度高圧]]（[[亜熱帯高圧帯]]）帯に覆われて乾燥
+:::lead
+亜熱帯砂漠（中緯度砂漠）
+:::
+:::lead
+代表的砂漠：アフリカ北部の[[サハラ]]砂漠、オーストラリア内陸部の砂漠
+:::
+<div class="sup">回帰線付近が該当</div>
+<div class="gazo"><img data-src="img/subtropical_desert.webp" alt="亜熱帯砂漠（中緯度砂漠）" class="lazyload popup-img " src="../share/img/loading.svg" />亜熱帯砂漠（中緯度砂漠）</div></li>
+<li>隔海度（陸地のある地点の海からの距離）が大きく、雨を降らす湿った空気が供給されず乾燥
+:::lead
+大陸内部砂漠
+:::
+:::lead
+代表的砂漠：アジアの[[タクラマカン]]砂漠とゴビ砂漠
+:::
+<div class="gazo"><img data-src="img/mid_latitude_desert.webp" alt="大陸内部砂漠" class="lazyload popup-img twice" src="../share/img/loading.svg" />大陸内部砂漠</div></li>
+<li>低緯度で海岸部に[[寒]]流が流れ、空気が冷やされて安定し、雲を形成する上昇気流が生じず乾燥:::lead
+冷涼海岸砂漠
+:::
+:::lead
+代表的砂漠：==ペルー海流==による[[アタカマ]]砂漠、==ベンゲラ海流==による[[ナミブ]]砂漠
+:::
+<div class="gazo"><img data-src="img/coastal_desert.webp" alt="冷涼海岸砂漠" class="lazyload popup-img " src="../share/img/loading.svg" />冷涼海岸砂漠</div></li>
+<li>山脈の風下で乾燥:::lead
+{{雨陰|ういん}}砂漠
+:::
+:::lead
+代表的砂漠：アルゼンチンの[[パタゴニア]]
+:::
+<div class="gazo"><img data-src="img/rain_shadow_desert.webp" alt="雨陰砂漠" class="lazyload popup-img " src="../share/img/loading.svg" />雨陰砂漠</div></li>
+</ul>
 ::gazo
-![雨温図（ラホール）](Lahore-uonzu.svg)
-雨温図（ラホール）
+![](BW_desert.webp){.twice}
+主な砂漠
+::
+### 植生
+::top
+植生はほとんど見られず、岩石・礫・砂砂漠が広がっています。
 ::
 ::gazo
-![ハイサーグラフ（ラホール）](Lahore-hythergraph.svg)
-ハイサーグラフ（ラホール）
+![](desert.webp)
+砂砂漠
+::
+### 土壌
+::top
+過剰に利用した灌漑用水の蒸発による地表への塩類の蓄積、毛細管現象による地表への塩類の上昇、いわゆる==塩類集積（塩類化）==が進んでいます。
 ::
 ::last
 土壌は、強いアルカリ性で==農業に適しません==。
@@ -180,22 +228,39 @@ BSが該当する主な都市
 また、地下水路上には工事・掃除用の縦穴が無数にあります。
 ::
 ::gazo
-![砂漠気候の分布](BW.webp){.twice.border.border-1}
-砂漠気候の分布
+![](oasis.webp)
+オアシス
 ::
 ::gazo
-![亜熱帯砂漠（中緯度砂漠）](subtropical_desert.webp)
-亜熱帯砂漠（中緯度砂漠）
+![](qanāt.webp){.border}
+カナート
+::
+::gazo
+![](qanāt_surface.webp)
+カナート（地上）
+::
+#### 住居
+::top
+住居は、粘土を太陽光で乾燥させた==日干しレンガ==で建てます。
 ::
 ::last
 外気の熱や砂塵を防ぐため、壁の開口部が==小さく==なっています。
 ::
 ::gazo
-![大陸内部砂漠](mid_latitude_desert.webp){.twice}
-大陸内部砂漠
+![](adobe_brick.webp)
+日干しレンガの建造物
+::
+### 分布・都市
+::gazo
+![](BW_city.webp){.twice}
+BWが該当する主な都市
 ::
 ### 代表都市の雨温図・ハイサーグラフ
 ::gazo
-![冷涼海岸砂漠](coastal_desert.webp)
-冷涼海岸砂漠
+![](Cairo-uonzu.svg)
+雨温図（カイロ）
+::
+::gazo
+![](Cairo-hythergraph.svg)
+ハイサーグラフ（カイロ）
 ::

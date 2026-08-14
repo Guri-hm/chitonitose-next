@@ -13,42 +13,51 @@
 ::top
 ４つの気候区と表記をまとめると、次の通りです。
 ::
-
-- Cs
-  :::lead
-  [[地中海性]]気候
-  :::
-- Cfb
-  :::lead
-  [[西岸海洋性]]気候
-  :::
-- Cfa
-  :::lead
-  [[温暖湿潤]]気候
-  :::
-- Cw
-  :::lead
-  [[温暖冬季少雨]]気候
-  :::
-
+<ul class="en">
+<li>Cs:::lead
+[[地中海性]]気候
+:::</li>
+<li>Cfb:::lead
+[[西岸海洋性]]気候
+:::</li>
+<li>Cfa:::lead
+[[温暖湿潤]]気候
+:::</li>
+<li>Cw:::lead
+[[温暖冬季少雨]]気候
+:::</li>
+</ul>
+<h2 id="cs">Cs（地中海性気候）</h2>
 ::gazo
-![地中海性気候の分布](Cs.webp){.twice.border.border-1}
+![](Cs.webp){.twice}
 地中海性気候の分布
+::
+### 特色・成因
+::top
+==緯度30～40度の大陸西岸に==発達します。
 ::
 ::last
 夏は北上した[[中緯度高圧]]（[[亜熱帯高圧]]）帯の影響で乾燥し、冬は海洋から吹き込む[[偏西風]]と高緯度低圧（亜寒帯低圧）帯の影響で少し降雨が見られ、比較的温暖です。
 ::
 ::gazo
-![北半球夏の配置](atmospheric_circulation_summer_westerlies.webp)
+![](atmospheric_circulation_summer_westerlies.webp)
 北半球夏（南半球冬）の配置
+::
+::gazo
+![](atmospheric_circulation_winter_westerlies.webp)
+北半球冬（南半球夏）の配置
 ::
 ### 植生
 ::top
 [[オリーブ]]や==コルクがし==など、乾燥に強い硬葉樹が多く分布します。
 ::
 ::gazo
-![北半球冬の配置](atmospheric_circulation_winter_westerlies.webp)
-北半球冬（南半球夏）の配置
+![](olive_tree.webp)
+オリーブ
+::
+::gazo
+![](cork.webp)
+コルクがし
 ::
 ### 土壌
 ::top
@@ -76,18 +85,31 @@
 この白は石灰で、遮熱効果を期待したものです。
 ::
 ::gazo
-![オリーブ](olive_tree.webp)
-オリーブ
+![](hellenic-house.webp)
+エーゲ海の建物
+::
+### 分布・都市
+::gazo
+![](Cs_city.webp){.twice}
+地中海性気候の主要都市
 ::
 ### 代表都市の雨温図・ハイサーグラフ
 ::gazo
-![コルクがし](cork.webp)
-コルクがし
+![](Roma-uonzu.svg)
+雨温図（ローマ）
+::
+::gazo
+![](Roma-hythergraph.svg)
+ハイサーグラフ（ローマ）
 ::
 ## Cw（温暖冬季少雨気候）
 ::gazo
-![エーゲ海の建物](hellenic-house.webp)
-エーゲ海の建物
+![](Cw.webp){.twice}
+温暖冬季少雨気候の分布
+::
+### 特色・成因
+::top
+==南北回帰線（緯度23度26分）付近の大陸東岸==に発達します。
 ::
 ::middle
 サバナ気候付近の地域では、夏は[[赤道低圧]]帯の影響で高温多湿、冬は[[中緯度高圧]]（[[亜熱帯高圧]]）帯の影響で比較的温暖で乾燥します。
@@ -96,8 +118,12 @@
 大陸東岸の地域では、季節風の影響で夏に高温多湿、冬に温暖で乾燥します。
 ::
 ::gazo
-![地中海性気候の主要都市](Cs_city.webp){.twice.border.border-1}
-地中海性気候の主要都市
+![](atmospheric_circulation_summer.webp)
+北半球夏（南半球冬）の配置
+::
+::gazo
+![](atmospheric_circulation_winter.webp)
+北半球冬（南半球夏）の配置
 ::
 ### 植生
 ::top
@@ -107,24 +133,42 @@
 ただし、落葉広葉樹・針葉樹も見られます。
 ::
 ::gazo
-![雨温図（ローマ）](Roma-uonzu.svg)
-雨温図（ローマ）
+![](castanopsis.webp)
+シイ
+::
+### 土壌
+::top
+降雨により有機物が溶脱し、アルミニウムや鉄の酸化物が集積した酸性の赤黄色土が分布します。
 ::
 ::gazo
-![ハイサーグラフ（ローマ）](Roma-hythergraph.svg)
-ハイサーグラフ（ローマ）
+![](red-yellow-soil.webp)
+赤黄色土
+::
+### 生活
+::top
+アジアでは、稲作や畑作が多く営まれます。
 ::
 ::last
 特に、中国==華南==では温暖な気候を利用して、米の二期作がおこなわれます。
 ::
 ### 分布・都市
 ::gazo
-![温暖冬季少雨気候の分布](Cw.webp){.twice.border.border-1}
-温暖冬季少雨気候の分布
+![](Cw_city.webp){.twice}
+温暖冬季少雨気候の主要都市
+::
+### 代表都市の雨温図・ハイサーグラフ
+::gazo
+![](Hong-Kong-uonzu.svg)
+雨温図（香港）
 ::
 ::gazo
-![北半球夏の配置](atmospheric_circulation_summer.webp)
-北半球夏（南半球冬）の配置
+![](Hong-Kong-hythergraph.svg)
+ハイサーグラフ（香港）
+::
+## Cfb（西岸海洋性気候）
+::gazo
+![](Cfb.webp){.twice}
+西岸海洋性気候の分布
 ::
 ### 特色・成因
 ::top
@@ -148,39 +192,52 @@
 ブナなどの落葉広葉樹が多く、針葉樹も見られます。
 ::
 ::gazo
-![北半球冬の配置](atmospheric_circulation_winter.webp)
-北半球冬（南半球夏）の配置
+![](buna.webp)
+ブナ林
+::
+### 土壌
+::top
+表層に腐植を含む、暗褐色で中性から弱酸性の土壌[[褐色森林土]]が分布します。
 ::
 ### 生活
 ::top
 次のような様々な農業形態が見られます。
 ::
-
-- [[混合]]農業
-  :::lead
-  牧畜と穀物の栽培を組み合わせた農業
-  :::
-- [[酪農]]
-  :::lead
-  乳牛を飼育して牛乳および乳製品の生産をおこなう農業
-  :::
-- [[園芸]]
-  :::lead
-  花卉や野菜を栽培する農業
-  :::
-
+<ul class="en">
+<li>[[混合]]農業:::lead
+牧畜と穀物の栽培を組み合わせた農業
+:::</li>
+<li>[[酪農]]
+:::lead
+乳牛を飼育して牛乳および乳製品の生産をおこなう農業
+:::</li>
+<li>[[園芸]]
+:::lead
+花卉や野菜を栽培する農業
+:::</li>
+</ul>
 ---arrow---
 ::top
 住みやすく人口が多く分布し、商工業が発達しています。
 ::
 ### 分布・都市
 ::gazo
-![シイ](castanopsis.webp)
-シイ
+![](Cfb_city.webp){.twice}
+西岸海洋性気候の主要都市
+::
+### 代表都市の雨温図・ハイサーグラフ
+::gazo
+![](London-uonzu.svg)
+雨温図（ロンドン）
 ::
 ::gazo
-![赤黄色土](red-yellow-soil.webp)
-赤黄色土
+![](London-hythergraph.svg)
+ハイサーグラフ（ロンドン）
+::
+## Cfa（温暖湿潤気候）
+::gazo
+![](Cfa.webp){.twice}
+温暖湿潤気候の分布
 ::
 ### 特色・成因
 ::top
@@ -196,19 +253,27 @@
 また、台風・ハリケーンなど==熱帯低気圧==が降雨をもたらします。
 ::
 ::gazo
-![温暖冬季少雨気候の主要都市](Cw_city.webp){.twice.border.border-1}
-温暖冬季少雨気候の主要都市
+![](four-seasons.webp)
+::
+### 植生
+::top
+常緑広葉樹・落葉広葉樹・針葉樹の混合林（混交林）が分布します。
 ::
 ::gazo
-![雨温図（香港）](Hong-Kong-uonzu.svg)
-雨温図（香港）
+![](mixed-coniferous-forest.webp)
+混合林（混交林）
+::
+### 土壌
+::top
+表層に腐植を含む、暗褐色で中性から弱酸性の土壌[[褐色森林土]]や黒色の==プレーリー土==が分布します。
 ::
 ### 生活
 ::top
 アジアでは稲作や畑作が営まれます。
 ::
 ::last
-アメリカでは中部・西部で[[とうもろこし]] の栽培が、南部で[[綿花]]の栽培が大規模に営まれます。
+アメリカでは中部・西部で[[とうもろこし]]
+		の栽培が、南部で[[綿花]]の栽培が大規模に営まれます。
 ::
 ---arrow---
 ::top
@@ -216,10 +281,15 @@
 ::
 ### 分布・都市
 ::gazo
-![ハイサーグラフ（香港）](Hong-Kong-hythergraph.svg)
-ハイサーグラフ（香港）
+![](Cfa_city.webp){.twice}
+温暖湿潤気候の主要都市
+::
+### 代表都市の雨温図・ハイサーグラフ
+::gazo
+![](tokyo-uonzu.svg)
+雨温図（東京）
 ::
 ::gazo
-![西岸海洋性気候の分布](Cfb.webp){.twice.border.border-1}
-西岸海洋性気候の分布
+![](tokyo-hythergraph.svg)
+ハイサーグラフ（東京）
 ::

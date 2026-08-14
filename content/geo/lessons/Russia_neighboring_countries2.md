@@ -1,8 +1,13 @@
 ## ロシア連邦
 ### 基礎データ
 ::gazo
-![ロシア連邦](map_Russian.webp){.border.border-1.twice}
+![](map_Russian.webp){.border}
 ロシア連邦
+::
+### 歴史
+#### 第一次世界大戦後
+::top
+1922年、15の社会主義国でソビエト連邦を構成しました。
 ::
 ::last
 ロシアはソ連を構成する中心の国でした。
@@ -33,17 +38,19 @@
 ::
 ### 鉱工業
 #### 都市・地域ごとの工業
+<h5>モスクワ・サンクトペテルブルク</h5>
 ::top
 総合工業・自動車工業
 ::
 ::sup
-サンクトペテルブルク
-:::lead
-テルブルクバルト海に面する港湾都市で、==ロシア連邦第２位の人口==
+サンクトペテルブルク<div class="lead">バルト海に面する港湾都市で、==ロシア連邦第２位の人口==
 ::
+</div>
+<h5>バイカル湖周辺</h5>
 ::top
 製材・パルプ工業・アルミニウム工業
 ::
+<h5>日本海沿岸</h5>
 ::top
 魚介類などの食品工業
 ::
@@ -58,34 +65,57 @@
 原油・天然ガス以外にも、東西に広く資源が分布しています。
 ::
 ::gazo
-![ロシアの油田・ガス田](Russia_oil_field.webp){.border.border-1.twice}
+![](Russia_oil_field.webp){.border}
 ロシアの油田・ガス田
+::
+#### エネルギー
+::top
+火力発電が最も多く、特に[[天然ガス]]の消費が多いです。
 ::
 ::last
 次いで水力発電が多く、安価に発電できた電力を利用してアルミニム生産をおこなっています。
 ::
+<script type="text/javascript">
+createChartAsync(Chart.Pie, { "nation_cd": 643 }, 'Russian_power_generation', {
+title: 'ロシア (億kWh、2019年)',
+colors: ['#dc3912', '#3366cc', '#990099', '#109618', '#ff9900', '#FBD01D', '#dd4477'],
+sliceVisibilityThreshold: 0
+}, "./php/power_generation.php");
+</script>
+<div id="Russian_power_generation" style="width: 100%; height: 350px"></div>
 ### 人口
 #### 人口ピラミッド
 ::top
 第二次世界大戦や1990年代の体制移行の混乱で出生率が低下し、ガタついた人口ピラミッドになっています。
 ::
 ::gazo
-![ロシアの人口ピラミッド](population_pyramid_Russia.svg)
+![](population_pyramid_Russia.svg)
 ロシアの人口ピラミッド（2019年）
+::
+#### 人口密度
+::top
+人口はヨーロッパロシアのモスクワ・サンクトペテルブルクなどに集中するため、シベリア・極東ロシアの人口密度は低くなります。
 ::
 ### 民族問題
 ::top
 ロシア連邦内では、次の民族が分離独立を目指しています。
 ::
-
-- ウラル山脈西に居住する[[タタール]]人（宗教：[[イスラーム]]）
-- カフカス地方に居住する[[チェチェン]]人（宗教：[[イスラーム]]）
-
+<ul class="en">
+<li>ウラル山脈西に居住する[[タタール]]人（宗教：[[イスラーム]]）</li>
+<li>カフカス地方に居住する[[チェチェン]]人（宗教：[[イスラーム]]）</li>
+</ul>
 ### 交通
 ::gazo
-![シベリア鉄道](Trans_Siberian_Railway.webp){.border.border-1.twice}
+![](Trans_Siberian_Railway.webp){.border}
 シベリア鉄道
 ::
+#### 陸上輸送
+::top
+シベリア鉄道
+		<div class="lead">モスクワ～ウラジオストクを結ぶ鉄道
+::
+<div class="lead">冬季に河川・海が氷結するため、建設以来、東西間の旅客・貨物輸送で活躍</div>
+</div>
 #### 海上輸送
 ::top
 ロシアでは冬季にほとんどの港が凍結するため、冬季に氷結しない港（不凍港）が非常に重要です。
@@ -97,34 +127,60 @@
 ## ウクライナ
 ### 基礎データ
 ::gazo
-![ウクライナ](map_Ukraine.webp){.border.border-1}
+![](map_Ukraine.webp){.border}
 ウクライナ
+::
+### 農業
+::top
+ウクライナから西シベリア南部には肥沃な黒色土[[チェルノーゼム]]が分布します。
 ::
 ::last
 ウクライナでは[[小麦]]や大麦、ひまわりなどが盛んに生産されています。
 ::
 ::gazo
-![チェルノーゼム](chernozem.webp)
+![](chernozem.webp)
 チェルノーゼム
+::
+::gazo
+![](sunflower.webp)
+ウクライナのひまわり畑
 ::
 ::top
 ウクライナの国旗は、諸説ありますが、青色が空、黄色（金色）が小麦あるいはひまわりを表しています。
 ::
 ::gazo
-![ウクライナのひまわり畑](sunflower.webp)
-ウクライナのひまわり畑
+![](Flag_of_Ukraine.svg)
+ウクライナの国旗
+::
+### 鉱工業
+::top
+ドネツ炭田やクリボイログ鉄山が位置し、資源に恵まれます。
 ::
 ::gazo
-![ウクライナの国旗](Flag_of_Ukraine.svg)
-ウクライナの国旗
+![](Ukraine_resource.webp){.border}
+ウクライナの鉱工業
+::
+### 貿易
+## アゼルバイジャン
+### 基礎データ
+::gazo
+![](map_Azerbaijan.webp){.border}
+アゼルバイジャン
 ::
 ### 鉱工業
 ::top
 アゼルバイジャン東部のカスピ海の沿岸にバクー油田があります。
 ::
 ::gazo
-![ウクライナの鉱工業](Ukraine_resource.webp){.border.border-1}
-ウクライナの鉱工業
+![](Baku_oil_field.webp){.border}
+バクー油田
+::
+### 貿易
+## ウズベキスタン
+### 基礎データ
+::gazo
+![](map_Uzbekistan.webp){.border}
+ウズベキスタン
 ::
 ### 農業
 ::top
@@ -141,6 +197,10 @@
 20世紀最大の環境破壊と言われ、周辺では漁業の廃業や塩害が発生しています。
 ::
 ::gazo
-![アゼルバイジャン](map_Azerbaijan.webp){.border.border-1}
-アゼルバイジャン
+![](Aral_sea_river.webp){.border}
+シルダリア川・アムダリア川の取水
+::
+::gazo
+![](Aral_Sea_shrink.webp)
+アラル海の縮小(左:1989年、右:2014年)
 ::

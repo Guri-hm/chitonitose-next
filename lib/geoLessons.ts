@@ -1,5 +1,5 @@
 export interface GeoLesson {
-  slug: string;      // URL slug例: geo_lessons_Polar_Regions
+  slug: string;      // URL slug例: Polar_Regions
   contentId: string; // mdファイル名例: Polar_Regions
   title: string;
 }
@@ -16,9 +16,8 @@ export interface GeoCategory {
 }
 
 function toLesson(file: string, title: string): GeoLesson {
-  const slug = file.replace('.html', '');
-  const contentId = slug.replace('geo_lessons_', '');
-  return { slug, contentId, title };
+  const contentId = file.replace('.html', '').replace('geo_lessons_', '');
+  return { slug: contentId, contentId, title };
 }
 
 export const GEO_CATEGORIES: GeoCategory[] = [

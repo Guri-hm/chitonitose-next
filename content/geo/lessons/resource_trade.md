@@ -13,6 +13,7 @@
 ::last
 このことは、ボーキサイトと鉄鉱石を区別する目安になります。
 ::
+<iframe seamless width="100%" height="1000" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSIoO5ZLRJ51ds1Et9riwGB-DehqltQkMlddl27UsZ9NqoIXE6CleXvb1VPzTn19T_fGWMtmqrzdXK5/pubhtml?widget=true&amp;headers=false"></iframe>
 ### 鉄鉱石
 ::top
 鉄鉱石は、主に安定陸塊に分布します。
@@ -27,3 +28,4 @@
 ::last
 このことは、ボーキサイトと鉄鉱石を区別する目安になります。
 ::
+<iframe seamless width="100%" height="1000" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQa3kGfbpkDgNrWAO7JroKD04tLMvRSK_0SRf1V9fPa02VRbjMF4N-jsg-ZZTIsQ8jpSo6haWjBm08o/pubhtml?widget=true&amp;headers=false"></iframe>

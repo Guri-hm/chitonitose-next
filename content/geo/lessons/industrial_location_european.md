@@ -14,7 +14,7 @@
 鉄鋼業は、==臨海指向型の立地に変化しています==。
 ::
 ::gazo
-![ヨーロッパの重工業](european_heavy_industry.webp){.border.border-1}
+![](european_heavy_industry.webp){.border}
 ヨーロッパの重工業
 ::
 #### ルール地方
@@ -56,15 +56,23 @@
 今日、研究開発施設、良質な労働力を必要とする==先端技術産業も発達してきました==。
 ::
 ::gazo
-![ヨーロッパの先端技術産業](european_city_industry.webp){.border.border-1}
+![](european_city_industry.webp){.border}
 ヨーロッパの先端技術産業
+::
+### 重化学工業
+::top
+近年、ほとんどのヨーロッパ諸国が石油の大部分を海外に依存しています。
 ::
 ::last
 鉄鋼や石油化学などの重化学工業は、==臨海指向型になります==。
 ::
 ::gazo
-![ヨーロッパの重化学工業](european_seaside_industry.webp){.border.border-1}
+![](european_seaside_industry.webp){.border}
 ヨーロッパの重化学工業
+::
+#### フランスの港湾都市
+::top
+フランス最大の港湾都市[[マルセイユ]]、そしてその郊外の[[フォス]]には、鉄鋼コンビナートや石油化学コンビナートが立地します。
 ::
 #### オランダの「EUの玄関」
 ::top
@@ -74,8 +82,12 @@
 石油化学コンビナートが立地し、精製した石油をパイプラインで内陸に運びます。
 ::
 ::gazo
-![ユーロポート](europort.webp)
+![](europort.webp)
 ユーロポート
+::
+### 航空産業
+::top
+世界の航空機の生産は、[[アメリカ]]が圧倒的なシェアを占めています。
 ::
 ---arrow---
 ::top
@@ -88,6 +100,10 @@
 この共同開発での航空機の組立は、フランスの南西部の都市[[トゥールーズ]]でおこなわれています。
 ::
 ::gazo
-![ヨーロッパの航空産業](european_aviation_industry.webp){.border.border-1}
+![](european_aviation_industry.webp){.border}
 ヨーロッパの航空産業
+::
+::gazo
+![](Toulouse.webp)
+トゥールーズでの航空機組立
 ::

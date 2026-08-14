@@ -6,12 +6,13 @@
 ## 焼畑農業
 ### 特色
 ::top
-[[熱]]帯（Ａ）の土壌は、降雨で栄養分が流れ、鉄とアルミニウムの酸化物が残るやせた土壌ラトソルです。
+[[熱]]帯（Ａ）の土壌は、降雨で栄養分が流れ、鉄とアルミニウムの酸化物が残るやせた土壌<span onclick="chg(this)">ラトソル</span>です。
 ::
 ::gazo
-![ラトソル](laterite.webp)
+![](laterite.webp)
 ラトソル
 ::
+---arrow---
 ::top
 土壌の栄養分がないため、ラトソルが分布する地域では森林の伐採・火入れをおこない、得られた灰を肥料にします。
 ::
@@ -22,9 +23,10 @@
 このような農業を焼畑農業と呼びます。
 ::
 ::gazo
-![焼畑農業](burn-agriculture.webp)
+![](burn-agriculture.webp)
 焼畑農業
 ::
+---arrow---
 ::top
 焼畑農業の土地の耕作は、ハックと呼ばれる木棒を用いて地面に穴を開け、その中に種子をまきます(ハック耕）。
 ::
@@ -32,21 +34,32 @@
 ハックの進化した形が、日本の{{鍬|くわ}}だとも言われています。
 ::
 ::gazo
-![ハックの使用](burn-agriculture2.webp)
+![](burn-agriculture2.webp)
 ハックの使用
 ::
-::sup
-キャッサバ
-:::lead
-タピオカの原料
+### 作物
+::top
+キャッサバ・タロイモ・ヤムイモ・とうもろこしを生産します。
 ::
+::sup
+キャッサバ<div class="lead">タピオカの原料
+::
+</div>
 ::gazo
-![キャッサバ（右）とタピオカでん粉（左）](cassava.webp)
+![](cassava.webp)
 キャッサバ（右）とタピオカでん粉（左）
 ::
 ::gazo
-![タロイモ](taro.webp)
+![](taro.webp)
 タロイモ
+::
+::gazo
+![](yam.webp)
+ヤムイモ
+::
+### 分布
+::top
+主に[[熱]]帯（Ａ）に分布し、アフリカ中部、アマゾン流域、ニューギニア、インドシナ半島の山地などが該当します。
 ::
 ## オアシス農業（灌漑農業の一種）
 ### 特色
@@ -68,20 +81,32 @@
 1970年に建設された[[アスワンハイ]]ダムは、年間を通した灌漑を可能にし、ナイル川下流域で[[米]]の生産が発展しました。
 ::
 ::gazo
-![ヤムイモ](yam.webp)
-ヤムイモ
+![](cotton.webp)
+綿花
+::
+::gazo
+![](date_palm.webp)
+ナツメヤシ
 ::
 #### ディグリス・ユーフラテス川流域
 ::top
 小麦・とうもろこし・綿花・[[ナツメヤシ]]を生産します。
 ::
 ::gazo
-![綿花](cotton.webp)
-綿花
+![](exotic-river.webp)
+ナイル川・ティグリス川・ユーフラテス川
+::
+### 地下水路の別称
+::top
+オアシス農業に利用する地下水路は、イランでは[[カナート]]、北アフリカではフォガラと呼ばれています。
 ::
 ::gazo
-![ナツメヤシ](date_palm.webp)
-ナツメヤシ
+![](qanāt.webp){.border}
+カナート
+::
+::gazo
+![](qanāt_surface.webp)
+カナート（地上）
 ::
 ## 遊牧
 ### 特色
@@ -110,33 +135,46 @@
 家畜は、[[トナカイ]]が飼われています。
 ::
 ::gazo
-![ナイル川・ティグリス川・ユーフラテス川](exotic-river.webp)
-ナイル川・ティグリス川・ユーフラテス川
+![](sami.webp)
+サーミとトナカイ
+::
+#### 高地
+::top
+チベット高原やアンデス山脈などの高地でおこなわれています。
 ::
 ::last
 家畜は、チベット高原では[[ヤク]]、アンデス山脈では[[リャマ]]・[[アルパカ]]が飼われています。
 ::
 ::gazo
-![カナート](qanāt.webp){.border.border-1.twice}
-カナート
+![](yak.webp)
+ヤク
 ::
 ::gazo
-![カナート（地上）](qanāt_surface.webp)
-カナート（地上）
+![](llama.webp)
+リャマ
+::
+::gazo
+![](alpaca.webp){.half}
+アルパカ
+::
+## 集約的稲作農業
+### 特色
+::top
+農村の人口密度が高いため、狭い土地に多くの労働力があてられ（集約的）、高い[[土地]]生産性を可能にしています。
 ::
 ::last
 反面、[[労働]]生産性は小さい傾向にあります。
 ::
 ::sup
 ==土地生産性==
-:::lead
-class="marker">土地生産性単位面積あたりの生産量の多さで、肥料・労働力の投下で上昇
+		<div class="lead">単位面積あたりの生産量の多さで、肥料・労働力の投下で上昇
 ::
+</div>
 ::sup
 ==労働生産性==
-:::lead
-class="marker">労働生産性１人あたりの労働によって得られる生産量の多さで、機械化・栽培技術の進歩で上昇
+		<div class="lead">１人あたりの労働によって得られる生産量の多さで、機械化・栽培技術の進歩で上昇
 ::
+</div>
 ### 作物
 ::top
 世界の米の約90％を生産しています。
@@ -148,11 +186,11 @@ class="marker">労働生産性１人あたりの労働によって得られる�
 ::top
 [[季節風]]の影響を受け、特に夏に多雨高温になる東南アジアから中国南部の沖積平野や丘陵の棚田で営まれます。
 ::
-
-- 中国：華南・東北
-- 東南アジア大陸部：タイ・ベトナム
-- 南アジア：インド（[[ガンジス]]川下流域、[[西ガーツ]]山脈の西側海岸）
-
+<ul class="circle">
+<li>中国：華南・東北<a href="geo_lessons_China.html#agriculture" class="link-active link-icon"></a></li>
+<li>東南アジア大陸部：タイ<a href="geo_lessons_Southeast_Asia_countries.html#Thai_agriculture" class="link-active link-icon"></a>・ベトナム<a href="geo_lessons_Southeast_Asia_countries.html#Vietnam_agriculture" class="link-active link-icon"></a></li>
+<li>南アジア：インド（[[ガンジス]]川下流域、[[西ガーツ]]山脈の西側海岸）<a href="geo_lessons_South_Asia.html#India_agriculture" class="link-active link-icon"></a></li>
+</ul>
 ## 集約的畑作農業
 ### 特色
 ::top
@@ -162,15 +200,19 @@ class="marker">労働生産性１人あたりの労働によって得られる�
 反面、[[労働]]生産性は小さい傾向にあります。
 ::
 ### 作物
-
-- 中国：華北で[[小麦]]、東北で[[とうもろこし]]
-- インド：デカン高原で[[綿花]]、パンジャブ地方で[[小麦]]
-
+<ul class="circle">
+<li>中国：華北で[[小麦]]、東北で[[とうもろこし]]<a href="geo_lessons_China.html#agriculture" class="link-active link-icon"></a></li>
+<li>インド：デカン高原で[[綿花]]、パンジャブ地方で[[小麦]]<a href="geo_lessons_South_Asia.html#India_agriculture" class="link-active link-icon"></a></li>
+</ul>
 ### 分布
 ::top
 アジアのなかでも、年降水量[[1000]]mm未満の中国北部（華北・東北）、インドの[[デカン]]高原・[[パンジャブ]]地方が該当します。
 ::
 ::gazo
-![サーミとトナカイ](sami.webp)
-サーミとトナカイ
+![](China_agriculture.webp){.twice}
+中国の農業
+::
+::gazo
+![](South_Asia_agriculture.webp){.border}
+南アジアの農業
 ::

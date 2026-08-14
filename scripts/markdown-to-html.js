@@ -377,13 +377,19 @@ function convertInlineMarkdown(text) {
  */
 function htmlToCustomMarkdown(html) {
   // contentsクラス内のコンテンツだけを抽出
-  const contentMatch = html.match(/<div id='toc-range' class="contents">([\s\S]*?)(?:<\/div>)?<!-- \/contents -->/);
+  let contentMatch = html.match(/<div id='toc-range' class="contents">([\s\S]*?)(?:<\/div>)?<!-- \/contents -->/);
+  // 閉じコメント（<!-- /contents -->）が無い一部ファイル用のフォールバック
+  if (!contentMatch) {
+    contentMatch = html.match(/<div id='toc-range' class="contents">([\s\S]*?)<!--\s*footer/);
+  }
   if (!contentMatch) {
     console.error('コンテンツが見つかりません');
     return '';
   }
   
   let content = contentMatch[1].trim();
+  // CRLFを正規化（末尾に\rが残ると</div>除去の正規表現が一致しなくなるため）
+  content = content.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
   
   // PHPタグとコメントを削除
   content = content.replace(/<\?php[\s\S]*?\?>/g, '');
@@ -428,9 +434,8 @@ function htmlToCustomMarkdown(html) {
       continue;
     }
     
-    // TOC
+    // TOC（新サイトでは別コンポーネントで自動生成するため行ごと削除）
     if (line.includes('<div id="toc"></div>')) {
-      result.push('<div id="toc"></div>');
       i++;
       continue;
     }
@@ -450,7 +455,7 @@ function htmlToCustomMarkdown(html) {
     }
     if (line.startsWith('<h4>')) {
       const text = line.replace(/<\/?h4>/g, '');
-      result.push('<h4>' + convertHtmlToMarkdownInline(text) + '</h4>');
+      result.push('#### ' + convertHtmlToMarkdownInline(text));
       i++;
       continue;
     }
@@ -501,32 +506,54 @@ function htmlToCustomMarkdown(html) {
     }
     
     // gazo
+    // <div class="gazo">...</div>が一行にまとまっている場合と、複数行にまたがる場合の両方に対応する
+    // （一行にまとまっているケースを考慮しないと、次の見出しや段落を誤って読み飛ばしてしまう）
     if (line.startsWith('<div class="gazo">')) {
+      let inner = line.slice('<div class="gazo">'.length);
       i++;
-      result.push('::gazo');
-      
-      // 画像行を取得
-      let imgLine = lines[i].trim();
-      const imgMatch = imgLine.match(/<img[^>]*?(?:data-)?src="([^"]+)"[^>]*?(?:class="([^"]*)")?[^>]*?\/>/);
-      if (imgMatch) {
-        const src = imgMatch[1];
-        const classes = imgMatch[2] || '';
-        const classMatch = classes.match(/\b(border|twice|half)\b/);
-        const classAttr = classMatch ? `{.${classMatch[1]}}` : '';
-        result.push(`![](${src})${classAttr}`);
-      }
-      i++;
-      
-      // キャプションを取得
-      while (i < lines.length && !lines[i].includes('</div>')) {
-        const capLine = lines[i].trim();
-        if (capLine && capLine !== '<br />' && capLine !== '<br>') {
-          result.push(convertHtmlToMarkdownInline(capLine));
+      if (inner.includes('</div>')) {
+        inner = inner.replace(/<\/div>[\s\S]*$/, '');
+      } else {
+        while (i < lines.length) {
+          const l = lines[i];
+          if (l.includes('</div>')) {
+            inner += '\n' + l.replace(/<\/div>[\s\S]*$/, '');
+            i++;
+            break;
+          }
+          inner += '\n' + l;
+          i++;
         }
-        i++;
       }
+
+      result.push('::gazo');
+
+      // 画像タグ全体を取得してから、属性の並び順に依存せずsrc/classを抽出する
+      const imgTagMatch = inner.match(/<img\b[^>]*>/);
+      let captionSource = inner;
+      if (imgTagMatch) {
+        const imgTag = imgTagMatch[0];
+        const srcMatch = imgTag.match(/(?:data-)?src="([^"]+)"/);
+        const classMatch = imgTag.match(/class="([^"]*)"/);
+        if (srcMatch) {
+          const src = srcMatch[1].replace(/^img\//, '');
+          const classes = classMatch ? classMatch[1] : '';
+          const sizeMatch = classes.match(/\b(border|twice|half)\b/);
+          const classAttr = sizeMatch ? `{.${sizeMatch[1]}}` : '';
+          result.push(`![](${src})${classAttr}`);
+        }
+        captionSource = inner.slice(imgTagMatch.index + imgTag.length);
+      }
+
+      // キャプションを取得
+      captionSource
+        .replace(/<br\s*\/?>/g, '\n')
+        .split('\n')
+        .map(s => s.trim())
+        .filter(Boolean)
+        .forEach(capLine => result.push(convertHtmlToMarkdownInline(capLine)));
+
       result.push('::');
-      i++;
       continue;
     }
     
@@ -558,7 +585,7 @@ function htmlToCustomMarkdown(html) {
         const imgLine = lines[i].trim();
         const imgMatch = imgLine.match(/<img[^>]*?src="([^"]+)"[^>]*?(?:class="([^"]*)")?[^>]*?\/>/);
         if (imgMatch) {
-          const src = imgMatch[1];
+          const src = imgMatch[1].replace(/^img\//, '');
           const classes = imgMatch[2] || '';
           const classMatch = classes.match(/\b(border|twice|half)\b/);
           const classAttr = classMatch ? `{.${classMatch[1]}}` : '';
@@ -575,9 +602,29 @@ function htmlToCustomMarkdown(html) {
       continue;
     }
     
-    // ul/li などのHTML要素はそのまま保持
-    if (line.startsWith('<ul') || line.startsWith('<li') || line.startsWith('</ul') || line.startsWith('</li')) {
+    // ul: 開始・終了タグはそのまま保持
+    if (line.startsWith('<ul') || line.startsWith('</ul')) {
       result.push(line);
+      i++;
+      continue;
+    }
+
+    // li: クリック用語(onclick)・marker・入れ子のlead等をconvertDivContentで変換してから出力
+    // （素通しすると、クリック用語がonclick="chg(this)"のままになりサイト上で機能しなくなるため）
+    if (line.startsWith('<li')) {
+      let liLines = [line];
+      i++;
+      while (i < lines.length && !liLines.join('\n').includes('</li>')) {
+        liLines.push(lines[i].trim());
+        i++;
+      }
+      const liContent = liLines.join('\n');
+      const liMatch = liContent.match(/^<li[^>]*>([\s\S]*)<\/li>\s*$/);
+      const inner = liMatch ? liMatch[1] : liContent.replace(/^<li[^>]*>/, '').replace(/<\/li>\s*$/, '');
+      result.push('<li>' + convertDivContent(inner) + '</li>');
+      continue;
+    }
+    if (line.startsWith('</li')) {
       i++;
       continue;
     }

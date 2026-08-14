@@ -7,6 +7,7 @@
 ![](keppen.jpg){.half}
 ケッペン
 ::
+---arrow---
 ::top
 ケッペンは、樹林の有無などの景観に基づき、赤道から極地（北極あるいは南極）にかけて気候が似た地域を大きく５つに分類できると考えました。
 ::
@@ -21,8 +22,13 @@
 これら５つの気候帯のうち、==Ａ・Ｃ・Ｄは樹木が生育できる==ため樹林気候と呼ばれ、==Ｂ・Ｅは樹木が生育できない==ため無樹林気候と呼ばれます。
 ::
 ::gazo
-![気候帯の分布](climate_zone.webp){.twice.border.border-1}
+![](climate_zone.webp){.twice}
 気候帯の分布
+::
+## 気候区
+### 気候帯の細分
+::top
+ケッペンの５つの気候帯は、気温・降水に基づき、さらに12の気候区に分類されます。
 ::
 ::middle
 12の気候区は、気候帯の記号（Ａ～Ｅ）に、ｆやａなどの小文字あるいはＳやＴなどの大文字を併せ、記号で表すことができます。
@@ -30,6 +36,50 @@
 ::last
 なお、これらｆやＳなど２文字目以降のアルファベットは、ある意味をもつドイツ語の頭文字です。
 ::
+<div class="overflow-x-auto mt-10 mb-10">
+<table class="w-auto table mx-auto">
+<tr>
+<td rowspan="3" class="text-center text-vertical">樹林気候</td>
+<td class="text-center">Ａ<br />熱帯</td>
+<td class="text-center">Af<br />Am<br />Aw</td>
+<td><span onclick="chg(this)" class="all">熱帯雨林</span>気候<br />
+<span onclick="chg(this)" class="all">熱帯モンスーン</span>気候（弱い乾季のある熱帯雨林気候）<br />
+<span onclick="chg(this)" class="all">サバナ</span>気候
+</td>
+</tr>
+<tr>
+<td class="text-center">Ｃ<br />温帯</td>
+<td class="text-center">Cfa<br />Cfb<br />Cs<br />Cw</td>
+<td><span onclick="chg(this)" class="all">温暖湿潤</span>気候<br />
+<span onclick="chg(this)" class="all">西岸海洋性</span>気候<br />
+<span onclick="chg(this)" class="all">地中海性</span>気候<br />
+<span onclick="chg(this)" class="all">温暖冬季少雨</span>気候
+</td>
+</tr>
+<tr>
+<td class="text-center">Ｄ<br />亜寒（冷）帯</td>
+<td class="text-center">Df<br />Dw</td>
+<td><span onclick="chg(this)" class="all">亜寒帯湿潤</span>気候<br />
+<span onclick="chg(this)" class="all">亜寒帯冬季少雨</span>気候
+</td>
+</tr>
+<tr>
+<td rowspan="2" class="text-vertical text-center">無樹林気候</td>
+<td class="text-center">Ｂ<br />乾燥帯</td>
+<td class="text-center">BS<br />BW</td>
+<td><span onclick="chg(this)" class="all">ステップ</span>気候<br />
+<span onclick="chg(this)" class="all">砂漠</span>気候
+</td>
+</tr>
+<tr>
+<td class="text-center">Ｅ<br />寒帯</td>
+<td class="text-center">ET<br />EF</td>
+<td><span onclick="chg(this)" class="all">ツンドラ</span>気候<br />
+<span onclick="chg(this)" class="all">氷雪</span>気候
+</td>
+</tr>
+</table>
+</div>
 #### ２文字目のアルファベット意味
 ::top
 ｆ…年中降雨（feucht）
@@ -67,8 +117,11 @@
 気候区の分布は次の通りです。
 ::
 ::gazo
-![気候区の分布](climate_classification.webp){.twice.border.border-1}
+![](climate_classification.webp){.twice}
 気候区の分布
+::
+::top
+亜寒帯湿潤気候は、[[北アメリカ大陸]]、次いで[[ユーラシア大陸]]に広く分布します。
 ::
 ::middle
 つまり、北半球に広く分布すると言えます。
@@ -78,7 +131,7 @@
 ::
 ---arrow---
 ::top
-ステップ気候・砂漠気候は、[[オーストラリア大陸]]、次いで[[ アフリカ大陸 ]]に広く分布します。
+ステップ気候・砂漠気候は、[[オーストラリア大陸]]、次いで[[アフリカ大陸]]に広く分布します。
 ::
 ::last
 ==亜寒帯冬季少雨気候がユーラシア大陸にしかないこと==、==オーストラリア大陸・アフリカ大陸には亜寒帯湿潤気候・亜寒帯冬季少雨気候・ツンドラ気候・氷雪気候が存在しないこと==も覚えておきましょう。
@@ -97,8 +150,11 @@
 ==南緯60°あたりは陸地がない==ため、色塗り部分がなくなっています。
 ::
 ::gazo
-![大陸模式図](continent_percentage.webp)
+![](continent_percentage.webp)
 大陸模式図
+::
+::top
+このような１つの大陸があるとすれば、緯度や東岸・西岸の影響をうけ、気候区の分布は次のようになります。
 ::
 ::middle
 実際の世界の気候区の分布と比べてみましょう。
@@ -107,8 +163,12 @@
 概ねこの模式図のように分布しているのではないでしょうか。
 ::
 ::gazo
-![大陸模式図](continent_percentage_color.webp)
+![](continent_percentage_color.webp)
 大陸模式図
+::
+### 気候区の判定
+::top
+気候区について、さらに詳しく見ていきましょう。
 ::
 ::middle
 12の気候区は、気温・降水に基づき分類されていると既に学習しました。
@@ -119,6 +179,58 @@
 ::last
 判定は、「Ｅか否か」→「Ｂか否か」→「ＡかＣかＤか」と順に進めていきます。
 ::
+<div class="overflow-x-auto mt-10 mb-10">
+<table class="w-auto table mx-auto">
+<tr>
+<td class="text-center">月</td>
+<td class="text-center">１月</td>
+<td class="text-center">２月</td>
+<td class="text-center">３月</td>
+<td class="text-center">４月</td>
+<td class="text-center">５月</td>
+<td class="text-center">６月</td>
+<td class="text-center">７月</td>
+<td class="text-center">８月</td>
+<td class="text-center">９月</td>
+<td class="text-center">10月</td>
+<td class="text-center">11月</td>
+<td class="text-center">12月</td>
+<td class="text-center">全年</td>
+</tr>
+<tr>
+<td class="text-center">気温<br />（℃）</td>
+<td class="text-center">16</td>
+<td class="text-center">17.6</td>
+<td class="text-center">20.2</td>
+<td class="text-center">23.9</td>
+<td class="text-center">27.5</td>
+<td class="text-center">28.9</td>
+<td class="text-center">29</td>
+<td class="text-center">28.2</td>
+<td class="text-center">27.5</td>
+<td class="text-center">24.7</td>
+<td class="text-center">20.9</td>
+<td class="text-center">18.1</td>
+<td class="text-center">23.5</td>
+</tr>
+<tr>
+<td class="text-center">降水量<br />（mm）</td>
+<td class="text-center">23.6</td>
+<td class="text-center">33.4</td>
+<td class="text-center">47.4</td>
+<td class="text-center">112.9</td>
+<td class="text-center">202.3</td>
+<td class="text-center">239.0</td>
+<td class="text-center">252.4</td>
+<td class="text-center">322.0</td>
+<td class="text-center">251.0</td>
+<td class="text-center">163.7</td>
+<td class="text-center">45.6</td>
+<td class="text-center">10.9</td>
+<td class="text-center">1704.2</td>
+</tr>
+</table>
+</div>
 #### まず「Ｅか否か」
 ::top
 各月の平均気温のうち、最も高いものを==最暖月平均気温==と言います。
@@ -141,6 +253,7 @@
 ::top
 Ｂかどうかの判定は大変煩雑です。
 ::
+<h5 id="kousuigata">降水型の判定（ｓかｗかｆか）</h5>
 ::top
 各月の降水量のうち、最も少ないものを最少雨月降水量、反対に最も多いものを最多雨月降水量と言います。
 ::
@@ -154,21 +267,24 @@
 ::top
 夏に最少雨月があるなら、次の①②を比較します。
 ::
-
-- 夏の最少雨月降水量✕[[３]]
-- 冬の最多雨月降水量
-
+<ul class="en">
+<li>夏の最少雨月降水量✕[[３]]</li>
+<li>冬の最多雨月降水量</li>
+</ul>
+<div class="last
+">夏の方が冬より少なければ（①＜②）、降水型はｓ（夏に乾燥）、そうでなければｆ（年中湿潤）となります。</div>
 ---arrow---
 ::top
 冬に最少雨月があるなら、次の①'②'を比較します。
 ::
-
-- '冬の最少雨月降水量✕[[10]]
-- '夏の最多雨月降水量
-
+<ul class="en">
+<li>'冬の最少雨月降水量✕[[10]]</li>
+<li>'夏の最多雨月降水量</li>
+</ul>
 ::last
 冬の方が夏より少なければ（①'＜②'）、降水型はｗ（冬に乾燥）、そうでなければｆ（年中湿潤）となります。
 ::
+<h5>いよいよＢか否かの判定</h5>
 ::top
 ここでは、年間降水量をＲ、年間平均気温をｔ、乾燥限界値をｒとおきます。
 ::
@@ -199,6 +315,58 @@
 ::top
 次の都市の気候区を試しに判定してみましょう。
 ::
+<div class="overflow-x-auto mt-10 mb-10">
+<table class="w-auto table mx-auto">
+<tr>
+<td class="text-center">月</td>
+<td class="text-center">１月</td>
+<td class="text-center">２月</td>
+<td class="text-center">３月</td>
+<td class="text-center">４月</td>
+<td class="text-center">５月</td>
+<td class="text-center">６月</td>
+<td class="text-center">７月</td>
+<td class="text-center">８月</td>
+<td class="text-center">９月</td>
+<td class="text-center">10月</td>
+<td class="text-center">11月</td>
+<td class="text-center">12月</td>
+<td class="text-center">全年</td>
+</tr>
+<tr>
+<td class="text-center">気温<br />（℃）</td>
+<td class="text-center">24.0</td>
+<td class="text-center">27.2</td>
+<td class="text-center">31.5</td>
+<td class="text-center">34.3</td>
+<td class="text-center">34.4</td>
+<td class="text-center">32.0</td>
+<td class="text-center">29.4</td>
+<td class="text-center">28.1</td>
+<td class="text-center">29.4</td>
+<td class="text-center">31.1</td>
+<td class="text-center">28.5</td>
+<td class="text-center">25.2</td>
+<td class="text-center">29.6</td>
+</tr>
+<tr>
+<td class="text-center">降水量<br />（mm）</td>
+<td class="text-center">0.0</td>
+<td class="text-center">0.0</td>
+<td class="text-center">2.0</td>
+<td class="text-center">7.3</td>
+<td class="text-center">27.3</td>
+<td class="text-center">74.9</td>
+<td class="text-center">136.9</td>
+<td class="text-center">161.2</td>
+<td class="text-center">85.6</td>
+<td class="text-center">13.3</td>
+<td class="text-center">0.0</td>
+<td class="text-center">0.0</td>
+<td class="text-center">508.5</td>
+</tr>
+</table>
+</div>
 ---arrow---
 ::top
 月平均気温が最も高い月（最暖月）は５月であり、この時期あたりの夏に最多雨月があります。
@@ -219,6 +387,7 @@
 ::last
 1/2ｒ≦R＜ｒ、具体的には508.5＜872となるので、この都市の気候区はステップ気候と判定できます。
 ::
+<h5>計算が苦手な場合、受験まで余裕がない場合</h5>
 ::top
 共通テスト・センター試験の問題では、細かく計算しなくても問題が解けます。
 ::
@@ -248,11 +417,12 @@
 ::
 ---arrow---
 ::top
-Ａ・Ｃ・Ｄのどれか判定できたら、「Ｂか否か」のところで判定した降水型を思い出しましょう。
+Ａ・Ｃ・Ｄのどれか判定できたら、「Ｂか否か」のところで判定した<a href="geo_lessons_climate_classification.html#kousuigata">降水型</a>を思い出しましょう。
 ::
 ::last
 Ｄで降水型がｆなら亜寒帯湿潤気候（Df）、降水型がｗなら亜寒帯冬季少雨気候（Dw）です。
 ::
+<h5>やっかいなAfとCf</h5>
 ::top
 Ａで降水型がｆなら熱帯雨林気候（Af）ですが、==最少雨月降水量が60mm未満の月がひと月でもあれば==、弱い乾季がある熱帯雨林気候、いわゆる熱帯モンスーン（Am）となります。
 ::
@@ -273,6 +443,56 @@
 ::last
 その一例が、次の「表」です。
 ::
+<div class="overflow-x-auto mt-10 mb-10">
+<table class="w-auto table mx-auto">
+<caption>東京の気温と降水量</caption>
+<tr>
+<td class="text-center">月</td>
+<td class="text-center">１月</td>
+<td class="text-center">２月</td>
+<td class="text-center">３月</td>
+<td class="text-center">４月</td>
+<td class="text-center">５月</td>
+<td class="text-center">６月</td>
+<td class="text-center">７月</td>
+<td class="text-center">８月</td>
+<td class="text-center">９月</td>
+<td class="text-center">10月</td>
+<td class="text-center">11月</td>
+<td class="text-center">12月</td>
+</tr>
+<tr>
+<td class="text-center">気温<br />（℃）</td>
+<td class="text-center">6.1</td>
+<td class="text-center">6.5</td>
+<td class="text-center">9.4</td>
+<td class="text-center">14.6</td>
+<td class="text-center">18.9</td>
+<td class="text-center">22.1</td>
+<td class="text-center">25.8</td>
+<td class="text-center">27.4</td>
+<td class="text-center">23.8</td>
+<td class="text-center">18.5</td>
+<td class="text-center">13.3</td>
+<td class="text-center">8.7</td>
+</tr>
+<tr>
+<td class="text-center">降水量<br />（mm）</td>
+<td class="text-center">52.3</td>
+<td class="text-center">56.1</td>
+<td class="text-center">117.5</td>
+<td class="text-center">124.5</td>
+<td class="text-center">137.8</td>
+<td class="text-center">167.7</td>
+<td class="text-center">153.5</td>
+<td class="text-center">168.2</td>
+<td class="text-center">209.9</td>
+<td class="text-center">197.8</td>
+<td class="text-center">92.5</td>
+<td class="text-center">51.0</td>
+</tr>
+</table>
+</div>
 ### 雨温図・ハイサーグラフ
 ::top
 「表」のほかに、気温・降水量を示すものに、「雨温図」「ハイサーグラフ」があります。
@@ -280,6 +500,10 @@
 ::gazo
 ![](tokyo-uonzu.svg)
 東京の気温・降水量（雨温図）
+::
+::gazo
+![](tokyo-hythergraph.svg)
+東京の気温・降水量（ハイサーグラフ）
 ::
 #### 雨温図
 ::top

@@ -3,16 +3,15 @@
 ::top
 エネルギー資源は次の２つに大きく分けられます。
 ::
-
-- ==１次エネルギー==
-  :::lead
-  石炭・石油・天然ガスなどの[[化石燃料]]や水力・風力など自然エネルギー
-  :::
-- ２次エネルギー
-  :::lead
-  １次エネルギーを加工してつくった電力や都市ガス
-  :::
-
+<ul class="en">
+<li>==１次エネルギー==
+:::lead
+石炭・石油・天然ガスなどの[[化石燃料]]や水力・風力など自然エネルギー
+:::</li>
+<li>２次エネルギー:::lead
+１次エネルギーを加工してつくった電力や都市ガス
+:::</li>
+</ul>
 ### 利用の変化
 #### 産業革命以前
 ::top
@@ -29,18 +28,24 @@
 ![](steam_engine.gif)
 蒸気機関
 ::
+::gazo
+![](coal.webp)
+石炭
+::
 #### 20世紀初め
 ::top
 自動車の燃料や合成繊維・合成ゴムなどの原料として、[[石油]]の需要が高まりました。
 ::
 ::sup
-原油
-:::lead
-地中から採取したばかりの石油
+原油<div class="lead">地中から採取したばかりの石油
 ::
+</div>
 ::gazo
-![石炭](coal.webp)
-石炭
+![](petroleum.webp){.half}
+原油
+::
+#### 1960年代後半
+::top
 ::
 ::top
 [[石油]]の消費量が、[[石炭]]の消費量を上回りました。
@@ -53,12 +58,20 @@
 エネルギー革命の背景は、石油が石炭に比べ熱効率が高い燃料であり、また、流体のため==大型タンカー==や[[パイプライン]]で運べるからです。
 ::
 ::gazo
-![原油](petroleum.webp){.half}
-原油
+![](tanker.webp)
+石油タンカー「アブ・カイク」
 ::
 ::gazo
-![石油タンカー「アブ・カイク」](tanker.webp)
-石油タンカー「アブ・カイク」
+![](tanker2.webp)
+石油タンカーの側面図
+::
+::gazo
+![](pipe.webp)
+石油のパイプライン
+::
+#### 1970年代
+::top
+1973年・1979年、石油危機によって石油価格が高騰しました。
 ::
 ::last
 この出来事の経験から、石油偏重を見直し、天然ガス・石炭・原子力が併用されるようになりました。
@@ -68,19 +81,27 @@
 ::top
 石油について、次の４つの事項をおさえましょう。
 ::
-
-- １次エネルギーの中で==最も多い消費量==
-- 動力・発電の燃料や石油製品の原料で、現在の物質文明の支え
-- 大きな偏在性（世界の埋蔵量の約半分が西アジアに集中）
-- [[新]]期造山帯の==褶曲した地層の背斜部==に集積
-
+<ul class="en">
+<li>１次エネルギーの中で==最も多い消費量==</li>
+<li>動力・発電の燃料や石油製品の原料で、現在の物質文明の支え</li>
+<li>大きな偏在性（世界の埋蔵量の約半分が西アジアに集中）</li>
+<li>[[新]]期造山帯の==褶曲した地層の背斜部==に集積</li>
+</ul>
 ::gazo
-![石油タンカーの側面図](tanker2.webp)
-石油タンカーの側面図
+![](anticline.webp){.twice}
+油田の地質構造
 ::
 ::gazo
-![石油のパイプライン](pipe.webp)
-石油のパイプライン
+![](petroleum_field.webp){.twice}
+油田の分布
+::
+::gazo
+![](new_orogenic_belt.webp){.twice}
+新期造山帯
+::
+### 西アジアの油田
+::top
+石油の埋蔵量のうち、約半分は西アジアに集中します。
 ::
 ::middle
 1950～60年代に多くの油田がペルシア湾に発見されて以来、西アジアは石油供給の中心となってきました。
@@ -100,15 +121,19 @@
 ::top
 石炭について、次の事項をおさえましょう。
 ::
-
-- ==埋蔵量が最も多い化石燃料==（石油の４倍以上）
-- ユーラシア大陸やアメリカ大陸の[[古]]期造山帯に多く分布（ただし偏在性は小さい）
-- ==鉄鉱石と結びつくと、鉄鋼業を展開==
-- 生産の多い国では、==火力発電の燃料によく使用される傾向あり==
-
+<ul class="en">
+<li>==埋蔵量が最も多い化石燃料==（石油の４倍以上）</li>
+<li>ユーラシア大陸やアメリカ大陸の[[古]]期造山帯に多く分布（ただし偏在性は小さい）</li>
+<li>==鉄鉱石と結びつくと、鉄鋼業を展開==</li>
+<li>生産の多い国では、==火力発電の燃料によく使用される傾向あり==</li>
+</ul>
 ::gazo
-![油田の地質構造](anticline.webp){.twice}
-油田の地質構造
+![](coal_field.webp){.twice}
+炭田の分布
+::
+::gazo
+![](old_orogenic_belt_for_coal.webp){.twice}
+古期造山帯
 ::
 ### 炭田の開発
 ::top
@@ -118,10 +143,9 @@
 石炭の生産は、これら大陸の国々で多く、==露天掘り==で大規模に発掘したりします。
 ::
 ::sup
-露天掘り
-:::lead
-坑道を掘らず、地表から鉱産物を直接削り取る採掘方法
+露天掘り<div class="lead">坑道を掘らず、地表から鉱産物を直接削り取る採掘方法
 ::
+</div>
 ---arrow---
 ::top
 石炭は火力発電の燃料や製鉄の原料として利用されるため、多くの国で輸入されています。
@@ -134,11 +158,11 @@
 ::top
 天然ガスついて、次の３つの事項をおさえましょう。
 ::
-
-- 燃焼時に排出される汚染物質が少なく、==クリーンエネルギー==として重要視
-- 生産はアメリカ・ロシアが中心（世界の生産量の４割）
-- 冷却・液化し、[[LNG]]（[[液化天然ガス]]）にすることで大量輸送が可能
-
+<ul class="en">
+<li>燃焼時に排出される汚染物質が少なく、==クリーンエネルギー==として重要視</li>
+<li>生産はアメリカ・ロシアが中心（世界の生産量の４割）</li>
+<li>冷却・液化し、[[LNG]]（[[液化天然ガス]]）にすることで大量輸送が可能</li>
+</ul>
 ## 電力
 ### 電力生産
 ::top
@@ -152,7 +176,86 @@
 各発電の方法や特性は次の表の通りです。
 ::
 #### 従来の発電
+<div class="overflow-x-auto mt-10 mb-10">
+<table class="mx-auto w-auto table">
+<tr>
+<th scope="col">&nbsp;</th>
+<th class="text-center">火力発電</th>
+<th class="text-center">水力発電</th>
+<th class="text-center">原子力発電</th>
+</tr>
+<tr>
+<th class="text-center">電源</th>
+<td>石炭・石油・天然ガス</td>
+<td>流水</td>
+<td>ウラン</td>
+</tr>
+<tr>
+<th class="text-center">立地</th>
+<td>大消費地の付近</td>
+<td>落差が得られる山間部</td>
+<td>地方の臨海部</td>
+</tr>
+<tr>
+<th class="text-center">経費</th>
+<td>設備費・送電費が安いが、燃料費が高い</td>
+<td>ダム建設費・送電費が高いが、燃料費は無料</td>
+<td>設備費・補償費が高いが、燃料費は安い</td>
+</tr>
+<tr>
+<th class="text-center">問題点</th>
+<td>大気汚染・酸性雨・地球温暖化</td>
+<td>森林・農地・集落の水没などの自然環境破壊</td>
+<td>事故による放射能汚染・放射性廃棄物の処理問題</td>
+</tr>
+<tr>
+<th class="text-center">依存度が高い国</th>
+<td>アメリカ・日本など先進工業国</td>
+<td>ブラジル・ノルウェー・カナダ</td>
+<td>フランス・ウクライナ・スウェーデン</td>
+</tr>
+</table>
+</div>
 #### 再生可能エネルギーの発電（水力除く）
+<div class="overflow-x-auto mt-10 mb-10">
+<table class="mx-auto w-auto table">
+<tr>
+<th scope="col">&nbsp;</th>
+<th class="text-center">風力発電</th>
+<th class="text-center">太陽光発電</th>
+<th class="text-center">地熱発電</th>
+<th class="text-center">バイオマス発電</th>
+</tr>
+<tr>
+<th class="text-center">電源</th>
+<td>風</td>
+<td>太陽光</td>
+<td>マグマの熱で加熱された蒸気</td>
+<td>バイオエタノール（とうもろこし・さとうきびなど）</td>
+</tr>
+<tr>
+<th class="text-center">立地</th>
+<td>強く安定した風が得られる広い土地</td>
+<td>日照時間が長い地域</td>
+<td>火山地帯</td>
+<td>原料の供給地</td>
+</tr>
+<tr>
+<th class="text-center">問題点</th>
+<td>騒音、不安定な発電</td>
+<td>パネルの定期的メンテナンス、自然環境の破壊</td>
+<td>発電効率が悪い、設置場所が国立・国定公園と重なる</td>
+<td>収集や運搬、管理</td>
+</tr>
+<tr>
+<th class="text-center">先進国</th>
+<td>中国・アメリカ・ドイツ・デンマーク</td>
+<td>ドイツ・イタリア・中国</td>
+<td>フィリピン・インドネシア・フィリピン・日本・アイスランド</td>
+<td>アメリカ・ブラジル</td>
+</tr>
+</table>
+</div>
 ### 火力発電
 ::top
 火力発電は、石油や石炭、天然ガスなどの化石燃料を燃やして発生した蒸気でタービンを回転させ、電力を得ます。
@@ -178,6 +281,7 @@
 アメリカの水力発電の割合は数％ですが、それでも発電量で世界第４位
 ::
 #### 水力発電に頼れる理由
+<h5>カナダの発電事情</h5>
 ::top
 大陸氷河に覆われていた地域には、多くの氷河湖が分布します。
 ::
@@ -187,6 +291,15 @@
 ::last
 そのため、カナダでは水力発電が盛んになっています。
 ::
+<script type="text/javascript">
+createChartAsync(Chart.Pie, { "nation_cd": 124 }, 'Canada_power_generation', {
+title: 'カナダ (億kWh、2019年)',
+colors: ['#dc3912', '#3366cc', '#990099', '#109618', '#ff9900', '#FBD01D', '#dd4477'],
+sliceVisibilityThreshold: 0
+}, "./php/power_generation.php");
+</script>
+<div id="Canada_power_generation" style="width: 100%; height: 350px"></div>
+<h5>ノルウェーの発電事情</h5>
 ::top
 安定した降水も水力発電を盛んにする条件の一つです。
 ::
@@ -207,16 +320,34 @@
 ノルウェーは降水量のほかに氷河の侵食をうけて急傾斜地もあり
 ::
 ::gazo
-![油田の分布](petroleum_field.webp){.twice.border.border-1}
-油田の分布
+![](Norway_rain.webp){.border}
+ノルウェーの降水
 ::
+<script type="text/javascript">
+createChartAsync(Chart.Pie, { "nation_cd": 578 }, 'Norway_power_generation', {
+title: 'ノルウェー (億kWh、2019年)',
+colors: ['#dc3912', '#3366cc', '#990099', '#109618', '#ff9900', '#FBD01D', '#dd4477'],
+sliceVisibilityThreshold: 0
+}, "./php/power_generation.php");
+</script>
+<div id="Norway_power_generation" style="width: 100%; height: 350px"></div>
+<h5>ブラジルの発電事情</h5>
 ::top
 熱帯気候が広がるため、ブラジルは降水量が多く、流量の多い大河川があります。
 ::
 ::last
 このため、ブラジルの水力発電量は、総発電量の半数以上を占めています。
 ::
+<script type="text/javascript">
+createChartAsync(Chart.Pie, { "nation_cd": 76 }, 'Brazil_power_generation', {
+title: 'ブラジル (億kWh、2019年)',
+colors: ['#dc3912', '#3366cc', '#990099', '#109618', '#ff9900', '#FBD01D', '#dd4477'],
+sliceVisibilityThreshold: 0
+}, "./php/power_generation.php");
+</script>
+<div id="Brazil_power_generation" style="width: 100%; height: 350px"></div>
 #### 原子力発電
+<h5>フランスの発電事情</h5>
 ::top
 フランスは、石炭・石油・天然ガスなどのエネルギー資源があまり豊富ではありません。
 ::
@@ -227,21 +358,29 @@
 ::last
 これをうけ、フランスは原子力発電に力を入れてきました。
 ::
+<script type="text/javascript">
+createChartAsync(Chart.Pie, { "nation_cd": 250 }, 'France_power_generation', {
+title: 'フランス (億kWh、2019年)',
+colors: ['#dc3912', '#3366cc', '#990099', '#109618', '#ff9900', '#FBD01D', '#dd4477'],
+sliceVisibilityThreshold: 0
+}, "./php/power_generation.php");
+</script>
+<div id="France_power_generation" style="width: 100%; height: 350px"></div>
+<h5>原子力発電の問題</h5>
 ::top
 事故による放射能汚染の危険性や使用済み核燃料と放射性廃棄物の処理問題など解決しなければならない課題が多くあります。
 ::
 ::middle
 次の３つの原子力発電所では、大規模な事故が起きました。
 ::
-
-- 1979年のスリーマイル島（アメリカ）
-- 1986年のチェルノブイリ
-- 2011年の福島第一
-
+<ul class="en">
+<li>1979年のスリーマイル島（アメリカ）</li>
+<li>1986年のチェルノブイリ</li>
+<li>2011年の福島第一</li>
+</ul>
 ::last
 事故のたびに各国の原子力政策が見直されてきましたが、ロシア・中国・韓国・フランスなどは依然として原子力発電に積極的です。
 ::
 ::gazo
-![新期造山帯](new_orogenic_belt.webp){.twice.border.border-1}
-新期造山帯
+![](three-mile-island.jpg)
 ::

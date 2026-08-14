@@ -10,20 +10,17 @@
 ::top
 どの国でも次の①～③の順に工業が発展します。
 ::
-
-- 軽工業
-  :::lead
-  繊維工業などが該当し、大量の労働力が必要
-  :::
-- 重化学工業
-  :::lead
-  鉄鋼業・石油化学工業などが該当し、金・施設（資本）が必要
-  :::
-- 先端技術産業
-  :::lead
-  エレクトロニクス産業などが該当し、高度な知識・技術が必要
-  :::
-
+<ul class="en">
+<li>軽工業:::lead
+繊維工業などが該当し、大量の労働力が必要
+:::</li>
+<li>重化学工業:::lead
+鉄鋼業・石油化学工業などが該当し、金・施設（資本）が必要
+:::</li>
+<li>先端技術産業:::lead
+エレクトロニクス産業などが該当し、高度な知識・技術が必要
+:::</li>
+</ul>
 ### 工業とコスト
 ::top
 人が原材料を加工するのは、付加価値によって利益を生むためです。
@@ -34,16 +31,17 @@
 ::last
 原材料費以外に、次のことにコストがかかります。
 ::
-
-- 輸送費
-  :::lead
-  原材料の産地から加工場所までの、あるいは、加工場所から消費地までの運搬費用
-  :::
-- 人件費
-  :::lead
-  人の労働で発生する費用のことで、発展途上国の方が先進国に比べて安い
-  :::
-
+<ul class="circle">
+<li>輸送費:::lead
+原材料の産地から加工場所までの、あるいは、加工場所から消費地までの運搬費用
+:::
+:::lead
+重量が大きい品や冷凍品を運搬すると高い
+:::</li>
+<li>人件費:::lead
+人の労働で発生する費用のことで、発展途上国の方が先進国に比べて安い
+:::</li>
+</ul>
 #### 練習問題
 ::top
 例えば、重い原料があり、その原料は加工後にすごく軽くなるとしましょう。
@@ -52,7 +50,11 @@
 産地と加工品の消費地が下図のような配置であれば、A～Dのどこを加工場所にするべきでしょうか。
 ::
 ::gazo
-![工業の立地問題](Industrial_location_sample_quiz.webp){.twice}
+![](Industrial_location_sample_quiz.webp){.twice}
+::
+::top
+答えは、
+    <span onclick="choice(this)" class="choice"><span class="true_choice">A</span>/<span class="false_choice">B</span>/<span class="false_choice">C</span>/<span class="false_choice">D</span></span>です。
 ::
 ::last
 輸送費は重量が大きいものほど高くなるので、なるべく軽くして運ぶ方がコストを抑えられます。
@@ -66,10 +68,55 @@
 おおまかに次の表のようになります。
 ::
 ::sup
-指向
-:::lead
-「重視する」と解釈するとよい
+指向<div class="lead">「重視する」と解釈するとよい
 ::
+</div>
+<div class="overflow-x-auto mt-10 mb-10">
+<div class="text-center">工業の立地</div>
+<table class="w-auto table mx-auto">
+<tr>
+<th class="text-center">立地型</th>
+<th class="text-center">工業</th>
+<th class="text-center">理由</th>
+</tr>
+<tr>
+<th class="text-center text-nowrap"><span onclick="chg(this)" class="all">原料</span>指向型</th>
+<td>金属・セメント・パルプ</td>
+<td>加工後に原料の重量が大幅に減るため、産地付近でに立地</td>
+</tr>
+<tr>
+<th class="text-center text-nowrap">電力指向型</th>
+<td>アルミニウム</td>
+<td>電気を大量消費するため、電気代が安い地域に立地</td>
+</tr>
+<tr>
+<th class="text-center text-nowrap"><span onclick="chg(this)" class="all">市場</span>指向型</th>
+<td>ビール・清涼飲料・印刷・出版</td>
+<td>原料がどこでも入手可能なため、消費地近くに立地</td>
+</tr>
+<tr>
+<th class="text-center text-nowrap"><span onclick="chg(this)" class="all">労働力</span>指向型</th>
+<td>繊維・組立</td>
+<td>人手が多く必要なため、人件費が安い地域に立地</td>
+</tr>
+<tr>
+<th class="text-center text-nowrap"><span onclick="chg(this)" class="all">臨海</span>指向型</th>
+<td>鉄鋼・石油化学</td>
+<td>海外からの輸入原料に依存するため、荷揚げ地（港）に立地
+</td>
+</tr>
+<tr>
+<th class="text-center text-nowrap"><span onclick="chg(this)" class="all">臨空港</span>指向型</th>
+<td>エレクトロニクス</td>
+<td>小型・軽量で高付加価値な製品のため、飛行機での輸送コストを度外視でき、空港や空港に続く高速道路付近に立地</td>
+</tr>
+<tr>
+<th class="text-center text-nowrap"><span onclick="chg(this)" class="all">集積</span>指向型</th>
+<td>自動車</td>
+<td>部品工場が集まって立地することで、設備の共同利用や輸送コストの削減が可能</td>
+</tr>
+</table>
+</div>
 ### 原料指向型
 #### 立地の理由
 ::top
@@ -96,17 +143,26 @@
 産地近くで加工し、輸送した方がコストがかかりません。
 ::
 ::sup
-石灰石
-:::lead
-日本で採取できる数少ない資源
+石灰石<div class="lead">日本で採取できる数少ない資源
 ::
+</div>
 ::gazo
-![石灰石の産地](JP_limestone.webp){.border-1.border}
+![](JP_limestone.webp){.border}
 日本の石灰石の産地
 ::
 ::gazo
-![セメント](JP_cement_industry.webp){.border-1.border}
+![](JP_cement_industry.webp){.border}
 日本のセメント工場
+::
+::gazo
+![](cement.webp)
+セメント
+＊この粉末に水などを混ぜたものがコンクリート
+::
+::gazo
+![](mixer_car.webp)
+ミキサー車
+＊コンクリートを運ぶ車
 ::
 #### 鉄鋼業
 ::top
@@ -122,8 +178,8 @@
 しかし、近年の先進国の鉄鋼業は、国内原料の枯渇や安価な輸入原料への依存から、後述する臨海指向型へ移行しています。
 ::
 ::gazo
-![セメント](cement.webp)
-セメント＊この粉末に水などを混ぜたものがコンクリート
+![](pig_iron.webp)
+銑鉄
 ::
 #### パルプ業・製紙業
 ::top
@@ -136,17 +192,32 @@
 日本では、豊富な山林を周辺にもつ四国や苫小牧（北海道）に、工場が立地します。
 ::
 ::gazo
-![ミキサー車](mixer_car.webp)
-ミキサー車＊コンクリートを運ぶ車
+![](papermaking_process.webp)
+パルプ化と製紙
 ::
-
-- 大量の処理用水が必要用水の近くに立地（例：富士）
-- 輸入木材を利用木材の輸入港に立地（例：新潟）
-- 古紙を原料として利用古紙の供給源である大都市に立地（例：東京）
-
+<h5>原料指向型以外のパルプ業・製紙業</h5>
+::top
+パルプ業・製紙業は次の条件を優先することがあり、必ずしも原料指向型ではありません。
+::
+<ul class="en">
+::last
+用水の近くに立地（例：富士）
+::
+::last
+木材の輸入港に立地（例：新潟）
+::
+::last
+古紙の供給源である大都市に立地（例：東京）
+::
+</ul>
 ::gazo
-![銑鉄](pig_iron.webp)
-銑鉄
+![](R100.svg)
+R100
+＊古紙パルプ配合率100％の用紙のマーク
+::
+::gazo
+![](JP_pulp_industry.webp){.border}
+日本のパルプ・製紙工場
 ::
 ### 臨海指向型
 #### 立地の理由
@@ -154,7 +225,7 @@
 輸入原料を使用する場合は、輸入に便利な港の近く（臨海地域）に工場を立地させます。
 ::
 ::last
-日本は資源のほとんどを海外に依存しているので、鉄鋼業や石油化学工業が原料/臨海指向型です。
+日本は資源のほとんどを海外に依存しているので、鉄鋼業や石油化学工業が<span onclick="choice(this)" class="choice"><span class="false_choice">原料</span>/<span class="true_choice">臨海</span></span>指向型です。
 ::
 #### 鉄鋼業
 ::top
@@ -167,16 +238,24 @@
 発展途上国の鉄鋼業は原料指向型
 ::
 ::gazo
-![パルプ化と製紙](papermaking_process.webp)
-パルプ化と製紙
+![](changes__steel_industry.webp){.twice}
+鉄鋼業の立地移動
+::
+::gazo
+![](steelworks_jp.webp){.border}
+日本の製鉄所
 ::
 #### 石油化学工業
 ::top
 鉄鋼業と同様に、臨海指向型の立地です。
 ::
 ::gazo
-![古紙パルプ配合率100％の用紙のマーク](R100.svg)
-R100＊古紙パルプ配合率100％の用紙のマーク
+![](petroleum_complex.webp)
+石油化学コンビナート
+::
+::gazo
+![](petrochemical_complex_jp.webp)
+日本の石油化学コンビナート
 ::
 ### 臨空港指向型
 #### 立地の理由
@@ -187,15 +266,21 @@ R100＊古紙パルプ配合率100％の用紙のマーク
 このように高い輸送費を度外視できる工業は、臨空港指向型（空港付近や空港に続く高速道路付近の立地）になります。
 ::
 ::gazo
-![パルプ・製紙工場](JP_pulp_industry.webp){.border-1.border}
-日本のパルプ・製紙工場
+![](electronic_circuit.webp)
+電子回路
 ::
+---arrow---
 ::top
 日本では九州や東北地方が工場の誘致に力を入れており、それぞれシリコンアイランド、シリコンロードという別名がつけられています。
 ::
 ::gazo
-![鉄鋼業の立地移動](changes__steel_industry.webp){.twice}
-鉄鋼業の立地移動
+![](semiconductor_jp.webp){.border}
+日本の半導体工場
+::
+### 集積指向型
+#### 立地の理由
+::top
+自動車工業は、多数の部品工場で作られたものを組立工場で製品化します。
 ::
 ::middle
 工場が集まって立地することで、設備の共同利用や輸送コストの削減ができます。
@@ -204,15 +289,21 @@ R100＊古紙パルプ配合率100％の用紙のマーク
 このような工場の立地を集積指向型と呼びます。
 ::
 ::gazo
-![日本の製鉄所](steelworks_jp.webp){.border-1.border}
-日本の製鉄所
+![](automobile_assembly.webp)
+自動車工場の集積
 ::
+---arrow---
 ::top
 日本の自動車工業は、各メーカーの創業地と強く結びついています。
 ::
 ::gazo
-![石油化学コンビナート](petroleum_complex.webp)
-石油化学コンビナート
+![](JP_car.webp){.border}
+自動車組立工場
+::
+### 市場指向型
+#### 立地の理由
+::top
+原材料がどこでも得られるもの（普遍原料）であれば、消費地に近い場所で加工した方が輸送費を抑えられます。
 ::
 ::middle
 また、情報などは人が多く住む消費地ほど大量に速く入手できます。
@@ -234,9 +325,10 @@ R100＊古紙パルプ配合率100％の用紙のマーク
 日本では東京・札幌・福岡など==大都市近郊に工場が立地します==。
 ::
 ::gazo
-![石油化学コンビナート](petrochemical_complex_jp.webp)
-日本の石油化学コンビナート
+![](beer_production.webp)
+ビール製造
 ::
+---arrow---
 ::top
 ただし、飲料全般が市場指向型ではないので、注意が必要です。
 ::
@@ -290,6 +382,7 @@ R100＊古紙パルプ配合率100％の用紙のマーク
 ::last
 アルミニウム製錬では、特に[[水力]]発電が頼られました。
 ::
+<h4 id="jp_aluminum">日本のアルミニウム製錬</h4>
 ::top
 かつて日本は世界でも有数のアルミニウム精錬国でした。
 ::

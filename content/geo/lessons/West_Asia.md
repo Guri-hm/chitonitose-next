@@ -2,26 +2,41 @@
 ::top
 西アジア・中央アジアに該当する国・範囲は次の通りです。
 ::
-
-- 西アジア：トルコ～アラビア半島～アフガニスタン中東
-  :::lead
-  西アジアとほぼ同義
-  :::
-- 中央アジア：ウズベキスタン・カザフスタン・キルギス・タジキスタン・トルクメニスタンスタン
-  :::lead
-  ペルシア語で「土地」の意味（ウズベキスタン＝ウズベク人の土地）
-  :::
-
+<ul class="circle">
+::top
+トルコ～アラビア半島～アフガニスタン
+::
+::sup
+中東<div class="lead">西アジアとほぼ同義
+::
+</div>
+::top
+ウズベキスタン・カザフスタン・キルギス・タジキスタン・トルクメニスタン
+::
+::sup
+スタン<div class="lead">ペルシア語で「土地」の意味（ウズベキスタン＝ウズベク人の土地）
+::
+</div>
+</ul>
+<br>
 ::top
 西アジア・中央アジアの主な地形は次の図の通りです。
 ::
 ::gazo
-![西アジア・中央アジアの地形](West_Asia_terrain.webp){.border.border-1.twice}
+![](West_Asia_terrain.webp){.border}
 西アジア・中央アジアの地形
 ::
+### 大地形
+::top
+西アジア・中央アジアの大地形は、東西に[[新期造山帯]]が続き、南北に安定陸塊が広がります。
+::
 ::gazo
-![西アジア・中央アジアの大地形](West_Asia_young_orogenic_belt.webp){.border.border-1}
+![](West_Asia_young_orogenic_belt.webp){.border}
 西アジア・中央アジアの大地形
+::
+### 高原・山脈
+::top
+パミール高原は、ウズベキスタ・タジギスタン・アフガニスタン・キルギス・中国にまたがって広がり、平均標高5000mの山々が連なります。
 ::
 ::last
 パミール高原からは、北東にかけてテンシャン山脈が走り、南東にかけてクンルン山脈・ヒマラヤ山脈が走ります。
@@ -35,10 +50,9 @@
 カスピ海・アラル海は塩湖です。
 ::
 ::sup
-塩湖
-:::lead
-塩分が１リットル中0.5グラム以上の湖
+塩湖<div class="lead">塩分が１リットル中0.5グラム以上の湖
 ::
+</div>
 ::sup
 カスピ海・アラル海は陸地によって海と遮られるため地形的に「湖」だが、一説によれば、海のように広く、塩分濃度が高いため「海」と命名（資源をめぐる法的理由も存在）
 ::
@@ -54,24 +68,47 @@
 20世紀最大の環境破壊と言われ、周辺では漁業の廃業や塩害が発生しています。
 ::
 ::gazo
-![シルダリア川・アムダリア川の取水](Aral_sea_river.webp){.border.border-1}
+![](Aral_sea_river.webp){.border}
 シルダリア川・アムダリア川の取水
 ::
 ::gazo
-![アラル海に放置された船](Aral_Sea_ship.webp)
+![](Aral_Sea_ship.webp)
 アラル海に放置された船
+::
+::gazo
+![](Aral_Sea_shrink.webp)
+アラル海の縮小(左:1989年、右:2014年)
+::
+## 気候
+::gazo
+![](West_Asia_climate.webp){.border}
+西アジア・中央アジアの気候
 ::
 ### 乾燥気候と地中海性気候
 ::top
 西アジアの気候は、次のように把握できます。
 ::
-
-- 内陸や北回帰線付近北回帰線付近は年間を通じて中緯度高圧帯（亜熱帯高圧帯）の影響を受けて乾燥乾燥気候(BS・BW)
-- 地中海沿岸(トルコなど)～トルコと同緯度の地域夏に北上した中緯度高圧帯（亜熱帯高圧帯）の影響を受けて乾燥地中海性気候(Cs)
-
+<ul class="circle">
+::top
+北回帰線付近は年間を通じて中緯度高圧帯（亜熱帯高圧帯）の影響を受けて乾燥
+::
+::last
+乾燥気候(BS・BW)
+::
+::top
+夏に北上した中緯度高圧帯（亜熱帯高圧帯）の影響を受けて乾燥
+::
+::last
+地中海性気候(Cs)
+::
+</ul>
 ::gazo
-![アラル海の縮小(左:1989年、右:2014年)](Aral_Sea_shrink.webp)
-アラル海の縮小(左:1989年、右:2014年)
+![](West_Asia_climate_simple.webp){.border}
+::
+### 各都市の雨温図
+::gazo
+![](West_Asia_city.webp){.border}
+西アジアの都市
 ::
 ::top
 イスタンブールはトルコの都市です。
@@ -83,14 +120,21 @@
 夏に北上した中緯度高圧帯（亜熱帯高圧帯）の影響を受けて乾燥します。
 ::
 ::gazo
-![西アジア・中央アジアの気候](West_Asia_climate.webp){.border.border-1.twice}
-西アジア・中央アジアの気候
+![](Istanbul_climograph.webp)
+イスタンブールの雨温図（Cs）
+::
+::top
+リヤドはサウジアラビアの首都です。
 ::
 ::last
 年間を通じて中緯度高圧帯（亜熱帯高圧帯）の影響を受けて乾燥します。
 ::
 ::gazo
-![](West_Asia_climate_simple.webp){.border.border-1}
+![](Riyadh_climograph.webp)
+リヤドの雨温図（BW）
+::
+::top
+テヘランはイランの首都です。
 ::
 ::middle
 中緯度高圧帯（亜熱帯高圧帯）の影響を受けて乾燥しますが、冬は東西に走る新期造山帯に沿って偏西風が吹きこみ、降水をもたらします。
@@ -99,8 +143,12 @@
 また、隔海度が大きいため、気温の年較差がイスタンブールに比べて大きくなります。
 ::
 ::gazo
-![西アジアの都市](West_Asia_city.webp){.border.border-1}
-西アジアの都市
+![](Tehran_climograph.webp)
+テヘランの雨温図（BS）
+::
+## 民族・言語・宗教
+::top
+西アジアの大部分の民族・言語・宗教は、次のようになります。
 ::
 ::top
 民族：アラブ人
@@ -111,47 +159,100 @@
 ::top
 宗教：イスラームのスンニ派（スンナ派）
 ::
+<br>
 ::top
 上記に該当しない国は下表の３国です。
 ::
+<div class="overflow-x-auto mt-10 mb-10">
+<table class="w-100 table">
+<tr>
+<th class="text-center">国名</th>
+<th class="text-center">民族</th>
+<th class="text-center">言語</th>
+<th class="text-center">宗教</th>
+</tr>
+<tr>
+<td class="text-center">トルコ</td>
+<td class="text-center">トルコ人</td>
+<td class="text-center"><span onclick="chg(this)" class="all">トルコ</span>語<br>（アルタイ語族）</td>
+<td class="text-center">イスラーム</td>
+</tr>
+<tr>
+<td class="text-center">イスラエル</td>
+<td class="text-center">ユダヤ人</td>
+<td class="text-center"><span onclick="chg(this)" class="all">ヘブライ</span>語<br>（アフロ＝アジア語族）</td>
+<td class="text-center"><span onclick="chg(this)" class="all">ユダヤ教</span></td>
+</tr>
+<tr>
+<td class="text-center">イラン</td>
+<td class="text-center">ペルシア人</td>
+<td class="text-center"><span onclick="chg(this)" class="all">ペルシャ</span>語<br>（インド＝ヨーロッパ語族）</td>
+<td class="text-center">イスラーム<br>（<span onclick="chg(this)" class="all">シーア</span>）派</td>
+</tr>
+</table>
+</div>
 ::top
 語族が同じ国は下図の矢印のように連なっています。
 ::
 ::gazo
-![イスタンブールの雨温図](Istanbul_climograph.webp)
-イスタンブールの雨温図（Cs）
+![](West_Asia_language_family.webp){.border}
+西アジアの語族
 ::
+## 民族問題
+### パレスチナ問題
+#### 歴史
+<h5>古代</h5>
+::top
+ユダヤ人の国家が消滅
+::
+<h5>1948年</h5>
 ::top
 かつて国家が存在した土地にイスラエル建国
 ::
 ::last
 ユダヤ人移入、住民のアラブ人（パレスチナ人）追放
 ::
+<h5>1948～78年</h5>
 ::top
 中東戦争（第１～４次）
-:::lead
-第１～４次）イスラエルを認めないアラブ諸国との戦争
+		<div class="lead">イスラエルを認めないアラブ諸国との戦争
 ::
+<div class="lead">いずれもイスラエルが勝利し、占領地が拡大</div>
+</div>
 ::gazo
-![リヤドの雨温図](Riyadh_climograph.webp)
-リヤドの雨温図（BW）
+![](map_Israel.webp){.border}
+イスラエル
 ::
-
-- パレスチナ解放機構（PLO）の結成、抵抗運動（インディファーダ）の継続
-- パレスチナ人はガザ地区・ヨルダン川西岸地区などに逃れ、故郷へ帰れないまま（世界最大の難民グループ）
-- イスラエルが所有権を主張するエルサレムには、イスラーム・キリスト教・ユダヤ教の聖地が存在し、帰属をめぐる問題が存在
-
+#### 課題
+::top
+現在、次の課題を抱えています。
+::
+<ul class="en">
+<li>パレスチナ解放機構（PLO）の結成、抵抗運動（インディファーダ）の継続</li>
+<li>パレスチナ人はガザ地区・ヨルダン川西岸地区などに逃れ、故郷へ帰れないまま（世界最大の難民グループ）</li>
+<li>イスラエルが所有権を主張するエルサレムには、イスラーム・キリスト教・ユダヤ教の聖地が存在し、帰属をめぐる問題が存在</li>
+</ul>
 ::gazo
-![](img/Palestinian_Territories.webp){.half}
+![](Palestine.webp){.border}
+<img class="lazyload popup-img border border-1 half" data-src="img/Palestinian_Territories.webp" alt="パレスチナ自治区" src="../share/img/loading.svg" />
+パレスチナ自治区
 ::
 #### ３つの聖地
 ::gazo
-![テヘランの雨温図](Tehran_climograph.webp)
-テヘランの雨温図（BS）
+![](dome_of_the_rock.webp)
+岩のドーム（イスラームの聖地）
 ::
 ::gazo
-![西アジアの語族](West_Asia_language_family.webp){.border.border-1}
-西アジアの語族
+![](church_of_the_holy_sepulchre.webp)
+聖墳墓教会（キリスト教の聖地）
+::
+::gazo
+![](wailing_wall.webp)
+嘆きの壁（ユダヤ教の聖地）
+::
+### クルド人問題
+::top
+[[クルド]]人は、独自の国家をもたず、トルコ・イラク・イランなど数ヵ国にまたがって居住する民族です。
 ::
 ::middle
 主な宗教はイスラーム、主な言語はクルド語です。
@@ -160,20 +261,33 @@
 少数派として差別を受けているため、自治・独立を要求しています。
 ::
 ::gazo
-![イスラエル](map_Israel.webp){.border.border-1}
-イスラエル
+![](Kurdish_settlement.webp){.border}
+クルド人の居住地域
+::
+::gazo
+![](Kurds.webp)
+クルド人の伝統的衣装
 ::
 ## 農業
 ::gazo
-![パレスチナ](Palestine.webp){.border.border-1}
-パレスチナ自治区
+![](West_Asia_agriculture.webp){.border}
+西アジア・中央アジアの農業
 ::
 ::top
-灌漑農業：小麦・綿花・[[ナツメヤシ]]＊河川やオアシス、センターピボット方式
+遊牧：羊・ヤギ・[[ラクダ]]
+::
+::top
+灌漑農業：小麦・綿花・[[ナツメヤシ]]
+		<div class="top">＊河川やオアシス、センターピボット方式
+::
+</div>
+::gazo
+![](camel.webp)
+ラクダ
 ::
 ::gazo
-![岩のドーム（イスラームの聖地）](dome_of_the_rock.webp)
-岩のドーム（イスラームの聖地）
+![](date_palm.webp)
+ナツメヤシ
 ::
 ### 遊牧民
 ::top
@@ -183,15 +297,24 @@
 西アジアの石油開発はべドウィンの生活を一変させ、彼らのなかには伝統的な生活を捨てて都市に居住する者も多くいました。
 ::
 ::gazo
-![聖墳墓教会（キリスト教の聖地）](church_of_the_holy_sepulchre.webp)
-聖墳墓教会（キリスト教の聖地）
+![](Beduin.webp)
+ベドウィン
+::
+### 灌漑農業を支えるもの
+#### オアシス
+::top
+[[オアシス]]は、乾燥地域で湧水が得られるところです。
 ::
 ::last
 人々はオアシス周辺に都市を築き、水辺は住民の憩いの場所になっています。
 ::
 ::gazo
-![嘆きの壁（ユダヤ教の聖地）](wailing_wall.webp)
-嘆きの壁（ユダヤ教の聖地）
+![](oasis_city.webp)
+オアシス都市
+::
+::gazo
+![](oasis_rest.webp)
+オアシスでの憩い
 ::
 #### 人工の地下水路
 ::top
@@ -207,30 +330,40 @@
 北アフリカでは[[フォガラ]]と呼称
 ::
 ::gazo
-![クルド人の居住地域](Kurdish_settlement.webp){.border.border-1}
-クルド人の居住地域
+![](qanāt.webp){.border}
+カナート
+::
+## 鉱工業
+### 西アジア
+::top
+西アジアは、世界の1/2の原油が埋蔵、世界の1/3の原油を生産しています。
 ::
 #### 歴史
+<h5>第二次世界大戦以前</h5>
 ::top
 アメリカ・ヨーロッパ系の石油会社（国際石油資本）が油田開発
 ::
 ::last
 欧米が儲け、実際の産油国の利益が少ない状況
 ::
+<h5>第二次世界大戦後</h5>
 ::top
 産油国が石油産業を国有化
 ::
+<h5>1960年</h5>
 ::top
 [[OPEC]]（[[石油輸出国機構]]）結成
 ::
 ::sup
-OPECの語呂
-:::lead
-語呂「ああ、インドのさかながいくぜベイエリア」
+OPECの語呂<div class="lead">「ああ、インドのさかながいくぜベイエリア」
 ::
+<div class="lead">あ（アルジェリア）あ（アラブ首長国連邦）さ（サウジアラビア）か（カタール）な（ナイジェリア）が（ガボン）い（イラン）く（クウェート）ぜ（赤道ギニア）ベ（ベネズエラ）イ（イラク）エ（エクアドル）リ（リビア）ア（アンゴラ）</div>
+</div>
+<h5>1968年</h5>
 ::top
 OAPEC（アラブ石油輸出国機構）結成
 ::
+<h5>1980年頃</h5>
 ::top
 開発に沸く西アジアの産油国に男性労働者が流入
 ::
@@ -238,13 +371,22 @@ OAPEC（アラブ石油輸出国機構）結成
 男女比が不均衡（男性＞女性）
 ::
 ::gazo
-![クルド人の伝統的衣装](Kurds.webp)
-クルド人の伝統的衣装
+![](migration_1980.webp){.border}
+1980年頃の人口の移動
 ::
 ::gazo
-![西アジア・中央アジアの農業](West_Asia_agriculture.webp){.border.border-1.twice}
-西アジア・中央アジアの農業
+![](population_pyramid_Saudi_Arabia.webp)
+サウジアラビアの人口ピラミッド（2019年）
 ::
+::gazo
+![](population_pyramid_UAR.webp)
+アラブ首長国連邦の人口ピラミッド（2019年）
+::
+::gazo
+![](population_pyramid_Kuwait.webp)
+クウェートの人口ピラミッド（2019年）
+::
+<h5>近年</h5>
 ::top
 産油量が少ないカタールやバーレーン、アラブ首長国連邦の[[ドバイ]]で、脱石油の傾向あり
 ::
@@ -252,20 +394,34 @@ OAPEC（アラブ石油輸出国機構）結成
 例えば、==ドバイは流通や宿泊などのリゾートに力を注いでいます。==
 ::
 ::gazo
-![ラクダ](camel.webp)
-ラクダ
+![](palm_islands.webp)
+ドバイのヤシの木の形をした人工島
+::
+### 中央アジア
+::top
+アゼルバイジャンの[[バクー]]油田など、カスピ海沿岸で原油や天然ガスを開発しています。
 ::
 ::gazo
-![ナツメヤシ](date_palm.webp)
-ナツメヤシ
+![](Baku.webp){.border}
+カスピ海とバクー油田
+::
+## サウジアラビア
+### 基礎データ
+::gazo
+![](map_Saudi_Arabia.webp){.border}
+サウジアラビア
 ::
 ### 聖地
 ::top
 サウジアラビアには、イスラームの聖地メッカがあり、世界から多くの信者が巡礼します
 ::
 ::gazo
-![ベドウィン](Beduin.webp)
-ベドウィン
+![](Kaaba.webp)
+カーバ神殿
+::
+### 農業
+::top
+サウジアラビアは、ナツメヤシの世界有数の生産国です。
 ::
 ::top
 センターピボット方式による灌漑農業で、トマトなどの農作物を生産しています。
@@ -274,8 +430,12 @@ OAPEC（アラブ石油輸出国機構）結成
 過剰な水の汲み上げで、地下水の枯渇が懸念されています。
 ::
 ::gazo
-![オアシス都市](oasis_city.webp)
-オアシス都市
+![](center_pivot_Saudi_Arabia.webp)
+センターピボット
+::
+### 原油
+::top
+サウジアラビアは、世界有数の原油の生産・輸出国です。
 ::
 ::last
 また、サウジアラビアは日本の原油輸入先の第１位です。
@@ -284,8 +444,12 @@ OAPEC（アラブ石油輸出国機構）結成
 ## イスラエル
 ### 基礎データ
 ::gazo
-![オアシスでの憩い](oasis_rest.webp)
-オアシスでの憩い
+![](map_Israel2.webp){.border}
+イスラエル
+::
+### 民族・宗教・言語
+::top
+イスラエルは、ユダヤ人の民族独自の国家です。
 ::
 ::last
 ほとんどの人がユダヤ教を信仰し、ヘブライ語を用います。
@@ -301,8 +465,12 @@ OAPEC（アラブ石油輸出国機構）結成
 ## イラン
 ### 基礎データ
 ::gazo
-![カナート](qanāt.webp){.border.border-1}
-カナート
+![](map_Iran.webp){.border}
+イラン
+::
+### 民族・宗教・言語
+::top
+イランの人々は、主にペルシャ人でペルシャ語を使用し、イスラームのシーア派です。
 ::
 ### 街路形態
 ::top
@@ -315,8 +483,12 @@ OAPEC（アラブ石油輸出国機構）結成
 ## トルコ
 ### 基礎データ
 ::gazo
-![1980年頃の人口の移動](migration_1980.webp){.border.border-1}
-1980年頃の人口の移動
+![](map_Turkey.webp){.border}
+トルコ
+::
+### 国土
+::top
+国土は、ボスポラス海峡をはさみ、==ヨーロッパとアジアにまたがります==。
 ::
 ### 地震
 ::top
@@ -334,8 +506,12 @@ OAPEC（アラブ石油輸出国機構）結成
 かつてトルコの地にあったオスマン帝国の首都であり、ヨーロッパとアジアをつなぐ東西交通の要衝です。
 ::
 ::gazo
-![サウジアラビアの人口ピラミッド（2019年）](population_pyramid_Saudi_Arabia.webp)
-サウジアラビアの人口ピラミッド（2019年）
+![](Turkey_urban_population.webp)
+トルコの都市人口の比率(2019年)
+::
+#### 東西格差
+::top
+トルコは、国内最大の都市イスタンブールや首都アンカラなど西部が経済的に発展しています。
 ::
 ::last
 対して東部は発展に遅れ、東西の経済格差が生じています。

@@ -4,8 +4,12 @@
 中国の主な地形は次の図の通りです。
 ::
 ::gazo
-![中国の地形](China_terrain.webp){.border.border-1.twice}
+![](China_terrain.webp){.border}
 中国の地形
+::
+::gazo
+![](China_young_orogenic_belt.webp){.border}
+新期造山帯
 ::
 ### 急峻な古期造山帯
 ::top
@@ -25,11 +29,19 @@
 クンルン山脈からヒマラヤ山脈にかけては、標高が高いチベット高原が広がります。
 ::
 ::gazo
-![新期造山帯](China_young_orogenic_belt.webp){.border.border-1.twice}
-新期造山帯
+![](east_Asia_cross_section_map.webp){.border}
 ::
 ::gazo
-![](east_Asia_cross_section_map.webp){.border.border-1.twice}
+![](east_Asia_cross_section.webp){.twice}
+::
+::gazo
+![](Himalayas_airplane.webp)
+飛行機から見たヒマラヤ山脈
+::
+### 主要河川
+::gazo
+![](../share/img/loading.svg){.border}
+中国の主要河川
 ::
 #### アムール川（黒竜江）
 ::top
@@ -81,13 +93,18 @@
 ::
 ### タワーカルスト
 ::top
-コワンシーチョワン族自治区には、タワーカルストで知られる桂林が位置します。
+コワンシーチョワン族自治区には、タワーカルスト<a href="geo_lessons_other_terrain.html#tower_karst" class="link-active link-icon"></a>で知られる桂林が位置します。
 ::
 ::gazo
-![](east_Asia_cross_section.webp){.twice}
+![](Guilin.webp)
+桂林
+::
+### 西高東低
+::top
+中国の地形は、西に山脈が多くて東に平地が広がる「西高東低」です。
 ::
 ::middle
-標高500mのラインはやや東側に寄り、広い国土面積に反して、耕地に適した土地が多くありません。
+標高500mのラインはやや東側に寄り、広い国土面積<a href="geo_lessons_nation.html#land_area" class="link-active link-icon"></a>に反して、耕地に適した土地が多くありません。
 ::
 ::last
 中国の耕地率は約13％で、日本（約10％）とほぼ同じです。
@@ -100,8 +117,13 @@
 平地は居住がしやすいので、東には人口が集中し、産業も西に比べて発達しています。
 ::
 ::gazo
-![飛行機から見たヒマラヤ山脈](Himalayas_airplane.webp)
-飛行機から見たヒマラヤ山脈
+![](Chine_elevation500.webp){.border}
+標高500m付近
+::
+## 気候
+::gazo
+![](China_climate.webp){.border}
+中国の気候
 ::
 ### 西部
 ::top
@@ -125,9 +147,15 @@
 この線で少雨の北部と多雨の南部にわかれます。
 ::
 ::gazo
-![中国の主要河川](China_main_river.webp){.border.border-1.twice}
-中国の主要河川
+![](China_monsoon.webp){.border}
+中国の季節風と年降水量
 ::
+### 各都市の雨温図
+::gazo
+![](China_city.webp){.border}
+中国の都市
+::
+<h5>アルタイ</h5>
 ::top
 アルタイは、シンチヤンウイグル自治区の都市です。
 ::
@@ -135,30 +163,51 @@
 内陸部は乾燥し、気温の年較差が大きくなります。
 ::
 ::gazo
-![桂林](Guilin.webp)
-桂林
+![](Altay.webp)
+アルタイの雨温図
+::
+<h5>チャンチュン</h5>
+::top
+季節風の影響で、降水が夏に多く、冬に少なくなります。
 ::
 ::last
 また、高緯度のために、最寒月平均気温が-３℃未満、最暖月平均気温が10℃以上の亜寒帯（D）に属します。
 ::
 ::gazo
-![中国の標高500m](Chine_elevation500.webp){.border.border-1.twice}
-標高500m付近
+![](Changchun.webp)
+チャンチュンの雨温図
+::
+<h5>ホンコン</h5>
+::top
+北回帰線付近のために中緯度高圧帯に入りますが、大陸東部は季節風の影響が大きく、夏に降水が多く、冬に少なくなります。
 ::
 ::gazo
-![中国の気候](China_climate.webp){.border.border-1.twice}
-中国の気候
+![](Hong_Kong.webp)
+ホンコンの雨温図
+::
+<h5>シャンハイ</h5>
+::top
+日本と同様に一年を通して湿潤になります。
 ::
 ::gazo
-![中国の季節風と年降水量](China_monsoon.webp){.border.border-1.twice}
-中国の季節風と年降水量
+![](Shanghai_climograph.webp)
+シャンハイの雨温図
+::
+<h5>ラサ</h5>
+::top
+ラサは、チベット自治区の都市です。
 ::
 ::last
 高山都市のラサは、気温の年較差が小さく、夏に季節風の影響で雨が多くなります。
 ::
 ::gazo
-![中国の都市](China_city.webp){.border.border-1.twice}
-中国の都市
+![](Lhasa.webp)
+ラサの雨温図
+::
+## 人口
+### 世界最多の人口
+::top
+2020年時点で、中国は世界で最も人口が多い国です。
 ::
 ::last
 国土が西高東低の地形のため、人口の大部分が東部に居住し、都市人口率は５割超です。
@@ -185,8 +234,14 @@
 1970年の出生率は5.72‰、2019年の出生率は1.69‰
 ::
 ::gazo
-![アルタイの雨温図](Altay.webp)
-アルタイの雨温図
+![](population_pyramid_China1970.svg)
+<img class="lazyload popup-img" data-src="img/population_pyramid_China2019.svg" alt="中国の人口ピラミッド(2019)" src="../share/img/loading.svg" />
+左：中国の人口ピラミッド（1970年）、右：中国の人口ピラミッド（2019年）
+::
+## 民族
+### 56の民族
+::top
+中国の人口の約９割が、[[漢民族]]です。
 ::
 ::middle
 残り１割は、55の少数民族に分かれます。
@@ -194,31 +249,38 @@
 ::last
 次の５つの少数民族には、自治区が認定されています。
 ::
+<ul class="en">
+<li>[[チベット]]族:::lead
+==羊やヤクの遊牧がみられ
 
-- [[チベット]]族
-  :::lead
-  ==羊やヤクの遊牧がみられ==、多くの人が独自の発展を遂げた仏教[[ラマ教]]（[[チベット仏教]]）にもとづいて生活
-  :::
-- [[モンゴル]]族
-  :::lead
-  [[ラマ教]]（[[チベット仏教]]）を信仰する人が多く、この民族が中心の隣国のモンゴル国は近年計画経済から市場経済へ移行
-  :::
-- [[ウイグル]]族
-  :::lead
-  文字の表記にはアラビア文字をもとにした字体が主に使われ、主に[[イスラーム]]を信仰
-  :::
-- [[ホイ]]族
-  :::lead
-  主にイスラームを信仰
-  :::
-- [[チョワン]]族
-  :::lead
-  中国の少数民族の中で==最も人口が多く==、特定の宗教なし
-  :::
+==、多くの人が独自の発展を遂げた仏教[[ラマ教]]（[[チベット仏教]]）にもとづいて生活
+:::</li>
+<li>[[モンゴル]]族:::lead
+[[ラマ教]]（[[チベット仏教]]）を信仰する人が多く、この民族が中心の隣国のモンゴル国は近年計画経済から市場経済へ移行
+:::</li>
+<li>[[ウイグル]]族:::lead
+文字の表記にはアラビア文字をもとにした字体が主に使われ、主に[[イスラーム]]を信仰
+:::
+:::lead
+伝統的な家屋形態は日干しレンガの家
+:::</li>
+<li>[[ホイ]]族:::lead
+主にイスラームを信仰
+:::</li>
+<li>[[チョワン]]族:::lead
+中国の少数民族の中で==最も人口が多く
 
+==、特定の宗教なし
+:::</li>
+</ul>
 ::gazo
-![チャンチュンの雨温図](Changchun.webp)
-チャンチュンの雨温図
+![](China_minority.webp){.twice}
+少数民族の自治区
+::
+## 農業
+### 社会主義体制下の農業生産
+::top
+1949年、中華人民共和国が成立し、1950年代に[[人民公社]]制度を拡大しました。
 ::
 ::middle
 この制度は、村を１つの会社と見立て、その構成員である村人を集団労働（農作業など）に従事させます。
@@ -251,13 +313,19 @@
 また、線よりも南側で年降水量が1000㎜以上になる地域は、華中・華南と呼ばれています。
 ::
 ::gazo
-![ホンコンの雨温図](Hong_Kong.webp)
-ホンコンの雨温図
+![](qinling_huaihe_line.svg){.twice}
+降水量と伝統的地域
+::
+<h3 id="agriculture">農業地域</h3>
+::gazo
+![](China_agriculture.webp){.twice}
+中国の農業
 ::
 #### 東北
 ::top
 東北では、トウモロコシ・大豆を栽培します。
 ::
+<h5>米</h5>
 ::top
 米は本来であれば華中・華南で生産されます。
 ::
@@ -269,8 +337,9 @@
 華北（黄河流域）では、小麦・綿花を栽培します。
 ::
 ::sup
-黄河流域には肥沃な[[黄土]]が分布
+黄河流域には肥沃な[[黄土]]が分布<a href="geo_lessons_vegetation_soil.html#loess" class="link-active link-icon"></a>
 ::
+<h5>小麦</h5>
 ::top
 小麦は、主に年降水量500～750㎜程度の半乾燥の温帯・冷帯で栽培されます。
 ::
@@ -281,9 +350,11 @@
 ::top
 華中（長江流域）・華南（チュー川流域）では稲作や茶の栽培がおこなわれます。
 ::
+<h5>米・サトウキビ</h5>
 ::top
 温暖で湿潤な華南では、==米の二期作==やサトウキビ栽培がおこなわれます。
 ::
+<h5>茶</h5>
 ::top
 [[フーチエン]]省で最も生産されます。
 ::
@@ -292,28 +363,34 @@
 [[ヤク]]の遊牧が営まれます。
 ::
 ::gazo
-![シャンハイの雨温図](Shanghai_climograph.webp)
-シャンハイの雨温図
+![](yak.webp)
+ヤク
+::
+## 経済
+### 社会主義体制下の経済発展
+::top
+1978年、社会主義体制下で外国資本と市場経済を導入する[[改革開放政策]]を開始しました。
 ::
 ::middle
 この政策を適用する地域[[経済特区]]を５カ所設置し、税金などの優遇措置を実施して外国企業の誘致しました。
 ::
-
-- ハイナン省
-- チューハイ
-- シェンチェン
-- スワトウ
-- アモイ
-
+<ul class="en">
+<li>ハイナン省</li>
+<li>チューハイ</li>
+<li>シェンチェン</li>
+<li>スワトウ</li>
+<li>アモイ</li>
+</ul>
+<div id="overseas_Chinese" class="last">上記５カ所は、多くの華僑・華人<a href="geo_lessons_migration_labor.html#overseas_Chinese" class="link-active link-icon"></a>の出身地である<span class="marker">広東（コワントン）省・福建（フーチエン）省から選ばれ</span>、海外で成功した彼らが出自を重んじて投資してくれることに期待しました。</div>
 ::sup
-市場経済
-:::lead
-資本主義体制の特色で、市場において自由な競争をさせ、価格と需要・供給を決定する経済
+市場経済<div class="lead">資本主義体制の特色で、市場において自由な競争をさせ、価格と需要・供給を決定する経済
 ::
+</div>
 ::gazo
-![ラサの雨温図](Lhasa.webp)
-ラサの雨温図
+![](special_economic_zone.webp){.border}
+経済特区
 ::
+---arrow---
 ::top
 改革開放政策を適用する地域は徐々に増やされ、1984年以降に追加された地域を経済技術開発区と呼びます。
 ::
@@ -335,56 +412,79 @@
 2000年以降、東部沿岸部との経済格差・社会格差を縮小させるために、[[西部大開発]]が取り組まれました。
 ::
 ::gazo
-![中国の人口ピラミッド(1970)](population_pyramid_China1970.svg)
-左：中国の人口ピラミッド（1970年）、右：中国の人口ピラミッド（2019年）
+![](China_western_development.webp){.twice}
+西部大開発
+::
+#### 青蔵鉄道
+::top
+青海（チンハイ）省からチベット自治区ラサを結ぶ、青蔵鉄道が開通しました。
 ::
 ::last
 この鉄道の敷設で、チベットの観光業の発展を期待しました。
 ::
 ::gazo
-![中国の少数民族の自治区](China_minority.webp){.twice.border.border-1}
-少数民族の自治区
+![](Qinghai_Tibet_railway.webp)
+青蔵鉄道
+::
+#### 西気東輸
+::top
+西気東輸は、西部の[[天然ガス]]を東部沿岸部に輸送する計画です。
 ::
 ::gazo
-![降水量と伝統的地域](qinling_huaihe_line.svg){.twice}
-降水量と伝統的地域
+![](west_east_gas_pipeline.webp)
+西気東輸
+::
+#### 南水北調
+::top
+南水北調は、南方の長江の水を慢性的な水不足に悩む北方へ送る計画です。
 ::
 ::gazo
-![中国の農業](China_agriculture.webp){.twice.border.border-1}
-中国の農業
+![](south_north_water_transfer.webp)
+南水北調
+::
+#### 西電東送
+::top
+西電東送は、東部沿岸部の電力不足を解消するために、西部の資源（水・石炭）を使って発電する計画です。
 ::
 ::last
 計画の一環として、長江中流域に水力発電所として[[サンシャダム]]が建設されました。
 ::
 ::gazo
-![ヤク](yak.webp)
-ヤク
+![](three_gorges_dam.webp)
+サンシャダム
+::
+::gazo
+![](west_east_electric_power.webp)
+西電東送
 ::
 ## 工業都市・資源
 ::gazo
-![経済特区](special_economic_zone.webp){.border.border-1}
-経済特区
+![](China_industrial_city.webp){.border}
+中国の工業
 ::
-
-- パオトウ
-- ウーハン
-- アンシャン
-
+### 工業都市
+#### 三大鉄鋼基地
+::top
+第二次世界大戦後、中国の工業化は次の３つの都市で進められました。
+::
+<ul class="en">
+<li>パオトウ</li>
+<li>ウーハン</li>
+<li>アンシャン</li>
+</ul>
 ---arrow---
 ::top
 現在中国の粗鋼生産は、世界１位です。
 ::
 #### その他の都市
 ::top
-ペキン
-:::lead
-中国の首都で、先端産業が発達
+ペキン<div class="lead">中国の首都で、先端産業が発達
 ::
+</div>
 ::top
-シャンハイ
-:::lead
-各工業が発達
+シャンハイ<div class="lead">各工業が発達
 ::
+</div>
 ### 資源
 ::top
 東北部には次の油田・炭田・鉄山があります。
@@ -408,6 +508,34 @@
 ::last
 消費の多い石炭は、輸入もおこなって不足を補っています。
 ::
+<script type="text/javascript">
+google.charts.load('current', { 'packages': ['corechart'] });
+google.charts.setOnLoadCallback(drawChart);
+function drawChart() {
+var data = google.visualization.arrayToDataTable([
+['国', '石油', '天然ガス', '石炭', '原子力', '水力', 'その他'],
+['中国', 20, 8, 57, 2, 8, 5]
+]);
+var options = {
+title: '中国の一次エネルギー構成（2020年、%）',
+hAxis: {},
+vAxis: { maxValue: 100, minValue: 0 },
+isStacked: true
+// isStacked=trueで積み上げ(デフォルトはfalse)
+};
+var chart = new google.visualization.BarChart(document.getElementById('primary_energy'));
+chart.draw(data, options);
+}
+</script>
+<div id="primary_energy" style="width: 100%; height: auto;"></div>
+<script type="text/javascript">
+createChartAsync(Chart.Pie, { "nation_cd": 156 }, 'China_power_generation', {
+title: '中国 (億kWh、2019年)',
+colors: ['#dc3912', '#3366cc', '#990099', '#109618', '#ff9900', '#FBD01D', '#dd4477'],
+sliceVisibilityThreshold: 0
+}, "./php/power_generation.php");
+</script>
+<div id="China_power_generation" style="width: 100%; height: 350px"></div>
 ## 貿易
 ::top
 2001年、[[WTO]]（[[世界貿易機関]]）に加盟しました。
@@ -426,6 +554,9 @@
 ::last
 近年、中国人海外旅行者が増加し、国際収支は赤字になっています。
 ::
+<div class="overflow-x-auto mt-10 mb-10">
+<div class="text-center">観光客数・国際観光収支</div>
+</div>
 ### 交通運輸業
 ::top
 貿易量の増加により、中国主要港湾のコンテナ取扱量は著しく増加しています。

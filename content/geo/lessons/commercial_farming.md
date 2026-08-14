@@ -8,7 +8,7 @@
 ::
 ### 歴史
 ::top
-ヨーロッパの商業的農業は、中世の[[三圃|さんぽ]]式農業に由来します。
+ヨーロッパの商業的農業は、中世の[[{{三圃|さんぽ}}]]式農業に由来します。
 ::
 ---arrow---
 ::top
@@ -24,27 +24,43 @@
 ::top
 そこで、ヨーロッパでは次のような農業の地域分化が進みました。
 ::
-
-- [[混合農業]]
-  :::lead
-  家畜の飼育と作物栽培が結合した有蓄農業
-  :::
-- [[酪農]]
-  :::lead
-  乳牛を飼育し、牛乳・乳製品の生産を目的とする有畜農業
-  :::
-- [[園芸農業]]
-  :::lead
-  都市への出荷を目的として、野菜・果物・花卉・庭木などの栽培をおこなう農業
-  :::
-- [[地中海式農業]]
-  :::lead
-  地中海性気候（夏：高温乾燥、冬：温暖湿潤）という条件下でおこなう農業
-  :::
-
+<ul class="en">
+<li>[[混合農業]]
+:::lead
+家畜の飼育と作物栽培が結合した有蓄農業
+:::
+:::lead
+ドイツ・フランスなど
+:::</li>
+<li>[[酪農]]
+:::lead
+乳牛を飼育し、牛乳・乳製品の生産を目的とする有畜農業
+:::
+:::lead
+イギリス・デンマーク・オランダなど
+:::</li>
+<li>[[園芸農業]]
+:::lead
+都市への出荷を目的として、野菜・果物・花卉・庭木などの栽培をおこなう農業
+:::
+:::lead
+オランダ
+:::</li>
+<li>[[地中海式農業]]
+:::lead
+地中海性気候（夏：高温乾燥、冬：温暖湿潤）という条件下でおこなう農業
+:::
+:::lead
+イタリア・スペインなど
+:::</li>
+</ul>
 ::gazo
-![ヨーロッパの農業形態の変遷](European_agriculture_changes.webp){.twice}
+![](European_agriculture_changes.webp){.twice}
 ヨーロッパの農業形態の変遷
+::
+::gazo
+![](European_agriculture.webp){.border}
+ヨーロッパの農業
 ::
 ## 混合農業
 ### 特色
@@ -52,15 +68,18 @@
 家畜の飼育と作物栽培が結合した有蓄農業です。
 ::
 ::gazo
-![ヨーロッパの農業](European_agriculture.webp){.border.border-1.twice}
-ヨーロッパの農業
+![](cattle2.webp)
+<img class="lazyload popup-img" data-src="img/wheat2.webp" alt="小麦" src="../share/img/loading.svg" />
 ::
+---arrow---
 ::top
 結合とは、例えばドイツ・フランスでは、砂糖の原料やしぼりかすが飼料になる作物[[てんさい]]を栽培するなど、家畜の飼育と作物栽培に密接な関係があるということです。
 ::
 ::gazo
-![牛](cattle2.webp)
+![](sugar-beet.webp)
+てんさい（甜菜）
 ::
+---arrow---
 ::top
 化学肥料や機械の導入で高い土地生産性と高い労働生産性を実現し、農民の生活水準も高くなっています。
 ::
@@ -73,12 +92,20 @@
 家畜：豚
 ::
 ::gazo
-![てんさい（甜菜）](sugar-beet.webp)
+![](rye.webp)
+ライ麦
+::
+::gazo
+![](potato.webp)
+じゃがいも
+::
+::gazo
+![](sugar-beet.webp)
 てんさい（甜菜）
 ::
 ::gazo
-![ライ麦](rye.webp)
-ライ麦
+![](pig2.webp)
+豚
 ::
 #### フランス
 ::top
@@ -88,8 +115,12 @@
 家畜より上記作物が主体
 ::
 ::gazo
-![じゃがいも](potato.webp)
-じゃがいも
+![](wheat_bg_white.webp)
+小麦
+::
+::gazo
+![](grape.webp)
+ブドウ
 ::
 #### イタリア
 ::top
@@ -99,17 +130,25 @@
 作物：トウモロコシ・[[米]]
 ::
 ::sup
-イタリアの稲作
-:::lead
-稲作アジアの集約的稲作農業に比べると、高い[[労働]]生産性
+イタリアの稲作<div class="lead">アジアの集約的稲作農業に比べると、高い[[労働]]生産性
+::
+</div>
+::gazo
+![](Po_river.webp){.border}
+ポー川
 ::
 ::gazo
-![てんさい（甜菜）](sugar-beet.webp)
-てんさい（甜菜）
+![](corn2.jpg)
+トウモロコシ
 ::
 ::gazo
-![豚](pig2.webp)
-豚
+![](rice.jpg)
+米
+::
+## 酪農
+### 特色・立地
+::top
+乳牛を飼育し、牛乳・酪製品の生産を目的とする有畜農業です。
 ::
 ::middle
 ==冷涼な気候とやせた土壌で、作物栽培に不向きな地域で見られます==。
@@ -121,16 +160,26 @@
 酪農の立地条件は、牛乳の生産地の分布問題で活用
 ::
 ::gazo
-![小麦](wheat_bg_white.webp)
-小麦
+![](cattle3.webp)
+<img class="lazyload popup-img" data-src="img/dairy-products.webp" alt="乳製品" src="../share/img/loading.svg" />
+::
+### 地域ごとの特色
+#### デンマーク
+::top
+19世紀後半、世界で最初に[[協同組合]]が組織され、近代的酪農にするための農業教育が普及しました。
 ::
 #### オランダ
 ::top
 風車で水をくみ上げ干上がらせた干拓地[[ポルダー]]で酪農を展開しています。
 ::
 ::gazo
-![ブドウ](grape.webp)
-ブドウ
+![](polder1.webp)
+風車
+::
+::gazo
+![](polder2.webp)
+<img class="lazyload popup-img" data-src="img/polder3.webp" alt="ポルダーでの酪農" src="../share/img/loading.svg" />
+ポルダーでの酪農
 ::
 #### スイス
 ::top
@@ -140,8 +189,12 @@
 冬は山麓の畜舎で飼育し、夏には高地の放牧場（アルプ）で飼育します。
 ::
 ::gazo
-![ポー川](Po_river.webp){.border.border-1}
-ポー川
+![](transhumance.webp)
+移牧
+::
+::gazo
+![](transhumance_Switzerland2.webp)
+アルプ
 ::
 ## 園芸農業
 ### 特色
@@ -155,8 +208,13 @@
 温室栽培と露地栽培を使い分け、促成栽培による早期出荷、抑制栽培による晩期出荷というような市場への流通を操作しています。
 ::
 ::gazo
-![](corn2.jpg)
-トウモロコシ
+![](greenhouse.webp)
+園芸農業（温室栽培）
+::
+### 近郊と遠郊の違い
+#### 近郊
+::top
+鮮度や輸送上の利便性を重視するなら、都市近郊に発達します。
 ::
 #### 遠郊
 ::top
@@ -173,11 +231,23 @@
 アメリカの[[フロリダ]]では、温暖な気候を利用して、このような園芸農業が見られます。
 ::
 ::gazo
-![](rice.jpg)
-米
+![](horticulture.webp)
+フロリダの園芸農業
+::
+## 地中海式農業
+### 特色
+::top
+夏に高温乾燥、冬に温暖湿潤な[[地中海性]]気候（Cs）<a href="geo_lessons_climate_temperate.html#cs" class="link-active link-icon"></a>の条件下で、乾燥に強い家畜や樹木を育て、冬の降雨を利用して[[小麦]]を栽培します。
 ::
 ::gazo
-![乳牛](cattle3.webp)
+![](wheat2.webp)
+<img class="lazyload popup-img" data-src="img/sheep2.webp" alt="" src="../share/img/loading.svg" />
+小麦と羊
+::
+::gazo
+![](olive_tree.webp)
+<img class="lazyload popup-img" data-src="img/cork.webp" alt="" src="../share/img/loading.svg" />
+オリーブとコルクガシ
 ::
 ### 作物と家畜
 ::top
@@ -190,8 +260,12 @@
 樹木：夏の乾燥に強い樹木（==オリーブ==・==コルクガシ==・レモン・==オレンジ類==・==ブドウ==）
 ::
 ::gazo
-![風車](polder1.webp)
-風車
+![](olive2.webp)
+オリーブ油
+::
+::gazo
+![](cork2.webp)
+コルク栓
 ::
 ### 分布
 ::top

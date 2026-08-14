@@ -1,32 +1,55 @@
 ## スペイン
 ### 基礎データ
 ::gazo
-![スペイン](map_Spain.webp){.border.border-1}
+![](map_Spain.webp){.border}
 スペイン
+::
+### 地形
+::top
+スペインはイベリア半島の大部分を占め、フランスとは[[新期]]造山帯のピレネー山脈を自然的国境とします。
 ::
 ::last
 北西部には、リアス海岸の由来になった「リアスバハス（リアスバイシャス）」が位置します。
 ::
 ::gazo
-![リアスバハス](rias_bajas.webp){.border.border-1}
+![](rias_bajas.webp){.border}
 リアスバハス
 ::
+### 農業
 ::top
-内陸の高原：羊やヤギの移牧
+地中海沿岸：
+		<div class="top">地中海式農業（オリーブ・ブドウなど）
 ::
+</div>
+::top
+内陸の高原：
+		<div class="top">羊やヤギの移牧
+::
+</div>
 ::sup
 地中海性気候の乾燥に適したイベリコ豚の産地
 ::
 ::gazo
-![イベリコ豚](Iberian_pig.webp)
+![](Iberian_pig.webp)
 イベリコ豚
+::
+### 鉱工業
+::top
+[[バルセロナ]]：
+		<div class="top">自動車工業
 ::
 ::last
 低賃金で生産を伸ばしたが近年停滞
 ::
+</div>
 ::gazo
-![スペインの工業都市](Spain_industry.webp){.border.border-1}
+![](Spain_industry.webp){.border}
 スペインの工業都市
+::
+### 民族問題
+#### バスク独立運動
+::top
+ピレネー山脈を挟んでスペインとフランスにまたがる地域には、独自の文化をもつ[[バスク]]人が居住しています。
 ::
 ::middle
 この地域はバスク地方と呼ばれ、20世紀後半、スペイン・フランス両国からの独立を要求める運動が盛んになりました。
@@ -35,8 +58,12 @@
 現在、スペイン領内のバスク地方は、自治権を認められてバスク自治州となりましたが、独立をめぐる問題は残っています。
 ::
 ::gazo
-![バスク地方とカタルーニャ自治州](Basque_Catalonia.webp){.border.border-1}
+![](Basque_Catalonia.webp){.border}
 バスク地方とカタルーニャ自治州
+::
+#### カタルーニャ独立運動
+::top
+スペイン北東部のカタルーニャは、スペインのなかにありながらも独自の伝統・習慣・言語をもつ地域です。
 ::
 ::last
 自治権を認められてカタルーニャ自治州となりましたが、近年、独立運動が盛んになりました。
@@ -45,42 +72,73 @@
 ## イタリア
 ### 基礎データ
 ::gazo
-![イタリア](map_Italy.webp){.border.border-1}
+![](map_Italy.webp){.border}
 イタリア
+::
+### 地形
+::top
+イタリア国内には火山が複数あります。
 ::
 ::last
 例えば、シチリア島にはヨーロッパ最大の火山であるエトナ火山、イタリア半島のナポリにはヴェスヴィオ火山があります。
 ::
 ::gazo
-![エトナ火山](Etna.webp)
-エトナ火山画像の奥に見える山
+![](Etna.webp)
+エトナ火山
+画像の奥に見える山
+::
+::gazo
+![](Vesuvius.webp)
+ポンペイとヴェスヴィオ火山
+＊ポンペイは噴火で埋没した古代都市
 ::
 ### 農業
 ::top
-北部：==ポー川流域の沖積平野で混合農業==
+北部：
+		<div class="top">==ポー川流域の沖積平野で混合農業==
 ::
+</div>
 ::top
-南部・島嶼：地中海式農業（オリーブ・ブドウなど）
+南部・島嶼：
+		<div class="top">地中海式農業（オリーブ・ブドウなど）
 ::
+</div>
 ::gazo
-![ポンペイとヴェスヴィオ火山](Vesuvius.webp)
-ポンペイとヴェスヴィオ火山＊ポンペイは噴火で埋没した古代都市
+![](Po_river.webp){.border}
+ポー川
 ::
+### 鉱工業
 ::top
-南部：ナポリ[自動車]・[[タラント]][鉄鋼]
+三角地帯（鉄の三角地帯）：
+		<div class="top">[[トリノ]][自動車]・[[ジェノヴァ]][造船・石油化学]・[[ミラノ]][機械・繊維]
+::
+</div>
+::top
+南部：
+		<div class="top">ナポリ[自動車]・[[タラント]][鉄鋼]
 ::
 ::last
 北部との経済格差を是正するため、企業誘致や製鉄所建設を推進
 ::
+</div>
 ::top
-第３のイタリア：ヴェネツィア・[[フィレンツェ]]・[[ボローニャ]]
+第３のイタリア：
+		<div class="top">ヴェネツィア・[[フィレンツェ]]・[[ボローニャ]]
 ::
 ::last
 熟練工の伝統技術を活かす労働指向型の工業
 ::
+</div>
 ::gazo
-![ポー川](Po_river.webp){.border.border-1}
-ポー川
+![](Italy_industry.webp){.border}
+イタリアの工業都市
+::
+### 貿易
+## ノルウェー
+### 基礎データ
+::gazo
+![](map_Norway.webp){.border}
+ノルウェー
 ::
 ### 地形
 ::top
@@ -90,31 +148,55 @@
 スカンディナヴィア山脈は、半島の中央ではなく急斜面をなして西岸近くを走り、自然的国境としてスウェーデン・ノルウェーを東西に分けます。
 ::
 ::gazo
-![イタリアの工業都市](Italy_industry.webp){.border.border-1}
-イタリアの工業都市
+![](Scandinavian_mountains.webp){.border}
+スカンディナヴィア山脈
+::
+::top
+ノルウェーはかつて著しい氷食を受けたため、各地に氷河地形が見られます。
 ::
 ::last
 特に急傾斜地が海まで迫るノルウェー西岸部には、[[U]]字谷が沈水して海水が奥まで入り込んだ[[フィヨルド]]が続きます。
 ::
 ::gazo
-![ノルウェー](map_Norway.webp){.border.border-1}
-ノルウェー
+![](Sognefjorden.webp)
+フィヨルド
+＊ソグネフィヨルド
+::
+### 気候
+::top
+偏西風と暖流の北大西洋海流の影響で、スカンディナヴィア山脈の西側には西岸海洋性気候が分布します。
 ::
 ::gazo
-![スカンディナヴィア山脈](Scandinavian_mountains.webp){.border.border-1}
-スカンディナヴィア山脈
+![](Europa_Cfb.webp){.border}
+ヨーロッパのCfbの分布
+::
+### 漁業
+::top
+ノルウェーは世界有数の漁業大国で、輸出のほとんどがサーモンです。
 ::
 ::last
 フィヨルドでは、山脈や氷河から安定した淡水の供給があるため、サーモンやマスの管理・養殖が盛んにおこなわれています。
 ::
 ::gazo
-![フィヨルド](Sognefjorden.webp)
-フィヨルド＊ソグネフィヨルド
+![](Norway_salmon.webp)
+ノルウェーサーモン
+::
+::gazo
+![](Norway_salmon_aquaculture.webp)
+ノルウェーサーモンの養殖
 ::
 ### 発電
 ::top
 ノルウェーは、偏西風の影響で降水が多く、また、急傾斜地が広いため、水力発電が盛んです。
 ::
+<script type="text/javascript">
+createChartAsync(Chart.Pie, { "nation_cd": 578 }, 'Norway_power_generation', {
+title: 'ノルウェー (億kWh、2019年)',
+colors: ['#dc3912', '#3366cc', '#990099', '#109618', '#ff9900', '#FBD01D', '#dd4477'],
+sliceVisibilityThreshold: 0
+}, "./php/power_generation.php");
+</script>
+<div id="Norway_power_generation" style="width: 100%; height: 350px"></div>
 ### 鉱工業
 #### アルミニウム工業
 ::top
@@ -128,16 +210,27 @@
 発電は水力発電で支えられているため、原油・天然ガスは主に輸出されます。
 ::
 ::gazo
-![ヨーロッパのCfbの分布](Europa_Cfb.webp){.border.border-1}
-ヨーロッパのCfbの分布
+![](North_Sea_oil.webp){.border}
+北海油田
+::
+### 貿易
+## スウェーデン
+### 基礎データ
+::gazo
+![](map_Sweden.webp){.border}
+スウェーデン
 ::
 ### 気候
 ::top
 偏西風と暖流の北大西洋海流の影響は、スカンディナヴィア山脈で弱まり、山脈の東側には亜寒帯湿潤気候が分布します。
 ::
 ::gazo
-![ノルウェーサーモン](Norway_salmon.webp)
-ノルウェーサーモン
+![](Europa_Df.webp){.border}
+ヨーロッパのDfの分布
+::
+### 林業
+::top
+スウェーデンやフィンランドは、かつて氷河に広く覆われてやせ地が広がります。
 ::
 ::last
 耕地率が低い反面、両国とも森林率が高くて林業が盛んです。
@@ -151,8 +244,15 @@
 北欧最大の工業国で、北部には鉄鉱石を産出するキルナ鉄山があります。
 ::
 ::gazo
-![ノルウェーサーモンの養殖](Norway_salmon_aquaculture.webp)
-ノルウェーサーモンの養殖
+![](Kiruna_Iron_Mine.webp){.border}
+キルナ鉄山
+::
+### 貿易
+## フィンランド
+### 基礎データ
+::gazo
+![](map_Finland.webp){.border}
+フィンランド
 ::
 ### 地形
 ::top
@@ -162,8 +262,13 @@
 森林面積も大きいため、「森と湖の国」と言われています。
 ::
 ::gazo
-![北海油田](North_Sea_oil.webp){.border.border-1}
-北海油田
+![](map_Finland_glacier_lake.webp){.border}
+フィンランドの氷河湖
+水色部分が湖と海
+::
+::gazo
+![](country_of_forests_and_lakes.webp){.border}
+フィンランドの森と湖
 ::
 ### 林業
 ::top
@@ -181,8 +286,12 @@
 針葉樹を利用した薪炭を燃料にします。
 ::
 ::gazo
-![スウェーデン](map_Sweden.webp){.border.border-1}
-スウェーデン
+![](sauna.webp)
+フィンランドのサウナ
+::
+### 言語
+::top
+フィンランド語は、[[ウラル]]語族です。
 ::
 ::last
 なお、同じ北欧のノルウェー語・スウェーデン語は、インド＝ヨーロッパ語族のゲルマン語派です。
@@ -192,8 +301,15 @@
 フィンランド含めスカンディナビア半島北部には、少数民族の[[サーミ]]が居住し、トナカイの遊牧を営んでいます。
 ::
 ::gazo
-![ヨーロッパのDfの分布](Europa_Df.webp){.border.border-1}
-ヨーロッパのDfの分布
+![](Sapmi.webp)
+サーミ
+::
+### 貿易
+## アイスランド
+### 基礎データ
+::gazo
+![](map_Iceland.webp){.border}
+アイスランド
 ::
 ### 地形
 ::top
@@ -203,19 +319,39 @@
 そのためアイスランドでは、火山や温泉、ギャオと呼ばれる大地の裂け目が見られます。
 ::
 ::gazo
-![キルナ鉄山](Kiruna_Iron_Mine.webp){.border.border-1}
-キルナ鉄山
+![](Iceland_terrain.webp){.border}
+アイスランドの地形
 ::
 ::gazo
-![フィンランド](map_Finland.webp){.border.border-1}
-フィンランド
+![](Iceland_hot_springs.webp)
+温泉と地熱の蒸気（アイスランド）
 ::
+::gazo
+![](gja.webp)
+ギャオ
+::
+### 発電
+::top
+水力発電とともに、地熱発電が中心です。
+::
+<script type="text/javascript">
+createChartAsync(Chart.Pie, { "nation_cd": 352 }, 'Iceland_power_generation', {
+title: 'アイスランド (億kWh、2019年)',
+colors: ['#dc3912', '#3366cc', '#990099', '#109618', '#ff9900', '#FBD01D', '#dd4477'],
+sliceVisibilityThreshold: 0
+}, "./php/power_generation.php");
+</script>
+<div id="Iceland_power_generation" style="width: 100%; height: 350px"></div>
 ### 貿易
 ## ポーランド
 ### 基礎データ
 ::gazo
-![フィンランドの氷河湖](map_Finland_glacier_lake.webp){.border.border-1}
-フィンランドの氷河湖水色部分が湖と海
+![](map_Poland.webp){.border}
+ポーランド
+::
+### 農業
+::top
+じゃがいも・ライ麦の栽培、豚の飼育が盛んです。
 ::
 ### 鉱工業
 ::top
@@ -225,12 +361,21 @@
 シロンスク地方が、ポーランドの経済・工業を支えています。
 ::
 ::gazo
-![フィンランドの森と湖](country_of_forests_and_lakes.webp){.border.border-1}
-フィンランドの森と湖
+![](Silesia.webp){.border}
+シロンスク地方
 ::
+### 発電
+<script type="text/javascript">
+createChartAsync(Chart.Pie, { "nation_cd": 616 }, 'Poland_power_generation', {
+title: 'ポーランド (億kWh、2019年)',
+colors: ['#dc3912', '#3366cc', '#990099', '#109618', '#ff9900', '#FBD01D', '#dd4477'],
+sliceVisibilityThreshold: 0
+}, "./php/power_generation.php");
+</script>
+<div id="Poland_power_generation" style="width: 100%; height: 350px"></div>
 ### 宗教
 ::top
-インド＝ヨーロッパ語族の語派（ラテン語派・ゲルマン語派・スラブ語派）とキリスト教の教派は、ある程度一致します。
+インド＝ヨーロッパ語族の語派（ラテン語派・ゲルマン語派・スラブ語派）とキリスト教の教派は、ある程度一致します。<a href="geo_lessons_Europa1.html#christianity_language" class="link-active link-icon"></a>
 ::
 ::last
 ただし、一部には不一致もみられ、スラブ系のポーランドでは、キリスト教の[[カトリック]]が多く信仰されています。
@@ -239,12 +384,23 @@
 ## チェコ
 ### 基礎データ
 ::gazo
-![フィンランドのサウナ](sauna.webp)
-フィンランドのサウナ
+![](map_Czechia.webp){.border}
+チェコ
+::
+### 鉱工業
+::top
+ポーランドとチェコにまたがるシロンスク地方（シレジア）では、石炭が産出します。
 ::
 ::gazo
-![サーミ](Sapmi.webp)
-サーミ
+![](Silesia.webp){.border}
+シロンスク地方
+::
+### 貿易
+## ハンガリー
+### 基礎データ
+::gazo
+![](map_Hungary.webp){.border}
+ハンガリー
 ::
 ### 言語
 ::top
@@ -254,8 +410,12 @@
 ## ルーマニア
 ### 基礎データ
 ::gazo
-![アイスランド](map_Iceland.webp){.border.border-1}
-アイスランド
+![](map_Romania.webp){.border}
+ルーマニア
+::
+### 言語
+::top
+ローマ帝国時代、多くのローマ人がルーマニアの地に移住しました。
 ::
 ::last
 ルーマニア語にはラテン語の影響が残るため、ラテン語派に分類されます。
@@ -264,29 +424,40 @@
 ## その他諸国
 ### オーストリア
 ::gazo
-![アイスランドの地形](Iceland_terrain.webp){.border.border-1}
-アイスランドの地形
+![](map_Austria.webp){.border}
+オーストリア
+::
+#### 歴史
+::top
+かつての神聖ローマ帝国・オーストリア帝国・オーストリア＝ハンガリー帝国の国土は、現在のオーストリアの国土よりもはるかに広く、その首都であったウィーンにはヨーロッパの政治・文化の中心地として栄えてきました。
 ::
 ::last
 ウィーンには才能ある作曲家・演奏家が集まったため、==「音楽の都」としても知られています。==
 ::
 ::sup
-オーストリア＝ハンガリー帝国
-:::lead
-ア＝ハンガリー帝国1867～1918年、オーストリアがハンガリーとつくった国家連合
+オーストリア＝ハンガリー帝国<div class="lead">1867～1918年、オーストリアがハンガリーとつくった国家連合
 ::
+</div>
 ### スロベニア
 ::gazo
-![温泉と地熱の蒸気（アイスランド）](Iceland_hot_springs.webp)
-温泉と地熱の蒸気（アイスランド）
+![](map_Slovenia.webp){.border}
+スロベニア
+::
+#### 地形
+::top
+スロベニア北西部のカルスト地方には、石灰岩の溶食で形成された地形が広がります。
 ::
 ::last
 石灰岩の溶食で形成された地形はカルスト地形と呼ばれ、カルスト地方に由来します。
 ::
 ### セルビア
 ::gazo
-![ギャオ](gja.webp)
-ギャオ
+![](map_Serbia.webp){.border}
+セルビア
+::
+#### 旧ユーゴスラビア連邦
+::top
+かつてセルビア含む６の共和国で、ユーゴスラビア社会主義連邦共和国が構成されていました。
 ::
 ::middle
 1990年代、連邦の中心であったセルビアは、連邦構成国の分離独立戦争に介入し、国際社会から経済制裁を受けました。
@@ -295,8 +466,12 @@
 そのため政情不安が続き、経済発展が停滞しました。
 ::
 ::gazo
-![ポーランド](map_Poland.webp){.border.border-1}
-ポーランド
+![](Socialist_Federal_Republic_of_Yugoslavia.webp){.border}
+ユーゴスラビア社会主義連邦共和国
+::
+#### コソボ
+::top
+セルビア南部のコソボ自治州のアルバニア人には、[[イスラーム]]の信者が多くいます。
 ::
 ::middle
 2008年、コソボ自治州は分離独立を宣言しました。
@@ -305,6 +480,6 @@
 現在、日本を含めた多くの国々がコソボを国家として承認していますが、セルビアやロシアは反対し、国連に加盟できていません。
 ::
 ::gazo
-![シロンスク地方](Silesia.webp){.border.border-1}
-シロンスク地方
+![](Socialist_Federal_Republic_of_Yugoslavia_religion.webp){.border}
+旧ユーゴの宗教分布
 ::

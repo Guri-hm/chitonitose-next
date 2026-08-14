@@ -8,17 +8,20 @@
 ::
 ::gazo
 ![](hungermap2015a.webp){.twice}
-ハンガーマップ2015（出典：WEP）
+ハンガーマップ2015（出典：<a href="http://ja.wfp.org/content/hunger_map-2015.pdf" src="../share/img/loading.svg" />WEP</a>）
+::
+::gazo
+![](hungermap2015b.webp){.twice}
 ::
 #### 供給不足の原因
 ::top
 供給不足の原因は様々ありますが、特に次のようなものが挙げられます。
 ::
-
-- 食料の生産＜人口の増加
-- 食料生産力の低さ
-- 経済力の低さ
-
+<ul class="circle">
+<li>食料の生産＜人口の増加</li>
+<li>食料生産力の低さ</li>
+<li>経済力の低さ</li>
+</ul>
 #### 懸念される供給の不安定さ
 ::top
 中国やブラジルなどの経済発展のめざましい国は、生活水準の向上に伴って食料需要が多様化し、食料の輸入量が増加しています。
@@ -34,35 +37,41 @@
 今後エネルギー用にとうもろこしが充てられていけば、食料用の供給が減ることになります。
 ::
 ::gazo
-![](hungermap2015b.webp){.twice}
+![](corn.webp)
+とうもろこし
+::
+::gazo
+![](sugarcane.webp)
+さとうきび
 ::
 ## 発展途上国の食料問題
 ### 自然的要因
 ::top
 発展途上国では、次のような自然的要因で農耕が困難になっている場合があります。
 ::
-
-- 干ばつ
-- 洪水
-- 砂漠化
-  :::lead
-  特に==サハラ砂漠の南縁==[[サヘル]]の砂漠化が深刻化
-  :::
-
+<ul class="en">
+<li>干ばつ</li>
+<li>洪水</li>
+<li>砂漠化:::lead
+特に==サハラ砂漠の南縁==[[サヘル]]の砂漠化が深刻化
+:::</li>
+</ul>
 ::gazo
-![とうもろこし](corn.webp)
-とうもろこし
+![](sahel.webp){.border}
+サヘル
 ::
-
-- 食料生産＜人口増加
-  :::lead
-  第二次世界大戦後に起こった発展途上国での急激な人口増加現象を[[人口爆発]]と呼称
-  :::
-- 長期にわたる内戦
-  :::lead
-  特にアフリカの国々は、農耕に利用されない地域も多く、食料供給の低下だけでなく、大量の難民も発生
-  :::
-
+### 社会的要因
+::top
+発展途上国では、次のような人為的要因で農耕が困難になっている場合があります。
+::
+<ul class="en">
+<li>食料生産＜人口増加:::lead
+第二次世界大戦後に起こった発展途上国での急激な人口増加現象を[[人口爆発]]と呼称
+:::</li>
+<li>長期にわたる内戦:::lead
+特にアフリカの国々は、農耕に利用されない地域も多く、食料供給の低下だけでなく、大量の難民も発生
+:::</li>
+</ul>
 ---arrow---
 ::top
 上記以外にも、大地主による農地の独占や多国籍企業の進出により、現地の小規模農家の成長が阻害されていることも遠因となっています。
@@ -113,31 +122,108 @@
 ::last
 食料自給率を高めるためには、食に関する知識や関心を向上させる必要があります。
 ::
+<script type="text/javascript">
+createChartAsync(Chart.Combo, {
+"params": [
+{
+statistics_id: 162,
+nation_cd: 392
+},
+{
+statistics_id: 163,
+nation_cd: 392
+},
+{
+statistics_id: 164,
+nation_cd: 392
+},
+{
+statistics_id: 165,
+nation_cd: 392
+},
+{
+statistics_id: 166,
+nation_cd: 392
+},
+{
+statistics_id: 168,
+nation_cd: 392
+},
+{
+statistics_id: 169,
+nation_cd: 392
+},
+{
+statistics_id: 167,
+nation_cd: 392
+}
+]
+}, 'jp_food_self_sufficiency'
+, {
+title: '日本の食料自給率の推移',
+height: 500,
+vAxes: {
+0: {
+title: '%'
+}
+},
+hAxis: { title: '年' },
+series: {
+// Left-Yの列のデータ
+0: { type: 'line', targetAxisIndex: 0 },
+// Right-Yの列のデータ
+1: { type: 'line', targetAxisIndex: 0 },
+},
+isStacked: true,
+}, "./php/statistics_combo.php");
+</script>
+<div id="jp_food_self_sufficiency" class="mx-auto mt-10 mb-10" style="width: 100%;max-width: 800px;"></div>
 ### 自給率向上を意識させる言葉
 ::top
 食料自給率の向上を意識させる、次のような言葉があります。
 ::
-
-- [[地産地消]]
-  :::lead
-  地元で生産された農産物を地元で消費しようという言葉
-  :::
-- [[フードマイレージ]]（食糧の輸入量✕輸送距離）
-  :::lead
-  食料の生産地から消費地までの距離が遠いほど、輸送に伴う環境への負荷（エネルギー消費など）が増大するという考え
-  :::
-
+<ul class="circle">
+<li>[[地産地消]]
+:::lead
+地元で生産された農産物を地元で消費しようという言葉
+:::
+:::lead
+安価な外国産の農産物の消費を抑え、地元、つまり国産の消費を高めることで自給率を向上
+:::</li>
+<li>[[フードマイレージ]]（食糧の輸入量✕輸送距離）:::lead
+食料の生産地から消費地までの距離が遠いほど、輸送に伴う環境への負荷（エネルギー消費など）が増大するという考え
+:::
+:::lead
+日本のフードマイレージは、他国と比べて著しく高い傾向
+:::</li>
+</ul>
+<script type="text/javascript">
+createChartAsync(Chart.Bar, { statistics_ids: [210], category: "nation" }, 'wood_importer', {
+title: 'フードマイレージ(百万t×㎞、2001年)',
+height: 500,
+hAxis: {
+title: '百万t×㎞',
+minValue: 0
+},
+vAxis: {
+title: '国'
+},
+}, "./php/statistics_bars2.php");
+</script>
+<div id="wood_importer" class="mx-auto mt-10 mb-10" style="width: 100%;max-width: 800px;"></div>
 ## 食の安全
 ### 「食の安全」を脅かした出来事
 ::top
 世界最大の食料輸入国である日本が、「食の安全」を確保するためには、自国内だけでなく、国際的な協力も必要になります。
 ::
-
-- 2003年、アメリカで[[BSE]]（牛海綿状脳症）問題
-  :::lead
-  牛が肉骨粉をえさとして食べることにより発病するとされ、発病した牛の肉を食べることによる人間への伝染の可能性が懸念された問題
-  :::
-- 2004年、国内外で[[鳥インフルエンザ]]問題
-  :::lead
-  感染した鶏の大量死などが発生
-  :::
+<ul class="en">
+<li>2003年、アメリカで[[BSE]]（牛海綿状脳症）問題:::lead
+牛が肉骨粉をえさとして食べることにより発病するとされ、発病した牛の肉を食べることによる人間への伝染の可能性が懸念された問題
+:::
+:::lead
+日本はアメリカ産牛肉輸入禁止
+:::</li>
+<li>2004年、国内外で[[鳥インフルエンザ]]問題:::lead
+感染した鶏の大量死などが発生
+:::</li>
+</ul>

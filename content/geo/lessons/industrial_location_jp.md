@@ -1,8 +1,11 @@
 ## 工場の分布と特徴
 ### セメント工業
 ::gazo
-![セメント](JP_cement_industry.webp){.border-1.border}
+![](JP_cement_industry.webp){.border}
 セメント
+::
+::top
+セメントの主な原材料は、[[石灰石]]です。
 ::
 ::middle
 日本では、山口県や埼玉県などで産出されます。
@@ -18,28 +21,43 @@
 工業立地は原料指向型をとり、工場が産地に集中します。
 ::
 ::gazo
-![石灰石の産地](JP_limestone.webp){.border-1.border}
+![](JP_limestone.webp){.border}
 石灰石の産地
 ::
 ::gazo
-![”武甲山”](Mount_Buko.webp)
+![](Mount_Buko.webp)
 石灰石の山（埼玉県の武甲山）
+::
+::gazo
+![](Akiyoshidai.webp)
+山口県の秋吉台
+::
+### 製紙業・パルプ業
+::gazo
+![](JP_pulp_industry.webp){.border}
+パルプ・製紙工場
 ::
 ::top
 原料指向型で、木材・水が得られる北海道や静岡県、四国に多く立地します。
 ::
 ### 鉄鋼業
 ::gazo
-![”秋吉台”](Akiyoshidai.webp)
-山口県の秋吉台
+![](JP_ironworks.webp){.border}
+製鉄所
+::
+::top
+かつては原料指向型の立地で、例えば北九州の八幡製鉄所は筑豊炭田の石炭に支えられていました。
 ::
 ::last
 近年は原料輸入に適した臨海指向型の立地に変わり、交通の便がよい太平洋ベルトに立地します。
 ::
 ### 自動車工業
 ::gazo
-![パルプ・製紙工場](JP_pulp_industry.webp){.border-1.border}
-パルプ・製紙工場
+![](JP_car.webp){.border}
+自動車組立工場
+::
+::top
+自動車工場の分布は、愛知県・静岡県・神奈川県・北関東に集中します。
 ::
 ::middle
 例えば、愛知県にはトヨタ、静岡県にはスズキ、群馬県にはSUBARUの工場が分布します。
@@ -49,8 +67,11 @@
 ::
 ### エレクトロニクス産業
 ::gazo
-![製鉄所](JP_ironworks.webp){.border-1.border}
-製鉄所
+![](JP_ic.webp){.border}
+IC工場
+::
+::top
+集積回路などのエレクトロニクス産業をはじめした、いわゆる先端技術産業は、高度な技術と研究開発が必要です。
 ::
 ::middle
 優秀な人材や先端技術などの情報を集めやすい大都市や首都圏が立地に優れます。
@@ -93,8 +114,11 @@
 ::
 ### 化学工業
 ::gazo
-![自動車組立工場](JP_car.webp){.border-1.border}
-自動車組立工場
+![](JP_petrochemical_complex.webp){.border}
+石油化学コンビナート
+::
+::top
+日本は原油を輸入に頼ります。
 ::
 ::middle
 輸入する港の多くは、大消費地に近く、中東からの輸入に便利な[[太平洋]]側の港です。
@@ -103,8 +127,13 @@
 いわゆる太平洋ベルトの臨海地域に、石油コンビナートが建設されます。
 ::
 ::gazo
-![IC工場](JP_ic.webp){.border-1.border}
-IC工場
+![](pacific_belt.webp){.border}
+太平洋ベルト
+::
+### アルミニウム精錬工業
+::gazo
+![](jp_aluminum.webp){.border}
+アルミニウム精錬工場の分布
 ::
 ::top
 日本のアルミニウム精錬工業は、石油危機以降衰退し、2014年をもって全ての精錬工場が閉鎖しました。

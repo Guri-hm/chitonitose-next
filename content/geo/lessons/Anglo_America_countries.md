@@ -1,8 +1,13 @@
 ## アメリカ合衆国
 ### 基礎データ
 ::gazo
-![アメリカ合衆国](map_US.webp){.border.border-1}
+![](map_US.webp){.border}
 アメリカ合衆国
+::
+### 歴史・行政
+#### 歴史
+::top
+17世紀、イギリス人が北アメリカ大陸東岸に13の植民地を建設しました。
 ::
 ::middle
 1776年、植民地の人々はイギリス本国からの独立を勝ち取り、13州からなる連邦国家としてアメリカ合衆国が成立しました。
@@ -11,16 +16,25 @@
 独立後、アメリカ合衆国は他国の領土を買収や戦争による割譲で獲得し、その国土は太平洋に至りました。
 ::
 ::gazo
-![アメリカ合衆国の領土拡大の歴史](US_history.webp){.border.border-1.twice}
+![](US_history.webp){.border}
 アメリカ合衆国の領土拡大の歴史
+::
+::gazo
+![](US_old_territory.webp){.border}
+アメリカ合衆国の旧領土保有国
 ::
 #### 行政
 ::top
 現在、アメリカ合衆国は50州で構成されます。
 ::
 ::gazo
-![アメリカ合衆国の旧領土保有国](US_old_territory.webp){.border.border-1.twice}
-アメリカ合衆国の旧領土保有国
+![](US_state.webp){.border}
+アメリカ合衆国の州
+＊地理で登場する代表的な州のみ
+::
+::gazo
+![](US_geographic_division.webp){.border}
+アメリカ合衆国の地域区分
 ::
 ### 人種・民族
 ::top
@@ -29,9 +43,25 @@
 ::last
 この言葉は多数の人種・民族が文化的特色を失わすに共存する様を指しています。
 ::
+<script type="text/javascript">
+createChartAsync(Chart.Bar, { "statistics_id": 68 }, 'US_people', {
+title: 'アメリカの人種・民族構成(2015年、%)',
+height: 250,
+legend: { position: 'top', maxLines: 3 },
+isStacked: true,
+titleTextStyle: {
+fontSize: 14,
+}
+}, "./php/statistics_bar2.php");
+</script>
+<div id="US_people" class="mx-auto mt-10 mb-10" style="width: 100%;max-width: 600px;"></div>
 ::gazo
-![アメリカ合衆国の州](US_state.webp){.border.border-1.twice}
-アメリカ合衆国の州＊地理で登場する代表的な州のみ
+![](US_distribution_of_people.webp){.border}
+アメリカ合衆国の人種・民族の居住分布
+::
+#### WASP
+::top
+人種・民族の構成は、ヨーロッパ系が過半数を占めています。
 ::
 ::middle
 ヨーロッパ系のうち、アングロサクソン系の白人プロテスタント（[[WASP]]）と呼ばれる人々は、建国以来アメリカ合衆国の主流を占めてきました。
@@ -40,15 +70,13 @@
 今日、北東部～中西部に多く居住しています。
 ::
 ::sup
-WASP
-:::lead
-White Anglo-Saxon Protestantの略
+WASP<div class="lead">White Anglo-Saxon Protestantの略
 ::
+</div>
 ::sup
-アングロサクソン
-:::lead
-クソンイギリスのブリテン島に渡来したゲルマン人
+アングロサクソン<div class="lead">イギリスのブリテン島に渡来したゲルマン人
 ::
+</div>
 #### ヒスパニック
 ::top
 ヒスパニックは、スペイン語を母国語とする中・南米出身者です。
@@ -87,7 +115,7 @@ White Anglo-Saxon Protestantの略
 ::
 ---arrow---
 ::top
-アジア系は、アメリカ合衆国の人種・民族のなかで==高学歴者の割合が極めて高いです。==
+アジア系は、アメリカ合衆国の人種・民族のなかで====高学歴者の割合が極めて高いです。</span>
 ::
 #### 先住民
 ::top
@@ -119,97 +147,111 @@ White Anglo-Saxon Protestantの略
 しかし同時に、地価の再高騰で低所得者層が居住地を手放さざるを得なくなるジェントリフィケーションが生じました。
 ::
 ::gazo
-![アメリカ合衆国の地域区分](US_geographic_division.webp){.border.border-1.twice}
-アメリカ合衆国の地域区分
+![](segregation_New_York_City.webp){.border}
+ニューヨーク市のセグリゲーション
+＊黄色部分がニューヨーク市の市域
+::
+<h3 id="agriculture">農業</h3>
+::gazo
+![](US_agriculture.webp){.border}
+アメリカ合衆国の農業
 ::
 ::gazo
-![アメリカ合衆国の人種・民族の居住分布](US_distribution_of_people.webp){.border.border-1.twice}
-アメリカ合衆国の人種・民族の居住分布
+![](Great_Plains_Prairie.webp){.border}
+グレートプレーンズとプレーリー
 ::
+#### 農業の分布
+<ul class="en">
+<li>[[酪農]]：
+<div class="top">大陸氷河に覆われたやせ地（五大湖～合衆国北東部）</div></li>
+<li>[[園芸農業]]：
+<div class="top">人口が集中する北東部、フロリダ州、メキシコ湾岸</div></li>
 ::top
-人口が集中する北東部、フロリダ州、メキシコ湾岸
+五大湖南西部のアイオワ州・イリノイ州
 ::
 ::last
 生産物は豚や肉牛の飼料やバイオエタノールの原料に利用
 ::
-::top
-年降水量500mm付近のプレーリー
-::
-::last
-カンザス州・オクラホマ州で冬小麦、ノースダコタ州・サウスダコタ州で春小麦を栽培
-::
-::top
-黒人奴隷労働の下、テキサス州～ジョージア州で発展
-::
-::last
-近年、混合農業に変化
-::
-::top
-グレーンプレーンズで肉牛の子牛生産と育成
-::
-::last
-コーンベルトに移して最終肥育（フィードロットと呼ばれる肥育場に入れる）
-::
-::top
-グレートプレーンズでセンターピボットによる灌漑
-::
-::middle
-飼料作物を栽培し、コーンベルトに移さずに肥育可能
-::
-::last
-肉牛の主要飼育地の変化、地下水の枯渇や塩害が発生
-::
-::top
-カリフォルニア州でブドウ・オレンジなどを栽培
+<li>[[小麦]]地帯：
+<div class="top">年降水量500mm付近のプレーリー</div>
+<div class="last">カンザス州・オクラホマ州で冬小麦、ノースダコタ州・サウスダコタ州で春小麦を栽培</div></li>
+<li>[[綿花]]地帯（[[コットンベルト]]）：
+<div class="top">黒人奴隷労働の下、テキサス州～ジョージア州で発展</div>
+<div class="last">近年、混合農業に変化</div></li>
+<li>放牧：
+<div class="top">グレーンプレーンズで肉牛の子牛生産と育成</div>
+<div class="last">コーンベルトに移して最終肥育（フィードロットと呼ばれる肥育場に入れる）</div></li>
+<li>灌漑農業：
+<div class="top">グレートプレーンズでセンターピボットによる灌漑</div>
+<div class="middle">飼料作物を栽培し、コーンベルトに移さずに肥育可能</div>
+<div class="last">肉牛の主要飼育地の変化、地下水の枯渇や塩害が発生</div></li>
+<li>[[地中海式農業]]：
+<div class="top">カリフォルニア州でブドウ・オレンジなどを栽培</div></li>
+</ul>
+::gazo
+![](feedlot.webp)
+フィードロット
 ::
 ::gazo
-![ニューヨーク市のセグリゲーション](segregation_New_York_City.webp){.border.border-1}
-ニューヨーク市のセグリゲーション＊黄色部分がニューヨーク市の市域
+![](center_pivot_Colorado.webp)
+コロラド州のセンターピボット
 ::
 ::gazo
-![アメリカ合衆国の農業](US_agriculture.webp){.border.border-1.twice}
-アメリカ合衆国の農業
+![](center_pivot_shaft.webp){.half}
+センターピボットの中心
+::
+#### 等高線耕作
+::top
+アメリカ合衆国では土壌侵食の防止のために、等高線耕作が多くおこなわれています。
 ::
 ::last
 等高線に沿って帯状に畑をつくり、雨によって土壌が下に流されるのを防ぎます。
 ::
 ::gazo
-![グレートプレーンズとプレーリー](Great_Plains_Prairie.webp){.border.border-1.twice}
-グレートプレーンズとプレーリー
+![](contour-plowin.webp)
+等高線耕作
 ::
 ::gazo
-![フィードロット](feedlot.webp)
-フィードロット
+![](contour_plowin_illust.webp)
+等高線耕作の図解
 ::
+::gazo
+![](not_contour_plowin_illust.webp)
+等高線耕作でない場合
+::
+### 鉱工業
+#### 北東部
+<h5>代表的な工業都市</h5>
 ::top
-ニューヨーク
-:::lead
-ク最大の都市で、出版・印刷などが発達
+ボストン<div class="lead">古くから綿工業・造船業が発達
 ::
+<div class="lead">高速道路沿いにエレクトロニクス産業が集積</div>
+</div>
 ::top
-フィラデルフィア・ボルティモア
-:::lead
-フィア・ボルティモア鉄鉱石輸入による臨海製鉄所を建設
+ニューヨーク<div class="lead">最大の都市で、出版・印刷などが発達
 ::
+</div>
+::top
+フィラデルフィア・ボルティモア<div class="lead">鉄鉱石輸入による臨海製鉄所を建設
+::
+</div>
 #### 中西部
+<h5>代表的な工業都市</h5>
 ::top
-[[ ピッツバーグ ]][鉄鋼業]、[[ デトロイト ]][自動車工業]
-:::lead
-an onclick="chg(this)" class="all"> ピッツバーグ [鉄鋼業]、[[ デトロイト ]][自動車工業]メサビ鉄山とアパラチア炭田を結びつける五大湖の水運で発達
+[[ピッツバーグ]][鉄鋼業]、[[デトロイト]][自動車工業]<div class="lead">メサビ鉄山とアパラチア炭田を結びつける五大湖の水運で発達
 ::
 ::last
 賃金上昇と設備老朽化で近年衰退
 ::
+</div>
 ::top
-シカゴ
-:::lead
-農業機械や食品加工業が発達
+シカゴ<div class="lead">農業機械や食品加工業が発達
 ::
+</div>
 ::sup
-スノーベルト
-:::lead
-ト低迷中の中西部を指す言葉で、同じ意味のフロストベルトという言葉も存在
+スノーベルト<div class="lead">低迷中の中西部を指す言葉で、同じ意味のフロストベルトという言葉も存在
 ::
+</div>
 #### 南部
 ::top
 1970年代以降、賃金水準が低く、温暖でエネルギーコストを下げられる北緯37度以南の地域に、企業が移転したり労働者が流入したりしました。
@@ -217,42 +259,47 @@ an onclick="chg(this)" class="all"> ピッツバーグ [鉄鋼業]、[[ デト�
 ::last
 この地域はサンベルトと言われ、メキシコ湾岸油田に支えられて発展しました。
 ::
+<h5>代表的な工業都市</h5>
 ::top
 [[ヒューストン]]
-:::lead
-onclick="chg(this)" class="all">ヒューストン航空宇宙産業・石油化学工業
+		<div class="lead">航空宇宙産業・石油化学工業
 ::
+</div>
 ::top
-ダラス周辺
-:::lead
-エレクトロニクス産業
+ダラス周辺<div class="lead">エレクトロニクス産業
 ::
+</div>
 ::sup
 テキサス州は製造品出荷額がアメリカ合衆国内で最大
 ::
 #### 西部
+<h5>代表的な工業都市</h5>
 ::top
 シアトル
-:::lead
-[[航空機]]産業・[[パルプ]]工業
+		<div class="lead">[[航空機]]産業・[[パルプ]]工業
 ::
+<div class="lead">昔の航空機の材料である木材が得られ、また、コロンビア川の水力発電でアルミニウムを精錬できたので航空機産業が発達</div>
+</div>
 ::top
-ロサンゼルス
-:::lead
-ス航空機工業・石油化学工業
+ロサンゼルス<div class="lead">航空機工業・石油化学工業
 ::
+</div>
 ::top
 [[サンノゼ]]
-:::lead
-onclick="chg(this)" class="all">サンノゼエレクトロニクス産業
+		<div class="lead">エレクトロニクス産業
 ::
+</div>
 #### アラスカ州
 ::top
 水産物の食品加工業が盛んです。
 ::
 ::gazo
-![コロラド州のセンターピボット](center_pivot_Colorado.webp)
-コロラド州のセンターピボット
+![](US_industry.webp){.border}
+アメリカ合衆国の工業
+::
+#### IT産業の密集地
+::top
+アメリカ合衆国西岸には、GAFA（Google、Apple、Facebook、Amazon）やAdobe、MicrosoftなどのIT企業の本社が立地しています。
 ::
 ::middle
 特にカリフォルニア州サンノゼ付近には、Google、Apple、Facebook、Adobeの本社があり、一帯は[[シリコンバレー]]と呼ばれています。
@@ -261,20 +308,35 @@ onclick="chg(this)" class="all">サンノゼエレクトロニクス産業
 サンノゼ付近以外では、合衆国西岸のシアトルにはAmazon、Microsoftの本社があります。
 ::
 ::gazo
-![](center_pivot_shaft.webp){.half}
-センターピボットの中心
+![](Google.webp)
+Google本社
+::
+::gazo
+![](Adobe_office.webp)
+Adobe本社
 ::
 ---arrow---
 ::top
 今日、シリコンバレーの成功にあやかって、先端技術産業が盛んな地域には「シリコン〇〇」「エレクトロニクス〇〇」という呼称がつけられています。
 ::
 ::gazo
-![等高線耕作](contour-plowin.webp)
-等高線耕作
+![](silicon_valley.webp){.border}
+シリコンバレーなど
+::
+#### シェール
+::top
+アメリカ合衆国では、頁岩（シェール）から原油を得る技術が開発され、原油の生産量が増加しました。
 ::
 ::gazo
-![等高線耕作](contour_plowin_illust.webp)
-等高線耕作の図解
+![](shale.webp)
+頁岩（シェール）
+::
+### 貿易
+## カナダ
+### 基礎データ
+::gazo
+![](map_Canada.webp){.border}
+カナダ
 ::
 ### 歴史
 ::top
@@ -298,11 +360,13 @@ onclick="chg(this)" class="all">サンノゼエレクトロニクス産業
 ::
 ### 民族・言語
 #### 地域ごとの特徴
+<h5>大部分</h5>
 ::top
 イギリス系
 ::
+<h5>ケベック州</h5>
 ::top
-[[ フランス ]]系
+[[フランス]]系
 ::
 ::middle
 イギリス系主導の政府に不満をもち、独立運動を展開
@@ -311,8 +375,12 @@ onclick="chg(this)" class="all">サンノゼエレクトロニクス産業
 カナダは、対立緩和のために、フランス語・英語を公用語にし、２言語教育を実施
 ::
 ::gazo
-![等高線耕作でない場合](not_contour_plowin_illust.webp)
-等高線耕作でない場合
+![](Canada_French.webp){.border}
+カナダのフランス語話者
+::
+<h5>北極海沿岸</h5>
+::top
+先住民の[[イヌイット]]（[[エスキモー]]）
 ::
 ::middle
 イヌイットの人々は、約3万年〜1.5万年前にアメリカ大陸にやってきたモンゴロイド
@@ -324,12 +392,21 @@ onclick="chg(this)" class="all">サンノゼエレクトロニクス産業
 現在定住化も進み、政府管理下での自治権を得てヌイブト準州が発足
 ::
 ::gazo
-![アメリカ合衆国の工業](US_industry.webp){.border.border-1.twice}
-アメリカ合衆国の工業
+![](Canada_native.webp){.border}
+カナダの先住民の分布
 ::
 ::gazo
-![Google本社](Google.webp)
-Google本社
+![](Inuit.webp)
+イヌイットの狩猟
+::
+::gazo
+![](igloo.webp)
+イグルー
+::
+### 都市
+#### オタワ
+::top
+オタワはカナダの首都です。
 ::
 ::middle
 ケベック州ではフランス系が多数を占めることから、フランス系のケベック州とイギリス系のオンタリオ州の州境に位置するオタワが首都に選ばれました。
@@ -358,6 +435,16 @@ Google本社
 ::top
 氷河湖の水を利用した水力発電が盛んです。
 ::
+<script type="text/javascript">
+createChartAsync(Chart.Pie, { "nation_cd": 124 }, 'Canada_power_generation', {
+title: 'カナダ (億kWh、2019年)',
+colors: ['#dc3912', '#3366cc', '#990099', '#109618', '#ff9900', '#FBD01D', '#dd4477'],
+sliceVisibilityThreshold: 0
+}, "./php/power_generation.php");
+</script>
+<div id="Canada_power_generation" style="width: 100%; height: 350px"></div>
+<h5>原油</h5>
+<h5>天然ガス</h5>
 #### 代表的な工業
 ::top
 水力発電による安価な電気を利用して、[[アルミニウム]]工業が発達しています。

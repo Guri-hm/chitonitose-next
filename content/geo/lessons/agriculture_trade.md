@@ -18,6 +18,7 @@
 ::top
 輸入上位国は、==生産が消費に追いつかない中国・インドネシア==、乾燥で穀物生産に乏しい西アジアの産油国、商品作物の生産を優先し食料の多くを輸入に依存するアフリカの諸国などが上位に来ます。
 ::
+<iframe seamless width="100%" height="1000" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRw8T6cLkq2W34G4lFOH8-lR4LNmwPJGmMGh8n7qNUaxQMIjPdP6s3MeGmsoI3SqTU13C46tAblECuj/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 ### 茶
 #### 生産量
 ::top
@@ -26,6 +27,7 @@
 ::last
 原産地の[[中国]]、イギリス人が栽培を持ち込んだインド・ケニア・[[スリランカ]]など、東南アジアの[[ベトナム]]などで栽培されます。
 ::
+<iframe seamless width="100%" height="500" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSfULce_adtxuSwAIF9FHw9l5tzkDvQpBpFcZfL9kcLKSs3yqXUtE__j1n5sUayFnV8_nX5YRcDYeW_/pubhtml?widget=true&amp;headers=false"></iframe>
 ### さとうきび
 #### 生産量
 ::top
@@ -34,6 +36,7 @@
 ::last
 主要生産国はブラジル・インド・中国ですが、==オーストラリアの北東部でも栽培されることに注意しましょう==。
 ::
+<iframe seamless width="100%" height="500" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRA1MqbKwVsoq4Unz1ka_4MrutvSnoqGv5cyCdD7SoT9efcrzr9TSMHTrGquLGOdP-nn6hHztuiklrN/pubhtml?widget=true&amp;headers=false"></iframe>
 ### コプラ油
 #### 生産量
 ::top

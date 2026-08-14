@@ -37,37 +37,62 @@
 五大湖付近では水運が発達し、湖面の高度差を活かした水力発電もおこなわれています。
 ::
 ::gazo
-![アングロアメリカの河川・五大湖](Anglo_America_river_lake.webp){.border.border-1.twice}
+![](Anglo_America_river_lake.webp){.border}
 アングロアメリカの河川・五大湖
+::
+## 中国
+### 西部大開発
+::top
+中国では、経済特区などが設置された東部沿岸部に比べ、西部内陸部は経済発展が遅れていました。
 ::
 ::last
 2000年以降、東部沿岸部との経済格差・社会格差を縮小させるために、[[西部大開発]]が取り組まれました。
 ::
 ::gazo
-![西部大開発](China_western_development.webp){.twice.border.border-1}
+![](China_western_development.webp){.twice}
 西部大開発
+::
+#### 青蔵鉄道
+::top
+青海（チンハイ）省からチベット自治区ラサを結ぶ、青蔵鉄道が開通しました。
 ::
 ::last
 この鉄道の敷設で、チベットの観光業の発展を期待しました。
 ::
 ::gazo
-![青蔵鉄道](Qinghai_Tibet_railway.webp)
+![](Qinghai_Tibet_railway.webp)
 青蔵鉄道
 ::
-::gazo
-![西気東輸](west_east_gas_pipeline.webp)
-西気東輸
+#### 西気東輸
+::top
+西気東輸は、西部の[[天然ガス]]を東部沿岸部に輸送する計画です。
 ::
 ::gazo
-![南水北調](south_north_water_transfer.webp)
+![](west_east_gas_pipeline.webp)
+西気東輸
+::
+#### 南水北調
+::top
+南水北調は、南方の長江の水を慢性的な水不足に悩む北方へ送る計画です。
+::
+::gazo
+![](south_north_water_transfer.webp)
 南水北調
+::
+#### 西電東送
+::top
+西電東送は、東部沿岸部の電力不足を解消するために、西部の資源（水・石炭）を使って発電する計画です。
 ::
 ::last
 計画の一環として、長江中流域に水力発電所として[[サンシャダム]]が建設されました。
 ::
 ::gazo
-![サンシャダム](three_gorges_dam.webp)
+![](three_gorges_dam.webp)
 サンシャダム
+::
+::gazo
+![](west_east_electric_power.webp)
+西電東送
 ::
 ## エジプト
 ### ナイル川
@@ -77,23 +102,27 @@
 ::last
 1971年、次のことを目的に[[アスワンハイダム]]がナイル川に建設されました。
 ::
-
-- ナイル川の流量調節で洪水防止
-- 安定した用水で綿花などの増産
-- 水力発電によるアルミニウム工業の進展
-
+<ul class="en">
+<li>ナイル川の流量調節で洪水防止</li>
+<li>安定した用水で綿花などの増産</li>
+<li>水力発電によるアルミニウム工業の進展</li>
+</ul>
 ---arrow---
 ::top
 アスワンハイダムの建設は、ナイル川流域に次の３つの問題を引き起こしました。
 ::
-
-- 過剰な灌漑によって塩害が深刻化
-- 肥沃な土が上流から運ばれず、流域の養分が不足
-- 土砂の供給が減り、河口の三角州が縮小（海岸の縮小）
-
+<ul class="en">
+<li>過剰な灌漑によって塩害が深刻化</li>
+<li>肥沃な土が上流から運ばれず、流域の養分が不足</li>
+<li>土砂の供給が減り、河口の三角州が縮小（海岸の縮小）</li>
+</ul>
 ::gazo
-![西電東送](west_east_electric_power.webp)
-西電東送
+![](Aswan_High_Dam.webp)
+アスワンハイダム
+::
+::gazo
+![](Nile_river.webp)
+ナイル川
 ::
 ### スエズ運河
 ::top
@@ -103,17 +132,30 @@
 海運ではアジアとヨーロッパを最短距離で結ぶ重要な運河で、東京・ロンドン間であれば、アフリカ大陸南端の喜望峰を通るよりも距離が約５分の１になります。
 ::
 ::gazo
-![アスワンハイダム](Aswan_High_Dam.webp)
-アスワンハイダム
+![](Suez_Canal.webp)
+スエズ運河
 ::
 ::gazo
-![ナイル川](Nile_river.webp)
-ナイル川
+![](Suez_Canal_sky.webp)
+空から見たスエズ運河
+::
+::gazo
+![](Egypt_development.webp){.twice}
+エジプトのアスワンハイダムとスエズ運河
+::
+## パナマ
+### パナマ運河
+::top
+パナマ運河は、中央アメリカ南部に位置し、太平洋とカリブ海を結ぶ運河です。
 ::
 ::last
 ニューヨーク・サンフランシスコ間であれば、南アメリカ大陸南端のホーン岬・ドレーク海峡を通るよりも距離が約５分の２になります。
 ::
 ::gazo
-![スエズ運河](Suez_Canal.webp)
-スエズ運河
+![](Panama_Canal.webp)
+パナマ運河
+::
+::gazo
+![](Panama_Canal_map.webp){.border}
+パナマ運河
 ::

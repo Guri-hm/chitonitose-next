@@ -1,17 +1,46 @@
 ## 直接投資
+<h3 id="fdi">対外直接投資</h3>
 ::top
 対外直接投資は、企業が海外に子会社や支店、工場を設立して進出することを言います。
 ::
 ::last
 この投資は、先進国で大きくなります。
 ::
+<script type="text/javascript">
+// ライブラリのロード
+// name:visualization(可視化),version:バージョン(1),packages:パッケージ(corechart)
+google.load('visualization', '1', { 'packages': ['corechart'] });
+// グラフを描画する為のコールバック関数を指定
+google.setOnLoadCallback(drawChart);
+// グラフの描画
+function drawChart() {
+// 配列からデータの生成
+var data = google.visualization.arrayToDataTable([
+['年', 'ASEAN4（インドネシア・タイ・フィリピン・マレーシア）', 'NIEs（韓国・シンガポール・台湾・ホンコン）', '中国'],
+['1985～89年', 70, 130, 25],
+['1990～94年', 155, 130, 60],
+['1995～99年', 210, 155, 105],
+['2000～04年', 100, 110, 120],
+['2005～09年', 230, 265, 325]
+]);
+// オプションの設定
+var options = {
+title: '日本の対外直接投資額 ( 単位：億ドル )',
+};
+// 指定されたIDの要素に棒グラフを作成
+var chart = new google.visualization.ColumnChart(document.getElementById('investment_jp'));
+// グラフの描画
+chart.draw(data, options);
+}
+</script>
+<div id="investment_jp" style="width: 100%; height: 350px"></div>
 ::top
 企業は、次の２つの理由から対外直接投資をおこないます。
 ::
-
-- 安価な工場用地や人件費を確保するため（さらにその国が経済発展すれば有望な市場にもなるため）
-- 輸出相手国との貿易摩擦を現地生産で解消するため
-
+<ul class="en">
+<li>安価な工場用地や人件費を確保するため（さらにその国が経済発展すれば有望な市場にもなるため）</li>
+<li>輸出相手国との貿易摩擦を現地生産で解消するため<a href="geo_lessons_trade.html#tf" class="link-active link-icon"></a></li>
+</ul>
 ---arrow---
 ::top
 日本のアジア地域への対外直接投資は、
@@ -33,6 +62,37 @@
 ::last
 この投資は、先進国に押される途上国で大きくなります。
 ::
+<script type="text/javascript">
+// ライブラリのロード
+// name:visualization(可視化),version:バージョン(1),packages:パッケージ(corechart)
+google.load('visualization', '1', { 'packages': ['corechart'] });
+// グラフを描画する為のコールバック関数を指定
+google.setOnLoadCallback(drawChart);
+// グラフの描画
+function drawChart() {
+// 配列からデータの生成
+var data = google.visualization.arrayToDataTable([
+['国', '対外直接投資', '対内直接投資'],
+['日本', 251.1, 36.2],
+['ベトナム', 0.485, 16.1],
+['中国', 97.7, 155.8],
+['タイ', 11.7, 4.8],
+['フランス', 55.7, 51.03],
+['ドイツ', 134.9, 72.2],
+['シンガポール', 50.5, 120.4],
+['ブラジル', 22.8, 69.1],
+]);
+// オプションの設定
+var options = {
+title: '対外直接投資額・対内直接投資額 ( 単位：10億ドル、2019年 )',
+};
+// 指定されたIDの要素に棒グラフを作成
+var chart = new google.visualization.ColumnChart(document.getElementById('investment'));
+// グラフの描画
+chart.draw(data, options);
+}
+</script>
+<div id="investment" style="width: 100%; height: 350px"></div>
 ::top
 ベトナム、発展しつつもまだ遅れるタイでは、安価な労働力があり、先進国による投資が活発です。
 ::
@@ -59,11 +119,11 @@ EU域内では人・ものなどの移動が自由化されており、EU域内�
 ::middle
 日本の対内直接投資が低い理由には、次のようなものがあげられます。
 ::
-
-- 日本語・日本文化の壁
-- 日本独自の商売・雇用の慣習
-- 外国人労働者の雇用制約
-
+<ul class="en">
+<li>日本語・日本文化の壁</li>
+<li>日本独自の商売・雇用の慣習</li>
+<li>外国人労働者の雇用制約</li>
+</ul>
 ::last
 ②は、メディアでも紹介されたりと、イメージできるかもしれません。
 ::
@@ -82,10 +142,10 @@ EU域内では人・ものなどの移動が自由化されており、EU域内�
 日系ブラジル人の入国者が減少する一方、==留学や技能実習を目的に来日する中国人が増加しています==。
 ::
 ::sup
-入国管理法の改正
-:::lead
-の改正「定住者」が在留資格に追加
+入国管理法の改正<div class="lead">「定住者」が在留資格に追加
 ::
+<div class="lead">血のつながりを根拠にした在留を許可</div>
+</div>
 ---arrow---
 ::top
 ==韓国・朝鮮国籍の入国者はその歴史から、また、中国籍の入国者は企業・留学の関係から、全国的に多く居住しています==。
@@ -94,17 +154,31 @@ EU域内では人・ものなどの移動が自由化されており、EU域内�
 一方で、==ブラジルやペルーなどの日系人は、製造業に多く従事するため、東海地方や北関東に多く居住しています==。
 ::
 ::gazo
-![日本の国籍別外国人登録者人口の推移](population_of_foreign_registrants_by_nationality_in_japan.svg){.twice}
+![](population_of_foreign_registrants_by_nationality_in_japan.svg){.twice}
 日本の国籍別外国人登録者人口の推移（2018年まで）
 ::
-
-- 沖縄県米軍基地があるため、アメリカ国籍が多い
-- 大阪府韓国・朝鮮籍が多い
-- 愛知県・静岡県・群馬県自動車など製造業が多く立地するため、ブラジル国籍が多い
-
+::top
+次のグラフから、都道府県別の在留外交人の特徴をあげてみましょう。
+::
+<ul class="en">
+::last
+米軍基地があるため、アメリカ国籍が多い
+::
+::last
+韓国・朝鮮籍が多い
+::
+::last
+自動車など製造業が多く立地するため、ブラジル国籍が多い
+::
+</ul>
 ::gazo
-![都道府県の在留外国人人口](foreign_residents_by_prefecture.svg){.twice}
+![](foreign_residents_by_prefecture.svg){.twice}
 都道府県の在留外国人人口（2019年時点）
+::
+### フランス・ドイツ・スペインへの入国者
+#### フランス
+::top
+フランスへの入国者は、旧植民地の[[モロッコ]]や[[アルジェリア]]からが多いです。
 ::
 #### ドイツ
 ::top
@@ -118,6 +192,7 @@ EU域内では人・ものなどの移動が自由化されており、EU域内�
 スペインへの入国者は、ラテンアメリカのエクアドルやコロンビアからが多いです。
 ::
 ## 対外援助
+<h3 id="oda">ODA</h3>
 ::top
 開発途上国の経済発展や福祉向上のために先進国の政府がおこなう国際協力を[[ODA]]（[[政府開発援助]]）と言います。
 ::
@@ -127,19 +202,150 @@ EU域内では人・ものなどの移動が自由化されており、EU域内�
 ::last
 日本は４位ですが、対GNI比率が低く、今以上の拠出が可能ではないかと指摘されています。
 ::
+<script type="text/javascript">
+// ライブラリのロード
+// name:visualization(可視化),version:バージョン(1),packages:パッケージ(corechart)
+google.load('visualization', '1', { 'packages': ['corechart'] });
+// グラフを描画する為のコールバック関数を指定
+google.setOnLoadCallback(drawChart);
+// グラフの描画
+function drawChart() {
+// 配列からデータの生成
+var data = google.visualization.arrayToDataTable([
+['年', 'アメリカ', 'ドイツ', '日本', 'イギリス', 'フランス', 'カナダ', 'イタリア'],
+['2011年', 32284.59, 15596.22, 20246.9, 14173.5, 14436.15, 5505.7, 4626.27],
+['2012年', 31398.32, 14569.64, 18662.16, 14266.96, 13556.62, 5703.07, 2837.01],
+['2013年', 32158.45, 16220.84, 22414.49, 18286.22, 12879.76, 4990.3, 3510.04],
+['2014年', 33864.3, 19347.1, 15924.54, 19874.31, 12540.1, 4285.64, 4096.39],
+['2015年', 31735.73, 19751.63, 15028.43, 18684.15, 10943.74, 4320.07, 4056.11],
+['2016年', 35139.78, 26818.5, 16807.79, 18204.4, 11741.8, 3973.99, 5158.66],
+['2017年', 35451.15, 27837.06, 18460.84, 18230, 13654.35, 4352.08, 6088.93],
+['2018年', 34520.92, 28636.72, 17250.01, 19656.35, 15382.81, 4689.47, 5206.55],
+['2019年', 33710.64, 26900.5, 18919.77, 19620.29, 14543.97, 4741.38, 4404.37],
+]);
+// オプションの設定
+var options = {
+title: '主な援助国のODA実績(単位：百万ドル)',
+height: 500
+};
+// 指定されたIDの要素に折れ線グラフを作成
+var chart = new google.visualization.LineChart(document.getElementById('oda_chart'));
+// グラフの描画
+chart.draw(data, options);
+}
+</script>
+<div id="oda_chart" class="mx-auto w-100 w-max700"></div>
+<div class="overflow-x-auto mt-10 mb-10">
+<div class="text-center">ODAの実績</div>
+<table class="w-100 table">
+<tr class="text-center">
+<th rowspan="2" align="center" valign="bottom">国名<br> (実績額上位10か国)</th>
+<th colspan="2" align="center" valign="bottom">実績額<br> (2018年)</th>
+<th colspan="2" align="center" valign="bottom">対GNI比率<br> (2018年)</th>
+</tr>
+<tr>
+<th align="center" valign="bottom">(百万ドル)</th>
+<th align="center" valign="bottom">(%)</th>
+<th align="center" valign="bottom">(%)</th>
+<th align="center" valign="bottom">順位</th>
+</tr>
+<tr>
+<td align="center" valign="bottom">アメリカ</td>
+<td align="right" valign="bottom">34,261</td>
+<td align="right" valign="bottom">22.4</td>
+<td align="right" valign="bottom">0.17</td>
+<td align="right" valign="bottom">22</td>
+</tr>
+<tr>
+<td align="center">ドイツ</td>
+<td align="right" valign="bottom">24,985</td>
+<td align="right" valign="bottom">16.3</td>
+<td align="right" valign="bottom">0.61</td>
+<td align="right" valign="bottom">6</td>
+</tr>
+<tr>
+<td align="center">イギリス</td>
+<td align="right" valign="bottom">19,403</td>
+<td align="right" valign="bottom">12.7</td>
+<td align="right" valign="bottom">0.7</td>
+<td align="right" valign="bottom">5</td>
+</tr>
+<tr>
+<td align="center">日本</td>
+<td align="right" valign="bottom">14,167</td>
+<td align="right" valign="bottom">9.3</td>
+<td style="color:#ff0000" align="right">0.28</td>
+<td align="right" valign="bottom">16</td>
+</tr>
+<tr>
+<td align="center">フランス</td>
+<td align="right" valign="bottom">12,155</td>
+<td align="right" valign="bottom">7.9</td>
+<td align="right" valign="bottom">0.43</td>
+<td align="right" valign="bottom">10</td>
+</tr>
+<tr>
+<td align="center">スウェーデン</td>
+<td align="right" valign="bottom">5,844</td>
+<td align="right" valign="bottom">3.8</td>
+<td align="right" valign="bottom">1.04</td>
+<td align="right" valign="bottom">1</td>
+</tr>
+<tr>
+<td align="center" valign="bottom">オランダ</td>
+<td align="right" valign="bottom">5,616</td>
+<td align="right" valign="bottom">3.7</td>
+<td align="right" valign="bottom">0.61</td>
+<td align="right" valign="bottom">7</td>
+</tr>
+<tr>
+<td align="center" valign="bottom">イタリア</td>
+<td align="right" valign="bottom">5,005</td>
+<td align="right" valign="bottom">3.3</td>
+<td align="right" valign="bottom">0.24</td>
+<td align="right" valign="bottom">18</td>
+</tr>
+<tr>
+<td align="center" valign="bottom">カナダ</td>
+<td align="right" valign="bottom">4,655</td>
+<td align="right" valign="bottom">3</td>
+<td align="right" valign="bottom">0.28</td>
+<td align="right" valign="bottom">15</td>
+</tr>
+<tr>
+<td align="center" valign="bottom">ノルウェー</td>
+<td align="right" valign="bottom">4,257</td>
+<td align="right" valign="bottom">2.8</td>
+<td align="right" valign="bottom">0.94</td>
+<td align="right" valign="bottom">3</td>
+</tr>
+<tr>
+<td align="center" valign="bottom">DAC加盟国全体</td>
+<td align="right" valign="bottom">153,025</td>
+<td align="right" valign="bottom">100</td>
+<td style="color:#ff0000" align="right" valign="bottom">0.31</td>
+<td align="right" valign="bottom">-</td>
+</tr>
+</table>
+<div class="text-end">2018年</div>
+</div>
 #### 援助国と供与地域の関係
 ::top
 援助国のODAの支出額は、援助国と==歴史的・地理的につながりがある地域ほど多くなります==。
 ::
 ::top
-日本：東アジア、東南アジア、オセアニア
+日本：<div class="top">東アジア、東南アジア、オセアニア
 ::
+</div>
 ::top
-アメリカ：南米
+アメリカ：<div class="top">南米
 ::
+</div>
 ::top
-フランス：アフリカの旧植民地（コートジボワール、マダガスカルなど）
+フランス：<div class="top">アフリカの旧植民地（コートジボワール、マダガスカルなど）
 ::
+</div>
 ::top
-イタリア：アフリカの旧植民地（リビアなど）
+イタリア：<div class="top">アフリカの旧植民地（リビアなど）
 ::
+</div>

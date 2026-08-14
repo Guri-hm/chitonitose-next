@@ -3,14 +3,19 @@
 南アジアの主な地形は次の図の通りです。
 ::
 ::gazo
-![南アジアの地形](South_Asia_terrain.webp){.border.border-1}
+![](South_Asia_terrain.webp){.border}
 南アジアの地形
 ::
-::sup
-インド亜大陸
-:::lead
-陸インド半島という表記も存在
+### 北部とインド亜大陸
+::top
+南アジア北部の大地形は[[新期造山帯]]、インド亜大陸の大地形は[[安定陸塊]]です。
 ::
+::sup
+インド亜大陸<div class="lead">インド半島という表記も存在
+::
+</div>
+<br>
+<div id="Himalaya_formation" class="top">インド亜大陸は、かつてのゴンドワナ大陸の一部であり、北上してユーラシア大陸に衝突しました。</div>
 ::middle
 インド亜大陸は、北上の過程でホットスポットを通過し、==溶岩台地の==デカン高原を形成しました。
 ::
@@ -21,16 +26,24 @@
 衝突で形成された褶曲山脈がヒマラヤ山脈であり、現在も成長を続けています。
 ::
 ::sup
-デカン高原
-:::lead
-玄武岩でできた溶岩台地で、平均標高約600m
+デカン高原<div class="lead">玄武岩でできた溶岩台地で、平均標高約600m
 ::
+<div class="lead">玄武岩が風化した間帯土壌のレグールが分布</div>
+</div>
 ::gazo
-![インド亜大陸の北上](northward_movement_of_the_Indian_subcontinent.webp){.border.border-1}
+![](northward_movement_of_the_Indian_subcontinent.webp){.border}
 インド亜大陸の北上
 ::
+### 南北の高低
+::top
+次の図のⒶⒷ間の断面は、下図のようになります。
+::
 ::gazo
-![断面ⒶⒷ](South_Asia_cross_section_A_to_B.webp){.border.border-1}
+![](South_Asia_cross_section_A_to_B.webp){.border}
+::
+::gazo
+![](South_Asia_cross_section.webp){.twice}
+南アジアの断面図
 ::
 ::top
 北からテンシャン山脈、タリム盆地、クンルン山脈～ヒマラヤ山脈に続くチベット高原、そして南にヒンドスタン平原が広がります。
@@ -47,8 +60,13 @@
 ガンジス川の河口がほぼ東経90度と覚えておくと、地図の位置関係の把握に役立つ
 ::
 ::gazo
-![南アジアの断面図](South_Asia_cross_section.webp){.twice}
-南アジアの断面図
+![](Ganges_river.webp){.border}
+ガンジス川
+::
+## 気候
+::gazo
+![](South_Asia_climate.webp){.border}
+南アジアの気候
 ::
 ### 季節風と山脈
 ::top
@@ -65,20 +83,26 @@
 上記の季節風は、==西ガーツ山脈とヒマラヤ山脈に遮られるため、風上で湿潤、風下で乾燥します==。
 ::
 ::gazo
-![](img/South_Asia_monsoon_winter_with_mountain.webp){.border}
+![](South_Asia_monsoon_summer_with_mountain.webp){.border}
+<img class="lazyload popup-img border border-1" data-src="img/South_Asia_monsoon_winter_with_mountain.webp" alt="南アジアの季節風（冬）" src="../share/img/loading.svg" />
+南アジアの季節風
 ::
 ### 熱帯低気圧
 ::top
 インド洋では[[サイクロン]]と呼ばれる熱帯低気圧が発生し、人やモノに被害をもたらします。
 ::
 ::sup
-サイクロン
-:::lead
-台風と定義がやや異なるが同じ性質
+サイクロン<div class="lead">台風と定義がやや異なるが同じ性質
 ::
+</div>
 ::gazo
-![ガンジス川](Ganges_river.webp){.border.border-1}
-ガンジス川
+![](cyclone.webp)
+サイクロン
+::
+### 各都市の雨温図
+::gazo
+![](South_Asia_city.webp){.border}
+南アジアの都市
 ::
 ::top
 カラチはパキスタンの最大都市です。
@@ -93,15 +117,21 @@
 カラチの雨温図は、パキスタンの西側にイラン・イラクなど乾燥帯の国があることからも予想可能
 ::
 ::gazo
-![南アジアの気候](South_Asia_climate.webp){.border.border-1}
-南アジアの気候
+![](Kalach_climograph.webp)
+カラチの雨温図（BW）
+::
+::top
+ムンバイはインドの都市です。
 ::
 ::last
 西ガーツ山脈の西側に位置し、夏は南西季節風の影響で多雨、冬は乾燥します。
 ::
 ::gazo
-![南アジアの季節風（夏）](South_Asia_monsoon_summer_with_mountain.webp){.border.border-1}
-南アジアの季節風
+![](Mumbai_climograph.webp)
+ムンバイの雨温図（Aw）
+::
+::top
+コロンボはスリランカの都市です。
 ::
 ::middle
 赤道に近く、年間を通して湿潤で気温が高い気候です。
@@ -110,8 +140,11 @@
 なお、太陽の見かけの通り道がコロンボ付近を通る５、10月頃は、最も降水量が多くなります。
 ::
 ::gazo
-![サイクロン](cyclone.webp)
-サイクロン
+![](Colombo_climograph.webp)
+コロンボの雨温図（Af）
+::
+::top
+カトマンズはネパールの首都です。
 ::
 ::middle
 夏は南西季節風が吹きこみ、ヒマラヤ山脈の風上に位置するため降水量が多くなります。
@@ -120,8 +153,11 @@
 反対に冬は北東季節風の風下になり、乾燥します。
 ::
 ::gazo
-![南アジアの都市](South_Asia_city.webp){.border.border-1}
-南アジアの都市
+![](Kathmandu_climograph.webp)
+カトマンズの雨温図（Cw）
+::
+::top
+コルカタはインドの都市です。
 ::
 ::middle
 夏は季節風が吹きこみ、降水量が多くなります。
@@ -130,8 +166,12 @@
 カトマンズに比べ、気温が高くなります。
 ::
 ::gazo
-![カラチの雨温図](Kalach_climograph.webp)
-カラチの雨温図（BW）
+![](Kolkata_climograph.webp)
+コルカタの雨温図（Aw）
+::
+## 歴史・宗教
+::top
+南アジアは第二次世界大戦の直後までイギリスの植民地でした。
 ::
 ::middle
 イギリスの植民地時代のインドでは、ヒンドゥー教徒とイスラーム教徒（ムスリム）が別々の国で独立するか一体となって独立するかが争われました。
@@ -141,35 +181,50 @@
 ::
 ---arrow---
 ::top
-1947年インド独立（主な宗教：[[ヒンドゥー教]]）
+1947年
+		<div class="top">インド独立（主な宗教：[[ヒンドゥー教]]）
 ::
 ::top
 パキスタン独立（主な宗教：[[イスラーム]]）
 ::
 ::sup
-パキスタン
-:::lead
-この時点では西パキスタンと東パキスタンで構成
+パキスタン<div class="lead">この時点では西パキスタンと東パキスタンで構成
 ::
+<div class="lead">東西の宗教はともにイスラームだが、言語などで差異があり、東パキスタンが後にバングラデシュとして分離</div>
+</div>
+</div>
 ::top
-1948年スリランカ独立（主な宗教：[[仏教]]）
+1948年
+		<div class="top">スリランカ独立（主な宗教：[[仏教]]）
 ::
 ::sup
 1948年の独立はイギリス連邦内の自治領としての独立（完全独立は1972年）
 ::
+</div>
 ::top
-1971年バングラデシュ分離（旧東パキスタン）
+1971年
+		<div class="top">バングラデシュ分離（旧東パキスタン）
 ::
 ::sup
 西パキスタンではアラビア文字を使用するウルドゥー語が中心、東パキスタンではヒンドゥー教と関係する文字を使用するベンガル語
 ::
+</div>
 ::gazo
-![ムンバイの雨温図](Mumbai_climograph.webp)
-ムンバイの雨温図（Aw）
+![](South_Asia_religion.webp){.border}
+南アジアの宗教
+::
+## 領土問題・民族問題
+### カシミール問題
+::top
+カシミール地方の帰属をめぐり、インド・パキスタン・中国が対立しています。
 ::
 ::gazo
-![コロンボの雨温図](Colombo_climograph.webp)
-コロンボの雨温図（Af）
+![](issue_of_Kashmir.webp){.border}
+カシミール問題
+::
+### スリランカ民族対立
+::top
+南部に居住する多数派のシンハラ人（宗教：[[仏教]]）と、北部に居住する少数派のタミル人（宗教：[[ヒンドゥー教]]）が政治をめぐって対立しています。
 ::
 ::middle
 少数派のタミル人が、スリランカからの分離独立を主張し、一時は内戦に発展しました。
@@ -178,8 +233,13 @@
 現在内戦は終結しましたが、民族対立は続いています。
 ::
 ::gazo
-![カトマンズの雨温図](Kathmandu_climograph.webp)
-カトマンズの雨温図（Cw）
+![](Sri_Lanka_People.webp){.half}
+スリランカの民族
+::
+<h2 id="India_agriculture">農業</h2>
+::gazo
+![](South_Asia_agriculture.webp){.border}
+南アジアの農業
 ::
 ### 米
 ::top
@@ -214,13 +274,18 @@
 インドやバングラデシュのガンジス川沿いで生産されています。
 ::
 ::sup
-ジュート
-:::lead
-原料の植物または繊維自体を指す言葉
+ジュート<div class="lead">原料の植物または繊維自体を指す言葉
 ::
+</div>
 ::gazo
-![コルカタの雨温図](Kolkata_climograph.webp)
-コルカタの雨温図（Aw）
+![](jute.webp)
+ジュート
+::
+## インド
+### 基礎データ
+::gazo
+![](map_India.webp){.border}
+インド
 ::
 ### 宗教・生活
 ::top
@@ -251,15 +316,22 @@
 ヒンドゥー教の聖地は、ガンジス川に面する都市[[ヴァラナシ]]です。
 ::
 ::gazo
-![南アジアの宗教](South_Asia_religion.webp){.border.border-1}
-南アジアの宗教
+![](bathing_Ganges_river.webp)
+ガンジス川での沐浴
+::
+#### 神聖な動物
+::top
+ヒンドゥー教では、[[牛]]が神聖な動物とみなされるため、牛肉を食することが禁忌とされています。
 ::
 ::sup
 厳密には、神聖視されるのはコブウシのみ（スイギュウの肉を食べることは問題ない）
 ::
 ::gazo
-![カシミール問題](issue_of_Kashmir.webp){.border.border-1}
-カシミール問題
+![](Bos_primigenius_indicus.webp)
+コブウシ
+::
+::top
+牛は家畜としても重宝されています。
 ::
 ::middle
 多くの牛が、荷物運搬の労働力や牛乳・乳製品の生産のために飼育されています。
@@ -271,8 +343,12 @@
 特にコブウシの牛糞は、掃除や高級料理の調理に使用
 ::
 ::gazo
-![スリランカの民族](Sri_Lanka_People.webp){.half.border.border-1}
-スリランカの民族
+![](uple.webp)
+牛糞燃料
+::
+#### カースト制
+::top
+ヒンドゥー教では、人は生まれながらにして４つの身分（ヴァルナ）を細分化した社会集団（ジャーティ）のいずれかに所属することが決まっています。
 ::
 ::middle
 カースト制は職業や結婚の面で制限を設けています。
@@ -281,24 +357,30 @@
 現在、==インドの憲法はカースト制による制限・差別を禁止していますが、未だに影響が根強く残っています==。
 ::
 ::sup
-ダリット
-:::lead
-カースト制にも属さない最下位の身分として差別の対象になってきた人々
+ダリット<div class="lead">カースト制にも属さない最下位の身分として差別の対象になってきた人々
 ::
+</div>
 ::gazo
-![南アジアの農業](South_Asia_agriculture.webp){.border.border-1}
-南アジアの農業
+![](caste_system.webp)
+カースト制
+::
+### 人口
+::top
+1960年代から、人口抑制を推進してきました。
 ::
 ::last
 しかし、あまり浸透せず、現在も人口増加率が高いままです。
 ::
 ::gazo
-![](img/population_pyramid_India2019.webp)
+![](population_pyramid_India1960.webp)
+<img class="lazyload popup-img" data-src="img/population_pyramid_India2019.webp" alt="人口ピラミッド(2019年のインド)" src="../share/img/loading.svg" />
+人口ピラミッド(1960年と2019年のインド)
 ::
 ::gazo
-![ジュート](jute.webp)
-ジュート
+![](stamp_India.webp)
+人口抑制をよびかける切手
 ::
+---arrow---
 ::top
 発展途上国のインドでは、Push型の都市化が生じています。
 ::
@@ -347,6 +429,7 @@
 ::last
 近年、鶏肉の生産・消費が増加し、「ピンク革命」と呼ばれています。
 ::
+<h5>牛肉について</h5>
 ::top
 インドの人口の約80%がヒンドゥー教徒です。
 ::
@@ -365,14 +448,18 @@
 ::
 ### 工業・工業都市
 ::gazo
-![インド](map_India.webp){.border.border-1}
-インド
+![](South_Asia_industry.webp){.border}
+インドの工業都市
+::
+::top
+A[[デリー]]：自動車工業、ダイヤモンド加工業
 ::
 ::top
 B[[ムンバイ]]：綿工業、自動車工業
 ::
 ::top
-C[[ジャムシェドプル]]：鉄鋼業＊ダモダル川流域に原料指向型の立地
+C[[ジャムシェドプル]]：鉄鋼業
+		<div class="top">＊ダモダル川流域に原料指向型の立地
 ::
 ::top
 α：[[ダモダル]]炭田
@@ -380,21 +467,35 @@ C[[ジャムシェドプル]]：鉄鋼業＊ダモダル川流域に原料指向
 ::top
 β：[[シングブーム]]鉄山
 ::
+</div>
 ::top
 D[[コルカタ]]：ジュート工業
 ::
 ::top
-E[[バンガロール]]：ICT産業＊別称：インドのシリコンバレー
+E[[バンガロール]]：ICT産業
+		<div class="top">＊別称：インドのシリコンバレー
 ::
 ::top
-＊背景：低い賃金水準 補助公用語の英語 アメリカとの時差(約12時間)
+＊背景：<ul class="en">
+				<li>低い賃金水準</li>
+				<li>補助公用語の英語</li>
+				<li>アメリカとの時差(約12時間)</li>
+			</ul>
 ::
 ::sup
 英語を活かし、コールセンターで働く人も多い
 ::
+</div>
 ::gazo
-![ガンジス川での沐浴](bathing_Ganges_river.webp)
-ガンジス川での沐浴
+![](time_difference_America_India.webp){.twice}
+アメリカとインドの時差
+::
+### 貿易
+## パキスタン
+### 基礎データ
+::gazo
+![](map_Pakistan.webp){.border}
+パキスタン
 ::
 ### 農業
 #### 米
@@ -422,8 +523,12 @@ FIFA公式のサッカーボールの８割以上がパキスタンで生産さ�
 ## バングラデシュ
 ### 基礎データ
 ::gazo
-![コブウシ](Bos_primigenius_indicus.webp)
-コブウシ
+![](map_Bangladesh.webp){.border}
+バングラデシュ
+::
+### 国土と地球温暖化
+::top
+バングラデシュは国土の大半が三角州（ガンジスデルタ）に位置します。
 ::
 ::middle
 地球温暖化で海面が上昇すると、国土が水没する恐れがあります。
@@ -450,25 +555,33 @@ FIFA公式のサッカーボールの８割以上がパキスタンで生産さ�
 ## スリランカ
 ### 基礎データ
 ::gazo
-![牛糞燃料](uple.webp)
-牛糞燃料
+![](map_Sri_Lanka.webp){.border}
+スリランカ
+::
+### 農業
+::top
+スリランカは、世界有数の茶の生産国です。
 ::
 ::sup
-セイロンティー
-:::lead
-ィースリランカ産の紅茶の総称
+セイロンティー<div class="lead">スリランカ産の紅茶の総称
 ::
+<div class="lead">セイロンはスリランカの旧国名</div>
+</div>
 ### 貿易
 ## モルディブ
 ### 基礎データ
 ::gazo
-![カースト制](caste_system.webp)
-カースト制
+![](map_Maldives.webp){.border}
+モルディブ
+::
+### 国土と地球温暖化
+::top
+モルディブは、1,000を超えるサンゴ礁島と26の環礁からなる国です。
 ::
 ::last
 モルディブの島の８割が海抜１m以下なので、地球温暖化による海面上昇は国のほとんどに影響を及ぼします。
 ::
 ::gazo
-![人口ピラミッド(1960年のインド)](population_pyramid_India1960.webp)
-人口ピラミッド(1960年と2019年のインド)
+![](Maldives.webp)
+モルディブ
 ::

@@ -1,8 +1,12 @@
 ## イギリス
 ### 基礎データ
 ::gazo
-![イギリス](map_UK.webp){.twice.border.border-1}
+![](map_UK.webp){.twice}
 イギリス
+::
+### 農業
+::top
+[[暖]]流の北大西洋海流と偏西風の影響で、年間を通して降水があります。
 ::
 ::last
 草地が育ちやすく、イギリスやアイルランドは牧草地の割合が高くなります。
@@ -18,27 +22,35 @@
 ::
 #### 羊
 ::gazo
-![イギリスの羊と牧草地](pasture_UK.webp)
+![](pasture_UK.webp)
 イギリスの羊と牧草地
 ::
+### 都市計画
 ::top
-田園都市構想
-:::lead
-想市街地の生活環境悪化により、郊外に職住近接の都市を建設する構想
+イギリスでは、今日までに次の順で都市計画が取り組まれてきました。
 ::
 ::top
-大ロンドン計画
-:::lead
-計画都市の過密問題の解消や無秩序な市街地拡大の防止を目的とした計画
+田園都市構想<div class="lead">市街地の生活環境悪化により、郊外に職住近接の都市を建設する構想
 ::
+</div>
+::top
+大ロンドン計画<div class="lead">都市の過密問題の解消や無秩序な市街地拡大の防止を目的とした計画
+::
+</div>
 ::top
 ドックランズの再開発
-:::lead
-ズの再開発廃墟となったロンドン港の造船所・倉庫を金融街・オフィス街として再生
+		<div class="lead">廃墟となったロンドン港の造船所・倉庫を金融街・オフィス街として再生
 ::
+<div class="lead">ウォーターフロント開発の一種</div>
+</div>
 ::gazo
-![再開発後のドックランズ](canary_wharf.webp)
+![](canary_wharf.webp)
 再開発後のドックランズ
+::
+### 民族問題
+#### 北アイルラン紛争
+::top
+イギリスの北アイルランドでは、==多数の==[[プロテスタント]]住民（ゲルマン系）が政権を独占し、==少数の==[[カトリック]]住民（ケルト系）が経済的に貧しい状況に置かれています。
 ::
 ::last
 カトリック住民は分離独立を要求しています。
@@ -52,15 +64,18 @@
 ::
 ### 鉱工業
 #### 産業革命～エネルギー革命の工業都市
+<h5>ランカシャー地方</h5>
 ::top
 偏西風の風上で湿潤なため、糸を{{紡|つむ}}ぐ際に切れにくく、綿工業が発達しました。
 ::
 ::last
 古期造山帯のぺニン山脈から産出する石炭を利用し、蒸気機関による生産を増やして、産業革命を起こしました。
 ::
+<h5>ヨークシャー地方</h5>
 ::top
 風下（ぺニン山脈東側）で少雨のため、乾燥に強い羊を育てます。
 ::
+<h5>ミッドランド地方</h5>
 ::top
 産出する鉄鉱石をを利用した、原料指向型の重化学工業が発達しました。
 ::
@@ -69,8 +84,10 @@
 ::
 #### 現在の工業都市
 ::top
-ミドルズブラ：臨海型の鉄鋼業・石油化学工業＊石油油田の開発で発展
+ミドルズブラ：臨海型の鉄鋼業・石油化学工業
+		<div class="top">＊石油油田の開発で発展
 ::
+</div>
 ::top
 [[カーディフ]]：臨海型の鉄鋼業
 ::
@@ -78,17 +95,31 @@
 ロンドン：出版印刷業・先端技術産業
 ::
 ::top
-[[グラスゴー]]：エレクトロニクス産業（かつては鉄鋼業）＊別称はシリコングレン
+[[グラスゴー]]：エレクトロニクス産業（かつては鉄鋼業）
+		<div class="top">＊別称はシリコングレン
 ::
+</div>
 ::gazo
-![イギリスの工業都市](UK_industrial_city.webp){.border.border-1}
+![](UK_industrial_city.webp){.border}
 イギリスの工業都市
+::
+### 貿易
+## アイルランド
+### 基礎データ
+::gazo
+![](map_Ireland.webp){.border}
+アイルランド
 ::
 ## フランス
 ### 基礎データ
 ::gazo
-![アイルランド](map_Ireland.webp){.border.border-1}
-アイルランド
+![](map_France.webp){.border}
+フランス
+::
+### 人口
+#### 出生率
+::top
+フランスは、先進国のなかでも早くに高齢化社会を迎えました。
 ::
 ::last
 子育て支援を手厚くすることで、出生率を維持できています。
@@ -123,27 +154,41 @@
 ::
 #### ブドウ
 ::top
-フランスのパリ盆地はブドウの栽培限界の北限で、構造平野のケスタが広がります。
+フランスのパリ盆地はブドウの栽培限界の北限で、構造平野のケスタ<a href="geo_lessons_plain.html#cuesta" class="link-active link-icon"></a>が広がります。
 ::
 ::gazo
-![フランス](map_France.webp){.border.border-1}
-フランス
+![](Vineyards_of_Champagne .webp)
+シャンパーニュ地方（パリ盆地東部）
+::
+### 観光
+::top
+フランスは観光大国で、多くの観光客が訪れます。
 ::
 ::last
 地中海沿岸にはリゾート地のニースがあり、地中海性気候で一年通して気候が安定するため、絶えず観光客でにぎわいます。
 ::
+<div class="overflow-x-auto mt-10 mb-10">
+<div class="text-center">観光客数・国際観光収支</div>
+</div>
 ::gazo
-![シャンパーニュ地方（パリ盆地東部）](Vineyards_of_Champagne .webp)
-シャンパーニュ地方（パリ盆地東部）
+![](Nice.webp)
+ニースの景観
+::
+::gazo
+![](map_Nice.webp){.border}
+ニース
 ::
 ### 鉱工業
 #### ～1960年代の工業都市
 ::top
-ロレーヌ地方：原料指向型の鉄鋼業が発達
+ロレーヌ地方：
+		<div class="top">原料指向型の鉄鋼業が発達
 ::
 ::last
 資源枯渇やエネルギー革命で衰退
 ::
+</div>
+<h5>アルザス・ロレーヌ</h5>
 ::top
 フランス東部に位置するアルザス地方・ロレーヌ地方は、鉄鉱石や石炭などの資源に恵まれます。
 ::
@@ -157,32 +202,57 @@
 ストラスブールは、LRT導入の成功例としても有名
 ::
 ::gazo
-![ニースの景観](Nice.webp)
-ニースの景観
+![](map_Strasbourg.webp){.border}
+ストラスブール
+::
+::gazo
+![](LRT_Strasbourg.webp)
+ストラスブールのLRT
 ::
 #### 現代の工業都市
 ::top
-パリ：出版印刷業・自動車工業・機械工業など
+パリ：
+		<div class="top">出版印刷業・自動車工業・機械工業など
 ::
+</div>
 ::top
-[[ダンケルク]]・フォス：臨海指向型の鉄鋼業
+[[ダンケルク]]・フォス：
+		<div class="top">臨海指向型の鉄鋼業
 ::
+</div>
 ::top
-[[マルセイユ]]：石油化学工業
+[[マルセイユ]]：
+		<div class="top">石油化学工業
 ::
+</div>
 ::top
-[[トゥールーズ]]：航空産業（EU域内で生産した部品の最終組み立て）
+[[トゥールーズ]]：
+		<div class="top">航空産業（EU域内で生産した部品の最終組み立て）
 ::
+</div>
 ::gazo
-![ニース](map_Nice.webp){.border.border-1}
-ニース
+![](France_industry.webp){.border}
+フランスの鉱工業
 ::
+### 発電
+<script type="text/javascript">
+createChartAsync(Chart.Pie, { "nation_cd": 250 }, 'France_power_generation', {
+title: 'フランス (億kWh、2019年)',
+colors: ['#dc3912', '#3366cc', '#990099', '#109618', '#ff9900', '#FBD01D', '#dd4477'],
+sliceVisibilityThreshold: 0
+}, "./php/power_generation.php");
+</script>
+<div id="France_power_generation" style="width: 100%; height: 350px"></div>
 ### 貿易
 ## ドイツ
 ### 基礎データ
 ::gazo
-![ストラスブール](map_Strasbourg.webp){.border.border-1}
-ストラスブール
+![](map_Germany.webp){.border}
+ドイツ
+::
+#### 歴史
+::top
+第二次世界大戦後、ドイツおよびベルリンは東西によって分断され、米ソ対立の舞台になりました。
 ::
 ::middle
 その対立の象徴が「ベルリンの壁」です。
@@ -191,8 +261,12 @@
 ベルリンの壁は1989年に崩壊し、翌年の1990年、分断された東西ドイツが再統一を果たしました。
 ::
 ::gazo
-![ストラスブールのLRT](LRT_Strasbourg.webp)
-ストラスブールのLRT
+![](German_division.webp){.twice}
+ドイツ・ベルリンの分割
+::
+::gazo
+![](Berlin_wall.webp)
+保存されているベルリンの壁
 ::
 #### 移民
 ::top
@@ -213,8 +287,12 @@
 酪農（近年は土地改良で北ドイツ平原には混合農業も分布）
 ::
 ::gazo
-![フランスの鉱工業](France_industry.webp){.border.border-1}
-フランスの鉱工業
+![](Europa_glacier.webp){.border}
+氷河の最大範囲
+::
+#### 中・南部
+::top
+モレーンから飛来した砂がレスを形成
 ::
 ::last
 混合農業（ライ麦・ジャガイモの栽培、豚の飼育）
@@ -222,27 +300,40 @@
 ### 鉱工業
 #### 工業都市
 ::top
-ルール地方：[[ルール]]炭田とライン川を背景に早くから鉄鋼業が発達
+ルール地方：
+		<div class="top">[[ルール]]炭田とライン川を背景に早くから鉄鋼業が発達
 ::
 ::last
 [[エッセン]]・ドルトムント・デュッセルドルフなどの工業都市が連接（[[コナベーション]]）
 ::
+</div>
 ::top
-[[ハンブルク]]：石油化学工業・造船業
+[[ハンブルク]]：<div class="top">石油化学工業・造船業
 ::
+</div>
 ::top
-[[ミュンヘン]]：自動車工業・エレクトロニクス産業・ビール産業
+[[ミュンヘン]]：
+		<div class="top">自動車工業・エレクトロニクス産業・ビール産業
 ::
+</div>
 ::gazo
-![ドイツ](map_Germany.webp){.border.border-1}
-ドイツ
+![](German_industry.webp){.border}
+ドイツの鉱工業
+::
+#### 産業別人口構成
+::top
+ドイツの産業別人口構成は、他のヨーロッパ諸国と比較すると、２次産業が高くなっています。
 ::
 ### 貿易
 ## ベルギー
 ### 基礎データ
 ::gazo
-![ドイツ・ベルリンの分割](German_division.webp){.twice}
-ドイツ・ベルリンの分割
+![](map_Belgium.webp){.border}
+ベルギー
+::
+### 言語紛争
+::top
+1830年、カトリック教徒が多いことを理由に、ベルギーがオランダから独立しました。
 ::
 ::middle
 独立がフランス語を話す人々（ワロン地方の人々）中心でおこなわれたため、ベルギーではフランス語が政治的優位になりました。
@@ -264,8 +355,12 @@
 東部：[[ドイツ]]語
 ::
 ::gazo
-![ベルリンの壁](Berlin_wall.webp)
-保存されているベルリンの壁
+![](Belgique_language.webp){.twice}
+ベルギーの言語
+::
+### 貿易
+::top
+ベルギー最大の輸出品目は医薬品です。
 ::
 ::last
 新型コロナウイルスのワクチンの生産拠点として全世界に輸出しています。
@@ -273,8 +368,12 @@
 ## オランダ
 ### 基礎データ
 ::gazo
-![氷河の最大範囲](Europa_glacier.webp){.border.border-1.twice}
-氷河の最大範囲
+![](map_Netherlands.webp){.border}
+オランダ
+::
+### 国土
+::top
+オランダは、ポルダーと呼ばれる干拓地（水をせき止めて排水した陸地）を増やし、国土を広げてきました。
 ::
 ::middle
 オランダで多く見られる風車は、水を汲みだすために使われたものです（現在はモーター式のため、風車は観光用）。
@@ -283,29 +382,49 @@
 干拓地が多いため「世界は神が作ったが、オランダはオランダ人が作った」と言われるほどで、国土のほとんどが標高200m以下、1/4が海抜0m未満になっています。
 ::
 ::gazo
-![ドイツの鉱工業](German_industry.webp){.border.border-1}
-ドイツの鉱工業
+![](Netherlands_windmill.webp)
+オランダの風車
+::
+::gazo
+![](Netherlands_sealevel0.webp){.border}
+オランダの海抜0m未満の地域
 ::
 ### 農業
 ::top
-干拓地：塩分が残留するため、酪農に利用
+干拓地：
+		<div class="top">塩分が残留するため、酪農に利用
 ::
+</div>
 ::top
-海岸砂丘：排水がよく、園芸農業などに利用
+海岸砂丘：
+		<div class="top">排水がよく、園芸農業などに利用
+::
+</div>
+::gazo
+![](Netherlands_dairy.webp)
+オランダの酪農
 ::
 ::gazo
-![ベルギー](map_Belgium.webp){.border.border-1}
-ベルギー
+![](Netherlands_horticulture.webp)
+オランダの園芸農業
 ::
 ### 交通
 ::top
 [[ロッテルダム]]
-:::lead
-onclick="chg(this)" class="all">ロッテルダムヨーロッパ最大の貿易港で、ユーロポートを建設
+		<div class="lead">ヨーロッパ最大の貿易港で、ユーロポートを建設
 ::
+<div class="lead">精製した石油をパイプラインで内陸へ輸送</div>
+</div>
 ::gazo
-![ベルギーの言語](Belgique_language.webp){.twice.border.border-1}
-ベルギーの言語
+![](Europort_petrochemical_complex.webp)
+ユーロポートの石油化学コンビナート
+::
+### 貿易
+## デンマーク
+### 基礎データ
+::gazo
+![](map_Denmark.webp){.border}
+デンマーク
 ::
 ### 農業
 #### やせ地の土地改良
@@ -327,22 +446,39 @@ onclick="chg(this)" class="all">ロッテルダムヨーロッパ最大の貿易
 偏西風を活かしやすい地形のため、風力発電が盛んです。
 ::
 ::gazo
-![オランダ](map_Netherlands.webp){.border.border-1}
-オランダ
+![](offshore_wind_power.webp)
+デンマークの洋上風力発電
 ::
+<script type="text/javascript">
+createChartAsync(Chart.Pie, { "nation_cd": 208 }, 'Denmark_power_generation', {
+title: 'デンマーク (億kWh、2019年)',
+colors: ['#dc3912', '#3366cc', '#990099', '#109618', '#ff9900', '#FBD01D', '#dd4477'],
+sliceVisibilityThreshold: 0
+}, "./php/power_generation.php");
+</script>
+<div id="Denmark_power_generation" style="width: 100%; height: 350px"></div>
 ### 貿易
 ## スイス
 ### 基礎データ
 ::gazo
-![オランダの風車](Netherlands_windmill.webp)
-オランダの風車
+![](map_Switzerland.webp){.border}
+スイス
+::
+### 農業
+#### 移牧
+::top
+スイスの酪農は、[[移牧]]と呼ばれる形態をとり、家畜を季節ごとに気象条件の異なる場所に移動させて飼育します。
 ::
 ::last
 冬は山麓の畜舎で飼育し、夏には高地の放牧場（アルプ）で飼育します。
 ::
 ::gazo
-![オランダの海抜0m未満の地域](Netherlands_sealevel0.webp){.border.border-1}
-オランダの海抜0m未満の地域
+![](transhumance.webp)
+移牧
+::
+::gazo
+![](transhumance_Switzerland2.webp)
+アルプ
 ::
 ### 言語
 ::top
@@ -358,14 +494,23 @@ onclick="chg(this)" class="all">ロッテルダムヨーロッパ最大の貿易
 西部：[[フランス]]語
 ::
 ::gazo
-![オランダの酪農](Netherlands_dairy.webp)
-オランダの酪農
+![](Switzerland_language.webp){.border}
+スイスの言語
+::
+### 鉱工業
+#### 精密機械
+::top
+スイスには高級時計のメーカーが多くあります。
 ::
 ::last
 宗教改革の時に職人が迫害を逃れるためにスイスに流れてきたこと、穏やかな気候で降水量も少なく、きれいな雪解け水で部品の洗浄がおこなえることなどが背景です。
 ::
 ::gazo
-![オランダの園芸農業](Netherlands_horticulture.webp)
-オランダの園芸農業
+![](watch.webp)
+腕時計
+::
+### 第３次産業
+::top
+スイスは、大部分の人が金融業などのサービス産業に従事しています。
 ::
 ### 貿易

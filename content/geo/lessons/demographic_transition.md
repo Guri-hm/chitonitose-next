@@ -9,14 +9,18 @@
 ::last
 従って、人口動態の型は経済・社会の発展で次の順に変化します。
 ::
-
-- 人口漸増の「多産多死」
-- 人口急増の「多産少死」
-- 人口停滞の「少産少死」
-
+<ul class="en">
+<li>人口漸増の「多産多死」</li>
+<li>人口急増の「多産少死」</li>
+<li>人口停滞の「少産少死」</li>
+</ul>
 ::gazo
-![人口動態の転換](demographic_change.svg){.twice}
+![](demographic_change.svg){.twice}
 人口動態の転換
+::
+### 多産多死型
+::top
+日本を含め、かつて世界のほとんどの国が多産多死型（たくさん生まれてたくさん死ぬ）でした。
 ::
 ::middle
 労働力のために子をたくさん産む一方、衛生や栄養状態が悪く乳児死亡率が高いのです。
@@ -29,10 +33,9 @@
 この型は、後発開発途上国に見られます。
 ::
 ::sup
-後発開発途上国
-:::lead
-上国LDCと略され、開発途上国よりもさらに開発が遅れている国のこと
+後発開発途上国<div class="lead">LDCと略され、開発途上国よりもさらに開発が遅れている国のこと
 ::
+</div>
 ### 多産少死型
 ::top
 多産多死の国が、経済的に発展していくと、衛生や栄養状態が改善され、乳児死亡率が低下します。
@@ -69,8 +72,11 @@
 日本の人口動態の転換をグラフにすると、次のようになります。
 ::
 ::gazo
-![人口動態の転換（日本）](demographic_change_jp.svg){.twice}
+![](demographic_change_jp.svg){.twice}
 人口動態の転換（日本）
+::
+::top
+少産少子型の人口停滞がバランスを崩すと、日本のグラフのように人口減少に転じてしまいます。
 ::
 ::last
 この状況は、労働力不足、経済的な活力低下、高齢者を支える若年層の負担増加などの問題を起こします。
@@ -97,23 +103,27 @@
 結果、これらの国の合計特殊出生率は、2.1を下回るものの、先進国のなかで高い数値にあります。
 ::
 ::gazo
-![合計特殊出生率（フランス）](total_fertility_rate_France.svg){.twice}
+![](total_fertility_rate_France.svg){.twice}
 合計特殊出生率（フランス）
 ::
 ::gazo
-![合計特殊出生率（スウェーデン）](total_fertility_rate_Sweden.svg){.twice}
+![](total_fertility_rate_Sweden.svg){.twice}
 合計特殊出生率（スウェーデン）
+::
+### 日本・ドイツ・イタリアの例
+::top
+日本・ドイツ・イタリアは、フランスやスウェーデンなどの北欧と比べて、少子化対策に遅れ、合計特殊出生率が低い数値にあります。
 ::
 ---arrow---
 ::top
 ただし、低迷気味だったドイツがこの数年ベビーブームを迎え、数値を伸ばしています。
 ::
 ::gazo
-![合計特殊出生率（日本）](total_fertility_rate_Japan.svg){.twice}
+![](total_fertility_rate_Japan.svg){.twice}
 合計特殊出生率（日本）
 ::
 ::gazo
-![合計特殊出生率（ドイツ）](total_fertility_rate_Germany.svg){.twice}
+![](total_fertility_rate_Germany.svg){.twice}
 合計特殊出生率（ドイツ）
 ::
 ### 労働力の不足
@@ -139,73 +149,109 @@
 性別・年齢別の人口構成を表現したものが、人口ピラミッドです。
 ::
 ::gazo
-![人口ピラミッド](population_pyramid.svg)
+![](population_pyramid.svg)
 人口ピラミッドのイメージ
 ::
+#### 多産多死・多産少死
+::top
+衛生状態が悪い多産多死（高い出生率、高い死亡率）の国・地域の人口ピラミッドは、[[富士山]]型です。
+::
 ::gazo
-![](img/fuji.jpg)
+![](population_pyramid_fuji.svg)
+人口ピラミッド「富士山型」のモデル
+::
+::gazo
+![](fuji.jpg)
+富士山
 ::
 ::top
 具体的には、==エチオピアなどの後発開発途上国の人口構造がこの型です==。
 ::
 ::gazo
-![富士山型](population_pyramid_fuji.svg)
-人口ピラミッド「富士山型」のモデル
+![](population_pyramid_ethiopia.svg)
+エチオピアの人口ピラミッド（2017年）
+::
+::top
+やや衛生状態が改善した多産少死（高い出生率、低い死亡率）の国・地域の人口ピラミッドも、[[富士山]]型です。
 ::
 ::last
 ただし、多産多死とはピラミッドの「{{裾野|すその}}の部分」が異なります。
 ::
+<br>
 ::top
 ==開発途上国の人口構造が該当するので==、実際にメキシコを例にとって確認しましょう。
 ::
 ::gazo
-![富士山](fuji.jpg)
-富士山
+![](population_pyramid_mexico.svg)
+メキシコの人口ピラミッド（2017年）
+::
+#### 少産少死
+::top
+少産少死（低い出生率、低い死亡率）の国・地域の人口ピラミッドは、[[{{釣鐘|つりがね}}]]（[[ベル]]）型です。
 ::
 ::last
 人口が増減しない停滞状態で、ピラミッド上部に位置する高齢者の割合が増え、高齢化を表します。
 ::
 ::gazo
-![エチオピアの人口ピラミッド](population_pyramid_ethiopia.svg)
-エチオピアの人口ピラミッド（2017年）
+![](population_pyramid_bell.svg)
+人口ピラミッド「釣鐘型」のモデル
+::
+::gazo
+![](bell.jpg){.half}
+釣鐘
 ::
 ::top
 家族計画が普及した国がこの型になります。
 ::
 ::gazo
-![メキシコの人口ピラミッド](population_pyramid_mexico.svg)
-メキシコの人口ピラミッド（2017年）
+![](population_pyramid_Brazil.svg)
+ブラジルの人口ピラミッド（2019年）
+::
+::top
+また、フィンランドを例にとって、釣鐘型のピラミッドを見てみましょう。
 ::
 ::last
 先進国の中でも、福祉や育児制度が充実し、==少子化対策できている国がこの型です==。
 ::
 ::gazo
-![釣鐘型](population_pyramid_bell.svg)
-人口ピラミッド「釣鐘型」のモデル
+![](population_pyramid_finland.svg)
+フィンランドの人口ピラミッド（2017年）
+::
+#### 人口減少－少産少死型の派生
+::top
+少産少死でかつ、少子化が年々進行している国・地域の人口ピラミッドは、[[つぼ]]（[[{{紡錘|ぼうすい}}]]）型です。
 ::
 ::gazo
-![釣鐘](bell.jpg){.half}
-釣鐘
+![](population_pyramid_pot.svg)
+人口ピラミッド「つぼ型」のモデル
+::
+::top
+この型は、先進国の中でも、少子化対策が遅れて出生率が極端に低下する（あわせて高齢化も進行する）国が該当します。
 ::
 ::last
 例えば、日本の人口ピラミッドがつぼ型です。
 ::
 ::gazo
-![ブラジルの人口ピラミッド](population_pyramid_Brazil.svg)
-ブラジルの人口ピラミッド（2019年）
+![](population_pyramid_japan.svg)
+日本の人口ピラミッド（2019年）
+::
+::top
+日本と似た状況にあるドイツ・イタリアの人口ピラミッドもつぼ型です。
 ::
 ::gazo
-![フィンランドの人口ピラミッド](population_pyramid_finland.svg)
-フィンランドの人口ピラミッド（2017年）
+![](population_pyramid_Germany.svg)
+<img class="lazyload popup-img" data-src="img/population_pyramid_Italy.svg" alt="イタリアの人口ピラミッド" src="../share/img/loading.svg" />
+左：ドイツの人口ピラミッド（2019年）、右：イタリアの人口ピラミッド（2019年）
 ::
 #### アメリカの人口ピラミッド
 ::top
 アメリカの人口ピラミッドは釣鐘型です。
 ::
 ::gazo
-![つぼ型](population_pyramid_pot.svg)
-人口ピラミッド「つぼ型」のモデル
+![](population_pyramid_US.svg)
+アメリカ合衆国の人口ピラミッド（2019年）
 ::
+---arrow---
 ::top
 アメリカにはヒスパニック系の移民が多く流入します。
 ::
@@ -220,8 +266,8 @@
 ロシアの人口ピラミッドは特殊な型になります。
 ::
 ::gazo
-![日本の人口ピラミッド](population_pyramid_japan.svg)
-日本の人口ピラミッド（2019年）
+![](population_pyramid_Russia.svg)
+ロシアの人口ピラミッド（2019年）
 ::
 ---arrow---
 ::top
@@ -231,34 +277,63 @@
 ::top
 市町村など狭い地域に限定すると、特殊な人口ピラミッドになります。
 ::
+<br>
 ::top
 都市へ生産年齢人口が流出した農村部に見られます。
 ::
 ::gazo
-![ドイツの人口ピラミッド](population_pyramid_Germany.svg)
-左：ドイツの人口ピラミッド（2019年）、右：イタリアの人口ピラミッド（2019年）
+![](population_pyramid_gourd.svg)
+人口ピラミッド「ひょうたん型」のモデル
+::
+::gazo
+![](gourd.jpg){.half}
+ひょうたん
 ::
 ::top
 生産年齢人口が農村部から流入した都市部で見られます。
 ::
 ::gazo
-![アメリカ合衆国の人口ピラミッド](population_pyramid_US.svg)
-アメリカ合衆国の人口ピラミッド（2019年）
+![](population_pyramid_star.svg)
+人口ピラミッド「星型」のモデル
+::
+## 人口問題
+### 少子化
+::top
+合計特殊出生率は、一人の女性が生涯何人の子供を産むのかを推計したものです。
 ::
 ::last
 この値が2.1（厳密には2.07～2.08）を超えれば人口増加と考えますが、先進国のほとんどが2.1を下回ります。
 ::
+<div id="fertility_rate" class="mx-auto"></div>
+<script type="text/javascript">
+lineChartAsync(292, [276, 380, 392, 752, 250, 840], 'fertility_rate', {
+title: '主要国の合計特殊出生率',
+hAxis: {
+title: '年'
+},
+vAxis: {
+title: '人'
+},
+height: 500
+});
+</script>
 #### 先進国で高い国
 ::top
-フランスやスウェーデン：早くに育児環境の整備に取り組んで出生率を向上
+フランスやスウェーデン：
+		<div class="top">早くに育児環境の整備に取り組んで出生率を向上
 ::
+</div>
 ::top
-アメリカ：若い移民が流入するため出生率がある程度高い
+アメリカ：
+		<div class="top">若い移民が流入するため出生率がある程度高い
 ::
+</div>
 #### 先進国で特に低い国
 ::top
-日本・ドイツ・イタリア：晩婚化・少子化が進行して出生率が低く、環境の整備が不十分
+日本・ドイツ・イタリア：
+		<div class="top">晩婚化・少子化が進行して出生率が低く、環境の整備が不十分
 ::
+</div>
 ### 人口抑制
 ::top
 人口爆発が生じている発展途上国では、経済発展が人口増加に追いつかず、食料不足と貧困の問題が生じています。
@@ -266,6 +341,32 @@
 ::last
 子どもを労働力の頭数に入れたり、乳児死亡率が高いのでたくさんもうけようとしたりするため、人口抑制がなかなかできません。
 ::
+<div id="population_growth_in_developing_countries" class="mx-auto"></div>
+<script type="text/javascript">
+lineChartAsync(293, [392, 180, 566], 'population_growth_in_developing_countries', {
+title: '日本と途上国の総人口の推移',
+hAxis: {
+title: '年',
+},
+vAxis: {
+title: '百万人'
+},
+height: 500
+});
+</script>
+<div id="fertility_rate_in_developing_countries" class="mx-auto"></div>
+<script type="text/javascript">
+lineChartAsync(292, [50, 156, 356, 392, 764], 'fertility_rate_in_developing_countries', {
+title: '日本と途上国の合計特殊出生率',
+hAxis: {
+title: '年'
+},
+vAxis: {
+title: '人'
+},
+height: 500
+});
+</script>
 #### 中国の人口抑制
 ::top
 1970年代、中国で人口の急増を抑制しようとする動きが起こりました。
@@ -281,6 +382,7 @@
 しかし、政策は戸籍のない子どもや男女比の不均衡などの新たな問題を生んだため、2015年に廃止されました。
 ::
 ::gazo
-![ロシアの人口ピラミッド](population_pyramid_Russia.svg)
-ロシアの人口ピラミッド（2019年）
+![](population_pyramid_China1970.svg)
+<img class="lazyload popup-img" data-src="img/population_pyramid_China2019.svg" alt="中国の人口ピラミッド(2019)" src="../share/img/loading.svg" />
+左：中国の人口ピラミッド（1970年）、右：中国の人口ピラミッド（2019年）
 ::
