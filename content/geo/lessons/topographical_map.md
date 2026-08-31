@@ -226,121 +226,121 @@
 <div class="overflow-x-auto mt-10 mb-10">
 <table class="w-100 mx-auto table">
 <tr>
-<td class="text-center"><img class="lazyload popup-img w-30px" data-src="img/symbol/school.svg" alt="小・中学校"
-src="../share/img/loading.svg" /></td>
+<td class="text-center"><img class="lazyload popup-img w-30px" data-src="/images/symbol/school.svg" alt="小・中学校"
+src="/images/share/loading.svg" /></td>
 <td class="text-center"><span onclick="chg(this)" class="all">小・中学校</span></td>
-<td class="text-center"><img class="lazyload popup-img w-30px" data-src="img/symbol/high-school.svg" alt="高等学校"
-src="../share/img/loading.svg" /></td>
+<td class="text-center"><img class="lazyload popup-img w-30px" data-src="/images/geo/symbol/high-school.svg" alt="高等学校"
+src="/images/share/loading.svg" /></td>
 <td class="text-center"><span onclick="chg(this)" class="all">高等学校</span></td>
-<td class="text-center"><img class="lazyload popup-img w-30px" data-src="img/symbol/hospital.svg" alt="病院"
-src="../share/img/loading.svg" /></td>
+<td class="text-center"><img class="lazyload popup-img w-30px" data-src="/images/geo/symbol/hospital.svg" alt="病院"
+src="/images/share/loading.svg" /></td>
 <td class="text-center"><span onclick="chg(this)" class="all">病院</span></td>
 </tr>
 <tr>
-<td class="text-center"><img class="lazyload popup-img w-30px" data-src="img/symbol/police-box.svg" alt=""
-src="../share/img/loading.svg" /></td>
+<td class="text-center"><img class="lazyload popup-img w-30px" data-src="/images/geo/symbol/police-box.svg" alt=""
+src="/images/share/loading.svg" /></td>
 <td class="text-center"><span onclick="chg(this)" class="all">交番</span></td>
-<td class="text-center"><img class="lazyload popup-img w-30px" data-src="img/symbol/police-station.svg" alt=""
-src="../share/img/loading.svg" /></td>
+<td class="text-center"><img class="lazyload popup-img w-30px" data-src="/images/geo/symbol/police-station.svg" alt=""
+src="/images/share/loading.svg" /></td>
 <td class="text-center"><span onclick="chg(this)" class="all">警察署</span></td>
-<td class="text-center"><img class="lazyload popup-img w-30px" data-src="img/symbol/fire-station.svg" alt=""
-src="../share/img/loading.svg" /></td>
+<td class="text-center"><img class="lazyload popup-img w-30px" data-src="/images/geo/symbol/fire-station.svg" alt=""
+src="/images/share/loading.svg" /></td>
 <td class="text-center"><span onclick="chg(this)" class="all">消防署</span></td>
 </tr>
 <tr>
-<td class="text-center"><img class="lazyload popup-img w-30px" data-src="img/symbol/factory.svg" alt=""
-src="../share/img/loading.svg" /></td>
+<td class="text-center"><img class="lazyload popup-img w-30px" data-src="/images/geo/symbol/factory.svg" alt=""
+src="/images/share/loading.svg" /></td>
 <td class="text-center"><span onclick="chg(this)" class="all">工場</span><br>＊廃止</td>
-<td class="text-center"><img class="lazyload popup-img w-30px" data-src="img/symbol/power-plant.svg" alt=""
-src="../share/img/loading.svg" /></td>
+<td class="text-center"><img class="lazyload popup-img w-30px" data-src="/images/geo/symbol/power-plant.svg" alt=""
+src="/images/share/loading.svg" /></td>
 <td class="text-center"><span onclick="chg(this)" class="all">発電所</span></td>
-<td class="text-center"><img class="lazyload popup-img w-30px" data-src="img/symbol/shrine.svg" alt=""
-src="../share/img/loading.svg" /></td>
+<td class="text-center"><img class="lazyload popup-img w-30px" data-src="/images/geo/symbol/shrine.svg" alt=""
+src="/images/share/loading.svg" /></td>
 <td class="text-center"><span onclick="chg(this)" class="all">神社</span></td>
 </tr>
 <tr>
-<td class="text-center"><img class="lazyload popup-img w-30px" data-src="img/symbol/temple.svg" alt=""
-src="../share/img/loading.svg" /></td>
+<td class="text-center"><img class="lazyload popup-img w-30px" data-src="/images/geo/symbol/temple.svg" alt=""
+src="/images/share/loading.svg" /></td>
 <td class="text-center"><span onclick="chg(this)" class="all">寺院</span></td>
-<td class="text-center"><img class="lazyload popup-img w-30px" data-src="img/symbol/post-office.svg" alt=""
-src="../share/img/loading.svg" /></td>
+<td class="text-center"><img class="lazyload popup-img w-30px" data-src="/images/geo/symbol/post-office.svg" alt=""
+src="/images/share/loading.svg" /></td>
 <td class="text-center"><span onclick="chg(this)" class="all">郵便局</span></td>
-<td class="text-center"><img class="lazyload popup-img w-30px" data-src="img/symbol/town-hall.svg" alt=""
-src="../share/img/loading.svg" /></td>
+<td class="text-center"><img class="lazyload popup-img w-30px" data-src="/images/geo/symbol/town-hall.svg" alt=""
+src="/images/share/loading.svg" /></td>
 <td class="text-center"><span onclick="chg(this)" class="all">町村役場</span></td>
 </tr>
 <tr>
-<td class="text-center"><img class="lazyload popup-img w-30px" data-src="img/symbol/city-hall.svg" alt=""
-src="../share/img/loading.svg" /></td>
+<td class="text-center"><img class="lazyload popup-img w-30px" data-src="/images/geo/symbol/city-hall.svg" alt=""
+src="/images/share/loading.svg" /></td>
 <td class="text-center"><span onclick="chg(this)" class="all">市役所</span></td>
-<td class="text-center"><img class="lazyload popup-img w-30px" data-src="img/symbol/library.svg" alt=""
-src="../share/img/loading.svg" /></td>
+<td class="text-center"><img class="lazyload popup-img w-30px" data-src="/images/geo/symbol/library.svg" alt=""
+src="/images/share/loading.svg" /></td>
 <td class="text-center"><span onclick="chg(this)" class="all">図書館</span></td>
-<td class="text-center"><img class="lazyload popup-img w-30px" data-src="img/symbol/museum.svg" alt=""
-src="../share/img/loading.svg" /></td>
+<td class="text-center"><img class="lazyload popup-img w-30px" data-src="/images/geo/symbol/museum.svg" alt=""
+src="/images/share/loading.svg" /></td>
 <td class="text-center"><span onclick="chg(this)" class="all">博物館・美術館</span></td>
 </tr>
 <tr>
-<td class="text-center"><img class="lazyload popup-img w-30px" data-src="img/symbol/nursing-home.svg" alt=""
-src="../share/img/loading.svg" /></td>
+<td class="text-center"><img class="lazyload popup-img w-30px" data-src="/images/geo/symbol/nursing-home.svg" alt=""
+src="/images/share/loading.svg" /></td>
 <td class="text-center"><span onclick="chg(this)" class="all">老人ホーム</span></td>
-<td class="text-center"><img class="lazyload popup-img w-30px" data-src="img/symbol/windmill.svg" alt=""
-src="../share/img/loading.svg" /></td>
+<td class="text-center"><img class="lazyload popup-img w-30px" data-src="/images/geo/symbol/windmill.svg" alt=""
+src="/images/share/loading.svg" /></td>
 <td class="text-center"><span onclick="chg(this)" class="all">風車</span></td>
-<td class="text-center"><img class="lazyload popup-img w-30px" data-src="img/symbol/crater.svg" alt=""
-src="../share/img/loading.svg" /></td>
+<td class="text-center"><img class="lazyload popup-img w-30px" data-src="/images/geo/symbol/crater.svg" alt=""
+src="/images/share/loading.svg" /></td>
 <td class="text-center"><span onclick="chg(this)" class="all">噴火口</span></td>
 </tr>
 <tr>
-<td class="text-center"><img class="lazyload popup-img w-30px" data-src="img/symbol/triangulation-point.svg"
-alt="" src="../share/img/loading.svg" /></td>
+<td class="text-center"><img class="lazyload popup-img w-30px" data-src="/images/geo/symbol/triangulation-point.svg"
+alt="" src="/images/share/loading.svg" /></td>
 <td class="text-center"><span onclick="chg(this)" class="all">三角点</span><br>＊位置の測量に使用</td>
-<td class="text-center"><img class="lazyload popup-img w-30px" data-src="img/symbol/benchmark.svg" alt=""
-src="../share/img/loading.svg" /></td>
+<td class="text-center"><img class="lazyload popup-img w-30px" data-src="/images/geo/symbol/benchmark.svg" alt=""
+src="/images/share/loading.svg" /></td>
 <td class="text-center"><span onclick="chg(this)" class="all">水準点</span><br>＊高さの測量に使用</td>
-<td class="text-center"><img class="lazyload popup-img w-30px" data-src="img/symbol/paddy.svg" alt=""
-src="../share/img/loading.svg" /></td>
+<td class="text-center"><img class="lazyload popup-img w-30px" data-src="/images/geo/symbol/paddy.svg" alt=""
+src="/images/share/loading.svg" /></td>
 <td class="text-center"><span onclick="chg(this)" class="all">田</span>
 </tr>
 <tr>
-<td class="text-center"><img class="lazyload popup-img w-30px" data-src="img/symbol/wasteland.svg" alt=""
-src="../share/img/loading.svg" /></td>
+<td class="text-center"><img class="lazyload popup-img w-30px" data-src="/images/geo/symbol/wasteland.svg" alt=""
+src="/images/share/loading.svg" /></td>
 <td class="text-center"><span onclick="chg(this)" class="all">荒地</span></td>
-<td class="text-center"><img class="lazyload popup-img w-30px" data-src="img/symbol/field.svg" alt=""
-src="../share/img/loading.svg" /></td>
+<td class="text-center"><img class="lazyload popup-img w-30px" data-src="/images/geo/symbol/field.svg" alt=""
+src="/images/share/loading.svg" /></td>
 <td class="text-center"><span onclick="chg(this)" class="all">畑</span></td>
-<td class="text-center"><img class="lazyload popup-img w-30px" data-src="img/symbol/orchard.svg" alt=""
-src="../share/img/loading.svg" /></td>
+<td class="text-center"><img class="lazyload popup-img w-30px" data-src="/images/geo/symbol/orchard.svg" alt=""
+src="/images/share/loading.svg" /></td>
 <td class="text-center"><span onclick="chg(this)" class="all">果樹園</span></td>
 </tr>
 <tr>
-<td class="text-center"><img class="lazyload popup-img w-30px" data-src="img/symbol/mulberry.svg" alt=""
-src="../share/img/loading.svg" /></td>
+<td class="text-center"><img class="lazyload popup-img w-30px" data-src="/images/geo/symbol/mulberry.svg" alt=""
+src="/images/share/loading.svg" /></td>
 <td class="text-center"><span onclick="chg(this)" class="all">桑畑</span><br>＊廃止</td>
-<td class="text-center"><img class="lazyload popup-img w-30px" data-src="img/symbol/tea.svg" alt=""
-src="../share/img/loading.svg" /></td>
+<td class="text-center"><img class="lazyload popup-img w-30px" data-src="/images/geo/symbol/tea.svg" alt=""
+src="/images/share/loading.svg" /></td>
 <td class="text-center"><span onclick="chg(this)" class="all">茶畑</span></td>
-<td class="text-center"><img class="lazyload popup-img w-30px" data-src="img/symbol/bamboo.svg" alt=""
-src="../share/img/loading.svg" /></td>
+<td class="text-center"><img class="lazyload popup-img w-30px" data-src="/images/geo/symbol/bamboo.svg" alt=""
+src="/images/share/loading.svg" /></td>
 <td class="text-center"><span onclick="chg(this)" class="all">竹林</span></td>
 </tr>
 <tr>
-<td class="text-center"><img class="lazyload popup-img w-30px" data-src="img/symbol/bamboo-grass.svg" alt=""
-src="../share/img/loading.svg" /></td>
+<td class="text-center"><img class="lazyload popup-img w-30px" data-src="/images/geo/symbol/bamboo-grass.svg" alt=""
+src="/images/share/loading.svg" /></td>
 <td class="text-center"><span onclick="chg(this)" class="all">笹林</span></td>
-<td class="text-center"><img class="lazyload popup-img w-30px" data-src="img/symbol/broadleaf-tree.svg" alt=""
-src="../share/img/loading.svg" /></td>
+<td class="text-center"><img class="lazyload popup-img w-30px" data-src="/images/geo/symbol/broadleaf-tree.svg" alt=""
+src="/images/share/loading.svg" /></td>
 <td class="text-center"><span onclick="chg(this)" class="all">広葉樹</span></td>
-<td class="text-center"><img class="lazyload popup-img w-30px" data-src="img/symbol/coniferous-tree.svg" alt=""
-src="../share/img/loading.svg" /></td>
+<td class="text-center"><img class="lazyload popup-img w-30px" data-src="/images/geo/symbol/coniferous-tree.svg" alt=""
+src="/images/share/loading.svg" /></td>
 <td class="text-center"><span onclick="chg(this)" class="all">針葉樹</span></td>
 </tr>
 <tr>
-<td class="text-center"><img class="lazyload popup-img w-30px" data-src="img/symbol/cliff.svg" alt="土崖"
-src="../share/img/loading.svg" /></td>
+<td class="text-center"><img class="lazyload popup-img w-30px" data-src="/images/geo/symbol/cliff.svg" alt="土崖"
+src="/images/share/loading.svg" /></td>
 <td class="text-center"><span onclick="chg(this)" class="all"><ruby>土崖<rt>つちがけ</rt></ruby></span></td>
-<td class="text-center"><img class="lazyload popup-img w-30px" data-src="img/symbol/rock_cliff.svg" alt="岩崖"
-src="../share/img/loading.svg" /></td>
+<td class="text-center"><img class="lazyload popup-img w-30px" data-src="/images/geo/symbol/rock_cliff.svg" alt="岩崖"
+src="/images/share/loading.svg" /></td>
 <td class="text-center"><span onclick="chg(this)" class="all"><ruby>岩崖<rt>がんがい</rt></ruby></span></td>
 <td class="text-center"></td>
 </tr>
