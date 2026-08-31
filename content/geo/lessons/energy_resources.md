@@ -116,6 +116,10 @@
 ::last
 例えば、北海の[[北海油田]]やアメリカ合衆国アラスカ州の[[プルドーベイ油田]]などが開発されました。
 ::
+::statistics{id="220" order="desc" limit="6" offset="0"}
+::statistics{id="221" order="desc" limit="6" offset="0"}
+::statistics{id="222" order="desc" limit="6" offset="0"}
+::statistics{id="223" order="desc" limit="6" offset="0"}
 ## 石炭－埋蔵量の多い化石燃料
 ### 石炭の概説
 ::top
@@ -153,6 +157,10 @@
 ::last
 日本の輸入先は、[[オーストラリア]]や[[インドネシア]]が半分以上を占めています。
 ::
+::statistics{id="230" order="desc" limit="6" offset="0"}
+::statistics{id="231" order="desc" limit="6" offset="0"}
+::statistics{id="232" order="desc" limit="6" offset="0"}
+::statistics{id="233" order="desc" limit="6" offset="0"}
 ## 天然ガス－高まる需要
 ### 天然ガスの概説
 ::top
@@ -163,6 +171,10 @@
 <li>生産はアメリカ・ロシアが中心（世界の生産量の４割）</li>
 <li>冷却・液化し、[[LNG]]（[[液化天然ガス]]）にすることで大量輸送が可能</li>
 </ul>
+::statistics{id="240" order="desc" limit="6" offset="0"}
+::statistics{id="241" order="desc" limit="6" offset="0"}
+::statistics{id="242" order="desc" limit="6" offset="0"}
+::statistics{id="243" order="desc" limit="6" offset="0"}
 ## 電力
 ### 電力生産
 ::top

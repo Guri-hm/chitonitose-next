@@ -4,6 +4,7 @@
 ![](map_Mexico.webp){.border}
 メキシコ
 ::
+::basic-data{cd="484"}
 ### 先住民の文明
 ::top
 かつてのメキシコでは、次の先住民の文明が栄えました。
@@ -62,6 +63,7 @@
 ::sup
 メキシコのサカテカス銀山は、19世紀までに世界の銀の２割を産出
 ::
+::statistics{id="45" order="desc" limit="5" offset="0"}
 ### 経済・貿易
 ::top
 低い賃金水準を活かし、世界の自動車メーカーの工場が建設されています。
@@ -69,6 +71,10 @@
 ::last
 アメリカ合衆国・カナダと北米自由貿易協定<a href="geo_lessons_Anglo_America.html#nafta" class="link-active link-icon"></a>が結ばれたことで、アメリカ合衆国への自動車・自動車部品の輸出が加速しています。
 ::
+::statistics{id="75" order="desc" limit="5" offset="0"}
+::statistics{id="76" order="desc" limit="5" offset="0"}
+::export-items{nation_cd="484"}
+::import-items{nation_cd="484"}
 ## カリブ海諸国
 ::gazo
 ![](map_caribbean_countries.webp){.border}
@@ -148,6 +154,7 @@
 ::top
 世界有数のボーキサイトの生産国です。
 ::
+::statistics{id="270" order="desc" limit="8" offset="0"}
 ### ハイチ
 ::top
 1804年、黒人初の共和国としてフランスから独立
@@ -158,6 +165,7 @@
 ![](map_Venezuela.webp){.border}
 ベネズエラ
 ::
+::basic-data{cd="862"}
 ### 鉱工業
 #### 原油
 ::top
@@ -184,23 +192,32 @@
 GNIなどの公式データが非公開
 ::
 ### 貿易
+::export-items{nation_cd="862"}
+::import-items{nation_cd="862"}
 ## コロンビア
 ### 基礎データ
 ::gazo
 ![](map_Colombia.webp){.border}
 コロンビア
 ::
+::basic-data{cd="170"}
 ### 農業
 ::top
 世界有数の[[コーヒー豆]]の生産国です。
 ::
+::statistics{id="19" order="desc" limit="5" offset="0"}
+::statistics{id="17" order="desc" limit="10" offset="0"}
+::statistics{id="18" order="desc" limit="5" offset="0"}
 ### 貿易
+::export-items{nation_cd="170"}
+::import-items{nation_cd="170"}
 ## エクアドル
 ### 基礎データ
 ::gazo
 ![](map_Ecuador.webp){.border}
 エクアドル
 ::
+::basic-data{cd="218"}
 ### 首都
 ::top
 赤道直下に位置するエクアドルは、標高2,850mのキトを首都に定めています。
@@ -220,17 +237,21 @@ GNIなどの公式データが非公開
 ::top
 世界最大の[[バナナ]]の輸出国です。
 ::
+::statistics{id="18" order="desc" limit="5" offset="0"}
 ### 鉱工業
 ::top
 産油国でOPECに加盟しています。
 ::
 ### 貿易
+::export-items{nation_cd="218"}
+::import-items{nation_cd="218"}
 ## ペルー
 ### 基礎データ
 ::gazo
 ![](map_Peru.webp){.border}
 ペルー
 ::
+::basic-data{cd="604"}
 ### 気候
 ::top
 [[寒]]流のペルー海流の影響で、リマなどの太平洋岸は砂漠気候になります。
@@ -257,6 +278,7 @@ GNIなどの公式データが非公開
 ![](fish_meal.webp){.half}
 フィッシュミール
 ::
+::statistics{id="66" order="desc" limit="5" offset="0"}
 <script type="text/javascript">
 createChartAsync(Chart.Line, { "params": [604] }, 'Peru_fish', {
 title: 'ペルーの漁獲量の推移',
@@ -286,13 +308,18 @@ height: 500
 ::top
 世界有数の[[銀鉱]]・[[銅鉱]]・すず鉱の生産国です。
 ::
+::statistics{id="45" order="desc" limit="5" offset="0"}
+::statistics{id="46" order="desc" limit="5" offset="0"}
 ### 貿易
+::export-items{nation_cd="604"}
+::import-items{nation_cd="604"}
 ## ボリビア
 ### 基礎データ
 ::gazo
 ![](map_Bolivia.webp){.border}
 ボリビア
 ::
+::basic-data{cd="68"}
 ### 首都
 ::top
 ボリビアの首都は、標高約3,600mのラパスです。
@@ -316,13 +343,17 @@ height: 500
 ::top
 世界有数のすず鉱の生産国です。
 ::
+::statistics{id="15" order="desc" limit="5" offset="0"}
 ### 貿易
+::export-items{nation_cd="68"}
+::import-items{nation_cd="68"}
 ## チリ
 ### 基礎データ
 ::gazo
 ![](map_Chile.webp){.border}
 チリ
 ::
+::basic-data{cd="152"}
 ### 気候
 #### 北部
 ::top
@@ -352,13 +383,17 @@ height: 500
 ![](Chuquicamata.webp)
 チュキカマタ銅山の露天掘り
 ::
+::statistics{id="46" order="desc" limit="5" offset="0"}
 ### 貿易
+::export-items{nation_cd="152"}
+::import-items{nation_cd="152"}
 ## ブラジル
 ### 基礎データ
 ::gazo
 ![](map_Brazil.webp){.border}
 ブラジル
 ::
+::basic-data{cd="76"}
 ### 気候・植生
 ::gazo
 ![](South_America_climate.webp){.border}
@@ -453,12 +488,14 @@ height: 500
 ![](fazenda.webp)
 コーヒー豆のファゼンダ
 ::
+::statistics{id="19" order="desc" limit="5" offset="0"}
 <div id="Brazil_exp1965" class="mx-auto mt-10 mb-10" style="width: 100%;max-width: 600px;"></div>
 <div id="Brazil_exp" class="mx-auto mt-10 mb-10" style="width: 100%;max-width: 600px;"></div>
 #### サトウキビ
 ::top
 バイオ燃料にも利用されています。
 ::
+::statistics{id="77" order="desc" limit="5" offset="0"}
 #### 大豆
 ::top
 1970年代末から日本の援助でセラードを開発し、生産を伸ばしてきました。
@@ -483,6 +520,8 @@ height: 500
 });
 </script>
 <div id="Soy" class="mx-auto" style="width: 80%;"></div>
+::statistics{id="69" order="desc" limit="5" offset="0"}
+::statistics{id="70" order="desc" limit="5" offset="0"}
 ### 鉱工業
 #### 工業化への歩み
 <h5>1960年代まで</h5>
@@ -516,6 +555,7 @@ height: 500
 ::last
 主要鉱山は[[カラジャス]]鉄山と[[イタビラ]]鉄山です。
 ::
+::statistics{id="64" order="desc" limit="5" offset="0"}
 <h5>原油</h5>
 ::top
 ラテンアメリカ最大の産油国です。
@@ -527,6 +567,7 @@ height: 500
 ::last
 水力発電の割合が高く、アルミニウム工業が活発です。
 ::
+::statistics{id="270" order="desc" limit="5" offset="0"}
 #### エネルギー
 <script type="text/javascript">
 createChartAsync(Chart.Pie, { "nation_cd": 76 }, 'Brazil_power_generation', {
@@ -537,12 +578,16 @@ sliceVisibilityThreshold: 0
 </script>
 <div id="Brazil_power_generation" style="width: 100%; height: 350px"></div>
 ### 貿易
+::export-items{nation_cd="76"}
+::import-items{nation_cd="76"}
+::statistics{id="80" order="desc" limit="5" offset="0"}
 ## アルゼンチン
 ### 基礎データ
 ::gazo
 ![](map_Argentina.webp){.border}
 アルゼンチン
 ::
+::basic-data{cd="32"}
 ### 民族
 #### 民族構成
 ::top
@@ -603,6 +648,8 @@ sliceVisibilityThreshold: 0
 湿潤パンパ・乾燥パンパ
 ::
 ### 貿易
+::export-items{nation_cd="32"}
+::import-items{nation_cd="32"}
 <script type="text/javascript">
 fetchChart('./php/statistics_any_name.php'
 , {

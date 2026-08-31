@@ -31,6 +31,7 @@
 ::last
 そのため電気代が安い国が生産の中心です。
 ::
+::statistics{id="59" order="desc" limit="8" offset="0"}
 ::top
 主な生産国は、<span onclick="choice(this)" class="choice"><span class="true_choice">石炭</span>/<span class="false_choice">石油</span>/<span class="false_choice">天然ガス</span></span>による火力発電が盛んなオーストラリア・中国・インド、<span onclick="choice(this)" class="choice"><span class="false_choice">火力</span>/<span class="true_choice">水力</span>/<span class="false_choice">風力</span>/<span class="false_choice">地熱</span>/<span class="false_choice">バイオマス</span></span>中心の発電をおこなうノルウェー・カナダ・ブラジルが該当します。
 ::
@@ -249,6 +250,7 @@ height: 500
 ::
 </div>
 #### パルプ
+::statistics{id="61" order="desc" limit="9" offset="0"}
 #### 製紙業
 ::top
 紙の消費量が多い国が生産の上位です。

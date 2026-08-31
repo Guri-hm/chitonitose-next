@@ -222,6 +222,7 @@ height: 500
 <div id="Korea_gdp_per_capita" class="mx-auto" style="width: 80%;"></div>
 ## 韓国
 ### 基礎データ
+::basic-data{cd="410"}
 ### 人口
 #### 人口密度
 ::top
@@ -408,3 +409,5 @@ fontSize: 14,
 </div>
 ### 第３次産業
 #### 貿易
+::export-items{nation_cd="410"}
+::import-items{nation_cd="410"}

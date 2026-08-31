@@ -80,7 +80,7 @@ export interface LessonCategory {
 }
 
 export interface Nation {
-  nation_cd: number;
+  cd: number;
   short_name: string;
   long_name?: string;
   region_cd?: number;
@@ -135,6 +135,48 @@ export interface PowerGeneration {
   biomass_power?: number;
 }
 
+// ::basic-data{cd="..."} 用（国の基本データ、旧basic_data.php相当）
+export interface BasicData {
+  cd: number;
+  short_name: string;
+  capital?: string;
+  suzerain_state?: string;
+  official_lang?: string;
+  religion?: string;
+  people?: string;
+  area?: number;
+  area_year?: number;
+  population?: number;
+  popu_year?: number;
+  density?: number;
+  dollar?: number;
+  gni_year?: number;
+}
+
+// ::statistics{...} 用（旧statistics_info/statistics_data、旧statistics.php相当）
+export interface StatisticsInfo {
+  id: number;
+  data_name: string;
+  unit?: string;
+  arrange_unit?: string;
+}
+
+export interface StatisticsDataRow {
+  statistics_id: number;
+  nation_name: string;
+  data_val: number;
+  data_year: number;
+}
+
+// ::export-items{...} / ::import-items{...} 用（旧export/import_items_lank.php相当）
+export interface TradeItem {
+  nation_cd: number;
+  data_year: number;
+  lank: number;
+  item_name: string;
+  ratio: number;
+}
+
 // データ読み込み関数
 
 export const loadNews = () => loadJSON<NewsItem[]>('news.json');
@@ -176,6 +218,26 @@ export const loadAgingSociety = () => loadJSON<AgingSociety[]>('aging-society.js
 export const loadBirthrateMortality = () => loadJSON<BirthrateMortality[]>('birthrate-mortality.json');
 export const loadGDPGNI = () => loadJSON<GDPGNI[]>('gdp-gni.json');
 export const loadPowerGeneration = () => loadJSON<PowerGeneration[]>('power-generation.json');
+export const loadBasicData = () => loadJSON<BasicData[]>('basic-data.json');
+export const loadStatisticsInfo = () => loadJSON<StatisticsInfo[]>('statistics-info.json');
+export const loadStatisticsData = () => loadJSON<StatisticsDataRow[]>('statistics-data.json');
+export const loadExportItems = () => loadJSON<TradeItem[]>('export-items.json');
+export const loadImportItems = () => loadJSON<TradeItem[]>('import-items.json');
+
+/**
+ * レッスン本文の::basic-data / ::statistics / ::export-items / ::import-items
+ * ディレクティブ描画に必要なデータセットをまとめて読み込む
+ */
+export async function loadLessonDbDatasets() {
+  const [basicData, statisticsInfo, statisticsData, exportItems, importItems] = await Promise.all([
+    loadBasicData(),
+    loadStatisticsInfo(),
+    loadStatisticsData(),
+    loadExportItems(),
+    loadImportItems(),
+  ]);
+  return { basicData, statisticsInfo, statisticsData, exportItems, importItems };
+}
 
 /**
  * レッスン本文に埋め込む::chart{...}ディレクティブ用のデータセットをまとめて読み込む

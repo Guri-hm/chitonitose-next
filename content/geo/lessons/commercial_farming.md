@@ -107,6 +107,10 @@
 ![](pig2.webp)
 豚
 ::
+::statistics{id="55" order="desc" limit="6" offset="0"}
+::statistics{id="54" order="desc" limit="6" offset="0"}
+::statistics{id="180" order="desc" limit="6" offset="0"}
+::statistics{id="31" order="desc" limit="6" offset="0"}
 #### フランス
 ::top
 作物：小麦・ブドウ（[[シャンパーニュ]]地方が有名）
@@ -122,6 +126,8 @@
 ![](grape.webp)
 ブドウ
 ::
+::statistics{id="24" order="desc" limit="6" offset="0"}
+::statistics{id="51" order="desc" limit="6" offset="0"}
 #### イタリア
 ::top
 特に温暖湿潤気候の[[ポー]]川流域
@@ -271,3 +277,6 @@
 ::top
 地中海性気候の地域：地中海沿岸、ラテンアメリカの[[チリ]]中部、アフリカの[[ケープタウン]]
 ::
+::statistics{id="57" order="desc" limit="6" offset="0"}
+::statistics{id="56" order="desc" limit="6" offset="0"}
+::statistics{id="51" order="desc" limit="6" offset="0"}

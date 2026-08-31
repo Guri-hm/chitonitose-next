@@ -62,8 +62,8 @@ export default async function DataTestPage() {
             </thead>
             <tbody>
               {nations.slice(0, 10).map((nation) => (
-                <tr key={nation.nation_cd} className="hover:bg-gray-50">
-                  <td className="px-4 py-2 border-b">{nation.nation_cd}</td>
+                <tr key={nation.cd} className="hover:bg-gray-50">
+                  <td className="px-4 py-2 border-b">{nation.cd}</td>
                   <td className="px-4 py-2 border-b font-medium">{nation.short_name}</td>
                   <td className="px-4 py-2 border-b text-sm text-gray-600">{nation.long_name || '-'}</td>
                 </tr>

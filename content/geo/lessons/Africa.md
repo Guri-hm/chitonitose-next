@@ -452,6 +452,7 @@ flickr（https://www.flickr.com)
 ::sup
 キャッサバの原産地は[[南アメリカ]]
 ::
+::statistics{id="41" order="desc" limit="6" offset="0"}
 ### プランテーション農業
 ::top
 輸出用に単一の農作物を大量栽培する農業をプランテーション農業と言います。
@@ -465,6 +466,9 @@ flickr（https://www.flickr.com)
 ::
 <li>ケニアで[[茶]]を栽培</li>
 </ul>
+::statistics{id="42" order="desc" limit="6" offset="0"}
+::statistics{id="19" order="desc" limit="6" offset="0"}
+::statistics{id="26" order="desc" limit="6" offset="0"}
 ### 遊牧・オアシス農業・灌漑農業
 ::top
 外来河川や湧水、地下水を利用し、[[ナツメヤシ]]・小麦・綿花を栽培します。
@@ -514,3 +518,9 @@ flickr（https://www.flickr.com)
 <li>レアメタル：
 <div class="top">南アフリカ共和国</div></li>
 </ul>
+::statistics{id="16" order="desc" limit="7" offset="0"}
+::statistics{id="16" order="desc" limit="10" offset="0"}
+::statistics{id="44" order="desc" limit="10" offset="0"}
+::statistics{id="46" order="desc" limit="10" offset="0"}
+::statistics{id="270" order="desc" limit="10" offset="0"}
+::statistics{id="48" order="desc" limit="10" offset="0"}

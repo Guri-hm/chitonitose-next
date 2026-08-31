@@ -16,6 +16,9 @@
 安定陸塊
 ::
 #### 生産国・輸出国
+::statistics{id="251" order="desc" limit="6" offset="0"}
+::statistics{id="252" order="desc" limit="6" offset="0"}
+::statistics{id="120" order="desc" limit="6" offset="0"}
 ### 銅鉱
 ::top
 銅鉱はマグマが地表に出てくる過程で形成されます。
@@ -32,6 +35,8 @@
 銅山の分布
 ::
 #### 生産国・輸出国
+::statistics{id="261" order="desc" limit="6" offset="0"}
+::statistics{id="262" order="desc" limit="6" offset="0"}
 ### ボーキサイト
 ::top
 ボーキサイトは酸化アルミニウムを多く含む岩石です。
@@ -55,6 +60,9 @@
 中国・カナダ・ロシアなど、発電コストが低い大規模な水力発電所を有する国でよく生産されます。
 ::
 #### 生産国・輸出国
+::statistics{id="270" order="desc" limit="6" offset="0"}
+::statistics{id="271" order="desc" limit="6" offset="0"}
+::statistics{id="272" order="desc" limit="6" offset="0"}
 ### すず
 <h5>分布</h5>
 ::gazo
@@ -62,6 +70,7 @@
 すずの分布
 ::
 <h5>生産国</h5>
+::statistics{id="15" order="desc" limit="6" offset="0"}
 ## 金属資源（貴金属）
 ### 金鉱
 ::top
@@ -76,6 +85,7 @@
 金鉱の分布
 ::
 #### 生産国
+::statistics{id="44" order="desc" limit="6" offset="0"}
 ### プラチナ（白金）
 ::top
 金よりも希少性が高く、分布が局所的です。
@@ -89,6 +99,7 @@
 プラチナの分布
 ::
 #### 生産国
+::statistics{id="280" order="desc" limit="6" offset="0"}
 ## 金属資源（レアメタル）
 ### レアメタルとは
 ::top
@@ -118,6 +129,7 @@
 ニッケルの分布
 ::
 <h5>生産国</h5>
+::statistics{id="47" order="desc" limit="6" offset="0"}
 ## 非金属資源
 ### 代表的な非金属資源
 ::top
@@ -133,3 +145,4 @@
 ダイヤモンドの分布
 ::
 <h5>生産国</h5>
+::statistics{id="48" order="desc" limit="6" offset="0"}

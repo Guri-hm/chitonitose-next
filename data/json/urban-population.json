@@ -1198,5 +1198,6035 @@
     "data_year": 2018,
     "ratio": 23.1,
     "population": "354"
+  },
+  {
+    "nation_cd": 152,
+    "data_year": 1950,
+    "ratio": 58.4,
+    "population": null
+  },
+  {
+    "nation_cd": 152,
+    "data_year": 1970,
+    "ratio": 75.2,
+    "population": null
+  },
+  {
+    "nation_cd": 152,
+    "data_year": 1990,
+    "ratio": 83.3,
+    "population": null
+  },
+  {
+    "nation_cd": 152,
+    "data_year": 2010,
+    "ratio": 87.1,
+    "population": null
+  },
+  {
+    "nation_cd": 152,
+    "data_year": 2018,
+    "ratio": 87.6,
+    "population": "1593"
+  },
+  {
+    "nation_cd": 156,
+    "data_year": 1950,
+    "ratio": 11.8,
+    "population": null
+  },
+  {
+    "nation_cd": 156,
+    "data_year": 1970,
+    "ratio": 17.4,
+    "population": null
+  },
+  {
+    "nation_cd": 156,
+    "data_year": 1990,
+    "ratio": 26.4,
+    "population": null
+  },
+  {
+    "nation_cd": 156,
+    "data_year": 2010,
+    "ratio": 49.2,
+    "population": null
+  },
+  {
+    "nation_cd": 156,
+    "data_year": 2018,
+    "ratio": 59.2,
+    "population": "83702"
+  },
+  {
+    "nation_cd": 158,
+    "data_year": 1950,
+    "ratio": 26.8,
+    "population": null
+  },
+  {
+    "nation_cd": 158,
+    "data_year": 1970,
+    "ratio": 36.5,
+    "population": null
+  },
+  {
+    "nation_cd": 158,
+    "data_year": 1990,
+    "ratio": 66.3,
+    "population": null
+  },
+  {
+    "nation_cd": 158,
+    "data_year": 2010,
+    "ratio": 74.7,
+    "population": null
+  },
+  {
+    "nation_cd": 158,
+    "data_year": 2018,
+    "ratio": 78.2,
+    "population": "1851"
+  },
+  {
+    "nation_cd": 162,
+    "data_year": 1950,
+    "ratio": 77,
+    "population": null
+  },
+  {
+    "nation_cd": 162,
+    "data_year": 1970,
+    "ratio": 84,
+    "population": null
+  },
+  {
+    "nation_cd": 162,
+    "data_year": 1990,
+    "ratio": 85.4,
+    "population": null
+  },
+  {
+    "nation_cd": 162,
+    "data_year": 2010,
+    "ratio": 85.2,
+    "population": null
+  },
+  {
+    "nation_cd": 162,
+    "data_year": 2018,
+    "ratio": 86,
+    "population": "2130"
+  },
+  {
+    "nation_cd": 166,
+    "data_year": 1950,
+    "ratio": 77,
+    "population": null
+  },
+  {
+    "nation_cd": 166,
+    "data_year": 1970,
+    "ratio": 84,
+    "population": null
+  },
+  {
+    "nation_cd": 166,
+    "data_year": 1990,
+    "ratio": 85.4,
+    "population": null
+  },
+  {
+    "nation_cd": 166,
+    "data_year": 2010,
+    "ratio": 85.2,
+    "population": null
+  },
+  {
+    "nation_cd": 166,
+    "data_year": 2018,
+    "ratio": 86,
+    "population": "2130"
+  },
+  {
+    "nation_cd": 170,
+    "data_year": 1950,
+    "ratio": 32.6,
+    "population": null
+  },
+  {
+    "nation_cd": 170,
+    "data_year": 1970,
+    "ratio": 56.6,
+    "population": null
+  },
+  {
+    "nation_cd": 170,
+    "data_year": 1990,
+    "ratio": 69.5,
+    "population": null
+  },
+  {
+    "nation_cd": 170,
+    "data_year": 2010,
+    "ratio": 78,
+    "population": null
+  },
+  {
+    "nation_cd": 170,
+    "data_year": 2018,
+    "ratio": 80.8,
+    "population": "3995"
+  },
+  {
+    "nation_cd": 174,
+    "data_year": 1950,
+    "ratio": 6.6,
+    "population": null
+  },
+  {
+    "nation_cd": 174,
+    "data_year": 1970,
+    "ratio": 19.4,
+    "population": null
+  },
+  {
+    "nation_cd": 174,
+    "data_year": 1990,
+    "ratio": 27.9,
+    "population": null
+  },
+  {
+    "nation_cd": 174,
+    "data_year": 2010,
+    "ratio": 28,
+    "population": null
+  },
+  {
+    "nation_cd": 174,
+    "data_year": 2018,
+    "ratio": 29,
+    "population": "24"
+  },
+  {
+    "nation_cd": 175,
+    "data_year": 1950,
+    "ratio": 8.5,
+    "population": null
+  },
+  {
+    "nation_cd": 175,
+    "data_year": 1970,
+    "ratio": 25.1,
+    "population": null
+  },
+  {
+    "nation_cd": 175,
+    "data_year": 1990,
+    "ratio": 36.1,
+    "population": null
+  },
+  {
+    "nation_cd": 175,
+    "data_year": 2010,
+    "ratio": 49,
+    "population": null
+  },
+  {
+    "nation_cd": 175,
+    "data_year": 2018,
+    "ratio": 46.1,
+    "population": "11"
+  },
+  {
+    "nation_cd": 178,
+    "data_year": 1950,
+    "ratio": 24.9,
+    "population": null
+  },
+  {
+    "nation_cd": 178,
+    "data_year": 1970,
+    "ratio": 39.1,
+    "population": null
+  },
+  {
+    "nation_cd": 178,
+    "data_year": 1990,
+    "ratio": 54.3,
+    "population": null
+  },
+  {
+    "nation_cd": 178,
+    "data_year": 2010,
+    "ratio": 63.3,
+    "population": null
+  },
+  {
+    "nation_cd": 178,
+    "data_year": 2018,
+    "ratio": 66.9,
+    "population": "361"
+  },
+  {
+    "nation_cd": 180,
+    "data_year": 1950,
+    "ratio": 19.1,
+    "population": null
+  },
+  {
+    "nation_cd": 180,
+    "data_year": 1970,
+    "ratio": 24.6,
+    "population": null
+  },
+  {
+    "nation_cd": 180,
+    "data_year": 1990,
+    "ratio": 30.6,
+    "population": null
+  },
+  {
+    "nation_cd": 180,
+    "data_year": 2010,
+    "ratio": 40,
+    "population": null
+  },
+  {
+    "nation_cd": 180,
+    "data_year": 2018,
+    "ratio": 44.5,
+    "population": "3734"
+  },
+  {
+    "nation_cd": 184,
+    "data_year": 1950,
+    "ratio": 38,
+    "population": null
+  },
+  {
+    "nation_cd": 184,
+    "data_year": 1970,
+    "ratio": 53.3,
+    "population": null
+  },
+  {
+    "nation_cd": 184,
+    "data_year": 1990,
+    "ratio": 57.7,
+    "population": null
+  },
+  {
+    "nation_cd": 184,
+    "data_year": 2010,
+    "ratio": 73.3,
+    "population": null
+  },
+  {
+    "nation_cd": 184,
+    "data_year": 2018,
+    "ratio": 75.1,
+    "population": "1"
+  },
+  {
+    "nation_cd": 188,
+    "data_year": 1950,
+    "ratio": 33.5,
+    "population": null
+  },
+  {
+    "nation_cd": 188,
+    "data_year": 1970,
+    "ratio": 38.8,
+    "population": null
+  },
+  {
+    "nation_cd": 188,
+    "data_year": 1990,
+    "ratio": 50,
+    "population": null
+  },
+  {
+    "nation_cd": 188,
+    "data_year": 2010,
+    "ratio": 71.7,
+    "population": null
+  },
+  {
+    "nation_cd": 188,
+    "data_year": 2018,
+    "ratio": 79.3,
+    "population": "392"
+  },
+  {
+    "nation_cd": 191,
+    "data_year": 1950,
+    "ratio": 22.3,
+    "population": null
+  },
+  {
+    "nation_cd": 191,
+    "data_year": 1970,
+    "ratio": 40.2,
+    "population": null
+  },
+  {
+    "nation_cd": 191,
+    "data_year": 1990,
+    "ratio": 51,
+    "population": null
+  },
+  {
+    "nation_cd": 191,
+    "data_year": 2010,
+    "ratio": 55.2,
+    "population": null
+  },
+  {
+    "nation_cd": 191,
+    "data_year": 2018,
+    "ratio": 56.9,
+    "population": "237"
+  },
+  {
+    "nation_cd": 192,
+    "data_year": 1950,
+    "ratio": 56.5,
+    "population": null
+  },
+  {
+    "nation_cd": 192,
+    "data_year": 1970,
+    "ratio": 60.3,
+    "population": null
+  },
+  {
+    "nation_cd": 192,
+    "data_year": 1990,
+    "ratio": 73.4,
+    "population": null
+  },
+  {
+    "nation_cd": 192,
+    "data_year": 2010,
+    "ratio": 76.6,
+    "population": null
+  },
+  {
+    "nation_cd": 192,
+    "data_year": 2018,
+    "ratio": 77,
+    "population": "885"
+  },
+  {
+    "nation_cd": 196,
+    "data_year": 1950,
+    "ratio": 28.4,
+    "population": null
+  },
+  {
+    "nation_cd": 196,
+    "data_year": 1970,
+    "ratio": 40.8,
+    "population": null
+  },
+  {
+    "nation_cd": 196,
+    "data_year": 1990,
+    "ratio": 66.8,
+    "population": null
+  },
+  {
+    "nation_cd": 196,
+    "data_year": 2010,
+    "ratio": 67.6,
+    "population": null
+  },
+  {
+    "nation_cd": 196,
+    "data_year": 2018,
+    "ratio": 66.8,
+    "population": "79"
+  },
+  {
+    "nation_cd": 203,
+    "data_year": 1950,
+    "ratio": 54.2,
+    "population": null
+  },
+  {
+    "nation_cd": 203,
+    "data_year": 1970,
+    "ratio": 64.4,
+    "population": null
+  },
+  {
+    "nation_cd": 203,
+    "data_year": 1990,
+    "ratio": 75.2,
+    "population": null
+  },
+  {
+    "nation_cd": 203,
+    "data_year": 2010,
+    "ratio": 73.3,
+    "population": null
+  },
+  {
+    "nation_cd": 203,
+    "data_year": 2018,
+    "ratio": 73.8,
+    "population": "784"
+  },
+  {
+    "nation_cd": 204,
+    "data_year": 1950,
+    "ratio": 5,
+    "population": null
+  },
+  {
+    "nation_cd": 204,
+    "data_year": 1970,
+    "ratio": 16.7,
+    "population": null
+  },
+  {
+    "nation_cd": 204,
+    "data_year": 1990,
+    "ratio": 34.5,
+    "population": null
+  },
+  {
+    "nation_cd": 204,
+    "data_year": 2010,
+    "ratio": 43.1,
+    "population": null
+  },
+  {
+    "nation_cd": 204,
+    "data_year": 2018,
+    "ratio": 47.3,
+    "population": "543"
+  },
+  {
+    "nation_cd": 208,
+    "data_year": 1950,
+    "ratio": 68,
+    "population": null
+  },
+  {
+    "nation_cd": 208,
+    "data_year": 1970,
+    "ratio": 79.7,
+    "population": null
+  },
+  {
+    "nation_cd": 208,
+    "data_year": 1990,
+    "ratio": 84.8,
+    "population": null
+  },
+  {
+    "nation_cd": 208,
+    "data_year": 2010,
+    "ratio": 86.8,
+    "population": null
+  },
+  {
+    "nation_cd": 208,
+    "data_year": 2018,
+    "ratio": 87.9,
+    "population": "505"
+  },
+  {
+    "nation_cd": 212,
+    "data_year": 1950,
+    "ratio": 34.7,
+    "population": null
+  },
+  {
+    "nation_cd": 212,
+    "data_year": 1970,
+    "ratio": 38.7,
+    "population": null
+  },
+  {
+    "nation_cd": 212,
+    "data_year": 1990,
+    "ratio": 63.1,
+    "population": null
+  },
+  {
+    "nation_cd": 212,
+    "data_year": 2010,
+    "ratio": 68.1,
+    "population": null
+  },
+  {
+    "nation_cd": 212,
+    "data_year": 2018,
+    "ratio": 70.5,
+    "population": "5"
+  },
+  {
+    "nation_cd": 214,
+    "data_year": 1950,
+    "ratio": 23.7,
+    "population": null
+  },
+  {
+    "nation_cd": 214,
+    "data_year": 1970,
+    "ratio": 40.3,
+    "population": null
+  },
+  {
+    "nation_cd": 214,
+    "data_year": 1990,
+    "ratio": 55.2,
+    "population": null
+  },
+  {
+    "nation_cd": 214,
+    "data_year": 2010,
+    "ratio": 73.8,
+    "population": null
+  },
+  {
+    "nation_cd": 214,
+    "data_year": 2018,
+    "ratio": 81.1,
+    "population": "882"
+  },
+  {
+    "nation_cd": 218,
+    "data_year": 1950,
+    "ratio": 28.3,
+    "population": null
+  },
+  {
+    "nation_cd": 218,
+    "data_year": 1970,
+    "ratio": 39.3,
+    "population": null
+  },
+  {
+    "nation_cd": 218,
+    "data_year": 1990,
+    "ratio": 55.1,
+    "population": null
+  },
+  {
+    "nation_cd": 218,
+    "data_year": 2010,
+    "ratio": 62.7,
+    "population": null
+  },
+  {
+    "nation_cd": 218,
+    "data_year": 2018,
+    "ratio": 63.8,
+    "population": "1076"
+  },
+  {
+    "nation_cd": 222,
+    "data_year": 1950,
+    "ratio": 36.5,
+    "population": null
+  },
+  {
+    "nation_cd": 222,
+    "data_year": 1970,
+    "ratio": 39.4,
+    "population": null
+  },
+  {
+    "nation_cd": 222,
+    "data_year": 1990,
+    "ratio": 49.3,
+    "population": null
+  },
+  {
+    "nation_cd": 222,
+    "data_year": 2010,
+    "ratio": 65.5,
+    "population": null
+  },
+  {
+    "nation_cd": 222,
+    "data_year": 2018,
+    "ratio": 72,
+    "population": "461"
+  },
+  {
+    "nation_cd": 226,
+    "data_year": 1950,
+    "ratio": 15.5,
+    "population": null
+  },
+  {
+    "nation_cd": 226,
+    "data_year": 1970,
+    "ratio": 27,
+    "population": null
+  },
+  {
+    "nation_cd": 226,
+    "data_year": 1990,
+    "ratio": 34.7,
+    "population": null
+  },
+  {
+    "nation_cd": 226,
+    "data_year": 2010,
+    "ratio": 65.9,
+    "population": null
+  },
+  {
+    "nation_cd": 226,
+    "data_year": 2018,
+    "ratio": 72.1,
+    "population": "94"
+  },
+  {
+    "nation_cd": 231,
+    "data_year": 1950,
+    "ratio": 4.6,
+    "population": null
+  },
+  {
+    "nation_cd": 231,
+    "data_year": 1970,
+    "ratio": 8.6,
+    "population": null
+  },
+  {
+    "nation_cd": 231,
+    "data_year": 1990,
+    "ratio": 12.6,
+    "population": null
+  },
+  {
+    "nation_cd": 231,
+    "data_year": 2010,
+    "ratio": 17.3,
+    "population": null
+  },
+  {
+    "nation_cd": 231,
+    "data_year": 2018,
+    "ratio": 20.8,
+    "population": "2232"
+  },
+  {
+    "nation_cd": 232,
+    "data_year": 1950,
+    "ratio": 7.1,
+    "population": null
+  },
+  {
+    "nation_cd": 232,
+    "data_year": 1970,
+    "ratio": 12.7,
+    "population": null
+  },
+  {
+    "nation_cd": 232,
+    "data_year": 1990,
+    "ratio": 18.9,
+    "population": null
+  },
+  {
+    "nation_cd": 232,
+    "data_year": 2010,
+    "ratio": 35.2,
+    "population": null
+  },
+  {
+    "nation_cd": 232,
+    "data_year": 2018,
+    "ratio": 40.1,
+    "population": "207"
+  },
+  {
+    "nation_cd": 233,
+    "data_year": 1950,
+    "ratio": 49.7,
+    "population": null
+  },
+  {
+    "nation_cd": 233,
+    "data_year": 1970,
+    "ratio": 64.9,
+    "population": null
+  },
+  {
+    "nation_cd": 233,
+    "data_year": 1990,
+    "ratio": 71.2,
+    "population": null
+  },
+  {
+    "nation_cd": 233,
+    "data_year": 2010,
+    "ratio": 68.1,
+    "population": null
+  },
+  {
+    "nation_cd": 233,
+    "data_year": 2018,
+    "ratio": 68.9,
+    "population": "90"
+  },
+  {
+    "nation_cd": 234,
+    "data_year": 1950,
+    "ratio": 17.4,
+    "population": null
+  },
+  {
+    "nation_cd": 234,
+    "data_year": 1970,
+    "ratio": 28,
+    "population": null
+  },
+  {
+    "nation_cd": 234,
+    "data_year": 1990,
+    "ratio": 30.6,
+    "population": null
+  },
+  {
+    "nation_cd": 234,
+    "data_year": 2010,
+    "ratio": 40.9,
+    "population": null
+  },
+  {
+    "nation_cd": 234,
+    "data_year": 2018,
+    "ratio": 42.1,
+    "population": "2"
+  },
+  {
+    "nation_cd": 238,
+    "data_year": 1950,
+    "ratio": 51.1,
+    "population": null
+  },
+  {
+    "nation_cd": 238,
+    "data_year": 1970,
+    "ratio": 54,
+    "population": null
+  },
+  {
+    "nation_cd": 238,
+    "data_year": 1990,
+    "ratio": 74.2,
+    "population": null
+  },
+  {
+    "nation_cd": 238,
+    "data_year": 2010,
+    "ratio": 73.7,
+    "population": null
+  },
+  {
+    "nation_cd": 238,
+    "data_year": 2018,
+    "ratio": 77.7,
+    "population": "0"
+  },
+  {
+    "nation_cd": 239,
+    "data_year": 1950,
+    "ratio": 0,
+    "population": null
+  },
+  {
+    "nation_cd": 239,
+    "data_year": 1970,
+    "ratio": 0,
+    "population": null
+  },
+  {
+    "nation_cd": 239,
+    "data_year": 1990,
+    "ratio": 0,
+    "population": null
+  },
+  {
+    "nation_cd": 239,
+    "data_year": 2010,
+    "ratio": 0,
+    "population": null
+  },
+  {
+    "nation_cd": 239,
+    "data_year": 2018,
+    "ratio": 0,
+    "population": "0"
+  },
+  {
+    "nation_cd": 242,
+    "data_year": 1950,
+    "ratio": 24.4,
+    "population": null
+  },
+  {
+    "nation_cd": 242,
+    "data_year": 1970,
+    "ratio": 34.8,
+    "population": null
+  },
+  {
+    "nation_cd": 242,
+    "data_year": 1990,
+    "ratio": 41.6,
+    "population": null
+  },
+  {
+    "nation_cd": 242,
+    "data_year": 2010,
+    "ratio": 52.2,
+    "population": null
+  },
+  {
+    "nation_cd": 242,
+    "data_year": 2018,
+    "ratio": 56.2,
+    "population": "51"
+  },
+  {
+    "nation_cd": 246,
+    "data_year": 1950,
+    "ratio": 43,
+    "population": null
+  },
+  {
+    "nation_cd": 246,
+    "data_year": 1970,
+    "ratio": 63.7,
+    "population": null
+  },
+  {
+    "nation_cd": 246,
+    "data_year": 1990,
+    "ratio": 79.4,
+    "population": null
+  },
+  {
+    "nation_cd": 246,
+    "data_year": 2010,
+    "ratio": 83.8,
+    "population": null
+  },
+  {
+    "nation_cd": 246,
+    "data_year": 2018,
+    "ratio": 85.4,
+    "population": "473"
+  },
+  {
+    "nation_cd": 250,
+    "data_year": 1950,
+    "ratio": 55.2,
+    "population": null
+  },
+  {
+    "nation_cd": 250,
+    "data_year": 1970,
+    "ratio": 71.1,
+    "population": null
+  },
+  {
+    "nation_cd": 250,
+    "data_year": 1990,
+    "ratio": 74.1,
+    "population": null
+  },
+  {
+    "nation_cd": 250,
+    "data_year": 2010,
+    "ratio": 78.4,
+    "population": null
+  },
+  {
+    "nation_cd": 250,
+    "data_year": 2018,
+    "ratio": 80.4,
+    "population": "5247"
+  },
+  {
+    "nation_cd": 254,
+    "data_year": 1950,
+    "ratio": 53.7,
+    "population": null
+  },
+  {
+    "nation_cd": 254,
+    "data_year": 1970,
+    "ratio": 67.4,
+    "population": null
+  },
+  {
+    "nation_cd": 254,
+    "data_year": 1990,
+    "ratio": 74.6,
+    "population": null
+  },
+  {
+    "nation_cd": 254,
+    "data_year": 2010,
+    "ratio": 82.9,
+    "population": null
+  },
+  {
+    "nation_cd": 254,
+    "data_year": 2018,
+    "ratio": 85.3,
+    "population": "24"
+  },
+  {
+    "nation_cd": 258,
+    "data_year": 1950,
+    "ratio": 33.3,
+    "population": null
+  },
+  {
+    "nation_cd": 258,
+    "data_year": 1970,
+    "ratio": 55.2,
+    "population": null
+  },
+  {
+    "nation_cd": 258,
+    "data_year": 1990,
+    "ratio": 57.9,
+    "population": null
+  },
+  {
+    "nation_cd": 258,
+    "data_year": 2010,
+    "ratio": 60.3,
+    "population": null
+  },
+  {
+    "nation_cd": 258,
+    "data_year": 2018,
+    "ratio": 61.8,
+    "population": "17"
+  },
+  {
+    "nation_cd": 260,
+    "data_year": 1950,
+    "ratio": 0,
+    "population": null
+  },
+  {
+    "nation_cd": 260,
+    "data_year": 1970,
+    "ratio": 0,
+    "population": null
+  },
+  {
+    "nation_cd": 260,
+    "data_year": 1990,
+    "ratio": 0,
+    "population": null
+  },
+  {
+    "nation_cd": 260,
+    "data_year": 2010,
+    "ratio": 0,
+    "population": null
+  },
+  {
+    "nation_cd": 260,
+    "data_year": 2018,
+    "ratio": 0,
+    "population": "0"
+  },
+  {
+    "nation_cd": 262,
+    "data_year": 1950,
+    "ratio": 39.8,
+    "population": null
+  },
+  {
+    "nation_cd": 262,
+    "data_year": 1970,
+    "ratio": 61.8,
+    "population": null
+  },
+  {
+    "nation_cd": 262,
+    "data_year": 1990,
+    "ratio": 76,
+    "population": null
+  },
+  {
+    "nation_cd": 262,
+    "data_year": 2010,
+    "ratio": 77,
+    "population": null
+  },
+  {
+    "nation_cd": 262,
+    "data_year": 2018,
+    "ratio": 77.8,
+    "population": "75"
+  },
+  {
+    "nation_cd": 266,
+    "data_year": 1950,
+    "ratio": 11.4,
+    "population": null
+  },
+  {
+    "nation_cd": 266,
+    "data_year": 1970,
+    "ratio": 32,
+    "population": null
+  },
+  {
+    "nation_cd": 266,
+    "data_year": 1990,
+    "ratio": 69.1,
+    "population": null
+  },
+  {
+    "nation_cd": 266,
+    "data_year": 2010,
+    "ratio": 85.5,
+    "population": null
+  },
+  {
+    "nation_cd": 266,
+    "data_year": 2018,
+    "ratio": 89.4,
+    "population": "184"
+  },
+  {
+    "nation_cd": 268,
+    "data_year": 1950,
+    "ratio": 36.9,
+    "population": null
+  },
+  {
+    "nation_cd": 268,
+    "data_year": 1970,
+    "ratio": 48,
+    "population": null
+  },
+  {
+    "nation_cd": 268,
+    "data_year": 1990,
+    "ratio": 55,
+    "population": null
+  },
+  {
+    "nation_cd": 268,
+    "data_year": 2010,
+    "ratio": 55.5,
+    "population": null
+  },
+  {
+    "nation_cd": 268,
+    "data_year": 2018,
+    "ratio": 58.6,
+    "population": "229"
+  },
+  {
+    "nation_cd": 270,
+    "data_year": 1950,
+    "ratio": 10.3,
+    "population": null
+  },
+  {
+    "nation_cd": 270,
+    "data_year": 1970,
+    "ratio": 19.5,
+    "population": null
+  },
+  {
+    "nation_cd": 270,
+    "data_year": 1990,
+    "ratio": 38.3,
+    "population": null
+  },
+  {
+    "nation_cd": 270,
+    "data_year": 2010,
+    "ratio": 55.7,
+    "population": null
+  },
+  {
+    "nation_cd": 270,
+    "data_year": 2018,
+    "ratio": 61.3,
+    "population": "132"
+  },
+  {
+    "nation_cd": 276,
+    "data_year": 1950,
+    "ratio": 67.9,
+    "population": null
+  },
+  {
+    "nation_cd": 276,
+    "data_year": 1970,
+    "ratio": 72.3,
+    "population": null
+  },
+  {
+    "nation_cd": 276,
+    "data_year": 1990,
+    "ratio": 73.1,
+    "population": null
+  },
+  {
+    "nation_cd": 276,
+    "data_year": 2010,
+    "ratio": 77,
+    "population": null
+  },
+  {
+    "nation_cd": 276,
+    "data_year": 2018,
+    "ratio": 77.3,
+    "population": "6362"
+  },
+  {
+    "nation_cd": 288,
+    "data_year": 1950,
+    "ratio": 15.4,
+    "population": null
+  },
+  {
+    "nation_cd": 288,
+    "data_year": 1970,
+    "ratio": 29,
+    "population": null
+  },
+  {
+    "nation_cd": 288,
+    "data_year": 1990,
+    "ratio": 36.4,
+    "population": null
+  },
+  {
+    "nation_cd": 288,
+    "data_year": 2010,
+    "ratio": 50.7,
+    "population": null
+  },
+  {
+    "nation_cd": 288,
+    "data_year": 2018,
+    "ratio": 56.1,
+    "population": "1651"
+  },
+  {
+    "nation_cd": 292,
+    "data_year": 1950,
+    "ratio": 100,
+    "population": null
+  },
+  {
+    "nation_cd": 292,
+    "data_year": 1970,
+    "ratio": 100,
+    "population": null
+  },
+  {
+    "nation_cd": 292,
+    "data_year": 1990,
+    "ratio": 100,
+    "population": null
+  },
+  {
+    "nation_cd": 292,
+    "data_year": 2010,
+    "ratio": 100,
+    "population": null
+  },
+  {
+    "nation_cd": 292,
+    "data_year": 2018,
+    "ratio": 100,
+    "population": "3"
+  },
+  {
+    "nation_cd": 296,
+    "data_year": 1950,
+    "ratio": 11,
+    "population": null
+  },
+  {
+    "nation_cd": 296,
+    "data_year": 1970,
+    "ratio": 24.1,
+    "population": null
+  },
+  {
+    "nation_cd": 296,
+    "data_year": 1990,
+    "ratio": 35,
+    "population": null
+  },
+  {
+    "nation_cd": 296,
+    "data_year": 2010,
+    "ratio": 47.4,
+    "population": null
+  },
+  {
+    "nation_cd": 296,
+    "data_year": 2018,
+    "ratio": 54.1,
+    "population": "6"
+  },
+  {
+    "nation_cd": 300,
+    "data_year": 1950,
+    "ratio": 52.2,
+    "population": null
+  },
+  {
+    "nation_cd": 300,
+    "data_year": 1970,
+    "ratio": 64.2,
+    "population": null
+  },
+  {
+    "nation_cd": 300,
+    "data_year": 1990,
+    "ratio": 71.5,
+    "population": null
+  },
+  {
+    "nation_cd": 300,
+    "data_year": 2010,
+    "ratio": 76.3,
+    "population": null
+  },
+  {
+    "nation_cd": 300,
+    "data_year": 2018,
+    "ratio": 79.1,
+    "population": "880"
+  },
+  {
+    "nation_cd": 304,
+    "data_year": 1950,
+    "ratio": 49,
+    "population": null
+  },
+  {
+    "nation_cd": 304,
+    "data_year": 1970,
+    "ratio": 72.7,
+    "population": null
+  },
+  {
+    "nation_cd": 304,
+    "data_year": 1990,
+    "ratio": 79.7,
+    "population": null
+  },
+  {
+    "nation_cd": 304,
+    "data_year": 2010,
+    "ratio": 84.4,
+    "population": null
+  },
+  {
+    "nation_cd": 304,
+    "data_year": 2018,
+    "ratio": 86.8,
+    "population": "4"
+  },
+  {
+    "nation_cd": 308,
+    "data_year": 1950,
+    "ratio": 28.5,
+    "population": null
+  },
+  {
+    "nation_cd": 308,
+    "data_year": 1970,
+    "ratio": 32.2,
+    "population": null
+  },
+  {
+    "nation_cd": 308,
+    "data_year": 1990,
+    "ratio": 33.4,
+    "population": null
+  },
+  {
+    "nation_cd": 308,
+    "data_year": 2010,
+    "ratio": 35.9,
+    "population": null
+  },
+  {
+    "nation_cd": 308,
+    "data_year": 2018,
+    "ratio": 36.3,
+    "population": "3"
+  },
+  {
+    "nation_cd": 312,
+    "data_year": 1950,
+    "ratio": 35.8,
+    "population": null
+  },
+  {
+    "nation_cd": 312,
+    "data_year": 1970,
+    "ratio": 79.4,
+    "population": null
+  },
+  {
+    "nation_cd": 312,
+    "data_year": 1990,
+    "ratio": 96.4,
+    "population": null
+  },
+  {
+    "nation_cd": 312,
+    "data_year": 2010,
+    "ratio": 98.4,
+    "population": null
+  },
+  {
+    "nation_cd": 312,
+    "data_year": 2018,
+    "ratio": 98.5,
+    "population": "44"
+  },
+  {
+    "nation_cd": 316,
+    "data_year": 1950,
+    "ratio": 41.3,
+    "population": null
+  },
+  {
+    "nation_cd": 316,
+    "data_year": 1970,
+    "ratio": 61.9,
+    "population": null
+  },
+  {
+    "nation_cd": 316,
+    "data_year": 1990,
+    "ratio": 90.8,
+    "population": null
+  },
+  {
+    "nation_cd": 316,
+    "data_year": 2010,
+    "ratio": 94.1,
+    "population": null
+  },
+  {
+    "nation_cd": 316,
+    "data_year": 2018,
+    "ratio": 94.8,
+    "population": "15"
+  },
+  {
+    "nation_cd": 320,
+    "data_year": 1950,
+    "ratio": 25.1,
+    "population": null
+  },
+  {
+    "nation_cd": 320,
+    "data_year": 1970,
+    "ratio": 35.5,
+    "population": null
+  },
+  {
+    "nation_cd": 320,
+    "data_year": 1990,
+    "ratio": 42,
+    "population": null
+  },
+  {
+    "nation_cd": 320,
+    "data_year": 2010,
+    "ratio": 48.4,
+    "population": null
+  },
+  {
+    "nation_cd": 320,
+    "data_year": 2018,
+    "ratio": 51.1,
+    "population": "880"
+  },
+  {
+    "nation_cd": 324,
+    "data_year": 1950,
+    "ratio": 6.7,
+    "population": null
+  },
+  {
+    "nation_cd": 324,
+    "data_year": 1970,
+    "ratio": 16,
+    "population": null
+  },
+  {
+    "nation_cd": 324,
+    "data_year": 1990,
+    "ratio": 28,
+    "population": null
+  },
+  {
+    "nation_cd": 324,
+    "data_year": 2010,
+    "ratio": 33.7,
+    "population": null
+  },
+  {
+    "nation_cd": 324,
+    "data_year": 2018,
+    "ratio": 36.1,
+    "population": "471"
+  },
+  {
+    "nation_cd": 328,
+    "data_year": 1950,
+    "ratio": 28,
+    "population": null
+  },
+  {
+    "nation_cd": 328,
+    "data_year": 1970,
+    "ratio": 29.4,
+    "population": null
+  },
+  {
+    "nation_cd": 328,
+    "data_year": 1990,
+    "ratio": 29.6,
+    "population": null
+  },
+  {
+    "nation_cd": 328,
+    "data_year": 2010,
+    "ratio": 26.6,
+    "population": null
+  },
+  {
+    "nation_cd": 328,
+    "data_year": 2018,
+    "ratio": 26.6,
+    "population": "20"
+  },
+  {
+    "nation_cd": 332,
+    "data_year": 1950,
+    "ratio": 12.2,
+    "population": null
+  },
+  {
+    "nation_cd": 332,
+    "data_year": 1970,
+    "ratio": 19.8,
+    "population": null
+  },
+  {
+    "nation_cd": 332,
+    "data_year": 1990,
+    "ratio": 28.5,
+    "population": null
+  },
+  {
+    "nation_cd": 332,
+    "data_year": 2010,
+    "ratio": 47.5,
+    "population": null
+  },
+  {
+    "nation_cd": 332,
+    "data_year": 2018,
+    "ratio": 55.3,
+    "population": "614"
+  },
+  {
+    "nation_cd": 334,
+    "data_year": 1950,
+    "ratio": 0,
+    "population": null
+  },
+  {
+    "nation_cd": 334,
+    "data_year": 1970,
+    "ratio": 0,
+    "population": null
+  },
+  {
+    "nation_cd": 334,
+    "data_year": 1990,
+    "ratio": 0,
+    "population": null
+  },
+  {
+    "nation_cd": 334,
+    "data_year": 2010,
+    "ratio": 0,
+    "population": null
+  },
+  {
+    "nation_cd": 334,
+    "data_year": 2018,
+    "ratio": 0,
+    "population": "0"
+  },
+  {
+    "nation_cd": 336,
+    "data_year": 1950,
+    "ratio": 100,
+    "population": null
+  },
+  {
+    "nation_cd": 336,
+    "data_year": 1970,
+    "ratio": 100,
+    "population": null
+  },
+  {
+    "nation_cd": 336,
+    "data_year": 1990,
+    "ratio": 100,
+    "population": null
+  },
+  {
+    "nation_cd": 336,
+    "data_year": 2010,
+    "ratio": 100,
+    "population": null
+  },
+  {
+    "nation_cd": 336,
+    "data_year": 2018,
+    "ratio": 100,
+    "population": "0"
+  },
+  {
+    "nation_cd": 340,
+    "data_year": 1950,
+    "ratio": 17.6,
+    "population": null
+  },
+  {
+    "nation_cd": 340,
+    "data_year": 1970,
+    "ratio": 28.9,
+    "population": null
+  },
+  {
+    "nation_cd": 340,
+    "data_year": 1990,
+    "ratio": 40.5,
+    "population": null
+  },
+  {
+    "nation_cd": 340,
+    "data_year": 2010,
+    "ratio": 51.9,
+    "population": null
+  },
+  {
+    "nation_cd": 340,
+    "data_year": 2018,
+    "ratio": 57.1,
+    "population": "537"
+  },
+  {
+    "nation_cd": 348,
+    "data_year": 1950,
+    "ratio": 53,
+    "population": null
+  },
+  {
+    "nation_cd": 348,
+    "data_year": 1970,
+    "ratio": 60.1,
+    "population": null
+  },
+  {
+    "nation_cd": 348,
+    "data_year": 1990,
+    "ratio": 65.8,
+    "population": null
+  },
+  {
+    "nation_cd": 348,
+    "data_year": 2010,
+    "ratio": 68.9,
+    "population": null
+  },
+  {
+    "nation_cd": 348,
+    "data_year": 2018,
+    "ratio": 71.4,
+    "population": "691"
+  },
+  {
+    "nation_cd": 352,
+    "data_year": 1950,
+    "ratio": 72.8,
+    "population": null
+  },
+  {
+    "nation_cd": 352,
+    "data_year": 1970,
+    "ratio": 84.9,
+    "population": null
+  },
+  {
+    "nation_cd": 352,
+    "data_year": 1990,
+    "ratio": 90.8,
+    "population": null
+  },
+  {
+    "nation_cd": 352,
+    "data_year": 2010,
+    "ratio": 93.6,
+    "population": null
+  },
+  {
+    "nation_cd": 352,
+    "data_year": 2018,
+    "ratio": 93.8,
+    "population": "31"
+  },
+  {
+    "nation_cd": 356,
+    "data_year": 1950,
+    "ratio": 17,
+    "population": null
+  },
+  {
+    "nation_cd": 356,
+    "data_year": 1970,
+    "ratio": 19.8,
+    "population": null
+  },
+  {
+    "nation_cd": 356,
+    "data_year": 1990,
+    "ratio": 25.5,
+    "population": null
+  },
+  {
+    "nation_cd": 356,
+    "data_year": 2010,
+    "ratio": 30.9,
+    "population": null
+  },
+  {
+    "nation_cd": 356,
+    "data_year": 2018,
+    "ratio": 34,
+    "population": "46077"
+  },
+  {
+    "nation_cd": 360,
+    "data_year": 1950,
+    "ratio": 12.4,
+    "population": null
+  },
+  {
+    "nation_cd": 360,
+    "data_year": 1970,
+    "ratio": 17.1,
+    "population": null
+  },
+  {
+    "nation_cd": 360,
+    "data_year": 1990,
+    "ratio": 30.6,
+    "population": null
+  },
+  {
+    "nation_cd": 360,
+    "data_year": 2010,
+    "ratio": 49.9,
+    "population": null
+  },
+  {
+    "nation_cd": 360,
+    "data_year": 2018,
+    "ratio": 55.3,
+    "population": "14760"
+  },
+  {
+    "nation_cd": 364,
+    "data_year": 1950,
+    "ratio": 27.5,
+    "population": null
+  },
+  {
+    "nation_cd": 364,
+    "data_year": 1970,
+    "ratio": 41.2,
+    "population": null
+  },
+  {
+    "nation_cd": 364,
+    "data_year": 1990,
+    "ratio": 56.3,
+    "population": null
+  },
+  {
+    "nation_cd": 364,
+    "data_year": 2010,
+    "ratio": 70.6,
+    "population": null
+  },
+  {
+    "nation_cd": 364,
+    "data_year": 2018,
+    "ratio": 74.9,
+    "population": "6142"
+  },
+  {
+    "nation_cd": 368,
+    "data_year": 1950,
+    "ratio": 35.1,
+    "population": null
+  },
+  {
+    "nation_cd": 368,
+    "data_year": 1970,
+    "ratio": 56.2,
+    "population": null
+  },
+  {
+    "nation_cd": 368,
+    "data_year": 1990,
+    "ratio": 69.7,
+    "population": null
+  },
+  {
+    "nation_cd": 368,
+    "data_year": 2010,
+    "ratio": 69.1,
+    "population": null
+  },
+  {
+    "nation_cd": 368,
+    "data_year": 2018,
+    "ratio": 70.5,
+    "population": "2772"
+  },
+  {
+    "nation_cd": 372,
+    "data_year": 1950,
+    "ratio": 40.1,
+    "population": null
+  },
+  {
+    "nation_cd": 372,
+    "data_year": 1970,
+    "ratio": 51.3,
+    "population": null
+  },
+  {
+    "nation_cd": 372,
+    "data_year": 1990,
+    "ratio": 56.9,
+    "population": null
+  },
+  {
+    "nation_cd": 372,
+    "data_year": 2010,
+    "ratio": 61.5,
+    "population": null
+  },
+  {
+    "nation_cd": 372,
+    "data_year": 2018,
+    "ratio": 63.2,
+    "population": "303"
+  },
+  {
+    "nation_cd": 376,
+    "data_year": 1950,
+    "ratio": 71,
+    "population": null
+  },
+  {
+    "nation_cd": 376,
+    "data_year": 1970,
+    "ratio": 84.2,
+    "population": null
+  },
+  {
+    "nation_cd": 376,
+    "data_year": 1990,
+    "ratio": 90.4,
+    "population": null
+  },
+  {
+    "nation_cd": 376,
+    "data_year": 2010,
+    "ratio": 91.8,
+    "population": null
+  },
+  {
+    "nation_cd": 376,
+    "data_year": 2018,
+    "ratio": 92.4,
+    "population": "781"
+  },
+  {
+    "nation_cd": 380,
+    "data_year": 1950,
+    "ratio": 54.1,
+    "population": null
+  },
+  {
+    "nation_cd": 380,
+    "data_year": 1970,
+    "ratio": 64.3,
+    "population": null
+  },
+  {
+    "nation_cd": 380,
+    "data_year": 1990,
+    "ratio": 66.7,
+    "population": null
+  },
+  {
+    "nation_cd": 380,
+    "data_year": 2010,
+    "ratio": 68.3,
+    "population": null
+  },
+  {
+    "nation_cd": 380,
+    "data_year": 2018,
+    "ratio": 70.4,
+    "population": "4176"
+  },
+  {
+    "nation_cd": 384,
+    "data_year": 1950,
+    "ratio": 10,
+    "population": null
+  },
+  {
+    "nation_cd": 384,
+    "data_year": 1970,
+    "ratio": 28.2,
+    "population": null
+  },
+  {
+    "nation_cd": 384,
+    "data_year": 1990,
+    "ratio": 39.3,
+    "population": null
+  },
+  {
+    "nation_cd": 384,
+    "data_year": 2010,
+    "ratio": 47.3,
+    "population": null
+  },
+  {
+    "nation_cd": 384,
+    "data_year": 2018,
+    "ratio": 50.8,
+    "population": "1264"
+  },
+  {
+    "nation_cd": 388,
+    "data_year": 1950,
+    "ratio": 24.1,
+    "population": null
+  },
+  {
+    "nation_cd": 388,
+    "data_year": 1970,
+    "ratio": 41.3,
+    "population": null
+  },
+  {
+    "nation_cd": 388,
+    "data_year": 1990,
+    "ratio": 49.4,
+    "population": null
+  },
+  {
+    "nation_cd": 388,
+    "data_year": 2010,
+    "ratio": 53.7,
+    "population": null
+  },
+  {
+    "nation_cd": 388,
+    "data_year": 2018,
+    "ratio": 55.7,
+    "population": "161"
+  },
+  {
+    "nation_cd": 392,
+    "data_year": 1950,
+    "ratio": 53.4,
+    "population": null
+  },
+  {
+    "nation_cd": 392,
+    "data_year": 1970,
+    "ratio": 71.9,
+    "population": null
+  },
+  {
+    "nation_cd": 392,
+    "data_year": 1990,
+    "ratio": 77.3,
+    "population": null
+  },
+  {
+    "nation_cd": 392,
+    "data_year": 2010,
+    "ratio": 90.8,
+    "population": null
+  },
+  {
+    "nation_cd": 392,
+    "data_year": 2018,
+    "ratio": 91.6,
+    "population": "11652"
+  },
+  {
+    "nation_cd": 398,
+    "data_year": 1950,
+    "ratio": 36.4,
+    "population": null
+  },
+  {
+    "nation_cd": 398,
+    "data_year": 1970,
+    "ratio": 50.2,
+    "population": null
+  },
+  {
+    "nation_cd": 398,
+    "data_year": 1990,
+    "ratio": 56.3,
+    "population": null
+  },
+  {
+    "nation_cd": 398,
+    "data_year": 2010,
+    "ratio": 56.8,
+    "population": null
+  },
+  {
+    "nation_cd": 398,
+    "data_year": 2018,
+    "ratio": 57.4,
+    "population": "1056"
+  },
+  {
+    "nation_cd": 400,
+    "data_year": 1950,
+    "ratio": 37,
+    "population": null
+  },
+  {
+    "nation_cd": 400,
+    "data_year": 1970,
+    "ratio": 56,
+    "population": null
+  },
+  {
+    "nation_cd": 400,
+    "data_year": 1990,
+    "ratio": 73.3,
+    "population": null
+  },
+  {
+    "nation_cd": 400,
+    "data_year": 2010,
+    "ratio": 86.1,
+    "population": null
+  },
+  {
+    "nation_cd": 400,
+    "data_year": 2018,
+    "ratio": 91,
+    "population": "901"
+  },
+  {
+    "nation_cd": 404,
+    "data_year": 1950,
+    "ratio": 5.6,
+    "population": null
+  },
+  {
+    "nation_cd": 404,
+    "data_year": 1970,
+    "ratio": 10.3,
+    "population": null
+  },
+  {
+    "nation_cd": 404,
+    "data_year": 1990,
+    "ratio": 16.7,
+    "population": null
+  },
+  {
+    "nation_cd": 404,
+    "data_year": 2010,
+    "ratio": 23.6,
+    "population": null
+  },
+  {
+    "nation_cd": 404,
+    "data_year": 2018,
+    "ratio": 27,
+    "population": "1377"
+  },
+  {
+    "nation_cd": 408,
+    "data_year": 1950,
+    "ratio": 31,
+    "population": null
+  },
+  {
+    "nation_cd": 408,
+    "data_year": 1970,
+    "ratio": 54.2,
+    "population": null
+  },
+  {
+    "nation_cd": 408,
+    "data_year": 1990,
+    "ratio": 58.4,
+    "population": null
+  },
+  {
+    "nation_cd": 408,
+    "data_year": 2010,
+    "ratio": 60.4,
+    "population": null
+  },
+  {
+    "nation_cd": 408,
+    "data_year": 2018,
+    "ratio": 61.9,
+    "population": "1585"
+  },
+  {
+    "nation_cd": 410,
+    "data_year": 1950,
+    "ratio": 21.4,
+    "population": null
+  },
+  {
+    "nation_cd": 410,
+    "data_year": 1970,
+    "ratio": 40.7,
+    "population": null
+  },
+  {
+    "nation_cd": 410,
+    "data_year": 1990,
+    "ratio": 73.8,
+    "population": null
+  },
+  {
+    "nation_cd": 410,
+    "data_year": 2010,
+    "ratio": 81.9,
+    "population": null
+  },
+  {
+    "nation_cd": 410,
+    "data_year": 2018,
+    "ratio": 81.5,
+    "population": "4167"
+  },
+  {
+    "nation_cd": 414,
+    "data_year": 1950,
+    "ratio": 61.5,
+    "population": null
+  },
+  {
+    "nation_cd": 414,
+    "data_year": 1970,
+    "ratio": 85.7,
+    "population": null
+  },
+  {
+    "nation_cd": 414,
+    "data_year": 1990,
+    "ratio": 98,
+    "population": null
+  },
+  {
+    "nation_cd": 414,
+    "data_year": 2010,
+    "ratio": 100,
+    "population": null
+  },
+  {
+    "nation_cd": 414,
+    "data_year": 2018,
+    "ratio": 100,
+    "population": "419"
+  },
+  {
+    "nation_cd": 417,
+    "data_year": 1950,
+    "ratio": 26.5,
+    "population": null
+  },
+  {
+    "nation_cd": 417,
+    "data_year": 1970,
+    "ratio": 37.5,
+    "population": null
+  },
+  {
+    "nation_cd": 417,
+    "data_year": 1990,
+    "ratio": 37.8,
+    "population": null
+  },
+  {
+    "nation_cd": 417,
+    "data_year": 2010,
+    "ratio": 35.3,
+    "population": null
+  },
+  {
+    "nation_cd": 417,
+    "data_year": 2018,
+    "ratio": 36.4,
+    "population": "222"
+  },
+  {
+    "nation_cd": 418,
+    "data_year": 1950,
+    "ratio": 7.2,
+    "population": null
+  },
+  {
+    "nation_cd": 418,
+    "data_year": 1970,
+    "ratio": 9.6,
+    "population": null
+  },
+  {
+    "nation_cd": 418,
+    "data_year": 1990,
+    "ratio": 15.4,
+    "population": null
+  },
+  {
+    "nation_cd": 418,
+    "data_year": 2010,
+    "ratio": 30.1,
+    "population": null
+  },
+  {
+    "nation_cd": 418,
+    "data_year": 2018,
+    "ratio": 35,
+    "population": "243"
+  },
+  {
+    "nation_cd": 422,
+    "data_year": 1950,
+    "ratio": 32,
+    "population": null
+  },
+  {
+    "nation_cd": 422,
+    "data_year": 1970,
+    "ratio": 59.5,
+    "population": null
+  },
+  {
+    "nation_cd": 422,
+    "data_year": 1990,
+    "ratio": 83.1,
+    "population": null
+  },
+  {
+    "nation_cd": 422,
+    "data_year": 2010,
+    "ratio": 87.3,
+    "population": null
+  },
+  {
+    "nation_cd": 422,
+    "data_year": 2018,
+    "ratio": 88.6,
+    "population": "539"
+  },
+  {
+    "nation_cd": 426,
+    "data_year": 1950,
+    "ratio": 1.8,
+    "population": null
+  },
+  {
+    "nation_cd": 426,
+    "data_year": 1970,
+    "ratio": 8.6,
+    "population": null
+  },
+  {
+    "nation_cd": 426,
+    "data_year": 1990,
+    "ratio": 14,
+    "population": null
+  },
+  {
+    "nation_cd": 426,
+    "data_year": 2010,
+    "ratio": 24.8,
+    "population": null
+  },
+  {
+    "nation_cd": 426,
+    "data_year": 2018,
+    "ratio": 28.2,
+    "population": "63"
+  },
+  {
+    "nation_cd": 428,
+    "data_year": 1950,
+    "ratio": 46.4,
+    "population": null
+  },
+  {
+    "nation_cd": 428,
+    "data_year": 1970,
+    "ratio": 60.7,
+    "population": null
+  },
+  {
+    "nation_cd": 428,
+    "data_year": 1990,
+    "ratio": 69.3,
+    "population": null
+  },
+  {
+    "nation_cd": 428,
+    "data_year": 2010,
+    "ratio": 67.8,
+    "population": null
+  },
+  {
+    "nation_cd": 428,
+    "data_year": 2018,
+    "ratio": 68.1,
+    "population": "131"
+  },
+  {
+    "nation_cd": 430,
+    "data_year": 1950,
+    "ratio": 13,
+    "population": null
+  },
+  {
+    "nation_cd": 430,
+    "data_year": 1970,
+    "ratio": 26,
+    "population": null
+  },
+  {
+    "nation_cd": 430,
+    "data_year": 1990,
+    "ratio": 55.4,
+    "population": null
+  },
+  {
+    "nation_cd": 430,
+    "data_year": 2010,
+    "ratio": 47.8,
+    "population": null
+  },
+  {
+    "nation_cd": 430,
+    "data_year": 2018,
+    "ratio": 51.2,
+    "population": "248"
+  },
+  {
+    "nation_cd": 434,
+    "data_year": 1950,
+    "ratio": 19.5,
+    "population": null
+  },
+  {
+    "nation_cd": 434,
+    "data_year": 1970,
+    "ratio": 49.7,
+    "population": null
+  },
+  {
+    "nation_cd": 434,
+    "data_year": 1990,
+    "ratio": 75.7,
+    "population": null
+  },
+  {
+    "nation_cd": 434,
+    "data_year": 2010,
+    "ratio": 78.1,
+    "population": null
+  },
+  {
+    "nation_cd": 434,
+    "data_year": 2018,
+    "ratio": 80.1,
+    "population": "518"
+  },
+  {
+    "nation_cd": 438,
+    "data_year": 1950,
+    "ratio": 19.9,
+    "population": null
+  },
+  {
+    "nation_cd": 438,
+    "data_year": 1970,
+    "ratio": 18.5,
+    "population": null
+  },
+  {
+    "nation_cd": 438,
+    "data_year": 1990,
+    "ratio": 16.9,
+    "population": null
+  },
+  {
+    "nation_cd": 438,
+    "data_year": 2010,
+    "ratio": 14.5,
+    "population": null
+  },
+  {
+    "nation_cd": 438,
+    "data_year": 2018,
+    "ratio": 14.3,
+    "population": "1"
+  },
+  {
+    "nation_cd": 440,
+    "data_year": 1950,
+    "ratio": 28.8,
+    "population": null
+  },
+  {
+    "nation_cd": 440,
+    "data_year": 1970,
+    "ratio": 49.6,
+    "population": null
+  },
+  {
+    "nation_cd": 440,
+    "data_year": 1990,
+    "ratio": 67.6,
+    "population": null
+  },
+  {
+    "nation_cd": 440,
+    "data_year": 2010,
+    "ratio": 66.8,
+    "population": null
+  },
+  {
+    "nation_cd": 440,
+    "data_year": 2018,
+    "ratio": 67.7,
+    "population": "194"
+  },
+  {
+    "nation_cd": 442,
+    "data_year": 1950,
+    "ratio": 67.2,
+    "population": null
+  },
+  {
+    "nation_cd": 442,
+    "data_year": 1970,
+    "ratio": 74.4,
+    "population": null
+  },
+  {
+    "nation_cd": 442,
+    "data_year": 1990,
+    "ratio": 80.9,
+    "population": null
+  },
+  {
+    "nation_cd": 442,
+    "data_year": 2010,
+    "ratio": 88.5,
+    "population": null
+  },
+  {
+    "nation_cd": 442,
+    "data_year": 2018,
+    "ratio": 91,
+    "population": "53"
+  },
+  {
+    "nation_cd": 450,
+    "data_year": 1950,
+    "ratio": 7.8,
+    "population": null
+  },
+  {
+    "nation_cd": 450,
+    "data_year": 1970,
+    "ratio": 14.1,
+    "population": null
+  },
+  {
+    "nation_cd": 450,
+    "data_year": 1990,
+    "ratio": 23.6,
+    "population": null
+  },
+  {
+    "nation_cd": 450,
+    "data_year": 2010,
+    "ratio": 31.9,
+    "population": null
+  },
+  {
+    "nation_cd": 450,
+    "data_year": 2018,
+    "ratio": 37.2,
+    "population": "976"
+  },
+  {
+    "nation_cd": 454,
+    "data_year": 1950,
+    "ratio": 3.5,
+    "population": null
+  },
+  {
+    "nation_cd": 454,
+    "data_year": 1970,
+    "ratio": 6.1,
+    "population": null
+  },
+  {
+    "nation_cd": 454,
+    "data_year": 1990,
+    "ratio": 11.6,
+    "population": null
+  },
+  {
+    "nation_cd": 454,
+    "data_year": 2010,
+    "ratio": 15.5,
+    "population": null
+  },
+  {
+    "nation_cd": 454,
+    "data_year": 2018,
+    "ratio": 16.9,
+    "population": "324"
+  },
+  {
+    "nation_cd": 458,
+    "data_year": 1950,
+    "ratio": 20.4,
+    "population": null
+  },
+  {
+    "nation_cd": 458,
+    "data_year": 1970,
+    "ratio": 33.5,
+    "population": null
+  },
+  {
+    "nation_cd": 458,
+    "data_year": 1990,
+    "ratio": 49.8,
+    "population": null
+  },
+  {
+    "nation_cd": 458,
+    "data_year": 2010,
+    "ratio": 70.9,
+    "population": null
+  },
+  {
+    "nation_cd": 458,
+    "data_year": 2018,
+    "ratio": 76,
+    "population": "2436"
+  },
+  {
+    "nation_cd": 462,
+    "data_year": 1950,
+    "ratio": 10.6,
+    "population": null
+  },
+  {
+    "nation_cd": 462,
+    "data_year": 1970,
+    "ratio": 11.9,
+    "population": null
+  },
+  {
+    "nation_cd": 462,
+    "data_year": 1990,
+    "ratio": 25.8,
+    "population": null
+  },
+  {
+    "nation_cd": 462,
+    "data_year": 2010,
+    "ratio": 36.4,
+    "population": null
+  },
+  {
+    "nation_cd": 462,
+    "data_year": 2018,
+    "ratio": 39.8,
+    "population": "17"
+  },
+  {
+    "nation_cd": 466,
+    "data_year": 1950,
+    "ratio": 8.5,
+    "population": null
+  },
+  {
+    "nation_cd": 466,
+    "data_year": 1970,
+    "ratio": 14.3,
+    "population": null
+  },
+  {
+    "nation_cd": 466,
+    "data_year": 1990,
+    "ratio": 23.3,
+    "population": null
+  },
+  {
+    "nation_cd": 466,
+    "data_year": 2010,
+    "ratio": 36,
+    "population": null
+  },
+  {
+    "nation_cd": 466,
+    "data_year": 2018,
+    "ratio": 42.4,
+    "population": "809"
+  },
+  {
+    "nation_cd": 470,
+    "data_year": 1950,
+    "ratio": 88.9,
+    "population": null
+  },
+  {
+    "nation_cd": 470,
+    "data_year": 1970,
+    "ratio": 89.7,
+    "population": null
+  },
+  {
+    "nation_cd": 470,
+    "data_year": 1990,
+    "ratio": 90.4,
+    "population": null
+  },
+  {
+    "nation_cd": 470,
+    "data_year": 2010,
+    "ratio": 94.1,
+    "population": null
+  },
+  {
+    "nation_cd": 470,
+    "data_year": 2018,
+    "ratio": 94.6,
+    "population": "40"
+  },
+  {
+    "nation_cd": 474,
+    "data_year": 1950,
+    "ratio": 32.9,
+    "population": null
+  },
+  {
+    "nation_cd": 474,
+    "data_year": 1970,
+    "ratio": 61,
+    "population": null
+  },
+  {
+    "nation_cd": 474,
+    "data_year": 1990,
+    "ratio": 86.3,
+    "population": null
+  },
+  {
+    "nation_cd": 474,
+    "data_year": 2010,
+    "ratio": 89.1,
+    "population": null
+  },
+  {
+    "nation_cd": 474,
+    "data_year": 2018,
+    "ratio": 89,
+    "population": "34"
+  },
+  {
+    "nation_cd": 478,
+    "data_year": 1950,
+    "ratio": 3.1,
+    "population": null
+  },
+  {
+    "nation_cd": 478,
+    "data_year": 1970,
+    "ratio": 14.6,
+    "population": null
+  },
+  {
+    "nation_cd": 478,
+    "data_year": 1990,
+    "ratio": 39.3,
+    "population": null
+  },
+  {
+    "nation_cd": 478,
+    "data_year": 2010,
+    "ratio": 46.6,
+    "population": null
+  },
+  {
+    "nation_cd": 478,
+    "data_year": 2018,
+    "ratio": 53.7,
+    "population": "243"
+  },
+  {
+    "nation_cd": 480,
+    "data_year": 1950,
+    "ratio": 29.3,
+    "population": null
+  },
+  {
+    "nation_cd": 480,
+    "data_year": 1970,
+    "ratio": 42.6,
+    "population": null
+  },
+  {
+    "nation_cd": 480,
+    "data_year": 1990,
+    "ratio": 43.9,
+    "population": null
+  },
+  {
+    "nation_cd": 480,
+    "data_year": 2010,
+    "ratio": 41.6,
+    "population": null
+  },
+  {
+    "nation_cd": 480,
+    "data_year": 2018,
+    "ratio": 40.8,
+    "population": "51"
+  },
+  {
+    "nation_cd": 484,
+    "data_year": 1950,
+    "ratio": 42.7,
+    "population": null
+  },
+  {
+    "nation_cd": 484,
+    "data_year": 1970,
+    "ratio": 59,
+    "population": null
+  },
+  {
+    "nation_cd": 484,
+    "data_year": 1990,
+    "ratio": 71.4,
+    "population": null
+  },
+  {
+    "nation_cd": 484,
+    "data_year": 2010,
+    "ratio": 77.8,
+    "population": null
+  },
+  {
+    "nation_cd": 484,
+    "data_year": 2018,
+    "ratio": 80.2,
+    "population": "10481"
+  },
+  {
+    "nation_cd": 492,
+    "data_year": 1950,
+    "ratio": 100,
+    "population": null
+  },
+  {
+    "nation_cd": 492,
+    "data_year": 1970,
+    "ratio": 100,
+    "population": null
+  },
+  {
+    "nation_cd": 492,
+    "data_year": 1990,
+    "ratio": 100,
+    "population": null
+  },
+  {
+    "nation_cd": 492,
+    "data_year": 2010,
+    "ratio": 100,
+    "population": null
+  },
+  {
+    "nation_cd": 492,
+    "data_year": 2018,
+    "ratio": 100,
+    "population": "3"
+  },
+  {
+    "nation_cd": 496,
+    "data_year": 1950,
+    "ratio": 20,
+    "population": null
+  },
+  {
+    "nation_cd": 496,
+    "data_year": 1970,
+    "ratio": 45.1,
+    "population": null
+  },
+  {
+    "nation_cd": 496,
+    "data_year": 1990,
+    "ratio": 57,
+    "population": null
+  },
+  {
+    "nation_cd": 496,
+    "data_year": 2010,
+    "ratio": 67.6,
+    "population": null
+  },
+  {
+    "nation_cd": 496,
+    "data_year": 2018,
+    "ratio": 68.4,
+    "population": "213"
+  },
+  {
+    "nation_cd": 498,
+    "data_year": 1950,
+    "ratio": 18.5,
+    "population": null
+  },
+  {
+    "nation_cd": 498,
+    "data_year": 1970,
+    "ratio": 32.1,
+    "population": null
+  },
+  {
+    "nation_cd": 498,
+    "data_year": 1990,
+    "ratio": 46.8,
+    "population": null
+  },
+  {
+    "nation_cd": 498,
+    "data_year": 2010,
+    "ratio": 42.6,
+    "population": null
+  },
+  {
+    "nation_cd": 498,
+    "data_year": 2018,
+    "ratio": 42.6,
+    "population": "172"
+  },
+  {
+    "nation_cd": 499,
+    "data_year": 1950,
+    "ratio": 12.7,
+    "population": null
+  },
+  {
+    "nation_cd": 499,
+    "data_year": 1970,
+    "ratio": 26.9,
+    "population": null
+  },
+  {
+    "nation_cd": 499,
+    "data_year": 1990,
+    "ratio": 48,
+    "population": null
+  },
+  {
+    "nation_cd": 499,
+    "data_year": 2010,
+    "ratio": 64.1,
+    "population": null
+  },
+  {
+    "nation_cd": 499,
+    "data_year": 2018,
+    "ratio": 66.8,
+    "population": "42"
+  },
+  {
+    "nation_cd": 500,
+    "data_year": 1950,
+    "ratio": 15.8,
+    "population": null
+  },
+  {
+    "nation_cd": 500,
+    "data_year": 1970,
+    "ratio": 11.4,
+    "population": null
+  },
+  {
+    "nation_cd": 500,
+    "data_year": 1990,
+    "ratio": 12.5,
+    "population": null
+  },
+  {
+    "nation_cd": 500,
+    "data_year": 2010,
+    "ratio": 9.2,
+    "population": null
+  },
+  {
+    "nation_cd": 500,
+    "data_year": 2018,
+    "ratio": 9.1,
+    "population": "0"
+  },
+  {
+    "nation_cd": 504,
+    "data_year": 1950,
+    "ratio": 26.2,
+    "population": null
+  },
+  {
+    "nation_cd": 504,
+    "data_year": 1970,
+    "ratio": 34.5,
+    "population": null
+  },
+  {
+    "nation_cd": 504,
+    "data_year": 1990,
+    "ratio": 48.4,
+    "population": null
+  },
+  {
+    "nation_cd": 504,
+    "data_year": 2010,
+    "ratio": 58,
+    "population": null
+  },
+  {
+    "nation_cd": 504,
+    "data_year": 2018,
+    "ratio": 62.5,
+    "population": "2260"
+  },
+  {
+    "nation_cd": 508,
+    "data_year": 1950,
+    "ratio": 5.5,
+    "population": null
+  },
+  {
+    "nation_cd": 508,
+    "data_year": 1970,
+    "ratio": 9,
+    "population": null
+  },
+  {
+    "nation_cd": 508,
+    "data_year": 1990,
+    "ratio": 25,
+    "population": null
+  },
+  {
+    "nation_cd": 508,
+    "data_year": 2010,
+    "ratio": 31.8,
+    "population": null
+  },
+  {
+    "nation_cd": 508,
+    "data_year": 2018,
+    "ratio": 36,
+    "population": "1098"
+  },
+  {
+    "nation_cd": 512,
+    "data_year": 1950,
+    "ratio": 8.6,
+    "population": null
+  },
+  {
+    "nation_cd": 512,
+    "data_year": 1970,
+    "ratio": 29.7,
+    "population": null
+  },
+  {
+    "nation_cd": 512,
+    "data_year": 1990,
+    "ratio": 66.1,
+    "population": null
+  },
+  {
+    "nation_cd": 512,
+    "data_year": 2010,
+    "ratio": 75.2,
+    "population": null
+  },
+  {
+    "nation_cd": 512,
+    "data_year": 2018,
+    "ratio": 84.5,
+    "population": "408"
+  },
+  {
+    "nation_cd": 516,
+    "data_year": 1950,
+    "ratio": 13.4,
+    "population": null
+  },
+  {
+    "nation_cd": 516,
+    "data_year": 1970,
+    "ratio": 22.3,
+    "population": null
+  },
+  {
+    "nation_cd": 516,
+    "data_year": 1990,
+    "ratio": 27.7,
+    "population": null
+  },
+  {
+    "nation_cd": 516,
+    "data_year": 2010,
+    "ratio": 41.6,
+    "population": null
+  },
+  {
+    "nation_cd": 516,
+    "data_year": 2018,
+    "ratio": 50,
+    "population": "129"
+  },
+  {
+    "nation_cd": 520,
+    "data_year": 1950,
+    "ratio": 100,
+    "population": null
+  },
+  {
+    "nation_cd": 520,
+    "data_year": 1970,
+    "ratio": 100,
+    "population": null
+  },
+  {
+    "nation_cd": 520,
+    "data_year": 1990,
+    "ratio": 100,
+    "population": null
+  },
+  {
+    "nation_cd": 520,
+    "data_year": 2010,
+    "ratio": 100,
+    "population": null
+  },
+  {
+    "nation_cd": 520,
+    "data_year": 2018,
+    "ratio": 100,
+    "population": "1"
+  },
+  {
+    "nation_cd": 524,
+    "data_year": 1950,
+    "ratio": 2.7,
+    "population": null
+  },
+  {
+    "nation_cd": 524,
+    "data_year": 1970,
+    "ratio": 4,
+    "population": null
+  },
+  {
+    "nation_cd": 524,
+    "data_year": 1990,
+    "ratio": 8.9,
+    "population": null
+  },
+  {
+    "nation_cd": 524,
+    "data_year": 2010,
+    "ratio": 16.8,
+    "population": null
+  },
+  {
+    "nation_cd": 524,
+    "data_year": 2018,
+    "ratio": 19.7,
+    "population": "584"
+  },
+  {
+    "nation_cd": 528,
+    "data_year": 1950,
+    "ratio": 56.1,
+    "population": null
+  },
+  {
+    "nation_cd": 528,
+    "data_year": 1970,
+    "ratio": 61.7,
+    "population": null
+  },
+  {
+    "nation_cd": 528,
+    "data_year": 1990,
+    "ratio": 68.7,
+    "population": null
+  },
+  {
+    "nation_cd": 528,
+    "data_year": 2010,
+    "ratio": 87.1,
+    "population": null
+  },
+  {
+    "nation_cd": 528,
+    "data_year": 2018,
+    "ratio": 91.5,
+    "population": "1563"
+  },
+  {
+    "nation_cd": 531,
+    "data_year": 1950,
+    "ratio": 70.6,
+    "population": null
+  },
+  {
+    "nation_cd": 531,
+    "data_year": 1970,
+    "ratio": 78.4,
+    "population": null
+  },
+  {
+    "nation_cd": 531,
+    "data_year": 1990,
+    "ratio": 84.7,
+    "population": null
+  },
+  {
+    "nation_cd": 531,
+    "data_year": 2010,
+    "ratio": 89.9,
+    "population": null
+  },
+  {
+    "nation_cd": 531,
+    "data_year": 2018,
+    "ratio": 89.1,
+    "population": "14"
+  },
+  {
+    "nation_cd": 533,
+    "data_year": 1950,
+    "ratio": 50.9,
+    "population": null
+  },
+  {
+    "nation_cd": 533,
+    "data_year": 1970,
+    "ratio": 50.6,
+    "population": null
+  },
+  {
+    "nation_cd": 533,
+    "data_year": 1990,
+    "ratio": 50.3,
+    "population": null
+  },
+  {
+    "nation_cd": 533,
+    "data_year": 2010,
+    "ratio": 43.1,
+    "population": null
+  },
+  {
+    "nation_cd": 533,
+    "data_year": 2018,
+    "ratio": 43.4,
+    "population": "4"
+  },
+  {
+    "nation_cd": 534,
+    "data_year": 1950,
+    "ratio": 100,
+    "population": null
+  },
+  {
+    "nation_cd": 534,
+    "data_year": 1970,
+    "ratio": 100,
+    "population": null
+  },
+  {
+    "nation_cd": 534,
+    "data_year": 1990,
+    "ratio": 100,
+    "population": null
+  },
+  {
+    "nation_cd": 534,
+    "data_year": 2010,
+    "ratio": 100,
+    "population": null
+  },
+  {
+    "nation_cd": 534,
+    "data_year": 2018,
+    "ratio": 100,
+    "population": "4"
+  },
+  {
+    "nation_cd": 535,
+    "data_year": 1950,
+    "ratio": 70.8,
+    "population": null
+  },
+  {
+    "nation_cd": 535,
+    "data_year": 1970,
+    "ratio": 77.5,
+    "population": null
+  },
+  {
+    "nation_cd": 535,
+    "data_year": 1990,
+    "ratio": 77.7,
+    "population": null
+  },
+  {
+    "nation_cd": 535,
+    "data_year": 2010,
+    "ratio": 74.7,
+    "population": null
+  },
+  {
+    "nation_cd": 535,
+    "data_year": 2018,
+    "ratio": 74.9,
+    "population": "1"
+  },
+  {
+    "nation_cd": 540,
+    "data_year": 1950,
+    "ratio": 24.6,
+    "population": null
+  },
+  {
+    "nation_cd": 540,
+    "data_year": 1970,
+    "ratio": 51.2,
+    "population": null
+  },
+  {
+    "nation_cd": 540,
+    "data_year": 1990,
+    "ratio": 59.6,
+    "population": null
+  },
+  {
+    "nation_cd": 540,
+    "data_year": 2010,
+    "ratio": 67.1,
+    "population": null
+  },
+  {
+    "nation_cd": 540,
+    "data_year": 2018,
+    "ratio": 70.7,
+    "population": "19"
+  },
+  {
+    "nation_cd": 548,
+    "data_year": 1950,
+    "ratio": 8.8,
+    "population": null
+  },
+  {
+    "nation_cd": 548,
+    "data_year": 1970,
+    "ratio": 12.3,
+    "population": null
+  },
+  {
+    "nation_cd": 548,
+    "data_year": 1990,
+    "ratio": 18.7,
+    "population": null
+  },
+  {
+    "nation_cd": 548,
+    "data_year": 2010,
+    "ratio": 24.5,
+    "population": null
+  },
+  {
+    "nation_cd": 548,
+    "data_year": 2018,
+    "ratio": 25.3,
+    "population": "7"
+  },
+  {
+    "nation_cd": 554,
+    "data_year": 1950,
+    "ratio": 72.5,
+    "population": null
+  },
+  {
+    "nation_cd": 554,
+    "data_year": 1970,
+    "ratio": 81.1,
+    "population": null
+  },
+  {
+    "nation_cd": 554,
+    "data_year": 1990,
+    "ratio": 84.7,
+    "population": null
+  },
+  {
+    "nation_cd": 554,
+    "data_year": 2010,
+    "ratio": 86.2,
+    "population": null
+  },
+  {
+    "nation_cd": 554,
+    "data_year": 2018,
+    "ratio": 86.5,
+    "population": "411"
+  },
+  {
+    "nation_cd": 558,
+    "data_year": 1950,
+    "ratio": 35.2,
+    "population": null
+  },
+  {
+    "nation_cd": 558,
+    "data_year": 1970,
+    "ratio": 47,
+    "population": null
+  },
+  {
+    "nation_cd": 558,
+    "data_year": 1990,
+    "ratio": 53.1,
+    "population": null
+  },
+  {
+    "nation_cd": 558,
+    "data_year": 2010,
+    "ratio": 56.9,
+    "population": null
+  },
+  {
+    "nation_cd": 558,
+    "data_year": 2018,
+    "ratio": 58.5,
+    "population": "367"
+  },
+  {
+    "nation_cd": 562,
+    "data_year": 1950,
+    "ratio": 4.9,
+    "population": null
+  },
+  {
+    "nation_cd": 562,
+    "data_year": 1970,
+    "ratio": 8.8,
+    "population": null
+  },
+  {
+    "nation_cd": 562,
+    "data_year": 1990,
+    "ratio": 15.4,
+    "population": null
+  },
+  {
+    "nation_cd": 562,
+    "data_year": 2010,
+    "ratio": 16.2,
+    "population": null
+  },
+  {
+    "nation_cd": 562,
+    "data_year": 2018,
+    "ratio": 16.4,
+    "population": "366"
+  },
+  {
+    "nation_cd": 566,
+    "data_year": 1950,
+    "ratio": 9.4,
+    "population": null
+  },
+  {
+    "nation_cd": 566,
+    "data_year": 1970,
+    "ratio": 17.8,
+    "population": null
+  },
+  {
+    "nation_cd": 566,
+    "data_year": 1990,
+    "ratio": 29.7,
+    "population": null
+  },
+  {
+    "nation_cd": 566,
+    "data_year": 2010,
+    "ratio": 43.5,
+    "population": null
+  },
+  {
+    "nation_cd": 566,
+    "data_year": 2018,
+    "ratio": 50.3,
+    "population": "9861"
+  },
+  {
+    "nation_cd": 570,
+    "data_year": 1950,
+    "ratio": 21.5,
+    "population": null
+  },
+  {
+    "nation_cd": 570,
+    "data_year": 1970,
+    "ratio": 21.1,
+    "population": null
+  },
+  {
+    "nation_cd": 570,
+    "data_year": 1990,
+    "ratio": 30.9,
+    "population": null
+  },
+  {
+    "nation_cd": 570,
+    "data_year": 2010,
+    "ratio": 38.7,
+    "population": null
+  },
+  {
+    "nation_cd": 570,
+    "data_year": 2018,
+    "ratio": 44.8,
+    "population": "0"
+  },
+  {
+    "nation_cd": 574,
+    "data_year": 1950,
+    "ratio": 77,
+    "population": null
+  },
+  {
+    "nation_cd": 574,
+    "data_year": 1970,
+    "ratio": 84,
+    "population": null
+  },
+  {
+    "nation_cd": 574,
+    "data_year": 1990,
+    "ratio": 85.4,
+    "population": null
+  },
+  {
+    "nation_cd": 574,
+    "data_year": 2010,
+    "ratio": 85.2,
+    "population": null
+  },
+  {
+    "nation_cd": 574,
+    "data_year": 2018,
+    "ratio": 86,
+    "population": "2130"
+  },
+  {
+    "nation_cd": 578,
+    "data_year": 1950,
+    "ratio": 50.5,
+    "population": null
+  },
+  {
+    "nation_cd": 578,
+    "data_year": 1970,
+    "ratio": 65.4,
+    "population": null
+  },
+  {
+    "nation_cd": 578,
+    "data_year": 1990,
+    "ratio": 72,
+    "population": null
+  },
+  {
+    "nation_cd": 578,
+    "data_year": 2010,
+    "ratio": 79.1,
+    "population": null
+  },
+  {
+    "nation_cd": 578,
+    "data_year": 2018,
+    "ratio": 82.2,
+    "population": "440"
+  },
+  {
+    "nation_cd": 580,
+    "data_year": 1950,
+    "ratio": 42,
+    "population": null
+  },
+  {
+    "nation_cd": 580,
+    "data_year": 1970,
+    "ratio": 70.1,
+    "population": null
+  },
+  {
+    "nation_cd": 580,
+    "data_year": 1990,
+    "ratio": 89.7,
+    "population": null
+  },
+  {
+    "nation_cd": 580,
+    "data_year": 2010,
+    "ratio": 90.9,
+    "population": null
+  },
+  {
+    "nation_cd": 580,
+    "data_year": 2018,
+    "ratio": 91.6,
+    "population": "5"
+  },
+  {
+    "nation_cd": 581,
+    "data_year": 1950,
+    "ratio": 0,
+    "population": null
+  },
+  {
+    "nation_cd": 581,
+    "data_year": 1970,
+    "ratio": 0,
+    "population": null
+  },
+  {
+    "nation_cd": 581,
+    "data_year": 1990,
+    "ratio": 0,
+    "population": null
+  },
+  {
+    "nation_cd": 581,
+    "data_year": 2010,
+    "ratio": 0,
+    "population": null
+  },
+  {
+    "nation_cd": 581,
+    "data_year": 2018,
+    "ratio": 0,
+    "population": "0"
+  },
+  {
+    "nation_cd": 583,
+    "data_year": 1950,
+    "ratio": 20,
+    "population": null
+  },
+  {
+    "nation_cd": 583,
+    "data_year": 1970,
+    "ratio": 24.8,
+    "population": null
+  },
+  {
+    "nation_cd": 583,
+    "data_year": 1990,
+    "ratio": 25.8,
+    "population": null
+  },
+  {
+    "nation_cd": 583,
+    "data_year": 2010,
+    "ratio": 22.3,
+    "population": null
+  },
+  {
+    "nation_cd": 583,
+    "data_year": 2018,
+    "ratio": 22.7,
+    "population": "2"
+  },
+  {
+    "nation_cd": 584,
+    "data_year": 1950,
+    "ratio": 23.3,
+    "population": null
+  },
+  {
+    "nation_cd": 584,
+    "data_year": 1970,
+    "ratio": 53.5,
+    "population": null
+  },
+  {
+    "nation_cd": 584,
+    "data_year": 1990,
+    "ratio": 65.1,
+    "population": null
+  },
+  {
+    "nation_cd": 584,
+    "data_year": 2010,
+    "ratio": 73.6,
+    "population": null
+  },
+  {
+    "nation_cd": 584,
+    "data_year": 2018,
+    "ratio": 77,
+    "population": "4"
+  },
+  {
+    "nation_cd": 585,
+    "data_year": 1950,
+    "ratio": 53.9,
+    "population": null
+  },
+  {
+    "nation_cd": 585,
+    "data_year": 1970,
+    "ratio": 59.7,
+    "population": null
+  },
+  {
+    "nation_cd": 585,
+    "data_year": 1990,
+    "ratio": 69.6,
+    "population": null
+  },
+  {
+    "nation_cd": 585,
+    "data_year": 2010,
+    "ratio": 74.8,
+    "population": null
+  },
+  {
+    "nation_cd": 585,
+    "data_year": 2018,
+    "ratio": 79.9,
+    "population": "1"
+  },
+  {
+    "nation_cd": 586,
+    "data_year": 1950,
+    "ratio": 17.5,
+    "population": null
+  },
+  {
+    "nation_cd": 586,
+    "data_year": 1970,
+    "ratio": 24.8,
+    "population": null
+  },
+  {
+    "nation_cd": 586,
+    "data_year": 1990,
+    "ratio": 30.6,
+    "population": null
+  },
+  {
+    "nation_cd": 586,
+    "data_year": 2010,
+    "ratio": 35,
+    "population": null
+  },
+  {
+    "nation_cd": 586,
+    "data_year": 2018,
+    "ratio": 36.7,
+    "population": "7363"
+  },
+  {
+    "nation_cd": 591,
+    "data_year": 1950,
+    "ratio": 35.8,
+    "population": null
+  },
+  {
+    "nation_cd": 591,
+    "data_year": 1970,
+    "ratio": 47.6,
+    "population": null
+  },
+  {
+    "nation_cd": 591,
+    "data_year": 1990,
+    "ratio": 53.9,
+    "population": null
+  },
+  {
+    "nation_cd": 591,
+    "data_year": 2010,
+    "ratio": 65.1,
+    "population": null
+  },
+  {
+    "nation_cd": 591,
+    "data_year": 2018,
+    "ratio": 67.7,
+    "population": "281"
+  },
+  {
+    "nation_cd": 598,
+    "data_year": 1950,
+    "ratio": 1.7,
+    "population": null
+  },
+  {
+    "nation_cd": 598,
+    "data_year": 1970,
+    "ratio": 9.8,
+    "population": null
+  },
+  {
+    "nation_cd": 598,
+    "data_year": 1990,
+    "ratio": 15,
+    "population": null
+  },
+  {
+    "nation_cd": 598,
+    "data_year": 2010,
+    "ratio": 13,
+    "population": null
+  },
+  {
+    "nation_cd": 598,
+    "data_year": 2018,
+    "ratio": 13.2,
+    "population": "110"
+  },
+  {
+    "nation_cd": 600,
+    "data_year": 1950,
+    "ratio": 34.6,
+    "population": null
+  },
+  {
+    "nation_cd": 600,
+    "data_year": 1970,
+    "ratio": 37.1,
+    "population": null
+  },
+  {
+    "nation_cd": 600,
+    "data_year": 1990,
+    "ratio": 48.7,
+    "population": null
+  },
+  {
+    "nation_cd": 600,
+    "data_year": 2010,
+    "ratio": 59.3,
+    "population": null
+  },
+  {
+    "nation_cd": 600,
+    "data_year": 2018,
+    "ratio": 61.6,
+    "population": "424"
+  },
+  {
+    "nation_cd": 604,
+    "data_year": 1950,
+    "ratio": 41,
+    "population": null
+  },
+  {
+    "nation_cd": 604,
+    "data_year": 1970,
+    "ratio": 57.4,
+    "population": null
+  },
+  {
+    "nation_cd": 604,
+    "data_year": 1990,
+    "ratio": 68.9,
+    "population": null
+  },
+  {
+    "nation_cd": 604,
+    "data_year": 2010,
+    "ratio": 76.4,
+    "population": null
+  },
+  {
+    "nation_cd": 604,
+    "data_year": 2018,
+    "ratio": 77.9,
+    "population": "2536"
+  },
+  {
+    "nation_cd": 608,
+    "data_year": 1950,
+    "ratio": 27.1,
+    "population": null
+  },
+  {
+    "nation_cd": 608,
+    "data_year": 1970,
+    "ratio": 33,
+    "population": null
+  },
+  {
+    "nation_cd": 608,
+    "data_year": 1990,
+    "ratio": 47,
+    "population": null
+  },
+  {
+    "nation_cd": 608,
+    "data_year": 2010,
+    "ratio": 45.3,
+    "population": null
+  },
+  {
+    "nation_cd": 608,
+    "data_year": 2018,
+    "ratio": 46.9,
+    "population": "4996"
+  },
+  {
+    "nation_cd": 612,
+    "data_year": 1950,
+    "ratio": 0,
+    "population": null
+  },
+  {
+    "nation_cd": 612,
+    "data_year": 1970,
+    "ratio": 0,
+    "population": null
+  },
+  {
+    "nation_cd": 612,
+    "data_year": 1990,
+    "ratio": 0,
+    "population": null
+  },
+  {
+    "nation_cd": 612,
+    "data_year": 2010,
+    "ratio": 0,
+    "population": null
+  },
+  {
+    "nation_cd": 612,
+    "data_year": 2018,
+    "ratio": 0,
+    "population": "0"
+  },
+  {
+    "nation_cd": 616,
+    "data_year": 1950,
+    "ratio": 38.3,
+    "population": null
+  },
+  {
+    "nation_cd": 616,
+    "data_year": 1970,
+    "ratio": 52.1,
+    "population": null
+  },
+  {
+    "nation_cd": 616,
+    "data_year": 1990,
+    "ratio": 61.3,
+    "population": null
+  },
+  {
+    "nation_cd": 616,
+    "data_year": 2010,
+    "ratio": 60.9,
+    "population": null
+  },
+  {
+    "nation_cd": 616,
+    "data_year": 2018,
+    "ratio": 60.1,
+    "population": "2288"
+  },
+  {
+    "nation_cd": 620,
+    "data_year": 1950,
+    "ratio": 31.2,
+    "population": null
+  },
+  {
+    "nation_cd": 620,
+    "data_year": 1970,
+    "ratio": 38.8,
+    "population": null
+  },
+  {
+    "nation_cd": 620,
+    "data_year": 1990,
+    "ratio": 47.9,
+    "population": null
+  },
+  {
+    "nation_cd": 620,
+    "data_year": 2010,
+    "ratio": 60.6,
+    "population": null
+  },
+  {
+    "nation_cd": 620,
+    "data_year": 2018,
+    "ratio": 65.2,
+    "population": "671"
+  },
+  {
+    "nation_cd": 624,
+    "data_year": 1950,
+    "ratio": 10,
+    "population": null
+  },
+  {
+    "nation_cd": 624,
+    "data_year": 1970,
+    "ratio": 15.1,
+    "population": null
+  },
+  {
+    "nation_cd": 624,
+    "data_year": 1990,
+    "ratio": 30.8,
+    "population": null
+  },
+  {
+    "nation_cd": 624,
+    "data_year": 2010,
+    "ratio": 40.1,
+    "population": null
+  },
+  {
+    "nation_cd": 624,
+    "data_year": 2018,
+    "ratio": 43.4,
+    "population": "82"
+  },
+  {
+    "nation_cd": 626,
+    "data_year": 1950,
+    "ratio": 9.9,
+    "population": null
+  },
+  {
+    "nation_cd": 626,
+    "data_year": 1970,
+    "ratio": 12.9,
+    "population": null
+  },
+  {
+    "nation_cd": 626,
+    "data_year": 1990,
+    "ratio": 20.8,
+    "population": null
+  },
+  {
+    "nation_cd": 626,
+    "data_year": 2010,
+    "ratio": 27.7,
+    "population": null
+  },
+  {
+    "nation_cd": 626,
+    "data_year": 2018,
+    "ratio": 30.6,
+    "population": "40"
+  },
+  {
+    "nation_cd": 630,
+    "data_year": 1950,
+    "ratio": 40.6,
+    "population": null
+  },
+  {
+    "nation_cd": 630,
+    "data_year": 1970,
+    "ratio": 58.3,
+    "population": null
+  },
+  {
+    "nation_cd": 630,
+    "data_year": 1990,
+    "ratio": 92.9,
+    "population": null
+  },
+  {
+    "nation_cd": 630,
+    "data_year": 2010,
+    "ratio": 93.8,
+    "population": null
+  },
+  {
+    "nation_cd": 630,
+    "data_year": 2018,
+    "ratio": 93.6,
+    "population": "342"
+  },
+  {
+    "nation_cd": 634,
+    "data_year": 1950,
+    "ratio": 80.5,
+    "population": null
+  },
+  {
+    "nation_cd": 634,
+    "data_year": 1970,
+    "ratio": 88.4,
+    "population": null
+  },
+  {
+    "nation_cd": 634,
+    "data_year": 1990,
+    "ratio": 92.8,
+    "population": null
+  },
+  {
+    "nation_cd": 634,
+    "data_year": 2010,
+    "ratio": 98.5,
+    "population": null
+  },
+  {
+    "nation_cd": 634,
+    "data_year": 2018,
+    "ratio": 99.1,
+    "population": "267"
+  },
+  {
+    "nation_cd": 638,
+    "data_year": 1950,
+    "ratio": 23.5,
+    "population": null
+  },
+  {
+    "nation_cd": 638,
+    "data_year": 1970,
+    "ratio": 41.7,
+    "population": null
+  },
+  {
+    "nation_cd": 638,
+    "data_year": 1990,
+    "ratio": 81.2,
+    "population": null
+  },
+  {
+    "nation_cd": 638,
+    "data_year": 2010,
+    "ratio": 98.5,
+    "population": null
+  },
+  {
+    "nation_cd": 638,
+    "data_year": 2018,
+    "ratio": 99.6,
+    "population": "87"
+  },
+  {
+    "nation_cd": 642,
+    "data_year": 1950,
+    "ratio": 25.6,
+    "population": null
+  },
+  {
+    "nation_cd": 642,
+    "data_year": 1970,
+    "ratio": 40.3,
+    "population": null
+  },
+  {
+    "nation_cd": 642,
+    "data_year": 1990,
+    "ratio": 53.2,
+    "population": null
+  },
+  {
+    "nation_cd": 642,
+    "data_year": 2010,
+    "ratio": 53.8,
+    "population": null
+  },
+  {
+    "nation_cd": 642,
+    "data_year": 2018,
+    "ratio": 54,
+    "population": "1057"
+  },
+  {
+    "nation_cd": 643,
+    "data_year": 1950,
+    "ratio": 44.1,
+    "population": null
+  },
+  {
+    "nation_cd": 643,
+    "data_year": 1970,
+    "ratio": 62.5,
+    "population": null
+  },
+  {
+    "nation_cd": 643,
+    "data_year": 1990,
+    "ratio": 73.4,
+    "population": null
+  },
+  {
+    "nation_cd": 643,
+    "data_year": 2010,
+    "ratio": 73.7,
+    "population": null
+  },
+  {
+    "nation_cd": 643,
+    "data_year": 2018,
+    "ratio": 74.4,
+    "population": "10715"
+  },
+  {
+    "nation_cd": 646,
+    "data_year": 1950,
+    "ratio": 2.1,
+    "population": null
+  },
+  {
+    "nation_cd": 646,
+    "data_year": 1970,
+    "ratio": 3.2,
+    "population": null
+  },
+  {
+    "nation_cd": 646,
+    "data_year": 1990,
+    "ratio": 5.4,
+    "population": null
+  },
+  {
+    "nation_cd": 646,
+    "data_year": 2010,
+    "ratio": 16.9,
+    "population": null
+  },
+  {
+    "nation_cd": 646,
+    "data_year": 2018,
+    "ratio": 17.2,
+    "population": "215"
+  },
+  {
+    "nation_cd": 652,
+    "data_year": 1950,
+    "ratio": 0,
+    "population": null
+  },
+  {
+    "nation_cd": 652,
+    "data_year": 1970,
+    "ratio": 0,
+    "population": null
+  },
+  {
+    "nation_cd": 652,
+    "data_year": 1990,
+    "ratio": 0,
+    "population": null
+  },
+  {
+    "nation_cd": 652,
+    "data_year": 2010,
+    "ratio": 0,
+    "population": null
+  },
+  {
+    "nation_cd": 652,
+    "data_year": 2018,
+    "ratio": 0,
+    "population": "0"
+  },
+  {
+    "nation_cd": 654,
+    "data_year": 1950,
+    "ratio": 51.4,
+    "population": null
+  },
+  {
+    "nation_cd": 654,
+    "data_year": 1970,
+    "ratio": 46.4,
+    "population": null
+  },
+  {
+    "nation_cd": 654,
+    "data_year": 1990,
+    "ratio": 42.6,
+    "population": null
+  },
+  {
+    "nation_cd": 654,
+    "data_year": 2010,
+    "ratio": 39.5,
+    "population": null
+  },
+  {
+    "nation_cd": 654,
+    "data_year": 2018,
+    "ratio": 39.8,
+    "population": "0"
+  },
+  {
+    "nation_cd": 659,
+    "data_year": 1950,
+    "ratio": 26.5,
+    "population": null
+  },
+  {
+    "nation_cd": 659,
+    "data_year": 1970,
+    "ratio": 34.1,
+    "population": null
+  },
+  {
+    "nation_cd": 659,
+    "data_year": 1990,
+    "ratio": 34.6,
+    "population": null
+  },
+  {
+    "nation_cd": 659,
+    "data_year": 2010,
+    "ratio": 31.3,
+    "population": null
+  },
+  {
+    "nation_cd": 659,
+    "data_year": 2018,
+    "ratio": 30.8,
+    "population": "1"
+  },
+  {
+    "nation_cd": 660,
+    "data_year": 1950,
+    "ratio": 100,
+    "population": null
+  },
+  {
+    "nation_cd": 660,
+    "data_year": 1970,
+    "ratio": 100,
+    "population": null
+  },
+  {
+    "nation_cd": 660,
+    "data_year": 1990,
+    "ratio": 100,
+    "population": null
+  },
+  {
+    "nation_cd": 660,
+    "data_year": 2010,
+    "ratio": 100,
+    "population": null
+  },
+  {
+    "nation_cd": 660,
+    "data_year": 2018,
+    "ratio": 100,
+    "population": "1"
+  },
+  {
+    "nation_cd": 662,
+    "data_year": 1950,
+    "ratio": 19.2,
+    "population": null
+  },
+  {
+    "nation_cd": 662,
+    "data_year": 1970,
+    "ratio": 23.9,
+    "population": null
+  },
+  {
+    "nation_cd": 662,
+    "data_year": 1990,
+    "ratio": 29.3,
+    "population": null
+  },
+  {
+    "nation_cd": 662,
+    "data_year": 2010,
+    "ratio": 18.5,
+    "population": null
+  },
+  {
+    "nation_cd": 662,
+    "data_year": 2018,
+    "ratio": 18.7,
+    "population": "3"
+  },
+  {
+    "nation_cd": 663,
+    "data_year": 1950,
+    "ratio": 0,
+    "population": null
+  },
+  {
+    "nation_cd": 663,
+    "data_year": 1970,
+    "ratio": 0,
+    "population": null
+  },
+  {
+    "nation_cd": 663,
+    "data_year": 1990,
+    "ratio": 0,
+    "population": null
+  },
+  {
+    "nation_cd": 663,
+    "data_year": 2010,
+    "ratio": 0,
+    "population": null
+  },
+  {
+    "nation_cd": 663,
+    "data_year": 2018,
+    "ratio": 0,
+    "population": "0"
+  },
+  {
+    "nation_cd": 666,
+    "data_year": 1950,
+    "ratio": 80,
+    "population": null
+  },
+  {
+    "nation_cd": 666,
+    "data_year": 1970,
+    "ratio": 88.4,
+    "population": null
+  },
+  {
+    "nation_cd": 666,
+    "data_year": 1990,
+    "ratio": 88.9,
+    "population": null
+  },
+  {
+    "nation_cd": 666,
+    "data_year": 2010,
+    "ratio": 89.9,
+    "population": null
+  },
+  {
+    "nation_cd": 666,
+    "data_year": 2018,
+    "ratio": 90.2,
+    "population": "1"
+  },
+  {
+    "nation_cd": 670,
+    "data_year": 1950,
+    "ratio": 21.7,
+    "population": null
+  },
+  {
+    "nation_cd": 670,
+    "data_year": 1970,
+    "ratio": 30.7,
+    "population": null
+  },
+  {
+    "nation_cd": 670,
+    "data_year": 1990,
+    "ratio": 41.4,
+    "population": null
+  },
+  {
+    "nation_cd": 670,
+    "data_year": 2010,
+    "ratio": 49,
+    "population": null
+  },
+  {
+    "nation_cd": 670,
+    "data_year": 2018,
+    "ratio": 52.2,
+    "population": "5"
+  },
+  {
+    "nation_cd": 674,
+    "data_year": 1950,
+    "ratio": 43.2,
+    "population": null
+  },
+  {
+    "nation_cd": 674,
+    "data_year": 1970,
+    "ratio": 59.8,
+    "population": null
+  },
+  {
+    "nation_cd": 674,
+    "data_year": 1990,
+    "ratio": 90.4,
+    "population": null
+  },
+  {
+    "nation_cd": 674,
+    "data_year": 2010,
+    "ratio": 95.7,
+    "population": null
+  },
+  {
+    "nation_cd": 674,
+    "data_year": 2018,
+    "ratio": 97.2,
+    "population": "3"
+  },
+  {
+    "nation_cd": 678,
+    "data_year": 1950,
+    "ratio": 13.5,
+    "population": null
+  },
+  {
+    "nation_cd": 678,
+    "data_year": 1970,
+    "ratio": 29.5,
+    "population": null
+  },
+  {
+    "nation_cd": 678,
+    "data_year": 1990,
+    "ratio": 43.6,
+    "population": null
+  },
+  {
+    "nation_cd": 678,
+    "data_year": 2010,
+    "ratio": 65,
+    "population": null
+  },
+  {
+    "nation_cd": 678,
+    "data_year": 2018,
+    "ratio": 72.8,
+    "population": "15"
+  },
+  {
+    "nation_cd": 682,
+    "data_year": 1950,
+    "ratio": 21.3,
+    "population": null
+  },
+  {
+    "nation_cd": 682,
+    "data_year": 1970,
+    "ratio": 48.7,
+    "population": null
+  },
+  {
+    "nation_cd": 682,
+    "data_year": 1990,
+    "ratio": 76.6,
+    "population": null
+  },
+  {
+    "nation_cd": 682,
+    "data_year": 2010,
+    "ratio": 82.1,
+    "population": null
+  },
+  {
+    "nation_cd": 682,
+    "data_year": 2018,
+    "ratio": 83.8,
+    "population": "2813"
+  },
+  {
+    "nation_cd": 686,
+    "data_year": 1950,
+    "ratio": 17.2,
+    "population": null
+  },
+  {
+    "nation_cd": 686,
+    "data_year": 1970,
+    "ratio": 30,
+    "population": null
+  },
+  {
+    "nation_cd": 686,
+    "data_year": 1990,
+    "ratio": 38.9,
+    "population": null
+  },
+  {
+    "nation_cd": 686,
+    "data_year": 2010,
+    "ratio": 43.8,
+    "population": null
+  },
+  {
+    "nation_cd": 686,
+    "data_year": 2018,
+    "ratio": 47.2,
+    "population": "768"
+  },
+  {
+    "nation_cd": 688,
+    "data_year": 1950,
+    "ratio": 20.3,
+    "population": null
+  },
+  {
+    "nation_cd": 688,
+    "data_year": 1970,
+    "ratio": 39.7,
+    "population": null
+  },
+  {
+    "nation_cd": 688,
+    "data_year": 1990,
+    "ratio": 50.4,
+    "population": null
+  },
+  {
+    "nation_cd": 688,
+    "data_year": 2010,
+    "ratio": 55,
+    "population": null
+  },
+  {
+    "nation_cd": 688,
+    "data_year": 2018,
+    "ratio": 56.1,
+    "population": "491"
+  },
+  {
+    "nation_cd": 690,
+    "data_year": 1950,
+    "ratio": 27.4,
+    "population": null
+  },
+  {
+    "nation_cd": 690,
+    "data_year": 1970,
+    "ratio": 39.1,
+    "population": null
+  },
+  {
+    "nation_cd": 690,
+    "data_year": 1990,
+    "ratio": 49.3,
+    "population": null
+  },
+  {
+    "nation_cd": 690,
+    "data_year": 2010,
+    "ratio": 53.3,
+    "population": null
+  },
+  {
+    "nation_cd": 690,
+    "data_year": 2018,
+    "ratio": 56.7,
+    "population": "5"
+  },
+  {
+    "nation_cd": 694,
+    "data_year": 1950,
+    "ratio": 12.6,
+    "population": null
+  },
+  {
+    "nation_cd": 694,
+    "data_year": 1970,
+    "ratio": 24,
+    "population": null
+  },
+  {
+    "nation_cd": 694,
+    "data_year": 1990,
+    "ratio": 33.3,
+    "population": null
+  },
+  {
+    "nation_cd": 694,
+    "data_year": 2010,
+    "ratio": 38.9,
+    "population": null
+  },
+  {
+    "nation_cd": 694,
+    "data_year": 2018,
+    "ratio": 42.1,
+    "population": "324"
+  },
+  {
+    "nation_cd": 702,
+    "data_year": 1950,
+    "ratio": 99.4,
+    "population": null
+  },
+  {
+    "nation_cd": 702,
+    "data_year": 1970,
+    "ratio": 100,
+    "population": null
+  },
+  {
+    "nation_cd": 702,
+    "data_year": 1990,
+    "ratio": 100,
+    "population": null
+  },
+  {
+    "nation_cd": 702,
+    "data_year": 2010,
+    "ratio": 100,
+    "population": null
+  },
+  {
+    "nation_cd": 702,
+    "data_year": 2018,
+    "ratio": 100,
+    "population": "579"
+  },
+  {
+    "nation_cd": 703,
+    "data_year": 1950,
+    "ratio": 30,
+    "population": null
+  },
+  {
+    "nation_cd": 703,
+    "data_year": 1970,
+    "ratio": 41.1,
+    "population": null
+  },
+  {
+    "nation_cd": 703,
+    "data_year": 1990,
+    "ratio": 56.5,
+    "population": null
+  },
+  {
+    "nation_cd": 703,
+    "data_year": 2010,
+    "ratio": 54.7,
+    "population": null
+  },
+  {
+    "nation_cd": 703,
+    "data_year": 2018,
+    "ratio": 53.7,
+    "population": "292"
+  },
+  {
+    "nation_cd": 704,
+    "data_year": 1950,
+    "ratio": 11.6,
+    "population": null
+  },
+  {
+    "nation_cd": 704,
+    "data_year": 1970,
+    "ratio": 18.3,
+    "population": null
+  },
+  {
+    "nation_cd": 704,
+    "data_year": 1990,
+    "ratio": 20.3,
+    "population": null
+  },
+  {
+    "nation_cd": 704,
+    "data_year": 2010,
+    "ratio": 30.4,
+    "population": null
+  },
+  {
+    "nation_cd": 704,
+    "data_year": 2018,
+    "ratio": 35.9,
+    "population": "3465"
+  },
+  {
+    "nation_cd": 705,
+    "data_year": 1950,
+    "ratio": 19.9,
+    "population": null
+  },
+  {
+    "nation_cd": 705,
+    "data_year": 1970,
+    "ratio": 37,
+    "population": null
+  },
+  {
+    "nation_cd": 705,
+    "data_year": 1990,
+    "ratio": 50.4,
+    "population": null
+  },
+  {
+    "nation_cd": 705,
+    "data_year": 2010,
+    "ratio": 52.7,
+    "population": null
+  },
+  {
+    "nation_cd": 705,
+    "data_year": 2018,
+    "ratio": 54.5,
+    "population": "113"
+  },
+  {
+    "nation_cd": 706,
+    "data_year": 1950,
+    "ratio": 12.7,
+    "population": null
+  },
+  {
+    "nation_cd": 706,
+    "data_year": 1970,
+    "ratio": 22.7,
+    "population": null
+  },
+  {
+    "nation_cd": 706,
+    "data_year": 1990,
+    "ratio": 29.7,
+    "population": null
+  },
+  {
+    "nation_cd": 706,
+    "data_year": 2010,
+    "ratio": 39.3,
+    "population": null
+  },
+  {
+    "nation_cd": 706,
+    "data_year": 2018,
+    "ratio": 45,
+    "population": "682"
+  },
+  {
+    "nation_cd": 710,
+    "data_year": 1950,
+    "ratio": 42.2,
+    "population": null
+  },
+  {
+    "nation_cd": 710,
+    "data_year": 1970,
+    "ratio": 47.8,
+    "population": null
+  },
+  {
+    "nation_cd": 710,
+    "data_year": 1990,
+    "ratio": 52,
+    "population": null
+  },
+  {
+    "nation_cd": 710,
+    "data_year": 2010,
+    "ratio": 62.2,
+    "population": null
+  },
+  {
+    "nation_cd": 710,
+    "data_year": 2018,
+    "ratio": 66.4,
+    "population": "3808"
+  },
+  {
+    "nation_cd": 716,
+    "data_year": 1950,
+    "ratio": 10.6,
+    "population": null
+  },
+  {
+    "nation_cd": 716,
+    "data_year": 1970,
+    "ratio": 17.4,
+    "population": null
+  },
+  {
+    "nation_cd": 716,
+    "data_year": 1990,
+    "ratio": 29,
+    "population": null
+  },
+  {
+    "nation_cd": 716,
+    "data_year": 2010,
+    "ratio": 33.2,
+    "population": null
+  },
+  {
+    "nation_cd": 716,
+    "data_year": 2018,
+    "ratio": 32.2,
+    "population": "544"
+  },
+  {
+    "nation_cd": 724,
+    "data_year": 1950,
+    "ratio": 51.9,
+    "population": null
+  },
+  {
+    "nation_cd": 724,
+    "data_year": 1970,
+    "ratio": 66,
+    "population": null
+  },
+  {
+    "nation_cd": 724,
+    "data_year": 1990,
+    "ratio": 75.4,
+    "population": null
+  },
+  {
+    "nation_cd": 724,
+    "data_year": 2010,
+    "ratio": 78.4,
+    "population": null
+  },
+  {
+    "nation_cd": 724,
+    "data_year": 2018,
+    "ratio": 80.3,
+    "population": "3726"
+  },
+  {
+    "nation_cd": 728,
+    "data_year": 1950,
+    "ratio": 8.9,
+    "population": null
+  },
+  {
+    "nation_cd": 728,
+    "data_year": 1970,
+    "ratio": 8.6,
+    "population": null
+  },
+  {
+    "nation_cd": 728,
+    "data_year": 1990,
+    "ratio": 13.3,
+    "population": null
+  },
+  {
+    "nation_cd": 728,
+    "data_year": 2010,
+    "ratio": 17.9,
+    "population": null
+  },
+  {
+    "nation_cd": 728,
+    "data_year": 2018,
+    "ratio": 19.6,
+    "population": "253"
+  },
+  {
+    "nation_cd": 729,
+    "data_year": 1950,
+    "ratio": 6.8,
+    "population": null
+  },
+  {
+    "nation_cd": 729,
+    "data_year": 1970,
+    "ratio": 16.5,
+    "population": null
+  },
+  {
+    "nation_cd": 729,
+    "data_year": 1990,
+    "ratio": 28.6,
+    "population": null
+  },
+  {
+    "nation_cd": 729,
+    "data_year": 2010,
+    "ratio": 33.1,
+    "population": null
+  },
+  {
+    "nation_cd": 729,
+    "data_year": 2018,
+    "ratio": 34.6,
+    "population": "1438"
+  },
+  {
+    "nation_cd": 732,
+    "data_year": 1950,
+    "ratio": 31,
+    "population": null
+  },
+  {
+    "nation_cd": 732,
+    "data_year": 1970,
+    "ratio": 42.1,
+    "population": null
+  },
+  {
+    "nation_cd": 732,
+    "data_year": 1990,
+    "ratio": 84.1,
+    "population": null
+  },
+  {
+    "nation_cd": 732,
+    "data_year": 2010,
+    "ratio": 86.3,
+    "population": null
+  },
+  {
+    "nation_cd": 732,
+    "data_year": 2018,
+    "ratio": 86.7,
+    "population": "49"
+  },
+  {
+    "nation_cd": 740,
+    "data_year": 1950,
+    "ratio": 46.9,
+    "population": null
+  },
+  {
+    "nation_cd": 740,
+    "data_year": 1970,
+    "ratio": 45.9,
+    "population": null
+  },
+  {
+    "nation_cd": 740,
+    "data_year": 1990,
+    "ratio": 65.7,
+    "population": null
+  },
+  {
+    "nation_cd": 740,
+    "data_year": 2010,
+    "ratio": 66.3,
+    "population": null
+  },
+  {
+    "nation_cd": 740,
+    "data_year": 2018,
+    "ratio": 66.1,
+    "population": "37"
+  },
+  {
+    "nation_cd": 744,
+    "data_year": 1950,
+    "ratio": 50.5,
+    "population": null
+  },
+  {
+    "nation_cd": 744,
+    "data_year": 1970,
+    "ratio": 65.4,
+    "population": null
+  },
+  {
+    "nation_cd": 744,
+    "data_year": 1990,
+    "ratio": 72,
+    "population": null
+  },
+  {
+    "nation_cd": 744,
+    "data_year": 2010,
+    "ratio": 79.1,
+    "population": null
+  },
+  {
+    "nation_cd": 744,
+    "data_year": 2018,
+    "ratio": 82.2,
+    "population": "440"
+  },
+  {
+    "nation_cd": 748,
+    "data_year": 1950,
+    "ratio": 2.2,
+    "population": null
+  },
+  {
+    "nation_cd": 748,
+    "data_year": 1970,
+    "ratio": 9.7,
+    "population": null
+  },
+  {
+    "nation_cd": 748,
+    "data_year": 1990,
+    "ratio": 20.2,
+    "population": null
+  },
+  {
+    "nation_cd": 748,
+    "data_year": 2010,
+    "ratio": 22.5,
+    "population": null
+  },
+  {
+    "nation_cd": 748,
+    "data_year": 2018,
+    "ratio": 23.8,
+    "population": "33"
+  },
+  {
+    "nation_cd": 752,
+    "data_year": 1950,
+    "ratio": 65.7,
+    "population": null
+  },
+  {
+    "nation_cd": 752,
+    "data_year": 1970,
+    "ratio": 81,
+    "population": null
+  },
+  {
+    "nation_cd": 752,
+    "data_year": 1990,
+    "ratio": 83.1,
+    "population": null
+  },
+  {
+    "nation_cd": 752,
+    "data_year": 2010,
+    "ratio": 85.1,
+    "population": null
+  },
+  {
+    "nation_cd": 752,
+    "data_year": 2018,
+    "ratio": 87.4,
+    "population": "872"
+  },
+  {
+    "nation_cd": 756,
+    "data_year": 1950,
+    "ratio": 67.4,
+    "population": null
+  },
+  {
+    "nation_cd": 756,
+    "data_year": 1970,
+    "ratio": 73.8,
+    "population": null
+  },
+  {
+    "nation_cd": 756,
+    "data_year": 1990,
+    "ratio": 73.9,
+    "population": null
+  },
+  {
+    "nation_cd": 756,
+    "data_year": 2010,
+    "ratio": 73.6,
+    "population": null
+  },
+  {
+    "nation_cd": 756,
+    "data_year": 2018,
+    "ratio": 73.8,
+    "population": "630"
+  },
+  {
+    "nation_cd": 760,
+    "data_year": 1950,
+    "ratio": 32.7,
+    "population": null
+  },
+  {
+    "nation_cd": 760,
+    "data_year": 1970,
+    "ratio": 43.3,
+    "population": null
+  },
+  {
+    "nation_cd": 760,
+    "data_year": 1990,
+    "ratio": 48.9,
+    "population": null
+  },
+  {
+    "nation_cd": 760,
+    "data_year": 2010,
+    "ratio": 55.6,
+    "population": null
+  },
+  {
+    "nation_cd": 760,
+    "data_year": 2018,
+    "ratio": 54.2,
+    "population": "990"
+  },
+  {
+    "nation_cd": 762,
+    "data_year": 1950,
+    "ratio": 29.4,
+    "population": null
+  },
+  {
+    "nation_cd": 762,
+    "data_year": 1970,
+    "ratio": 36.9,
+    "population": null
+  },
+  {
+    "nation_cd": 762,
+    "data_year": 1990,
+    "ratio": 31.7,
+    "population": null
+  },
+  {
+    "nation_cd": 762,
+    "data_year": 2010,
+    "ratio": 26.5,
+    "population": null
+  },
+  {
+    "nation_cd": 762,
+    "data_year": 2018,
+    "ratio": 27.1,
+    "population": "247"
+  },
+  {
+    "nation_cd": 764,
+    "data_year": 1950,
+    "ratio": 16.5,
+    "population": null
+  },
+  {
+    "nation_cd": 764,
+    "data_year": 1970,
+    "ratio": 20.9,
+    "population": null
+  },
+  {
+    "nation_cd": 764,
+    "data_year": 1990,
+    "ratio": 29.4,
+    "population": null
+  },
+  {
+    "nation_cd": 764,
+    "data_year": 2010,
+    "ratio": 43.9,
+    "population": null
+  },
+  {
+    "nation_cd": 764,
+    "data_year": 2018,
+    "ratio": 49.9,
+    "population": "3455"
+  },
+  {
+    "nation_cd": 768,
+    "data_year": 1950,
+    "ratio": 4.4,
+    "population": null
+  },
+  {
+    "nation_cd": 768,
+    "data_year": 1970,
+    "ratio": 21.3,
+    "population": null
+  },
+  {
+    "nation_cd": 768,
+    "data_year": 1990,
+    "ratio": 28.6,
+    "population": null
+  },
+  {
+    "nation_cd": 768,
+    "data_year": 2010,
+    "ratio": 37.5,
+    "population": null
+  },
+  {
+    "nation_cd": 768,
+    "data_year": 2018,
+    "ratio": 41.7,
+    "population": "333"
+  },
+  {
+    "nation_cd": 772,
+    "data_year": 1950,
+    "ratio": 0,
+    "population": null
+  },
+  {
+    "nation_cd": 772,
+    "data_year": 1970,
+    "ratio": 0,
+    "population": null
+  },
+  {
+    "nation_cd": 772,
+    "data_year": 1990,
+    "ratio": 0,
+    "population": null
+  },
+  {
+    "nation_cd": 772,
+    "data_year": 2010,
+    "ratio": 0,
+    "population": null
+  },
+  {
+    "nation_cd": 772,
+    "data_year": 2018,
+    "ratio": 0,
+    "population": "0"
+  },
+  {
+    "nation_cd": 776,
+    "data_year": 1950,
+    "ratio": 12.9,
+    "population": null
+  },
+  {
+    "nation_cd": 776,
+    "data_year": 1970,
+    "ratio": 20.2,
+    "population": null
+  },
+  {
+    "nation_cd": 776,
+    "data_year": 1990,
+    "ratio": 22.7,
+    "population": null
+  },
+  {
+    "nation_cd": 776,
+    "data_year": 2010,
+    "ratio": 23.4,
+    "population": null
+  },
+  {
+    "nation_cd": 776,
+    "data_year": 2018,
+    "ratio": 23.1,
+    "population": "2"
+  },
+  {
+    "nation_cd": 780,
+    "data_year": 1950,
+    "ratio": 26.3,
+    "population": null
+  },
+  {
+    "nation_cd": 780,
+    "data_year": 1970,
+    "ratio": 43,
+    "population": null
+  },
+  {
+    "nation_cd": 780,
+    "data_year": 1990,
+    "ratio": 54.1,
+    "population": null
+  },
+  {
+    "nation_cd": 780,
+    "data_year": 2010,
+    "ratio": 54,
+    "population": null
+  },
+  {
+    "nation_cd": 780,
+    "data_year": 2018,
+    "ratio": 53.2,
+    "population": "73"
+  },
+  {
+    "nation_cd": 784,
+    "data_year": 1950,
+    "ratio": 54.5,
+    "population": null
+  },
+  {
+    "nation_cd": 784,
+    "data_year": 1970,
+    "ratio": 79.8,
+    "population": null
+  },
+  {
+    "nation_cd": 784,
+    "data_year": 1990,
+    "ratio": 79.1,
+    "population": null
+  },
+  {
+    "nation_cd": 784,
+    "data_year": 2010,
+    "ratio": 84.1,
+    "population": null
+  },
+  {
+    "nation_cd": 784,
+    "data_year": 2018,
+    "ratio": 86.5,
+    "population": "825"
+  },
+  {
+    "nation_cd": 788,
+    "data_year": 1950,
+    "ratio": 32.3,
+    "population": null
+  },
+  {
+    "nation_cd": 788,
+    "data_year": 1970,
+    "ratio": 43.5,
+    "population": null
+  },
+  {
+    "nation_cd": 788,
+    "data_year": 1990,
+    "ratio": 57.9,
+    "population": null
+  },
+  {
+    "nation_cd": 788,
+    "data_year": 2010,
+    "ratio": 66.7,
+    "population": null
+  },
+  {
+    "nation_cd": 788,
+    "data_year": 2018,
+    "ratio": 68.9,
+    "population": "803"
+  },
+  {
+    "nation_cd": 792,
+    "data_year": 1950,
+    "ratio": 24.8,
+    "population": null
+  },
+  {
+    "nation_cd": 792,
+    "data_year": 1970,
+    "ratio": 38.2,
+    "population": null
+  },
+  {
+    "nation_cd": 792,
+    "data_year": 1990,
+    "ratio": 59.2,
+    "population": null
+  },
+  {
+    "nation_cd": 792,
+    "data_year": 2010,
+    "ratio": 70.8,
+    "population": null
+  },
+  {
+    "nation_cd": 792,
+    "data_year": 2018,
+    "ratio": 75.1,
+    "population": "6155"
+  },
+  {
+    "nation_cd": 795,
+    "data_year": 1950,
+    "ratio": 45,
+    "population": null
+  },
+  {
+    "nation_cd": 795,
+    "data_year": 1970,
+    "ratio": 47.8,
+    "population": null
+  },
+  {
+    "nation_cd": 795,
+    "data_year": 1990,
+    "ratio": 45.1,
+    "population": null
+  },
+  {
+    "nation_cd": 795,
+    "data_year": 2010,
+    "ratio": 48.5,
+    "population": null
+  },
+  {
+    "nation_cd": 795,
+    "data_year": 2018,
+    "ratio": 51.6,
+    "population": "301"
+  },
+  {
+    "nation_cd": 796,
+    "data_year": 1950,
+    "ratio": 47.2,
+    "population": null
+  },
+  {
+    "nation_cd": 796,
+    "data_year": 1970,
+    "ratio": 51.1,
+    "population": null
+  },
+  {
+    "nation_cd": 796,
+    "data_year": 1990,
+    "ratio": 74.3,
+    "population": null
+  },
+  {
+    "nation_cd": 796,
+    "data_year": 2010,
+    "ratio": 90.2,
+    "population": null
+  },
+  {
+    "nation_cd": 796,
+    "data_year": 2018,
+    "ratio": 93.1,
+    "population": "3"
+  },
+  {
+    "nation_cd": 798,
+    "data_year": 1950,
+    "ratio": 11.2,
+    "population": null
+  },
+  {
+    "nation_cd": 798,
+    "data_year": 1970,
+    "ratio": 22.1,
+    "population": null
+  },
+  {
+    "nation_cd": 798,
+    "data_year": 1990,
+    "ratio": 40.7,
+    "population": null
+  },
+  {
+    "nation_cd": 798,
+    "data_year": 2010,
+    "ratio": 54.8,
+    "population": null
+  },
+  {
+    "nation_cd": 798,
+    "data_year": 2018,
+    "ratio": 62.4,
+    "population": "1"
+  },
+  {
+    "nation_cd": 800,
+    "data_year": 1950,
+    "ratio": 2.8,
+    "population": null
+  },
+  {
+    "nation_cd": 800,
+    "data_year": 1970,
+    "ratio": 6.7,
+    "population": null
+  },
+  {
+    "nation_cd": 800,
+    "data_year": 1990,
+    "ratio": 11.1,
+    "population": null
+  },
+  {
+    "nation_cd": 800,
+    "data_year": 2010,
+    "ratio": 19.4,
+    "population": null
+  },
+  {
+    "nation_cd": 800,
+    "data_year": 2018,
+    "ratio": 23.8,
+    "population": "1052"
+  },
+  {
+    "nation_cd": 804,
+    "data_year": 1950,
+    "ratio": 35.5,
+    "population": null
+  },
+  {
+    "nation_cd": 804,
+    "data_year": 1970,
+    "ratio": 54.8,
+    "population": null
+  },
+  {
+    "nation_cd": 804,
+    "data_year": 1990,
+    "ratio": 66.8,
+    "population": null
+  },
+  {
+    "nation_cd": 804,
+    "data_year": 2010,
+    "ratio": 68.6,
+    "population": null
+  },
+  {
+    "nation_cd": 804,
+    "data_year": 2018,
+    "ratio": 69.4,
+    "population": "3052"
+  },
+  {
+    "nation_cd": 807,
+    "data_year": 1950,
+    "ratio": 23.4,
+    "population": null
+  },
+  {
+    "nation_cd": 807,
+    "data_year": 1970,
+    "ratio": 47.1,
+    "population": null
+  },
+  {
+    "nation_cd": 807,
+    "data_year": 1990,
+    "ratio": 57.8,
+    "population": null
+  },
+  {
+    "nation_cd": 807,
+    "data_year": 2010,
+    "ratio": 57.1,
+    "population": null
+  },
+  {
+    "nation_cd": 807,
+    "data_year": 2018,
+    "ratio": 58,
+    "population": "120"
+  },
+  {
+    "nation_cd": 818,
+    "data_year": 1950,
+    "ratio": 31.9,
+    "population": null
+  },
+  {
+    "nation_cd": 818,
+    "data_year": 1970,
+    "ratio": 41.5,
+    "population": null
+  },
+  {
+    "nation_cd": 818,
+    "data_year": 1990,
+    "ratio": 43.5,
+    "population": null
+  },
+  {
+    "nation_cd": 818,
+    "data_year": 2010,
+    "ratio": 43,
+    "population": null
+  },
+  {
+    "nation_cd": 818,
+    "data_year": 2018,
+    "ratio": 42.7,
+    "population": "4243"
+  },
+  {
+    "nation_cd": 826,
+    "data_year": 1950,
+    "ratio": 79,
+    "population": null
+  },
+  {
+    "nation_cd": 826,
+    "data_year": 1970,
+    "ratio": 77.1,
+    "population": null
+  },
+  {
+    "nation_cd": 826,
+    "data_year": 1990,
+    "ratio": 78.1,
+    "population": null
+  },
+  {
+    "nation_cd": 826,
+    "data_year": 2010,
+    "ratio": 81.3,
+    "population": null
+  },
+  {
+    "nation_cd": 826,
+    "data_year": 2018,
+    "ratio": 83.4,
+    "population": "5552"
+  },
+  {
+    "nation_cd": 833,
+    "data_year": 1950,
+    "ratio": 52.9,
+    "population": null
+  },
+  {
+    "nation_cd": 833,
+    "data_year": 1970,
+    "ratio": 55.8,
+    "population": null
+  },
+  {
+    "nation_cd": 833,
+    "data_year": 1990,
+    "ratio": 51.7,
+    "population": null
+  },
+  {
+    "nation_cd": 833,
+    "data_year": 2010,
+    "ratio": 52,
+    "population": null
+  },
+  {
+    "nation_cd": 833,
+    "data_year": 2018,
+    "ratio": 52.6,
+    "population": "4"
+  },
+  {
+    "nation_cd": 834,
+    "data_year": 1950,
+    "ratio": 3.5,
+    "population": null
+  },
+  {
+    "nation_cd": 834,
+    "data_year": 1970,
+    "ratio": 7.9,
+    "population": null
+  },
+  {
+    "nation_cd": 834,
+    "data_year": 1990,
+    "ratio": 18.9,
+    "population": null
+  },
+  {
+    "nation_cd": 834,
+    "data_year": 2010,
+    "ratio": 28.1,
+    "population": null
+  },
+  {
+    "nation_cd": 834,
+    "data_year": 2018,
+    "ratio": 33.8,
+    "population": "1995"
+  },
+  {
+    "nation_cd": 840,
+    "data_year": 1950,
+    "ratio": 64.2,
+    "population": null
+  },
+  {
+    "nation_cd": 840,
+    "data_year": 1970,
+    "ratio": 73.6,
+    "population": null
+  },
+  {
+    "nation_cd": 840,
+    "data_year": 1990,
+    "ratio": 75.3,
+    "population": null
+  },
+  {
+    "nation_cd": 840,
+    "data_year": 2010,
+    "ratio": 80.8,
+    "population": null
+  },
+  {
+    "nation_cd": 840,
+    "data_year": 2018,
+    "ratio": 82.3,
+    "population": "26878"
+  },
+  {
+    "nation_cd": 850,
+    "data_year": 1950,
+    "ratio": 58.3,
+    "population": null
+  },
+  {
+    "nation_cd": 850,
+    "data_year": 1970,
+    "ratio": 69.6,
+    "population": null
+  },
+  {
+    "nation_cd": 850,
+    "data_year": 1990,
+    "ratio": 87.7,
+    "population": null
+  },
+  {
+    "nation_cd": 850,
+    "data_year": 2010,
+    "ratio": 94.6,
+    "population": null
+  },
+  {
+    "nation_cd": 850,
+    "data_year": 2018,
+    "ratio": 95.7,
+    "population": "10"
+  },
+  {
+    "nation_cd": 854,
+    "data_year": 1950,
+    "ratio": 3.8,
+    "population": null
+  },
+  {
+    "nation_cd": 854,
+    "data_year": 1970,
+    "ratio": 5.7,
+    "population": null
+  },
+  {
+    "nation_cd": 854,
+    "data_year": 1990,
+    "ratio": 13.8,
+    "population": null
+  },
+  {
+    "nation_cd": 854,
+    "data_year": 2010,
+    "ratio": 24.6,
+    "population": null
+  },
+  {
+    "nation_cd": 854,
+    "data_year": 2018,
+    "ratio": 29.4,
+    "population": "579"
+  },
+  {
+    "nation_cd": 858,
+    "data_year": 1950,
+    "ratio": 77.9,
+    "population": null
+  },
+  {
+    "nation_cd": 858,
+    "data_year": 1970,
+    "ratio": 82.4,
+    "population": null
+  },
+  {
+    "nation_cd": 858,
+    "data_year": 1990,
+    "ratio": 89,
+    "population": null
+  },
+  {
+    "nation_cd": 858,
+    "data_year": 2010,
+    "ratio": 94.4,
+    "population": null
+  },
+  {
+    "nation_cd": 858,
+    "data_year": 2018,
+    "ratio": 95.3,
+    "population": "330"
+  },
+  {
+    "nation_cd": 860,
+    "data_year": 1950,
+    "ratio": 28.9,
+    "population": null
+  },
+  {
+    "nation_cd": 860,
+    "data_year": 1970,
+    "ratio": 36.7,
+    "population": null
+  },
+  {
+    "nation_cd": 860,
+    "data_year": 1990,
+    "ratio": 41.4,
+    "population": null
+  },
+  {
+    "nation_cd": 860,
+    "data_year": 2010,
+    "ratio": 51,
+    "population": null
+  },
+  {
+    "nation_cd": 860,
+    "data_year": 2018,
+    "ratio": 50.5,
+    "population": "1633"
+  },
+  {
+    "nation_cd": 862,
+    "data_year": 1950,
+    "ratio": 47.3,
+    "population": null
+  },
+  {
+    "nation_cd": 862,
+    "data_year": 1970,
+    "ratio": 71.9,
+    "population": null
+  },
+  {
+    "nation_cd": 862,
+    "data_year": 1990,
+    "ratio": 84.3,
+    "population": null
+  },
+  {
+    "nation_cd": 862,
+    "data_year": 2010,
+    "ratio": 88.1,
+    "population": null
+  },
+  {
+    "nation_cd": 862,
+    "data_year": 2018,
+    "ratio": 88.2,
+    "population": "2856"
+  },
+  {
+    "nation_cd": 876,
+    "data_year": 1950,
+    "ratio": 0,
+    "population": null
+  },
+  {
+    "nation_cd": 876,
+    "data_year": 1970,
+    "ratio": 0,
+    "population": null
+  },
+  {
+    "nation_cd": 876,
+    "data_year": 1990,
+    "ratio": 0,
+    "population": null
+  },
+  {
+    "nation_cd": 876,
+    "data_year": 2010,
+    "ratio": 0,
+    "population": null
+  },
+  {
+    "nation_cd": 876,
+    "data_year": 2018,
+    "ratio": 0,
+    "population": "0"
+  },
+  {
+    "nation_cd": 882,
+    "data_year": 1950,
+    "ratio": 12.9,
+    "population": null
+  },
+  {
+    "nation_cd": 882,
+    "data_year": 1970,
+    "ratio": 20.4,
+    "population": null
+  },
+  {
+    "nation_cd": 882,
+    "data_year": 1990,
+    "ratio": 21.2,
+    "population": null
+  },
+  {
+    "nation_cd": 882,
+    "data_year": 2010,
+    "ratio": 20.1,
+    "population": null
+  },
+  {
+    "nation_cd": 882,
+    "data_year": 2018,
+    "ratio": 18.2,
+    "population": "3"
+  },
+  {
+    "nation_cd": 887,
+    "data_year": 1950,
+    "ratio": 5.8,
+    "population": null
+  },
+  {
+    "nation_cd": 887,
+    "data_year": 1970,
+    "ratio": 13.3,
+    "population": null
+  },
+  {
+    "nation_cd": 887,
+    "data_year": 1990,
+    "ratio": 20.9,
+    "population": null
+  },
+  {
+    "nation_cd": 887,
+    "data_year": 2010,
+    "ratio": 31.8,
+    "population": null
+  },
+  {
+    "nation_cd": 887,
+    "data_year": 2018,
+    "ratio": 36.6,
+    "population": "1059"
+  },
+  {
+    "nation_cd": 894,
+    "data_year": 1950,
+    "ratio": 11.5,
+    "population": null
+  },
+  {
+    "nation_cd": 894,
+    "data_year": 1970,
+    "ratio": 30.4,
+    "population": null
+  },
+  {
+    "nation_cd": 894,
+    "data_year": 1990,
+    "ratio": 39.4,
+    "population": null
+  },
+  {
+    "nation_cd": 894,
+    "data_year": 2010,
+    "ratio": 39.4,
+    "population": null
+  },
+  {
+    "nation_cd": 894,
+    "data_year": 2018,
+    "ratio": 43.5,
+    "population": "766"
   }
 ]

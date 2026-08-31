@@ -304,6 +304,9 @@ sliceVisibilityThreshold: 0
 }, "./php/wood_type.php");
 </script>
 <div id="NZ_wood_type" style="width: 100%; height: 350px"></div>
+::statistics{id="192" order="desc" limit="8" offset="0"}
+::statistics{id="190" order="desc" limit="8" offset="0"}
+::statistics{id="191" order="desc" limit="8" offset="0"}
 <h2 id="japan">日本の林業</h2>
 ### 森林面積と自給率
 ::top

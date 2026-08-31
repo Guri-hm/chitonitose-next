@@ -4,6 +4,7 @@
 ![](map_UK.webp){.twice}
 イギリス
 ::
+::basic-data{cd="826"}
 ### 農業
 ::top
 [[暖]]流の北大西洋海流と偏西風の影響で、年間を通して降水があります。
@@ -21,6 +22,7 @@
 風上側では糸が切れにくいことを活かして綿工業が、風下側では乾燥に比較的強い羊が育てられます。
 ::
 #### 羊
+::statistics{id="34" order="desc" limit="10" offset="0"}
 ::gazo
 ![](pasture_UK.webp)
 イギリスの羊と牧草地
@@ -104,18 +106,22 @@
 イギリスの工業都市
 ::
 ### 貿易
+::export-items{nation_cd="826"}
+::import-items{nation_cd="826"}
 ## アイルランド
 ### 基礎データ
 ::gazo
 ![](map_Ireland.webp){.border}
 アイルランド
 ::
+::basic-data{cd="372"}
 ## フランス
 ### 基礎データ
 ::gazo
 ![](map_France.webp){.border}
 フランス
 ::
+::basic-data{cd="250"}
 ### 人口
 #### 出生率
 ::top
@@ -152,6 +158,8 @@
 ::top
 1haあたりの生産量では、アメリカなどを上回ります。
 ::
+::statistics{id="24" arr_linkedId="52" order="desc" limit="7" offset="0"}
+::statistics{id="25" order="desc" limit="7" offset="0"}
 #### ブドウ
 ::top
 フランスのパリ盆地はブドウの栽培限界の北限で、構造平野のケスタ<a href="geo_lessons_plain.html#cuesta" class="link-active link-icon"></a>が広がります。
@@ -160,6 +168,7 @@
 ![](Vineyards_of_Champagne .webp)
 シャンパーニュ地方（パリ盆地東部）
 ::
+::statistics{id="51" order="desc" limit="7" offset="0"}
 ### 観光
 ::top
 フランスは観光大国で、多くの観光客が訪れます。
@@ -244,12 +253,15 @@ sliceVisibilityThreshold: 0
 </script>
 <div id="France_power_generation" style="width: 100%; height: 350px"></div>
 ### 貿易
+::export-items{nation_cd="250"}
+::import-items{nation_cd="250"}
 ## ドイツ
 ### 基礎データ
 ::gazo
 ![](map_Germany.webp){.border}
 ドイツ
 ::
+::basic-data{cd="276"}
 #### 歴史
 ::top
 第二次世界大戦後、ドイツおよびベルリンは東西によって分断され、米ソ対立の舞台になりました。
@@ -279,6 +291,7 @@ sliceVisibilityThreshold: 0
 ::last
 高い農業生産額は、付加価値が高い畜産品（肉類）や酪農品の生産に支えられています。
 ::
+::statistics{id="65" order="desc" limit="7" offset="0"}
 #### 北部
 ::top
 ハイデと呼ばれる、氷食を受けたやせ地
@@ -297,6 +310,9 @@ sliceVisibilityThreshold: 0
 ::last
 混合農業（ライ麦・ジャガイモの栽培、豚の飼育）
 ::
+::statistics{id="55" order="desc" limit="7" offset="0"}
+::statistics{id="54" order="desc" limit="7" offset="0"}
+::statistics{id="32" order="desc" limit="7" offset="0"}
 ### 鉱工業
 #### 工業都市
 ::top
@@ -325,12 +341,15 @@ sliceVisibilityThreshold: 0
 ドイツの産業別人口構成は、他のヨーロッパ諸国と比較すると、２次産業が高くなっています。
 ::
 ### 貿易
+::export-items{nation_cd="276"}
+::import-items{nation_cd="276"}
 ## ベルギー
 ### 基礎データ
 ::gazo
 ![](map_Belgium.webp){.border}
 ベルギー
 ::
+::basic-data{cd="56"}
 ### 言語紛争
 ::top
 1830年、カトリック教徒が多いことを理由に、ベルギーがオランダから独立しました。
@@ -365,12 +384,15 @@ sliceVisibilityThreshold: 0
 ::last
 新型コロナウイルスのワクチンの生産拠点として全世界に輸出しています。
 ::
+::export-items{nation_cd="56"}
+::import-items{nation_cd="56"}
 ## オランダ
 ### 基礎データ
 ::gazo
 ![](map_Netherlands.webp){.border}
 オランダ
 ::
+::basic-data{cd="528"}
 ### 国土
 ::top
 オランダは、ポルダーと呼ばれる干拓地（水をせき止めて排水した陸地）を増やし、国土を広げてきました。
@@ -420,12 +442,15 @@ sliceVisibilityThreshold: 0
 ユーロポートの石油化学コンビナート
 ::
 ### 貿易
+::export-items{nation_cd="528"}
+::import-items{nation_cd="528"}
 ## デンマーク
 ### 基礎データ
 ::gazo
 ![](map_Denmark.webp){.border}
 デンマーク
 ::
+::basic-data{cd="208"}
 ### 農業
 #### やせ地の土地改良
 ::top
@@ -438,6 +463,7 @@ sliceVisibilityThreshold: 0
 ::last
 放牧をあまりおこなわず、舎飼い（耕地で栽培した飼料を与えて畜舎の中で飼育すること）中心で酪農を盛んにおこなっています。
 ::
+::statistics{id="32" order="desc" limit="5" offset="0"}
 ### 発電
 ::top
 デンマークは三方が海に囲まれ、平地が多く広がります。
@@ -458,12 +484,15 @@ sliceVisibilityThreshold: 0
 </script>
 <div id="Denmark_power_generation" style="width: 100%; height: 350px"></div>
 ### 貿易
+::export-items{nation_cd="208"}
+::import-items{nation_cd="208"}
 ## スイス
 ### 基礎データ
 ::gazo
 ![](map_Switzerland.webp){.border}
 スイス
 ::
+::basic-data{cd="756"}
 ### 農業
 #### 移牧
 ::top
@@ -514,3 +543,5 @@ sliceVisibilityThreshold: 0
 スイスは、大部分の人が金融業などのサービス産業に従事しています。
 ::
 ### 貿易
+::export-items{nation_cd="756"}
+::import-items{nation_cd="756"}

@@ -438,6 +438,11 @@
 アルパカ
 ::
 ### 代表的な農産物
+::statistics{id="77" order="desc" limit="5" offset="0"}
+::statistics{id="17" order="desc" limit="5" offset="0"}
+::statistics{id="19" order="desc" limit="5" offset="0"}
+::statistics{id="53" order="desc" limit="5" offset="0"}
+::statistics{id="69" order="desc" limit="5" offset="0"}
 ## 経済・鉱工業
 ### 外国資本の進出
 ::top
@@ -478,6 +483,8 @@
 ![](Latin_America_resource.webp){.border}
 ラテンアメリカの鉱産資源の分布
 ::
+::statistics{id="45" order="desc" limit="5" offset="0"}
+::statistics{id="46" order="desc" limit="5" offset="0"}
 ## 国家群
 ### 南米南部共同市場（MERCOSUR）
 ::top

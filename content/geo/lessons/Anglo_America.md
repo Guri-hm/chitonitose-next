@@ -295,3 +295,9 @@
 <div class="top" 　id="nafta">1994年、<span onclick="chg(this)" class="all">　北米自由貿易協定　</span>（<span onclick="chg(this)" class="all">　NAFTA　</span>）結成<div class="lead">アメリカ・メキシコ・カナダが、EUに対抗して結んだ自由貿易協定</div>
 <div class="lead">2020年、<span onclick="chg(this)" class="all">USMCA</span>に移行</div>
 </div>
+::statistics{id="71" order="desc" limit="5" offset="0"}
+::statistics{id="72" order="desc" limit="5" offset="0"}
+::statistics{id="73" order="desc" limit="5" offset="0"}
+::statistics{id="74" order="desc" limit="5" offset="0"}
+::statistics{id="75" order="desc" limit="5" offset="0"}
+::statistics{id="76" order="desc" limit="5" offset="0"}

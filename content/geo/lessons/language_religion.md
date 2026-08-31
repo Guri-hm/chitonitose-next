@@ -261,6 +261,7 @@ class="all">ハンガリー</span>語・エストニア語</td>
 ![](language.webp){.border}
 語族の分布
 ::
+::statistics{id="295" order="desc" limit="14" offset="0"}
 ### 人種と語族の関係
 ::top
 人種と語族は、次のようにまとめられます。

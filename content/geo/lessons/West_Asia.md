@@ -289,6 +289,7 @@
 ![](date_palm.webp)
 ナツメヤシ
 ::
+::statistics{id="39" order="desc" limit="6" offset="0"}
 ### 遊牧民
 ::top
 ベドウィンは、アラビア半島を中心に羊・ラクダの放牧や売買をおこなって生活する遊牧民です。
@@ -411,6 +412,7 @@ OAPEC（アラブ石油輸出国機構）結成
 ![](map_Saudi_Arabia.webp){.border}
 サウジアラビア
 ::
+::basic-data{cd="682"}
 ### 聖地
 ::top
 サウジアラビアには、イスラームの聖地メッカがあり、世界から多くの信者が巡礼します
@@ -423,6 +425,7 @@ OAPEC（アラブ石油輸出国機構）結成
 ::top
 サウジアラビアは、ナツメヤシの世界有数の生産国です。
 ::
+::statistics{id="39" order="desc" limit="6" offset="0"}
 ::top
 センターピボット方式による灌漑農業で、トマトなどの農作物を生産しています。
 ::
@@ -440,13 +443,19 @@ OAPEC（アラブ石油輸出国機構）結成
 ::last
 また、サウジアラビアは日本の原油輸入先の第１位です。
 ::
+::statistics{id="221" order="desc" limit="10" offset="0"}
+::statistics{id="222" order="desc" limit="10" offset="0"}
+::statistics{id="40" order="desc" limit="10" offset="0"}
 ### 貿易
+::export-items{nation_cd="682"}
+::import-items{nation_cd="682"}
 ## イスラエル
 ### 基礎データ
 ::gazo
 ![](map_Israel2.webp){.border}
 イスラエル
 ::
+::basic-data{cd="376"}
 ### 民族・宗教・言語
 ::top
 イスラエルは、ユダヤ人の民族独自の国家です。
@@ -462,12 +471,15 @@ OAPEC（アラブ石油輸出国機構）結成
 原石を輸入し、研磨加工して輸出します。
 ::
 ### 貿易
+::export-items{nation_cd="376"}
+::import-items{nation_cd="376"}
 ## イラン
 ### 基礎データ
 ::gazo
 ![](map_Iran.webp){.border}
 イラン
 ::
+::basic-data{cd="364"}
 ### 民族・宗教・言語
 ::top
 イランの人々は、主にペルシャ人でペルシャ語を使用し、イスラームのシーア派です。
@@ -480,12 +492,15 @@ OAPEC（アラブ石油輸出国機構）結成
 イスラームの都市に多い
 ::
 ### 貿易
+::export-items{nation_cd="364"}
+::import-items{nation_cd="364"}
 ## トルコ
 ### 基礎データ
 ::gazo
 ![](map_Turkey.webp){.border}
 トルコ
 ::
+::basic-data{cd="792"}
 ### 国土
 ::top
 国土は、ボスポラス海峡をはさみ、==ヨーロッパとアジアにまたがります==。
@@ -554,3 +569,5 @@ OAPEC（アラブ石油輸出国機構）結成
 トルコは、ドイツと貿易で強く結びつき、出稼ぎ労働者も多くいます。
 ::
 ### 貿易
+::export-items{nation_cd="792"}
+::import-items{nation_cd="792"}

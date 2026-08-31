@@ -113,6 +113,32 @@ function parseCustomMarkdown(markdown, subject = '') {
       continue;
     }
     
+    // ::statistics{...} / ::basic-data{...} / ::export-items{...} / ::import-items{...}
+    // DBデータ（JSON化済み）をもとに表を描画するプレースホルダー
+    // 例: ::statistics{id="39" order="desc" limit="5" offset="0"}
+    const dbDirectiveMatch = line.match(/^::(statistics|basic-data|export-items|import-items)\{([\s\S]*)\}$/);
+    if (dbDirectiveMatch) {
+      const [, kind, attrsStr] = dbDirectiveMatch;
+      const attrs = {};
+      const attrRegex = /(\w+)="([^"]*)"/g;
+      let m;
+      while ((m = attrRegex.exec(attrsStr)) !== null) {
+        attrs[m[1]] = m[2];
+      }
+      const escapeAttr = (s) => String(s || '').replace(/"/g, '&quot;');
+      // HTML属性名はブラウザ解析時に小文字化されるため、camelCaseもkebab-caseに変換しておく
+      const toKebab = (s) => s.replace(/_/g, '-').replace(/([a-z0-9])([A-Z])/g, '$1-$2').toLowerCase();
+      const dataAttrs = Object.entries(attrs)
+        .map(([k, v]) => `data-${toKebab(k)}="${escapeAttr(v)}"`)
+        .join(' ');
+      result.push(`<div class="lesson-${kind}-placeholder" ${dataAttrs}></div>`);
+      i++;
+      if (i < lines.length && lines[i].trim() === '::') {
+        i++;
+      }
+      continue;
+    }
+    
     // 箱書きリスト（- item、ネストした:::leadも導入）
     if (line.startsWith('- ')) {
       const items = [];
@@ -330,7 +356,25 @@ function parseCustomMarkdown(markdown, subject = '') {
     i++;
   }
   
-  return result.join('\n');
+  return fixLazyloadImages(result.join('\n'), subject);
+}
+
+/**
+ * gazoディレクティブ等で処理されず素通りしたimgタグ（旧レイジーロード形式）を修正する。
+ * data-srcが実画像で、srcは常にloading.svgのプレースホルダーのままになっているため、
+ * このままだと画像が一切表示されない。
+ */
+function fixLazyloadImages(html, subject) {
+  return html.replace(/<img\b([^>]*)>/g, (match, attrsStr) => {
+    const dataSrcMatch = attrsStr.match(/data-src="([^"]+)"/);
+    if (!dataSrcMatch) return match;
+    const resolvedSrc = convertToWebP(dataSrcMatch[1].replace(/^img\//, ''), subject);
+    const newAttrs = attrsStr
+      .replace(/\s*data-src="[^"]*"/, '')
+      .replace(/\s*src="[^"]*"/, '')
+      .replace(/\blazyload\s*/, '');
+    return `<img src="${resolvedSrc}"${newAttrs}>`;
+  });
 }
 
 /**
@@ -375,6 +419,36 @@ function convertInlineMarkdown(text) {
  * @param {string} html - 既存のHTML
  * @returns {string} - カスタムMarkdown記法
  */
+
+// <?php ... include('./php/XXX.php'); ?> のXXXと、変換先ディレクティブ名の対応表
+const PHP_INCLUDE_DIRECTIVES = {
+  statistics: 'statistics',
+  basic_data: 'basic-data',
+  export_items_lank: 'export-items',
+  import_items_lank: 'import-items',
+};
+
+/**
+ * PHPコード断片中の "$name = value;" 形式の変数代入を抽出する。
+ * value は 数値・文字列リテラル・配列（[1,2] / array(1,2)）に対応。
+ * 配列はカンマ区切りの数値文字列に変換する。
+ */
+function parsePhpVars(phpCode) {
+  const vars = {};
+  const re = /\$(\w+)\s*=\s*(\[[^\]]*\]|array\([^)]*\)|"[^"]*"|'[^']*'|-?\d+(?:\.\d+)?)\s*;/g;
+  let m;
+  while ((m = re.exec(phpCode)) !== null) {
+    let val = m[2];
+    if (/^["']/.test(val)) {
+      val = val.slice(1, -1);
+    } else if (/^(\[|array\()/.test(val)) {
+      val = (val.match(/-?\d+(?:\.\d+)?/g) || []).join(',');
+    }
+    vars[m[1]] = val;
+  }
+  return vars;
+}
+
 function htmlToCustomMarkdown(html) {
   // contentsクラス内のコンテンツだけを抽出
   let contentMatch = html.match(/<div id='toc-range' class="contents">([\s\S]*?)(?:<\/div>)?<!-- \/contents -->/);
@@ -391,12 +465,7 @@ function htmlToCustomMarkdown(html) {
   // CRLFを正規化（末尾に\rが残ると</div>除去の正規表現が一致しなくなるため）
   content = content.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
   
-  // PHPタグとコメントを削除
-  content = content.replace(/<\?php[\s\S]*?\?>/g, '');
-  content = content.replace(/<!--[\s\S]*?-->/g, '');
-
-  // PHPタグとコメントを削除
-  content = content.replace(/<\?php[\s\S]*?\?>/g, '');
+  // コメントを削除（PHPタグはループ内でDB連動ディレクティブへの変換を試みてから削除する）
   content = content.replace(/<!--[\s\S]*?-->/g, '');
   
   // 一行ずつパースして変換
@@ -409,6 +478,24 @@ function htmlToCustomMarkdown(html) {
     
     // 空行
     if (!line) {
+      i++;
+      continue;
+    }
+    
+    // <?php ... include('./php/XXX.php'); ?> 形式のDB連動テーブル/グラフを
+    // 対応するディレクティブ（::statistics{...}等）に変換する。それ以外のPHP行は削除する。
+    if (line.includes('<?php')) {
+      const phpMatch = line.match(/<\?php([\s\S]*?)\?>/);
+      const phpCode = phpMatch ? phpMatch[1] : line;
+      const includeMatch = phpCode.match(/include\(['"]\.\/php\/(\w+)\.php['"]\)/);
+      const directiveName = includeMatch ? PHP_INCLUDE_DIRECTIVES[includeMatch[1]] : null;
+      if (directiveName) {
+        const vars = parsePhpVars(phpCode);
+        const attrs = Object.entries(vars)
+          .map(([k, v]) => `${k}="${String(v).replace(/"/g, '&quot;')}"`)
+          .join(' ');
+        result.push(`::${directiveName}{${attrs}}`);
+      }
       i++;
       continue;
     }
@@ -533,7 +620,8 @@ function htmlToCustomMarkdown(html) {
       let captionSource = inner;
       if (imgTagMatch) {
         const imgTag = imgTagMatch[0];
-        const srcMatch = imgTag.match(/(?:data-)?src="([^"]+)"/);
+        // data-srcを優先し、無ければsrcを使う（属性の並び順に依存しない）
+        const srcMatch = imgTag.match(/data-src="([^"]+)"/) || imgTag.match(/\bsrc="([^"]+)"/);
         const classMatch = imgTag.match(/class="([^"]*)"/);
         if (srcMatch) {
           const src = srcMatch[1].replace(/^img\//, '');

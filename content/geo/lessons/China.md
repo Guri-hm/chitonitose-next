@@ -40,7 +40,7 @@
 ::
 ### 主要河川
 ::gazo
-![](../share/img/loading.svg){.border}
+![](China_main_river.webp){.border}
 中国の主要河川
 ::
 #### アムール川（黒竜江）
@@ -546,6 +546,8 @@ sliceVisibilityThreshold: 0
 ::last
 最大の輸出相手国であるアメリカは貿易赤字になり、貿易摩擦が発生しています。
 ::
+::export-items{nation_cd="156"}
+::import-items{nation_cd="156"}
 ## 第３次産業
 ### 観光
 ::top

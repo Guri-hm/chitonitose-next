@@ -12,7 +12,8 @@
     "popu_year": 2020,
     "density": 59.6,
     "dollar": 530,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 12,
@@ -27,7 +28,8 @@
     "popu_year": 2020,
     "density": 18.4,
     "dollar": 4010,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 32,
@@ -42,7 +44,8 @@
     "popu_year": 2020,
     "density": 16.2,
     "dollar": 11130,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": "白人"
   },
   {
     "cd": 36,
@@ -57,7 +60,8 @@
     "popu_year": 2020,
     "density": 3.3,
     "dollar": 55100,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": "ヨーロッパ系"
   },
   {
     "cd": 40,
@@ -72,7 +76,8 @@
     "popu_year": 2020,
     "density": 107.3,
     "dollar": 51460,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 50,
@@ -87,7 +92,8 @@
     "popu_year": 2020,
     "density": 1112.8,
     "dollar": 1940,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 56,
@@ -102,7 +108,8 @@
     "popu_year": 2020,
     "density": 373.9,
     "dollar": 48030,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": "ゲルマン系・ラテン系"
   },
   {
     "cd": 68,
@@ -117,7 +124,8 @@
     "popu_year": 2020,
     "density": 10.6,
     "dollar": 3520,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": "先住民、メスチーソ民系混血"
   },
   {
     "cd": 76,
@@ -132,7 +140,8 @@
     "popu_year": 2020,
     "density": 25,
     "dollar": 9130,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": "白人、ムラート"
   },
   {
     "cd": 96,
@@ -147,7 +156,8 @@
     "popu_year": 2020,
     "density": 73.3,
     "dollar": 32230,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 100,
@@ -162,7 +172,8 @@
     "popu_year": 2020,
     "density": 63.2,
     "dollar": 9570,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 104,
@@ -177,7 +188,8 @@
     "popu_year": 2020,
     "density": 80.4,
     "dollar": 1390,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 116,
@@ -192,7 +204,8 @@
     "popu_year": 2020,
     "density": 92.4,
     "dollar": 1530,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 120,
@@ -207,7 +220,8 @@
     "popu_year": 2020,
     "density": 55.8,
     "dollar": 1500,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 124,
@@ -222,7 +236,8 @@
     "popu_year": 2020,
     "density": 3.8,
     "dollar": 46370,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 144,
@@ -237,7 +252,8 @@
     "popu_year": 2020,
     "density": 324.4,
     "dollar": 4020,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 152,
@@ -252,7 +268,8 @@
     "popu_year": 2020,
     "density": 25.3,
     "dollar": 15010,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": "メスチーソ"
   },
   {
     "cd": 156,
@@ -267,7 +284,8 @@
     "popu_year": 2020,
     "density": 149.9,
     "dollar": 10390,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 170,
@@ -282,7 +300,8 @@
     "popu_year": 2020,
     "density": 44.6,
     "dollar": 6510,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 180,
@@ -297,7 +316,8 @@
     "popu_year": 2020,
     "density": 38.2,
     "dollar": 530,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 188,
@@ -312,7 +332,8 @@
     "popu_year": 2020,
     "density": 99.8,
     "dollar": 11700,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 191,
@@ -327,7 +348,8 @@
     "popu_year": 2020,
     "density": 72.1,
     "dollar": 14980,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 192,
@@ -342,7 +364,8 @@
     "popu_year": 2020,
     "density": 103,
     "dollar": 0,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 196,
@@ -357,7 +380,8 @@
     "popu_year": 2020,
     "density": 134.4,
     "dollar": 27710,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 203,
@@ -372,7 +396,8 @@
     "popu_year": 2020,
     "density": 135.6,
     "dollar": 21940,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": "スラブ系"
   },
   {
     "cd": 208,
@@ -387,7 +412,8 @@
     "popu_year": 2020,
     "density": 134.7,
     "dollar": 63950,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": "ゲルマン系"
   },
   {
     "cd": 218,
@@ -402,7 +428,8 @@
     "popu_year": 2020,
     "density": 68.6,
     "dollar": 6090,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": "メスチーソ、先住民"
   },
   {
     "cd": 222,
@@ -417,7 +444,8 @@
     "popu_year": 2020,
     "density": 309,
     "dollar": 4000,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 231,
@@ -432,7 +460,8 @@
     "popu_year": 2020,
     "density": 104.1,
     "dollar": 850,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 233,
@@ -447,7 +476,8 @@
     "popu_year": 2020,
     "density": 29.6,
     "dollar": 23260,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 246,
@@ -462,7 +492,8 @@
     "popu_year": 2020,
     "density": 16.4,
     "dollar": 50010,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": "ウラル系"
   },
   {
     "cd": 250,
@@ -477,7 +508,8 @@
     "popu_year": 2020,
     "density": 118.2,
     "dollar": 42450,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": "ラテン系"
   },
   {
     "cd": 276,
@@ -492,7 +524,8 @@
     "popu_year": 2020,
     "density": 234,
     "dollar": 48580,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": "ゲルマン系"
   },
   {
     "cd": 288,
@@ -507,7 +540,8 @@
     "popu_year": 2020,
     "density": 130,
     "dollar": 2220,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 300,
@@ -522,7 +556,8 @@
     "popu_year": 2020,
     "density": 78.9,
     "dollar": 19750,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 320,
@@ -537,7 +572,8 @@
     "popu_year": 2020,
     "density": 164.4,
     "dollar": 4610,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 336,
@@ -552,7 +588,8 @@
     "popu_year": 2020,
     "density": 0.2,
     "dollar": 0,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 348,
@@ -567,7 +604,8 @@
     "popu_year": 2020,
     "density": 103.9,
     "dollar": 16500,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": "ウラル系"
   },
   {
     "cd": 356,
@@ -582,7 +620,8 @@
     "popu_year": 2020,
     "density": 419.8,
     "dollar": 2120,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 360,
@@ -597,7 +636,8 @@
     "popu_year": 2020,
     "density": 143.1,
     "dollar": 4050,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 364,
@@ -612,7 +652,8 @@
     "popu_year": 2020,
     "density": 51.6,
     "dollar": 5300,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 368,
@@ -627,7 +668,8 @@
     "popu_year": 2020,
     "density": 92.5,
     "dollar": 5740,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 372,
@@ -642,7 +684,8 @@
     "popu_year": 2020,
     "density": 70.6,
     "dollar": 64000,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": "ケルト系"
   },
   {
     "cd": 376,
@@ -657,7 +700,8 @@
     "popu_year": 2020,
     "density": 393.6,
     "dollar": 43110,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 380,
@@ -672,7 +716,8 @@
     "popu_year": 2020,
     "density": 200.2,
     "dollar": 34530,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": "ラテン系"
   },
   {
     "cd": 384,
@@ -687,7 +732,8 @@
     "popu_year": 2020,
     "density": 81.9,
     "dollar": 2290,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 388,
@@ -702,7 +748,8 @@
     "popu_year": 2020,
     "density": 269.1,
     "dollar": 5320,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 392,
@@ -717,7 +764,8 @@
     "popu_year": 2020,
     "density": 334.6,
     "dollar": 41710,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 404,
@@ -732,7 +780,8 @@
     "popu_year": 2020,
     "density": 90.8,
     "dollar": 1750,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 408,
@@ -747,7 +796,8 @@
     "popu_year": 2020,
     "density": 213.1,
     "dollar": 639.556,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 410,
@@ -762,7 +812,8 @@
     "popu_year": 2020,
     "density": 512.7,
     "dollar": 32234.5,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 414,
@@ -777,7 +828,8 @@
     "popu_year": 2020,
     "density": 237.2,
     "dollar": 33590,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 418,
@@ -792,7 +844,8 @@
     "popu_year": 2020,
     "density": 30.7,
     "dollar": 2570,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 428,
@@ -807,7 +860,8 @@
     "popu_year": 2020,
     "density": 29.1,
     "dollar": 17740,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 430,
@@ -822,7 +876,8 @@
     "popu_year": 2020,
     "density": 45.6,
     "dollar": 580,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 434,
@@ -837,7 +892,8 @@
     "popu_year": 2020,
     "density": 4.1,
     "dollar": 7640,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 440,
@@ -852,7 +908,8 @@
     "popu_year": 2020,
     "density": 41.8,
     "dollar": 19080,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 442,
@@ -867,7 +924,8 @@
     "popu_year": 2020,
     "density": 210,
     "dollar": 73910,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 450,
@@ -882,7 +940,8 @@
     "popu_year": 2020,
     "density": 47.2,
     "dollar": 520,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": "マレー系"
   },
   {
     "cd": 458,
@@ -897,7 +956,8 @@
     "popu_year": 2020,
     "density": 97.8,
     "dollar": 11230,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": "マレー系・中国系・インド系"
   },
   {
     "cd": 466,
@@ -912,7 +972,8 @@
     "popu_year": 2020,
     "density": 16.3,
     "dollar": 870,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 470,
@@ -927,7 +988,8 @@
     "popu_year": 2020,
     "density": 1466.7,
     "dollar": 28030,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 484,
@@ -942,7 +1004,8 @@
     "popu_year": 2020,
     "density": 65.6,
     "dollar": 9480,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": "メスチーソ、先住民"
   },
   {
     "cd": 496,
@@ -957,7 +1020,8 @@
     "popu_year": 2020,
     "density": 2.1,
     "dollar": 3790,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 499,
@@ -972,7 +1036,8 @@
     "popu_year": 2020,
     "density": 45,
     "dollar": 9060,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 504,
@@ -987,7 +1052,8 @@
     "popu_year": 2020,
     "density": 82.6,
     "dollar": 3190,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 508,
@@ -1002,7 +1068,8 @@
     "popu_year": 2020,
     "density": 39.1,
     "dollar": 490,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 528,
@@ -1017,7 +1084,8 @@
     "popu_year": 2020,
     "density": 407.9,
     "dollar": 53100,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": "ゲルマン系"
   },
   {
     "cd": 554,
@@ -1032,7 +1100,8 @@
     "popu_year": 2020,
     "density": 18,
     "dollar": 42760,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 558,
@@ -1047,7 +1116,8 @@
     "popu_year": 2020,
     "density": 50.9,
     "dollar": 1890,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 566,
@@ -1062,7 +1132,8 @@
     "popu_year": 2020,
     "density": 223.1,
     "dollar": 2030,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 578,
@@ -1077,7 +1148,8 @@
     "popu_year": 2020,
     "density": 14,
     "dollar": 82500,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": "ゲルマン系"
   },
   {
     "cd": 586,
@@ -1092,7 +1164,8 @@
     "popu_year": 2020,
     "density": 277.5,
     "dollar": 1410,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 591,
@@ -1107,7 +1180,8 @@
     "popu_year": 2020,
     "density": 57.5,
     "dollar": 14950,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 598,
@@ -1122,7 +1196,8 @@
     "popu_year": 2020,
     "density": 19.3,
     "dollar": 2750,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 600,
@@ -1137,7 +1212,8 @@
     "popu_year": 2020,
     "density": 17.5,
     "dollar": 5520,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 604,
@@ -1152,7 +1228,8 @@
     "popu_year": 2020,
     "density": 25.7,
     "dollar": 6740,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": "メスチーソ、先住民"
   },
   {
     "cd": 608,
@@ -1167,7 +1244,8 @@
     "popu_year": 2020,
     "density": 365.3,
     "dollar": 3850,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 616,
@@ -1182,7 +1260,8 @@
     "popu_year": 2020,
     "density": 120.9,
     "dollar": 15350,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": "スラブ系"
   },
   {
     "cd": 620,
@@ -1197,7 +1276,8 @@
     "popu_year": 2020,
     "density": 110.9,
     "dollar": 23200,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 642,
@@ -1212,7 +1292,8 @@
     "popu_year": 2020,
     "density": 80.8,
     "dollar": 12630,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": "ラテン系"
   },
   {
     "cd": 643,
@@ -1227,7 +1308,8 @@
     "popu_year": 2020,
     "density": 8.5,
     "dollar": 11260,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 646,
@@ -1242,7 +1324,8 @@
     "popu_year": 2020,
     "density": 498.1,
     "dollar": 830,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 682,
@@ -1257,7 +1340,8 @@
     "popu_year": 2020,
     "density": 15.8,
     "dollar": 22840,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 686,
@@ -1272,7 +1356,8 @@
     "popu_year": 2020,
     "density": 85,
     "dollar": 1460,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 688,
@@ -1287,7 +1372,8 @@
     "popu_year": 2020,
     "density": 90.3,
     "dollar": 7030,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 702,
@@ -1302,7 +1388,8 @@
     "popu_year": 2020,
     "density": 8357.1,
     "dollar": 59590,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": "中国系・マレー系・インド系"
   },
   {
     "cd": 703,
@@ -1317,7 +1404,8 @@
     "popu_year": 2020,
     "density": 111.4,
     "dollar": 19210,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 704,
@@ -1332,7 +1420,8 @@
     "popu_year": 2020,
     "density": 294.1,
     "dollar": 2590,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 705,
@@ -1347,7 +1436,8 @@
     "popu_year": 2020,
     "density": 104,
     "dollar": 25940,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 706,
@@ -1362,7 +1452,8 @@
     "popu_year": 2020,
     "density": 24.9,
     "dollar": 0,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 710,
@@ -1377,7 +1468,8 @@
     "popu_year": 2020,
     "density": 48.6,
     "dollar": 6040,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 716,
@@ -1392,7 +1484,8 @@
     "popu_year": 2020,
     "density": 38,
     "dollar": 1390,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 724,
@@ -1407,7 +1500,8 @@
     "popu_year": 2020,
     "density": 92.4,
     "dollar": 30390,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": "ラテン系"
   },
   {
     "cd": 729,
@@ -1422,7 +1516,8 @@
     "popu_year": 2020,
     "density": 23.7,
     "dollar": 590,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 752,
@@ -1437,7 +1532,8 @@
     "popu_year": 2020,
     "density": 23,
     "dollar": 55780,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": "ゲルマン系"
   },
   {
     "cd": 764,
@@ -1452,7 +1548,8 @@
     "popu_year": 2020,
     "density": 136.1,
     "dollar": 7260,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 784,
@@ -1467,7 +1564,8 @@
     "popu_year": 2020,
     "density": 139.3,
     "dollar": 43470,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 788,
@@ -1482,7 +1580,8 @@
     "popu_year": 2020,
     "density": 72.1,
     "dollar": 3370,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 792,
@@ -1497,7 +1596,8 @@
     "popu_year": 2020,
     "density": 107.6,
     "dollar": 9690,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 804,
@@ -1512,7 +1612,8 @@
     "popu_year": 2020,
     "density": 72.4,
     "dollar": 3370,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": "スラブ系"
   },
   {
     "cd": 818,
@@ -1527,7 +1628,8 @@
     "popu_year": 2020,
     "density": 102.1,
     "dollar": 2690,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 826,
@@ -1542,7 +1644,8 @@
     "popu_year": 2020,
     "density": 280.5,
     "dollar": 42220,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": "ゲルマン系"
   },
   {
     "cd": 834,
@@ -1557,7 +1660,8 @@
     "popu_year": 2020,
     "density": 63.1,
     "dollar": 1080,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 840,
@@ -1572,7 +1676,8 @@
     "popu_year": 2020,
     "density": 33.7,
     "dollar": 65850,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 858,
@@ -1587,7 +1692,8 @@
     "popu_year": 2020,
     "density": 19.9,
     "dollar": 16230,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 860,
@@ -1602,7 +1708,8 @@
     "popu_year": 2020,
     "density": 74.5,
     "dollar": 1800,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 862,
@@ -1617,7 +1724,8 @@
     "popu_year": 2020,
     "density": 30.6,
     "dollar": 0,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   },
   {
     "cd": 894,
@@ -1632,6 +1740,7 @@
     "popu_year": 2020,
     "density": 24.4,
     "dollar": 1430,
-    "gni_year": 2019
+    "gni_year": 2019,
+    "people": null
   }
 ]

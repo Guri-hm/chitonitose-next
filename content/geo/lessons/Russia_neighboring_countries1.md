@@ -556,3 +556,7 @@ CISの加盟国（結成当初）
 ::top
 遊牧や灌漑による[[綿花]]の生産
 ::
+::statistics{id="24" order="desc" limit="14" offset="0"}
+::statistics{id="55" order="desc" limit="6" offset="0"}
+::statistics{id="54" order="desc" limit="10" offset="0"}
+::statistics{id="22" order="desc" limit="7" offset="0"}

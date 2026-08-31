@@ -2,18 +2,26 @@
 ### 出生率・死亡率
 ::top
 日本の人口は
-		
-		
+		<?php include('./php/jp_population.php'); ?>
+		<?php include('./php/getXML_API.php'); ?>
 		です。
 ::
 ::middle
 日本の出生率・死亡率などの統計データは次の通りです。
 ::
 <ul class="circle">
-<li>出生率（人口千対）：</li>
-<li>合計特殊出生率：</li>
-<li>死亡率（人口千対）：</li>
-<li>老年人口（65歳以上）の割合：</li>
+<li>出生率（人口千対）：
+<?php include('./php/jp_birthrate.php'); ?>
+<?php include('./php/getXML_API.php'); ?></li>
+<li>合計特殊出生率：
+<?php include('./php/jp_total_fertility_rate.php'); ?>
+<?php include('./php/getXML_API.php'); ?></li>
+<li>死亡率（人口千対）：
+<?php include('./php/jp_mortality_rate.php'); ?>
+<?php include('./php/getXML_API.php'); ?></li>
+<li>老年人口（65歳以上）の割合：
+<?php include('./php/jp_elderly_population.php'); ?>
+<?php include('./php/getXML_API.php'); ?></li>
 </ul>
 ::middle
 統計データから、日本は少産で人口減少が進む超高齢社会と言えます。
@@ -132,8 +140,8 @@
 #### 年少人口が多い
 ::top
 沖縄県は年少人口（15歳未満）が最も多く、合計特殊出生率が
-		
-		
+		<?php $area='47000';include('./php/jp_prefecture_total_fertility_rate.php'); ?>
+		<?php include('./php/getXML_API.php'); ?>
 		です。
 ::
 ## 外国人人口

@@ -4,6 +4,7 @@
 ![](map_US.webp){.border}
 アメリカ合衆国
 ::
+::basic-data{cd="840"}
 ### 歴史・行政
 #### 歴史
 ::top
@@ -200,6 +201,12 @@ WASP<div class="lead">White Anglo-Saxon Protestantの略
 ![](center_pivot_shaft.webp){.half}
 センターピボットの中心
 ::
+::statistics{id="53" order="desc" limit="5" offset="0"}
+::statistics{id="25" order="desc" limit="5" offset="0"}
+::statistics{id="69" order="desc" limit="6" offset="0"}
+::statistics{id="70" order="desc" limit="7" offset="0" arr_year="1990"}
+::statistics{id="28" order="desc" limit="7" offset="0"}
+::statistics{id="29" order="desc" limit="7" offset="0"}
 #### 等高線耕作
 ::top
 アメリカ合衆国では土壌侵食の防止のために、等高線耕作が多くおこなわれています。
@@ -331,13 +338,17 @@ Adobe本社
 ![](shale.webp)
 頁岩（シェール）
 ::
+::statistics{id="221" order="desc" limit="5" offset="0"}
 ### 貿易
+::export-items{nation_cd="840"}
+::import-items{nation_cd="840"}
 ## カナダ
 ### 基礎データ
 ::gazo
 ![](map_Canada.webp){.border}
 カナダ
 ::
+::basic-data{cd="124"}
 ### 歴史
 ::top
 16～17世紀、イギリスとフランスが北米で植民地を拡大しました。
@@ -426,10 +437,12 @@ Adobe本社
 ::top
 マニトバ州・サスカチュワン州・アルバータ州で春小麦を栽培します。
 ::
+::statistics{id="25" order="desc" limit="5" offset="0"}
 #### パルプ
 ::top
 針葉樹林を利用した林業が盛んです。
 ::
+::statistics{id="61" order="desc" limit="8" offset="0"}
 ### 鉱工業
 #### エネルギー
 ::top
@@ -444,9 +457,14 @@ sliceVisibilityThreshold: 0
 </script>
 <div id="Canada_power_generation" style="width: 100%; height: 350px"></div>
 <h5>原油</h5>
+::statistics{id="221" order="desc" limit="7" offset="0"}
 <h5>天然ガス</h5>
+::statistics{id="43" order="desc" limit="7" offset="0"}
 #### 代表的な工業
 ::top
 水力発電による安価な電気を利用して、[[アルミニウム]]工業が発達しています。
 ::
+::statistics{id="59" order="desc" limit="7" offset="0"}
 ### 貿易
+::export-items{nation_cd="124"}
+::import-items{nation_cd="124"}

@@ -4,6 +4,7 @@
 ![](map_Thai.webp){.border}
 タイ
 ::
+::basic-data{cd="764"}
 ### 宗教
 ::top
 タイの主な宗教は、上座仏教(小乗仏教)<a href="geo_lessons_language_religion.html#Hinayana" class="link-active link-icon"></a>です。
@@ -28,6 +29,8 @@
 ::last
 チャオプラヤ川流域が有名な稲作地域で、この地域の稲作は==商業的==です。
 ::
+::statistics{id="7" order="desc" limit="6" offset="0"}
+::statistics{id="8" order="desc" limit="6" offset="0"}
 ::gazo
 ![](river_Southeast_Asia.webp){.half}
 東南アジアの河川
@@ -51,6 +54,8 @@
 ゴムの木
 ＊樹液を凝固・加工したものが天然ゴム
 ::
+::statistics{id="10" order="desc" limit="7" offset="0" arr_year="1990"}
+::statistics{id="11" order="desc" limit="6" offset="0"}
 #### さとうきび
 ::top
 タイは、世界有数のさとうきびの生産国です。
@@ -65,6 +70,7 @@
 ![](sugar_cane.webp){.half}
 さとうきび
 ::
+::statistics{id="13" order="desc" limit="6" offset="0"}
 ### 歴史
 #### 1960年代
 ::top
@@ -92,12 +98,15 @@
 		<div class="lead">タイの通貨が暴落し、経済成長マイナスがアジアに波及した出来事
 ::
 </div>
+::export-items{nation_cd="764"}
+::import-items{nation_cd="764"}
 ## マレーシア
 ### 基礎データ
 ::gazo
 ![](map_Malaysia.webp){.border}
 マレーシア
 ::
+::basic-data{cd="458"}
 ### 民族
 ::top
 マレーシアの民族は、次の３系統で構成されます。
@@ -150,6 +159,8 @@
 ::last
 現在、マレーシアは世界有数のパーム油の生産国です。
 ::
+::statistics{id="10" order="desc" limit="7" offset="0" arr_year="1990"}
+::statistics{id="14" order="desc" limit="6" offset="0"}
 ::gazo
 ![](oil_palm.webp)
 油ヤシ
@@ -166,17 +177,21 @@
 ::top
 マレーシアは、世界有数のすず鉱の生産国です。
 ::
+::statistics{id="15" order="desc" limit="6" offset="0"}
 ::gazo
 ![](royal_selangor_visitor_centre.webp)
 クアラルンプールのすず工場のオブジェ
 ::
 ### 貿易</h4>
+::export-items{nation_cd="458"}
+::import-items{nation_cd="458"}
 ## シンガポール
 ### 基礎データ
 ::gazo
 ![](map_Singapore.webp){.border}
 シンガポール
 ::
+::basic-data{cd="702"}
 ### 歴史
 ::top
 1960年代、マレーシアでマレー系優遇政策が進められました。
@@ -206,12 +221,15 @@
 ::top
 現在、シンガポールの1人あたりGNIは、アジアの国の中で最も高くなっています。
 ::
+::export-items{nation_cd="702"}
+::import-items{nation_cd="702"}
 ## インドネシア
 ### 基礎データ
 ::gazo
 ![](map_Indonesia.webp){.border}
 インドネシア
 ::
+::basic-data{cd="360"}
 ### 言語
 ::top
 インドネシアは、５つの主要な島とその他の群島で構成されます。
@@ -252,6 +270,7 @@
 ::top
 石炭の生産量は世界有数です。
 ::
+::statistics{id="16" order="desc" limit="6" offset="0"}
 ::top
 原油・天然ガスも産出されます。
 ::
@@ -262,12 +281,15 @@
 ::top
 インドネシアは、==今なお一次産品の輸出が多い国です==。
 ::
+::export-items{nation_cd="360"}
+::import-items{nation_cd="360"}
 ## フィリピン
 ### 基礎データ
 ::gazo
 ![](map_Philippines.webp){.border}
 フィリピン
 ::
+::basic-data{cd="608"}
 ### 宗教・民族問題
 ::top
 フィリピンは、アメリカ植民地になる以前に、約300年間スペインの植民地であり続けました。
@@ -300,6 +322,8 @@
 ![](banana.webp){.half}
 バナナ
 ::
+::statistics{id="17" order="desc" limit="6" offset="0"}
+::statistics{id="18" order="desc" limit="6" offset="0"}
 #### 米
 ::top
 フィリピンでは、標高1500mに達する山間部の急傾斜地に、少数民族が築いてきた大規模な棚田群がみられます。
@@ -319,12 +343,15 @@
 ::sup
 統計によっては直接「バナナ」と表記
 ::
+::export-items{nation_cd="608"}
+::import-items{nation_cd="608"}
 ## ベトナム
 ### 基礎データ
 ::gazo
 ![](map_Vietnam.webp){.border}
 ベトナム
 ::
+::basic-data{cd="704"}
 <h3 id="Vietnam_agriculture">農業・工業</h3>
 ::top
 第二次世界大戦後、ベトナムでは宗主国のフランスとの戦争、そしてアメリカが関与した内戦が起こりました。
@@ -352,4 +379,7 @@
 		<div class="top">メコン川河口付近の油田開発、外国資本の投資の増加
 ::
 </div>
+::statistics{id="19" order="desc" limit="6" offset="0"}
 ### 貿易
+::export-items{nation_cd="704"}
+::import-items{nation_cd="704"}

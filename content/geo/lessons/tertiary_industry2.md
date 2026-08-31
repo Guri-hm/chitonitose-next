@@ -204,6 +204,7 @@ isStacked: 'percent',
 <div class="text-center">
 各国の鉄道輸送量
 </div>
+$json = json_encode(['params'=>array(['statistics_id'=>327],['statistics_id'=>328])]); include('./php/statistics_nation_table.php'); ?>
 ::sup
 人㎞は人数とその輸送距離の乗算
 ::
@@ -564,6 +565,7 @@ height: 500
 <div class="overflow-x-auto mt-10 mb-10">
 <div class="text-center">各国の通信メディア
 </div>
+$json = json_encode(['params'=>array(['statistics_id'=>330],['statistics_id'=>331],['statistics_id'=>332],['statistics_id'=>333])]); include('./php/statistics_nation_table.php'); ?>
 ::sup
 タイ・マレーシアのインターネット利用者数の2012年のもの
 ::
@@ -721,6 +723,7 @@ Nokiaはフィンランドの通信機器メーカー。携帯電話の市場を
 <div class="overflow-x-auto mt-10 mb-10">
 <div class="text-center">各国の通信メディア
 </div>
+$json = json_encode(['params'=>array(['statistics_id'=>333],['statistics_id'=>301])]); include('./php/statistics_nation_table.php'); ?>
 ::sup
 タイ・マレーシアのインターネット利用者数の2012年のもの
 ::

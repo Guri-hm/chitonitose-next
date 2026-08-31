@@ -208,6 +208,8 @@
 ![](rice.webp)
 米
 ::
+::statistics{id="7" order="desc" limit="6" offset="0"}
+::statistics{id="8" order="desc" limit="6" offset="0"}
 #### 小麦
 ::top
 原産地はカスピ海南部を中心とする西アジアとされています。
@@ -219,6 +221,8 @@
 ![](wheat.webp)
 小麦
 ::
+::statistics{id="24" order="desc" limit="6" offset="0"}
+::statistics{id="52" order="desc" limit="6" offset="0"}
 <h5>小麦カレンダー</h5>
 ::top
 小麦カレンダーは、各国の小麦の収穫期を一覧にした図です。
@@ -254,6 +258,9 @@
 ![](corn.webp)
 トウモロコシ
 ::
+::statistics{id="53" order="desc" limit="5" offset="0"}
+::statistics{id="170" order="desc" limit="5" offset="0"}
+::statistics{id="171" order="desc" limit="5" offset="0"}
 ### ブドウ
 ::top
 地中海性気候が分布するイタリアやスペイン、ケスタで知られるパリ盆地があるフランスが、世界有数の生産国です。
@@ -267,6 +274,7 @@
 フランスのブドウ畑
 ＊ケスタの斜面
 ::
+::statistics{id="51" order="desc" limit="6" offset="0"}
 ### 主な家畜
 #### 牛
 ::top
@@ -297,6 +305,7 @@
 ::top
 ヒンドゥー教では神聖な動物とされ、食べることが禁忌とされています。
 ::
+::statistics{id="28" order="desc" limit="6" offset="0"}
 #### 豚
 ::top
 最も食肉生産量の多い家畜です。
@@ -312,6 +321,7 @@
 ![](pig.jpg)
 豚
 ::
+::statistics{id="31" order="desc" limit="6" offset="0"}
 #### 羊
 ::top
 ==乾燥に強く==遊牧・牧畜で飼育されます。
@@ -323,3 +333,4 @@
 ![](merino.webp)
 羊(メリノ種)
 ::
+::statistics{id="34" order="desc" limit="6" offset="0"}

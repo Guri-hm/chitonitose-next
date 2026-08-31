@@ -8,7 +8,7 @@ export default async function ChartsPage() {
   const birthrateMortality = await loadBirthrateMortality();
 
   // 国コードから国名を取得するマップを作成
-  const nationMap = new Map(nations.map(n => [n.nation_cd, n.short_name]));
+  const nationMap = new Map(nations.map(n => [n.cd, n.short_name]));
 
   // 高齢化社会データをグラフ用に変換
   const agingSocietyChartData = [

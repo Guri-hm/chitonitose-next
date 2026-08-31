@@ -4,6 +4,7 @@
 ![](map_Russian.webp){.border}
 ロシア連邦
 ::
+::basic-data{cd="643"}
 ### 歴史
 #### 第一次世界大戦後
 ::top
@@ -124,12 +125,15 @@ sliceVisibilityThreshold: 0
 代表的な不凍港は、日本海に面するウラジオストクと北極海に面するムルマンスクです。
 ::
 ### 貿易
+::export-items{nation_cd="643"}
+::import-items{nation_cd="643"}
 ## ウクライナ
 ### 基礎データ
 ::gazo
 ![](map_Ukraine.webp){.border}
 ウクライナ
 ::
+::basic-data{cd="804"}
 ### 農業
 ::top
 ウクライナから西シベリア南部には肥沃な黒色土[[チェルノーゼム]]が分布します。
@@ -145,6 +149,8 @@ sliceVisibilityThreshold: 0
 ![](sunflower.webp)
 ウクライナのひまわり畑
 ::
+::statistics{id="24" order="desc" limit="10" offset="0"}
+::statistics{id="67" order="desc" limit="5" offset="0"}
 ::top
 ウクライナの国旗は、諸説ありますが、青色が空、黄色（金色）が小麦あるいはひまわりを表しています。
 ::
@@ -160,13 +166,18 @@ sliceVisibilityThreshold: 0
 ![](Ukraine_resource.webp){.border}
 ウクライナの鉱工業
 ::
+::statistics{id="64" order="desc" limit="14" offset="0"}
+::statistics{id="16" order="desc" limit="14" offset="0"}
 ### 貿易
+::export-items{nation_cd="804"}
+::import-items{nation_cd="804"}
 ## アゼルバイジャン
 ### 基礎データ
 ::gazo
 ![](map_Azerbaijan.webp){.border}
 アゼルバイジャン
 ::
+::basic-data{cd="31"}
 ### 鉱工業
 ::top
 アゼルバイジャン東部のカスピ海の沿岸にバクー油田があります。
@@ -176,16 +187,20 @@ sliceVisibilityThreshold: 0
 バクー油田
 ::
 ### 貿易
+::export-items{nation_cd="31"}
+::import-items{nation_cd="31"}
 ## ウズベキスタン
 ### 基礎データ
 ::gazo
 ![](map_Uzbekistan.webp){.border}
 ウズベキスタン
 ::
+::basic-data{cd="860"}
 ### 農業
 ::top
 灌漑による[[綿花]]の栽培が盛んです。
 ::
+::statistics{id="22" order="desc" limit="7" offset="0"}
 #### アラル海
 ::top
 近年、アラル海に注ぎ込まれるシルダリア川・アムダリア川から、綿花の栽培のために大量に取水しています。

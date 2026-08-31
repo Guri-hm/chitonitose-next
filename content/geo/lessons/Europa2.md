@@ -286,6 +286,8 @@ EUでは、輸出入時に価格を調節するようにしています。
 ::top
 総生産量では中国やインドには及びませんが、1haあたりの生産量を見ると、イギリスやフランスなどヨーロッパ諸国が上位になります。
 ::
+::statistics{id="24" order="desc" limit="14" offset="0"}
+::statistics{id="52" order="desc" limit="14" offset="0"}
 #### とうもろこし
 ::top
 ヨーロッパは夏の気温があまり高くないため、とうもろこしの栽培が苦手です。
@@ -293,18 +295,24 @@ EUでは、輸出入時に価格を調節するようにしています。
 ::last
 ただし、フランスでは例外的に多く生産されています。
 ::
+::statistics{id="53" order="desc" limit="12" offset="0"}
 #### じゃがいも
+::statistics{id="54" order="desc" limit="10" offset="0"}
 #### ライ麦
+::statistics{id="55" order="desc" limit="6" offset="0"}
 #### てんさい
 ::gazo
 ![](sugar_beet.webp){.half}
 てんさい
 ::
+::statistics{id="180" order="desc" limit="6" offset="0"}
 #### ぶどう
 ::top
 地中海性気候が分布するイタリアやスペイン、ケスタで知られるパリ盆地があるフランスが、世界有数の生産国です。
 ::
+::statistics{id="51" order="desc" limit="6" offset="0"}
 #### オレンジ類
+::statistics{id="56" order="desc" limit="6" offset="0"}
 #### オリーブ
 ::top
 地中海性気候が分布するイタリアやスペインが、世界有数の生産国です。
@@ -313,12 +321,19 @@ EUでは、輸出入時に価格を調節するようにしています。
 ![](olive.webp)
 オリーブ
 ::
+::statistics{id="57" order="desc" limit="6" offset="0"}
 #### 豚
 ::top
 狭い面積でたくさん飼えるので、国土面積が小さいデンマークやオランダには養豚がうってつけです。
 ::
+::statistics{id="31" order="desc" limit="6" offset="0"}
+::statistics{id="32" order="desc" limit="6" offset="0"}
 #### 羊
+::statistics{id="34" order="desc" limit="10" offset="0"}
+::statistics{id="35" order="desc" limit="6" offset="0"}
 #### 酪農品
+::statistics{id="21" order="desc" limit="6" offset="0"}
+::statistics{id="58" order="desc" limit="6" offset="0"}
 ### 農業生産額
 ::top
 農家１戸あたりの農業生産額は、収益性の高い酪農や園芸農業をおこなうオランダ・ベルギー・デンマークで高く、耕地が広く生産性が高いドイツが続きます。
@@ -428,18 +443,28 @@ EUでは、輸出入時に価格を調節するようにしています。
 ::
 ### 主な生産物の統計データ
 #### 自動車
+::statistics{id="37" order="desc" limit="10" offset="0"}
 #### 粗鋼
+::statistics{id="4" order="desc" limit="8" offset="0"}
 #### アルミニウム
+::statistics{id="59" order="desc" limit="8" offset="0"}
 #### 毛織物
+::statistics{id="60" order="desc" limit="8" offset="0"}
 #### パルプ
+::statistics{id="61" order="desc" limit="9" offset="0"}
 #### ワイン
+::statistics{id="62" order="desc" limit="8" offset="0"}
 #### ビール
 ::top
 原料の大麦が寒さに強いため、ヨーロッパの北方でよく生産されます。
 ::
+::statistics{id="63" order="desc" limit="9" offset="0"}
 #### 鉄鉱石
+::statistics{id="64" order="desc" limit="10" offset="0"}
 #### 石炭
+::statistics{id="16" order="desc" limit="10" offset="0"}
 #### 天然ガス
+::statistics{id="43" order="desc" limit="10" offset="0"}
 ## 一次エネルギーの構成
 ### ドイツ
 <script type="text/javascript">

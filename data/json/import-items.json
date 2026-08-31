@@ -1398,5 +1398,705 @@
     "lank": 5,
     "item_name": "液化天然ガス",
     "ratio": 4.5
+  },
+  {
+    "nation_cd": 604,
+    "data_year": 2020,
+    "lank": 1,
+    "item_name": "機械類",
+    "ratio": 23.1
+  },
+  {
+    "nation_cd": 604,
+    "data_year": 2020,
+    "lank": 2,
+    "item_name": "自動車",
+    "ratio": 9
+  },
+  {
+    "nation_cd": 604,
+    "data_year": 2020,
+    "lank": 3,
+    "item_name": "石油製品",
+    "ratio": 7.7
+  },
+  {
+    "nation_cd": 604,
+    "data_year": 2020,
+    "lank": 4,
+    "item_name": "原油",
+    "ratio": 5.9
+  },
+  {
+    "nation_cd": 604,
+    "data_year": 2020,
+    "lank": 5,
+    "item_name": "プラスチック類",
+    "ratio": 4
+  },
+  {
+    "nation_cd": 608,
+    "data_year": 2019,
+    "lank": 1,
+    "item_name": "機械類",
+    "ratio": 34.9
+  },
+  {
+    "nation_cd": 608,
+    "data_year": 2019,
+    "lank": 2,
+    "item_name": "自動車",
+    "ratio": 7.3
+  },
+  {
+    "nation_cd": 608,
+    "data_year": 2019,
+    "lank": 3,
+    "item_name": "石油製品",
+    "ratio": 6.5
+  },
+  {
+    "nation_cd": 608,
+    "data_year": 2019,
+    "lank": 4,
+    "item_name": "鉄鋼",
+    "ratio": 3.9
+  },
+  {
+    "nation_cd": 608,
+    "data_year": 2019,
+    "lank": 5,
+    "item_name": "原油",
+    "ratio": 3
+  },
+  {
+    "nation_cd": 616,
+    "data_year": 2020,
+    "lank": 1,
+    "item_name": "機械類",
+    "ratio": 27
+  },
+  {
+    "nation_cd": 616,
+    "data_year": 2020,
+    "lank": 2,
+    "item_name": "自動車",
+    "ratio": 8.1
+  },
+  {
+    "nation_cd": 616,
+    "data_year": 2020,
+    "lank": 3,
+    "item_name": "衣類",
+    "ratio": 4.3
+  },
+  {
+    "nation_cd": 616,
+    "data_year": 2020,
+    "lank": 4,
+    "item_name": "プラスチック類",
+    "ratio": 4.2
+  },
+  {
+    "nation_cd": 616,
+    "data_year": 2020,
+    "lank": 5,
+    "item_name": "鉄鋼",
+    "ratio": 4.1
+  },
+  {
+    "nation_cd": 642,
+    "data_year": 2020,
+    "lank": 1,
+    "item_name": "機械類",
+    "ratio": 28.1
+  },
+  {
+    "nation_cd": 642,
+    "data_year": 2020,
+    "lank": 2,
+    "item_name": "自動車",
+    "ratio": 8.7
+  },
+  {
+    "nation_cd": 642,
+    "data_year": 2020,
+    "lank": 3,
+    "item_name": "医薬品",
+    "ratio": 4.7
+  },
+  {
+    "nation_cd": 642,
+    "data_year": 2020,
+    "lank": 4,
+    "item_name": "金属製品",
+    "ratio": 4.2
+  },
+  {
+    "nation_cd": 642,
+    "data_year": 2020,
+    "lank": 5,
+    "item_name": "鉄鋼",
+    "ratio": 3.8
+  },
+  {
+    "nation_cd": 643,
+    "data_year": 2020,
+    "lank": 1,
+    "item_name": "機械類",
+    "ratio": 30
+  },
+  {
+    "nation_cd": 643,
+    "data_year": 2020,
+    "lank": 2,
+    "item_name": "自動車",
+    "ratio": 9.5
+  },
+  {
+    "nation_cd": 643,
+    "data_year": 2020,
+    "lank": 3,
+    "item_name": "医薬品",
+    "ratio": 5.9
+  },
+  {
+    "nation_cd": 643,
+    "data_year": 2020,
+    "lank": 4,
+    "item_name": "金属製品",
+    "ratio": 3.4
+  },
+  {
+    "nation_cd": 643,
+    "data_year": 2020,
+    "lank": 5,
+    "item_name": "衣類",
+    "ratio": 3.3
+  },
+  {
+    "nation_cd": 682,
+    "data_year": 2019,
+    "lank": 1,
+    "item_name": "機械類",
+    "ratio": 21.8
+  },
+  {
+    "nation_cd": 682,
+    "data_year": 2019,
+    "lank": 2,
+    "item_name": "自動車",
+    "ratio": 10.4
+  },
+  {
+    "nation_cd": 682,
+    "data_year": 2019,
+    "lank": 3,
+    "item_name": "鉄鋼",
+    "ratio": 4.1
+  },
+  {
+    "nation_cd": 682,
+    "data_year": 2019,
+    "lank": 4,
+    "item_name": "船舶",
+    "ratio": 3.8
+  },
+  {
+    "nation_cd": 682,
+    "data_year": 2019,
+    "lank": 5,
+    "item_name": "医薬品",
+    "ratio": 3.7
+  },
+  {
+    "nation_cd": 702,
+    "data_year": 2019,
+    "lank": 1,
+    "item_name": "機械類",
+    "ratio": 49.2
+  },
+  {
+    "nation_cd": 702,
+    "data_year": 2019,
+    "lank": 2,
+    "item_name": "石油製品",
+    "ratio": 9.5
+  },
+  {
+    "nation_cd": 702,
+    "data_year": 2019,
+    "lank": 3,
+    "item_name": "金(非貨幣用)",
+    "ratio": 5.4
+  },
+  {
+    "nation_cd": 702,
+    "data_year": 2019,
+    "lank": 4,
+    "item_name": "原油",
+    "ratio": 4.4
+  },
+  {
+    "nation_cd": 702,
+    "data_year": 2019,
+    "lank": 5,
+    "item_name": "精密機械",
+    "ratio": 4.1
+  },
+  {
+    "nation_cd": 704,
+    "data_year": 2019,
+    "lank": 1,
+    "item_name": "機械類",
+    "ratio": 44.9
+  },
+  {
+    "nation_cd": 704,
+    "data_year": 2019,
+    "lank": 2,
+    "item_name": "繊維品",
+    "ratio": 5.9
+  },
+  {
+    "nation_cd": 704,
+    "data_year": 2019,
+    "lank": 3,
+    "item_name": "プラスチック類",
+    "ratio": 4.7
+  },
+  {
+    "nation_cd": 704,
+    "data_year": 2019,
+    "lank": 4,
+    "item_name": "鉄鋼",
+    "ratio": 3.5
+  },
+  {
+    "nation_cd": 704,
+    "data_year": 2019,
+    "lank": 5,
+    "item_name": "精密機械",
+    "ratio": 3.1
+  },
+  {
+    "nation_cd": 710,
+    "data_year": 2019,
+    "lank": 1,
+    "item_name": "機械類",
+    "ratio": 23.8
+  },
+  {
+    "nation_cd": 710,
+    "data_year": 2019,
+    "lank": 2,
+    "item_name": "原油",
+    "ratio": 7.4
+  },
+  {
+    "nation_cd": 710,
+    "data_year": 2019,
+    "lank": 3,
+    "item_name": "自動車",
+    "ratio": 6.1
+  },
+  {
+    "nation_cd": 710,
+    "data_year": 2019,
+    "lank": 4,
+    "item_name": "石油製品",
+    "ratio": 5.2
+  },
+  {
+    "nation_cd": 710,
+    "data_year": 2019,
+    "lank": 5,
+    "item_name": "医薬品",
+    "ratio": 3.7
+  },
+  {
+    "nation_cd": 724,
+    "data_year": 2020,
+    "lank": 1,
+    "item_name": "機械類",
+    "ratio": 18.5
+  },
+  {
+    "nation_cd": 724,
+    "data_year": 2020,
+    "lank": 2,
+    "item_name": "自動車",
+    "ratio": 10.2
+  },
+  {
+    "nation_cd": 724,
+    "data_year": 2020,
+    "lank": 3,
+    "item_name": "原油",
+    "ratio": 5.5
+  },
+  {
+    "nation_cd": 724,
+    "data_year": 2020,
+    "lank": 4,
+    "item_name": "医薬品",
+    "ratio": 5.4
+  },
+  {
+    "nation_cd": 724,
+    "data_year": 2020,
+    "lank": 5,
+    "item_name": "衣類",
+    "ratio": 5.3
+  },
+  {
+    "nation_cd": 752,
+    "data_year": 2020,
+    "lank": 1,
+    "item_name": "機械類",
+    "ratio": 26.1
+  },
+  {
+    "nation_cd": 752,
+    "data_year": 2020,
+    "lank": 2,
+    "item_name": "自動車",
+    "ratio": 10.5
+  },
+  {
+    "nation_cd": 752,
+    "data_year": 2020,
+    "lank": 3,
+    "item_name": "原油",
+    "ratio": 3.8
+  },
+  {
+    "nation_cd": 752,
+    "data_year": 2020,
+    "lank": 4,
+    "item_name": "医薬品",
+    "ratio": 3.7
+  },
+  {
+    "nation_cd": 752,
+    "data_year": 2020,
+    "lank": 5,
+    "item_name": "魚介類",
+    "ratio": 3.4
+  },
+  {
+    "nation_cd": 756,
+    "data_year": 2020,
+    "lank": 1,
+    "item_name": "金(非貨幣用)",
+    "ratio": 30.5
+  },
+  {
+    "nation_cd": 756,
+    "data_year": 2020,
+    "lank": 2,
+    "item_name": "医薬品",
+    "ratio": 13.6
+  },
+  {
+    "nation_cd": 756,
+    "data_year": 2020,
+    "lank": 3,
+    "item_name": "機械類",
+    "ratio": 11.8
+  },
+  {
+    "nation_cd": 756,
+    "data_year": 2020,
+    "lank": 4,
+    "item_name": "自動車",
+    "ratio": 5.1
+  },
+  {
+    "nation_cd": 756,
+    "data_year": 2020,
+    "lank": 5,
+    "item_name": "貴金属",
+    "ratio": 3.2
+  },
+  {
+    "nation_cd": 764,
+    "data_year": 2019,
+    "lank": 1,
+    "item_name": "機械類",
+    "ratio": 32.1
+  },
+  {
+    "nation_cd": 764,
+    "data_year": 2019,
+    "lank": 2,
+    "item_name": "原油",
+    "ratio": 8.5
+  },
+  {
+    "nation_cd": 764,
+    "data_year": 2019,
+    "lank": 3,
+    "item_name": "鉄鋼",
+    "ratio": 4.8
+  },
+  {
+    "nation_cd": 764,
+    "data_year": 2019,
+    "lank": 4,
+    "item_name": "自動車",
+    "ratio": 3.8
+  },
+  {
+    "nation_cd": 764,
+    "data_year": 2019,
+    "lank": 5,
+    "item_name": "金属製品",
+    "ratio": 3.6
+  },
+  {
+    "nation_cd": 788,
+    "data_year": 2019,
+    "lank": 1,
+    "item_name": "機械類",
+    "ratio": 23.3
+  },
+  {
+    "nation_cd": 788,
+    "data_year": 2019,
+    "lank": 2,
+    "item_name": "石油製品",
+    "ratio": 9.1
+  },
+  {
+    "nation_cd": 788,
+    "data_year": 2019,
+    "lank": 3,
+    "item_name": "繊維品",
+    "ratio": 7.4
+  },
+  {
+    "nation_cd": 788,
+    "data_year": 2019,
+    "lank": 4,
+    "item_name": "石油ガス",
+    "ratio": 5.8
+  },
+  {
+    "nation_cd": 788,
+    "data_year": 2019,
+    "lank": 5,
+    "item_name": "自動車",
+    "ratio": 5.3
+  },
+  {
+    "nation_cd": 792,
+    "data_year": 2019,
+    "lank": 1,
+    "item_name": "機械類",
+    "ratio": 19.5
+  },
+  {
+    "nation_cd": 792,
+    "data_year": 2019,
+    "lank": 2,
+    "item_name": "金(非貨幣用)",
+    "ratio": 11.5
+  },
+  {
+    "nation_cd": 792,
+    "data_year": 2019,
+    "lank": 3,
+    "item_name": "自動車",
+    "ratio": 6.9
+  },
+  {
+    "nation_cd": 792,
+    "data_year": 2019,
+    "lank": 4,
+    "item_name": "プラスチック類",
+    "ratio": 4.8
+  },
+  {
+    "nation_cd": 792,
+    "data_year": 2019,
+    "lank": 5,
+    "item_name": "鉄鋼",
+    "ratio": 4.4
+  },
+  {
+    "nation_cd": 804,
+    "data_year": 2020,
+    "lank": 1,
+    "item_name": "機械類",
+    "ratio": 22.7
+  },
+  {
+    "nation_cd": 804,
+    "data_year": 2020,
+    "lank": 2,
+    "item_name": "自動車",
+    "ratio": 9.6
+  },
+  {
+    "nation_cd": 804,
+    "data_year": 2020,
+    "lank": 3,
+    "item_name": "石油製品",
+    "ratio": 6.3
+  },
+  {
+    "nation_cd": 804,
+    "data_year": 2020,
+    "lank": 4,
+    "item_name": "医薬品",
+    "ratio": 4.9
+  },
+  {
+    "nation_cd": 804,
+    "data_year": 2020,
+    "lank": 5,
+    "item_name": "プラスチック類",
+    "ratio": 3.5
+  },
+  {
+    "nation_cd": 818,
+    "data_year": 2020,
+    "lank": 1,
+    "item_name": "機械類",
+    "ratio": 15.6
+  },
+  {
+    "nation_cd": 818,
+    "data_year": 2020,
+    "lank": 2,
+    "item_name": "自動車",
+    "ratio": 7.5
+  },
+  {
+    "nation_cd": 818,
+    "data_year": 2020,
+    "lank": 3,
+    "item_name": "原油",
+    "ratio": 6.3
+  },
+  {
+    "nation_cd": 818,
+    "data_year": 2020,
+    "lank": 4,
+    "item_name": "小麦",
+    "ratio": 4.5
+  },
+  {
+    "nation_cd": 818,
+    "data_year": 2020,
+    "lank": 5,
+    "item_name": "プラスチック類",
+    "ratio": 4.4
+  },
+  {
+    "nation_cd": 826,
+    "data_year": 2020,
+    "lank": 1,
+    "item_name": "機械類",
+    "ratio": 20.1
+  },
+  {
+    "nation_cd": 826,
+    "data_year": 2020,
+    "lank": 2,
+    "item_name": "金(非貨幣用)",
+    "ratio": 14.2
+  },
+  {
+    "nation_cd": 826,
+    "data_year": 2020,
+    "lank": 3,
+    "item_name": "自動車",
+    "ratio": 9
+  },
+  {
+    "nation_cd": 826,
+    "data_year": 2020,
+    "lank": 4,
+    "item_name": "医薬品",
+    "ratio": 4.2
+  },
+  {
+    "nation_cd": 826,
+    "data_year": 2020,
+    "lank": 5,
+    "item_name": "衣類",
+    "ratio": 4.1
+  },
+  {
+    "nation_cd": 840,
+    "data_year": 2020,
+    "lank": 1,
+    "item_name": "機械類",
+    "ratio": 29.8
+  },
+  {
+    "nation_cd": 840,
+    "data_year": 2020,
+    "lank": 2,
+    "item_name": "自動車",
+    "ratio": 10.4
+  },
+  {
+    "nation_cd": 840,
+    "data_year": 2020,
+    "lank": 3,
+    "item_name": "医薬品",
+    "ratio": 6
+  },
+  {
+    "nation_cd": 840,
+    "data_year": 2020,
+    "lank": 4,
+    "item_name": "衣類",
+    "ratio": 3.4
+  },
+  {
+    "nation_cd": 840,
+    "data_year": 2020,
+    "lank": 5,
+    "item_name": "原油",
+    "ratio": 3.4
+  },
+  {
+    "nation_cd": 862,
+    "data_year": 2020,
+    "lank": 1,
+    "item_name": "機械類",
+    "ratio": 26.4
+  },
+  {
+    "nation_cd": 862,
+    "data_year": 2020,
+    "lank": 2,
+    "item_name": "医薬品",
+    "ratio": 7.8
+  },
+  {
+    "nation_cd": 862,
+    "data_year": 2020,
+    "lank": 3,
+    "item_name": "鉄鋼",
+    "ratio": 4.5
+  },
+  {
+    "nation_cd": 862,
+    "data_year": 2020,
+    "lank": 4,
+    "item_name": "金属製品",
+    "ratio": 4.1
+  },
+  {
+    "nation_cd": 862,
+    "data_year": 2020,
+    "lank": 5,
+    "item_name": "化学薬品",
+    "ratio": 3.6
   }
 ]

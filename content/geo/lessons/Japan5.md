@@ -82,10 +82,14 @@ fontSize: 14,
 ::top
 アメリカが最大の相手国でした。
 ::
+::statistics{id="160" order="desc" limit="5" offset="0" data_year="2000"}
+::statistics{id="161" order="desc" limit="5" offset="0" data_year="2000"}
 #### 近年
 ::top
 中国が最大の相手国です。
 ::
+::statistics{id="160" order="desc" limit="5" offset="0"}
+::statistics{id="161" order="desc" limit="5" offset="0"}
 ### 主要輸入品の輸入先
 ### 貿易港ごとの輸出入
 #### 輸出

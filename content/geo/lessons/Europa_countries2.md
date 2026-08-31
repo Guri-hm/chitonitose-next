@@ -4,6 +4,7 @@
 ![](map_Spain.webp){.border}
 スペイン
 ::
+::basic-data{cd="724"}
 ### 地形
 ::top
 スペインはイベリア半島の大部分を占め、フランスとは[[新期]]造山帯のピレネー山脈を自然的国境とします。
@@ -46,6 +47,8 @@
 ![](Spain_industry.webp){.border}
 スペインの工業都市
 ::
+::statistics{id="37" order="desc" limit="10" offset="0"}
+::statistics{id="38" order="desc" limit="10" offset="0"}
 ### 民族問題
 #### バスク独立運動
 ::top
@@ -69,12 +72,15 @@
 自治権を認められてカタルーニャ自治州となりましたが、近年、独立運動が盛んになりました。
 ::
 ### 貿易
+::export-items{nation_cd="724"}
+::import-items{nation_cd="724"}
 ## イタリア
 ### 基礎データ
 ::gazo
 ![](map_Italy.webp){.border}
 イタリア
 ::
+::basic-data{cd="380"}
 ### 地形
 ::top
 イタリア国内には火山が複数あります。
@@ -134,12 +140,15 @@
 イタリアの工業都市
 ::
 ### 貿易
+::export-items{nation_cd="380"}
+::import-items{nation_cd="380"}
 ## ノルウェー
 ### 基礎データ
 ::gazo
 ![](map_Norway.webp){.border}
 ノルウェー
 ::
+::basic-data{cd="578"}
 ### 地形
 ::top
 ノルウェーが位置するスカンディナビア半島では、[[古期]]造山帯のスカンディナヴィア山脈が半島を縦断します。
@@ -185,6 +194,7 @@
 ![](Norway_salmon_aquaculture.webp)
 ノルウェーサーモンの養殖
 ::
+::statistics{id="66" order="desc" limit="10" offset="0"}
 ### 発電
 ::top
 ノルウェーは、偏西風の影響で降水が多く、また、急傾斜地が広いため、水力発電が盛んです。
@@ -202,6 +212,7 @@ sliceVisibilityThreshold: 0
 ::top
 安価な電力を利用し、アルミニウム工業が発達しています。
 ::
+::statistics{id="59" order="desc" limit="8" offset="0"}
 #### 原油・天然ガス
 ::top
 北海油田に面するノルウェーでは、原油・天然ガスが産出します。
@@ -214,12 +225,15 @@ sliceVisibilityThreshold: 0
 北海油田
 ::
 ### 貿易
+::export-items{nation_cd="578"}
+::import-items{nation_cd="578"}
 ## スウェーデン
 ### 基礎データ
 ::gazo
 ![](map_Sweden.webp){.border}
 スウェーデン
 ::
+::basic-data{cd="752"}
 ### 気候
 ::top
 偏西風と暖流の北大西洋海流の影響は、スカンディナヴィア山脈で弱まり、山脈の東側には亜寒帯湿潤気候が分布します。
@@ -235,6 +249,7 @@ sliceVisibilityThreshold: 0
 ::last
 耕地率が低い反面、両国とも森林率が高くて林業が盛んです。
 ::
+::statistics{id="61" order="desc" limit="8" offset="0"}
 ### 人口
 ::top
 早くから少子化対策に取り組み、育児環境を整備しました。
@@ -247,13 +262,17 @@ sliceVisibilityThreshold: 0
 ![](Kiruna_Iron_Mine.webp){.border}
 キルナ鉄山
 ::
+::statistics{id="64" order="desc" limit="10" offset="0"}
 ### 貿易
+::export-items{nation_cd="752"}
+::import-items{nation_cd="752"}
 ## フィンランド
 ### 基礎データ
 ::gazo
 ![](map_Finland.webp){.border}
 フィンランド
 ::
+::basic-data{cd="246"}
 ### 地形
 ::top
 かつて氷河に覆われたフィンランドには、氷河湖が多く存在しています。
@@ -277,6 +296,7 @@ sliceVisibilityThreshold: 0
 ::last
 耕地率が低い反面、両国とも森林率が高くて林業が盛んです。
 ::
+::statistics{id="61" order="desc" limit="8" offset="0"}
 ### 衣食住
 #### サウナ
 ::top
@@ -305,12 +325,15 @@ sliceVisibilityThreshold: 0
 サーミ
 ::
 ### 貿易
+::export-items{nation_cd="246"}
+::import-items{nation_cd="246"}
 ## アイスランド
 ### 基礎データ
 ::gazo
 ![](map_Iceland.webp){.border}
 アイスランド
 ::
+::basic-data{cd="352"}
 ### 地形
 ::top
 アイスランドは、北アメリカプレートとユーラシアプレートの広がる境界に位置します。
@@ -343,12 +366,15 @@ sliceVisibilityThreshold: 0
 </script>
 <div id="Iceland_power_generation" style="width: 100%; height: 350px"></div>
 ### 貿易
+::export-items{nation_cd="352"}
+::import-items{nation_cd="352"}
 ## ポーランド
 ### 基礎データ
 ::gazo
 ![](map_Poland.webp){.border}
 ポーランド
 ::
+::basic-data{cd="616"}
 ### 農業
 ::top
 じゃがいも・ライ麦の栽培、豚の飼育が盛んです。
@@ -381,12 +407,15 @@ sliceVisibilityThreshold: 0
 ただし、一部には不一致もみられ、スラブ系のポーランドでは、キリスト教の[[カトリック]]が多く信仰されています。
 ::
 ### 貿易
+::export-items{nation_cd="616"}
+::import-items{nation_cd="616"}
 ## チェコ
 ### 基礎データ
 ::gazo
 ![](map_Czechia.webp){.border}
 チェコ
 ::
+::basic-data{cd="203"}
 ### 鉱工業
 ::top
 ポーランドとチェコにまたがるシロンスク地方（シレジア）では、石炭が産出します。
@@ -396,23 +425,29 @@ sliceVisibilityThreshold: 0
 シロンスク地方
 ::
 ### 貿易
+::export-items{nation_cd="203"}
+::import-items{nation_cd="203"}
 ## ハンガリー
 ### 基礎データ
 ::gazo
 ![](map_Hungary.webp){.border}
 ハンガリー
 ::
+::basic-data{cd="348"}
 ### 言語
 ::top
 ハンガリー語は、[[ウラル]]語族です。
 ::
 ### 貿易
+::export-items{nation_cd="348"}
+::import-items{nation_cd="348"}
 ## ルーマニア
 ### 基礎データ
 ::gazo
 ![](map_Romania.webp){.border}
 ルーマニア
 ::
+::basic-data{cd="642"}
 ### 言語
 ::top
 ローマ帝国時代、多くのローマ人がルーマニアの地に移住しました。
@@ -421,12 +456,15 @@ sliceVisibilityThreshold: 0
 ルーマニア語にはラテン語の影響が残るため、ラテン語派に分類されます。
 ::
 ### 貿易
+::export-items{nation_cd="642"}
+::import-items{nation_cd="642"}
 ## その他諸国
 ### オーストリア
 ::gazo
 ![](map_Austria.webp){.border}
 オーストリア
 ::
+::basic-data{cd="40"}
 #### 歴史
 ::top
 かつての神聖ローマ帝国・オーストリア帝国・オーストリア＝ハンガリー帝国の国土は、現在のオーストリアの国土よりもはるかに広く、その首都であったウィーンにはヨーロッパの政治・文化の中心地として栄えてきました。
@@ -443,6 +481,7 @@ sliceVisibilityThreshold: 0
 ![](map_Slovenia.webp){.border}
 スロベニア
 ::
+::basic-data{cd="705"}
 #### 地形
 ::top
 スロベニア北西部のカルスト地方には、石灰岩の溶食で形成された地形が広がります。
@@ -455,6 +494,7 @@ sliceVisibilityThreshold: 0
 ![](map_Serbia.webp){.border}
 セルビア
 ::
+::basic-data{cd="688"}
 #### 旧ユーゴスラビア連邦
 ::top
 かつてセルビア含む６の共和国で、ユーゴスラビア社会主義連邦共和国が構成されていました。

@@ -11,7 +11,8 @@ import AnswerButtons from '@/components/AnswerButtons';
 import NotationGuide from '@/components/lessons/NotationGuide';
 import TableOfContents from '@/components/TableOfContents';
 import { loadCustomLesson } from '@/lib/markdownLoader';
-import { loadLessonChartDatasets } from '@/lib/dataLoader';
+import { loadLessonChartDatasets, loadLessonDbDatasets, loadNations } from '@/lib/dataLoader';
+import { renderLessonDbTables } from '@/lib/renderLessonDbTables';
 import { GEO_LESSONS } from '@/lib/geoLessons';
 import { LeftIcon, RightIcon } from '@/components/ui/Icons';
 
@@ -54,6 +55,8 @@ export default async function GeoLessonPage({ params }: LessonPageProps) {
 
   const lessonData = await loadCustomLesson('geo', 'lessons', lesson.contentId);
   const chartDatasets = await loadLessonChartDatasets();
+  const [dbDatasetsRaw, nations] = await Promise.all([loadLessonDbDatasets(), loadNations()]);
+  const lessonContent = renderLessonDbTables(lessonData.content, { ...dbDatasetsRaw, nations });
 
   const prevLesson = lessonIndex > 0 ? lessons[lessonIndex - 1] : undefined;
   const nextLesson = lessonIndex < lessons.length - 1 ? lessons[lessonIndex + 1] : undefined;
@@ -87,7 +90,7 @@ export default async function GeoLessonPage({ params }: LessonPageProps) {
               <TableOfContents />
 
               <GeoLessonContent
-                htmlContent={lessonData.content}
+                htmlContent={lessonContent}
                 chartDatasets={chartDatasets}
               />
             </>

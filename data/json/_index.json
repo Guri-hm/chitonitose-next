@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-06T13:30:51.098Z",
+  "generated": "2026-08-31T12:07:06.277Z",
   "database": "data.sqlite3",
   "files": {
     "basic": [
@@ -23,7 +23,7 @@
     ],
     "statistics": [
       "statistics-info.json",
-      "statistics-data-sample.json"
+      "statistics-data.json"
     ],
     "trade": [
       "export-items.json",

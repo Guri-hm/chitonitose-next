@@ -126,8 +126,12 @@ async function main() {
     if (areaPopulation.length > 0) writeJSON('area-population.json', areaPopulation);
     filesCreated++;
 
-    // basic_data VIEW
-    const basicData = safeQuery(db, 'SELECT * FROM basic_data', 'basic_data view');
+    // basic_data VIEW（nation_info.peopleは含まれないため別途JOINして補完）
+    const basicData = safeQuery(
+      db,
+      'SELECT bd.*, ni.people FROM basic_data bd LEFT JOIN nation_info ni ON bd.cd = ni.cd',
+      'basic_data view'
+    );
     if (basicData.length > 0) writeJSON('basic-data.json', basicData);
     filesCreated++;
 
@@ -159,8 +163,8 @@ async function main() {
     if (powerGeneration.length > 0) writeJSON('power-generation.json', powerGeneration);
     filesCreated++;
 
-    // 都市人口（大きいテーブルなので制限）
-    const urbanPopulation = safeQuery(db, 'SELECT * FROM urban_population LIMIT 200', 'urban population (limited)');
+    // 都市人口
+    const urbanPopulation = safeQuery(db, 'SELECT * FROM urban_population', 'urban population');
     if (urbanPopulation.length > 0) writeJSON('urban-population.json', urbanPopulation);
     filesCreated++;
 
@@ -172,21 +176,21 @@ async function main() {
     if (statisticsInfo.length > 0) writeJSON('statistics-info.json', statisticsInfo);
     filesCreated++;
 
-    // 統計データ（サンプル：最新100件）
-    const statisticsData = safeQuery(db, 'SELECT * FROM statistics_data LIMIT 100', 'statistics data (sample)');
-    if (statisticsData.length > 0) writeJSON('statistics-data-sample.json', statisticsData);
+    // 統計データ（全件）
+    const statisticsData = safeQuery(db, 'SELECT * FROM statistics_data', 'statistics data');
+    if (statisticsData.length > 0) writeJSON('statistics-data.json', statisticsData);
     filesCreated++;
 
     // ===== 貿易データ =====
     console.log('\n🌍 Trade Data:');
 
     // 輸出品目
-    const exportItems = safeQuery(db, 'SELECT * FROM export_items LIMIT 200', 'export items');
+    const exportItems = safeQuery(db, 'SELECT * FROM export_items', 'export items');
     if (exportItems.length > 0) writeJSON('export-items.json', exportItems);
     filesCreated++;
 
     // 輸入品目
-    const importItems = safeQuery(db, 'SELECT * FROM import_items LIMIT 200', 'import items');
+    const importItems = safeQuery(db, 'SELECT * FROM import_items', 'import items');
     if (importItems.length > 0) writeJSON('import-items.json', importItems);
     filesCreated++;
 
@@ -302,7 +306,7 @@ async function main() {
         ],
         statistics: [
           'statistics-info.json',
-          'statistics-data-sample.json'
+          'statistics-data.json'
         ],
         trade: [
           'export-items.json',

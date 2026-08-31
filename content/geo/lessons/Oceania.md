@@ -235,6 +235,7 @@ Cfa・Cfbの地域
 ![](map_Australia.webp){.border}
 オーストラリア
 ::
+::basic-data{cd="36"}
 ### 歴史
 <h5>1770年</h5>
 ::top
@@ -485,12 +486,15 @@ fontSize: 14,
 日本最大の鉄鉱石・石炭の輸入先です。
 ::
 ### 貿易
+::export-items{nation_cd="36"}
+::import-items{nation_cd="36"}
 ## ニュージーランド
 ### 基礎データ
 ::gazo
 ![](map_New_Zealand.webp){.border}
 ニュージーランド
 ::
+::basic-data{cd="554"}
 ### 歴史
 <h5>1769年</h5>
 ::top
@@ -596,6 +600,8 @@ sliceVisibilityThreshold: 0
 水力発電によるアルミニウム工業が発達しています。
 ::
 ### 貿易
+::export-items{nation_cd="554"}
+::import-items{nation_cd="554"}
 ## 太平洋諸島
 ::gazo
 ![](map_oceania_islands.webp){.border}

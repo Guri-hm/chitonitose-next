@@ -66,3 +66,4 @@ export default function GeoLessonContent({ htmlContent, chartDatasets }: GeoLess
     />
   );
 }
+

@@ -245,6 +245,8 @@
 ::top
 年降水量1,000mm以上の西ガーツ山脈の西側やガンジス川流域で米が生産されています。
 ::
+::statistics{id="7" order="desc" limit="6" offset="0"}
+::statistics{id="8" order="desc" limit="6" offset="0"}
 ### 綿花
 ::top
 インド亜大陸のデカン高原は、玄武岩が風化してできた土壌[[レグール]]が分布しています。
@@ -255,10 +257,12 @@
 ::last
 また、インドからパキスタンにまたがるパンジャブ地方でもよく生産されています。
 ::
+::statistics{id="22" order="desc" limit="7" offset="0"}
 ### 小麦
 ::top
 小麦は、インド北西部とパンジャブ地方で生産されています。
 ::
+::statistics{id="24" order="desc" limit="7" offset="0"}
 ### 茶
 ::top
 紅茶の消費国であるイギリスは、自国の植民地の高温多湿な土地で茶（茶葉）を生産させました。
@@ -266,6 +270,7 @@
 ::last
 イギリスからの独立後も茶の生産は続けられており、降水量の多いスリランカやインドのアッサム地方で生産されています。
 ::
+::statistics{id="26" order="desc" limit="7" offset="0"}
 ### ジュート
 ::top
 ジュートは、茎から麻という繊維を採れる植物です。
@@ -281,12 +286,14 @@
 ![](jute.webp)
 ジュート
 ::
+::statistics{id="23" order="desc" limit="7" offset="0"}
 ## インド
 ### 基礎データ
 ::gazo
 ![](map_India.webp){.border}
 インド
 ::
+::basic-data{cd="356"}
 ### 宗教・生活
 ::top
 インドの主な宗教は、[[ヒンドゥー教]]です。
@@ -416,6 +423,9 @@
 ::last
 これを「[[白い革命]]」と呼んでいます。
 ::
+::statistics{id="28" order="desc" limit="7" offset="0"}
+::statistics{id="21" order="desc" limit="7" offset="0"}
+::statistics{id="20" order="desc" limit="7" offset="0"}
 #### ピンク革命
 ::top
 インドには食肉に関する禁忌があります。
@@ -429,6 +439,7 @@
 ::last
 近年、鶏肉の生産・消費が増加し、「ピンク革命」と呼ばれています。
 ::
+::statistics{id="27" order="desc" limit="7" offset="0"}
 <h5>牛肉について</h5>
 ::top
 インドの人口の約80%がヒンドゥー教徒です。
@@ -490,13 +501,17 @@ E[[バンガロール]]：ICT産業
 ![](time_difference_America_India.webp){.twice}
 アメリカとインドの時差
 ::
+::statistics{id="37" order="desc" limit="10" offset="0"}
 ### 貿易
+::export-items{nation_cd="356"}
+::import-items{nation_cd="356"}
 ## パキスタン
 ### 基礎データ
 ::gazo
 ![](map_Pakistan.webp){.border}
 パキスタン
 ::
+::basic-data{cd="586"}
 ### 農業
 #### 米
 ::top
@@ -512,6 +527,7 @@ E[[バンガロール]]：ICT産業
 ::last
 特に綿花に関しては、世界有数の生産国です。
 ::
+::statistics{id="22" order="desc" limit="7" offset="0"}
 #### スポーツ用品
 ::top
 パキスタンは、サッカーボールの生産国として有名です。
@@ -520,12 +536,15 @@ E[[バンガロール]]：ICT産業
 FIFA公式のサッカーボールの８割以上がパキスタンで生産されています。
 ::
 ### 貿易
+::export-items{nation_cd="586"}
+::import-items{nation_cd="586"}
 ## バングラデシュ
 ### 基礎データ
 ::gazo
 ![](map_Bangladesh.webp){.border}
 バングラデシュ
 ::
+::basic-data{cd="50"}
 ### 国土と地球温暖化
 ::top
 バングラデシュは国土の大半が三角州（ガンジスデルタ）に位置します。
@@ -552,12 +571,15 @@ FIFA公式のサッカーボールの８割以上がパキスタンで生産さ�
 グラミン銀行は、貯金・保険などのサービスも提供し、これらはマイクロファイナンスと総称されています。
 ::
 ### 貿易
+::export-items{nation_cd="50"}
+::import-items{nation_cd="50"}
 ## スリランカ
 ### 基礎データ
 ::gazo
 ![](map_Sri_Lanka.webp){.border}
 スリランカ
 ::
+::basic-data{cd="144"}
 ### 農業
 ::top
 スリランカは、世界有数の茶の生産国です。
@@ -568,6 +590,8 @@ FIFA公式のサッカーボールの８割以上がパキスタンで生産さ�
 <div class="lead">セイロンはスリランカの旧国名</div>
 </div>
 ### 貿易
+::export-items{nation_cd="144"}
+::import-items{nation_cd="144"}
 ## モルディブ
 ### 基礎データ
 ::gazo

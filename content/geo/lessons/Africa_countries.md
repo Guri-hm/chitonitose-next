@@ -4,6 +4,7 @@
 ![](map_Egypt.webp){.border}
 エジプト
 ::
+::basic-data{cd="818"}
 ### ナイル川
 ::top
 ヴィクトリア湖の北から流れるナイル川は、湿潤地域に水源をもつ外来河川で、乾燥地域を通過し、地中海に注がれます。
@@ -39,13 +40,17 @@
 ![](Aswan_High_Dam.webp)
 アスワンハイダム
 ::
+::statistics{id="39" order="desc" limit="5" offset="0"}
 ### 貿易
+::export-items{nation_cd="818"}
+::import-items{nation_cd="818"}
 ## アルジェリア
 ### 基礎データ
 ::gazo
 ![](map_Algeria.webp){.border}
 アルジェリア
 ::
+::basic-data{cd="12"}
 ### 資源輸出
 ::top
 アルジェリアで産出した天然ガスは、ヨーロッパに続くパイプラインでガスのまま輸出されます。
@@ -55,12 +60,15 @@
 アルジェリアから伸びるパイプライン
 ::
 ### 貿易
+::export-items{nation_cd="12"}
+::import-items{nation_cd="12"}
 ## リビア
 ### 基礎データ
 ::gazo
 ![](map_Libya.webp){.border}
 リビア
 ::
+::basic-data{cd="434"}
 ### 乏しい水資源と農耕地
 ::top
 リビアは、エジプトと違って水資源がワジか地下水しかありません。
@@ -79,12 +87,15 @@
 ガボンや赤道ギニアも同様
 ::
 ### 貿易
+::export-items{nation_cd="434"}
+::import-items{nation_cd="434"}
 ## チュニジア
 ### 基礎データ
 ::gazo
 ![](map_Tunisia.webp){.border}
 チュニジア
 ::
+::basic-data{cd="788"}
 ### 迷路型の都市
 ::top
 チュニジアの首都チュニスは、街路が迷路型になっています。
@@ -100,12 +111,15 @@
 チュニスの街路形態
 ::
 ### 貿易
+::export-items{nation_cd="788"}
+::import-items{nation_cd="788"}
 ## モロッコ
 ### 基礎データ
 ::gazo
 ![](map_Morocco.webp){.border}
 モロッコ
 ::
+::basic-data{cd="504"}
 ### 西サハラ問題
 ::top
 スペインの撤退後、モロッコが西サハラの実効支配を続けています。
@@ -118,12 +132,15 @@
 タコの漁獲量が多いのは、順に中国・モロッコ・モーリタニアです。
 ::
 ### 貿易
+::export-items{nation_cd="504"}
+::import-items{nation_cd="504"}
 ## エチオピア
 ### 基礎データ
 ::gazo
 ![](map_Ethiopia.webp){.border}
 エチオピア
 ::
+::basic-data{cd="231"}
 ### 気候
 ::top
 中央部にはエチオピア高原（平均標高2300m）が広がり、首都のアディスアベバはここに位置しています。
@@ -165,13 +182,17 @@
 ![](Ethiopia_roasting_coffee_beans_.webp)
 エチオピアの伝統的なコーヒー豆の焙煎
 ::
+::statistics{id="19" order="desc" limit="5" offset="0"}
 ### 貿易
+::export-items{nation_cd="231"}
+::import-items{nation_cd="231"}
 ## ケニア
 ### 基礎データ
 ::gazo
 ![](map_Kenya.webp){.border}
 ケニア
 ::
+::basic-data{cd="404"}
 ### 園芸農業
 ::top
 ケニアでは、園芸農業でバラなどを栽培し、ナイロビの空港からヨーロッパに空輸しています。
@@ -196,13 +217,17 @@
 ::top
 イギリスの植民地だった歴史から、現在でも茶を多く生産しています。
 ::
+::statistics{id="26" order="desc" limit="7" offset="0"}
 ### 貿易
+::export-items{nation_cd="404"}
+::import-items{nation_cd="404"}
 ## マダガスカル
 ### 基礎データ
 ::gazo
 ![](map_Madagascar.webp){.border}
 マダガスカル
 ::
+::basic-data{cd="450"}
 ### 地形
 ::top
 マダガスカル島はかつてのゴンドワナ大陸の一部で[[安定陸塊]]です。
@@ -276,12 +301,15 @@
 ＊国土地理院ウェブサイトで作成
 ::
 ### 貿易
+::export-items{nation_cd="450"}
+::import-items{nation_cd="450"}
 ## ナイジェリア
 ### 基礎データ
 ::gazo
 ![](map_Nigeria.webp){.border}
 ナイジェリア
 ::
+::basic-data{cd="566"}
 ### 地形
 ::top
 ナイジェリアを流れるニジェール川は、河口に三角州を形成しています。
@@ -334,7 +362,12 @@
 ![](cassava.webp)
 キャッサバ（右）とタピオカでん粉（左）
 ::
+::statistics{id="41" order="desc" limit="5" offset="0"}
+::statistics{id="42" order="desc" limit="5" offset="0"}
+::statistics{id="14" order="desc" limit="5" offset="0"}
 ### 貿易
+::export-items{nation_cd="566"}
+::import-items{nation_cd="566"}
 ## ガーナ・コートジボワール
 ### 基礎データ
 ::gazo
@@ -352,12 +385,17 @@
 ::top
 ガーナはカカオの生産大国、コートジボワールはカカオと天然ゴムの生産大国です。
 ::
+::statistics{id="42" order="desc" limit="6" offset="0"}
+::statistics{id="49" order="desc" limit="6" offset="0"}
+::statistics{id="10" order="desc" limit="7" offset="0"}
+::statistics{id="11" order="desc" limit="7" offset="0"}
 ## リベリア
 ### 基礎データ
 ::gazo
 ![](map_Liberia.webp){.border}
 リベリア
 ::
+::basic-data{cd="430"}
 ### 歴史
 ::top
 1821年、アメリカで解放された黒人奴隷が、アフリカ西海岸に移住しました。
@@ -378,12 +416,14 @@
 ::top
 リベリアは便宜置籍船国のため<a href="geo_lessons_tertiary_industry2.html#flag_of_convenience" class="link-active link-icon"></a>、商船保有量が多くなります。
 ::
+::statistics{id="50" order="desc" limit="5" offset="0"}
 ## コンゴ民主共和国
 ### 基礎データ
 ::gazo
 ![](map_Congo_Democratic_Republic.webp){.border}
 コンゴ民主共和国
 ::
+::basic-data{cd="180"}
 ### 鉱工業
 #### 銅
 ::top
@@ -396,16 +436,19 @@
 ![](copper_belt.webp){.border}
 カッパーベルト
 ::
+::statistics{id="46" order="desc" limit="10" offset="0"}
 #### ダイヤモンド
 ::top
 ダイヤモンドの原石が産出します。
 ::
+::statistics{id="48" order="desc" limit="10" offset="0"}
 ## 南アフリカ共和国
 ### 基礎データ
 ::gazo
 ![](map_South_Africa.webp){.border}
 南アフリカ共和国
 ::
+::basic-data{cd="710"}
 ### 地形
 ::top
 南アフリカ共和国の東部には、北東から南西にかけて[[古期造山帯]]のドラケンスバーグ山脈が走ります。
@@ -447,20 +490,27 @@
 ::top
 地中海性気候のケープタウン付近では、ブドウが生産されています。
 ::
+::statistics{id="51" order="desc" limit="10" offset="0"}
 ### 鉱工業
 #### 石炭
 ::top
 古期造山帯のドラケンスバーグ山脈付近からは、石炭が産出します。
 ::
+::statistics{id="16" order="desc" limit="7" offset="0"}
 #### 金鉱・ダイヤモンド
 ::top
 南アフリカ共和国では、金鉱・ダイヤモンド・プラチナ・レアメタルなどが産出します。
 ::
+::statistics{id="44" order="desc" limit="10" offset="0"}
+::statistics{id="48" order="desc" limit="10" offset="0"}
+::statistics{id="280" order="desc" limit="10" offset="0"}
 ### 感染症
 ::top
 南アフリカ共和国は、世界で最もHIV感染者の人口が多い国です（５人に１人）。
 ::
 ### 貿易
+::export-items{nation_cd="710"}
+::import-items{nation_cd="710"}
 ## その他の国
 ### スーダン・南スーダン
 ::top
