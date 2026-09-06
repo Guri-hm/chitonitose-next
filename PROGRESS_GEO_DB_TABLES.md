@@ -261,12 +261,41 @@ node scripts/regenerate-geo-lessons.js
 
 ### 未着手（次回優先）
 
-- 前述「⚠️ 未解決の懸念」の `createRoot` マウント不具合の根本原因調査
-  （Google Chartsなど、対話性が必要でReact化が避けられない機能を本格的に使う前に必要）。
 - 残り約50種弱の低頻度PHPスクリプト（使用1回のみのもの、`getXML_API`など）は未移行。
   優先度は低いが、必要になれば同じパターンで追加可能。
 - `origin/chitonitose` は**別のネストされたGitリポジトリ**（`.gitmodules`には未登録の生gitlink）。
   中を編集した場合は `cd origin/chitonitose && git add/commit` を忘れないこと
   （親リポジトリ側は単にgitlinkの参照が変わるだけで、差分の中身は追えない）。
 - 今回の変更（コミット済み）を必要に応じて `git push` すること（本セッションではpushしていない）。
+
+### `createRoot` マウント不具合の根本原因が判明（解決済み・要恒久対応）
+
+React公式リポジトリで該当する変更を発見した:
+[facebook/react PR #32774「Warn for using a React owned node as a Container if it also has text content」](https://github.com/facebook/react/pull/32774)
+（React 19系にマージ済み）。
+
+> `dangerouslySetInnerHTML`（または`children`）を設定したDOMノードに対して、`ref`経由で
+> 手動で子要素を追加したり、`createRoot`/`createPortal`のコンテナとして使うことは**未定義動作**。
+> 特に`dangerouslySetInnerHTML`の場合、Reactが内部的に「反応的に更新」するたびに手動追加した
+> DOM要素が消される。**それがいつ起こるかは保証されない。**
+
+これが今回の症状（エラーなし・`querySelectorAll`は要素を発見・`render()`も例外なし・
+だがDOMには何も反映されない）と完全に一致する。`GeoLessonContent`は`dangerouslySetInnerHTML`で
+本文を描画しつつ、その子孫ノードに対して`createRoot`でマウントしていたため、この
+「未定義動作」に該当していた。単純な最小再現（プレースホルダー1個だけの独立ページ、大きい
+ダミーHTMLを詰めたページ）では再現しなかったが、実ページでは`TableOfContents`の自己DOM操作や
+`Header`のスクロール状態変化などによる再コミットのタイミングで発生していたと考えられる
+（再現条件は非決定的、というのがReact開発チームの説明と一致）。
+
+**結論**: 今回DBテーブル3種で採用した「サーバー側で文字列としてHTMLを組み立てて
+`dangerouslySetInnerHTML`に最初から含めてしまう」方式（`lib/renderLessonDbTables.ts`）が
+唯一の正しい回避策。**既存の`.lesson-chart-placeholder`（`LessonChart`+`GoogleChart`）・
+`.lesson-image-placeholder`（`LessonImage`）も同じ未定義動作のリスクを抱えている。**
+今後これらを本格的に使う場合は、次のいずれかの対応が必要:
+
+1. Google Chartsのように対話性・ブラウザAPIが必須な場合は、`dangerouslySetInnerHTML`の
+   **外側**（`ref`で管理された別の兄弟要素、もしくは`createPortal`で本文と重ならない別DOM）に
+   マウントするよう構造を変更する。
+2. 静的な表示だけで良い場合（今回のDBテーブルのように）は、Reactを使わずビルド時に
+   HTML文字列へ焼き込む方式に倒す。
 
