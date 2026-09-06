@@ -101,6 +101,7 @@
 ::last
 河川は短く、その{{勾配|こうばい}}が大きくなります（急流）。
 ::
+::jp-natural-environment{}
 ::gazo
 ![](river_slope.webp){.twice}
 河川の勾配

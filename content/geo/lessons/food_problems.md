@@ -122,6 +122,7 @@
 ::last
 食料自給率を高めるためには、食に関する知識や関心を向上させる必要があります。
 ::
+::food-self-sufficiency{params="392,380,826,250,276,840" data_year="2017"}
 <script type="text/javascript">
 createChartAsync(Chart.Combo, {
 "params": [

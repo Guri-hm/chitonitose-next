@@ -212,6 +212,7 @@
 ::last
 国土が西高東低の地形のため、人口の大部分が東部に居住し、都市人口率は５割超です。
 ::
+::area-population{order="population" limit="15"}
 ### 人口抑制
 ::top
 1970年代、急激な人口増加とそれを要因とする食糧不足が懸念され、中国は人口抑制を始めました。
@@ -235,7 +236,7 @@
 ::
 ::gazo
 ![](population_pyramid_China1970.svg)
-<img class="lazyload popup-img" data-src="img/population_pyramid_China2019.svg" alt="中国の人口ピラミッド(2019)" src="../share/img/loading.svg" />
+![](population_pyramid_China2019.svg)
 左：中国の人口ピラミッド（1970年）、右：中国の人口ピラミッド（2019年）
 ::
 ## 民族
@@ -546,6 +547,7 @@ sliceVisibilityThreshold: 0
 ::last
 最大の輸出相手国であるアメリカは貿易赤字になり、貿易摩擦が発生しています。
 ::
+::trade-balance{params="156,276,643,372,380,528,36,392,840" data_year="2020" order_col_name="profit"}
 ::export-items{nation_cd="156"}
 ::import-items{nation_cd="156"}
 ## 第３次産業
@@ -558,6 +560,7 @@ sliceVisibilityThreshold: 0
 ::
 <div class="overflow-x-auto mt-10 mb-10">
 <div class="text-center">観光客数・国際観光収支</div>
+::statistics{id="310" arr_linkedId="311,312,313"}
 </div>
 ### 交通運輸業
 ::top
@@ -566,6 +569,7 @@ sliceVisibilityThreshold: 0
 ::last
 なかでも[[シャンハイ]]は、世界一のコンテナ取扱量を有します。
 ::
+::port-container{}
 ## 一国二制度
 ### ホンコン・マカオ
 ::top

@@ -1,0 +1,1448 @@
+[
+  {
+    "nation_cd": 4,
+    "data_year": 2018,
+    "primary_rate": 42.8,
+    "secondary_rate": 17.6
+  },
+  {
+    "nation_cd": 8,
+    "data_year": 2018,
+    "primary_rate": 38.2,
+    "secondary_rate": 19.4
+  },
+  {
+    "nation_cd": 10,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 12,
+    "data_year": 2018,
+    "primary_rate": 10.1,
+    "secondary_rate": 30.9
+  },
+  {
+    "nation_cd": 16,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 20,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 24,
+    "data_year": 2018,
+    "primary_rate": 44.2,
+    "secondary_rate": 6.1
+  },
+  {
+    "nation_cd": 28,
+    "data_year": 2018,
+    "primary_rate": 2.8,
+    "secondary_rate": 15.6
+  },
+  {
+    "nation_cd": 31,
+    "data_year": 2018,
+    "primary_rate": 36.3,
+    "secondary_rate": 14.7
+  },
+  {
+    "nation_cd": 32,
+    "data_year": 2018,
+    "primary_rate": 0.1,
+    "secondary_rate": 21.9
+  },
+  {
+    "nation_cd": 36,
+    "data_year": 2018,
+    "primary_rate": 2.6,
+    "secondary_rate": 19.9
+  },
+  {
+    "nation_cd": 40,
+    "data_year": 2018,
+    "primary_rate": 3.7,
+    "secondary_rate": 25.4
+  },
+  {
+    "nation_cd": 44,
+    "data_year": 2018,
+    "primary_rate": 3.7,
+    "secondary_rate": 12.9
+  },
+  {
+    "nation_cd": 48,
+    "data_year": 2018,
+    "primary_rate": 1.1,
+    "secondary_rate": 34.7
+  },
+  {
+    "nation_cd": 50,
+    "data_year": 2018,
+    "primary_rate": 40.6,
+    "secondary_rate": 20.4
+  },
+  {
+    "nation_cd": 51,
+    "data_year": 2018,
+    "primary_rate": 31.3,
+    "secondary_rate": 16.7
+  },
+  {
+    "nation_cd": 52,
+    "data_year": 2018,
+    "primary_rate": 2.9,
+    "secondary_rate": 19.3
+  },
+  {
+    "nation_cd": 56,
+    "data_year": 2018,
+    "primary_rate": 1,
+    "secondary_rate": 21.1
+  },
+  {
+    "nation_cd": 64,
+    "data_year": 2018,
+    "primary_rate": 58,
+    "secondary_rate": 9.7
+  },
+  {
+    "nation_cd": 68,
+    "data_year": 2018,
+    "primary_rate": 31.1,
+    "secondary_rate": 19.5
+  },
+  {
+    "nation_cd": 70,
+    "data_year": 2018,
+    "primary_rate": 15.7,
+    "secondary_rate": 32.1
+  },
+  {
+    "nation_cd": 72,
+    "data_year": 2018,
+    "primary_rate": 26.4,
+    "secondary_rate": 17.5
+  },
+  {
+    "nation_cd": 76,
+    "data_year": 2018,
+    "primary_rate": 9.3,
+    "secondary_rate": 20.1
+  },
+  {
+    "nation_cd": 84,
+    "data_year": 2018,
+    "primary_rate": 17.3,
+    "secondary_rate": 15.6
+  },
+  {
+    "nation_cd": 86,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 90,
+    "data_year": 2018,
+    "primary_rate": 36.7,
+    "secondary_rate": 8.2
+  },
+  {
+    "nation_cd": 92,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 96,
+    "data_year": 2018,
+    "primary_rate": 1.4,
+    "secondary_rate": 16.1
+  },
+  {
+    "nation_cd": 100,
+    "data_year": 2018,
+    "primary_rate": 6.6,
+    "secondary_rate": 30.1
+  },
+  {
+    "nation_cd": 104,
+    "data_year": 2018,
+    "primary_rate": 48.2,
+    "secondary_rate": 17.3
+  },
+  {
+    "nation_cd": 108,
+    "data_year": 2018,
+    "primary_rate": 86.3,
+    "secondary_rate": 3.5
+  },
+  {
+    "nation_cd": 112,
+    "data_year": 2018,
+    "primary_rate": 11.3,
+    "secondary_rate": 30.6
+  },
+  {
+    "nation_cd": 116,
+    "data_year": 2018,
+    "primary_rate": 37.5,
+    "secondary_rate": 25.8
+  },
+  {
+    "nation_cd": 120,
+    "data_year": 2018,
+    "primary_rate": 47.5,
+    "secondary_rate": 14.1
+  },
+  {
+    "nation_cd": 124,
+    "data_year": 2018,
+    "primary_rate": 1.5,
+    "secondary_rate": 19.6
+  },
+  {
+    "nation_cd": 132,
+    "data_year": 2018,
+    "primary_rate": 11.8,
+    "secondary_rate": 21.8
+  },
+  {
+    "nation_cd": 136,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 140,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 144,
+    "data_year": 2018,
+    "primary_rate": 26.1,
+    "secondary_rate": 28.4
+  },
+  {
+    "nation_cd": 148,
+    "data_year": 2018,
+    "primary_rate": 83,
+    "secondary_rate": 2.1
+  },
+  {
+    "nation_cd": 152,
+    "data_year": 2018,
+    "primary_rate": 9.2,
+    "secondary_rate": 22.3
+  },
+  {
+    "nation_cd": 156,
+    "data_year": 2018,
+    "primary_rate": 26.1,
+    "secondary_rate": 27.6
+  },
+  {
+    "nation_cd": 158,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 162,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 166,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 170,
+    "data_year": 2018,
+    "primary_rate": 16.7,
+    "secondary_rate": 20
+  },
+  {
+    "nation_cd": 174,
+    "data_year": 2018,
+    "primary_rate": 38,
+    "secondary_rate": 19
+  },
+  {
+    "nation_cd": 175,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 178,
+    "data_year": 2018,
+    "primary_rate": 35.2,
+    "secondary_rate": 20.6
+  },
+  {
+    "nation_cd": 180,
+    "data_year": 2018,
+    "primary_rate": 71.5,
+    "secondary_rate": 8.2
+  },
+  {
+    "nation_cd": 184,
+    "data_year": 2018,
+    "primary_rate": 6.7,
+    "secondary_rate": 9.3
+  },
+  {
+    "nation_cd": 188,
+    "data_year": 2018,
+    "primary_rate": 12.3,
+    "secondary_rate": 19.5
+  },
+  {
+    "nation_cd": 191,
+    "data_year": 2018,
+    "primary_rate": 6.2,
+    "secondary_rate": 27.4
+  },
+  {
+    "nation_cd": 192,
+    "data_year": 2018,
+    "primary_rate": 18.9,
+    "secondary_rate": 16.9
+  },
+  {
+    "nation_cd": 196,
+    "data_year": 2018,
+    "primary_rate": 2.2,
+    "secondary_rate": 16.7
+  },
+  {
+    "nation_cd": 203,
+    "data_year": 2018,
+    "primary_rate": 2.8,
+    "secondary_rate": 37.5
+  },
+  {
+    "nation_cd": 204,
+    "data_year": 2018,
+    "primary_rate": 43.6,
+    "secondary_rate": 18.6
+  },
+  {
+    "nation_cd": 208,
+    "data_year": 2018,
+    "primary_rate": 2.2,
+    "secondary_rate": 18.6
+  },
+  {
+    "nation_cd": 212,
+    "data_year": 2018,
+    "primary_rate": 21,
+    "secondary_rate": 19.9
+  },
+  {
+    "nation_cd": 214,
+    "data_year": 2018,
+    "primary_rate": 9.6,
+    "secondary_rate": 19.4
+  },
+  {
+    "nation_cd": 218,
+    "data_year": 2018,
+    "primary_rate": 28.8,
+    "secondary_rate": 18.5
+  },
+  {
+    "nation_cd": 222,
+    "data_year": 2018,
+    "primary_rate": 16.7,
+    "secondary_rate": 22.2
+  },
+  {
+    "nation_cd": 226,
+    "data_year": 2018,
+    "primary_rate": 76.3,
+    "secondary_rate": 4.8
+  },
+  {
+    "nation_cd": 231,
+    "data_year": 2018,
+    "primary_rate": 71,
+    "secondary_rate": 8.4
+  },
+  {
+    "nation_cd": 232,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 233,
+    "data_year": 2018,
+    "primary_rate": 3.3,
+    "secondary_rate": 29.6
+  },
+  {
+    "nation_cd": 234,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 238,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 239,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 242,
+    "data_year": 2018,
+    "primary_rate": 19.1,
+    "secondary_rate": 14.2
+  },
+  {
+    "nation_cd": 246,
+    "data_year": 2018,
+    "primary_rate": 3.7,
+    "secondary_rate": 22.3
+  },
+  {
+    "nation_cd": 250,
+    "data_year": 2018,
+    "primary_rate": 2.5,
+    "secondary_rate": 20
+  },
+  {
+    "nation_cd": 254,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 258,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 260,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 262,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 266,
+    "data_year": 2018,
+    "primary_rate": 43.5,
+    "secondary_rate": 9.6
+  },
+  {
+    "nation_cd": 268,
+    "data_year": 2018,
+    "primary_rate": 38.9,
+    "secondary_rate": 14.4
+  },
+  {
+    "nation_cd": 270,
+    "data_year": 2018,
+    "primary_rate": 29.6,
+    "secondary_rate": 15.4
+  },
+  {
+    "nation_cd": 276,
+    "data_year": 2018,
+    "primary_rate": 1.2,
+    "secondary_rate": 27.3
+  },
+  {
+    "nation_cd": 288,
+    "data_year": 2018,
+    "primary_rate": 28.4,
+    "secondary_rate": 21
+  },
+  {
+    "nation_cd": 292,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 296,
+    "data_year": 2018,
+    "primary_rate": 24.3,
+    "secondary_rate": 18.2
+  },
+  {
+    "nation_cd": 300,
+    "data_year": 2018,
+    "primary_rate": 12.3,
+    "secondary_rate": 15.2
+  },
+  {
+    "nation_cd": 304,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 308,
+    "data_year": 2018,
+    "primary_rate": 13.8,
+    "secondary_rate": 23.9
+  },
+  {
+    "nation_cd": 312,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 316,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 320,
+    "data_year": 2018,
+    "primary_rate": 31.8,
+    "secondary_rate": 19
+  },
+  {
+    "nation_cd": 324,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 328,
+    "data_year": 2018,
+    "primary_rate": 17.8,
+    "secondary_rate": 22.7
+  },
+  {
+    "nation_cd": 332,
+    "data_year": 2018,
+    "primary_rate": 31.3,
+    "secondary_rate": 6.7
+  },
+  {
+    "nation_cd": 334,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 336,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 340,
+    "data_year": 2018,
+    "primary_rate": 30.7,
+    "secondary_rate": 20.2
+  },
+  {
+    "nation_cd": 348,
+    "data_year": 2018,
+    "primary_rate": 4.8,
+    "secondary_rate": 32.4
+  },
+  {
+    "nation_cd": 352,
+    "data_year": 2018,
+    "primary_rate": 4,
+    "secondary_rate": 16.8
+  },
+  {
+    "nation_cd": 356,
+    "data_year": 2018,
+    "primary_rate": 43.3,
+    "secondary_rate": 24.9
+  },
+  {
+    "nation_cd": 360,
+    "data_year": 2018,
+    "primary_rate": 29.6,
+    "secondary_rate": 22.3
+  },
+  {
+    "nation_cd": 364,
+    "data_year": 2018,
+    "primary_rate": 17.7,
+    "secondary_rate": 32
+  },
+  {
+    "nation_cd": 368,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 372,
+    "data_year": 2018,
+    "primary_rate": 4.8,
+    "secondary_rate": 18.7
+  },
+  {
+    "nation_cd": 376,
+    "data_year": 2018,
+    "primary_rate": 0.9,
+    "secondary_rate": 16.8
+  },
+  {
+    "nation_cd": 380,
+    "data_year": 2018,
+    "primary_rate": 3.8,
+    "secondary_rate": 26.1
+  },
+  {
+    "nation_cd": 384,
+    "data_year": 2018,
+    "primary_rate": 41.9,
+    "secondary_rate": 12.5
+  },
+  {
+    "nation_cd": 388,
+    "data_year": 2018,
+    "primary_rate": 16.2,
+    "secondary_rate": 16.1
+  },
+  {
+    "nation_cd": 392,
+    "data_year": 2018,
+    "primary_rate": 3.4,
+    "secondary_rate": 23.9
+  },
+  {
+    "nation_cd": 398,
+    "data_year": 2018,
+    "primary_rate": 15.4,
+    "secondary_rate": 19.9
+  },
+  {
+    "nation_cd": 400,
+    "data_year": 2018,
+    "primary_rate": 4.1,
+    "secondary_rate": 25.7
+  },
+  {
+    "nation_cd": 404,
+    "data_year": 2018,
+    "primary_rate": 61.1,
+    "secondary_rate": 6.7
+  },
+  {
+    "nation_cd": 408,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 410,
+    "data_year": 2018,
+    "primary_rate": 5,
+    "secondary_rate": 25.1
+  },
+  {
+    "nation_cd": 414,
+    "data_year": 2018,
+    "primary_rate": 2.2,
+    "secondary_rate": 20.8
+  },
+  {
+    "nation_cd": 417,
+    "data_year": 2018,
+    "primary_rate": 23,
+    "secondary_rate": 23.1
+  },
+  {
+    "nation_cd": 418,
+    "data_year": 2018,
+    "primary_rate": 31.3,
+    "secondary_rate": 14.1
+  },
+  {
+    "nation_cd": 422,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 426,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 428,
+    "data_year": 2018,
+    "primary_rate": 7,
+    "secondary_rate": 23.6
+  },
+  {
+    "nation_cd": 430,
+    "data_year": 2018,
+    "primary_rate": 33.7,
+    "secondary_rate": 9
+  },
+  {
+    "nation_cd": 434,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 438,
+    "data_year": 2018,
+    "primary_rate": 1,
+    "secondary_rate": 28.5
+  },
+  {
+    "nation_cd": 440,
+    "data_year": 2018,
+    "primary_rate": 7.2,
+    "secondary_rate": 25.8
+  },
+  {
+    "nation_cd": 442,
+    "data_year": 2018,
+    "primary_rate": 1,
+    "secondary_rate": 10.7
+  },
+  {
+    "nation_cd": 450,
+    "data_year": 2018,
+    "primary_rate": 74.5,
+    "secondary_rate": 9.1
+  },
+  {
+    "nation_cd": 454,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 458,
+    "data_year": 2018,
+    "primary_rate": 11.3,
+    "secondary_rate": 27.7
+  },
+  {
+    "nation_cd": 462,
+    "data_year": 2018,
+    "primary_rate": 9,
+    "secondary_rate": 18.3
+  },
+  {
+    "nation_cd": 466,
+    "data_year": 2018,
+    "primary_rate": 63,
+    "secondary_rate": 7.7
+  },
+  {
+    "nation_cd": 470,
+    "data_year": 2018,
+    "primary_rate": 1,
+    "secondary_rate": 18.6
+  },
+  {
+    "nation_cd": 474,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 478,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 480,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 484,
+    "data_year": 2018,
+    "primary_rate": 12.7,
+    "secondary_rate": 25.9
+  },
+  {
+    "nation_cd": 492,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 496,
+    "data_year": 2018,
+    "primary_rate": 26.7,
+    "secondary_rate": 20.6
+  },
+  {
+    "nation_cd": 498,
+    "data_year": 2018,
+    "primary_rate": 36.1,
+    "secondary_rate": 16.5
+  },
+  {
+    "nation_cd": 499,
+    "data_year": 2018,
+    "primary_rate": 8,
+    "secondary_rate": 18.9
+  },
+  {
+    "nation_cd": 500,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 504,
+    "data_year": 2018,
+    "primary_rate": 37.2,
+    "secondary_rate": 17.7
+  },
+  {
+    "nation_cd": 508,
+    "data_year": 2018,
+    "primary_rate": 72.1,
+    "secondary_rate": 7.7
+  },
+  {
+    "nation_cd": 512,
+    "data_year": 2018,
+    "primary_rate": 4.4,
+    "secondary_rate": 46.2
+  },
+  {
+    "nation_cd": 516,
+    "data_year": 2018,
+    "primary_rate": 22.6,
+    "secondary_rate": 16.2
+  },
+  {
+    "nation_cd": 520,
+    "data_year": 2018,
+    "primary_rate": 2.7,
+    "secondary_rate": 24.9
+  },
+  {
+    "nation_cd": 524,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 528,
+    "data_year": 2018,
+    "primary_rate": 1.9,
+    "secondary_rate": 14.6
+  },
+  {
+    "nation_cd": 531,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 533,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 534,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 535,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 540,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 548,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 554,
+    "data_year": 2018,
+    "primary_rate": 5.8,
+    "secondary_rate": 19.8
+  },
+  {
+    "nation_cd": 558,
+    "data_year": 2018,
+    "primary_rate": 31.1,
+    "secondary_rate": 17.5
+  },
+  {
+    "nation_cd": 562,
+    "data_year": 2018,
+    "primary_rate": 77.1,
+    "secondary_rate": 7.3
+  },
+  {
+    "nation_cd": 566,
+    "data_year": 2018,
+    "primary_rate": 37.8,
+    "secondary_rate": 11.7
+  },
+  {
+    "nation_cd": 570,
+    "data_year": 2018,
+    "primary_rate": 9,
+    "secondary_rate": 20.4
+  },
+  {
+    "nation_cd": 574,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 578,
+    "data_year": 2018,
+    "primary_rate": 2.1,
+    "secondary_rate": 19.5
+  },
+  {
+    "nation_cd": 580,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 581,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 583,
+    "data_year": 2018,
+    "primary_rate": 34.6,
+    "secondary_rate": 6.2
+  },
+  {
+    "nation_cd": 584,
+    "data_year": 2018,
+    "primary_rate": 11,
+    "secondary_rate": 9.4
+  },
+  {
+    "nation_cd": 585,
+    "data_year": 2018,
+    "primary_rate": 2.7,
+    "secondary_rate": 7.2
+  },
+  {
+    "nation_cd": 586,
+    "data_year": 2018,
+    "primary_rate": 37.4,
+    "secondary_rate": 25
+  },
+  {
+    "nation_cd": 591,
+    "data_year": 2018,
+    "primary_rate": 14.2,
+    "secondary_rate": 18.8
+  },
+  {
+    "nation_cd": 598,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 600,
+    "data_year": 2018,
+    "primary_rate": 20.1,
+    "secondary_rate": 18.6
+  },
+  {
+    "nation_cd": 604,
+    "data_year": 2018,
+    "primary_rate": 27.7,
+    "secondary_rate": 15.7
+  },
+  {
+    "nation_cd": 608,
+    "data_year": 2018,
+    "primary_rate": 24.3,
+    "secondary_rate": 19.1
+  },
+  {
+    "nation_cd": 612,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 616,
+    "data_year": 2018,
+    "primary_rate": 9.6,
+    "secondary_rate": 31.7
+  },
+  {
+    "nation_cd": 620,
+    "data_year": 2018,
+    "primary_rate": 6,
+    "secondary_rate": 24.8
+  },
+  {
+    "nation_cd": 624,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 626,
+    "data_year": 2018,
+    "primary_rate": 46.3,
+    "secondary_rate": 8.5
+  },
+  {
+    "nation_cd": 630,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 634,
+    "data_year": 2018,
+    "primary_rate": 1.2,
+    "secondary_rate": 54.5
+  },
+  {
+    "nation_cd": 638,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 642,
+    "data_year": 2018,
+    "primary_rate": 22.3,
+    "secondary_rate": 30
+  },
+  {
+    "nation_cd": 643,
+    "data_year": 2018,
+    "primary_rate": 5.9,
+    "secondary_rate": 26.8
+  },
+  {
+    "nation_cd": 646,
+    "data_year": 2018,
+    "primary_rate": 39.5,
+    "secondary_rate": 18.8
+  },
+  {
+    "nation_cd": 652,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 654,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 659,
+    "data_year": 2018,
+    "primary_rate": 0.2,
+    "secondary_rate": 48.8
+  },
+  {
+    "nation_cd": 660,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 662,
+    "data_year": 2018,
+    "primary_rate": 10.2,
+    "secondary_rate": 15.7
+  },
+  {
+    "nation_cd": 663,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 666,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 670,
+    "data_year": 2018,
+    "primary_rate": 15.4,
+    "secondary_rate": 19.7
+  },
+  {
+    "nation_cd": 674,
+    "data_year": 2018,
+    "primary_rate": 0.3,
+    "secondary_rate": 32.8
+  },
+  {
+    "nation_cd": 678,
+    "data_year": 2018,
+    "primary_rate": 26.2,
+    "secondary_rate": 14.5
+  },
+  {
+    "nation_cd": 682,
+    "data_year": 2018,
+    "primary_rate": 2.5,
+    "secondary_rate": 24.8
+  },
+  {
+    "nation_cd": 686,
+    "data_year": 2018,
+    "primary_rate": 33.2,
+    "secondary_rate": 12.9
+  },
+  {
+    "nation_cd": 688,
+    "data_year": 2018,
+    "primary_rate": 15.9,
+    "secondary_rate": 26.9
+  },
+  {
+    "nation_cd": 690,
+    "data_year": 2018,
+    "primary_rate": 3.8,
+    "secondary_rate": 12.8
+  },
+  {
+    "nation_cd": 694,
+    "data_year": 2018,
+    "primary_rate": 57,
+    "secondary_rate": 6
+  },
+  {
+    "nation_cd": 702,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 15.1
+  },
+  {
+    "nation_cd": 703,
+    "data_year": 2018,
+    "primary_rate": 2.3,
+    "secondary_rate": 36.5
+  },
+  {
+    "nation_cd": 704,
+    "data_year": 2018,
+    "primary_rate": 37.7,
+    "secondary_rate": 26.7
+  },
+  {
+    "nation_cd": 705,
+    "data_year": 2018,
+    "primary_rate": 5.4,
+    "secondary_rate": 33.1
+  },
+  {
+    "nation_cd": 706,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 710,
+    "data_year": 2018,
+    "primary_rate": 5.2,
+    "secondary_rate": 23.1
+  },
+  {
+    "nation_cd": 716,
+    "data_year": 2018,
+    "primary_rate": 67.2,
+    "secondary_rate": 7.4
+  },
+  {
+    "nation_cd": 724,
+    "data_year": 2018,
+    "primary_rate": 4.2,
+    "secondary_rate": 20.3
+  },
+  {
+    "nation_cd": 728,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 729,
+    "data_year": 2018,
+    "primary_rate": 44,
+    "secondary_rate": 15.1
+  },
+  {
+    "nation_cd": 732,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 740,
+    "data_year": 2018,
+    "primary_rate": 2.3,
+    "secondary_rate": 22.9
+  },
+  {
+    "nation_cd": 744,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 748,
+    "data_year": 2018,
+    "primary_rate": 12.9,
+    "secondary_rate": 24
+  },
+  {
+    "nation_cd": 752,
+    "data_year": 2018,
+    "primary_rate": 1.7,
+    "secondary_rate": 18.1
+  },
+  {
+    "nation_cd": 756,
+    "data_year": 2018,
+    "primary_rate": 3,
+    "secondary_rate": 20
+  },
+  {
+    "nation_cd": 760,
+    "data_year": 2018,
+    "primary_rate": 13.2,
+    "secondary_rate": 31.4
+  },
+  {
+    "nation_cd": 762,
+    "data_year": 2018,
+    "primary_rate": 45.8,
+    "secondary_rate": 15.5
+  },
+  {
+    "nation_cd": 764,
+    "data_year": 2018,
+    "primary_rate": 32.1,
+    "secondary_rate": 22.8
+  },
+  {
+    "nation_cd": 768,
+    "data_year": 2018,
+    "primary_rate": 11.1,
+    "secondary_rate": 11.1
+  },
+  {
+    "nation_cd": 772,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 776,
+    "data_year": 2018,
+    "primary_rate": 31.8,
+    "secondary_rate": 30.6
+  },
+  {
+    "nation_cd": 780,
+    "data_year": 2018,
+    "primary_rate": 3.2,
+    "secondary_rate": 27.3
+  },
+  {
+    "nation_cd": 784,
+    "data_year": 2018,
+    "primary_rate": 1.5,
+    "secondary_rate": 34.6
+  },
+  {
+    "nation_cd": 788,
+    "data_year": 2018,
+    "primary_rate": 14.8,
+    "secondary_rate": 33.1
+  },
+  {
+    "nation_cd": 792,
+    "data_year": 2018,
+    "primary_rate": 18.4,
+    "secondary_rate": 26.7
+  },
+  {
+    "nation_cd": 795,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 796,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 798,
+    "data_year": 2018,
+    "primary_rate": 27,
+    "secondary_rate": 9.5
+  },
+  {
+    "nation_cd": 800,
+    "data_year": 2018,
+    "primary_rate": 71.7,
+    "secondary_rate": 7
+  },
+  {
+    "nation_cd": 804,
+    "data_year": 2018,
+    "primary_rate": 15.4,
+    "secondary_rate": 24.3
+  },
+  {
+    "nation_cd": 807,
+    "data_year": 2018,
+    "primary_rate": 15.7,
+    "secondary_rate": 31.4
+  },
+  {
+    "nation_cd": 818,
+    "data_year": 2018,
+    "primary_rate": 25,
+    "secondary_rate": 26.5
+  },
+  {
+    "nation_cd": 826,
+    "data_year": 2018,
+    "primary_rate": 1.1,
+    "secondary_rate": 18
+  },
+  {
+    "nation_cd": 833,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 834,
+    "data_year": 2018,
+    "primary_rate": 68.1,
+    "secondary_rate": 6.3
+  },
+  {
+    "nation_cd": 840,
+    "data_year": 2018,
+    "primary_rate": 1.4,
+    "secondary_rate": 19.9
+  },
+  {
+    "nation_cd": 850,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 854,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 858,
+    "data_year": 2018,
+    "primary_rate": 8.4,
+    "secondary_rate": 19.2
+  },
+  {
+    "nation_cd": 860,
+    "data_year": 2018,
+    "primary_rate": 26.6,
+    "secondary_rate": 22.7
+  },
+  {
+    "nation_cd": 862,
+    "data_year": 2018,
+    "primary_rate": 7.4,
+    "secondary_rate": 21.3
+  },
+  {
+    "nation_cd": 876,
+    "data_year": 2018,
+    "primary_rate": 0,
+    "secondary_rate": 0
+  },
+  {
+    "nation_cd": 882,
+    "data_year": 2018,
+    "primary_rate": 21.9,
+    "secondary_rate": 15.4
+  },
+  {
+    "nation_cd": 887,
+    "data_year": 2018,
+    "primary_rate": 29.2,
+    "secondary_rate": 14.5
+  },
+  {
+    "nation_cd": 894,
+    "data_year": 2018,
+    "primary_rate": 55.8,
+    "secondary_rate": 10.1
+  }
+]

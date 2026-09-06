@@ -199,6 +199,63 @@ async function main() {
     if (tradeBalance.length > 0) writeJSON('trade-balance.json', tradeBalance);
     filesCreated++;
 
+    // ===== geoレッスンのDB連動表・追加分 =====
+    console.log('\n🗺️ Geo Lesson Tables:');
+
+    const landUse = safeQuery(db, 'SELECT * FROM land_use', 'land use');
+    if (landUse.length > 0) writeJSON('land-use.json', landUse);
+    filesCreated++;
+
+    const immigration = safeQuery(db, 'SELECT * FROM immigration', 'immigration');
+    if (immigration.length > 0) writeJSON('immigration.json', immigration);
+    filesCreated++;
+
+    const industrialPopulationStructure = safeQuery(
+      db,
+      'SELECT * FROM industrial_population_structure',
+      'industrial population structure'
+    );
+    if (industrialPopulationStructure.length > 0) {
+      writeJSON('industrial-population-structure.json', industrialPopulationStructure);
+    }
+    filesCreated++;
+
+    const portContainer = safeQuery(db, 'SELECT * FROM port_container', 'port container');
+    if (portContainer.length > 0) writeJSON('port-container.json', portContainer);
+    filesCreated++;
+
+    const portInfo = safeQuery(db, 'SELECT * FROM port_info', 'port info');
+    if (portInfo.length > 0) writeJSON('port-info.json', portInfo);
+    filesCreated++;
+
+    const portTransactionValue = safeQuery(db, 'SELECT * FROM port_transaction_value', 'port transaction value');
+    if (portTransactionValue.length > 0) writeJSON('port-transaction-value.json', portTransactionValue);
+    filesCreated++;
+
+    const itemsEachPorts = safeQuery(db, 'SELECT * FROM items_each_ports', 'items each ports');
+    if (itemsEachPorts.length > 0) writeJSON('items-each-ports.json', itemsEachPorts);
+    filesCreated++;
+
+    const foodSelfSufficiencyRate = safeQuery(
+      db,
+      'SELECT * FROM food_self_sufficiency_rate',
+      'food self sufficiency rate'
+    );
+    if (foodSelfSufficiencyRate.length > 0) writeJSON('food-self-sufficiency-rate.json', foodSelfSufficiencyRate);
+    filesCreated++;
+
+    const totalFertilityRate = safeQuery(db, 'SELECT * FROM total_fertility_rate', 'total fertility rate');
+    if (totalFertilityRate.length > 0) writeJSON('total-fertility-rate.json', totalFertilityRate);
+    filesCreated++;
+
+    const birthRate = safeQuery(db, 'SELECT * FROM birth_rate', 'birth rate');
+    if (birthRate.length > 0) writeJSON('birth-rate.json', birthRate);
+    filesCreated++;
+
+    const statisticsChangesData = safeQuery(db, 'SELECT * FROM statistics_changes_data', 'statistics changes data');
+    if (statisticsChangesData.length > 0) writeJSON('statistics-changes-data.json', statisticsChangesData);
+    filesCreated++;
+
     // ===== 生産データ =====
     console.log('\n🌾 Production Data:');
 
@@ -312,6 +369,19 @@ async function main() {
           'export-items.json',
           'import-items.json',
           'trade-balance.json'
+        ],
+        geo_lessons: [
+          'land-use.json',
+          'immigration.json',
+          'industrial-population-structure.json',
+          'port-container.json',
+          'port-info.json',
+          'port-transaction-value.json',
+          'items-each-ports.json',
+          'food-self-sufficiency-rate.json',
+          'total-fertility-rate.json',
+          'birth-rate.json',
+          'statistics-changes-data.json'
         ],
         production: [
           'production.json'

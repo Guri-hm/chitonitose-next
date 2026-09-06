@@ -204,7 +204,7 @@ isStacked: 'percent',
 <div class="text-center">
 各国の鉄道輸送量
 </div>
-$json = json_encode(['params'=>array(['statistics_id'=>327],['statistics_id'=>328])]); include('./php/statistics_nation_table.php'); ?>
+::statistics-compare{ids="327,328"}
 ::sup
 人㎞は人数とその輸送距離の乗算
 ::
@@ -330,6 +330,7 @@ LRT<div class="lead">段差がなく、走行時の騒音や振動が少ない�
 ::
 <div class="overflow-x-auto mt-10 mb-10">
 <div class="text-center">自転車保有台数の変化</div>
+::statistics{id="329" hasNumCol="false" arr_year="1980,1990,2000,2010,2020"}
 </div>
 ::gazo
 ![](general_merchandise_store.webp)
@@ -490,6 +491,7 @@ LNG船
 ![](container_ship.webp)
 コンテナ船
 ::
+::port-container{}
 #### 海峡・運河による距離の短縮
 ::top
 船舶の遅い速度を補うため、海峡や人工的な水路（運河）を利用し、船舶の移動距離を減らしています。
@@ -565,7 +567,7 @@ height: 500
 <div class="overflow-x-auto mt-10 mb-10">
 <div class="text-center">各国の通信メディア
 </div>
-$json = json_encode(['params'=>array(['statistics_id'=>330],['statistics_id'=>331],['statistics_id'=>332],['statistics_id'=>333])]); include('./php/statistics_nation_table.php'); ?>
+::statistics-compare{ids="330,331,332,333"}
 ::sup
 タイ・マレーシアのインターネット利用者数の2012年のもの
 ::
@@ -723,7 +725,7 @@ Nokiaはフィンランドの通信機器メーカー。携帯電話の市場を
 <div class="overflow-x-auto mt-10 mb-10">
 <div class="text-center">各国の通信メディア
 </div>
-$json = json_encode(['params'=>array(['statistics_id'=>333],['statistics_id'=>301])]); include('./php/statistics_nation_table.php'); ?>
+::statistics-compare{ids="333,301"}
 ::sup
 タイ・マレーシアのインターネット利用者数の2012年のもの
 ::

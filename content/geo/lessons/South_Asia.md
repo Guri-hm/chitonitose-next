@@ -84,7 +84,7 @@
 ::
 ::gazo
 ![](South_Asia_monsoon_summer_with_mountain.webp){.border}
-<img class="lazyload popup-img border border-1" data-src="img/South_Asia_monsoon_winter_with_mountain.webp" alt="南アジアの季節風（冬）" src="../share/img/loading.svg" />
+![](South_Asia_monsoon_winter_with_mountain.webp){.border}
 南アジアの季節風
 ::
 ### 熱帯低気圧
@@ -380,7 +380,7 @@
 ::
 ::gazo
 ![](population_pyramid_India1960.webp)
-<img class="lazyload popup-img" data-src="img/population_pyramid_India2019.webp" alt="人口ピラミッド(2019年のインド)" src="../share/img/loading.svg" />
+![](population_pyramid_India2019.webp)
 人口ピラミッド(1960年と2019年のインド)
 ::
 ::gazo

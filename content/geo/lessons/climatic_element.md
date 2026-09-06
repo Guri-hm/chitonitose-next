@@ -364,7 +364,7 @@
 ::
 ::gazo
 ![](coriolis_force.webp)
-<img class="lazyload popup-img" data-src="img/coriolis_force_westerlies.webp" alt="コリオリの力" src="../share/img/loading.svg" />
+![](coriolis_force_westerlies.webp)
 コリオリの力
 ::
 ### 季節風

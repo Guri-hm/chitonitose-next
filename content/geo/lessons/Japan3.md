@@ -6,6 +6,7 @@
 ::last
 そのため、土地生産性や単位面積の農業産出額を高めてきました。
 ::
+::land-use{data_year="2019" params="392"}
 <script type="text/javascript">
 createChartAsync(Chart.Bar, { "data_year": 2019, "statistics_ids": [36, 392, 840, 250, 826, 156] }, 'ha_per_farmer', {
 title: '農民１人あたりの耕地面積(2019年)',
@@ -124,6 +125,7 @@ isStacked: true,
 中国からの安い野菜が国内農業に重大な損害を与えているとし、例外的に輸入制限をかける措置（セーフガード）を発動
 ::
 ### 食料自給率
+::food-self-sufficiency{params="392,380,826,250,276,840" data_year="2017"}
 <script type="text/javascript">
 createChartAsync(Chart.Combo, {
 "params": [
@@ -220,6 +222,7 @@ fontSize: 14,
 ::last
 しかし、近年は安価な輸入材の増加で、木材自給率が低下しました。
 ::
+::land-use{data_year="2019" params="392"}
 <script type="text/javascript">
 createChartAsync(Chart.Combo, {
 "params": ""

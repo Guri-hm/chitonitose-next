@@ -40,7 +40,7 @@
 ::
 ::gazo
 ![](Southeast_Asia_plate.webp){.border}
-<img class="lazyload popup-img border border-1" data-src="img/Southeast_Asia_convergent_boundary.webp" alt="狭まる境界" src="../share/img/loading.svg" />
+![](Southeast_Asia_convergent_boundary.webp){.border}
 東南アジアのプレートと狭まる境界
 ::
 ::gazo
@@ -94,7 +94,7 @@
 ::
 ::gazo
 ![](Southeast_Asia_monsoon_summer.webp){.border}
-<img class="lazyload popup-img border border-1" data-src="img/Southeast_Asia_monsoon_winter.webp" alt="東南アジアの季節風（冬）" src="../share/img/loading.svg" />
+![](Southeast_Asia_monsoon_winter.webp){.border}
 東南アジアの季節風
 ::
 ### スコール

@@ -27,6 +27,7 @@
 ![](Antarctica.webp){.twice}
 南極大陸
 ::
+::continental-altitude{}
 ### 気候
 ::top
 南極大陸は陸地であるため、冷たくなりやすいです。

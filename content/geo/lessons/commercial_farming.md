@@ -69,7 +69,7 @@
 ::
 ::gazo
 ![](cattle2.webp)
-<img class="lazyload popup-img" data-src="img/wheat2.webp" alt="小麦" src="../share/img/loading.svg" />
+![](wheat2.webp)
 ::
 ---arrow---
 ::top
@@ -167,7 +167,7 @@
 ::
 ::gazo
 ![](cattle3.webp)
-<img class="lazyload popup-img" data-src="img/dairy-products.webp" alt="乳製品" src="../share/img/loading.svg" />
+![](dairy-products.webp)
 ::
 ### 地域ごとの特色
 #### デンマーク
@@ -184,7 +184,7 @@
 ::
 ::gazo
 ![](polder2.webp)
-<img class="lazyload popup-img" data-src="img/polder3.webp" alt="ポルダーでの酪農" src="../share/img/loading.svg" />
+![](polder3.webp)
 ポルダーでの酪農
 ::
 #### スイス
@@ -247,12 +247,12 @@
 ::
 ::gazo
 ![](wheat2.webp)
-<img class="lazyload popup-img" data-src="img/sheep2.webp" alt="" src="../share/img/loading.svg" />
+![](sheep2.webp)
 小麦と羊
 ::
 ::gazo
 ![](olive_tree.webp)
-<img class="lazyload popup-img" data-src="img/cork.webp" alt="" src="../share/img/loading.svg" />
+![](cork.webp)
 オリーブとコルクガシ
 ::
 ### 作物と家畜

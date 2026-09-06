@@ -240,7 +240,7 @@
 ::
 ::gazo
 ![](population_pyramid_Germany.svg)
-<img class="lazyload popup-img" data-src="img/population_pyramid_Italy.svg" alt="イタリアの人口ピラミッド" src="../share/img/loading.svg" />
+![](population_pyramid_Italy.svg)
 左：ドイツの人口ピラミッド（2019年）、右：イタリアの人口ピラミッド（2019年）
 ::
 #### アメリカの人口ピラミッド
@@ -383,6 +383,6 @@ height: 500
 ::
 ::gazo
 ![](population_pyramid_China1970.svg)
-<img class="lazyload popup-img" data-src="img/population_pyramid_China2019.svg" alt="中国の人口ピラミッド(2019)" src="../share/img/loading.svg" />
+![](population_pyramid_China2019.svg)
 左：中国の人口ピラミッド（1970年）、右：中国の人口ピラミッド（2019年）
 ::

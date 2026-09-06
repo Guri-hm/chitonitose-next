@@ -115,7 +115,7 @@
 ::
 ::gazo
 ![](map_Finland.webp){.border}
-<img class="lazyload popup-img half border border-1" data-src="img/map_Finland_glacier_lake.webp" alt="フィンランドの氷河湖" src="../share/img/loading.svg" />
+![](map_Finland_glacier_lake.webp){.half}
 フィンランドの氷河湖
 ::
 #### Ｕ字谷

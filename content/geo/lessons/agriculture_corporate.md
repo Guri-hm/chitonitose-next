@@ -66,7 +66,7 @@
 ::
 ::gazo
 ![](cattle2.webp)
-<img class="lazyload popup-img" data-src="img/sheep2.webp" alt="" src="../share/img/loading.svg" />
+![](sheep2.webp)
 牛・羊
 ::
 ### 主要地域

@@ -203,3 +203,70 @@ node scripts/regenerate-geo-lessons.js
    （Google Chartsなど、対話性が必要でReact化が避けられない機能を本格的に使う前に必要）。
 6. 今回の変更をレビュー後コミットすること。特に `content/geo/lessons/*.md` の差分は
    `git diff` でスポットチェックしてからコミット推奨。
+
+---
+
+## 2026-09-06 追記: 上記1〜4を完了、5は未着手
+
+### 完了したこと
+
+1. **gazo divの複数画像対応**（`htmlToCustomMarkdown`）: `[...inner.matchAll(/<img\b[^>]*>/g)]` で
+   全imgタグを抽出するよう修正。`China.md` の人口ピラミッド1970/2019年の2枚組が両方とも
+   正しく表示されるようになった。
+   - **副産物で発見・修正したバグ**: `parseCustomMarkdown`（順変換）に `<ul>/<li>` ブロックの
+     専用ハンドラが無く、`<li>` 内に埋め込まれた `:::lead...:::` が1行ずつ処理されて変換されず、
+     `:::lead` の文字列がそのまま画面に表示されるバグがあった（`China.md` の「56の民族」リスト等）。
+     `<ul>`〜`</ul>` をブロックとしてまとめて取得し、`:::lead` 正規表現を適用してから
+     `convertInlineMarkdown` するよう新規ハンドラを追加して解消。
+2. **クリック用語正規表現の寛容化**: `convertHtmlToMarkdownInline` の4箇所の正規表現を
+   `class="all">` → `class="all"[^>]*>` に変更。`projection.md`（サンソン等の図法名）が
+   正しく `[[term]]` に変換されるようになった。`food_problems.md` の `<a href=... src="...">` は
+   `<img>` ではなく実害が無いため未修正のまま許容（対応不要と判断）。
+3. **`agriculture_self-sufficient.md`のラトソル**: 元HTML
+   （`origin/chitonitose/geo/geo_lessons_agriculture_self-sufficient.html`、**別ネストGitリポジトリ**、
+   ローカルコミット済み）に `class="all"` を追加して修正。`[[ラトソル]]` に正しく変換される。
+4. **使用頻度2回以上の残り16種のPHPスクリプトを全て移行完了**（`land_use`, `city`,
+   `immigration`, `industrial_population_structure`, `port_container`, `items_each_ports`,
+   `food_self_sufficiency_rate`, `total_fertility_rate`, `aging_society`, `trade_balance`,
+   `area_population`, `statistics_any_name_table`（既存`::statistics`に`hasNumCol`対応を追加して
+   合流）, `statistics_nation_table`（`::statistics-compare{ids="..."}`として新設。
+   `$json = json_encode([...])` という特殊呼び出し形式のため専用パーサーを実装）,
+   `continental_altitude` / `jp_natural_environment`（元PHPがDBを使わず静的HTMLを出力していたと
+   判明、固定HTML文字列として実装）。
+   - **新たに発見・修正した仕組み上のバグ**:
+     - `<?php` タグが開始行、実際のコード（`include(...)`含む）が次の行、という**複数行PHPブロック**
+       が一部ファイルにあり（`tertiary_industry2.html`の`statistics_nation_table`呼び出し等）、
+       従来は1行内に`<?php...?>`が完結する前提だったため変換されず生PHPコードが漏れていた。
+       →`?>`が見つかるまで複数行を結合してから処理するよう修正。
+     - `statistics_nation_table.php`は`statistics_data`ではなく別テーブル`statistics_changes_data`
+       (`nation_cd`,`value`,`arrange_unit`による単位換算あり)を参照することが判明。新規JSON
+       (`statistics-changes-data.json`)を追加してこちらを参照するよう実装。
+   - **データベース自体の誤りを発見・修正**: `port_container`テーブルで「プサン(釜山)」の
+     `nation_cd`が156（中国）になっていた（正しくは410・韓国）。`data.sqlite3`を直接UPDATEし、
+     JSON再出力して解消（`data.sqlite3`はgit管理下、変更はコミット済み）。
+   - `scripts/sqlite-to-json.js`に10個の新規テーブルのエクスポートを追加
+     （`land-use.json`, `immigration.json`, `industrial-population-structure.json`,
+     `port-container.json`, `port-info.json`, `port-transaction-value.json`,
+     `items-each-ports.json`, `food-self-sufficiency-rate.json`, `total-fertility-rate.json`,
+     `birth-rate.json`, `statistics-changes-data.json`）。
+   - `lib/dataLoader.ts`に対応する型・ローダー・`loadLessonDbDatasets()`への統合を追加。
+   - `lib/renderLessonDbTables.ts`に各テーブル用の描画関数を追加（Reactコンポーネントは使わず、
+     既存方針どおりプレーンな文字列結合関数）。
+5. `npm run build` 成功（427ページ生成）を確認。ブラウザで以下を目視確認済み:
+   `Europa_countries1`（land-use/total-fertility-rate/aging-society/immigration）、
+   `China`（複数画像gazo・港湾コンテナ・面積人口ランキング）、
+   `tertiary_industry2`（statistics-compare鉄道輸送量比較）、
+   `Japan5`（items-each-ports港別貿易額）、`food_problems`（食料自給率）、
+   `Oceania`（city都市人口）、`Africa`/`Japan1`（continental-altitude/jp-natural-environment固定表）。
+
+### 未着手（次回優先）
+
+- 前述「⚠️ 未解決の懸念」の `createRoot` マウント不具合の根本原因調査
+  （Google Chartsなど、対話性が必要でReact化が避けられない機能を本格的に使う前に必要）。
+- 残り約50種弱の低頻度PHPスクリプト（使用1回のみのもの、`getXML_API`など）は未移行。
+  優先度は低いが、必要になれば同じパターンで追加可能。
+- `origin/chitonitose` は**別のネストされたGitリポジトリ**（`.gitmodules`には未登録の生gitlink）。
+  中を編集した場合は `cd origin/chitonitose && git add/commit` を忘れないこと
+  （親リポジトリ側は単にgitlinkの参照が変わるだけで、差分の中身は追えない）。
+- 今回の変更（コミット済み）を必要に応じて `git push` すること（本セッションではpushしていない）。
+

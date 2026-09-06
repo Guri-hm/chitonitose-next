@@ -249,11 +249,14 @@ sliceVisibilityThreshold: 0
 ::last
 耕地率が低い反面、両国とも森林率が高くて林業が盛んです。
 ::
+::land-use{data_year="2019" params="752,246"}
 ::statistics{id="61" order="desc" limit="8" offset="0"}
 ### 人口
 ::top
 早くから少子化対策に取り組み、育児環境を整備しました。
 ::
+::total-fertility-rate{params="250,826,752,528,276,380,724"}
+::aging-society{params="250,752,380,276,392"}
 ### 鉱工業
 ::top
 北欧最大の工業国で、北部には鉄鉱石を産出するキルナ鉄山があります。
@@ -296,6 +299,7 @@ sliceVisibilityThreshold: 0
 ::last
 耕地率が低い反面、両国とも森林率が高くて林業が盛んです。
 ::
+::land-use{data_year="2019" params="752,246"}
 ::statistics{id="61" order="desc" limit="8" offset="0"}
 ### 衣食住
 #### サウナ

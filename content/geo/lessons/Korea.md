@@ -228,6 +228,7 @@ height: 500
 ::top
 韓国の人口密度は、世界有数の高さです。
 ::
+::area-population{order="area" limit="7" offset="72"}
 #### 都市人口
 ::top
 2018年時点での都市人口率は81.5%です（日本は91.6%）。

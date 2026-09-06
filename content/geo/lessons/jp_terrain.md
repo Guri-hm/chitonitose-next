@@ -184,6 +184,7 @@
 ::top
 勾配が急で長さが短いです。
 ::
+::jp-natural-environment{}
 ::gazo
 ![](river_slope.webp){.twice}
 河川の勾配

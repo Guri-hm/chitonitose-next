@@ -234,7 +234,7 @@
 </ul>
 ::gazo
 ![](Palestine.webp){.border}
-<img class="lazyload popup-img border border-1 half" data-src="img/Palestinian_Territories.webp" alt="パレスチナ自治区" src="../share/img/loading.svg" />
+![](Palestinian_Territories.webp){.border}
 パレスチナ自治区
 ::
 #### ３つの聖地
@@ -520,6 +520,7 @@ OAPEC（アラブ石油輸出国機構）結成
 ::last
 かつてトルコの地にあったオスマン帝国の首都であり、ヨーロッパとアジアをつなぐ東西交通の要衝です。
 ::
+::city{params="792"}
 ::gazo
 ![](Turkey_urban_population.webp)
 トルコの都市人口の比率(2019年)

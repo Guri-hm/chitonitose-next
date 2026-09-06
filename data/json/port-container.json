@@ -1,0 +1,74 @@
+[
+  {
+    "port_name": "コワンチョウ(広州)",
+    "nation_cd": 156,
+    "transaction_volume": 2037,
+    "data_year": 2017
+  },
+  {
+    "port_name": "シェンチェン(深圳)",
+    "nation_cd": 156,
+    "transaction_volume": 2521,
+    "data_year": 2017
+  },
+  {
+    "port_name": "シャンハイ(上海)",
+    "nation_cd": 156,
+    "transaction_volume": 4023,
+    "data_year": 2017
+  },
+  {
+    "port_name": "シンガポール",
+    "nation_cd": 702,
+    "transaction_volume": 3367,
+    "data_year": 2017
+  },
+  {
+    "port_name": "チンタオ(青島)",
+    "nation_cd": 156,
+    "transaction_volume": 1830,
+    "data_year": 2017
+  },
+  {
+    "port_name": "テンチン(天津)",
+    "nation_cd": 156,
+    "transaction_volume": 1507,
+    "data_year": 2017
+  },
+  {
+    "port_name": "ドバイ",
+    "nation_cd": 784,
+    "transaction_volume": 1544,
+    "data_year": 2017
+  },
+  {
+    "port_name": "ニンポー(寧波)",
+    "nation_cd": 156,
+    "transaction_volume": 2461,
+    "data_year": 2017
+  },
+  {
+    "port_name": "プサン(釜山)",
+    "nation_cd": 410,
+    "transaction_volume": 2047,
+    "data_year": 2017
+  },
+  {
+    "port_name": "ホンコン(香港)",
+    "nation_cd": 156,
+    "transaction_volume": 2077,
+    "data_year": 2017
+  },
+  {
+    "port_name": "ロサンゼルス",
+    "nation_cd": 840,
+    "transaction_volume": 1689,
+    "data_year": 2017
+  },
+  {
+    "port_name": "ロッテルダム",
+    "nation_cd": 528,
+    "transaction_volume": 1373,
+    "data_year": 2017
+  }
+]

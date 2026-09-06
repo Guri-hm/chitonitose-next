@@ -318,6 +318,7 @@ sliceVisibilityThreshold: 0
 ::last
 しかし、近年は安価な輸入材の増加で、木材自給率が低下しました。
 ::
+::land-use{data_year="2019" params="392"}
 <script type="text/javascript">
 createChartAsync(Chart.Combo, {
 "params": ""

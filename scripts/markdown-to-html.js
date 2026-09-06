@@ -113,10 +113,12 @@ function parseCustomMarkdown(markdown, subject = '') {
       continue;
     }
     
-    // ::statistics{...} / ::basic-data{...} / ::export-items{...} / ::import-items{...}
+    // ::statistics{...} / ::basic-data{...} / ::export-items{...} / ::import-items{...} 等
     // DBデータ（JSON化済み）をもとに表を描画するプレースホルダー
     // 例: ::statistics{id="39" order="desc" limit="5" offset="0"}
-    const dbDirectiveMatch = line.match(/^::(statistics|basic-data|export-items|import-items)\{([\s\S]*)\}$/);
+    const dbDirectiveMatch = line.match(
+      /^::(statistics|statistics-compare|basic-data|export-items|import-items|land-use|city|immigration|industrial-population|port-container|items-each-ports|food-self-sufficiency|total-fertility-rate|aging-society|trade-balance|area-population|continental-altitude|jp-natural-environment)\{([\s\S]*)\}$/
+    );
     if (dbDirectiveMatch) {
       const [, kind, attrsStr] = dbDirectiveMatch;
       const attrs = {};
@@ -339,6 +341,31 @@ function parseCustomMarkdown(markdown, subject = '') {
       continue;
     }
     
+    // <ul>...</ul>（旧HTML変換由来の生HTML。中の<li>に:::lead...:::や[[term]]等が
+    // 埋め込まれているため、1行ずつではなくブロックとしてまとめて変換する必要がある）
+    if (line.startsWith('<ul')) {
+      const ulOpenTag = line;
+      i++;
+      const blockLines = [];
+      while (i < lines.length && lines[i].trim() !== '</ul>') {
+        blockLines.push(lines[i]);
+        i++;
+      }
+      if (i < lines.length) i++; // </ul>をスキップ
+      
+      const blockContent = blockLines.join('\n');
+      const liRegex = /<li>([\s\S]*?)<\/li>/g;
+      let liMatch;
+      result.push(ulOpenTag);
+      while ((liMatch = liRegex.exec(blockContent)) !== null) {
+        let liInner = liMatch[1];
+        liInner = liInner.replace(/:{2,3}\s*lead\s*\n([\s\S]*?)(?:\n\s*:{2,3}(?!\S)|$)/g, '<div class="lead">$1</div>');
+        result.push('<li>' + convertInlineMarkdown(liInner) + '</li>');
+      }
+      result.push('</ul>');
+      continue;
+    }
+    
     // 空行
     if (line.trim() === '') {
       i++;
@@ -423,19 +450,33 @@ function convertInlineMarkdown(text) {
 // <?php ... include('./php/XXX.php'); ?> のXXXと、変換先ディレクティブ名の対応表
 const PHP_INCLUDE_DIRECTIVES = {
   statistics: 'statistics',
+  statistics_any_name_table: 'statistics',
   basic_data: 'basic-data',
   export_items_lank: 'export-items',
   import_items_lank: 'import-items',
+  land_use: 'land-use',
+  city: 'city',
+  immigration: 'immigration',
+  industrial_population_structure: 'industrial-population',
+  port_container: 'port-container',
+  items_each_ports: 'items-each-ports',
+  food_self_sufficiency_rate: 'food-self-sufficiency',
+  total_fertility_rate: 'total-fertility-rate',
+  aging_society: 'aging-society',
+  trade_balance: 'trade-balance',
+  area_population: 'area-population',
+  continental_altitude: 'continental-altitude',
+  jp_natural_environment: 'jp-natural-environment',
 };
 
 /**
  * PHPコード断片中の "$name = value;" 形式の変数代入を抽出する。
- * value は 数値・文字列リテラル・配列（[1,2] / array(1,2)）に対応。
+ * value は 数値・文字列リテラル・配列（[1,2] / array(1,2)）・真偽値リテラルに対応。
  * 配列はカンマ区切りの数値文字列に変換する。
  */
 function parsePhpVars(phpCode) {
   const vars = {};
-  const re = /\$(\w+)\s*=\s*(\[[^\]]*\]|array\([^)]*\)|"[^"]*"|'[^']*'|-?\d+(?:\.\d+)?)\s*;/g;
+  const re = /\$(\w+)\s*=\s*(\[[^\]]*\]|array\([^)]*\)|"[^"]*"|'[^']*'|true|false|-?\d+(?:\.\d+)?)\s*;/g;
   let m;
   while ((m = re.exec(phpCode)) !== null) {
     let val = m[2];
@@ -484,9 +525,25 @@ function htmlToCustomMarkdown(html) {
     
     // <?php ... include('./php/XXX.php'); ?> 形式のDB連動テーブル/グラフを
     // 対応するディレクティブ（::statistics{...}等）に変換する。それ以外のPHP行は削除する。
+    // 開始タグ行に閉じ「?>」が無い（複数行にまたがる）場合は、見つかるまで結合してから処理する。
     if (line.includes('<?php')) {
-      const phpMatch = line.match(/<\?php([\s\S]*?)\?>/);
-      const phpCode = phpMatch ? phpMatch[1] : line;
+      let phpBlock = line;
+      while (!phpBlock.includes('?>') && i + 1 < lines.length) {
+        i++;
+        phpBlock += '\n' + lines[i].trim();
+      }
+      const phpMatch = phpBlock.match(/<\?php([\s\S]*?)\?>/);
+      const phpCode = phpMatch ? phpMatch[1] : phpBlock;
+      // statistics_nation_table.php は $json = json_encode(['params'=>array(['statistics_id'=>N],...)]) という
+      // 特殊な呼び出し形式のため、他とは別に統計IDのリストだけを抜き出して専用ディレクティブに変換する
+      if (phpCode.includes("include('./php/statistics_nation_table.php')") || phpCode.includes('include("./php/statistics_nation_table.php")')) {
+        const ids = [...phpCode.matchAll(/'statistics_id'\s*=>\s*(\d+)/g)].map((mm) => mm[1]);
+        if (ids.length > 0) {
+          result.push(`::statistics-compare{ids="${ids.join(',')}"}`);
+        }
+        i++;
+        continue;
+      }
       const includeMatch = phpCode.match(/include\(['"]\.\/php\/(\w+)\.php['"]\)/);
       const directiveName = includeMatch ? PHP_INCLUDE_DIRECTIVES[includeMatch[1]] : null;
       if (directiveName) {
@@ -616,9 +673,10 @@ function htmlToCustomMarkdown(html) {
       result.push('::gazo');
 
       // 画像タグ全体を取得してから、属性の並び順に依存せずsrc/classを抽出する
-      const imgTagMatch = inner.match(/<img\b[^>]*>/);
+      // （1つのgazo divに複数枚の画像が入っているケース（人口ピラミッドの新旧比較など）にも対応）
+      const imgTagMatches = [...inner.matchAll(/<img\b[^>]*>/g)];
       let captionSource = inner;
-      if (imgTagMatch) {
+      imgTagMatches.forEach((imgTagMatch) => {
         const imgTag = imgTagMatch[0];
         // data-srcを優先し、無ければsrcを使う（属性の並び順に依存しない）
         const srcMatch = imgTag.match(/data-src="([^"]+)"/) || imgTag.match(/\bsrc="([^"]+)"/);
@@ -630,7 +688,10 @@ function htmlToCustomMarkdown(html) {
           const classAttr = sizeMatch ? `{.${sizeMatch[1]}}` : '';
           result.push(`![](${src})${classAttr}`);
         }
-        captionSource = inner.slice(imgTagMatch.index + imgTag.length);
+      });
+      if (imgTagMatches.length > 0) {
+        const lastMatch = imgTagMatches[imgTagMatches.length - 1];
+        captionSource = inner.slice(lastMatch.index + lastMatch[0].length);
       }
 
       // キャプションを取得
@@ -757,8 +818,8 @@ function convertHtmlToMarkdownInline(text) {
   result = result.replace(/<span class="marker">([\s\S]*?)<\/span>/g, (match, content) => {
     let inner = content;
     inner = inner.replace(/<ruby>\s*([^<]+?)\s*<rt>\s*([^<]+?)\s*<\/rt>\s*<\/ruby>/g, '{{$1|$2}}');
-    inner = inner.replace(/<span\s+onclick="chg\(this\)"\s+class="all">\s*<ruby>\s*([^<]+?)\s*<rt>\s*([^<]+?)\s*<\/rt>\s*<\/ruby>\s*<\/span>/g, '[[$1|$2]]');
-    inner = inner.replace(/<span\s+onclick="chg\(this\)"\s+class="all">\s*([^<]+?)\s*<\/span>/g, '[[$1]]');
+    inner = inner.replace(/<span\s+onclick="chg\(this\)"\s+class="all"[^>]*>\s*<ruby>\s*([^<]+?)\s*<rt>\s*([^<]+?)\s*<\/rt>\s*<\/ruby>\s*<\/span>/g, '[[$1|$2]]');
+    inner = inner.replace(/<span\s+onclick="chg\(this\)"\s+class="all"[^>]*>\s*([^<]+?)\s*<\/span>/g, '[[$1]]');
     return `==${inner}==`;
   });
   
@@ -772,10 +833,10 @@ function convertHtmlToMarkdownInline(text) {
   result = result.replace(/<ruby>\s*([^<]+?)\s*<rt>\s*([^<]+?)\s*<\/rt>\s*<\/ruby>/g, '{{$1|$2}}');
   
   // クリック用語（ruby付き）
-  result = result.replace(/<span\s+onclick="chg\(this\)"\s+class="all">\s*<ruby>\s*([^<]+?)\s*<rt>\s*([^<]+?)\s*<\/rt>\s*<\/ruby>\s*<\/span>/g, '[[$1|$2]]');
+  result = result.replace(/<span\s+onclick="chg\(this\)"\s+class="all"[^>]*>\s*<ruby>\s*([^<]+?)\s*<rt>\s*([^<]+?)\s*<\/rt>\s*<\/ruby>\s*<\/span>/g, '[[$1|$2]]');
   
   // クリック用語（通常）
-  result = result.replace(/<span\s+onclick="chg\(this\)"\s+class="all">\s*([^<]+?)\s*<\/span>/g, '[[$1]]');
+  result = result.replace(/<span\s+onclick="chg\(this\)"\s+class="all"[^>]*>\s*([^<]+?)\s*<\/span>/g, '[[$1]]');
   
   // 不要なタグ削除
   result = result.replace(/<br\s*\/?>/g, '');

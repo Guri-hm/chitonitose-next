@@ -177,6 +177,124 @@ export interface TradeItem {
   ratio: number;
 }
 
+// 以下、使用頻度2回以上のPHPスクリプト群用
+export interface LandUse {
+  nation_cd: number;
+  data_year: number;
+  cultivated_land_rate?: number;
+  pasture_rate?: number;
+  forest_rate?: number;
+  per_farmer_ha?: number;
+  farming_rate?: number;
+  group_cd?: number;
+}
+
+export interface CityRow {
+  nation_cd: number;
+  city_name_eg?: string;
+  data_year: number;
+  city_name: string;
+  population: number;
+  capital_flg?: number;
+}
+
+export interface ImmigrationRow {
+  nation_cd: number;
+  data_year: number;
+  nation_cd_from: number | null;
+  value: number;
+}
+
+export interface IndustrialPopulationStructure {
+  nation_cd: number;
+  data_year: number;
+  primary_rate: number;
+  secondary_rate: number;
+}
+
+export interface PortContainer {
+  port_name: string;
+  nation_cd: number;
+  transaction_volume: number;
+  data_year: number;
+}
+
+export interface PortInfo {
+  cd: number;
+  name: string;
+}
+
+export interface PortTransactionValue {
+  port_cd: number;
+  exp_imp_flg: number;
+  data_year: number;
+  transaction_value: number;
+}
+
+export interface ItemsEachPort {
+  nation_cd: number;
+  port_cd: number;
+  exp_imp_flg: number;
+  data_year: number;
+  item_name: string;
+  rate: number;
+}
+
+export interface FoodSelfSufficiencyRate {
+  nation_cd: number;
+  data_year: number;
+  calorie_base: number;
+  grain: number;
+  food_grain: number;
+  wheat: number;
+  coarse_grain: number;
+  beans: number;
+  vegetables: number;
+  fruits: number;
+  meat: number;
+  egg: number;
+  milk_dairy_products: number;
+}
+
+export interface TotalFertilityRate {
+  nation_cd: number;
+  data_year: number;
+  value: number;
+}
+
+export interface BirthRate {
+  nation_cd: number;
+  data_year: number;
+  value: number;
+}
+
+// ::statistics-compare{ids="..."} 用（旧statistics_nation_table.php相当、statistics_dataとは別テーブル）
+export interface StatisticsChangesData {
+  statistics_id: number;
+  nation_cd: number;
+  value: number;
+  data_year: number;
+}
+
+// ::area-population{...} 用（旧area_population.php相当、全国ランキング用でnation_cdは含まない）
+export interface AreaPopulationRow {
+  short_name: string;
+  area: number;
+  area_year: number;
+  population: number;
+  popu_year: number;
+  density: number;
+  dollar: number;
+  gni_year: number;
+}
+
+export interface TradeBalance {
+  nation_cd: number;
+  data_year: number;
+  export: number;
+  import: number;
+}
+
 // データ読み込み関数
 
 export const loadNews = () => loadJSON<NewsItem[]>('news.json');
@@ -223,20 +341,93 @@ export const loadStatisticsInfo = () => loadJSON<StatisticsInfo[]>('statistics-i
 export const loadStatisticsData = () => loadJSON<StatisticsDataRow[]>('statistics-data.json');
 export const loadExportItems = () => loadJSON<TradeItem[]>('export-items.json');
 export const loadImportItems = () => loadJSON<TradeItem[]>('import-items.json');
+export const loadLandUse = () => loadJSON<LandUse[]>('land-use.json');
+export const loadImmigration = () => loadJSON<ImmigrationRow[]>('immigration.json');
+export const loadIndustrialPopulationStructure = () =>
+  loadJSON<IndustrialPopulationStructure[]>('industrial-population-structure.json');
+export const loadPortContainer = () => loadJSON<PortContainer[]>('port-container.json');
+export const loadPortInfo = () => loadJSON<PortInfo[]>('port-info.json');
+export const loadPortTransactionValue = () => loadJSON<PortTransactionValue[]>('port-transaction-value.json');
+export const loadItemsEachPorts = () => loadJSON<ItemsEachPort[]>('items-each-ports.json');
+export const loadFoodSelfSufficiencyRate = () =>
+  loadJSON<FoodSelfSufficiencyRate[]>('food-self-sufficiency-rate.json');
+export const loadTotalFertilityRate = () => loadJSON<TotalFertilityRate[]>('total-fertility-rate.json');
+export const loadBirthRate = () => loadJSON<BirthRate[]>('birth-rate.json');
+export const loadStatisticsChangesData = () => loadJSON<StatisticsChangesData[]>('statistics-changes-data.json');
+export const loadAreaPopulation = () => loadJSON<AreaPopulationRow[]>('area-population.json');
+export const loadTradeBalance = () => loadJSON<TradeBalance[]>('trade-balance.json');
+export const loadCityRows = () => loadJSON<CityRow[]>('cities.json');
 
 /**
  * レッスン本文の::basic-data / ::statistics / ::export-items / ::import-items
  * ディレクティブ描画に必要なデータセットをまとめて読み込む
  */
 export async function loadLessonDbDatasets() {
-  const [basicData, statisticsInfo, statisticsData, exportItems, importItems] = await Promise.all([
+  const [
+    basicData,
+    statisticsInfo,
+    statisticsData,
+    exportItems,
+    importItems,
+    landUse,
+    immigration,
+    industrialPopulationStructure,
+    portContainer,
+    portInfo,
+    portTransactionValue,
+    itemsEachPorts,
+    foodSelfSufficiencyRate,
+    totalFertilityRate,
+    birthRate,
+    agingSociety,
+    tradeBalance,
+    areaPopulation,
+    cities,
+    statisticsChangesData,
+  ] = await Promise.all([
     loadBasicData(),
     loadStatisticsInfo(),
     loadStatisticsData(),
     loadExportItems(),
     loadImportItems(),
+    loadLandUse(),
+    loadImmigration(),
+    loadIndustrialPopulationStructure(),
+    loadPortContainer(),
+    loadPortInfo(),
+    loadPortTransactionValue(),
+    loadItemsEachPorts(),
+    loadFoodSelfSufficiencyRate(),
+    loadTotalFertilityRate(),
+    loadBirthRate(),
+    loadAgingSociety(),
+    loadTradeBalance(),
+    loadAreaPopulation(),
+    loadCityRows(),
+    loadStatisticsChangesData(),
   ]);
-  return { basicData, statisticsInfo, statisticsData, exportItems, importItems };
+  return {
+    basicData,
+    statisticsInfo,
+    statisticsData,
+    exportItems,
+    importItems,
+    landUse,
+    immigration,
+    industrialPopulationStructure,
+    portContainer,
+    portInfo,
+    portTransactionValue,
+    itemsEachPorts,
+    foodSelfSufficiencyRate,
+    totalFertilityRate,
+    birthRate,
+    agingSociety,
+    tradeBalance,
+    areaPopulation,
+    cities,
+    statisticsChangesData,
+  };
 }
 
 /**

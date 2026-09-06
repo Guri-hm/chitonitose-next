@@ -1,0 +1,817 @@
+[
+  {
+    "nation_cd": 4,
+    "data_year": 2019,
+    "value": 31.802
+  },
+  {
+    "nation_cd": 8,
+    "data_year": 2019,
+    "value": 11.62
+  },
+  {
+    "nation_cd": 12,
+    "data_year": 2019,
+    "value": 23.583
+  },
+  {
+    "nation_cd": 20,
+    "data_year": 2019,
+    "value": 7
+  },
+  {
+    "nation_cd": 24,
+    "data_year": 2019,
+    "value": 40.232
+  },
+  {
+    "nation_cd": 31,
+    "data_year": 2019,
+    "value": 14.1
+  },
+  {
+    "nation_cd": 32,
+    "data_year": 2019,
+    "value": 16.833
+  },
+  {
+    "nation_cd": 36,
+    "data_year": 2019,
+    "value": 12.1
+  },
+  {
+    "nation_cd": 40,
+    "data_year": 2019,
+    "value": 9.6
+  },
+  {
+    "nation_cd": 48,
+    "data_year": 2019,
+    "value": 13.622
+  },
+  {
+    "nation_cd": 50,
+    "data_year": 2019,
+    "value": 17.868
+  },
+  {
+    "nation_cd": 51,
+    "data_year": 2019,
+    "value": 13.646
+  },
+  {
+    "nation_cd": 52,
+    "data_year": 2019,
+    "value": 10.621
+  },
+  {
+    "nation_cd": 56,
+    "data_year": 2019,
+    "value": 10.2
+  },
+  {
+    "nation_cd": 60,
+    "data_year": 2019,
+    "value": 8.2
+  },
+  {
+    "nation_cd": 64,
+    "data_year": 2019,
+    "value": 17.012
+  },
+  {
+    "nation_cd": 72,
+    "data_year": 2019,
+    "value": 24.234
+  },
+  {
+    "nation_cd": 76,
+    "data_year": 2019,
+    "value": 13.703
+  },
+  {
+    "nation_cd": 84,
+    "data_year": 2019,
+    "value": 20.51
+  },
+  {
+    "nation_cd": 100,
+    "data_year": 2019,
+    "value": 8.8
+  },
+  {
+    "nation_cd": 104,
+    "data_year": 2019,
+    "value": 17.397
+  },
+  {
+    "nation_cd": 108,
+    "data_year": 2019,
+    "value": 38.377
+  },
+  {
+    "nation_cd": 112,
+    "data_year": 2019,
+    "value": 9.3
+  },
+  {
+    "nation_cd": 116,
+    "data_year": 2019,
+    "value": 22.02
+  },
+  {
+    "nation_cd": 120,
+    "data_year": 2019,
+    "value": 34.891
+  },
+  {
+    "nation_cd": 124,
+    "data_year": 2019,
+    "value": 9.9
+  },
+  {
+    "nation_cd": 144,
+    "data_year": 2019,
+    "value": 15.544
+  },
+  {
+    "nation_cd": 148,
+    "data_year": 2019,
+    "value": 41.665
+  },
+  {
+    "nation_cd": 152,
+    "data_year": 2019,
+    "value": 12.187
+  },
+  {
+    "nation_cd": 156,
+    "data_year": 2019,
+    "value": 10.41
+  },
+  {
+    "nation_cd": 170,
+    "data_year": 2019,
+    "value": 14.655
+  },
+  {
+    "nation_cd": 174,
+    "data_year": 2019,
+    "value": 31.407
+  },
+  {
+    "nation_cd": 188,
+    "data_year": 2019,
+    "value": 13.689
+  },
+  {
+    "nation_cd": 191,
+    "data_year": 2019,
+    "value": 8.9
+  },
+  {
+    "nation_cd": 192,
+    "data_year": 2019,
+    "value": 9.962
+  },
+  {
+    "nation_cd": 196,
+    "data_year": 2019,
+    "value": 10.24
+  },
+  {
+    "nation_cd": 204,
+    "data_year": 2019,
+    "value": 35.831
+  },
+  {
+    "nation_cd": 208,
+    "data_year": 2019,
+    "value": 10.5
+  },
+  {
+    "nation_cd": 212,
+    "data_year": 2019,
+    "value": 0
+  },
+  {
+    "nation_cd": 218,
+    "data_year": 2019,
+    "value": 19.46
+  },
+  {
+    "nation_cd": 222,
+    "data_year": 2019,
+    "value": 18.054
+  },
+  {
+    "nation_cd": 231,
+    "data_year": 2019,
+    "value": 31.896
+  },
+  {
+    "nation_cd": 232,
+    "data_year": 2019,
+    "value": 29.738
+  },
+  {
+    "nation_cd": 233,
+    "data_year": 2019,
+    "value": 10.6
+  },
+  {
+    "nation_cd": 234,
+    "data_year": 2019,
+    "value": 13.2
+  },
+  {
+    "nation_cd": 242,
+    "data_year": 2019,
+    "value": 20.954
+  },
+  {
+    "nation_cd": 246,
+    "data_year": 2019,
+    "value": 8.3
+  },
+  {
+    "nation_cd": 250,
+    "data_year": 2019,
+    "value": 11.2
+  },
+  {
+    "nation_cd": 262,
+    "data_year": 2019,
+    "value": 20.998
+  },
+  {
+    "nation_cd": 266,
+    "data_year": 2019,
+    "value": 30.968
+  },
+  {
+    "nation_cd": 268,
+    "data_year": 2019,
+    "value": 13.2
+  },
+  {
+    "nation_cd": 276,
+    "data_year": 2019,
+    "value": 9.4
+  },
+  {
+    "nation_cd": 288,
+    "data_year": 2019,
+    "value": 28.992
+  },
+  {
+    "nation_cd": 292,
+    "data_year": 2019,
+    "value": 0
+  },
+  {
+    "nation_cd": 296,
+    "data_year": 2019,
+    "value": 27.453
+  },
+  {
+    "nation_cd": 300,
+    "data_year": 2019,
+    "value": 7.8
+  },
+  {
+    "nation_cd": 304,
+    "data_year": 2019,
+    "value": 15.1
+  },
+  {
+    "nation_cd": 308,
+    "data_year": 2019,
+    "value": 16.198
+  },
+  {
+    "nation_cd": 316,
+    "data_year": 2019,
+    "value": 16.46
+  },
+  {
+    "nation_cd": 320,
+    "data_year": 2019,
+    "value": 24.21
+  },
+  {
+    "nation_cd": 324,
+    "data_year": 2019,
+    "value": 35.965
+  },
+  {
+    "nation_cd": 328,
+    "data_year": 2019,
+    "value": 19.723
+  },
+  {
+    "nation_cd": 332,
+    "data_year": 2019,
+    "value": 23.959
+  },
+  {
+    "nation_cd": 340,
+    "data_year": 2019,
+    "value": 21.337
+  },
+  {
+    "nation_cd": 348,
+    "data_year": 2019,
+    "value": 9.5
+  },
+  {
+    "nation_cd": 352,
+    "data_year": 2019,
+    "value": 12.3
+  },
+  {
+    "nation_cd": 356,
+    "data_year": 2019,
+    "value": 17.644
+  },
+  {
+    "nation_cd": 360,
+    "data_year": 2019,
+    "value": 17.746
+  },
+  {
+    "nation_cd": 368,
+    "data_year": 2019,
+    "value": 28.556
+  },
+  {
+    "nation_cd": 372,
+    "data_year": 2019,
+    "value": 12
+  },
+  {
+    "nation_cd": 376,
+    "data_year": 2019,
+    "value": 20.1
+  },
+  {
+    "nation_cd": 380,
+    "data_year": 2019,
+    "value": 7
+  },
+  {
+    "nation_cd": 388,
+    "data_year": 2019,
+    "value": 15.907
+  },
+  {
+    "nation_cd": 392,
+    "data_year": 2019,
+    "value": 7
+  },
+  {
+    "nation_cd": 398,
+    "data_year": 2019,
+    "value": 21.73
+  },
+  {
+    "nation_cd": 400,
+    "data_year": 2019,
+    "value": 21.477
+  },
+  {
+    "nation_cd": 404,
+    "data_year": 2019,
+    "value": 28.298
+  },
+  {
+    "nation_cd": 414,
+    "data_year": 2019,
+    "value": 13.251
+  },
+  {
+    "nation_cd": 422,
+    "data_year": 2019,
+    "value": 17.377
+  },
+  {
+    "nation_cd": 426,
+    "data_year": 2019,
+    "value": 26.415
+  },
+  {
+    "nation_cd": 428,
+    "data_year": 2019,
+    "value": 9.8
+  },
+  {
+    "nation_cd": 430,
+    "data_year": 2019,
+    "value": 32.687
+  },
+  {
+    "nation_cd": 434,
+    "data_year": 2019,
+    "value": 18.3
+  },
+  {
+    "nation_cd": 438,
+    "data_year": 2019,
+    "value": 9.2
+  },
+  {
+    "nation_cd": 440,
+    "data_year": 2019,
+    "value": 9.8
+  },
+  {
+    "nation_cd": 442,
+    "data_year": 2019,
+    "value": 10
+  },
+  {
+    "nation_cd": 450,
+    "data_year": 2019,
+    "value": 32.408
+  },
+  {
+    "nation_cd": 454,
+    "data_year": 2019,
+    "value": 33.73
+  },
+  {
+    "nation_cd": 458,
+    "data_year": 2019,
+    "value": 16.608
+  },
+  {
+    "nation_cd": 462,
+    "data_year": 2019,
+    "value": 13.584
+  },
+  {
+    "nation_cd": 466,
+    "data_year": 2019,
+    "value": 41.035
+  },
+  {
+    "nation_cd": 470,
+    "data_year": 2019,
+    "value": 8.6
+  },
+  {
+    "nation_cd": 478,
+    "data_year": 2019,
+    "value": 33.262
+  },
+  {
+    "nation_cd": 480,
+    "data_year": 2019,
+    "value": 10.2
+  },
+  {
+    "nation_cd": 484,
+    "data_year": 2019,
+    "value": 17.297
+  },
+  {
+    "nation_cd": 492,
+    "data_year": 2019,
+    "value": 0
+  },
+  {
+    "nation_cd": 496,
+    "data_year": 2019,
+    "value": 23.361
+  },
+  {
+    "nation_cd": 499,
+    "data_year": 2019,
+    "value": 11.6
+  },
+  {
+    "nation_cd": 504,
+    "data_year": 2019,
+    "value": 18.5
+  },
+  {
+    "nation_cd": 508,
+    "data_year": 2019,
+    "value": 37.166
+  },
+  {
+    "nation_cd": 512,
+    "data_year": 2019,
+    "value": 18.513
+  },
+  {
+    "nation_cd": 516,
+    "data_year": 2019,
+    "value": 28.152
+  },
+  {
+    "nation_cd": 520,
+    "data_year": 2019,
+    "value": 0
+  },
+  {
+    "nation_cd": 524,
+    "data_year": 2019,
+    "value": 19.578
+  },
+  {
+    "nation_cd": 528,
+    "data_year": 2019,
+    "value": 9.8
+  },
+  {
+    "nation_cd": 533,
+    "data_year": 2019,
+    "value": 11.756
+  },
+  {
+    "nation_cd": 540,
+    "data_year": 2019,
+    "value": 14
+  },
+  {
+    "nation_cd": 548,
+    "data_year": 2019,
+    "value": 29.175
+  },
+  {
+    "nation_cd": 554,
+    "data_year": 2019,
+    "value": 11.96
+  },
+  {
+    "nation_cd": 558,
+    "data_year": 2019,
+    "value": 20.215
+  },
+  {
+    "nation_cd": 562,
+    "data_year": 2019,
+    "value": 45.637
+  },
+  {
+    "nation_cd": 566,
+    "data_year": 2019,
+    "value": 37.446
+  },
+  {
+    "nation_cd": 578,
+    "data_year": 2019,
+    "value": 10.2
+  },
+  {
+    "nation_cd": 585,
+    "data_year": 2019,
+    "value": 11.2
+  },
+  {
+    "nation_cd": 586,
+    "data_year": 2019,
+    "value": 27.841
+  },
+  {
+    "nation_cd": 591,
+    "data_year": 2019,
+    "value": 18.705
+  },
+  {
+    "nation_cd": 600,
+    "data_year": 2019,
+    "value": 20.341
+  },
+  {
+    "nation_cd": 604,
+    "data_year": 2019,
+    "value": 17.756
+  },
+  {
+    "nation_cd": 608,
+    "data_year": 2019,
+    "value": 20.166
+  },
+  {
+    "nation_cd": 616,
+    "data_year": 2019,
+    "value": 9.9
+  },
+  {
+    "nation_cd": 620,
+    "data_year": 2019,
+    "value": 8.4
+  },
+  {
+    "nation_cd": 624,
+    "data_year": 2019,
+    "value": 34.559
+  },
+  {
+    "nation_cd": 626,
+    "data_year": 2019,
+    "value": 29.284
+  },
+  {
+    "nation_cd": 630,
+    "data_year": 2019,
+    "value": 6.4
+  },
+  {
+    "nation_cd": 634,
+    "data_year": 2019,
+    "value": 9.385
+  },
+  {
+    "nation_cd": 642,
+    "data_year": 2019,
+    "value": 10.3
+  },
+  {
+    "nation_cd": 646,
+    "data_year": 2019,
+    "value": 31.249
+  },
+  {
+    "nation_cd": 674,
+    "data_year": 2019,
+    "value": 6.7
+  },
+  {
+    "nation_cd": 682,
+    "data_year": 2019,
+    "value": 17.297
+  },
+  {
+    "nation_cd": 686,
+    "data_year": 2019,
+    "value": 33.952
+  },
+  {
+    "nation_cd": 688,
+    "data_year": 2019,
+    "value": 9.3
+  },
+  {
+    "nation_cd": 690,
+    "data_year": 2019,
+    "value": 16.4
+  },
+  {
+    "nation_cd": 694,
+    "data_year": 2019,
+    "value": 32.879
+  },
+  {
+    "nation_cd": 702,
+    "data_year": 2019,
+    "value": 8.8
+  },
+  {
+    "nation_cd": 705,
+    "data_year": 2019,
+    "value": 9.3
+  },
+  {
+    "nation_cd": 706,
+    "data_year": 2019,
+    "value": 41.585
+  },
+  {
+    "nation_cd": 710,
+    "data_year": 2019,
+    "value": 20.129
+  },
+  {
+    "nation_cd": 716,
+    "data_year": 2019,
+    "value": 29.747
+  },
+  {
+    "nation_cd": 724,
+    "data_year": 2019,
+    "value": 7.6
+  },
+  {
+    "nation_cd": 728,
+    "data_year": 2019,
+    "value": 34.653
+  },
+  {
+    "nation_cd": 729,
+    "data_year": 2019,
+    "value": 31.826
+  },
+  {
+    "nation_cd": 740,
+    "data_year": 2019,
+    "value": 18.295
+  },
+  {
+    "nation_cd": 748,
+    "data_year": 2019,
+    "value": 25.881
+  },
+  {
+    "nation_cd": 752,
+    "data_year": 2019,
+    "value": 11.1
+  },
+  {
+    "nation_cd": 756,
+    "data_year": 2019,
+    "value": 10
+  },
+  {
+    "nation_cd": 762,
+    "data_year": 2019,
+    "value": 30.038
+  },
+  {
+    "nation_cd": 764,
+    "data_year": 2019,
+    "value": 10.168
+  },
+  {
+    "nation_cd": 768,
+    "data_year": 2019,
+    "value": 32.707
+  },
+  {
+    "nation_cd": 776,
+    "data_year": 2019,
+    "value": 24.01
+  },
+  {
+    "nation_cd": 784,
+    "data_year": 2019,
+    "value": 10.223
+  },
+  {
+    "nation_cd": 788,
+    "data_year": 2019,
+    "value": 17.089
+  },
+  {
+    "nation_cd": 795,
+    "data_year": 2019,
+    "value": 23.066
+  },
+  {
+    "nation_cd": 798,
+    "data_year": 2019,
+    "value": 0
+  },
+  {
+    "nation_cd": 800,
+    "data_year": 2019,
+    "value": 37.377
+  },
+  {
+    "nation_cd": 804,
+    "data_year": 2019,
+    "value": 8.1
+  },
+  {
+    "nation_cd": 826,
+    "data_year": 2019,
+    "value": 10.7
+  },
+  {
+    "nation_cd": 833,
+    "data_year": 2019,
+    "value": 0
+  },
+  {
+    "nation_cd": 840,
+    "data_year": 2019,
+    "value": 11.4
+  },
+  {
+    "nation_cd": 854,
+    "data_year": 2019,
+    "value": 37.453
+  },
+  {
+    "nation_cd": 858,
+    "data_year": 2019,
+    "value": 13.74
+  },
+  {
+    "nation_cd": 860,
+    "data_year": 2019,
+    "value": 24.3
+  },
+  {
+    "nation_cd": 882,
+    "data_year": 2019,
+    "value": 24.1
+  },
+  {
+    "nation_cd": 894,
+    "data_year": 2019,
+    "value": 35.776
+  }
+]

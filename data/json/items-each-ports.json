@@ -1,0 +1,482 @@
+[
+  {
+    "nation_cd": 392,
+    "port_cd": 1,
+    "exp_imp_flg": 0,
+    "data_year": 2020,
+    "item_name": "原動機",
+    "rate": 4.3
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 1,
+    "exp_imp_flg": 0,
+    "data_year": 2020,
+    "item_name": "自動車",
+    "rate": 24.6
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 1,
+    "exp_imp_flg": 0,
+    "data_year": 2020,
+    "item_name": "自動車部品",
+    "rate": 16.6
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 1,
+    "exp_imp_flg": 1,
+    "data_year": 2020,
+    "item_name": "原油・粗油",
+    "rate": 4
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 1,
+    "exp_imp_flg": 1,
+    "data_year": 2020,
+    "item_name": "天然ガス類",
+    "rate": 6.9
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 1,
+    "exp_imp_flg": 1,
+    "data_year": 2020,
+    "item_name": "衣類",
+    "rate": 6.9
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 2,
+    "exp_imp_flg": 0,
+    "data_year": 2020,
+    "item_name": "半導体等製造装置",
+    "rate": 8.4
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 2,
+    "exp_imp_flg": 0,
+    "data_year": 2020,
+    "item_name": "科学光学機器",
+    "rate": 5.5
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 2,
+    "exp_imp_flg": 0,
+    "data_year": 2020,
+    "item_name": "電子部品",
+    "rate": 7.3
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 2,
+    "exp_imp_flg": 1,
+    "data_year": 2020,
+    "item_name": "事務用機器",
+    "rate": 10.8
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 2,
+    "exp_imp_flg": 1,
+    "data_year": 2020,
+    "item_name": "医薬品",
+    "rate": 13.5
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 2,
+    "exp_imp_flg": 1,
+    "data_year": 2020,
+    "item_name": "通信機",
+    "rate": 14.1
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 3,
+    "exp_imp_flg": 0,
+    "data_year": 2020,
+    "item_name": "プラスチック",
+    "rate": 4.7
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 3,
+    "exp_imp_flg": 0,
+    "data_year": 2020,
+    "item_name": "原動機",
+    "rate": 5.3
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 3,
+    "exp_imp_flg": 0,
+    "data_year": 2020,
+    "item_name": "自動車",
+    "rate": 15.9
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 3,
+    "exp_imp_flg": 1,
+    "data_year": 2020,
+    "item_name": "原油・粗油",
+    "rate": 5.5
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 3,
+    "exp_imp_flg": 1,
+    "data_year": 2020,
+    "item_name": "有機化合物",
+    "rate": 3.4
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 3,
+    "exp_imp_flg": 1,
+    "data_year": 2020,
+    "item_name": "非鉄金属",
+    "rate": 5.2
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 4,
+    "exp_imp_flg": 0,
+    "data_year": 2020,
+    "item_name": "事務用機器",
+    "rate": 6.7
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 4,
+    "exp_imp_flg": 0,
+    "data_year": 2020,
+    "item_name": "半導体等製造装置",
+    "rate": 5.2
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 4,
+    "exp_imp_flg": 0,
+    "data_year": 2020,
+    "item_name": "自動車部品",
+    "rate": 5.8
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 4,
+    "exp_imp_flg": 1,
+    "data_year": 2020,
+    "item_name": "事務用機器",
+    "rate": 7.8
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 4,
+    "exp_imp_flg": 1,
+    "data_year": 2020,
+    "item_name": "肉類",
+    "rate": 4.5
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 4,
+    "exp_imp_flg": 1,
+    "data_year": 2020,
+    "item_name": "衣類",
+    "rate": 8.3
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 5,
+    "exp_imp_flg": 0,
+    "data_year": 2020,
+    "item_name": "科学光学機器",
+    "rate": 6.2
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 5,
+    "exp_imp_flg": 0,
+    "data_year": 2020,
+    "item_name": "電子部品",
+    "rate": 28.6
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 5,
+    "exp_imp_flg": 0,
+    "data_year": 2020,
+    "item_name": "電気回路等機器",
+    "rate": 6.2
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 5,
+    "exp_imp_flg": 1,
+    "data_year": 2020,
+    "item_name": "医薬品",
+    "rate": 24.2
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 5,
+    "exp_imp_flg": 1,
+    "data_year": 2020,
+    "item_name": "通信機",
+    "rate": 12.5
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 5,
+    "exp_imp_flg": 1,
+    "data_year": 2020,
+    "item_name": "電子部品",
+    "rate": 10
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 6,
+    "exp_imp_flg": 0,
+    "data_year": 2020,
+    "item_name": "プラスチック",
+    "rate": 7.4
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 6,
+    "exp_imp_flg": 0,
+    "data_year": 2020,
+    "item_name": "原動機",
+    "rate": 4.8
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 6,
+    "exp_imp_flg": 0,
+    "data_year": 2020,
+    "item_name": "建設用・鉱山用機器",
+    "rate": 5
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 6,
+    "exp_imp_flg": 1,
+    "data_year": 2020,
+    "item_name": "たばこ",
+    "rate": 9.1
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 6,
+    "exp_imp_flg": 1,
+    "data_year": 2020,
+    "item_name": "無機化合物",
+    "rate": 3.7
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 6,
+    "exp_imp_flg": 1,
+    "data_year": 2020,
+    "item_name": "衣類",
+    "rate": 6.8
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 7,
+    "exp_imp_flg": 0,
+    "data_year": 2020,
+    "item_name": "コンデンサー",
+    "rate": 8.6
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 7,
+    "exp_imp_flg": 0,
+    "data_year": 2020,
+    "item_name": "プラスチック",
+    "rate": 5.3
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 7,
+    "exp_imp_flg": 0,
+    "data_year": 2020,
+    "item_name": "電子部品",
+    "rate": 14.3
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 7,
+    "exp_imp_flg": 1,
+    "data_year": 2020,
+    "item_name": "繊維製品",
+    "rate": 6
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 7,
+    "exp_imp_flg": 1,
+    "data_year": 2020,
+    "item_name": "肉類",
+    "rate": 6.7
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 7,
+    "exp_imp_flg": 1,
+    "data_year": 2020,
+    "item_name": "衣類",
+    "rate": 6.6
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 8,
+    "exp_imp_flg": 0,
+    "data_year": 2020,
+    "item_name": "半導体等製造装置",
+    "rate": 3.5
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 8,
+    "exp_imp_flg": 0,
+    "data_year": 2020,
+    "item_name": "自動車",
+    "rate": 28.7
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 8,
+    "exp_imp_flg": 0,
+    "data_year": 2020,
+    "item_name": "電子部品",
+    "rate": 27.9
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 9,
+    "exp_imp_flg": 0,
+    "data_year": 2020,
+    "item_name": "その他の化学製品",
+    "rate": 1
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 9,
+    "exp_imp_flg": 0,
+    "data_year": 2020,
+    "item_name": "自動車",
+    "rate": 95.1
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 9,
+    "exp_imp_flg": 0,
+    "data_year": 2020,
+    "item_name": "鉄鋼",
+    "rate": 1.2
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 10,
+    "exp_imp_flg": 0,
+    "data_year": 2020,
+    "item_name": "原動機",
+    "rate": 11.1
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 10,
+    "exp_imp_flg": 0,
+    "data_year": 2020,
+    "item_name": "科学光学機器",
+    "rate": 7.4
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 10,
+    "exp_imp_flg": 0,
+    "data_year": 2020,
+    "item_name": "自動車部品",
+    "rate": 8.8
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 11,
+    "exp_imp_flg": 1,
+    "data_year": 2020,
+    "item_name": "原油・粗油",
+    "rate": 38.9
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 11,
+    "exp_imp_flg": 1,
+    "data_year": 2020,
+    "item_name": "天然ガス類",
+    "rate": 13.7
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 11,
+    "exp_imp_flg": 1,
+    "data_year": 2020,
+    "item_name": "石油製品",
+    "rate": 14.4
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 12,
+    "exp_imp_flg": 1,
+    "data_year": 2020,
+    "item_name": "原油・粗油",
+    "rate": 14.4
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 12,
+    "exp_imp_flg": 1,
+    "data_year": 2020,
+    "item_name": "天然ガス類",
+    "rate": 26.3
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 12,
+    "exp_imp_flg": 1,
+    "data_year": 2020,
+    "item_name": "肉類",
+    "rate": 18
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 13,
+    "exp_imp_flg": 1,
+    "data_year": 2020,
+    "item_name": "原油・粗油",
+    "rate": 47.1
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 13,
+    "exp_imp_flg": 1,
+    "data_year": 2020,
+    "item_name": "天然ガス類",
+    "rate": 19.8
+  },
+  {
+    "nation_cd": 392,
+    "port_cd": 13,
+    "exp_imp_flg": 1,
+    "data_year": 2020,
+    "item_name": "石油製品",
+    "rate": 4.5
+  }
+]

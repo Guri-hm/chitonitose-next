@@ -289,6 +289,7 @@ Cfa・Cfbの地域
 ![](Australia_city.webp){.border}
 オーストラリアの人口100万人以上の都市
 ::
+::city{params="36"}
 <h5>シドニー</h5>
 <ul class="circle">
 <li>白人の入植後、最も早く建設された都市</li>
@@ -314,6 +315,7 @@ Cfa・Cfbの地域
 ::last
 人口が少なく、農民1人あたり耕地が非常に大きくなります。
 ::
+::land-use{data_year="2019" params="36,392,840"}
 ::gazo
 ![](Australia_agriculture.webp){.border}
 オーストラリアの農業
@@ -582,6 +584,7 @@ sliceVisibilityThreshold: 0
 ::top
 ニュージーランドは、牧草地の割合が高く、耕地率が低いです。
 ::
+::land-use{data_year="2019" params="554"}
 ::gazo
 ![](New_Zealand_agriculture.webp){.border}
 ニュージーランドの農業

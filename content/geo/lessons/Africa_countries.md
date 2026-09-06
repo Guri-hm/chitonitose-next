@@ -290,13 +290,13 @@
 ::
 ::gazo
 ![](Madagascar_elevation.webp){.half}
-<img class="lazyload popup-img border border-1 half" data-src="img/elevation_legend.webp" alt="高低の凡例" src="../share/img/loading.svg" />
+![](elevation_legend.webp){.border}
 マダガスカルの高低
 ＊国土地理院ウェブサイトで作成
 ::
 ::gazo
 ![](Cuba_elevation.webp)
-<img class="lazyload popup-img border border-1 half" data-src="img/elevation_legend.webp" alt="高低の凡例" src="../share/img/loading.svg" />
+![](elevation_legend.webp){.border}
 キューバの高低
 ＊国土地理院ウェブサイトで作成
 ::
@@ -344,6 +344,7 @@
 ナイジェリアの民族
 ::
 ### 都市
+::city{params="566"}
 #### アブジャ
 ::top
 アブジャはナイジェリアの首都です。

@@ -12,6 +12,7 @@
 ::last
 草地が育ちやすく、イギリスやアイルランドは牧草地の割合が高くなります。
 ::
+::land-use{data_year="2019" nation_cd="826"}
 ::top
 グレートブリテン島の中央部は、古期造山帯のぺニン山脈が南北に走ります。
 ::
@@ -133,6 +134,8 @@
 ::sup
 スウェーデンも同様
 ::
+::total-fertility-rate{params="250,826,752,528,276,380,724"}
+::aging-society{params="250,752,380,276,392"}
 #### 移民
 ::top
 フランスへの移民は、旧植民地からが多いです。
@@ -140,6 +143,7 @@
 ::last
 旧植民地ではフランス語に堪能な者が多く、フランスで働きやすいからです。
 ::
+::immigration{nation_cd="250"}
 #### 首都と人口
 ::top
 フランスのパリは、人口が一極集中する首位都市（プライメートシティ）です。
@@ -178,6 +182,7 @@
 ::
 <div class="overflow-x-auto mt-10 mb-10">
 <div class="text-center">観光客数・国際観光収支</div>
+::statistics{id="310" arr_linkedId="311,312,313"}
 </div>
 ::gazo
 ![](Nice.webp)
@@ -284,6 +289,7 @@ sliceVisibilityThreshold: 0
 ::top
 ドイツへの移民は、貿易関係で協力している[[トルコ]]からが多いです。
 ::
+::immigration{nation_cd="276"}
 ### 農業
 ::top
 ヨーロッパにおいて、フランスに次ぐ農業大国です。
@@ -340,7 +346,9 @@ sliceVisibilityThreshold: 0
 ::top
 ドイツの産業別人口構成は、他のヨーロッパ諸国と比較すると、２次産業が高くなっています。
 ::
+::industrial-population{params="250,276,380,528,724,826" data_year="2018"}
 ### 貿易
+::trade-balance{params="156,276,643,380,528" data_year="2020" order_col_name="profit"}
 ::export-items{nation_cd="276"}
 ::import-items{nation_cd="276"}
 ## ベルギー
@@ -441,6 +449,7 @@ sliceVisibilityThreshold: 0
 ![](Europort_petrochemical_complex.webp)
 ユーロポートの石油化学コンビナート
 ::
+::port-container{}
 ### 貿易
 ::export-items{nation_cd="528"}
 ::import-items{nation_cd="528"}
@@ -463,6 +472,7 @@ sliceVisibilityThreshold: 0
 ::last
 放牧をあまりおこなわず、舎飼い（耕地で栽培した飼料を与えて畜舎の中で飼育すること）中心で酪農を盛んにおこなっています。
 ::
+::land-use{data_year="2019" nation_cd="208"}
 ::statistics{id="32" order="desc" limit="5" offset="0"}
 ### 発電
 ::top
@@ -542,6 +552,7 @@ sliceVisibilityThreshold: 0
 ::top
 スイスは、大部分の人が金融業などのサービス産業に従事しています。
 ::
+::industrial-population{params="756" data_year="2018"}
 ### 貿易
 ::export-items{nation_cd="756"}
 ::import-items{nation_cd="756"}

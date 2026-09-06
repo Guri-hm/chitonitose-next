@@ -1,0 +1,1912 @@
+[
+  {
+    "nation_cd": 4,
+    "data_year": 2019,
+    "cultivated_land_rate": 12.28,
+    "pasture_rate": 46,
+    "forest_rate": 1.9,
+    "per_farmer_ha": 1.98,
+    "farming_rate": 42.5,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 8,
+    "data_year": 2019,
+    "cultivated_land_rate": 25.4,
+    "pasture_rate": 17.45,
+    "forest_rate": 28.8,
+    "per_farmer_ha": 1.5,
+    "farming_rate": 36.4,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 12,
+    "data_year": 2019,
+    "cultivated_land_rate": 3.58,
+    "pasture_rate": 13.79,
+    "forest_rate": 0.8,
+    "per_farmer_ha": 7.91,
+    "farming_rate": 9.6,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 20,
+    "data_year": 2019,
+    "cultivated_land_rate": 1.7,
+    "pasture_rate": 38.3,
+    "forest_rate": 34,
+    "per_farmer_ha": null,
+    "farming_rate": null,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 24,
+    "data_year": 2019,
+    "cultivated_land_rate": 4.18,
+    "pasture_rate": 41.5,
+    "forest_rate": 53.9,
+    "per_farmer_ha": 0.84,
+    "farming_rate": 50.7,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 31,
+    "data_year": 2019,
+    "cultivated_land_rate": 28.51,
+    "pasture_rate": 29.32,
+    "forest_rate": 13.6,
+    "per_farmer_ha": 1.34,
+    "farming_rate": 36,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 32,
+    "data_year": 2019,
+    "cultivated_land_rate": 12.31,
+    "pasture_rate": 27.29,
+    "forest_rate": 10.5,
+    "per_farmer_ha": 3095.5,
+    "farming_rate": 0.1,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 36,
+    "data_year": 2019,
+    "cultivated_land_rate": 4.02,
+    "pasture_rate": 43.1,
+    "forest_rate": 17.4,
+    "per_farmer_ha": 95.03,
+    "farming_rate": 2.6,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 40,
+    "data_year": 2019,
+    "cultivated_land_rate": 16.87,
+    "pasture_rate": 15.25,
+    "forest_rate": 47.2,
+    "per_farmer_ha": 8.55,
+    "farming_rate": 3.7,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 44,
+    "data_year": 2019,
+    "cultivated_land_rate": 1.2,
+    "pasture_rate": 0.2,
+    "forest_rate": 50.9,
+    "per_farmer_ha": 2.64,
+    "farming_rate": 2.2,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 48,
+    "data_year": 2019,
+    "cultivated_land_rate": 5.87,
+    "pasture_rate": 5.11,
+    "forest_rate": 0.9,
+    "per_farmer_ha": 0.51,
+    "farming_rate": 0.9,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 50,
+    "data_year": 2019,
+    "cultivated_land_rate": 67.58,
+    "pasture_rate": 4.61,
+    "forest_rate": 14.5,
+    "per_farmer_ha": 0.34,
+    "farming_rate": 38.3,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 51,
+    "data_year": 2019,
+    "cultivated_land_rate": 17.74,
+    "pasture_rate": 41.17,
+    "forest_rate": 11.5,
+    "per_farmer_ha": 2.09,
+    "farming_rate": 24.1,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 52,
+    "data_year": 2019,
+    "cultivated_land_rate": 18.6,
+    "pasture_rate": 4.65,
+    "forest_rate": 14.7,
+    "per_farmer_ha": 2.16,
+    "farming_rate": 2.6,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 56,
+    "data_year": 2019,
+    "cultivated_land_rate": 29.09,
+    "pasture_rate": 15.7,
+    "forest_rate": 22.8,
+    "per_farmer_ha": 19.62,
+    "farming_rate": 0.9,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 64,
+    "data_year": 2019,
+    "cultivated_land_rate": 2.62,
+    "pasture_rate": 10.83,
+    "forest_rate": 71.4,
+    "per_farmer_ha": 0.48,
+    "farming_rate": 55.8,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 68,
+    "data_year": 2019,
+    "cultivated_land_rate": 4.42,
+    "pasture_rate": 30.46,
+    "forest_rate": 47.1,
+    "per_farmer_ha": 2.82,
+    "farming_rate": 30.5,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 70,
+    "data_year": 2019,
+    "cultivated_land_rate": 21.89,
+    "pasture_rate": 21.39,
+    "forest_rate": 42.7,
+    "per_farmer_ha": 5.54,
+    "farming_rate": 18,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 72,
+    "data_year": 2019,
+    "cultivated_land_rate": 0.46,
+    "pasture_rate": 45.17,
+    "forest_rate": 27.1,
+    "per_farmer_ha": 1.48,
+    "farming_rate": 19.9,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 76,
+    "data_year": 2019,
+    "cultivated_land_rate": 7.6,
+    "pasture_rate": 20.74,
+    "forest_rate": 59.6,
+    "per_farmer_ha": 7.39,
+    "farming_rate": 9.1,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 84,
+    "data_year": 2019,
+    "cultivated_land_rate": 5.35,
+    "pasture_rate": 2.19,
+    "forest_rate": 56.5,
+    "per_farmer_ha": 4.34,
+    "farming_rate": 16.8,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 90,
+    "data_year": 2019,
+    "cultivated_land_rate": 3.89,
+    "pasture_rate": 0.29,
+    "forest_rate": 90.2,
+    "per_farmer_ha": 0.88,
+    "farming_rate": 37.3,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 96,
+    "data_year": 2019,
+    "cultivated_land_rate": 1.9,
+    "pasture_rate": 0.65,
+    "forest_rate": 72.1,
+    "per_farmer_ha": 2.53,
+    "farming_rate": 1.9,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 100,
+    "data_year": 2019,
+    "cultivated_land_rate": 33.43,
+    "pasture_rate": 12.97,
+    "forest_rate": 35.7,
+    "per_farmer_ha": 16.88,
+    "farming_rate": 6.6,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 104,
+    "data_year": 2019,
+    "cultivated_land_rate": 19.15,
+    "pasture_rate": 0.46,
+    "forest_rate": 44.2,
+    "per_farmer_ha": 1.06,
+    "farming_rate": 48.9,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 108,
+    "data_year": 2019,
+    "cultivated_land_rate": 60.36,
+    "pasture_rate": 18.81,
+    "forest_rate": 10.9,
+    "per_farmer_ha": 0.37,
+    "farming_rate": 86.2,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 112,
+    "data_year": 2019,
+    "cultivated_land_rate": 28.67,
+    "pasture_rate": 12.65,
+    "forest_rate": 43.1,
+    "per_farmer_ha": 10.99,
+    "farming_rate": 11.1,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 116,
+    "data_year": 2019,
+    "cultivated_land_rate": 23.03,
+    "pasture_rate": 8.5,
+    "forest_rate": 46.6,
+    "per_farmer_ha": 1.27,
+    "farming_rate": 34.5,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 120,
+    "data_year": 2019,
+    "cultivated_land_rate": 16.39,
+    "pasture_rate": 4.23,
+    "forest_rate": 43.1,
+    "per_farmer_ha": 1.62,
+    "farming_rate": 43.5,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 124,
+    "data_year": 2019,
+    "cultivated_land_rate": 4.33,
+    "pasture_rate": 2.16,
+    "forest_rate": 38.7,
+    "per_farmer_ha": 131.94,
+    "farming_rate": 1.5,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 132,
+    "data_year": 2019,
+    "cultivated_land_rate": 13.4,
+    "pasture_rate": 6.2,
+    "forest_rate": 11.3,
+    "per_farmer_ha": 2.44,
+    "farming_rate": 10.6,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 144,
+    "data_year": 2019,
+    "cultivated_land_rate": 38.33,
+    "pasture_rate": 7.11,
+    "forest_rate": 34.2,
+    "per_farmer_ha": 1.16,
+    "farming_rate": 25,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 148,
+    "data_year": 2019,
+    "cultivated_land_rate": 4.16,
+    "pasture_rate": 35.74,
+    "forest_rate": 3.5,
+    "per_farmer_ha": 1.19,
+    "farming_rate": 75.1,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 152,
+    "data_year": 2019,
+    "cultivated_land_rate": 2.23,
+    "pasture_rate": 18.85,
+    "forest_rate": 24.3,
+    "per_farmer_ha": 2.09,
+    "farming_rate": 9,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 156,
+    "data_year": 2019,
+    "cultivated_land_rate": 14.37,
+    "pasture_rate": 41.84,
+    "forest_rate": 23.2,
+    "per_farmer_ha": 0.69,
+    "farming_rate": 25.3,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 170,
+    "data_year": 2019,
+    "cultivated_land_rate": 8.9,
+    "pasture_rate": 35.89,
+    "forest_rate": 53.5,
+    "per_farmer_ha": 2.63,
+    "farming_rate": 15.8,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 174,
+    "data_year": 2019,
+    "cultivated_land_rate": 62.33,
+    "pasture_rate": 8.06,
+    "forest_rate": 17.9,
+    "per_farmer_ha": 1.55,
+    "farming_rate": 34.4,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 178,
+    "data_year": 2019,
+    "cultivated_land_rate": 1.84,
+    "pasture_rate": 29.28,
+    "forest_rate": 64.3,
+    "per_farmer_ha": 0.95,
+    "farming_rate": 33.5,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 180,
+    "data_year": 2019,
+    "cultivated_land_rate": 5.87,
+    "pasture_rate": 8.03,
+    "forest_rate": 56.1,
+    "per_farmer_ha": 0.72,
+    "farming_rate": 64.3,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 184,
+    "data_year": 2019,
+    "cultivated_land_rate": 6.25,
+    "pasture_rate": 0,
+    "forest_rate": 65,
+    "per_farmer_ha": null,
+    "farming_rate": null,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 188,
+    "data_year": 2019,
+    "cultivated_land_rate": 11.27,
+    "pasture_rate": 23.5,
+    "forest_rate": 59.1,
+    "per_farmer_ha": 2.11,
+    "farming_rate": 12,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 191,
+    "data_year": 2019,
+    "cultivated_land_rate": 16.03,
+    "pasture_rate": 10.85,
+    "forest_rate": 34.6,
+    "per_farmer_ha": 8.54,
+    "farming_rate": 6.2,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 192,
+    "data_year": 2019,
+    "cultivated_land_rate": 35.29,
+    "pasture_rate": 26.38,
+    "forest_rate": 31.2,
+    "per_farmer_ha": 4.2,
+    "farming_rate": 17.4,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 196,
+    "data_year": 2019,
+    "cultivated_land_rate": 13.38,
+    "pasture_rate": 0.17,
+    "forest_rate": 18.7,
+    "per_farmer_ha": 8.67,
+    "farming_rate": 2.4,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 203,
+    "data_year": 2019,
+    "cultivated_land_rate": 32.79,
+    "pasture_rate": 12.85,
+    "forest_rate": 34.6,
+    "per_farmer_ha": 17.8,
+    "farming_rate": 2.7,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 204,
+    "data_year": 2019,
+    "cultivated_land_rate": 30.15,
+    "pasture_rate": 4.88,
+    "forest_rate": 28.3,
+    "per_farmer_ha": 1.88,
+    "farming_rate": 38.3,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 208,
+    "data_year": 2019,
+    "cultivated_land_rate": 60.48,
+    "pasture_rate": 5.18,
+    "forest_rate": 15.7,
+    "per_farmer_ha": 38.17,
+    "farming_rate": 2.2,
+    "group_cd": "1"
+  },
+  {
+    "nation_cd": 212,
+    "data_year": 2019,
+    "cultivated_land_rate": 30.67,
+    "pasture_rate": 2.67,
+    "forest_rate": 63.8,
+    "per_farmer_ha": null,
+    "farming_rate": null,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 214,
+    "data_year": 2019,
+    "cultivated_land_rate": 25.5,
+    "pasture_rate": 24.78,
+    "forest_rate": 44.2,
+    "per_farmer_ha": 2.88,
+    "farming_rate": 8.8,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 218,
+    "data_year": 2019,
+    "cultivated_land_rate": 9.78,
+    "pasture_rate": 11.68,
+    "forest_rate": 50.6,
+    "per_farmer_ha": 1,
+    "farming_rate": 29.7,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 222,
+    "data_year": 2019,
+    "cultivated_land_rate": 42.52,
+    "pasture_rate": 15.19,
+    "forest_rate": 28.4,
+    "per_farmer_ha": 2.02,
+    "farming_rate": 16.3,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 226,
+    "data_year": 2019,
+    "cultivated_land_rate": 6.42,
+    "pasture_rate": 3.71,
+    "forest_rate": 87.6,
+    "per_farmer_ha": 0.93,
+    "farming_rate": 39.5,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 231,
+    "data_year": 2019,
+    "cultivated_land_rate": 15.86,
+    "pasture_rate": 17.72,
+    "forest_rate": 15.2,
+    "per_farmer_ha": 0.52,
+    "farming_rate": 66.6,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 232,
+    "data_year": 2019,
+    "cultivated_land_rate": 5.71,
+    "pasture_rate": 56.94,
+    "forest_rate": 8.7,
+    "per_farmer_ha": 0.73,
+    "farming_rate": 63.1,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 233,
+    "data_year": 2019,
+    "cultivated_land_rate": 16.03,
+    "pasture_rate": 6.71,
+    "forest_rate": 56.1,
+    "per_farmer_ha": 32.74,
+    "farming_rate": 3.2,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 242,
+    "data_year": 2019,
+    "cultivated_land_rate": 13.68,
+    "pasture_rate": 9.58,
+    "forest_rate": 62,
+    "per_farmer_ha": 4.09,
+    "farming_rate": 17.6,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 246,
+    "data_year": 2019,
+    "cultivated_land_rate": 7.4,
+    "pasture_rate": 0.08,
+    "forest_rate": 73.7,
+    "per_farmer_ha": 23.17,
+    "farming_rate": 3.8,
+    "group_cd": "1"
+  },
+  {
+    "nation_cd": 250,
+    "data_year": 2019,
+    "cultivated_land_rate": 34.84,
+    "pasture_rate": 17.43,
+    "forest_rate": 31.4,
+    "per_farmer_ha": 27.18,
+    "farming_rate": 2.5,
+    "group_cd": "1"
+  },
+  {
+    "nation_cd": 262,
+    "data_year": 2019,
+    "cultivated_land_rate": 0.09,
+    "pasture_rate": 73.34,
+    "forest_rate": 0.3,
+    "per_farmer_ha": 0.02,
+    "farming_rate": 24.6,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 266,
+    "data_year": 2019,
+    "cultivated_land_rate": 1.92,
+    "pasture_rate": 6.67,
+    "forest_rate": 91.4,
+    "per_farmer_ha": 2.85,
+    "farming_rate": 30,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 268,
+    "data_year": 2019,
+    "cultivated_land_rate": 6.16,
+    "pasture_rate": 27.92,
+    "forest_rate": 40.6,
+    "per_farmer_ha": 0.62,
+    "farming_rate": 38.1,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 270,
+    "data_year": 2019,
+    "cultivated_land_rate": 43.97,
+    "pasture_rate": 15.81,
+    "forest_rate": 24.6,
+    "per_farmer_ha": 2.33,
+    "farming_rate": 27,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 276,
+    "data_year": 2019,
+    "cultivated_land_rate": 34.1,
+    "pasture_rate": 13.6,
+    "forest_rate": 32.7,
+    "per_farmer_ha": 23.16,
+    "farming_rate": 1.2,
+    "group_cd": "1"
+  },
+  {
+    "nation_cd": 288,
+    "data_year": 2019,
+    "cultivated_land_rate": 22.95,
+    "pasture_rate": 32.45,
+    "forest_rate": 35.1,
+    "per_farmer_ha": 1.42,
+    "farming_rate": 29.8,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 296,
+    "data_year": 2019,
+    "cultivated_land_rate": 41.98,
+    "pasture_rate": 0,
+    "forest_rate": 1.5,
+    "per_farmer_ha": null,
+    "farming_rate": null,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 300,
+    "data_year": 2019,
+    "cultivated_land_rate": 24.99,
+    "pasture_rate": 22.36,
+    "forest_rate": 30.3,
+    "per_farmer_ha": 7.13,
+    "farming_rate": 11.6,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 308,
+    "data_year": 2019,
+    "cultivated_land_rate": 20.59,
+    "pasture_rate": 2.94,
+    "forest_rate": 52.1,
+    "per_farmer_ha": null,
+    "farming_rate": null,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 320,
+    "data_year": 2019,
+    "cultivated_land_rate": 19.08,
+    "pasture_rate": 16.9,
+    "forest_rate": 33,
+    "per_farmer_ha": 0.92,
+    "farming_rate": 31.3,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 324,
+    "data_year": 2019,
+    "cultivated_land_rate": 15.46,
+    "pasture_rate": 43.55,
+    "forest_rate": 25.4,
+    "per_farmer_ha": 1.47,
+    "farming_rate": 60.6,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 328,
+    "data_year": 2019,
+    "cultivated_land_rate": 2.34,
+    "pasture_rate": 3.97,
+    "forest_rate": 93.6,
+    "per_farmer_ha": 11.2,
+    "farming_rate": 15.4,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 332,
+    "data_year": 2019,
+    "cultivated_land_rate": 48.98,
+    "pasture_rate": 17.78,
+    "forest_rate": 12.7,
+    "per_farmer_ha": 1.04,
+    "farming_rate": 29,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 340,
+    "data_year": 2019,
+    "cultivated_land_rate": 14.26,
+    "pasture_rate": 17.12,
+    "forest_rate": 57,
+    "per_farmer_ha": 1.24,
+    "farming_rate": 29.5,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 348,
+    "data_year": 2019,
+    "cultivated_land_rate": 49.18,
+    "pasture_rate": 8.66,
+    "forest_rate": 22.5,
+    "per_farmer_ha": 20.9,
+    "farming_rate": 4.7,
+    "group_cd": "1"
+  },
+  {
+    "nation_cd": 352,
+    "data_year": 2019,
+    "cultivated_land_rate": 1.2,
+    "pasture_rate": 17.37,
+    "forest_rate": 0.5,
+    "per_farmer_ha": 15.34,
+    "farming_rate": 4,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 356,
+    "data_year": 2019,
+    "cultivated_land_rate": 56.95,
+    "pasture_rate": 3.45,
+    "forest_rate": 24.2,
+    "per_farmer_ha": 0.85,
+    "farming_rate": 42.6,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 360,
+    "data_year": 2019,
+    "cultivated_land_rate": 27.32,
+    "pasture_rate": 5.86,
+    "forest_rate": 49.4,
+    "per_farmer_ha": 1.38,
+    "farming_rate": 28.5,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 364,
+    "data_year": 2019,
+    "cultivated_land_rate": 10.77,
+    "pasture_rate": 18.1,
+    "forest_rate": 6.6,
+    "per_farmer_ha": 4.03,
+    "farming_rate": 17.4,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 368,
+    "data_year": 2019,
+    "cultivated_land_rate": 12.09,
+    "pasture_rate": 9.21,
+    "forest_rate": 1.9,
+    "per_farmer_ha": 3.15,
+    "farming_rate": 18.3,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 372,
+    "data_year": 2019,
+    "cultivated_land_rate": 6.45,
+    "pasture_rate": 59.22,
+    "forest_rate": 11.3,
+    "per_farmer_ha": 4.38,
+    "farming_rate": 4.4,
+    "group_cd": "1"
+  },
+  {
+    "nation_cd": 376,
+    "data_year": 2019,
+    "cultivated_land_rate": 22.11,
+    "pasture_rate": 7.39,
+    "forest_rate": 6.5,
+    "per_farmer_ha": 13.88,
+    "farming_rate": 0.9,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 380,
+    "data_year": 2019,
+    "cultivated_land_rate": 31.55,
+    "pasture_rate": 12.82,
+    "forest_rate": 32.2,
+    "per_farmer_ha": 10.19,
+    "farming_rate": 3.9,
+    "group_cd": "1"
+  },
+  {
+    "nation_cd": 384,
+    "data_year": 2019,
+    "cultivated_land_rate": 25.16,
+    "pasture_rate": 41.51,
+    "forest_rate": 9.3,
+    "per_farmer_ha": 2.56,
+    "farming_rate": 40.1,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 388,
+    "data_year": 2019,
+    "cultivated_land_rate": 19.85,
+    "pasture_rate": 21.14,
+    "forest_rate": 54.8,
+    "per_farmer_ha": 1.02,
+    "farming_rate": 15.2,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 392,
+    "data_year": 2019,
+    "cultivated_land_rate": 10.43,
+    "pasture_rate": 1.64,
+    "forest_rate": 68.4,
+    "per_farmer_ha": 1.67,
+    "farming_rate": 3.4,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 398,
+    "data_year": 2019,
+    "cultivated_land_rate": 11.11,
+    "pasture_rate": 68.33,
+    "forest_rate": 1.3,
+    "per_farmer_ha": 23.36,
+    "farming_rate": 14.9,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 400,
+    "data_year": 2019,
+    "cultivated_land_rate": 3.25,
+    "pasture_rate": 8.36,
+    "forest_rate": 1.1,
+    "per_farmer_ha": 5.31,
+    "farming_rate": 2.5,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 404,
+    "data_year": 2019,
+    "cultivated_land_rate": 11.12,
+    "pasture_rate": 37.42,
+    "forest_rate": 6.3,
+    "per_farmer_ha": 0.5,
+    "farming_rate": 54.3,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 408,
+    "data_year": 2019,
+    "cultivated_land_rate": 21.43,
+    "pasture_rate": 0.42,
+    "forest_rate": 50.3,
+    "per_farmer_ha": 0.36,
+    "farming_rate": 43.8,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 410,
+    "data_year": 2019,
+    "cultivated_land_rate": 16.2,
+    "pasture_rate": 0.57,
+    "forest_rate": 64.5,
+    "per_farmer_ha": 1.13,
+    "farming_rate": 5.1,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 414,
+    "data_year": 2019,
+    "cultivated_land_rate": 0.79,
+    "pasture_rate": 7.63,
+    "forest_rate": 0.3,
+    "per_farmer_ha": 0.33,
+    "farming_rate": 1.8,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 417,
+    "data_year": 2019,
+    "cultivated_land_rate": 7.11,
+    "pasture_rate": 46.95,
+    "forest_rate": 6.8,
+    "per_farmer_ha": 2.97,
+    "farming_rate": 19.3,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 418,
+    "data_year": 2019,
+    "cultivated_land_rate": 7.45,
+    "pasture_rate": 2.92,
+    "forest_rate": 72,
+    "per_farmer_ha": 0.74,
+    "farming_rate": 61.4,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 422,
+    "data_year": 2019,
+    "cultivated_land_rate": 25.22,
+    "pasture_rate": 39.1,
+    "forest_rate": 13.9,
+    "per_farmer_ha": 1,
+    "farming_rate": 11.3,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 426,
+    "data_year": 2019,
+    "cultivated_land_rate": 4.68,
+    "pasture_rate": 65.88,
+    "forest_rate": 1.1,
+    "per_farmer_ha": 0.43,
+    "farming_rate": 44.3,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 428,
+    "data_year": 2019,
+    "cultivated_land_rate": 21.34,
+    "pasture_rate": 10.16,
+    "forest_rate": 54.8,
+    "per_farmer_ha": 19.83,
+    "farming_rate": 7.3,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 430,
+    "data_year": 2019,
+    "cultivated_land_rate": 7.27,
+    "pasture_rate": 13.02,
+    "forest_rate": 79.4,
+    "per_farmer_ha": 0.76,
+    "farming_rate": 42.6,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 434,
+    "data_year": 2019,
+    "cultivated_land_rate": 1.17,
+    "pasture_rate": 7.56,
+    "forest_rate": 0.1,
+    "per_farmer_ha": 6.32,
+    "farming_rate": 16.4,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 438,
+    "data_year": 2019,
+    "cultivated_land_rate": 9.25,
+    "pasture_rate": 23.69,
+    "forest_rate": 41.9,
+    "per_farmer_ha": null,
+    "farming_rate": null,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 440,
+    "data_year": 2019,
+    "cultivated_land_rate": 35.88,
+    "pasture_rate": 11.63,
+    "forest_rate": 35.1,
+    "per_farmer_ha": 25.65,
+    "farming_rate": 6.4,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 442,
+    "data_year": 2019,
+    "cultivated_land_rate": 24.67,
+    "pasture_rate": 26.37,
+    "forest_rate": 34.5,
+    "per_farmer_ha": 31.74,
+    "farming_rate": 0.7,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 450,
+    "data_year": 2019,
+    "cultivated_land_rate": 6.19,
+    "pasture_rate": 64.1,
+    "forest_rate": 21.4,
+    "per_farmer_ha": 0.41,
+    "farming_rate": 64.1,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 454,
+    "data_year": 2019,
+    "cultivated_land_rate": 40.31,
+    "pasture_rate": 19.62,
+    "forest_rate": 24.2,
+    "per_farmer_ha": 0.66,
+    "farming_rate": 76.4,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 458,
+    "data_year": 2019,
+    "cultivated_land_rate": 25.22,
+    "pasture_rate": 0.87,
+    "forest_rate": 58.3,
+    "per_farmer_ha": 5.29,
+    "farming_rate": 10.3,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 462,
+    "data_year": 2019,
+    "cultivated_land_rate": 18,
+    "pasture_rate": 3.33,
+    "forest_rate": 2.7,
+    "per_farmer_ha": 0.23,
+    "farming_rate": 8.3,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 466,
+    "data_year": 2019,
+    "cultivated_land_rate": 5.38,
+    "pasture_rate": 28.39,
+    "forest_rate": 10.9,
+    "per_farmer_ha": 1.58,
+    "farming_rate": 62.4,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 470,
+    "data_year": 2019,
+    "cultivated_land_rate": 32.44,
+    "pasture_rate": 0,
+    "forest_rate": 1.4,
+    "per_farmer_ha": 4.85,
+    "farming_rate": 1,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 478,
+    "data_year": 2019,
+    "cultivated_land_rate": 0.4,
+    "pasture_rate": 38.08,
+    "forest_rate": 0.3,
+    "per_farmer_ha": 1.2,
+    "farming_rate": 30.8,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 480,
+    "data_year": 2019,
+    "cultivated_land_rate": 38.92,
+    "pasture_rate": 3.45,
+    "forest_rate": 19.1,
+    "per_farmer_ha": 2.32,
+    "farming_rate": 6,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 484,
+    "data_year": 2019,
+    "cultivated_land_rate": 11.38,
+    "pasture_rate": 38.05,
+    "forest_rate": 33.9,
+    "per_farmer_ha": 3.18,
+    "farming_rate": 12.5,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 492,
+    "data_year": 2019,
+    "cultivated_land_rate": 0,
+    "pasture_rate": 0,
+    "forest_rate": 0,
+    "per_farmer_ha": null,
+    "farming_rate": null,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 496,
+    "data_year": 2019,
+    "cultivated_land_rate": 0.86,
+    "pasture_rate": 71.95,
+    "forest_rate": 9.1,
+    "per_farmer_ha": 3.96,
+    "farming_rate": 25.3,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 498,
+    "data_year": 2019,
+    "cultivated_land_rate": 58.44,
+    "pasture_rate": 10.34,
+    "forest_rate": 11.8,
+    "per_farmer_ha": 6.84,
+    "farming_rate": 21,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 499,
+    "data_year": 2019,
+    "cultivated_land_rate": 1.12,
+    "pasture_rate": 18.07,
+    "forest_rate": 61.5,
+    "per_farmer_ha": 0.87,
+    "farming_rate": 7.2,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 504,
+    "data_year": 2019,
+    "cultivated_land_rate": 19.3,
+    "pasture_rate": 47.05,
+    "forest_rate": 12.8,
+    "per_farmer_ha": 2.36,
+    "farming_rate": 33.3,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 508,
+    "data_year": 2019,
+    "cultivated_land_rate": 7.57,
+    "pasture_rate": 45.1,
+    "forest_rate": 47,
+    "per_farmer_ha": 0.66,
+    "farming_rate": 70.2,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 512,
+    "data_year": 2019,
+    "cultivated_land_rate": 0.36,
+    "pasture_rate": 4.37,
+    "forest_rate": 0,
+    "per_farmer_ha": 1.05,
+    "farming_rate": 4,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 516,
+    "data_year": 2019,
+    "cultivated_land_rate": 0.98,
+    "pasture_rate": 46.16,
+    "forest_rate": 8.2,
+    "per_farmer_ha": 4.94,
+    "farming_rate": 21.9,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 520,
+    "data_year": 2019,
+    "cultivated_land_rate": 20,
+    "pasture_rate": 0,
+    "forest_rate": 0,
+    "per_farmer_ha": null,
+    "farming_rate": null,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 524,
+    "data_year": 2019,
+    "cultivated_land_rate": 16.22,
+    "pasture_rate": 12.52,
+    "forest_rate": 41.6,
+    "per_farmer_ha": 0.22,
+    "farming_rate": 64.4,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 528,
+    "data_year": 2019,
+    "cultivated_land_rate": 31.15,
+    "pasture_rate": 22.81,
+    "forest_rate": 10.9,
+    "per_farmer_ha": 5.65,
+    "farming_rate": 2.1,
+    "group_cd": "1"
+  },
+  {
+    "nation_cd": 548,
+    "data_year": 2019,
+    "cultivated_land_rate": 11.89,
+    "pasture_rate": 3.45,
+    "forest_rate": 36.3,
+    "per_farmer_ha": 2.02,
+    "farming_rate": 56.8,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 554,
+    "data_year": 2019,
+    "cultivated_land_rate": 2.35,
+    "pasture_rate": 36.93,
+    "forest_rate": 37.5,
+    "per_farmer_ha": 4.14,
+    "farming_rate": 5.8,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 558,
+    "data_year": 2019,
+    "cultivated_land_rate": 14.87,
+    "pasture_rate": 27.21,
+    "forest_rate": 29.1,
+    "per_farmer_ha": 2.01,
+    "farming_rate": 30.6,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 562,
+    "data_year": 2019,
+    "cultivated_land_rate": 14.07,
+    "pasture_rate": 22.72,
+    "forest_rate": 0.9,
+    "per_farmer_ha": 2.93,
+    "farming_rate": 72.5,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 566,
+    "data_year": 2019,
+    "cultivated_land_rate": 44.47,
+    "pasture_rate": 31.43,
+    "forest_rate": 23.9,
+    "per_farmer_ha": 2,
+    "farming_rate": 35,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 570,
+    "data_year": 2019,
+    "cultivated_land_rate": 15.38,
+    "pasture_rate": 3.85,
+    "forest_rate": 72.5,
+    "per_farmer_ha": null,
+    "farming_rate": null,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 578,
+    "data_year": 2019,
+    "cultivated_land_rate": 2.2,
+    "pasture_rate": 0.49,
+    "forest_rate": 33.3,
+    "per_farmer_ha": 14.36,
+    "farming_rate": 2,
+    "group_cd": "1"
+  },
+  {
+    "nation_cd": 583,
+    "data_year": 2019,
+    "cultivated_land_rate": 27.14,
+    "pasture_rate": 4.29,
+    "forest_rate": 92,
+    "per_farmer_ha": null,
+    "farming_rate": null,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 584,
+    "data_year": 2019,
+    "cultivated_land_rate": 47.22,
+    "pasture_rate": 0.56,
+    "forest_rate": 52.2,
+    "per_farmer_ha": null,
+    "farming_rate": null,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 585,
+    "data_year": 2019,
+    "cultivated_land_rate": 5,
+    "pasture_rate": 4.35,
+    "forest_rate": 89.8,
+    "per_farmer_ha": null,
+    "farming_rate": null,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 586,
+    "data_year": 2019,
+    "cultivated_land_rate": 40.6,
+    "pasture_rate": 6.49,
+    "forest_rate": 4.9,
+    "per_farmer_ha": 1.2,
+    "farming_rate": 36.9,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 591,
+    "data_year": 2019,
+    "cultivated_land_rate": 10.11,
+    "pasture_rate": 20.34,
+    "forest_rate": 57,
+    "per_farmer_ha": 2.61,
+    "farming_rate": 14.4,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 598,
+    "data_year": 2019,
+    "cultivated_land_rate": 2.21,
+    "pasture_rate": 0.42,
+    "forest_rate": 79.3,
+    "per_farmer_ha": 0.69,
+    "farming_rate": 56.1,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 600,
+    "data_year": 2019,
+    "cultivated_land_rate": 12.14,
+    "pasture_rate": 42.79,
+    "forest_rate": 41.2,
+    "per_farmer_ha": 7.61,
+    "farming_rate": 18.7,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 604,
+    "data_year": 2019,
+    "cultivated_land_rate": 4.44,
+    "pasture_rate": 14.69,
+    "forest_rate": 56.6,
+    "per_farmer_ha": 1.13,
+    "farming_rate": 27.4,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 608,
+    "data_year": 2019,
+    "cultivated_land_rate": 36.69,
+    "pasture_rate": 5.03,
+    "forest_rate": 24,
+    "per_farmer_ha": 1.08,
+    "farming_rate": 22.9,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 616,
+    "data_year": 2019,
+    "cultivated_land_rate": 37.23,
+    "pasture_rate": 10.22,
+    "forest_rate": 30.9,
+    "per_farmer_ha": 7.04,
+    "farming_rate": 9.2,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 620,
+    "data_year": 2019,
+    "cultivated_land_rate": 18.54,
+    "pasture_rate": 20.48,
+    "forest_rate": 36.1,
+    "per_farmer_ha": 6.28,
+    "farming_rate": 5.5,
+    "group_cd": "1"
+  },
+  {
+    "nation_cd": 624,
+    "data_year": 2019,
+    "cultivated_land_rate": 19.56,
+    "pasture_rate": 9.43,
+    "forest_rate": 70.7,
+    "per_farmer_ha": 1.17,
+    "farming_rate": 60.5,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 626,
+    "data_year": 2019,
+    "cultivated_land_rate": 15.47,
+    "pasture_rate": 10.09,
+    "forest_rate": 62,
+    "per_farmer_ha": 1.12,
+    "farming_rate": 39.3,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 634,
+    "data_year": 2019,
+    "cultivated_land_rate": 1.48,
+    "pasture_rate": 4.35,
+    "forest_rate": 0,
+    "per_farmer_ha": 0.69,
+    "farming_rate": 1.2,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 642,
+    "data_year": 2019,
+    "cultivated_land_rate": 40.76,
+    "pasture_rate": 19.33,
+    "forest_rate": 30.1,
+    "per_farmer_ha": 5.1,
+    "farming_rate": 21.2,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 643,
+    "data_year": 2019,
+    "cultivated_land_rate": 7.54,
+    "pasture_rate": 5.62,
+    "forest_rate": 49.8,
+    "per_farmer_ha": 30.22,
+    "farming_rate": 5.8,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 646,
+    "data_year": 2019,
+    "cultivated_land_rate": 56.82,
+    "pasture_rate": 16.62,
+    "forest_rate": 11.2,
+    "per_farmer_ha": 0.36,
+    "farming_rate": 62.3,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 659,
+    "data_year": 2019,
+    "cultivated_land_rate": 19.62,
+    "pasture_rate": 3.46,
+    "forest_rate": 42.3,
+    "per_farmer_ha": null,
+    "farming_rate": null,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 662,
+    "data_year": 2019,
+    "cultivated_land_rate": 16.39,
+    "pasture_rate": 0.98,
+    "forest_rate": 34,
+    "per_farmer_ha": 1.1,
+    "farming_rate": 10,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 674,
+    "data_year": 2019,
+    "cultivated_land_rate": 38.33,
+    "pasture_rate": 0,
+    "forest_rate": 16.7,
+    "per_farmer_ha": null,
+    "farming_rate": null,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 678,
+    "data_year": 2019,
+    "cultivated_land_rate": 44.79,
+    "pasture_rate": 1.04,
+    "forest_rate": 54.7,
+    "per_farmer_ha": 3.59,
+    "farming_rate": 19.1,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 682,
+    "data_year": 2019,
+    "cultivated_land_rate": 1.67,
+    "pasture_rate": 79.08,
+    "forest_rate": 0.5,
+    "per_farmer_ha": 11.05,
+    "farming_rate": 2.4,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 686,
+    "data_year": 2019,
+    "cultivated_land_rate": 17.03,
+    "pasture_rate": 29.09,
+    "forest_rate": 42.1,
+    "per_farmer_ha": 2.74,
+    "farming_rate": 30.1,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 688,
+    "data_year": 2019,
+    "cultivated_land_rate": 31.84,
+    "pasture_rate": 7.72,
+    "forest_rate": 31.1,
+    "per_farmer_ha": 4.86,
+    "farming_rate": 15.6,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 690,
+    "data_year": 2019,
+    "cultivated_land_rate": 3.37,
+    "pasture_rate": 0,
+    "forest_rate": 73.3,
+    "per_farmer_ha": null,
+    "farming_rate": null,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 694,
+    "data_year": 2019,
+    "cultivated_land_rate": 24.23,
+    "pasture_rate": 30.48,
+    "forest_rate": 35.4,
+    "per_farmer_ha": 1.25,
+    "farming_rate": 54.5,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 702,
+    "data_year": 2019,
+    "cultivated_land_rate": 0.92,
+    "pasture_rate": 0,
+    "forest_rate": 22,
+    "per_farmer_ha": 0.58,
+    "farming_rate": 0,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 703,
+    "data_year": 2019,
+    "cultivated_land_rate": 28.43,
+    "pasture_rate": 10.77,
+    "forest_rate": 40.1,
+    "per_farmer_ha": 18.93,
+    "farming_rate": 2.8,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 704,
+    "data_year": 2019,
+    "cultivated_land_rate": 37.48,
+    "pasture_rate": 2.05,
+    "forest_rate": 46.5,
+    "per_farmer_ha": 0.56,
+    "farming_rate": 37.2,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 705,
+    "data_year": 2019,
+    "cultivated_land_rate": 11.64,
+    "pasture_rate": 18.76,
+    "forest_rate": 61.6,
+    "per_farmer_ha": 5.6,
+    "farming_rate": 4.3,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 706,
+    "data_year": 2019,
+    "cultivated_land_rate": 1.79,
+    "pasture_rate": 68.54,
+    "forest_rate": 9.7,
+    "per_farmer_ha": 0.41,
+    "farming_rate": 80.3,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 710,
+    "data_year": 2019,
+    "cultivated_land_rate": 10.23,
+    "pasture_rate": 69.19,
+    "forest_rate": 14.1,
+    "per_farmer_ha": 14.08,
+    "farming_rate": 5.3,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 716,
+    "data_year": 2019,
+    "cultivated_land_rate": 10.6,
+    "pasture_rate": 31.28,
+    "forest_rate": 45.2,
+    "per_farmer_ha": 0.93,
+    "farming_rate": 66.2,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 724,
+    "data_year": 2019,
+    "cultivated_land_rate": 33.55,
+    "pasture_rate": 18.91,
+    "forest_rate": 37.2,
+    "per_farmer_ha": 21.02,
+    "farming_rate": 4,
+    "group_cd": "1"
+  },
+  {
+    "nation_cd": 728,
+    "data_year": 2019,
+    "cultivated_land_rate": 3.92,
+    "pasture_rate": 40.79,
+    "forest_rate": 11.3,
+    "per_farmer_ha": 1,
+    "farming_rate": 60.4,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 729,
+    "data_year": 2019,
+    "cultivated_land_rate": 10.81,
+    "pasture_rate": 26.06,
+    "forest_rate": 10,
+    "per_farmer_ha": 5.03,
+    "farming_rate": 38.4,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 740,
+    "data_year": 2019,
+    "cultivated_land_rate": 0.44,
+    "pasture_rate": 0.1,
+    "forest_rate": 97.5,
+    "per_farmer_ha": 4.12,
+    "farming_rate": 8.1,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 748,
+    "data_year": 2019,
+    "cultivated_land_rate": 11.05,
+    "pasture_rate": 60,
+    "forest_rate": 28.9,
+    "per_farmer_ha": 5.37,
+    "farming_rate": 12.2,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 752,
+    "data_year": 2019,
+    "cultivated_land_rate": 6.25,
+    "pasture_rate": 1.13,
+    "forest_rate": 68.7,
+    "per_farmer_ha": 30.32,
+    "farming_rate": 1.7,
+    "group_cd": "1"
+  },
+  {
+    "nation_cd": 756,
+    "data_year": 2019,
+    "cultivated_land_rate": 10.73,
+    "pasture_rate": 27.42,
+    "forest_rate": 32,
+    "per_farmer_ha": 3.44,
+    "farming_rate": 2.6,
+    "group_cd": "1"
+  },
+  {
+    "nation_cd": 760,
+    "data_year": 2019,
+    "cultivated_land_rate": 31.22,
+    "pasture_rate": 44.59,
+    "forest_rate": 2.8,
+    "per_farmer_ha": 11.8,
+    "farming_rate": 10.1,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 762,
+    "data_year": 2019,
+    "cultivated_land_rate": 6.14,
+    "pasture_rate": 27.92,
+    "forest_rate": 3,
+    "per_farmer_ha": 0.88,
+    "farming_rate": 44.7,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 764,
+    "data_year": 2019,
+    "cultivated_land_rate": 41.71,
+    "pasture_rate": 1.57,
+    "forest_rate": 39,
+    "per_farmer_ha": 1.77,
+    "farming_rate": 31.4,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 768,
+    "data_year": 2019,
+    "cultivated_land_rate": 51.85,
+    "pasture_rate": 18.39,
+    "forest_rate": 22.3,
+    "per_farmer_ha": 3.22,
+    "farming_rate": 32.4,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 776,
+    "data_year": 2019,
+    "cultivated_land_rate": 43.06,
+    "pasture_rate": 5.56,
+    "forest_rate": 12.4,
+    "per_farmer_ha": 5.19,
+    "farming_rate": 19.4,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 784,
+    "data_year": 2019,
+    "cultivated_land_rate": 1.27,
+    "pasture_rate": 4.22,
+    "forest_rate": 4.5,
+    "per_farmer_ha": 0.97,
+    "farming_rate": 1.4,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 788,
+    "data_year": 2019,
+    "cultivated_land_rate": 32.14,
+    "pasture_rate": 30.57,
+    "forest_rate": 4.5,
+    "per_farmer_ha": 10.36,
+    "farming_rate": 13.8,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 792,
+    "data_year": 2019,
+    "cultivated_land_rate": 30.01,
+    "pasture_rate": 18.99,
+    "forest_rate": 28.7,
+    "per_farmer_ha": 4.43,
+    "farming_rate": 18.1,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 795,
+    "data_year": 2019,
+    "cultivated_land_rate": 4.26,
+    "pasture_rate": 67.75,
+    "forest_rate": 8.8,
+    "per_farmer_ha": 4.22,
+    "farming_rate": 20.7,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 798,
+    "data_year": 2019,
+    "cultivated_land_rate": 60,
+    "pasture_rate": 0,
+    "forest_rate": 33.3,
+    "per_farmer_ha": null,
+    "farming_rate": null,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 800,
+    "data_year": 2019,
+    "cultivated_land_rate": 45.38,
+    "pasture_rate": 26.51,
+    "forest_rate": 11.9,
+    "per_farmer_ha": 0.77,
+    "farming_rate": 72.1,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 804,
+    "data_year": 2019,
+    "cultivated_land_rate": 58.3,
+    "pasture_rate": 13,
+    "forest_rate": 16.7,
+    "per_farmer_ha": 13.29,
+    "farming_rate": 13.8,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 807,
+    "data_year": 2019,
+    "cultivated_land_rate": 18.24,
+    "pasture_rate": 31.92,
+    "forest_rate": 39.7,
+    "per_farmer_ha": 4.13,
+    "farming_rate": 13.9,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 818,
+    "data_year": 2019,
+    "cultivated_land_rate": 3.85,
+    "pasture_rate": 0,
+    "forest_rate": 0.1,
+    "per_farmer_ha": 0.69,
+    "farming_rate": 20.6,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 826,
+    "data_year": 2019,
+    "cultivated_land_rate": 25.34,
+    "pasture_rate": 47.08,
+    "forest_rate": 13.2,
+    "per_farmer_ha": 17.38,
+    "farming_rate": 1.1,
+    "group_cd": "1"
+  },
+  {
+    "nation_cd": 834,
+    "data_year": 2019,
+    "cultivated_land_rate": 17.67,
+    "pasture_rate": 27.09,
+    "forest_rate": 52.2,
+    "per_farmer_ha": 0.9,
+    "farming_rate": 65.1,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 840,
+    "data_year": 2019,
+    "cultivated_land_rate": 17.54,
+    "pasture_rate": 26.82,
+    "forest_rate": 33.9,
+    "per_farmer_ha": 73.21,
+    "farming_rate": 1.4,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 854,
+    "data_year": 2019,
+    "cultivated_land_rate": 22.3,
+    "pasture_rate": 21.93,
+    "forest_rate": 22.9,
+    "per_farmer_ha": 3.27,
+    "farming_rate": 26.2,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 858,
+    "data_year": 2019,
+    "cultivated_land_rate": 11.7,
+    "pasture_rate": 68.56,
+    "forest_rate": 11.5,
+    "per_farmer_ha": 15.26,
+    "farming_rate": 8.4,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 860,
+    "data_year": 2019,
+    "cultivated_land_rate": 10.07,
+    "pasture_rate": 47.93,
+    "forest_rate": 8.3,
+    "per_farmer_ha": 1.26,
+    "farming_rate": 25.7,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 862,
+    "data_year": 2019,
+    "cultivated_land_rate": 3.74,
+    "pasture_rate": 20.63,
+    "forest_rate": 52.5,
+    "per_farmer_ha": 3.77,
+    "farming_rate": 7.9,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 882,
+    "data_year": 2019,
+    "cultivated_land_rate": 22.47,
+    "pasture_rate": 4.28,
+    "forest_rate": 57.3,
+    "per_farmer_ha": 4.28,
+    "farming_rate": 30.2,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 887,
+    "data_year": 2019,
+    "cultivated_land_rate": 2.75,
+    "pasture_rate": 41.67,
+    "forest_rate": 1,
+    "per_farmer_ha": 0.89,
+    "farming_rate": 27.6,
+    "group_cd": null
+  },
+  {
+    "nation_cd": 894,
+    "data_year": 2019,
+    "cultivated_land_rate": 5.16,
+    "pasture_rate": 26.9,
+    "forest_rate": 60.5,
+    "per_farmer_ha": 1.19,
+    "farming_rate": 49.6,
+    "group_cd": null
+  }
+]

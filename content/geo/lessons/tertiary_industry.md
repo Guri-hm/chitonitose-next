@@ -412,6 +412,7 @@ resolution: 'provinces',
 ::
 <div class="overflow-x-auto mt-10 mb-10">
 <div class="text-center">観光客数・国際観光収支</div>
+::statistics{id="310" arr_linkedId="311,312,313"}
 </div>
 #### 日本の余暇活動
 ::top
@@ -457,4 +458,5 @@ isStacked: true,
 <div id="jp_tourism" class="mx-auto mt-10 mb-10" style="width: 100%;max-width: 800px;"></div>
 <div class="overflow-x-auto mt-10 mb-10">
 <div class="text-center">各国・地域別日本人訪問者数人</div>
+::statistics{id="316"}
 </div>

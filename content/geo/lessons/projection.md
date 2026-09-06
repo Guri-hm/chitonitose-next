@@ -44,7 +44,7 @@
 #### 低緯度を正確に－サンソン図法
 ::gazo
 ![](sanson.webp)
-<span onclick="chg(this)" class="all" src="../share/img/loading.svg">サンソン</span>図法
+[[サンソン]]図法
 ::
 <ul class="circle">
 <li>長所：低緯度の大陸の形が比較的正確</li>
@@ -53,7 +53,7 @@
 #### 高緯度を正確に－モルワイデ図法
 ::gazo
 ![](moruwaide.webp)
-<span onclick="chg(this)" class="all" src="../share/img/loading.svg">モルワイデ</span>図法
+[[モルワイデ]]図法
 ::
 <ul class="circle">
 <li>長所：中・高緯度（特に中緯度）の大陸の形が比較的正確</li>
@@ -62,7 +62,7 @@
 #### いいとこ取り－グード図法
 ::gazo
 ![](gudo.webp)
-<span onclick="chg(this)" class="all" src="../share/img/loading.svg">グード（ホモロサイン）</span>図法
+[[グード（ホモロサイン）]]図法
 ::
 ::top
 緯度40°44′を境として、低緯度側を[[サンソン]]図法で、高緯度側を[[モルワイデ]]図法で表現した地図です。
@@ -77,7 +77,7 @@
 #### 地方図に最適－ボンヌ図法
 ::gazo
 ![](bonnuu.webp)
-<span onclick="chg(this)" class="all" src="../share/img/loading.svg">ボンヌ</span>図法
+[[ボンヌ]]図法
 ::
 <ul class="circle">
 <li>長所：地図中で唯一の直線の中央経線（図中の赤線）、標準緯線（図中の黄線）付近が比較的正確で、中緯度あたりの地方図に最適</li>
@@ -96,7 +96,7 @@
 ::
 ::gazo
 ![](mercator-projection2.webp)
-<span onclick="chg(this)" class="all" src="../share/img/loading.svg">メルカトル</span>図法
+[[メルカトル]]図法
 ::
 ::top
 この図法の地図は、==航海に利用されてきました==。
@@ -142,7 +142,7 @@
 #### 方位と距離を正しく－正距方位図法
 ::gazo
 ![](azimuthal-equidistant-projection.webp)
-<span onclick="chg(this)" class="all" src="../share/img/loading.svg">正距方位</span>図法（中心：北極点）
+[[正距方位]]図法（中心：北極点）
 ::
 ::top
 この図法では、==図の中心から別の地点までの方位と距離を正しく表現します==。

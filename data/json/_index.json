@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-31T12:07:06.277Z",
+  "generated": "2026-09-06T03:06:27.606Z",
   "database": "data.sqlite3",
   "files": {
     "basic": [
@@ -29,6 +29,19 @@
       "export-items.json",
       "import-items.json",
       "trade-balance.json"
+    ],
+    "geo_lessons": [
+      "land-use.json",
+      "immigration.json",
+      "industrial-population-structure.json",
+      "port-container.json",
+      "port-info.json",
+      "port-transaction-value.json",
+      "items-each-ports.json",
+      "food-self-sufficiency-rate.json",
+      "total-fertility-rate.json",
+      "birth-rate.json",
+      "statistics-changes-data.json"
     ],
     "production": [
       "production.json"

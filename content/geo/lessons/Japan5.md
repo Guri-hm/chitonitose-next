@@ -110,3 +110,5 @@ fontSize: 14,
 ::top
 石油化学コンビナートがあり、原油・粗油が多く輸入されます。
 ::
+::items-each-ports{nation_cd="392" data_year="2020" exp_imp_flg="0"}
+::items-each-ports{nation_cd="392" data_year="2020" exp_imp_flg="1"}
