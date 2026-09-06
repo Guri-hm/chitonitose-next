@@ -256,6 +256,30 @@ async function main() {
     if (statisticsChangesData.length > 0) writeJSON('statistics-changes-data.json', statisticsChangesData);
     filesCreated++;
 
+    const eu = safeQuery(db, 'SELECT * FROM eu', 'eu');
+    if (eu.length > 0) writeJSON('eu.json', eu);
+    filesCreated++;
+
+    const woodArea = safeQuery(db, 'SELECT * FROM wood_area', 'wood area');
+    if (woodArea.length > 0) writeJSON('wood-area.json', woodArea);
+    filesCreated++;
+
+    const worldRegionInfo = safeQuery(db, 'SELECT * FROM world_region_info', 'world region info');
+    if (worldRegionInfo.length > 0) writeJSON('world-region-info.json', worldRegionInfo);
+    filesCreated++;
+
+    const itemInfo = safeQuery(db, 'SELECT * FROM item_info', 'item info');
+    if (itemInfo.length > 0) writeJSON('item-info.json', itemInfo);
+    filesCreated++;
+
+    const importPartnersEachItems = safeQuery(
+      db,
+      'SELECT * FROM import_partners_each_items',
+      'import partners each items'
+    );
+    if (importPartnersEachItems.length > 0) writeJSON('import-partners-each-items.json', importPartnersEachItems);
+    filesCreated++;
+
     // ===== 生産データ =====
     console.log('\n🌾 Production Data:');
 
@@ -381,7 +405,12 @@ async function main() {
           'food-self-sufficiency-rate.json',
           'total-fertility-rate.json',
           'birth-rate.json',
-          'statistics-changes-data.json'
+          'statistics-changes-data.json',
+          'eu.json',
+          'wood-area.json',
+          'world-region-info.json',
+          'item-info.json',
+          'import-partners-each-items.json'
         ],
         production: [
           'production.json'

@@ -91,6 +91,7 @@ fontSize: 14,
 ::statistics{id="160" order="desc" limit="5" offset="0"}
 ::statistics{id="161" order="desc" limit="5" offset="0"}
 ### 主要輸入品の輸入先
+::import-partners{nation_cd="392" data_year="2019"}
 ### 貿易港ごとの輸出入
 #### 輸出
 <h5>成田空港・関西空港</h5>

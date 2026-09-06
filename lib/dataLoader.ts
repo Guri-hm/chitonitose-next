@@ -120,7 +120,7 @@ export interface GDPGNI {
   gdp?: number;
   gni?: number;
   gdp_per_capita?: number;
-  gni_per_capita?: number;
+  per_capita_gni?: number;
 }
 
 export interface PowerGeneration {
@@ -276,6 +276,48 @@ export interface StatisticsChangesData {
   data_year: number;
 }
 
+// ::eu{...} 用（旧eu.php相当）
+export interface EuRow {
+  nation_cd: number;
+  euro: number;
+  withdrawal?: string;
+}
+
+// ::wood-area{...} 用（旧wood_area.php相当、大陸別の森林面積の推移）
+export interface WoodAreaRow {
+  nation_cd: number;
+  data_year: number;
+  region_cd: number;
+  forest_1000_ha: number;
+}
+
+export interface WorldRegionInfo {
+  cd: number;
+  name: string;
+}
+
+export interface ItemInfo {
+  cd: number;
+  name: string;
+}
+
+// ::import-partners{...} 用（旧import_partners_each_items.php相当）
+export interface ImportPartnersEachItem {
+  nation_cd: number;
+  item_cd: number;
+  partner_cd: number;
+  data_year: number;
+  rate: number;
+}
+
+// ::urban-population{...} 用（旧urban_population.php相当）
+export interface UrbanPopulationRow {
+  nation_cd: number;
+  data_year: number;
+  ratio: number;
+  population: number | null;
+}
+
 // ::area-population{...} 用（旧area_population.php相当、全国ランキング用でnation_cdは含まない）
 export interface AreaPopulationRow {
   short_name: string;
@@ -357,6 +399,13 @@ export const loadStatisticsChangesData = () => loadJSON<StatisticsChangesData[]>
 export const loadAreaPopulation = () => loadJSON<AreaPopulationRow[]>('area-population.json');
 export const loadTradeBalance = () => loadJSON<TradeBalance[]>('trade-balance.json');
 export const loadCityRows = () => loadJSON<CityRow[]>('cities.json');
+export const loadEu = () => loadJSON<EuRow[]>('eu.json');
+export const loadWoodArea = () => loadJSON<WoodAreaRow[]>('wood-area.json');
+export const loadWorldRegionInfo = () => loadJSON<WorldRegionInfo[]>('world-region-info.json');
+export const loadItemInfo = () => loadJSON<ItemInfo[]>('item-info.json');
+export const loadImportPartnersEachItems = () =>
+  loadJSON<ImportPartnersEachItem[]>('import-partners-each-items.json');
+export const loadUrbanPopulation = () => loadJSON<UrbanPopulationRow[]>('urban-population.json');
 
 /**
  * レッスン本文の::basic-data / ::statistics / ::export-items / ::import-items
@@ -384,6 +433,13 @@ export async function loadLessonDbDatasets() {
     areaPopulation,
     cities,
     statisticsChangesData,
+    eu,
+    woodArea,
+    worldRegionInfo,
+    itemInfo,
+    importPartnersEachItems,
+    urbanPopulation,
+    gdpGni,
   ] = await Promise.all([
     loadBasicData(),
     loadStatisticsInfo(),
@@ -405,6 +461,13 @@ export async function loadLessonDbDatasets() {
     loadAreaPopulation(),
     loadCityRows(),
     loadStatisticsChangesData(),
+    loadEu(),
+    loadWoodArea(),
+    loadWorldRegionInfo(),
+    loadItemInfo(),
+    loadImportPartnersEachItems(),
+    loadUrbanPopulation(),
+    loadGDPGNI(),
   ]);
   return {
     basicData,
@@ -427,6 +490,13 @@ export async function loadLessonDbDatasets() {
     areaPopulation,
     cities,
     statisticsChangesData,
+    eu,
+    woodArea,
+    worldRegionInfo,
+    itemInfo,
+    importPartnersEachItems,
+    urbanPopulation,
+    gdpGni,
   };
 }
 

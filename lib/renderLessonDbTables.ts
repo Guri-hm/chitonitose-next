@@ -20,6 +20,13 @@ import type {
   TradeBalance,
   AreaPopulationRow,
   StatisticsChangesData,
+  EuRow,
+  WoodAreaRow,
+  WorldRegionInfo,
+  ItemInfo,
+  ImportPartnersEachItem,
+  UrbanPopulationRow,
+  GDPGNI,
 } from '@/lib/dataLoader';
 
 export interface GeoLessonDbDatasets {
@@ -44,6 +51,13 @@ export interface GeoLessonDbDatasets {
   tradeBalance?: TradeBalance[];
   areaPopulation?: AreaPopulationRow[];
   statisticsChangesData?: StatisticsChangesData[];
+  eu?: EuRow[];
+  woodArea?: WoodAreaRow[];
+  worldRegionInfo?: WorldRegionInfo[];
+  itemInfo?: ItemInfo[];
+  importPartnersEachItems?: ImportPartnersEachItem[];
+  urbanPopulation?: UrbanPopulationRow[];
+  gdpGni?: GDPGNI[];
 }
 
 function escapeHtml(s: unknown): string {
@@ -684,8 +698,163 @@ const JP_NATURAL_ENVIRONMENT_HTML =
   '<tr><td class="text-end">61.0%</td><td class="text-end">11.8%</td><td class="text-end">11.0%</td><td class="text-end">13.8%</td><td class="text-end">2.4%</td></tr>' +
   '</table></div>';
 
+// ::eu{...} 用のEU加盟国表（旧eu.php相当）
+function renderEuTable(attrs: Record<string, string>, rows: EuRow[], gdpGni: GDPGNI[], nations?: Nation[]): string {
+  const dataYear = Number(attrs.dataYear);
+  const matched = [...(rows || [])].sort((a, b) => (a.withdrawal ? 1 : 0) - (b.withdrawal ? 1 : 0));
+  if (matched.length === 0) return NOT_FOUND_HTML;
+
+  const bodyRows = matched
+    .map((row) => {
+      const gniRow = (gdpGni || []).find((g) => g.nation_cd === row.nation_cd && g.data_year === dataYear);
+      return (
+        `<tr><td class="text-center">${escapeHtml(nationName(nations, row.nation_cd))}</td>` +
+        `<td class="text-end">${formatNumber(gniRow?.per_capita_gni)}</td>` +
+        `<td class="text-end">${formatNumber(gniRow?.gni)}</td>` +
+        `<td class="text-center">${row.euro ? '〇' : ''}</td></tr>`
+      );
+    })
+    .join('');
+
+  return (
+    '<div class="overflow-x-auto mt-10 mb-10">' +
+    `<div class="text-center">EU加盟国（${dataYear}年）＊脱退国含む</div>` +
+    '<table class="w-auto table mx-auto"><thead><tr>' +
+    '<th class="text-center">国名</th><th class="text-end">1人あたりGNI（ドル）</th>' +
+    `<th class="text-end">GNI（億ドル）</th><th class="text-center">ユーロ導入</th></tr></thead><tbody>${bodyRows}</tbody></table></div>`
+  );
+}
+
+// ::wood-area{...} 用の大陸別森林面積の推移表（旧wood_area.php相当）
+function renderWoodAreaTable(attrs: Record<string, string>, rows: WoodAreaRow[], regions: WorldRegionInfo[]): string {
+  const years = (attrs.years || '').split(',').map((s) => Number(s.trim())).filter((n) => !Number.isNaN(n));
+  if (years.length === 0) return NOT_FOUND_HTML;
+
+  // 地域(大陸)ごとに、指定年の森林面積(千ha)を合計する
+  const byRegionYear = new Map<number, Map<number, number>>();
+  (rows || []).forEach((row) => {
+    if (!years.includes(row.data_year)) return;
+    const yearMap = byRegionYear.get(row.region_cd) || new Map<number, number>();
+    yearMap.set(row.data_year, (yearMap.get(row.data_year) || 0) + row.forest_1000_ha);
+    byRegionYear.set(row.region_cd, yearMap);
+  });
+  if (byRegionYear.size === 0) return NOT_FOUND_HTML;
+
+  const firstYear = years[0];
+  const lastYear = years[years.length - 1];
+  const yearHeaders = years.map((y) => `<th class="text-center">${y}年</th>`).join('');
+  const diffHeaders =
+    years.length > 1
+      ? `<th class="text-center">${firstYear}～${lastYear}年の増減</th><th class="text-center">割合</th>`
+      : '';
+
+  const bodyRows = [...byRegionYear.entries()]
+    .sort(([a], [b]) => a - b)
+    .map(([regionCd, yearMap]) => {
+      const regionNameStr = regions.find((r) => r.cd === regionCd)?.name || String(regionCd);
+      const cells = years.map((y) => `<td class="text-end">${formatNumber(yearMap.get(y))}</td>`).join('');
+      let diffCells = '';
+      if (years.length > 1) {
+        const first = yearMap.get(firstYear);
+        const last = yearMap.get(lastYear);
+        const diff = first !== undefined && last !== undefined ? last - first : undefined;
+        const percent = diff !== undefined && first ? Math.round((diff / first) * 1000) / 10 : undefined;
+        diffCells = `<td class="text-end">${formatNumber(diff)}</td><td class="text-end">${formatNumber(percent)}</td>`;
+      }
+      return `<tr><td class="text-center">${escapeHtml(regionNameStr)}</td>${cells}${diffCells}</tr>`;
+    })
+    .join('');
+
+  return (
+    '<div class="overflow-x-auto mt-10 mb-10">' +
+    '<div class="text-center">森林の増減</div>' +
+    '<table class="w-auto table mx-auto"><thead>' +
+    `<tr><th class="text-center">地域</th>${yearHeaders}${diffHeaders}</tr></thead><tbody>${bodyRows}</tbody></table></div>`
+  );
+}
+
+// ::urban-population{...} 用の都市人口率表（旧urban_population.php相当）
+function renderUrbanPopulationTable(
+  attrs: Record<string, string>,
+  rows: UrbanPopulationRow[],
+  nations?: Nation[]
+): string {
+  const nationCds = (attrs.nations || '').split(',').map((s) => s.trim()).filter(Boolean);
+  const years = (attrs.years || '').split(',').map((s) => s.trim()).filter(Boolean).map(Number);
+  if (nationCds.length === 0) return NOT_FOUND_HTML;
+
+  const byNation = (rows || []).filter((r) => nationCds.includes(String(r.nation_cd)));
+  if (byNation.length === 0) return NOT_FOUND_HTML;
+  const latestYear = Math.max(...byNation.map((r) => r.data_year));
+
+  const yearHeaders = years.map((y) => `<th class="text-center">${y}年(%)</th>`).join('');
+
+  const bodyRows = nationCds
+    .map((cd) => {
+      const latest = byNation.find((r) => r.nation_cd === Number(cd) && r.data_year === latestYear);
+      if (!latest) return '';
+      const yearCells = years
+        .map((y) => {
+          const r = byNation.find((rr) => rr.nation_cd === Number(cd) && rr.data_year === y);
+          return `<td class="text-end">${r ? r.ratio.toFixed(1) : ''}</td>`;
+        })
+        .join('');
+      return (
+        `<tr><td class="text-center">${escapeHtml(nationName(nations, cd))}</td>` +
+        `<td class="text-end">${formatNumber(latest.population)}</td>` +
+        `<td class="text-end">${latest.ratio.toFixed(1)}</td>${yearCells}</tr>`
+      );
+    })
+    .join('');
+
+  return (
+    '<div class="overflow-x-auto mt-10 mb-10">' +
+    '<div class="text-center">都市人口率</div>' +
+    '<table class="w-auto table mx-auto"><thead><tr>' +
+    `<th class="text-center">国名</th><th class="text-center">都市人口(万人)</th><th class="text-center">${latestYear}年(%)</th>` +
+    `${yearHeaders}</tr></thead><tbody>${bodyRows}</tbody></table></div>`
+  );
+}
+
+// ::import-partners{...} 用の主要輸入品の輸入先表（旧import_partners_each_items.php相当）
+function renderImportPartnersTable(
+  attrs: Record<string, string>,
+  rows: ImportPartnersEachItem[],
+  itemInfo: ItemInfo[],
+  nations?: Nation[]
+): string {
+  const nationCd = Number(attrs.nationCd);
+  const dataYear = Number(attrs.dataYear);
+  const matched = (rows || []).filter((r) => r.nation_cd === nationCd && r.data_year === dataYear);
+  if (matched.length === 0) return NOT_FOUND_HTML;
+
+  const byItem = new Map<number, ImportPartnersEachItem[]>();
+  matched.forEach((row) => {
+    const list = byItem.get(row.item_cd) || [];
+    list.push(row);
+    byItem.set(row.item_cd, list);
+  });
+
+  const bodyRows = [...byItem.entries()]
+    .map(([itemCd, partners]) => {
+      const itemName = itemInfo.find((i) => i.cd === itemCd)?.name || String(itemCd);
+      const partnersText = partners
+        .sort((a, b) => b.rate - a.rate)
+        .map((p) => `${escapeHtml(nationName(nations, p.partner_cd))}(${escapeHtml(p.rate)})`)
+        .join('');
+      return `<tr><th class="text-center">${escapeHtml(itemName)}</th><td class="text-start">${partnersText}</td></tr>`;
+    })
+    .join('');
+
+  return (
+    '<div class="overflow-x-auto mt-10 mb-10">' +
+    `<div class="text-center">主要輸入品の輸入先（${dataYear}年、%）</div>` +
+    `<table class="w-auto table mx-auto"><tbody>${bodyRows}</tbody></table></div>`
+  );
+}
+
 const PLACEHOLDER_RE =
-  /<div class="lesson-(basic-data|statistics|statistics-compare|export-items|import-items|land-use|city|immigration|industrial-population|port-container|items-each-ports|food-self-sufficiency|total-fertility-rate|aging-society|trade-balance|area-population|continental-altitude|jp-natural-environment)-placeholder"([^>]*)><\/div>/g;
+  /<div class="lesson-(basic-data|statistics|statistics-compare|export-items|import-items|land-use|city|immigration|industrial-population|port-container|items-each-ports|food-self-sufficiency|total-fertility-rate|aging-society|trade-balance|area-population|continental-altitude|jp-natural-environment|eu|wood-area|urban-population|import-partners)-placeholder"([^>]*)><\/div>/g;
 
 function parseDataAttrs(attrsStr: string): Record<string, string> {
   const attrs: Record<string, string> = {};
@@ -767,6 +936,19 @@ export function renderLessonDbTables(htmlContent: string, datasets: GeoLessonDbD
         return CONTINENTAL_ALTITUDE_HTML;
       case 'jp-natural-environment':
         return JP_NATURAL_ENVIRONMENT_HTML;
+      case 'eu':
+        return renderEuTable(attrs, datasets.eu || [], datasets.gdpGni || [], datasets.nations);
+      case 'wood-area':
+        return renderWoodAreaTable(attrs, datasets.woodArea || [], datasets.worldRegionInfo || []);
+      case 'urban-population':
+        return renderUrbanPopulationTable(attrs, datasets.urbanPopulation || [], datasets.nations);
+      case 'import-partners':
+        return renderImportPartnersTable(
+          attrs,
+          datasets.importPartnersEachItems || [],
+          datasets.itemInfo || [],
+          datasets.nations
+        );
       default:
         return match;
     }

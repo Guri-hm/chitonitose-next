@@ -261,8 +261,14 @@ node scripts/regenerate-geo-lessons.js
 
 ### 未着手（次回優先）
 
-- 残り約50種弱の低頻度PHPスクリプト（使用1回のみのもの、`getXML_API`など）は未移行。
-  優先度は低いが、必要になれば同じパターンで追加可能。
+- ✅ 2026-XX-XX追記: `eu`（EU加盟国）、`wood_area`（森林の増減）、
+  `import_partners_each_items`（主要輸入品の輸入先）、`urban_population`（都市人口率）の
+  4スクリプトを追加実装済み（Europa2/forestry/Japan5/Oceaniaページで動作確認済み）。
+- 残りの低頻度PHPスクリプト（使用1回のみのもの）を精査した結果、テーブル描画パターンに
+  当てはまるものはほぼ出尽くした。残るのは以下のみで、いずれも移行対象外と判断:
+  - `getXML_API.php`および`jp_population.php`/`jp_3age_categories_prefecture.php`等の
+    e-Stat外部API依存スクリプト（DBスナップショットで代替不可）。
+  - `set_per_capita_gni_variable.php`（表を描画しないデータ準備用ヘルパー、対象外）。
 - `origin/chitonitose` は**別のネストされたGitリポジトリ**（`.gitmodules`には未登録の生gitlink）。
   中を編集した場合は `cd origin/chitonitose && git add/commit` を忘れないこと
   （親リポジトリ側は単にgitlinkの参照が変わるだけで、差分の中身は追えない）。

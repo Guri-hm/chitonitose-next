@@ -284,6 +284,7 @@ Cfa・Cfbの地域
 ::last
 加えて、南東部と南西部の都市に人々が集まるため、都市人口率が高いです。
 ::
+::urban-population{nations="36,392,840,826,250" years="1950,1970,1990,2010"}
 #### 都市
 ::gazo
 ![](Australia_city.webp){.border}

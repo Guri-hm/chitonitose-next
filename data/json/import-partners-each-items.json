@@ -1,0 +1,464 @@
+[
+  {
+    "nation_cd": 392,
+    "item_cd": 1,
+    "partner_cd": 36,
+    "data_year": 2019,
+    "rate": 14.3
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 1,
+    "partner_cd": 76,
+    "data_year": 2019,
+    "rate": 6.5
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 1,
+    "partner_cd": 124,
+    "data_year": 2019,
+    "rate": 10.4
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 1,
+    "partner_cd": 156,
+    "data_year": 2019,
+    "rate": 7.4
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 1,
+    "partner_cd": 484,
+    "data_year": 2019,
+    "rate": 4.3
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 1,
+    "partner_cd": 724,
+    "data_year": 2019,
+    "rate": 4.4
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 1,
+    "partner_cd": 764,
+    "data_year": 2019,
+    "rate": 14.3
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 1,
+    "partner_cd": 840,
+    "data_year": 2019,
+    "rate": 25.8
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 2,
+    "partner_cd": 152,
+    "data_year": 2019,
+    "rate": 9.6
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 2,
+    "partner_cd": 156,
+    "data_year": 2019,
+    "rate": 18.3
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 2,
+    "partner_cd": 360,
+    "data_year": 2019,
+    "rate": 4.5
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 2,
+    "partner_cd": 578,
+    "data_year": 2019,
+    "rate": 6.7
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 2,
+    "partner_cd": 643,
+    "data_year": 2019,
+    "rate": 7.5
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 2,
+    "partner_cd": 704,
+    "data_year": 2019,
+    "rate": 7.2
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 2,
+    "partner_cd": 764,
+    "data_year": 2019,
+    "rate": 6.7
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 2,
+    "partner_cd": 840,
+    "data_year": 2019,
+    "rate": 8.1
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 3,
+    "partner_cd": 36,
+    "data_year": 2019,
+    "rate": 17.7
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 3,
+    "partner_cd": 124,
+    "data_year": 2019,
+    "rate": 34.8
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 3,
+    "partner_cd": 840,
+    "data_year": 2019,
+    "rate": 45.9
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 4,
+    "partner_cd": 32,
+    "data_year": 2019,
+    "rate": 1.4
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 4,
+    "partner_cd": 76,
+    "data_year": 2019,
+    "rate": 28.2
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 4,
+    "partner_cd": 643,
+    "data_year": 2019,
+    "rate": 0.6
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 4,
+    "partner_cd": 840,
+    "data_year": 2019,
+    "rate": 69.3
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 5,
+    "partner_cd": 156,
+    "data_year": 2019,
+    "rate": 14.5
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 5,
+    "partner_cd": 554,
+    "data_year": 2019,
+    "rate": 8.5
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 5,
+    "partner_cd": 608,
+    "data_year": 2019,
+    "rate": 19.2
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 5,
+    "partner_cd": 840,
+    "data_year": 2019,
+    "rate": 19.7
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 6,
+    "partner_cd": 156,
+    "data_year": 2019,
+    "rate": 48.8
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 6,
+    "partner_cd": 158,
+    "data_year": 2019,
+    "rate": 2.9
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 6,
+    "partner_cd": 410,
+    "data_year": 2019,
+    "rate": 5.8
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 6,
+    "partner_cd": 764,
+    "data_year": 2019,
+    "rate": 4.4
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 6,
+    "partner_cd": 840,
+    "data_year": 2019,
+    "rate": 15.8
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 7,
+    "partner_cd": 36,
+    "data_year": 2019,
+    "rate": 51.6
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 7,
+    "partner_cd": 76,
+    "data_year": 2019,
+    "rate": 28.2
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 7,
+    "partner_cd": 124,
+    "data_year": 2019,
+    "rate": 7.7
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 7,
+    "partner_cd": 710,
+    "data_year": 2019,
+    "rate": 3.2
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 7,
+    "partner_cd": 804,
+    "data_year": 2019,
+    "rate": 1.9
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 7,
+    "partner_cd": 840,
+    "data_year": 2019,
+    "rate": 2.2
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 8,
+    "partner_cd": 36,
+    "data_year": 2019,
+    "rate": 19.6
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 8,
+    "partner_cd": 124,
+    "data_year": 2019,
+    "rate": 7
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 8,
+    "partner_cd": 152,
+    "data_year": 2019,
+    "rate": 39
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 8,
+    "partner_cd": 598,
+    "data_year": 2019,
+    "rate": 5.8
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 8,
+    "partner_cd": 604,
+    "data_year": 2019,
+    "rate": 14.3
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 8,
+    "partner_cd": 840,
+    "data_year": 2019,
+    "rate": 6.8
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 9,
+    "partner_cd": 36,
+    "data_year": 2019,
+    "rate": 58.8
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 9,
+    "partner_cd": 124,
+    "data_year": 2019,
+    "rate": 7.4
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 9,
+    "partner_cd": 156,
+    "data_year": 2019,
+    "rate": 1.3
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 9,
+    "partner_cd": 360,
+    "data_year": 2019,
+    "rate": 11.9
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 9,
+    "partner_cd": 643,
+    "data_year": 2019,
+    "rate": 9.9
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 9,
+    "partner_cd": 840,
+    "data_year": 2019,
+    "rate": 8.5
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 10,
+    "partner_cd": 414,
+    "data_year": 2019,
+    "rate": 8.4
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 10,
+    "partner_cd": 634,
+    "data_year": 2019,
+    "rate": 8.7
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 10,
+    "partner_cd": 643,
+    "data_year": 2019,
+    "rate": 5.5
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 10,
+    "partner_cd": 682,
+    "data_year": 2019,
+    "rate": 35.6
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 10,
+    "partner_cd": 784,
+    "data_year": 2019,
+    "rate": 29.9
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 10,
+    "partner_cd": 840,
+    "data_year": 2019,
+    "rate": 2.2
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 11,
+    "partner_cd": 36,
+    "data_year": 2019,
+    "rate": 40.4
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 11,
+    "partner_cd": 96,
+    "data_year": 2019,
+    "rate": 5.7
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 11,
+    "partner_cd": 360,
+    "data_year": 2019,
+    "rate": 5.6
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 11,
+    "partner_cd": 458,
+    "data_year": 2019,
+    "rate": 11.3
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 11,
+    "partner_cd": 634,
+    "data_year": 2019,
+    "rate": 11.7
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 11,
+    "partner_cd": 643,
+    "data_year": 2019,
+    "rate": 7.8
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 12,
+    "partner_cd": 36,
+    "data_year": 2019,
+    "rate": 15
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 12,
+    "partner_cd": 156,
+    "data_year": 2019,
+    "rate": 17.8
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 12,
+    "partner_cd": 643,
+    "data_year": 2019,
+    "rate": 12.7
+  },
+  {
+    "nation_cd": 392,
+    "item_cd": 12,
+    "partner_cd": 784,
+    "data_year": 2019,
+    "rate": 11
+  }
+]

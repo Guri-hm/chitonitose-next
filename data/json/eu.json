@@ -1,0 +1,142 @@
+[
+  {
+    "nation_cd": 40,
+    "euro": 1,
+    "withdrawal": 0
+  },
+  {
+    "nation_cd": 56,
+    "euro": 1,
+    "withdrawal": 0
+  },
+  {
+    "nation_cd": 100,
+    "euro": null,
+    "withdrawal": 0
+  },
+  {
+    "nation_cd": 191,
+    "euro": null,
+    "withdrawal": 0
+  },
+  {
+    "nation_cd": 196,
+    "euro": 1,
+    "withdrawal": 0
+  },
+  {
+    "nation_cd": 203,
+    "euro": null,
+    "withdrawal": 0
+  },
+  {
+    "nation_cd": 208,
+    "euro": null,
+    "withdrawal": 0
+  },
+  {
+    "nation_cd": 233,
+    "euro": 1,
+    "withdrawal": 0
+  },
+  {
+    "nation_cd": 246,
+    "euro": 1,
+    "withdrawal": 0
+  },
+  {
+    "nation_cd": 250,
+    "euro": 1,
+    "withdrawal": 0
+  },
+  {
+    "nation_cd": 276,
+    "euro": 1,
+    "withdrawal": 0
+  },
+  {
+    "nation_cd": 300,
+    "euro": 1,
+    "withdrawal": 0
+  },
+  {
+    "nation_cd": 348,
+    "euro": null,
+    "withdrawal": 0
+  },
+  {
+    "nation_cd": 372,
+    "euro": 1,
+    "withdrawal": 0
+  },
+  {
+    "nation_cd": 380,
+    "euro": 1,
+    "withdrawal": 0
+  },
+  {
+    "nation_cd": 428,
+    "euro": 1,
+    "withdrawal": 0
+  },
+  {
+    "nation_cd": 440,
+    "euro": 1,
+    "withdrawal": 0
+  },
+  {
+    "nation_cd": 442,
+    "euro": 1,
+    "withdrawal": 0
+  },
+  {
+    "nation_cd": 470,
+    "euro": 1,
+    "withdrawal": 0
+  },
+  {
+    "nation_cd": 528,
+    "euro": 1,
+    "withdrawal": 0
+  },
+  {
+    "nation_cd": 616,
+    "euro": null,
+    "withdrawal": 0
+  },
+  {
+    "nation_cd": 620,
+    "euro": 1,
+    "withdrawal": 0
+  },
+  {
+    "nation_cd": 642,
+    "euro": null,
+    "withdrawal": 0
+  },
+  {
+    "nation_cd": 703,
+    "euro": 1,
+    "withdrawal": 0
+  },
+  {
+    "nation_cd": 705,
+    "euro": 1,
+    "withdrawal": 0
+  },
+  {
+    "nation_cd": 724,
+    "euro": 1,
+    "withdrawal": 0
+  },
+  {
+    "nation_cd": 752,
+    "euro": null,
+    "withdrawal": 0
+  },
+  {
+    "nation_cd": 826,
+    "euro": null,
+    "withdrawal": 1
+  }
+]

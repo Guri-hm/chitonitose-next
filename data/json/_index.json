@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-06T03:06:27.606Z",
+  "generated": "2026-09-06T11:05:05.481Z",
   "database": "data.sqlite3",
   "files": {
     "basic": [
@@ -41,7 +41,12 @@
       "food-self-sufficiency-rate.json",
       "total-fertility-rate.json",
       "birth-rate.json",
-      "statistics-changes-data.json"
+      "statistics-changes-data.json",
+      "eu.json",
+      "wood-area.json",
+      "world-region-info.json",
+      "item-info.json",
+      "import-partners-each-items.json"
     ],
     "production": [
       "production.json"

@@ -117,7 +117,7 @@ function parseCustomMarkdown(markdown, subject = '') {
     // DBデータ（JSON化済み）をもとに表を描画するプレースホルダー
     // 例: ::statistics{id="39" order="desc" limit="5" offset="0"}
     const dbDirectiveMatch = line.match(
-      /^::(statistics|statistics-compare|basic-data|export-items|import-items|land-use|city|immigration|industrial-population|port-container|items-each-ports|food-self-sufficiency|total-fertility-rate|aging-society|trade-balance|area-population|continental-altitude|jp-natural-environment)\{([\s\S]*)\}$/
+      /^::(statistics|statistics-compare|basic-data|export-items|import-items|land-use|city|immigration|industrial-population|port-container|items-each-ports|food-self-sufficiency|total-fertility-rate|aging-society|trade-balance|area-population|continental-altitude|jp-natural-environment|eu|wood-area|urban-population|import-partners)\{([\s\S]*)\}$/
     );
     if (dbDirectiveMatch) {
       const [, kind, attrsStr] = dbDirectiveMatch;
@@ -467,6 +467,10 @@ const PHP_INCLUDE_DIRECTIVES = {
   area_population: 'area-population',
   continental_altitude: 'continental-altitude',
   jp_natural_environment: 'jp-natural-environment',
+  eu: 'eu',
+  wood_area: 'wood-area',
+  urban_population: 'urban-population',
+  import_partners_each_items: 'import-partners',
 };
 
 /**
