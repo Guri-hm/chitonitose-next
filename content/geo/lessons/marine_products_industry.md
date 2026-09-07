@@ -173,50 +173,14 @@
 ::top
 世界各国で水産資源の需要が高まるなか、近年、==漁獲量に占める養殖業の割合が増加しました==。
 ::
-<script type="text/javascript">
-createChartAsync(Chart.Combo, { "nation_cd": 999 }, 'fish_catche_world'
-, {
-title: '世界の漁業・養殖業の推移',
-height: 500,
-vAxes: {
-0: {
-title: '漁獲量(万トン)'
-},
-1: {
-title: '輸入量(万トン)'
-}
-},
-hAxis: { title: '年' },
-series: {
-// Left-Yの列のデータ
-0: { type: 'area', targetAxisIndex: 0 },
-1: { type: 'area', targetAxisIndex: 0 },
-2: { type: 'area', targetAxisIndex: 0 },
-3: { type: 'area', targetAxisIndex: 0 },
-},
-isStacked: true,
-}, "./php/fish_catche_world.php");
-</script>
-<div id="fish_catche_world" class="mx-auto mt-10 mb-10" style="width: 100%;max-width: 800px;"></div>
+::chart{type="ComboChart" dataset="fish_catche_world" params="{&quot;nation_cd&quot;:999}" title="世界の漁業・養殖業の推移"}
 ::top
 かつて日本の漁業・養殖業生産量は世界一でした。
 ::
 ::last
 現在漁船漁業では[[中国]]が１位です。
 ::
-<script type="text/javascript">
-createChartAsync(Chart.Line, { "params": [604, 156, 360, 392, 704, 840, 643] }, 'countries_fish', {
-title: '主な国の漁獲量の推移',
-hAxis: {
-title: '年'
-},
-vAxis: {
-title: '万t'
-},
-height: 500
-}, "./php/fish_catche.php");
-</script>
-<div id="countries_fish" class="mx-auto" style="width: 80%;"></div>
+::chart{type="LineChart" dataset="fish_catche" params="{&quot;params&quot;:[604,156,360,392,704,840,643]}" title="主な国の漁獲量の推移"}
 ### 中国
 ::top
 中国の漁獲量は、1990年代以降に==著しい伸びを示しました==。
@@ -287,34 +251,7 @@ height: 500
 ::top
 日本の漁獲高の減少は、海面漁業（遠洋・沖合・沿岸）の衰退や輸入の増加に理由があります。
 ::
-<script type="text/javascript">
-createChartAsync(Chart.Combo, { "nation_cd": 392 }, 'jp_fish_catche', {
-title: '日本の漁業・養殖業の生産量の推移',
-height: 500,
-vAxes: {
-0: {
-title: '輸入量(万トン)'
-},
-1: {
-title: '漁獲量(万トン)'
-}
-},
-legend: { position: 'top', maxLines: 3 },
-hAxis: { title: '年' },
-series: {
-// Left-Yの列のデータ
-0: { type: 'line', targetAxisIndex: 0 },
-// Right-Yの列のデータ
-1: { type: 'area', targetAxisIndex: 1 },
-2: { type: 'area', targetAxisIndex: 1 },
-3: { type: 'area', targetAxisIndex: 1 },
-4: { type: 'area', targetAxisIndex: 1 },
-5: { type: 'area', targetAxisIndex: 1 },
-},
-isStacked: true,
-}, "./php/fish_catche_detail.php");
-</script>
-<div id="jp_fish_catche" class="mx-auto w-100 w-max800 mt-10 mb-10"></div>
+::chart{type="ComboChart" dataset="fish_catche_detail" params="{&quot;nation_cd&quot;:392}" title="日本の漁業・養殖業の生産量の推移"}
 #### 漁業の衰退
 ::top
 日本の水産業は、==養殖を除いて全て漁獲量が減少しています==。
@@ -360,149 +297,9 @@ isStacked: true,
 ::last
 現在は==水産物の半数以上を輸入に頼り、アメリカ合衆国と並ぶ世界的な輸入国になっています。==
 ::
-<div id="import_salmon_trout" class="mx-auto mt-10 mb-10 w-100 w-max800"></div>
-<div id="import_bonito_tuna" class="mx-auto mt-10 mb-10 w-100 w-max800"></div>
-<div id="import_shrimp" class="mx-auto mt-10 mb-10 w-100 w-max800"></div>
-<div id="import_crab" class="mx-auto mt-10 mb-10 w-100 w-max800"></div>
-<div id="import_squid" class="mx-auto mt-10 mb-10 w-100 w-max800"></div>
-<div id="import_codfish" class="mx-auto mt-10 mb-10 w-100 w-max800"></div>
-<script type="text/javascript">
-fetchChart('./php/statistics_any_name.php'
-, {
-method: 'POST',
-body: JSON.stringify({
-"params": [
-{
-statistics_id: 200,
-}
-],
-"chart": [
-{
-"type": Chart.Pie,
-}
-]
-}),
-}
-, Chart.Pie
-, {
-title: 'サケ・マス類の輸入相手国(2019年、百万円、%)',
-legend: { position: 'top' },
-height: 300
-}
-, 'import_salmon_trout');
-fetchChart('./php/statistics_any_name.php'
-, {
-method: 'POST',
-body: JSON.stringify({
-"params": [
-{
-statistics_id: 201,
-}
-],
-"chart": [
-{
-"type": Chart.Pie,
-}
-]
-}),
-}
-, Chart.Pie
-, {
-title: 'カツオ・マグロ類の輸入相手国(2019年、百万円、%)',
-legend: { position: 'top' },
-height: 300
-}
-, 'import_bonito_tuna');
-fetchChart('./php/statistics_any_name.php'
-, {
-method: 'POST',
-body: JSON.stringify({
-"params": [
-{
-statistics_id: 202,
-}
-],
-"chart": [
-{
-"type": Chart.Pie,
-}
-]
-}),
-}
-, Chart.Pie
-, {
-title: 'エビの輸入相手国(2019年、百万円、%)',
-legend: { position: 'top' },
-height: 300
-}
-, 'import_shrimp');
-fetchChart('./php/statistics_any_name.php'
-, {
-method: 'POST',
-body: JSON.stringify({
-"params": [
-{
-statistics_id: 203,
-}
-],
-"chart": [
-{
-"type": Chart.Pie,
-}
-]
-}),
-}
-, Chart.Pie
-, {
-title: 'カニの輸入相手国(2019年、百万円、%)',
-legend: { position: 'top' },
-height: 300
-}
-, 'import_crab');
-fetchChart('./php/statistics_any_name.php'
-, {
-method: 'POST',
-body: JSON.stringify({
-"params": [
-{
-statistics_id: 204,
-}
-],
-"chart": [
-{
-"type": Chart.Pie,
-}
-]
-}),
-}
-, Chart.Pie
-, {
-title: 'イカの輸入相手国(2019年、百万円、%)',
-legend: { position: 'top' },
-height: 300
-}
-, 'import_squid');
-fetchChart('./php/statistics_any_name.php'
-, {
-method: 'POST',
-body: JSON.stringify({
-"params": [
-{
-statistics_id: 205,
-}
-],
-"chart": [
-{
-"type": Chart.Pie,
-}
-]
-}),
-}
-, Chart.Pie
-, {
-title: 'タラ類の輸入相手国(2019年、百万円、%)',
-legend: { position: 'top' },
-height: 300
-}
-, 'import_codfish');
-</script>
+::chart{type="PieChart" dataset="statistics_any_name" params="{&quot;params&quot;:[200]}" title="サケ・マス類の輸入相手国(2019年、百万円、%)"}
+::chart{type="PieChart" dataset="statistics_any_name" params="{&quot;params&quot;:[201]}" title="カツオ・マグロ類の輸入相手国(2019年、百万円、%)"}
+::chart{type="PieChart" dataset="statistics_any_name" params="{&quot;params&quot;:[202]}" title="エビの輸入相手国(2019年、百万円、%)"}
+::chart{type="PieChart" dataset="statistics_any_name" params="{&quot;params&quot;:[203]}" title="カニの輸入相手国(2019年、百万円、%)"}
+::chart{type="PieChart" dataset="statistics_any_name" params="{&quot;params&quot;:[204]}" title="イカの輸入相手国(2019年、百万円、%)"}
+::chart{type="PieChart" dataset="statistics_any_name" params="{&quot;params&quot;:[205]}" title="タラ類の輸入相手国(2019年、百万円、%)"}

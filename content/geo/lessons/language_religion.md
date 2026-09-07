@@ -328,7 +328,7 @@ class="all">ハンガリー</span>語・エストニア語</td>
 ::last
 ヒンドゥー教・ユダヤ教・神道・道教が該当します。
 ::
-<div id="religion" class="mx-auto w-100"></div>
+::chart{type="PieChart" dataset="statistics_any_name" params="{&quot;params&quot;:[294]}" title="宗教別人口割合(2022年 単位：%)"}
 ### キリスト教
 ::top
 キリスト教はユダヤ教から派生し、イエスが創始した宗教です。
@@ -446,28 +446,3 @@ class="all">ハンガリー</span>語・エストニア語</td>
 ::last
 職業・結婚・職業などを別の社会集団とともにしないという習慣が、現在も根強く残っています。
 ::
-<script type="text/javascript">
-fetchChart('./php/statistics_any_name.php'
-, {
-method: 'POST',
-body: JSON.stringify({
-"params": [
-{
-statistics_id: 294,
-}
-],
-"chart": [
-{
-"type": Chart.Pie,
-}
-]
-}),
-}
-, Chart.Pie
-, {
-title: '宗教別人口割合(2022年 単位：%)',
-legend: { position: 'top' },
-height: 300
-}
-, 'religion');
-</script>

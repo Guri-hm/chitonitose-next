@@ -1,0 +1,34 @@
+[
+  {
+    "cd": 1,
+    "nationality_name": "中国"
+  },
+  {
+    "cd": 2,
+    "nationality_name": "韓国・朝鮮"
+  },
+  {
+    "cd": 3,
+    "nationality_name": "フィリピン"
+  },
+  {
+    "cd": 4,
+    "nationality_name": "アメリカ"
+  },
+  {
+    "cd": 5,
+    "nationality_name": "ブラジル"
+  },
+  {
+    "cd": 6,
+    "nationality_name": "ペルー"
+  },
+  {
+    "cd": 7,
+    "nationality_name": "ベトナム"
+  },
+  {
+    "cd": 99,
+    "nationality_name": "その他"
+  }
+]

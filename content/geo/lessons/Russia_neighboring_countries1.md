@@ -105,46 +105,8 @@
 ![](Russian_river.webp){.border}
 ロシアの河川
 ::
-<script type="text/javascript">
-createChartAsync(Chart.Column, { "river_cd": 1 }, 'Lena_river', {
-title: 'レナ川の流量変化',
-hAxis: {
-title: '月',
-viewWindow: {
-min: [0],
-max: [12]
-}
-},
-vAxis: {
-title: '㎥/秒',
-viewWindow: {
-min: [0],
-max: [80000]
-}
-}
-}, "./php/river_flow_rate.php");
-</script>
-<div id="Lena_river" style="width: 100%; height: 350px"></div>
-<script type="text/javascript">
-createChartAsync(Chart.Column, { "river_cd": 2 }, 'Yenisei_river', {
-title: 'エニセイ川の流量変化',
-hAxis: {
-title: '月',
-viewWindow: {
-min: [0],
-max: [12]
-}
-},
-vAxis: {
-title: '㎥/秒',
-viewWindow: {
-min: [0],
-max: [80000]
-}
-}
-}, "./php/river_flow_rate.php");
-</script>
-<div id="Yenisei_river" style="width: 100%; height: 350px"></div>
+::chart{type="ColumnChart" dataset="river_flow_rate" params="{&quot;river_cd&quot;:1}" title="レナ川の流量変化"}
+::chart{type="ColumnChart" dataset="river_flow_rate" params="{&quot;river_cd&quot;:2}" title="エニセイ川の流量変化"}
 ## 気候
 ::gazo
 ![](Russia_climate.webp){.border}

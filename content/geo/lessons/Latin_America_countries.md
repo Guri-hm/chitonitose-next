@@ -279,19 +279,7 @@ GNIなどの公式データが非公開
 フィッシュミール
 ::
 ::statistics{id="66" order="desc" limit="5" offset="0"}
-<script type="text/javascript">
-createChartAsync(Chart.Line, { "params": [604] }, 'Peru_fish', {
-title: 'ペルーの漁獲量の推移',
-hAxis: {
-title: '年'
-},
-vAxis: {
-title: '万t'
-},
-height: 500
-}, "./php/fish_catche.php");
-</script>
-<div id="Peru_fish" class="mx-auto" style="width: 80%;"></div>
+::chart{type="LineChart" dataset="fish_catche" params="{&quot;params&quot;:[604]}" title="ペルーの漁獲量の推移"}
 ### 民族
 ::top
 アンデスの高地には、古くから先住民の人たちが暮らしています。
@@ -489,8 +477,8 @@ height: 500
 コーヒー豆のファゼンダ
 ::
 ::statistics{id="19" order="desc" limit="5" offset="0"}
-<div id="Brazil_exp1965" class="mx-auto mt-10 mb-10" style="width: 100%;max-width: 600px;"></div>
-<div id="Brazil_exp" class="mx-auto mt-10 mb-10" style="width: 100%;max-width: 600px;"></div>
+::chart{type="PieChart" dataset="statistics_any_name" params="{&quot;params&quot;:[79]}" title="ブラジルの輸出農産物の変化(1965年、12億ドル、%)"}
+::chart{type="PieChart" dataset="statistics_any_name" params="{&quot;params&quot;:[79]}" title="ブラジルの輸出農産物の変化(2018年、829億ドル、%)"}
 #### サトウキビ
 ::top
 バイオ燃料にも利用されています。
@@ -507,19 +495,7 @@ height: 500
 ![](Cerrado_soy.webp){.border}
 ブラジルのセラードにおける大豆栽培
 ::
-<script type="text/javascript">
-lineChartAsync(78, [76, 32, 600], 'Soy', {
-title: '南アメリカ諸国の大豆生産量の推移',
-hAxis: {
-title: '年'
-},
-vAxis: {
-title: '万t'
-},
-height: 500
-});
-</script>
-<div id="Soy" class="mx-auto" style="width: 80%;"></div>
+::chart{type="LineChart" dataset="statistics_line" params="{&quot;statistics_id&quot;:78,&quot;params&quot;:[76,32,600]}" title="南アメリカ諸国の大豆生産量の推移"}
 ::statistics{id="69" order="desc" limit="5" offset="0"}
 ::statistics{id="70" order="desc" limit="5" offset="0"}
 ### 鉱工業
@@ -569,7 +545,7 @@ height: 500
 ::
 ::statistics{id="270" order="desc" limit="5" offset="0"}
 #### エネルギー
-::chart{type="PieChart" dataset="power_generation" filter="nation_cd=76" fields="thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス" title="ブラジル (億kWh、2019年)"}
+::chart{type="PieChart" dataset="power_generation" params="{&quot;nation_cd&quot;:76}" title="ブラジル (億kWh、2019年)"}
 ### 貿易
 ::export-items{nation_cd="76"}
 ::import-items{nation_cd="76"}
@@ -643,52 +619,4 @@ height: 500
 ### 貿易
 ::export-items{nation_cd="32"}
 ::import-items{nation_cd="32"}
-<script type="text/javascript">
-fetchChart('./php/statistics_any_name.php'
-, {
-method: 'POST',
-body: JSON.stringify({
-"params": [
-{
-statistics_id: 79,
-data_year: 1965
-}
-],
-"chart": [
-{
-"type": Chart.Pie,
-}
-]
-}),
-}
-, Chart.Pie
-, {
-title: 'ブラジルの輸出農産物の変化(1965年、12億ドル、%)',
-height: 250
-}
-, 'Brazil_exp1965');
-fetchChart('./php/statistics_any_name.php'
-, {
-method: 'POST',
-body: JSON.stringify({
-"params": [
-{
-statistics_id: 79,
-data_year: 2018
-}
-],
-"chart": [
-{
-"type": Chart.Pie,
-}
-]
-}),
-}
-, Chart.Pie
-, {
-title: 'ブラジルの輸出農産物の変化(2018年、829億ドル、%)',
-height: 250
-}
-, 'Brazil_exp');
-</script>
 <div id="fc" class="mx-auto mt-10 mb-10" style="width: 100%;max-width: 800px;"></div>

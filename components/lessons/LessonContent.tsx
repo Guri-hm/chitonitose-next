@@ -83,21 +83,19 @@ export default function LessonContent({
     // グラフプレースホルダーを収集してマウント
     const chartPlaceholders = contentRef.current.querySelectorAll('.lesson-chart-placeholder');
     chartPlaceholders.forEach((placeholder) => {
-      const chartType = (placeholder.getAttribute('data-chart-type') || 'PieChart') as any;
+      const chartType = placeholder.getAttribute('data-chart-type') || 'PieChart';
       const dataset = placeholder.getAttribute('data-chart-dataset') || '';
-      const filter = placeholder.getAttribute('data-chart-filter') || '';
-      const fields = placeholder.getAttribute('data-chart-fields') || '';
+      const params = placeholder.getAttribute('data-chart-params') || '{}';
       const title = placeholder.getAttribute('data-chart-title') || '';
-      const rows = chartDatasets?.[dataset] || [];
 
       const root = createRoot(placeholder);
       roots.push(root);
       root.render(
         <LessonChart
           chartType={chartType}
-          rows={rows}
-          filter={filter}
-          fields={fields}
+          dataset={dataset}
+          params={params}
+          datasets={chartDatasets || {}}
           title={title}
         />
       );

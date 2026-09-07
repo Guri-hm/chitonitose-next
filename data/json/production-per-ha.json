@@ -1,0 +1,32 @@
+[
+  {
+    "nation_cd": 36,
+    "data_year": 2016,
+    "production_per_ha": 712
+  },
+  {
+    "nation_cd": 156,
+    "data_year": 2016,
+    "production_per_ha": 9117
+  },
+  {
+    "nation_cd": 250,
+    "data_year": 2016,
+    "production_per_ha": 3418
+  },
+  {
+    "nation_cd": 392,
+    "data_year": 2016,
+    "production_per_ha": 22581
+  },
+  {
+    "nation_cd": 826,
+    "data_year": 2016,
+    "production_per_ha": 4076
+  },
+  {
+    "nation_cd": 840,
+    "data_year": 2016,
+    "production_per_ha": 2115
+  }
+]

@@ -304,19 +304,7 @@
 ::last
 この値が2.1（厳密には2.07～2.08）を超えれば人口増加と考えますが、先進国のほとんどが2.1を下回ります。
 ::
-<div id="fertility_rate" class="mx-auto"></div>
-<script type="text/javascript">
-lineChartAsync(292, [276, 380, 392, 752, 250, 840], 'fertility_rate', {
-title: '主要国の合計特殊出生率',
-hAxis: {
-title: '年'
-},
-vAxis: {
-title: '人'
-},
-height: 500
-});
-</script>
+::chart{type="LineChart" dataset="statistics_line" params="{&quot;statistics_id&quot;:292,&quot;params&quot;:[276,380,392,752,250,840]}" title="主要国の合計特殊出生率"}
 #### 先進国で高い国
 ::top
 フランスやスウェーデン：
@@ -341,32 +329,8 @@ height: 500
 ::last
 子どもを労働力の頭数に入れたり、乳児死亡率が高いのでたくさんもうけようとしたりするため、人口抑制がなかなかできません。
 ::
-<div id="population_growth_in_developing_countries" class="mx-auto"></div>
-<script type="text/javascript">
-lineChartAsync(293, [392, 180, 566], 'population_growth_in_developing_countries', {
-title: '日本と途上国の総人口の推移',
-hAxis: {
-title: '年',
-},
-vAxis: {
-title: '百万人'
-},
-height: 500
-});
-</script>
-<div id="fertility_rate_in_developing_countries" class="mx-auto"></div>
-<script type="text/javascript">
-lineChartAsync(292, [50, 156, 356, 392, 764], 'fertility_rate_in_developing_countries', {
-title: '日本と途上国の合計特殊出生率',
-hAxis: {
-title: '年'
-},
-vAxis: {
-title: '人'
-},
-height: 500
-});
-</script>
+::chart{type="LineChart" dataset="statistics_line" params="{&quot;statistics_id&quot;:293,&quot;params&quot;:[392,180,566]}" title="日本と途上国の総人口の推移"}
+::chart{type="LineChart" dataset="statistics_line" params="{&quot;statistics_id&quot;:292,&quot;params&quot;:[50,156,356,392,764]}" title="日本と途上国の合計特殊出生率"}
 #### 中国の人口抑制
 ::top
 1970年代、中国で人口の急増を抑制しようとする動きが起こりました。

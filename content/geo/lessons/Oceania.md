@@ -440,50 +440,17 @@ Cfa・Cfbの地域
 ::top
 歴史的つながりから、イギリスが最大の相手国でした。
 ::
-<script type="text/javascript">
-createChartAsync(Chart.Bar, { "statistics_id": 81 }, 'Australia1965_export', {
-title: 'オーストラリアの輸出相手国(1965年、%)',
-height: 250,
-legend: { position: 'top', maxLines: 3 },
-isStacked: true,
-titleTextStyle: {
-fontSize: 14,
-}
-}, "./php/statistics_bar2.php");
-</script>
-<div id="Australia1965_export" class="mx-auto mt-10 mb-10" style="width: 100%;max-width: 600px;"></div>
+::chart{type="BarChart" dataset="statistics_bar2" params="{&quot;statistics_id&quot;:81}" title="オーストラリアの輸出相手国(1965年、%)"}
 <h5>1970～2000年代</h5>
 ::top
 日本が最大の相手国でした。
 ::
-<script type="text/javascript">
-createChartAsync(Chart.Bar, { "statistics_id": 82 }, 'Australia1995_export', {
-title: 'オーストラリアの輸出相手国(1995年、%)',
-height: 250,
-legend: { position: 'top', maxLines: 3 },
-isStacked: true,
-titleTextStyle: {
-fontSize: 14,
-}
-}, "./php/statistics_bar2.php");
-</script>
-<div id="Australia1995_export" class="mx-auto mt-10 mb-10" style="width: 100%;max-width: 600px;"></div>
+::chart{type="BarChart" dataset="statistics_bar2" params="{&quot;statistics_id&quot;:82}" title="オーストラリアの輸出相手国(1995年、%)"}
 <h5>現在</h5>
 ::top
 中国が最大の相手国です。
 ::
-<script type="text/javascript">
-createChartAsync(Chart.Bar, { "statistics_id": 83 }, 'Australia_export', {
-title: 'オーストラリアの輸出相手国(2017年、%)',
-height: 250,
-legend: { position: 'top', maxLines: 3 },
-isStacked: true,
-titleTextStyle: {
-fontSize: 14,
-}
-}, "./php/statistics_bar2.php");
-</script>
-<div id="Australia_export" class="mx-auto mt-10 mb-10" style="width: 100%;max-width: 600px;"></div>
+::chart{type="BarChart" dataset="statistics_bar2" params="{&quot;statistics_id&quot;:83}" title="オーストラリアの輸出相手国(2017年、%)"}
 #### 対日貿易
 ::top
 日本最大の鉄鉱石・石炭の輸入先です。
@@ -541,7 +508,7 @@ fontSize: 14,
 ![](Ruapehu.webp)
 ルアペフ火山（NZ北島の最高峰の火山）
 ::
-::chart{type="PieChart" dataset="power_generation" filter="nation_cd=554" fields="thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス" title="ニュージーランド (億kWh、2019年)"}
+::chart{type="PieChart" dataset="power_generation" params="{&quot;nation_cd&quot;:554}" title="ニュージーランド (億kWh、2019年)"}
 #### 南島
 <h5>沿岸</h5>
 ::top

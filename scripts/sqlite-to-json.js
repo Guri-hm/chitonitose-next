@@ -280,6 +280,64 @@ async function main() {
     if (importPartnersEachItems.length > 0) writeJSON('import-partners-each-items.json', importPartnersEachItems);
     filesCreated++;
 
+    // ===== グラフ用データ（追加分） =====
+    console.log('\n📈 Chart Data (追加):');
+
+    const woodUse = safeQuery(db, 'SELECT * FROM wood_use', 'wood use');
+    if (woodUse.length > 0) writeJSON('wood-use.json', woodUse);
+    filesCreated++;
+
+    const woodSupply = safeQuery(db, 'SELECT * FROM wood_supply', 'wood supply');
+    if (woodSupply.length > 0) writeJSON('wood-supply.json', woodSupply);
+    filesCreated++;
+
+    const forestryWorker = safeQuery(db, 'SELECT * FROM forestry_worker', 'forestry worker');
+    if (forestryWorker.length > 0) writeJSON('forestry-worker.json', forestryWorker);
+    filesCreated++;
+
+    const fishCatche = safeQuery(db, 'SELECT * FROM fish_catche', 'fish catche');
+    if (fishCatche.length > 0) writeJSON('fish-catche.json', fishCatche);
+    filesCreated++;
+
+    const foreignPopulation = safeQuery(db, 'SELECT * FROM foreign_population', 'foreign population');
+    if (foreignPopulation.length > 0) writeJSON('foreign-population.json', foreignPopulation);
+    filesCreated++;
+
+    const nationality = safeQuery(db, 'SELECT * FROM nationality', 'nationality');
+    if (nationality.length > 0) writeJSON('nationality.json', nationality);
+    filesCreated++;
+
+    const productionPerHa = safeQuery(db, 'SELECT * FROM production_per_ha', 'production per ha');
+    if (productionPerHa.length > 0) writeJSON('production-per-ha.json', productionPerHa);
+    filesCreated++;
+
+    const regionAgriculturalProduction = safeQuery(
+      db,
+      'SELECT * FROM region_agricultural_production',
+      'region agricultural production'
+    );
+    if (regionAgriculturalProduction.length > 0) {
+      writeJSON('region-agricultural-production.json', regionAgriculturalProduction);
+    }
+    filesCreated++;
+
+    const regionInfo = safeQuery(db, 'SELECT * FROM region_info', 'region info');
+    if (regionInfo.length > 0) writeJSON('region-info.json', regionInfo);
+    filesCreated++;
+
+    const perUnitOfGdp = safeQuery(db, 'SELECT * FROM per_unit_of_gdp', 'per unit of gdp');
+    if (perUnitOfGdp.length > 0) writeJSON('per-unit-of-gdp.json', perUnitOfGdp);
+    filesCreated++;
+
+    const riverFlowRate = safeQuery(db, 'SELECT * FROM river_flow_rate', 'river flow rate');
+    if (riverFlowRate.length > 0) writeJSON('river-flow-rate.json', riverFlowRate);
+    filesCreated++;
+
+    const riverInfo = safeQuery(db, 'SELECT * FROM river_info', 'river info');
+    if (riverInfo.length > 0) writeJSON('river-info.json', riverInfo);
+    filesCreated++;
+    filesCreated++;
+
     // ===== 生産データ =====
     console.log('\n🌾 Production Data:');
 
@@ -410,7 +468,19 @@ async function main() {
           'wood-area.json',
           'world-region-info.json',
           'item-info.json',
-          'import-partners-each-items.json'
+          'import-partners-each-items.json',
+          'wood-use.json',
+          'wood-supply.json',
+          'forestry-worker.json',
+          'fish-catche.json',
+          'foreign-population.json',
+          'nationality.json',
+          'production-per-ha.json',
+          'region-agricultural-production.json',
+          'region-info.json',
+          'per-unit-of-gdp.json',
+          'river-flow-rate.json',
+          'river-info.json'
         ],
         production: [
           'production.json'

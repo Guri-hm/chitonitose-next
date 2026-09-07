@@ -1,0 +1,92 @@
+[
+  {
+    "region_cd": 1,
+    "data_year": 2020,
+    "rice": 9.5,
+    "tubers_roots": 5.1,
+    "vegetables": 16.9,
+    "fruits": 0.5,
+    "animal_husbandry": 57.9
+  },
+  {
+    "region_cd": 2,
+    "data_year": 2020,
+    "rice": 31.8,
+    "tubers_roots": 0.6,
+    "vegetables": 18.3,
+    "fruits": 15.2,
+    "animal_husbandry": 30.6
+  },
+  {
+    "region_cd": 3,
+    "data_year": 2020,
+    "rice": 60.4,
+    "tubers_roots": 1.6,
+    "vegetables": 13.4,
+    "fruits": 3.9,
+    "animal_husbandry": 16.8
+  },
+  {
+    "region_cd": 4,
+    "data_year": 2020,
+    "rice": 15.3,
+    "tubers_roots": 3.6,
+    "vegetables": 35.8,
+    "fruits": 10.3,
+    "animal_husbandry": 27.9
+  },
+  {
+    "region_cd": 5,
+    "data_year": 2020,
+    "rice": 13.3,
+    "tubers_roots": 0.9,
+    "vegetables": 30,
+    "fruits": 8.3,
+    "animal_husbandry": 30.6
+  },
+  {
+    "region_cd": 6,
+    "data_year": 2020,
+    "rice": 26,
+    "tubers_roots": 0.7,
+    "vegetables": 24.2,
+    "fruits": 21.1,
+    "animal_husbandry": 20.5
+  },
+  {
+    "region_cd": 7,
+    "data_year": 2020,
+    "rice": 21.9,
+    "tubers_roots": 1.1,
+    "vegetables": 20.6,
+    "fruits": 12.9,
+    "animal_husbandry": 39.3
+  },
+  {
+    "region_cd": 8,
+    "data_year": 2020,
+    "rice": 12.4,
+    "tubers_roots": 2.9,
+    "vegetables": 36.6,
+    "fruits": 19.7,
+    "animal_husbandry": 22.3
+  },
+  {
+    "region_cd": 9,
+    "data_year": 2020,
+    "rice": 9.2,
+    "tubers_roots": 3.4,
+    "vegetables": 24.9,
+    "fruits": 7.3,
+    "animal_husbandry": 46.8
+  },
+  {
+    "region_cd": 10,
+    "data_year": 2020,
+    "rice": 0.5,
+    "tubers_roots": 1,
+    "vegetables": 14,
+    "fruits": 6.6,
+    "animal_husbandry": 43.6
+  }
+]

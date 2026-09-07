@@ -9,56 +9,8 @@
 ::last
 人口の急激増加を人口爆発と呼んでいます。
 ::
-<div id="world_population_changes" class="mx-auto" style="width: 80%;"></div>
-<script>
-lineChartAsync(290, [999], 'world_population_changes', {
-title: '世界人口の推移',
-hAxis: {
-title: '年'
-},
-vAxis: {
-title: '億人'
-},
-height: 500
-});
-</script>
-<script type="text/javascript">
-google.charts.load('current', { 'packages': ['corechart'] });
-google.charts.setOnLoadCallback(drawChart);
-function drawChart() {
-var data = google.visualization.arrayToDataTable([
-['年', 'アジア', '北アメリカ', '南アメリカ', 'ヨーロッパ', 'アフリカ', 'オセアニア'],
-['1950', 1379, 162, 168, 550, 228, 13],
-['1955', 1533, 177, 192, 576, 254, 14],
-['1960', 1700, 194, 220, 606, 284, 16],
-['1965', 1902, 209, 252, 634, 321, 18],
-['1970', 2146, 222, 287, 657, 365, 19],
-['1975', 2396, 235, 323, 677, 418, 22],
-['1980', 2636, 248, 362, 693, 482, 23],
-['1985', 2911, 261, 402, 708, 556, 25],
-['1990', 3211, 276, 443, 721, 638, 27],
-['1995', 3484, 295, 483, 727, 724, 29],
-['2000', 3736, 313, 523, 727, 819, 31],
-['2005', 3980, 329, 558, 729, 928, 34],
-['2010', 4221, 345, 591, 736, 1055, 37],
-['2015', 4459, 360, 623, 742, 1201, 40],
-['2020', 4664, 374, 652, 746, 1361, 44],
-['2021', 4695, 375, 656, 745, 1394, 44],
-['2022', 4723, 377, 660, 744, 1427, 45]
-]);
-var options = {
-title: '地域別人口の推移',
-hAxis: { title: '年', showTextEvery: 2 },
-vAxis: { title: '百万人', minValue: 0 },
-isStacked: true,
-curveType: 'function',
-// isStacked=trueで積み上げ(デフォルトはfalse)
-};
-var chart = new google.visualization.AreaChart(document.getElementById('world_area_population'));
-chart.draw(data, options);
-}
-</script>
-<div id="world_area_population" style="width: 100%; height: 500px;"></div>
+::chart{type="LineChart" dataset="statistics_line" params="{&quot;statistics_id&quot;:290,&quot;params&quot;:[999]}" title="世界人口の推移"}
+::chart{type="AreaChart" dataset="static" params="{&quot;data&quot;:[[&quot;年&quot;,&quot;アジア&quot;,&quot;北アメリカ&quot;,&quot;南アメリカ&quot;,&quot;ヨーロッパ&quot;,&quot;アフリカ&quot;,&quot;オセアニア&quot;],[&quot;1950&quot;,1379,162,168,550,228,13],[&quot;1955&quot;,1533,177,192,576,254,14],[&quot;1960&quot;,1700,194,220,606,284,16],[&quot;1965&quot;,1902,209,252,634,321,18],[&quot;1970&quot;,2146,222,287,657,365,19],[&quot;1975&quot;,2396,235,323,677,418,22],[&quot;1980&quot;,2636,248,362,693,482,23],[&quot;1985&quot;,2911,261,402,708,556,25],[&quot;1990&quot;,3211,276,443,721,638,27],[&quot;1995&quot;,3484,295,483,727,724,29],[&quot;2000&quot;,3736,313,523,727,819,31],[&quot;2005&quot;,3980,329,558,729,928,34],[&quot;2010&quot;,4221,345,591,736,1055,37],[&quot;2015&quot;,4459,360,623,742,1201,40],[&quot;2020&quot;,4664,374,652,746,1361,44],[&quot;2021&quot;,4695,375,656,745,1394,44],[&quot;2022&quot;,4723,377,660,744,1427,45]],&quot;options&quot;:{&quot;title&quot;:&quot;地域別人口の推移&quot;,&quot;hAxis&quot;:{&quot;title&quot;:&quot;年&quot;,&quot;showTextEvery&quot;:2},&quot;vAxis&quot;:{&quot;title&quot;:&quot;百万人&quot;,&quot;minValue&quot;:0},&quot;isStacked&quot;:true,&quot;curveType&quot;:&quot;function&quot;}}" title="地域別人口の推移"}
 ### 増加の背景
 ::top
 人口爆発の背景は、医学・薬学の発達や衛生面の向上です。
@@ -416,29 +368,5 @@ chart.draw(data, options);
 ::last
 従って、==先進国が混じるアングロアメリカ（カナダ・アメリカ）やオセアニアで出生率がある程度高くなります==。
 ::
-<script type="text/javascript">
-createChartAsync(Chart.Area, { "params": [[290, 840], [291, 840]] }, 'US_immigration', {
-title: 'アメリカ合衆国の人口と移民の推移',
-hAxis: {
-title: '年'
-},
-vAxis: {
-title: '億人'
-},
-height: 500
-}, "./php/different_statistics_json.php");
-</script>
-<script type="text/javascript">
-createChartAsync(Chart.Area, { "params": [[290, 36], [291, 36]] }, 'Australia_immigration', {
-title: 'オーストラリアの人口と移民の推移',
-hAxis: {
-title: '年'
-},
-vAxis: {
-title: '億人'
-},
-height: 500
-}, "./php/different_statistics_json.php");
-</script>
-<div id="US_immigration" class="mx-auto" style="width: 80%;"></div>
-<div id="Australia_immigration" class="mx-auto" style="width: 80%;"></div>
+::chart{type="AreaChart" dataset="different_statistics_json" params="{&quot;params&quot;:[[290,840],[291,840]]}" title="アメリカ合衆国の人口と移民の推移"}
+::chart{type="AreaChart" dataset="different_statistics_json" params="{&quot;params&quot;:[[290,36],[291,36]]}" title="オーストラリアの人口と移民の推移"}

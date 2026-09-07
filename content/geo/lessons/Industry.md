@@ -35,9 +35,9 @@
 ::top
 主な生産国は、<span onclick="choice(this)" class="choice"><span class="true_choice">石炭</span>/<span class="false_choice">石油</span>/<span class="false_choice">天然ガス</span></span>による火力発電が盛んなオーストラリア・中国・インド、<span onclick="choice(this)" class="choice"><span class="false_choice">火力</span>/<span class="true_choice">水力</span>/<span class="false_choice">風力</span>/<span class="false_choice">地熱</span>/<span class="false_choice">バイオマス</span></span>中心の発電をおこなうノルウェー・カナダ・ブラジルが該当します。
 ::
-::chart{type="PieChart" dataset="power_generation" filter="nation_cd=578" fields="thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス" title="ノルウェー (億kWh、2019年)"}
-::chart{type="PieChart" dataset="power_generation" filter="nation_cd=76" fields="thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス" title="ブラジル (億kWh、2019年)"}
-::chart{type="PieChart" dataset="power_generation" filter="nation_cd=124" fields="thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス" title="カナダ (億kWh、2019年)"}
+::chart{type="PieChart" dataset="power_generation" params="{&quot;nation_cd&quot;:578}" title="ノルウェー (億kWh、2019年)"}
+::chart{type="PieChart" dataset="power_generation" params="{&quot;nation_cd&quot;:76}" title="ブラジル (億kWh、2019年)"}
+::chart{type="PieChart" dataset="power_generation" params="{&quot;nation_cd&quot;:124}" title="カナダ (億kWh、2019年)"}
 ### 鉄鋼業
 #### 立地
 ::top
@@ -58,19 +58,7 @@
 ![](France_iron_steel.webp)
 フランスの鉄鋼業
 ::
-<div id="carcrude_steels" class="mx-auto" style="width: 80%;"></div>
-<script type="text/javascript">
-lineChartAsync(4, [156, 356, 392, 840, 643, 276, 410], 'carcrude_steels', {
-title: '各国粗鋼生産の変遷',
-hAxis: {
-title: '年'
-},
-vAxis: {
-title: '万トン'
-},
-height: 500
-});
-</script>
+::chart{type="LineChart" dataset="statistics_line" params="{&quot;statistics_id&quot;:4,&quot;params&quot;:[156,356,392,840,643,276,410]}" title="各国粗鋼生産の変遷"}
 ::sup
 ロシアの1991年までのデータは旧ソ連のもの
 ::
@@ -97,19 +85,7 @@ height: 500
 ::top
 自動車の生産台数は、経済の歴史と強く関連します。
 ::
-<div id="cars" class="mx-auto" style="width: 80%;"></div>
-<script type="text/javascript">
-lineChartAsync(37, [156, 392, 840, 276, 410, 356], 'cars', {
-title: '各国自動車生産の変遷',
-hAxis: {
-title: '年'
-},
-vAxis: {
-title: '千台'
-},
-height: 500
-});
-</script>
+::chart{type="LineChart" dataset="statistics_line" params="{&quot;statistics_id&quot;:37,&quot;params&quot;:[156,392,840,276,410,356]}" title="各国自動車生産の変遷"}
 <h5>日本の自動車の歩み</h5>
 ::top
 戦後、日本はアメリカに対する自動車や電気機器の輸出を伸ばしていきました（貿易黒字）。
@@ -143,19 +119,7 @@ height: 500
 ::top
 造船業は、中国・韓国・日本がほぼ占めています。
 ::
-<div id="shipbuilding" class="mx-auto" style="width: 80%;"></div>
-<script type="text/javascript">
-lineChartAsync(37, [156, 392, 840, 276, 410, 356], 'shipbuilding', {
-title: '各国造船業の変遷',
-hAxis: {
-title: '年'
-},
-vAxis: {
-title: '千総t'
-},
-height: 500
-});
-</script>
+::chart{type="LineChart" dataset="statistics_line" params="{&quot;statistics_id&quot;:37,&quot;params&quot;:[156,392,840,276,410,356]}" title="各国造船業の変遷"}
 #### 日本の造船業
 ::top
 広島や長崎が造船{{竣工|しゅんこう}}量の上位です。

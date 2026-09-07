@@ -1,0 +1,1037 @@
+[
+  {
+    "nation_cd": 4,
+    "dollar": 530,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 12,
+    "dollar": 4010,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 32,
+    "dollar": 11130,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 36,
+    "dollar": 55100,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 40,
+    "dollar": 51460,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 50,
+    "dollar": 1940,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 56,
+    "dollar": 48030,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 68,
+    "dollar": 3520,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 76,
+    "dollar": 9130,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 96,
+    "dollar": 32230,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 100,
+    "dollar": 9570,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 104,
+    "dollar": 1390,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 116,
+    "dollar": 1530,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 120,
+    "dollar": 1500,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 124,
+    "dollar": 46370,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 144,
+    "dollar": 4020,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 152,
+    "dollar": 15010,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 156,
+    "dollar": 10390,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 170,
+    "dollar": 6510,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 180,
+    "dollar": 530,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 188,
+    "dollar": 11700,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 191,
+    "dollar": 14980,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 192,
+    "dollar": 0,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 196,
+    "dollar": 27710,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 203,
+    "dollar": 21940,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 208,
+    "dollar": 63950,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 218,
+    "dollar": 6090,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 222,
+    "dollar": 4000,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 231,
+    "dollar": 850,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 233,
+    "dollar": 23260,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 246,
+    "dollar": 50010,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 250,
+    "dollar": 42450,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 276,
+    "dollar": 48580,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 288,
+    "dollar": 2220,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 300,
+    "dollar": 19750,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 320,
+    "dollar": 4610,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 336,
+    "dollar": 0,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 348,
+    "dollar": 16500,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 356,
+    "dollar": 2120,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 360,
+    "dollar": 4050,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 364,
+    "dollar": 5300,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 368,
+    "dollar": 5740,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 372,
+    "dollar": 64000,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 376,
+    "dollar": 43110,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 380,
+    "dollar": 34530,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 384,
+    "dollar": 2290,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 388,
+    "dollar": 5320,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 392,
+    "dollar": 41710,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 404,
+    "dollar": 1750,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 386.098,
+    "data_year": 1970
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 414.764,
+    "data_year": 1971
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 445.909,
+    "data_year": 1972
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 480.111,
+    "data_year": 1973
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 518.122,
+    "data_year": 1974
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 560.667,
+    "data_year": 1975
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 573.782,
+    "data_year": 1976
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 588.707,
+    "data_year": 1977
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 604.942,
+    "data_year": 1978
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 621.718,
+    "data_year": 1979
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 638.449,
+    "data_year": 1980
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 652.398,
+    "data_year": 1981
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 806.864,
+    "data_year": 1982
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 793.285,
+    "data_year": 1983
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 744.152,
+    "data_year": 1984
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 722.272,
+    "data_year": 1985
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 804.814,
+    "data_year": 1986
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 836.26,
+    "data_year": 1987
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 763.83,
+    "data_year": 1988
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 810.784,
+    "data_year": 1989
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 734.858,
+    "data_year": 1990
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 662.638,
+    "data_year": 1991
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 593.079,
+    "data_year": 1992
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 503.235,
+    "data_year": 1993
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 384.462,
+    "data_year": 1994
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 222.251,
+    "data_year": 1995
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 478.788,
+    "data_year": 1996
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 461.767,
+    "data_year": 1997
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 455.506,
+    "data_year": 1998
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 451.789,
+    "data_year": 1999
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 461.956,
+    "data_year": 2000
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 476.127,
+    "data_year": 2001
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 467.979,
+    "data_year": 2002
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 470.977,
+    "data_year": 2003
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 472.98,
+    "data_year": 2004
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 547.931,
+    "data_year": 2005
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 575.134,
+    "data_year": 2006
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 597.32,
+    "data_year": 2007
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 551.416,
+    "data_year": 2008
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 495.191,
+    "data_year": 2009
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 570.963,
+    "data_year": 2010
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 639.128,
+    "data_year": 2011
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 644.69,
+    "data_year": 2012
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 667.873,
+    "data_year": 2013
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 697.778,
+    "data_year": 2014
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 649.856,
+    "data_year": 2015
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 666.676,
+    "data_year": 2016
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 686.34,
+    "data_year": 2017
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 687.943,
+    "data_year": 2018
+  },
+  {
+    "nation_cd": 408,
+    "dollar": 639.556,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 279.7,
+    "data_year": 1970
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 301.472,
+    "data_year": 1971
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 324.182,
+    "data_year": 1972
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 406.29,
+    "data_year": 1973
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 561.917,
+    "data_year": 1974
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 615.747,
+    "data_year": 1975
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 831.964,
+    "data_year": 1976
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 1054.04,
+    "data_year": 1977
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 1404.95,
+    "data_year": 1978
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 1784.71,
+    "data_year": 1979
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 1718.95,
+    "data_year": 1980
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 1889.36,
+    "data_year": 1981
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 2000.2,
+    "data_year": 1982
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 2207.94,
+    "data_year": 1983
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 2419.85,
+    "data_year": 1984
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 2482.48,
+    "data_year": 1985
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 2831.36,
+    "data_year": 1986
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 3549.07,
+    "data_year": 1987
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 4742.39,
+    "data_year": 1988
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 5811.29,
+    "data_year": 1989
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 6602.43,
+    "data_year": 1990
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 7623.31,
+    "data_year": 1991
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 8108.08,
+    "data_year": 1992
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 8856.78,
+    "data_year": 1993
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 10344,
+    "data_year": 1994
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 12509.4,
+    "data_year": 1995
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 13336.7,
+    "data_year": 1996
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 12333.4,
+    "data_year": 1997
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 8222.35,
+    "data_year": 1998
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 10581.6,
+    "data_year": 1999
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 12161,
+    "data_year": 2000
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 11479.8,
+    "data_year": 2001
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 13067.8,
+    "data_year": 2002
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 14560.8,
+    "data_year": 2003
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 16356.3,
+    "data_year": 2004
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 19196.7,
+    "data_year": 2005
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 21546.8,
+    "data_year": 2006
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 23913.9,
+    "data_year": 2007
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 21295,
+    "data_year": 2008
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 19128.5,
+    "data_year": 2009
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 23091.2,
+    "data_year": 2010
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 25172.1,
+    "data_year": 2011
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 25537.6,
+    "data_year": 2012
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 27227.6,
+    "data_year": 2013
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 29329.8,
+    "data_year": 2014
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 28840.7,
+    "data_year": 2015
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 29423.5,
+    "data_year": 2016
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 31781.1,
+    "data_year": 2017
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 33705.3,
+    "data_year": 2018
+  },
+  {
+    "nation_cd": 410,
+    "dollar": 32234.5,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 414,
+    "dollar": 33590,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 418,
+    "dollar": 2570,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 428,
+    "dollar": 17740,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 430,
+    "dollar": 580,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 434,
+    "dollar": 7640,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 440,
+    "dollar": 19080,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 442,
+    "dollar": 73910,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 450,
+    "dollar": 520,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 458,
+    "dollar": 11230,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 466,
+    "dollar": 870,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 470,
+    "dollar": 28030,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 484,
+    "dollar": 9480,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 496,
+    "dollar": 3790,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 499,
+    "dollar": 9060,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 504,
+    "dollar": 3190,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 508,
+    "dollar": 490,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 528,
+    "dollar": 53100,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 554,
+    "dollar": 42760,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 558,
+    "dollar": 1890,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 566,
+    "dollar": 2030,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 578,
+    "dollar": 82500,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 586,
+    "dollar": 1410,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 591,
+    "dollar": 14950,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 598,
+    "dollar": 2750,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 600,
+    "dollar": 5520,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 604,
+    "dollar": 6740,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 608,
+    "dollar": 3850,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 616,
+    "dollar": 15350,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 620,
+    "dollar": 23200,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 642,
+    "dollar": 12630,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 643,
+    "dollar": 11260,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 646,
+    "dollar": 830,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 682,
+    "dollar": 22840,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 686,
+    "dollar": 1460,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 688,
+    "dollar": 7030,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 702,
+    "dollar": 59590,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 703,
+    "dollar": 19210,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 704,
+    "dollar": 2590,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 705,
+    "dollar": 25940,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 706,
+    "dollar": 0,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 710,
+    "dollar": 6040,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 716,
+    "dollar": 1390,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 724,
+    "dollar": 30390,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 729,
+    "dollar": 590,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 752,
+    "dollar": 55780,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 764,
+    "dollar": 7260,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 784,
+    "dollar": 43470,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 788,
+    "dollar": 3370,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 792,
+    "dollar": 9690,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 804,
+    "dollar": 3370,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 818,
+    "dollar": 2690,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 826,
+    "dollar": 42220,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 834,
+    "dollar": 1080,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 840,
+    "dollar": 65850,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 858,
+    "dollar": 16230,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 860,
+    "dollar": 1800,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 862,
+    "dollar": 0,
+    "data_year": 2019
+  },
+  {
+    "nation_cd": 894,
+    "dollar": 1430,
+    "data_year": 2019
+  }
+]

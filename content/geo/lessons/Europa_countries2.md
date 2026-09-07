@@ -199,7 +199,7 @@
 ::top
 ノルウェーは、偏西風の影響で降水が多く、また、急傾斜地が広いため、水力発電が盛んです。
 ::
-::chart{type="PieChart" dataset="power_generation" filter="nation_cd=578" fields="thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス" title="ノルウェー (億kWh、2019年)"}
+::chart{type="PieChart" dataset="power_generation" params="{&quot;nation_cd&quot;:578}" title="ノルウェー (億kWh、2019年)"}
 ### 鉱工業
 #### アルミニウム工業
 ::top
@@ -354,7 +354,7 @@
 ::top
 水力発電とともに、地熱発電が中心です。
 ::
-::chart{type="PieChart" dataset="power_generation" filter="nation_cd=352" fields="thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス" title="アイスランド (億kWh、2019年)"}
+::chart{type="PieChart" dataset="power_generation" params="{&quot;nation_cd&quot;:352}" title="アイスランド (億kWh、2019年)"}
 ### 貿易
 ::export-items{nation_cd="352"}
 ::import-items{nation_cd="352"}
@@ -381,7 +381,7 @@
 シロンスク地方
 ::
 ### 発電
-::chart{type="PieChart" dataset="power_generation" filter="nation_cd=616" fields="thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス" title="ポーランド (億kWh、2019年)"}
+::chart{type="PieChart" dataset="power_generation" params="{&quot;nation_cd&quot;:616}" title="ポーランド (億kWh、2019年)"}
 ### 宗教
 ::top
 インド＝ヨーロッパ語族の語派（ラテン語派・ゲルマン語派・スラブ語派）とキリスト教の教派は、ある程度一致します。<a href="geo_lessons_Europa1.html#christianity_language" class="link-active link-icon"></a>

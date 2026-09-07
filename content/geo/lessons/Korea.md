@@ -147,35 +147,7 @@ V字谷と溺れ谷
 ::last
 ただし、儒教の影響も強く残り、先祖・親・年長者を敬う心が大切にされています。
 ::
-<script type="text/javascript">
-// ライブラリのロード
-// name:visualization(可視化),version:バージョン(1),packages:パッケージ(corechart)
-google.load('visualization', '1', { 'packages': ['corechart'] });
-// グラフを描画する為のコールバック関数を指定
-google.setOnLoadCallback(drawChart);
-// グラフの描画
-function drawChart() {
-// 配列からデータの生成
-var data = google.visualization.arrayToDataTable([
-['宗教', '％'],
-['キリスト教', 43],
-['伝統的宗教', 15],
-['仏教', 14],
-['新興宗教', 14],
-['儒教', 10],
-['その他', 4],
-]);
-// オプションの設定
-var options = {
-title: '韓国の宗教別人口割合 (単位：％ )',
-};
-// 指定されたIDの要素に円グラフを作成
-var chart = new google.visualization.PieChart(document.getElementById('Korea_religion'));
-// グラフの描画
-chart.draw(data, options);
-}
-</script>
-<div id="Korea_religion" style="width: 100%; height: 350px"></div>
+::chart{type="PieChart" dataset="static" params="{&quot;data&quot;:[[&quot;宗教&quot;,&quot;％&quot;],[&quot;キリスト教&quot;,43],[&quot;伝統的宗教&quot;,15],[&quot;仏教&quot;,14],[&quot;新興宗教&quot;,14],[&quot;儒教&quot;,10],[&quot;その他&quot;,4]],&quot;options&quot;:{&quot;title&quot;:&quot;韓国の宗教別人口割合 (単位：％ )&quot;}}" title="韓国の宗教別人口割合 (単位：％ )"}
 ## 南北分断
 ### 歴史
 ::top
@@ -207,19 +179,7 @@ chart.draw(data, options);
 ![](Panmunjom.webp)
 分断の象徴「板門店」
 ::
-<script type="text/javascript">
-createChartAsync(Chart.Line, {}, 'Korea_gdp_per_capita', {
-title: '韓国・北朝鮮の1人あたりGDP推移',
-hAxis: {
-title: '年'
-},
-vAxis: {
-title: 'ドル'
-},
-height: 500
-}, "./php/Korea_gdp.php");
-</script>
-<div id="Korea_gdp_per_capita" class="mx-auto" style="width: 80%;"></div>
+::chart{type="LineChart" dataset="Korea_gdp" params="{}" title="韓国・北朝鮮の1人あたりGDP推移"}
 ## 韓国
 ### 基礎データ
 ::basic-data{cd="410"}
@@ -249,16 +209,7 @@ height: 500
 ::last
 このことが背景となり、近年出生率は深刻な低下を示しています。
 ::
-<script type="text/javascript">
-createChartAsync(Chart.Bar, { statistics_ids: [1040] }, 'school_attendance_rate', {
-title: '高等教育就学率(%、2014年)',
-vAxis: {
-minValue: 0,
-maxValue: 100,
-}
-}, "./php/statistics_bars2.php");
-</script>
-<div id="school_attendance_rate" style="width: 100%; height: 350px"></div>
+::chart{type="BarChart" dataset="statistics_bars2" params="{&quot;statistics_ids&quot;:[1040]}" title="高等教育就学率(%、2014年)"}
 ::gazo
 ![](population_pyramid_Korea.svg)
 韓国の人口ピラミッド(2019年)
@@ -356,42 +307,9 @@ maxValue: 100,
 </span></div>
 </div>
 #### 生産上位の品目
-<script type="text/javascript">
-createChartAsync(Chart.Bar, { "statistics_id": 4 }, 'crude_steel_production_chart', {
-title: '粗鋼生産(%)',
-height: 250,
-legend: { position: 'top', maxLines: 3 },
-isStacked: true,
-titleTextStyle: {
-fontSize: 14,
-}
-}, "./php/statistics_highest.php");
-</script>
-<div id="crude_steel_production_chart" class="mx-auto mt-10 mb-10" style="width: 80%;"></div>
-<script type="text/javascript">
-createChartAsync(Chart.Bar, { "statistics_id": 5 }, 'ship_production_chart', {
-title: '船舶生産(%)',
-height: 250,
-legend: { position: 'top', maxLines: 3 },
-isStacked: true,
-titleTextStyle: {
-fontSize: 14,
-}
-}, "./php/statistics_highest.php");
-</script>
-<div id="ship_production_chart" class="mx-auto mt-10 mb-10" style="width: 80%;"></div>
-<script type="text/javascript">
-createChartAsync(Chart.Bar, { "statistics_id": 6 }, 'car_production_chart', {
-title: '自動車生産(%)',
-height: 250,
-legend: { position: 'top', maxLines: 3 },
-isStacked: true,
-titleTextStyle: {
-fontSize: 14,
-}
-}, "./php/statistics_highest.php");
-</script>
-<div id="car_production_chart" class="mx-auto mt-10 mb-10" style="width: 80%;"></div>
+::chart{type="BarChart" dataset="statistics_highest" params="{&quot;statistics_id&quot;:4}" title="粗鋼生産(%)"}
+::chart{type="BarChart" dataset="statistics_highest" params="{&quot;statistics_id&quot;:5}" title="船舶生産(%)"}
+::chart{type="BarChart" dataset="statistics_highest" params="{&quot;statistics_id&quot;:6}" title="自動車生産(%)"}
 ### 農業
 ::top
 1970年代、韓国の経済成長が進むなかで、都市部と農村部の格差が拡大しました。

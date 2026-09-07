@@ -1,0 +1,50 @@
+[
+  {
+    "data_year": 1980,
+    "population": 146321,
+    "aging_rate": 8,
+    "youth_rate": 10
+  },
+  {
+    "data_year": 1985,
+    "population": 126343,
+    "aging_rate": 10,
+    "youth_rate": 8
+  },
+  {
+    "data_year": 1990,
+    "population": 100497,
+    "aging_rate": 14,
+    "youth_rate": 6
+  },
+  {
+    "data_year": 1995,
+    "population": 81564,
+    "aging_rate": 23,
+    "youth_rate": 7
+  },
+  {
+    "data_year": 2000,
+    "population": 67558,
+    "aging_rate": 30,
+    "youth_rate": 10
+  },
+  {
+    "data_year": 2005,
+    "population": 52173,
+    "aging_rate": 27,
+    "youth_rate": 14
+  },
+  {
+    "data_year": 2010,
+    "population": 51200,
+    "aging_rate": 21,
+    "youth_rate": 18
+  },
+  {
+    "data_year": 2015,
+    "population": 45440,
+    "aging_rate": 25,
+    "youth_rate": 17
+  }
+]

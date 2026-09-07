@@ -6,34 +6,7 @@
 ::last
 この投資は、先進国で大きくなります。
 ::
-<script type="text/javascript">
-// ライブラリのロード
-// name:visualization(可視化),version:バージョン(1),packages:パッケージ(corechart)
-google.load('visualization', '1', { 'packages': ['corechart'] });
-// グラフを描画する為のコールバック関数を指定
-google.setOnLoadCallback(drawChart);
-// グラフの描画
-function drawChart() {
-// 配列からデータの生成
-var data = google.visualization.arrayToDataTable([
-['年', 'ASEAN4（インドネシア・タイ・フィリピン・マレーシア）', 'NIEs（韓国・シンガポール・台湾・ホンコン）', '中国'],
-['1985～89年', 70, 130, 25],
-['1990～94年', 155, 130, 60],
-['1995～99年', 210, 155, 105],
-['2000～04年', 100, 110, 120],
-['2005～09年', 230, 265, 325]
-]);
-// オプションの設定
-var options = {
-title: '日本の対外直接投資額 ( 単位：億ドル )',
-};
-// 指定されたIDの要素に棒グラフを作成
-var chart = new google.visualization.ColumnChart(document.getElementById('investment_jp'));
-// グラフの描画
-chart.draw(data, options);
-}
-</script>
-<div id="investment_jp" style="width: 100%; height: 350px"></div>
+::chart{type="ColumnChart" dataset="static" params="{&quot;data&quot;:[[&quot;年&quot;,&quot;ASEAN4（インドネシア・タイ・フィリピン・マレーシア）&quot;,&quot;NIEs（韓国・シンガポール・台湾・ホンコン）&quot;,&quot;中国&quot;],[&quot;1985～89年&quot;,70,130,25],[&quot;1990～94年&quot;,155,130,60],[&quot;1995～99年&quot;,210,155,105],[&quot;2000～04年&quot;,100,110,120],[&quot;2005～09年&quot;,230,265,325]],&quot;options&quot;:{&quot;title&quot;:&quot;日本の対外直接投資額 ( 単位：億ドル )&quot;}}" title="日本の対外直接投資額 ( 単位：億ドル )"}
 ::top
 企業は、次の２つの理由から対外直接投資をおこないます。
 ::
@@ -62,37 +35,7 @@ chart.draw(data, options);
 ::last
 この投資は、先進国に押される途上国で大きくなります。
 ::
-<script type="text/javascript">
-// ライブラリのロード
-// name:visualization(可視化),version:バージョン(1),packages:パッケージ(corechart)
-google.load('visualization', '1', { 'packages': ['corechart'] });
-// グラフを描画する為のコールバック関数を指定
-google.setOnLoadCallback(drawChart);
-// グラフの描画
-function drawChart() {
-// 配列からデータの生成
-var data = google.visualization.arrayToDataTable([
-['国', '対外直接投資', '対内直接投資'],
-['日本', 251.1, 36.2],
-['ベトナム', 0.485, 16.1],
-['中国', 97.7, 155.8],
-['タイ', 11.7, 4.8],
-['フランス', 55.7, 51.03],
-['ドイツ', 134.9, 72.2],
-['シンガポール', 50.5, 120.4],
-['ブラジル', 22.8, 69.1],
-]);
-// オプションの設定
-var options = {
-title: '対外直接投資額・対内直接投資額 ( 単位：10億ドル、2019年 )',
-};
-// 指定されたIDの要素に棒グラフを作成
-var chart = new google.visualization.ColumnChart(document.getElementById('investment'));
-// グラフの描画
-chart.draw(data, options);
-}
-</script>
-<div id="investment" style="width: 100%; height: 350px"></div>
+::chart{type="ColumnChart" dataset="static" params="{&quot;data&quot;:[[&quot;国&quot;,&quot;対外直接投資&quot;,&quot;対内直接投資&quot;],[&quot;日本&quot;,251.1,36.2],[&quot;ベトナム&quot;,0.485,16.1],[&quot;中国&quot;,97.7,155.8],[&quot;タイ&quot;,11.7,4.8],[&quot;フランス&quot;,55.7,51.03],[&quot;ドイツ&quot;,134.9,72.2],[&quot;シンガポール&quot;,50.5,120.4],[&quot;ブラジル&quot;,22.8,69.1]],&quot;options&quot;:{&quot;title&quot;:&quot;対外直接投資額・対内直接投資額 ( 単位：10億ドル、2019年 )&quot;}}" title="対外直接投資額・対内直接投資額 ( 単位：10億ドル、2019年 )"}
 ::top
 ベトナム、発展しつつもまだ遅れるタイでは、安価な労働力があり、先進国による投資が活発です。
 ::
@@ -202,39 +145,7 @@ EU域内では人・ものなどの移動が自由化されており、EU域内�
 ::last
 日本は４位ですが、対GNI比率が低く、今以上の拠出が可能ではないかと指摘されています。
 ::
-<script type="text/javascript">
-// ライブラリのロード
-// name:visualization(可視化),version:バージョン(1),packages:パッケージ(corechart)
-google.load('visualization', '1', { 'packages': ['corechart'] });
-// グラフを描画する為のコールバック関数を指定
-google.setOnLoadCallback(drawChart);
-// グラフの描画
-function drawChart() {
-// 配列からデータの生成
-var data = google.visualization.arrayToDataTable([
-['年', 'アメリカ', 'ドイツ', '日本', 'イギリス', 'フランス', 'カナダ', 'イタリア'],
-['2011年', 32284.59, 15596.22, 20246.9, 14173.5, 14436.15, 5505.7, 4626.27],
-['2012年', 31398.32, 14569.64, 18662.16, 14266.96, 13556.62, 5703.07, 2837.01],
-['2013年', 32158.45, 16220.84, 22414.49, 18286.22, 12879.76, 4990.3, 3510.04],
-['2014年', 33864.3, 19347.1, 15924.54, 19874.31, 12540.1, 4285.64, 4096.39],
-['2015年', 31735.73, 19751.63, 15028.43, 18684.15, 10943.74, 4320.07, 4056.11],
-['2016年', 35139.78, 26818.5, 16807.79, 18204.4, 11741.8, 3973.99, 5158.66],
-['2017年', 35451.15, 27837.06, 18460.84, 18230, 13654.35, 4352.08, 6088.93],
-['2018年', 34520.92, 28636.72, 17250.01, 19656.35, 15382.81, 4689.47, 5206.55],
-['2019年', 33710.64, 26900.5, 18919.77, 19620.29, 14543.97, 4741.38, 4404.37],
-]);
-// オプションの設定
-var options = {
-title: '主な援助国のODA実績(単位：百万ドル)',
-height: 500
-};
-// 指定されたIDの要素に折れ線グラフを作成
-var chart = new google.visualization.LineChart(document.getElementById('oda_chart'));
-// グラフの描画
-chart.draw(data, options);
-}
-</script>
-<div id="oda_chart" class="mx-auto w-100 w-max700"></div>
+::chart{type="LineChart" dataset="static" params="{&quot;data&quot;:[[&quot;年&quot;,&quot;アメリカ&quot;,&quot;ドイツ&quot;,&quot;日本&quot;,&quot;イギリス&quot;,&quot;フランス&quot;,&quot;カナダ&quot;,&quot;イタリア&quot;],[&quot;2011年&quot;,32284.59,15596.22,20246.9,14173.5,14436.15,5505.7,4626.27],[&quot;2012年&quot;,31398.32,14569.64,18662.16,14266.96,13556.62,5703.07,2837.01],[&quot;2013年&quot;,32158.45,16220.84,22414.49,18286.22,12879.76,4990.3,3510.04],[&quot;2014年&quot;,33864.3,19347.1,15924.54,19874.31,12540.1,4285.64,4096.39],[&quot;2015年&quot;,31735.73,19751.63,15028.43,18684.15,10943.74,4320.07,4056.11],[&quot;2016年&quot;,35139.78,26818.5,16807.79,18204.4,11741.8,3973.99,5158.66],[&quot;2017年&quot;,35451.15,27837.06,18460.84,18230,13654.35,4352.08,6088.93],[&quot;2018年&quot;,34520.92,28636.72,17250.01,19656.35,15382.81,4689.47,5206.55],[&quot;2019年&quot;,33710.64,26900.5,18919.77,19620.29,14543.97,4741.38,4404.37]],&quot;options&quot;:{&quot;title&quot;:&quot;主な援助国のODA実績(単位：百万ドル)&quot;,&quot;height&quot;:500}}" title="主な援助国のODA実績(単位：百万ドル)"}
 <div class="overflow-x-auto mt-10 mb-10">
 <div class="text-center">ODAの実績</div>
 <table class="w-100 table">

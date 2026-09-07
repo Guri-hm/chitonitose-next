@@ -7,34 +7,8 @@
 そのため、土地生産性や単位面積の農業産出額を高めてきました。
 ::
 ::land-use{data_year="2019" params="392"}
-<script type="text/javascript">
-createChartAsync(Chart.Bar, { "data_year": 2019, "statistics_ids": [36, 392, 840, 250, 826, 156] }, 'ha_per_farmer', {
-title: '農民１人あたりの耕地面積(2019年)',
-height: 300,
-hAxis: {
-title: 'ha',
-minValue: 0
-},
-vAxis: {
-title: '国'
-},
-}, "./php/ha_per_farmer.php");
-</script>
-<div id="ha_per_farmer" class="mx-auto mt-10 mb-10" style="width: 100%;max-width: 800px;"></div>
-<script type="text/javascript">
-createChartAsync(Chart.Bar, { "data_year": 2016, "statistics_ids": [36, 392, 840, 250, 826, 156] }, 'production_per_ha', {
-title: '耕地1haあたりの農業産出額(2016年)',
-height: 300,
-hAxis: {
-title: 'ドル',
-minValue: 0
-},
-vAxis: {
-title: '国'
-},
-}, "./php/production_per_ha.php");
-</script>
-<div id="production_per_ha" class="mx-auto mt-10 mb-10" style="width: 100%;max-width: 800px;"></div>
+::chart{type="BarChart" dataset="ha_per_farmer" params="{&quot;data_year&quot;:2019,&quot;statistics_ids&quot;:[36,392,840,250,826,156]}" title="農民１人あたりの耕地面積(2019年)"}
+::chart{type="BarChart" dataset="production_per_ha" params="{&quot;data_year&quot;:2016,&quot;statistics_ids&quot;:[36,392,840,250,826,156]}" title="耕地1haあたりの農業産出額(2016年)"}
 ### 農業就業人口
 ::top
 近年、農業就業人口の減少・高齢化が進行しています。
@@ -42,30 +16,7 @@ title: '国'
 ::last
 農業が営まれなくなったことで、耕作放棄地が増加しています。
 ::
-<script type="text/javascript">
-createChartAsync(Chart.Combo, {}, 'agricultural_work_force', {
-title: '農業就業人口の減少と高齢化',
-height: 500,
-vAxes: {
-0: {
-title: '農業就業人口(万人) ＊注１、注２'
-},
-1: {
-title: '農業就業人口に占める65歳以上の割合(%) ＊注３'
-}
-},
-hAxis: { title: '年' },
-series: {
-// Left-Yの列のデータ
-0: { type: 'bars', targetAxisIndex: 0 },
-1: { type: 'bars', targetAxisIndex: 0 },
-// Right-Yの列のデータ
-2: { type: 'line', targetAxisIndex: 1 },
-},
-isStacked: true,
-}, "./php/agricultural_work_force.php");
-</script>
-<div id="agricultural_work_force" class="mx-auto mt-10 mb-10" style="width: 100%;max-width: 800px;"></div>
+::chart{type="ComboChart" dataset="agricultural_work_force" params="{}" title="農業就業人口の減少と高齢化"}
 ::sup
 注１：農業就業人口は、自営農業のみに従事した人、または自営農業以外の仕事に従事していても年間労働日数で自営農業が多い人
 ::
@@ -126,75 +77,9 @@ isStacked: true,
 ::
 ### 食料自給率
 ::food-self-sufficiency{params="392,380,826,250,276,840" data_year="2017"}
-<script type="text/javascript">
-createChartAsync(Chart.Combo, {
-"params": [
-{
-statistics_id: 162,
-nation_cd: 392
-},
-{
-statistics_id: 163,
-nation_cd: 392
-},
-{
-statistics_id: 164,
-nation_cd: 392
-},
-{
-statistics_id: 165,
-nation_cd: 392
-},
-{
-statistics_id: 166,
-nation_cd: 392
-},
-{
-statistics_id: 168,
-nation_cd: 392
-},
-{
-statistics_id: 169,
-nation_cd: 392
-},
-{
-statistics_id: 167,
-nation_cd: 392
-}
-]
-}, 'jp_food_self_sufficiency'
-, {
-title: '日本の食料自給率の推移',
-height: 500,
-vAxes: {
-0: {
-title: '%'
-}
-},
-hAxis: { title: '年' },
-series: {
-// Left-Yの列のデータ
-0: { type: 'line', targetAxisIndex: 0 },
-// Right-Yの列のデータ
-1: { type: 'line', targetAxisIndex: 0 },
-},
-isStacked: true,
-}, "./php/statistics_combo.php");
-</script>
-<div id="jp_food_self_sufficiency" class="mx-auto mt-10 mb-10" style="width: 100%;max-width: 800px;"></div>
+::chart{type="ComboChart" dataset="statistics_combo" params="{&quot;params&quot;:[{&quot;statistics_id&quot;:162,&quot;nation_cd&quot;:392},{&quot;statistics_id&quot;:163,&quot;nation_cd&quot;:392},{&quot;statistics_id&quot;:164,&quot;nation_cd&quot;:392},{&quot;statistics_id&quot;:165,&quot;nation_cd&quot;:392},{&quot;statistics_id&quot;:166,&quot;nation_cd&quot;:392},{&quot;statistics_id&quot;:168,&quot;nation_cd&quot;:392},{&quot;statistics_id&quot;:169,&quot;nation_cd&quot;:392},{&quot;statistics_id&quot;:167,&quot;nation_cd&quot;:392}]}" title="日本の食料自給率の推移"}
 ### 地域別の農業産出額の内訳
-<script type="text/javascript">
-createChartAsync(Chart.Bar, { "data_year": 2020, "region_cds": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] }, 'agricultural_production', {
-title: '地域別の農業産出額(2020年、%)',
-height: 500,
-legend: { position: 'top', maxLines: 3 },
-isStacked: 'percent',
-titleTextStyle: {
-fontSize: 14,
-}
-}, "./php/region_agricultural_production.php");
-</script>
-<div id="agricultural_production" class="mx-auto mt-10 mb-10" style="width: 100%;max-width: 800px;"></div>
+::chart{type="BarChart" dataset="region_agricultural_production" params="{&quot;data_year&quot;:2020,&quot;region_cds&quot;:[1,2,3,4,5,6,7,8,9,10]}" title="地域別の農業産出額(2020年、%)"}
 ::gazo
 ![](JP_rice_farming.webp){.border}
 稲作の盛んな地域
@@ -223,33 +108,7 @@ fontSize: 14,
 しかし、近年は安価な輸入材の増加で、木材自給率が低下しました。
 ::
 ::land-use{data_year="2019" params="392"}
-<script type="text/javascript">
-createChartAsync(Chart.Combo, {
-"params": ""
-}, 'self_sufficiency_rate_of_wood'
-, {
-title: '木材供給量と木材自給率の推移',
-height: 500,
-vAxes: {
-0: {
-title: '木材供給量(億㎥)'
-},
-1: {
-title: '木材自給率(%)'
-}
-},
-hAxis: { title: '年' },
-series: {
-// Left-Yの列のデータ
-0: { type: 'bars', targetAxisIndex: 0 },
-1: { type: 'bars', targetAxisIndex: 0 },
-// Right-Yの列のデータ
-2: { type: 'line', targetAxisIndex: 1 },
-},
-isStacked: true,
-}, "./php/wood_supply.php");
-</script>
-<div id="self_sufficiency_rate_of_wood" class="mx-auto mt-10 mb-10" style="width: 100%;max-width: 800px;"></div>
+::chart{type="ComboChart" dataset="wood_supply" params="{&quot;params&quot;:&quot;&quot;}" title="木材供給量と木材自給率の推移"}
 ### 木材輸入先
 ::top
 以前の日本は、東南アジア諸国から丸太を輸入していました。
@@ -267,18 +126,7 @@ isStacked: true,
 ::top
 近年、日本の木材輸入先は多角化しています。
 ::
-<script type="text/javascript">
-createChartAsync(Chart.Bar, { "statistics_ids": [84, 85, 86, 87] }, 'wood_importer', {
-title: '日本の木材輸入先(%)',
-height: 500,
-legend: { position: 'top', maxLines: 3 },
-isStacked: 'percent',
-titleTextStyle: {
-fontSize: 14,
-}
-}, "./php/statistics_bars2.php");
-</script>
-<div id="wood_importer" class="mx-auto mt-10 mb-10" style="width: 100%;max-width: 800px;"></div>
+::chart{type="BarChart" dataset="statistics_bars2" params="{&quot;statistics_ids&quot;:[84,85,86,87]}" title="日本の木材輸入先(%)"}
 ### 林業の課題
 ::top
 現在はやや回復傾向にありますが、日本の木材自給率が低下した理由には、次のことがあげられます。
@@ -294,66 +142,13 @@ fontSize: 14,
 ::last
 間伐などの管理が不十分な森林が増加しています。
 ::
-<script type="text/javascript">
-createChartAsync(Chart.Combo, {
-"params": ""
-}, 'forestry_worker'
-, {
-title: '日本の林業従事者数の推移と高齢化\n*高齢者率は65歳以上の従事者の割合\n**若年者率は35歳未満の従事者の割合',
-height: 500,
-vAxes: {
-0: {
-title: '林業従事者数(万人)'
-},
-1: {
-title: '割合(%)'
-}
-},
-hAxis: { title: '年' },
-series: {
-// Left-Yの列のデータ
-0: { type: 'bars', targetAxisIndex: 0 },
-// Right-Yの列のデータ
-1: { type: 'line', targetAxisIndex: 1 },
-2: { type: 'line', targetAxisIndex: 1 },
-},
-isStacked: true,
-}, "./php/forestry_worker.php");
-</script>
-<div id="forestry_worker" class="mx-auto mt-10 mb-10" style="width: 100%;max-width: 800px;"></div>
+::chart{type="ComboChart" dataset="forestry_worker" params="{&quot;params&quot;:&quot;&quot;}" title="日本の林業従事者数の推移と高齢化\n*高齢者率は65歳以上の従事者の割合\n**若年者率は35歳未満の従事者の割合"}
 ## 水産業
 ### 漁獲量の推移
 ::top
 日本の漁獲量はかつて世界最大でした。
 ::
-<script type="text/javascript">
-createChartAsync(Chart.Combo, { "nation_cd": 392 }, 'jp_fish_catche', {
-title: '日本の漁業・養殖業の生産量の推移',
-height: 500,
-vAxes: {
-0: {
-title: '輸入量(万トン)'
-},
-1: {
-title: '漁獲量(万トン)'
-}
-},
-legend: { position: 'top', maxLines: 3 },
-hAxis: { title: '年' },
-series: {
-// Left-Yの列のデータ
-0: { type: 'line', targetAxisIndex: 0 },
-// Right-Yの列のデータ
-1: { type: 'area', targetAxisIndex: 1 },
-2: { type: 'area', targetAxisIndex: 1 },
-3: { type: 'area', targetAxisIndex: 1 },
-4: { type: 'area', targetAxisIndex: 1 },
-5: { type: 'area', targetAxisIndex: 1 },
-},
-isStacked: true,
-}, "./php/fish_catche_detail.php");
-</script>
-<div id="jp_fish_catche" class="mx-auto mt-10 mb-10" style="width: 100%;max-width: 800px;"></div>
+::chart{type="ComboChart" dataset="fish_catche_detail" params="{&quot;nation_cd&quot;:392}" title="日本の漁業・養殖業の生産量の推移"}
 #### 高度経済成長期
 ::top
 安価な燃料に支えられ、遠洋漁業が増加しました。
@@ -381,149 +176,9 @@ isStacked: true,
 日本人によるエビ需要に応えるため、東南アジアではマングローブを破壊して養殖場を造成しています。
 ::
 ### 水産物の輸入
-<div id="import_salmon_trout" class="mx-auto mt-10 mb-10 w-100 w-max800"></div>
-<div id="import_bonito_tuna" class="mx-auto mt-10 mb-10 w-100 w-max800"></div>
-<div id="import_shrimp" class="mx-auto mt-10 mb-10 w-100 w-max800"></div>
-<div id="import_crab" class="mx-auto mt-10 mb-10 w-100 w-max800"></div>
-<div id="import_squid" class="mx-auto mt-10 mb-10 w-100 w-max800"></div>
-<div id="import_codfish" class="mx-auto mt-10 mb-10 w-100 w-max800"></div>
-<script type="text/javascript">
-fetchChart('./php/statistics_any_name.php'
-, {
-method: 'POST',
-body: JSON.stringify({
-"params": [
-{
-statistics_id: 200,
-}
-],
-"chart": [
-{
-"type": Chart.Pie,
-}
-]
-}),
-}
-, Chart.Pie
-, {
-title: 'サケ・マス類の輸入相手国(2019年、百万円、%)',
-legend: { position: 'top' },
-height: 300
-}
-, 'import_salmon_trout');
-fetchChart('./php/statistics_any_name.php'
-, {
-method: 'POST',
-body: JSON.stringify({
-"params": [
-{
-statistics_id: 201,
-}
-],
-"chart": [
-{
-"type": Chart.Pie,
-}
-]
-}),
-}
-, Chart.Pie
-, {
-title: 'カツオ・マグロ類の輸入相手国(2019年、百万円、%)',
-legend: { position: 'top' },
-height: 300
-}
-, 'import_bonito_tuna');
-fetchChart('./php/statistics_any_name.php'
-, {
-method: 'POST',
-body: JSON.stringify({
-"params": [
-{
-statistics_id: 202,
-}
-],
-"chart": [
-{
-"type": Chart.Pie,
-}
-]
-}),
-}
-, Chart.Pie
-, {
-title: 'エビの輸入相手国(2019年、百万円、%)',
-legend: { position: 'top' },
-height: 300
-}
-, 'import_shrimp');
-fetchChart('./php/statistics_any_name.php'
-, {
-method: 'POST',
-body: JSON.stringify({
-"params": [
-{
-statistics_id: 203,
-}
-],
-"chart": [
-{
-"type": Chart.Pie,
-}
-]
-}),
-}
-, Chart.Pie
-, {
-title: 'カニの輸入相手国(2019年、百万円、%)',
-legend: { position: 'top' },
-height: 300
-}
-, 'import_crab');
-fetchChart('./php/statistics_any_name.php'
-, {
-method: 'POST',
-body: JSON.stringify({
-"params": [
-{
-statistics_id: 204,
-}
-],
-"chart": [
-{
-"type": Chart.Pie,
-}
-]
-}),
-}
-, Chart.Pie
-, {
-title: 'イカの輸入相手国(2019年、百万円、%)',
-legend: { position: 'top' },
-height: 300
-}
-, 'import_squid');
-fetchChart('./php/statistics_any_name.php'
-, {
-method: 'POST',
-body: JSON.stringify({
-"params": [
-{
-statistics_id: 205,
-}
-],
-"chart": [
-{
-"type": Chart.Pie,
-}
-]
-}),
-}
-, Chart.Pie
-, {
-title: 'タラ類の輸入相手国(2019年、百万円、%)',
-legend: { position: 'top' },
-height: 300
-}
-, 'import_codfish');
-</script>
+::chart{type="PieChart" dataset="statistics_any_name" params="{&quot;params&quot;:[200]}" title="サケ・マス類の輸入相手国(2019年、百万円、%)"}
+::chart{type="PieChart" dataset="statistics_any_name" params="{&quot;params&quot;:[201]}" title="カツオ・マグロ類の輸入相手国(2019年、百万円、%)"}
+::chart{type="PieChart" dataset="statistics_any_name" params="{&quot;params&quot;:[202]}" title="エビの輸入相手国(2019年、百万円、%)"}
+::chart{type="PieChart" dataset="statistics_any_name" params="{&quot;params&quot;:[203]}" title="カニの輸入相手国(2019年、百万円、%)"}
+::chart{type="PieChart" dataset="statistics_any_name" params="{&quot;params&quot;:[204]}" title="イカの輸入相手国(2019年、百万円、%)"}
+::chart{type="PieChart" dataset="statistics_any_name" params="{&quot;params&quot;:[205]}" title="タラ類の輸入相手国(2019年、百万円、%)"}

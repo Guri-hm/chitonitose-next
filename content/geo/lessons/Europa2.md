@@ -469,14 +469,14 @@ EUでは、輸出入時に価格を調節するようにしています。
 ::statistics{id="43" order="desc" limit="10" offset="0"}
 ## 一次エネルギーの構成
 ### ドイツ
-::chart{type="PieChart" dataset="power_generation" filter="nation_cd=276" fields="thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス" title="ドイツ (億kWh、2019年)"}
+::chart{type="PieChart" dataset="power_generation" params="{&quot;nation_cd&quot;:276}" title="ドイツ (億kWh、2019年)"}
 ### フランス
-::chart{type="PieChart" dataset="power_generation" filter="nation_cd=250" fields="thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス" title="フランス (億kWh、2019年)"}
+::chart{type="PieChart" dataset="power_generation" params="{&quot;nation_cd&quot;:250}" title="フランス (億kWh、2019年)"}
 ### ポーランド
-::chart{type="PieChart" dataset="power_generation" filter="nation_cd=616" fields="thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス" title="ポーランド (億kWh、2019年)"}
+::chart{type="PieChart" dataset="power_generation" params="{&quot;nation_cd&quot;:616}" title="ポーランド (億kWh、2019年)"}
 ### デンマーク
-::chart{type="PieChart" dataset="power_generation" filter="nation_cd=208" fields="thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス" title="デンマーク (億kWh、2019年)"}
+::chart{type="PieChart" dataset="power_generation" params="{&quot;nation_cd&quot;:208}" title="デンマーク (億kWh、2019年)"}
 ### ノルウェー
-::chart{type="PieChart" dataset="power_generation" filter="nation_cd=578" fields="thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス" title="ノルウェー (億kWh、2019年)"}
+::chart{type="PieChart" dataset="power_generation" params="{&quot;nation_cd&quot;:578}" title="ノルウェー (億kWh、2019年)"}
 ### アイスランド
-::chart{type="PieChart" dataset="power_generation" filter="nation_cd=352" fields="thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス" title="アイスランド (億kWh、2019年)"}
+::chart{type="PieChart" dataset="power_generation" params="{&quot;nation_cd&quot;:352}" title="アイスランド (億kWh、2019年)"}

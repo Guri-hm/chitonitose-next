@@ -307,6 +307,81 @@ node scripts/regenerate-geo-lessons.js
 例えば`Chart.Bar`+`statistics_ids`系の棒グラフ等は今回未対応。必要になれば
 `CHART_ENDPOINT_CONFIGS`に追記し、`convertChartScripts()`と同じパターンで追加する）。
 
+### ✅ 残り全グラフエンドポイントの実装完了（追記）
+
+上記のpower_generation限定対応の後、「未対応のグラフエンドポイントを全て対応してほしい」という
+依頼を受け、geo配下で実際に到達可能なレッスンページで使われている**グラフ埋め込み関数を4種類**
+（元々`createChartAsync`のみ対応していたが、他に3種類の別関数が使われていることが判明）
+全てに対応した。
+
+**発見した4種類のグラフ埋め込み関数と対応内容**:
+1. `createChartAsync(Chart.XXX, {params}, 'targetId', {options}, "./php/YYY.php")` —
+   power_generationに加え、`statistics_bar2`/`statistics_bars2`/`statistics_combo`/
+   `statistics_highest`/`wood_type`/`wood_use`/`wood_use_comparison`/`wood_supply`/
+   `forestry_worker`/`fish_catche`系3種/`foreign_population`系2種/`ha_per_farmer`/
+   `production_per_ha`/`agricultural_work_force`/`region_agricultural_production`/
+   `Korea_gdp`/`river_flow_rate`/`export_items_bar`/`different_statistics_json`の
+   22エンドポイントを追加。
+2. `fetchChart(phpPath, {method,body:JSON.stringify(...)}, Chart.XXX, {options}, 'targetId')` —
+   引数順序が異なる別関数。`statistics_any_name.php`（18箇所で使用）に対応。
+   未対応の`jp_prefectures_statistical_data_json.php`（日本地図の色分け、Chart.Geo）は
+   対象外のまま安全に除去する。
+3. `lineChartAsync(statisticsId, [nationCd,...], 'targetId', {options})` — phpパスが
+   呼び出し側に現れずJS関数内部にハードコードされている専用関数。`statistics_line`という
+   固定dataset名で対応。
+4. `google.charts.load(...)`/`google.load(...)`＋`google.visualization.arrayToDataTable([...])`を
+   直接呼ぶ、PHPを介さないデータ直書きの手書きチャート（China.md「一次エネルギー構成」、
+   world_population.md「地域別人口の推移」等7ファイル）。`dataset="static"`として、
+   静的な`data`配列と`options`オブジェクトをそのまま`params`に埋め込んで再現。
+
+**⚠️ 重要な追加発見（実行時エラーによるページクラッシュ）**: 当初「未対応のエンドポイントは
+生scriptのまま残しても`dangerouslySetInnerHTML`経由なので無害」という前提だったが、これは
+**誤りだった**。Next.jsは`output:'export'`（静的HTML）のため、`dangerouslySetInnerHTML`の
+内容は最終的に**実HTMLファイルにそのまま書き出され、ブラウザの通常のHTML解析時に
+`<script>`タグが実行される**（動的に`.innerHTML=`する場合とは異なる）。そのため、
+`createChartAsync`/`fetchChart`/`lineChartAsync`のいずれも、変換できない（対応表に無い）
+呼び出しを生scriptのまま放置すると「XXX is not defined」という実行時エラーで
+**ページ全体がクラッシュする**（Next.jsのエラーオーバーレイが表示される）ことが判明。
+→ 全ての変換関数を「対応表に無い場合でも呼び出し自体は必ず除去する」方式に修正
+（ディレクティブを生成しないだけで、scriptタグの中身は必ず空にする）。
+
+**その他に発見・修正した実装バグ**:
+- `GoogleChart.tsx`に「1ページに複数チャートが同時マウントされるとgstatic loaderスクリプトを
+  複数回読み込み、`google.charts.load`のコールバック登録が競合し`google is not defined`に
+  なる」という実在の競合バグを発見。モジュールレベルの単一Promiseでローダー読み込みを
+  1回に集約するよう修正（`loadGoogleChartsOnce()`）。
+- `statistics_bars2`（複数`statistics_ids`指定時）の実データ確認で、各idは実は「ある年の
+  スナップショット」を表し、`nation_name`列がカテゴリ名（輸入先国名・産業分類名等）として
+  転用されていることが判明（例: id=84→「日本の木材輸入先(1965年)」）。当初「日本のみに絞った
+  純粋な時系列」と誤って実装しており、データが見つからず表示されなかった。正しくは
+  各idの`data_name`から年を抽出し、年を横軸にした構成比（100%積み上げ棒）として実装し直した。
+- `<script>`タグの検出正規表現が`type="text/javascript"`属性必須になっていたため、
+  属性無しの`<script>`（`fetchChart`/`google.load`系で使用）や、`type="text/javascript"`以外の
+  属性を持つタグを見逃していた。`<script[^>]*>`に緩和して対応。
+
+**対象範囲外として意図的に除外したもの**:
+- `Chart.Geo`（世界地図・日本地図の色分け）系6エンドポイント
+  （`statistics_json`/`nation_population_json`/`birthrate_json`/`growth_json`/
+  `per_capita_gni_json`/`jp_prefectures_statistical_data_json`）は、対応する
+  `geo_statistical_data_*.html`が**そもそもNext.js側に移行されたページとして存在しない**ため
+  実質到達不可能と判断し未対応（`jp_prefectures_statistical_data_json`のみ`tertiary_industry.html`
+  内に存在するが、安全に除去するのみで変換はしていない）。
+- `production_bar.php`（`fetchChart`経由）も同様に到達不可能なページのみで使用のため未対応。
+- `fetchData('./php/request.php', ...)`（`geo_visualize_population.html`のみ、到達不可能）も未対応。
+
+新規実装したデータ層: `sqlite-to-json.js`に12テーブル追加
+（`wood_use`/`wood_supply`/`forestry_worker`/`fish_catche`/`foreign_population`/`nationality`/
+`production_per_ha`/`region_agricultural_production`/`region_info`/`per_unit_of_gdp`/
+`river_flow_rate`/`river_info`）。`lib/dataLoader.ts`に対応する型・ローダーと
+`loadLessonChartDatasets()`への統合を追加。データ整形ロジックは`lib/chartBuilders.ts`
+（新規、23個のbuilder関数を`CHART_BUILDERS`レジストリに登録）に集約し、`LessonChart.tsx`は
+`dataset`名でbuilderを呼び出すだけの薄いディスパッチャに書き換えた
+（DBテーブルの`renderLessonDbTables.ts`と同じアーキテクチャパターン）。
+
+ブラウザで28ページ（全対象ページ）を自動巡回し、`pageerror`イベントとSVG描画数を確認。
+全ページでコンソールエラー0件・SVG描画あり（1〜20個）を確認済み。`npm run build`も成功
+（既存の無関係なjh MDXエラーのみ、exit code 0）。
+
 ### `createRoot` マウント不具合の根本原因が判明（解決済み・要恒久対応）
 
 React公式リポジトリで該当する変更を発見した:

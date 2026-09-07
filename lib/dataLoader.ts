@@ -318,6 +318,108 @@ export interface UrbanPopulationRow {
   population: number | null;
 }
 
+// ::chart{}用（旧wood_type.php/wood_use.php/wood_use_comparison.php相当）
+export interface WoodUseRow {
+  nation_cd: number;
+  data_year: number;
+  timber: number;
+  fuel_wood: number;
+  coniferous_tree: number;
+  broadleaf_tree: number;
+  production: number;
+}
+
+// ::chart{}用（旧wood_supply.php相当、木材供給量と自給率の推移）
+export interface WoodSupplyRow {
+  data_year: number;
+  domestic_timber: number;
+  imported_timber: number;
+}
+
+// ::chart{}用（旧forestry_worker.php相当、林業従事者数の推移）
+export interface ForestryWorkerRow {
+  data_year: number;
+  population: number;
+  aging_rate: number;
+  youth_rate: number;
+}
+
+// ::chart{}用（旧fish_catche.php/fish_catche_detail.php/fish_catche_world.php相当）
+export interface FishCatcheRow {
+  nation_cd: number;
+  data_year: number;
+  total: number | null;
+  pelagic_fishery: number | null;
+  offshore_fishery: number | null;
+  coastal_fishery: number | null;
+  sea_culture: number | null;
+  inland_water_culture: number | null;
+  import: number | null;
+  inland_fishery: number | null;
+}
+
+// ::chart{}用（旧foreign_population.php相当、国籍cd=1〜7固定）
+export interface ForeignPopulationRow {
+  cd: number;
+  data_year: number;
+  population: number;
+}
+
+export interface NationalityRow {
+  cd: number;
+  nationality_name: string;
+}
+
+// ::chart{}用（旧production_per_ha.php相当）
+export interface ProductionPerHaRow {
+  nation_cd: number;
+  data_year: number;
+  production_per_ha: number;
+}
+
+// ::chart{}用（旧region_agricultural_production.php相当）
+export interface RegionAgriculturalProductionRow {
+  region_cd: number;
+  data_year: number;
+  rice: number;
+  tubers_roots: number;
+  vegetables: number;
+  fruits: number;
+  animal_husbandry: number;
+}
+
+export interface RegionInfoRow {
+  cd: number;
+  name: string;
+}
+
+// ::chart{}用（旧Korea_gdp.php相当、1人あたりGDP）
+export interface PerUnitOfGdpRow {
+  nation_cd: number;
+  dollar: number;
+  data_year: number;
+}
+
+// ::chart{}用（旧river_flow_rate.php相当、月別流量）
+export interface RiverFlowRateRow {
+  river_cd: number;
+  data_month: number;
+  data_val: number;
+}
+
+export interface RiverInfoRow {
+  cd: number;
+  name: string;
+}
+
+// ::chart{}用（旧agricultural_work_force.php相当、農業就業人口の推移）
+export interface AgriculturalWorkForceRow {
+  data_year: number;
+  population_statistical_method: number;
+  population: number;
+  elderly: number;
+}
+
 // ::area-population{...} 用（旧area_population.php相当、全国ランキング用でnation_cdは含まない）
 export interface AreaPopulationRow {
   short_name: string;
@@ -406,6 +508,23 @@ export const loadItemInfo = () => loadJSON<ItemInfo[]>('item-info.json');
 export const loadImportPartnersEachItems = () =>
   loadJSON<ImportPartnersEachItem[]>('import-partners-each-items.json');
 export const loadUrbanPopulation = () => loadJSON<UrbanPopulationRow[]>('urban-population.json');
+export const loadWoodUse = () => loadJSON<WoodUseRow[]>('wood-use.json');
+export const loadWoodSupply = () => loadJSON<WoodSupplyRow[]>('wood-supply.json');
+export const loadForestryWorker = () => loadJSON<ForestryWorkerRow[]>('forestry-worker.json');
+export const loadFishCatche = () => loadJSON<FishCatcheRow[]>('fish-catche.json');
+export const loadForeignPopulation = () => loadJSON<ForeignPopulationRow[]>('foreign-population.json');
+export const loadNationality = () => loadJSON<NationalityRow[]>('nationality.json');
+export const loadProductionPerHa = () => loadJSON<ProductionPerHaRow[]>('production-per-ha.json');
+export const loadRegionAgriculturalProduction = () =>
+  loadJSON<RegionAgriculturalProductionRow[]>('region-agricultural-production.json');
+export const loadRegionInfo = () => loadJSON<RegionInfoRow[]>('region-info.json');
+export const loadPerUnitOfGdp = () => loadJSON<PerUnitOfGdpRow[]>('per-unit-of-gdp.json');
+export const loadRiverFlowRate = () => loadJSON<RiverFlowRateRow[]>('river-flow-rate.json');
+export const loadRiverInfo = () => loadJSON<RiverInfoRow[]>('river-info.json');
+export const loadAgriculturalWorkForce = () =>
+  loadJSON<AgriculturalWorkForceRow[]>('agricultural-workforce.json');
+export const loadForeignPopulationPrefecture = () => loadJSON<any[]>('foreign-population-prefecture.json');
+export const loadPrefectures = () => loadJSON<any[]>('prefectures.json');
 
 /**
  * レッスン本文の::basic-data / ::statistics / ::export-items / ::import-items
@@ -505,11 +624,76 @@ export async function loadLessonDbDatasets() {
  * dataset名(power_generationなど)をキーにしたレコード配列を返す
  */
 export async function loadLessonChartDatasets(): Promise<Record<string, any[]>> {
-  const [powerGeneration] = await Promise.all([
+  const [
+    powerGeneration,
+    statisticsData,
+    statisticsInfo,
+    statisticsChangesData,
+    nations,
+    exportItems,
+    woodUse,
+    woodSupply,
+    forestryWorker,
+    fishCatche,
+    foreignPopulation,
+    nationality,
+    landUse,
+    productionPerHa,
+    regionAgriculturalProduction,
+    regionInfo,
+    perUnitOfGdp,
+    riverFlowRate,
+    riverInfo,
+    agriculturalWorkForce,
+    foreignPopulationPrefecture,
+    prefectures,
+  ] = await Promise.all([
     loadPowerGeneration(),
+    loadStatisticsData(),
+    loadStatisticsInfo(),
+    loadStatisticsChangesData(),
+    loadNations(),
+    loadExportItems(),
+    loadWoodUse(),
+    loadWoodSupply(),
+    loadForestryWorker(),
+    loadFishCatche(),
+    loadForeignPopulation(),
+    loadNationality(),
+    loadLandUse(),
+    loadProductionPerHa(),
+    loadRegionAgriculturalProduction(),
+    loadRegionInfo(),
+    loadPerUnitOfGdp(),
+    loadRiverFlowRate(),
+    loadRiverInfo(),
+    loadAgriculturalWorkForce(),
+    loadForeignPopulationPrefecture(),
+    loadPrefectures(),
   ]);
   return {
     power_generation: powerGeneration,
+    statistics_data: statisticsData,
+    statistics_info: statisticsInfo,
+    statistics_changes_data: statisticsChangesData,
+    nations,
+    export_items: exportItems,
+    wood_use: woodUse,
+    wood_supply: woodSupply,
+    forestry_worker: forestryWorker,
+    fish_catche: fishCatche,
+    foreign_population: foreignPopulation,
+    nationality,
+    land_use: landUse,
+    production_per_ha: productionPerHa,
+    region_agricultural_production: regionAgriculturalProduction,
+    region_info: regionInfo,
+    per_unit_of_gdp: perUnitOfGdp,
+    river_flow_rate: riverFlowRate,
+    river_info: riverInfo,
+    agricultural_work_force: agriculturalWorkForce,
+    foreign_population_prefecture: foreignPopulationPrefecture,
+    prefectures,
   };
 }
 

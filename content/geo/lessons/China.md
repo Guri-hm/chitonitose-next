@@ -509,27 +509,8 @@
 ::last
 消費の多い石炭は、輸入もおこなって不足を補っています。
 ::
-<script type="text/javascript">
-google.charts.load('current', { 'packages': ['corechart'] });
-google.charts.setOnLoadCallback(drawChart);
-function drawChart() {
-var data = google.visualization.arrayToDataTable([
-['国', '石油', '天然ガス', '石炭', '原子力', '水力', 'その他'],
-['中国', 20, 8, 57, 2, 8, 5]
-]);
-var options = {
-title: '中国の一次エネルギー構成（2020年、%）',
-hAxis: {},
-vAxis: { maxValue: 100, minValue: 0 },
-isStacked: true
-// isStacked=trueで積み上げ(デフォルトはfalse)
-};
-var chart = new google.visualization.BarChart(document.getElementById('primary_energy'));
-chart.draw(data, options);
-}
-</script>
-<div id="primary_energy" style="width: 100%; height: auto;"></div>
-::chart{type="PieChart" dataset="power_generation" filter="nation_cd=156" fields="thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス" title="中国 (億kWh、2019年)"}
+::chart{type="BarChart" dataset="static" params="{&quot;data&quot;:[[&quot;国&quot;,&quot;石油&quot;,&quot;天然ガス&quot;,&quot;石炭&quot;,&quot;原子力&quot;,&quot;水力&quot;,&quot;その他&quot;],[&quot;中国&quot;,20,8,57,2,8,5]],&quot;options&quot;:{&quot;title&quot;:&quot;中国の一次エネルギー構成（2020年、%）&quot;,&quot;hAxis&quot;:{},&quot;vAxis&quot;:{&quot;maxValue&quot;:100,&quot;minValue&quot;:0},&quot;isStacked&quot;:true}}" title="中国の一次エネルギー構成（2020年、%）"}
+::chart{type="PieChart" dataset="power_generation" params="{&quot;nation_cd&quot;:156}" title="中国 (億kWh、2019年)"}
 ## 貿易
 ::top
 2001年、[[WTO]]（[[世界貿易機関]]）に加盟しました。

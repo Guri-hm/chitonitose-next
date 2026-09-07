@@ -71,17 +71,7 @@
 パルプ<div class="lead">木材を機械的あるいは化学的に処理してつくられる粗繊維物質
 ::
 </div>
-<script type="text/javascript">
-createChartAsync(Chart.Column, { "params": [392, 124, 643, 840, 276, 76, 156, 704, 356, 288] }, 'wood_use_comparison'
-, {
-title: '主な国の木材生産の割合 (2020年)',
-colors: ['#109618', '#dc3912'],
-legend: { position: 'top', maxLines: 3 },
-bar: { groupWidth: '60%' },
-isStacked: 'percent',
-}, "./php/wood_use_comparison.php");
-</script>
-<div id="wood_use_comparison" style="width: 100%; height: 350px"></div>
+::chart{type="ColumnChart" dataset="wood_use_comparison" params="{&quot;params&quot;:[392,124,643,840,276,76,156,704,356,288]}" title="主な国の木材生産の割合 (2020年)"}
 ::gazo
 ![](pulp.webp)
 木材パルプ
@@ -102,33 +92,9 @@ isStacked: 'percent',
 ::last
 特にアマゾン川流域の熱帯林は[[セルバ]]と呼ばれます。
 ::
-<script type="text/javascript">
-createChartAsync(Chart.Pie, { "nation_cd": 76 }, 'Brazil_wood_type', {
-title: 'ブラジルの森林の割合 (%、2020年)',
-legend: { position: 'top', maxLines: 3 },
-colors: ['#9370db', '#b7db70'],
-sliceVisibilityThreshold: 0
-}, "./php/wood_type.php");
-</script>
-<div id="Brazil_wood_type" style="width: 100%; height: 350px"></div>
-<script type="text/javascript">
-createChartAsync(Chart.Pie, { "nation_cd": 360 }, 'Indonesia_wood_type', {
-title: 'インドネシアの森林の割合 (%、2020年)',
-legend: { position: 'top', maxLines: 3 },
-colors: ['#9370db', '#b7db70'],
-sliceVisibilityThreshold: 0
-}, "./php/wood_type.php");
-</script>
-<div id="Indonesia_wood_type" style="width: 100%; height: 350px"></div>
-<script type="text/javascript">
-createChartAsync(Chart.Pie, { "nation_cd": 180 }, 'Congo_Re_wood_type', {
-title: 'コンゴ民主の森林の割合 (%、2020年)',
-legend: { position: 'top', maxLines: 3 },
-colors: ['#9370db', '#b7db70'],
-sliceVisibilityThreshold: 0
-}, "./php/wood_type.php");
-</script>
-<div id="Congo_Re_wood_type" style="width: 100%; height: 350px"></div>
+::chart{type="PieChart" dataset="wood_type" params="{&quot;nation_cd&quot;:76}" title="ブラジルの森林の割合 (%、2020年)"}
+::chart{type="PieChart" dataset="wood_type" params="{&quot;nation_cd&quot;:360}" title="インドネシアの森林の割合 (%、2020年)"}
+::chart{type="PieChart" dataset="wood_type" params="{&quot;nation_cd&quot;:180}" title="コンゴ民主の森林の割合 (%、2020年)"}
 #### 特色
 ::top
 熱帯林は多種多様な樹種が混在して密集し、ほしいと思う樹種の大量取得が困難です。
@@ -150,24 +116,8 @@ sliceVisibilityThreshold: 0
 ::last
 例えば、インドとエチオピアの木材用途のグラフを見ると、薪炭材の割合が高いことがわかります。
 ::
-<script type="text/javascript">
-createChartAsync(Chart.Pie, { "nation_cd": 356 }, 'India_wood_use', {
-title: 'インドの木材生産の割合 (百万㎥、2020年)',
-legend: { position: 'top', maxLines: 3 },
-colors: ['#109618', '#dc3912'],
-sliceVisibilityThreshold: 0
-}, "./php/wood_use.php");
-</script>
-<div id="India_wood_use" style="width: 100%; height: 350px"></div>
-<script type="text/javascript">
-createChartAsync(Chart.Pie, { "nation_cd": 231 }, 'Ethiopia_wood_use', {
-title: 'エチオピアの木材生産の割合 (百万㎥、2020年)',
-legend: { position: 'top', maxLines: 3 },
-colors: ['#109618', '#dc3912'],
-sliceVisibilityThreshold: 0
-}, "./php/wood_use.php");
-</script>
-<div id="Ethiopia_wood_use" style="width: 100%; height: 350px"></div>
+::chart{type="PieChart" dataset="wood_use" params="{&quot;nation_cd&quot;:356}" title="インドの木材生産の割合 (百万㎥、2020年)"}
+::chart{type="PieChart" dataset="wood_use" params="{&quot;nation_cd&quot;:231}" title="エチオピアの木材生産の割合 (百万㎥、2020年)"}
 <h5>開発</h5>
 ::top
 ブラジルなどの発展途上国では、==農場・牧場の開発や鉱山開発のために熱帯林が大規模に伐採されています==。
@@ -220,15 +170,7 @@ sliceVisibilityThreshold: 0
 ::last
 特に温帯の南部には常緑広葉樹が、冷涼な北部には落葉広葉樹と針葉樹の混合林が分布します。
 ::
-<script type="text/javascript">
-createChartAsync(Chart.Pie, { "nation_cd": 156 }, 'China_wood_type', {
-title: '中国の森林の割合 (%、2020年)',
-legend: { position: 'top', maxLines: 3 },
-colors: ['#9370db', '#b7db70'],
-sliceVisibilityThreshold: 0
-}, "./php/wood_type.php");
-</script>
-<div id="China_wood_type" style="width: 100%; height: 350px"></div>
+::chart{type="PieChart" dataset="wood_type" params="{&quot;nation_cd&quot;:156}" title="中国の森林の割合 (%、2020年)"}
 #### 特色
 ::top
 温帯の地域は人類の開発の歴史が比較的早かったこともあり、天然林（伐採などで人の手が入っても自然の力で更新している森林）はほとんど残らず、人工林ばかりです。
@@ -269,42 +211,10 @@ sliceVisibilityThreshold: 0
 ::last
 このような理由から、亜寒帯林（冷帯林）が分布するカナダ・ロシア・北欧は、木材の輸出が盛んです。
 ::
-<script type="text/javascript">
-createChartAsync(Chart.Pie, { "nation_cd": 124 }, 'Canada_wood_type', {
-title: 'カナダの森林の割合 (%、2020年)',
-legend: { position: 'top', maxLines: 3 },
-colors: ['#9370db', '#b7db70'],
-sliceVisibilityThreshold: 0
-}, "./php/wood_type.php");
-</script>
-<div id="Canada_wood_type" style="width: 100%; height: 350px"></div>
-<script type="text/javascript">
-createChartAsync(Chart.Pie, { "nation_cd": 643 }, 'Russia_wood_type', {
-title: 'ロシアの森林の割合 (%、2020年)',
-legend: { position: 'top', maxLines: 3 },
-colors: ['#9370db', '#b7db70'],
-sliceVisibilityThreshold: 0
-}, "./php/wood_type.php");
-</script>
-<div id="Russia_wood_type" style="width: 100%; height: 350px"></div>
-<script type="text/javascript">
-createChartAsync(Chart.Pie, { "nation_cd": 246 }, 'Finland_wood_type', {
-title: 'フィンランドの森林の割合 (%、2020年)',
-legend: { position: 'top', maxLines: 3 },
-colors: ['#9370db', '#b7db70'],
-sliceVisibilityThreshold: 0
-}, "./php/wood_type.php");
-</script>
-<div id="Finland_wood_type" style="width: 100%; height: 350px"></div>
-<script type="text/javascript">
-createChartAsync(Chart.Pie, { "nation_cd": 554 }, 'NZ_wood_type', {
-title: 'ニュージーランドの森林の割合 (%、2020年)',
-legend: { position: 'top', maxLines: 3 },
-colors: ['#9370db', '#b7db70'],
-sliceVisibilityThreshold: 0
-}, "./php/wood_type.php");
-</script>
-<div id="NZ_wood_type" style="width: 100%; height: 350px"></div>
+::chart{type="PieChart" dataset="wood_type" params="{&quot;nation_cd&quot;:124}" title="カナダの森林の割合 (%、2020年)"}
+::chart{type="PieChart" dataset="wood_type" params="{&quot;nation_cd&quot;:643}" title="ロシアの森林の割合 (%、2020年)"}
+::chart{type="PieChart" dataset="wood_type" params="{&quot;nation_cd&quot;:246}" title="フィンランドの森林の割合 (%、2020年)"}
+::chart{type="PieChart" dataset="wood_type" params="{&quot;nation_cd&quot;:554}" title="ニュージーランドの森林の割合 (%、2020年)"}
 ::statistics{id="192" order="desc" limit="8" offset="0"}
 ::statistics{id="190" order="desc" limit="8" offset="0"}
 ::statistics{id="191" order="desc" limit="8" offset="0"}
@@ -320,42 +230,8 @@ sliceVisibilityThreshold: 0
 しかし、近年は安価な輸入材の増加で、木材自給率が低下しました。
 ::
 ::land-use{data_year="2019" params="392"}
-<script type="text/javascript">
-createChartAsync(Chart.Combo, {
-"params": ""
-}, 'self_sufficiency_rate_of_wood'
-, {
-title: '木材供給量と木材自給率の推移',
-height: 500,
-vAxes: {
-0: {
-title: '木材供給量(億㎥)'
-},
-1: {
-title: '木材自給率(%)'
-}
-},
-hAxis: { title: '年' },
-series: {
-// Left-Yの列のデータ
-0: { type: 'bars', targetAxisIndex: 0 },
-1: { type: 'bars', targetAxisIndex: 0 },
-// Right-Yの列のデータ
-2: { type: 'line', targetAxisIndex: 1 },
-},
-isStacked: true,
-}, "./php/wood_supply.php");
-</script>
-<div id="self_sufficiency_rate_of_wood" class="mx-auto mt-10 mb-10" style="width: 100%;max-width: 800px;"></div>
-<script type="text/javascript">
-createChartAsync(Chart.Pie, { "nation_cd": 392 }, 'Japan_wood_type', {
-title: '日本の森林の割合 (%、2020年)',
-legend: { position: 'top', maxLines: 3 },
-colors: ['#9370db', '#b7db70'],
-sliceVisibilityThreshold: 0
-}, "./php/wood_type.php");
-</script>
-<div id="Japan_wood_type" style="width: 100%; height: 350px"></div>
+::chart{type="ComboChart" dataset="wood_supply" params="{&quot;params&quot;:&quot;&quot;}" title="木材供給量と木材自給率の推移"}
+::chart{type="PieChart" dataset="wood_type" params="{&quot;nation_cd&quot;:392}" title="日本の森林の割合 (%、2020年)"}
 ### 日本の木材輸入先
 ::top
 以前の日本は、東南アジア諸国から丸太を輸入していました。
@@ -373,18 +249,7 @@ sliceVisibilityThreshold: 0
 ::top
 近年、日本の木材輸入先は多角化しています。
 ::
-<script type="text/javascript">
-createChartAsync(Chart.Bar, { statistics_ids: [84, 85, 86, 87] }, 'wood_importer', {
-title: '日本の木材輸入先(%)',
-height: 500,
-legend: { position: 'top', maxLines: 3 },
-isStacked: 'percent',
-titleTextStyle: {
-fontSize: 14,
-}
-}, "./php/statistics_bars2.php");
-</script>
-<div id="wood_importer" class="mx-auto mt-10 mb-10" style="width: 100%;max-width: 800px;"></div>
+::chart{type="BarChart" dataset="statistics_bars2" params="{&quot;statistics_ids&quot;:[84,85,86,87]}" title="日本の木材輸入先(%)"}
 ### 日本の林業の課題
 ::top
 現在はやや回復傾向にありますが、日本の木材自給率が低下した理由には、次のことがあげられます。
@@ -400,30 +265,4 @@ fontSize: 14,
 ::last
 間伐などの管理が不十分な森林が増加しています。
 ::
-<script type="text/javascript">
-createChartAsync(Chart.Combo, {
-"params": ""
-}, 'forestry_worker'
-, {
-title: '日本の林業従事者数の推移と高齢化\n*高齢者率は65歳以上の従事者の割合\n**若年者率は35歳未満の従事者の割合',
-height: 500,
-vAxes: {
-0: {
-title: '林業従事者数(万人)'
-},
-1: {
-title: '割合(%)'
-}
-},
-hAxis: { title: '年' },
-series: {
-// Left-Yの列のデータ
-0: { type: 'bars', targetAxisIndex: 0 },
-// Right-Yの列のデータ
-1: { type: 'line', targetAxisIndex: 1 },
-2: { type: 'line', targetAxisIndex: 1 },
-},
-isStacked: true,
-}, "./php/forestry_worker.php");
-</script>
-<div id="forestry_worker" class="mx-auto mt-10 mb-10" style="width: 100%;max-width: 800px;"></div>
+::chart{type="ComboChart" dataset="forestry_worker" params="{&quot;params&quot;:&quot;&quot;}" title="日本の林業従事者数の推移と高齢化\n*高齢者率は65歳以上の従事者の割合\n**若年者率は35歳未満の従事者の割合"}

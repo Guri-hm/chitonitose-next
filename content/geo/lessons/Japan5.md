@@ -6,17 +6,7 @@
 ::last
 ただし、通勤には在来線や新幹線などの鉄道も利用されるため、他国に比べて鉄道の割合が高いです。
 ::
-<script type="text/javascript">
-createChartAsync(Chart.Bar, { statistics_ids: [140, 141] }, 'jp_passenger_transportation', {
-title: '日本の旅客輸送(%)',
-legend: { position: 'top', maxLines: 3 },
-isStacked: 'percent',
-titleTextStyle: {
-fontSize: 14,
-}
-}, "./php/statistics_bars2.php");
-</script>
-<div id="jp_passenger_transportation" class="mx-auto mt-10 mb-10" style="width: 100%;max-width: 800px;"></div>
+::chart{type="BarChart" dataset="statistics_bars2" params="{&quot;statistics_ids&quot;:[140,141]}" title="日本の旅客輸送(%)"}
 ### 貨物輸送
 ::top
 トラック輸送が多く、自動車の割合が最も高いです。
@@ -27,17 +17,7 @@ fontSize: 14,
 ::sup
 アメリカは内陸部の長距離輸送のため、鉄道の割合が高い
 ::
-<script type="text/javascript">
-createChartAsync(Chart.Bar, { statistics_ids: [145, 146] }, 'jp_freight_transportation', {
-title: '日本の貨物輸送(%)',
-legend: { position: 'top', maxLines: 3 },
-isStacked: 'percent',
-titleTextStyle: {
-fontSize: 14,
-}
-}, "./php/statistics_bars2.php");
-</script>
-<div id="jp_freight_transportation" class="mx-auto mt-10 mb-10" style="width: 100%;max-width: 800px;"></div>
+::chart{type="BarChart" dataset="statistics_bars2" params="{&quot;statistics_ids&quot;:[145,146]}" title="日本の貨物輸送(%)"}
 ## 貿易
 ### 貿易品目の変化
 #### 戦前
@@ -55,28 +35,8 @@ fontSize: 14,
 ::last
 輸出は機械類（電気機械・自動車）が多く、輸入は機械類・食料品・原油が多くなりました。
 ::
-<script type="text/javascript">
-createChartAsync(Chart.Bar, { statistics_ids: [150, 151, 152] }, 'jp_export', {
-title: '日本の輸出品目(%)',
-legend: { position: 'top', maxLines: 3 },
-isStacked: 'percent',
-titleTextStyle: {
-fontSize: 14,
-}
-}, "./php/statistics_bars2.php");
-</script>
-<div id="jp_export" class="mx-auto mt-10 mb-10" style="width: 100%;max-width: 800px;"></div>
-<script type="text/javascript">
-createChartAsync(Chart.Bar, { statistics_ids: [155, 156, 157] }, 'jp_import', {
-title: '日本の輸入品目(%)',
-legend: { position: 'top', maxLines: 3 },
-isStacked: 'percent',
-titleTextStyle: {
-fontSize: 14,
-}
-}, "./php/statistics_bars2.php");
-</script>
-<div id="jp_import" class="mx-auto mt-10 mb-10" style="width: 100%;max-width: 800px;"></div>
+::chart{type="BarChart" dataset="statistics_bars2" params="{&quot;statistics_ids&quot;:[150,151,152]}" title="日本の輸出品目(%)"}
+::chart{type="BarChart" dataset="statistics_bars2" params="{&quot;statistics_ids&quot;:[155,156,157]}" title="日本の輸入品目(%)"}
 ### 貿易相手国の変化
 #### 以前
 ::top

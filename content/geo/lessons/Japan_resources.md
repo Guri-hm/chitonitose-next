@@ -9,53 +9,13 @@
 ::
 ### 資源の輸入
 #### 鉄鉱石
-<script type="text/javascript">
-createChartAsync(Chart.Bar, { statistics_ids: [120] }, 'iron_ore_chart', {
-title: '日本の鉄鉱石輸入先(%)',
-legend: { position: 'top', maxLines: 3 },
-isStacked: 'percent',
-titleTextStyle: {
-fontSize: 14,
-}
-}, "./php/statistics_bars2.php");
-</script>
-<div id="iron_ore_chart" class="mx-auto mt-10 mb-10" style="width: 100%;max-width: 800px;"></div>
+::chart{type="BarChart" dataset="statistics_bars2" params="{&quot;statistics_ids&quot;:[120]}" title="日本の鉄鉱石輸入先(%)"}
 #### 石炭
-<script type="text/javascript">
-createChartAsync(Chart.Bar, { statistics_ids: [121] }, 'coal_chart', {
-title: '日本の石炭輸入先(%)',
-legend: { position: 'top', maxLines: 3 },
-isStacked: 'percent',
-titleTextStyle: {
-fontSize: 14,
-}
-}, "./php/statistics_bars2.php");
-</script>
-<div id="coal_chart" class="mx-auto mt-10 mb-10" style="width: 100%;max-width: 800px;"></div>
+::chart{type="BarChart" dataset="statistics_bars2" params="{&quot;statistics_ids&quot;:[121]}" title="日本の石炭輸入先(%)"}
 #### 原油
-<script type="text/javascript">
-createChartAsync(Chart.Bar, { statistics_ids: [122] }, 'crude_oil_chart', {
-title: '日本の原油輸入先(%)',
-legend: { position: 'top', maxLines: 3 },
-isStacked: 'percent',
-titleTextStyle: {
-fontSize: 14,
-}
-}, "./php/statistics_bars2.php");
-</script>
-<div id="crude_oil_chart" class="mx-auto mt-10 mb-10" style="width: 100%;max-width: 800px;"></div>
+::chart{type="BarChart" dataset="statistics_bars2" params="{&quot;statistics_ids&quot;:[122]}" title="日本の原油輸入先(%)"}
 #### 天然ガス
-<script type="text/javascript">
-createChartAsync(Chart.Bar, { statistics_ids: [123] }, 'lng_chart', {
-title: '日本の天然ガス輸入先(%)',
-legend: { position: 'top', maxLines: 3 },
-isStacked: 'percent',
-titleTextStyle: {
-fontSize: 14,
-}
-}, "./php/statistics_bars2.php");
-</script>
-<div id="lng_chart" class="mx-auto mt-10 mb-10" style="width: 100%;max-width: 800px;"></div>
+::chart{type="BarChart" dataset="statistics_bars2" params="{&quot;statistics_ids&quot;:[123]}" title="日本の天然ガス輸入先(%)"}
 ### エネルギー消費の変化
 #### 1960年代
 ::top
@@ -79,15 +39,5 @@ fontSize: 14,
 ::last
 発電量不足を補うために、[[石炭]]の消費量が先進国のなかでも増加
 ::
-::chart{type="PieChart" dataset="power_generation" filter="nation_cd=392" fields="thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス" title="日本 (億kWh、2019年)"}
-<script type="text/javascript">
-createChartAsync(Chart.Bar, { statistics_ids: [130, 131, 132, 133, 134, 135, 136] }, 'primary_energy', {
-title: '日本の一次エネルギー供給量(%)',
-legend: { position: 'top', maxLines: 3 },
-isStacked: 'percent',
-titleTextStyle: {
-fontSize: 14,
-}
-}, "./php/statistics_bars2.php");
-</script>
-<div id="primary_energy" class="mx-auto mt-10 mb-10" style="width: 100%;max-width: 800px;"></div>
+::chart{type="PieChart" dataset="power_generation" params="{&quot;nation_cd&quot;:392}" title="日本 (億kWh、2019年)"}
+::chart{type="BarChart" dataset="statistics_bars2" params="{&quot;statistics_ids&quot;:[130,131,132,133,134,135,136]}" title="日本の一次エネルギー供給量(%)"}

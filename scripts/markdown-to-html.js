@@ -88,7 +88,7 @@ function parseCustomMarkdown(markdown, subject = '') {
     }
 
     // ::chart{...} ブロック（DBデータをJSでGoogle Chartsに渡すプレースホルダー）
-    // 例: ::chart{type="Pie" dataset="power_generation" filter="nation_cd=578" fields="hydroelectricity:水力,thermal_power:火力" title="ノルウェーの発電構成"}
+    // 例: ::chart{type="PieChart" dataset="power_generation" params="{&quot;nation_cd&quot;:578}" title="ノルウェーの発電構成"}
     if (line.startsWith('::chart{')) {
       const attrsMatch = line.match(/^::chart\{([\s\S]*)\}$/);
       const attrs = {};
@@ -102,8 +102,8 @@ function parseCustomMarkdown(markdown, subject = '') {
       const escapeAttr = (s) => String(s || '').replace(/"/g, '&quot;');
       result.push(
         `<div class="lesson-chart-placeholder" data-chart-type="${escapeAttr(attrs.type)}" ` +
-        `data-chart-dataset="${escapeAttr(attrs.dataset)}" data-chart-filter="${escapeAttr(attrs.filter)}" ` +
-        `data-chart-fields="${escapeAttr(attrs.fields)}" data-chart-title="${escapeAttr(attrs.title)}"></div>`
+        `data-chart-dataset="${escapeAttr(attrs.dataset)}" data-chart-params="${escapeAttr(attrs.params)}" ` +
+        `data-chart-title="${escapeAttr(attrs.title)}"></div>`
       );
       i++;
       // 閉じの「::」があれば読み飛ばす（任意）
@@ -112,8 +112,8 @@ function parseCustomMarkdown(markdown, subject = '') {
       }
       continue;
     }
-    
-    // ::statistics{...} / ::basic-data{...} / ::export-items{...} / ::import-items{...} 等
+
+    // ::statistics{...}/ ::basic-data{...} / ::export-items{...} / ::import-items{...} 等
     // DBデータ（JSON化済み）をもとに表を描画するプレースホルダー
     // 例: ::statistics{id="39" order="desc" limit="5" offset="0"}
     const dbDirectiveMatch = line.match(
@@ -494,15 +494,38 @@ function parsePhpVars(phpCode) {
   return vars;
 }
 
-// createChartAsync()呼び出しが参照するPHPエンドポイント名 -> ::chart{}ディレクティブ用の設定。
-// 対応表に無いエンドポイント（Chart.Bar+statistics_ids等）は現状未対応のためそのまま素通しする。
-const CHART_ENDPOINT_CONFIGS = {
-  power_generation: {
-    dataset: 'power_generation',
-    fields:
-      'thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス',
-  },
-};
+// createChartAsync()呼び出しが参照するPHPエンドポイント名一覧（::chart{}への変換対象のホワイトリスト）。
+// dataset名はそのままphpファイル名（拡張子無し）を使い、lib/chartBuilders.tsの同名builderで処理する。
+// 対応表に無いエンドポイント（現状はChart.Geo系の世界地図6種、到達可能なページが存在しないため対象外）は
+// そのまま素通しする。
+const CHART_ENDPOINT_DATASETS = new Set([
+  'power_generation',
+  'statistics_bar2',
+  'statistics_bars2',
+  'statistics_combo',
+  'statistics_highest',
+  'wood_type',
+  'wood_use',
+  'wood_use_comparison',
+  'wood_supply',
+  'forestry_worker',
+  'fish_catche',
+  'fish_catche_detail',
+  'fish_catche_world',
+  'foreign_population',
+  'foreign_population_prefecture',
+  'ha_per_farmer',
+  'production_per_ha',
+  'agricultural_work_force',
+  'region_agricultural_production',
+  'Korea_gdp',
+  'river_flow_rate',
+  'export_items_bar',
+  'different_statistics_json',
+]);
+
+// fetchChart()呼び出しが参照するPHPエンドポイント名一覧（変換対象のホワイトリスト）
+const FETCH_CHART_ENDPOINT_DATASETS = new Set(['statistics_any_name']);
 
 // 元PHPサイトの`Chart.XXX`名 -> Google Charts本来のコンストラクタ名の対応表
 const CHART_TYPE_MAP = {
@@ -516,35 +539,330 @@ const CHART_TYPE_MAP = {
 };
 
 /**
- * <script>createChartAsync(Chart.XXX, {params}, 'targetId', {title:...}, "./php/YYY.php")</script>
+ * 開き括弧の位置から対応する閉じ括弧の位置を、文字列リテラル内は無視しつつ探す。
+ * createChartAsync(...)の引数はvAxes/hAxis/seriesなどネストした{}を含むことがあるため、
+ * 単純な非貪欲正規表現では対応できない（最初に現れた閉じ括弧で止まってしまう）。
+ */
+function findMatchingParen(str, openIndex) {
+  let depth = 0;
+  for (let i = openIndex; i < str.length; i++) {
+    const c = str[i];
+    if (c === '(') depth++;
+    else if (c === ')') {
+      depth--;
+      if (depth === 0) return i;
+    } else if (c === "'" || c === '"') {
+      const quote = c;
+      i++;
+      while (i < str.length && str[i] !== quote) {
+        if (str[i] === '\\') i++;
+        i++;
+      }
+    }
+  }
+  return -1;
+}
+
+/** 任意の開き括弧文字("("/"{"/"[")から対応する閉じ括弧の位置を、文字列リテラル内を無視しつつ探す */
+function findMatchingBracket(str, openIndex, openChar, closeChar) {
+  let depth = 0;
+  for (let i = openIndex; i < str.length; i++) {
+    const c = str[i];
+    if (c === openChar) depth++;
+    else if (c === closeChar) {
+      depth--;
+      if (depth === 0) return i;
+    } else if (c === "'" || c === '"') {
+      const quote = c;
+      i++;
+      while (i < str.length && str[i] !== quote) {
+        if (str[i] === '\\') i++;
+        i++;
+      }
+    }
+  }
+  return -1;
+}
+
+/** 括弧内の引数リストを、ネストした{}/[]/()や文字列リテラルを考慮してトップレベルのカンマで分割する */
+function splitTopLevelArgs(argsStr) {
+  const args = [];
+  let depth = 0;
+  let current = '';
+  for (let i = 0; i < argsStr.length; i++) {
+    const c = argsStr[i];
+    if (c === "'" || c === '"') {
+      const quote = c;
+      current += c;
+      i++;
+      while (i < argsStr.length && argsStr[i] !== quote) {
+        current += argsStr[i];
+        if (argsStr[i] === '\\') {
+          i++;
+          current += argsStr[i];
+        }
+        i++;
+      }
+      current += argsStr[i];
+      continue;
+    }
+    if (c === '{' || c === '[' || c === '(') depth++;
+    if (c === '}' || c === ']' || c === ')') depth--;
+    if (c === ',' && depth === 0) {
+      args.push(current);
+      current = '';
+      continue;
+    }
+    current += c;
+  }
+  if (current.trim()) args.push(current);
+  return args.map((s) => s.trim());
+}
+
+/**
+ * <script>createChartAsync(Chart.XXX, {params}, 'targetId', {options...}, "./php/YYY.php")</script>
  * + 別途存在する <div id="targetId"></div> の組を ::chart{...} ディレクティブに変換する。
  * scriptとdivが同じ行の近くにあるとは限らない（ファイルによっては全scriptの後に全divが
  * まとまっている）ため、まずscript側を除去しつつtargetIdごとのディレクティブ文字列をMapに
  * 記録し、その後で対応するdivをディレクティブ文字列に置き換える2パス構成にしている。
+ * paramsオブジェクトはPHP同様キー無しクォート等の緩いJS object literal記法のため、
+ * このビルドスクリプト内（信頼済みの自サイトソースのみを対象）に限り`Function`でパースする。
+ *
+ * 重要: `createChartAsync(...)`はブラウザ側に同名関数が存在しないため、対応表に無い
+ * （＝変換できない）呼び出しであっても、生スクリプトのまま残すとdangerouslySetInnerHTML経由で
+ * 実HTMLに埋め込まれた際に「createChartAsync is not defined」の実行時エラーでページ全体が
+ * クラッシュする（静的HTML内の<script>はブラウザの通常のHTML解析時に実行されるため）。
+ * そのため、変換できない場合も呼び出し自体は必ず除去し、対応するプレースホルダーdivのみが
+ * 空のまま残る（何も表示されないが、エラーにはならない）状態にする。
  */
 function convertChartScripts(content) {
   const chartDirectives = new Map();
 
-  content = content.replace(
-    /<script type="text\/javascript">\s*createChartAsync\(Chart\.(\w+),\s*(\{[\s\S]*?\}),\s*'([^']+)',\s*\{([\s\S]*?)\},\s*"\.\/php\/(\w+)\.php"\s*\)\s*;\s*<\/script>/g,
-    (match, chartType, paramsStr, targetId, optionsBody, phpName) => {
-      const config = CHART_ENDPOINT_CONFIGS[phpName];
-      if (!config) return match;
+  content = content.replace(/<script[^>]*>([\s\S]*?)<\/script>/g, (fullMatch, scriptBody) => {
+    const callMatch = scriptBody.match(/createChartAsync\s*\(/);
+    if (!callMatch) return fullMatch;
 
-      const filter = [...paramsStr.matchAll(/"(\w+)"\s*:\s*("[^"]*"|-?\d+(?:\.\d+)?)/g)]
-        .map((m) => `${m[1]}=${m[2].replace(/^"|"$/g, '')}`)
-        .join(',');
-      const titleMatch = optionsBody.match(/title:\s*'([^']*)'/);
-      const title = (titleMatch ? titleMatch[1] : '').replace(/"/g, '&quot;');
-      const googleChartType = CHART_TYPE_MAP[chartType] || chartType;
+    const openParenIndex = callMatch.index + callMatch[0].length - 1;
+    const closeParenIndex = findMatchingParen(scriptBody, openParenIndex);
+    if (closeParenIndex === -1) return '';
 
-      chartDirectives.set(
-        targetId,
-        `::chart{type="${googleChartType}" dataset="${config.dataset}" filter="${filter}" fields="${config.fields}" title="${title}"}`
-      );
+    const args = splitTopLevelArgs(scriptBody.slice(openParenIndex + 1, closeParenIndex));
+    if (args.length < 5) return '';
+
+    const chartTypeMatch = args[0].match(/Chart\.(\w+)/);
+    const targetIdMatch = args[2].match(/^['"]([^'"]*)['"]$/);
+    const phpMatch = args[4].match(/["']\.\/php\/(\w+)\.php["']/);
+    if (!chartTypeMatch || !targetIdMatch || !phpMatch) return '';
+
+    const phpName = phpMatch[1];
+    if (!CHART_ENDPOINT_DATASETS.has(phpName)) return '';
+
+    let params;
+    try {
+      // eslint-disable-next-line no-new-func
+      params = new Function(`return (${args[1]});`)();
+    } catch (e) {
       return '';
     }
+
+    const titleMatch = args[3].match(/title:\s*'([^']*)'/);
+    const title = (titleMatch ? titleMatch[1] : '').replace(/"/g, '&quot;');
+    const googleChartType = CHART_TYPE_MAP[chartTypeMatch[1]] || chartTypeMatch[1];
+    const paramsJson = JSON.stringify(params).replace(/"/g, '&quot;');
+
+    chartDirectives.set(
+      targetIdMatch[1],
+      `::chart{type="${googleChartType}" dataset="${phpName}" params="${paramsJson}" title="${title}"}`
+    );
+    return '';
+  });
+
+  content = content.replace(/<div id="([^"]+)"[^>]*>\s*<\/div>/g, (match, targetId) =>
+    chartDirectives.has(targetId) ? chartDirectives.get(targetId) : match
   );
+
+  return content;
+}
+
+/**
+ * <script>fetchChart('./php/YYY.php', {method,body:JSON.stringify({params:[{statistics_id:N}],...})},
+ * Chart.XXX, {options...}, 'targetId')</script> 形式（createChartAsyncとは引数順序が異なる別の
+ * グラフ埋め込み関数）を ::chart{...} に変換する。同じ理由でcreateChartAsync同様、変換できない
+ * 呼び出しも実行時エラー防止のため必ず除去する。
+ */
+function convertFetchChartScripts(content) {
+  const chartDirectives = new Map();
+
+  content = content.replace(/<script[^>]*>([\s\S]*?)<\/script>/g, (fullMatch, scriptBody) => {
+    if (!/fetchChart\s*\(/.test(scriptBody)) return fullMatch;
+
+    let result = '';
+    let cursor = 0;
+    const callRe = /fetchChart\s*\(/g;
+    let m;
+    while ((m = callRe.exec(scriptBody)) !== null) {
+      result += scriptBody.slice(cursor, m.index);
+      const openParenIndex = m.index + m[0].length - 1;
+      const closeParenIndex = findMatchingParen(scriptBody, openParenIndex);
+      if (closeParenIndex === -1) {
+        cursor = scriptBody.length;
+        break;
+      }
+      // 呼び出し全体（末尾のセミコロンも含む）を除去する
+      let afterCall = closeParenIndex + 1;
+      if (scriptBody[afterCall] === ';') afterCall++;
+      cursor = afterCall;
+      callRe.lastIndex = afterCall;
+
+      const args = splitTopLevelArgs(scriptBody.slice(openParenIndex + 1, closeParenIndex));
+      if (args.length < 5) continue;
+
+      const phpMatch = args[0].match(/["']\.\/php\/(\w+)\.php["']/);
+      const chartTypeMatch = args[2].match(/Chart\.(\w+)/);
+      const targetIdMatch = args[4].match(/^['"]([^'"]*)['"]/);
+      const statIds = [...args[1].matchAll(/statistics_id:\s*(\d+)/g)].map((mm) => Number(mm[1]));
+      if (!phpMatch || !chartTypeMatch || !targetIdMatch || statIds.length === 0) continue;
+      if (!FETCH_CHART_ENDPOINT_DATASETS.has(phpMatch[1])) continue;
+
+      const titleMatch = args[3].match(/title:\s*'([^']*)'/);
+      const title = (titleMatch ? titleMatch[1] : '').replace(/"/g, '&quot;');
+      const googleChartType = CHART_TYPE_MAP[chartTypeMatch[1]] || chartTypeMatch[1];
+      const paramsJson = JSON.stringify({ params: statIds }).replace(/"/g, '&quot;');
+
+      chartDirectives.set(
+        targetIdMatch[1],
+        `::chart{type="${googleChartType}" dataset="${phpMatch[1]}" params="${paramsJson}" title="${title}"}`
+      );
+    }
+    result += scriptBody.slice(cursor);
+    return result.trim() ? `<script type="text/javascript">${result}</script>` : '';
+  });
+
+  content = content.replace(/<div id="([^"]+)"[^>]*>\s*<\/div>/g, (match, targetId) =>
+    chartDirectives.has(targetId) ? chartDirectives.get(targetId) : match
+  );
+
+  return content;
+}
+
+/**
+ * <script>lineChartAsync(statisticsId, [nationCd,...], 'targetId', {options...})</script>
+ * （常にstatistics_changes_data基準のLineChartを描画する専用関数。phpパスは呼び出し側に
+ * 現れず、JS関数内部に固定でハードコードされているため、他の変換関数とは別に処理する）
+ * を ::chart{...} に変換する。
+ */
+function convertLineChartAsyncScripts(content) {
+  const chartDirectives = new Map();
+
+  content = content.replace(/<script[^>]*>([\s\S]*?)<\/script>/g, (fullMatch, scriptBody) => {
+    if (!/lineChartAsync\s*\(/.test(scriptBody)) return fullMatch;
+
+    let result = '';
+    let cursor = 0;
+    const callRe = /lineChartAsync\s*\(/g;
+    let m;
+    while ((m = callRe.exec(scriptBody)) !== null) {
+      result += scriptBody.slice(cursor, m.index);
+      const openParenIndex = m.index + m[0].length - 1;
+      const closeParenIndex = findMatchingParen(scriptBody, openParenIndex);
+      if (closeParenIndex === -1) {
+        cursor = scriptBody.length;
+        break;
+      }
+      let afterCall = closeParenIndex + 1;
+      if (scriptBody[afterCall] === ';') afterCall++;
+      cursor = afterCall;
+      callRe.lastIndex = afterCall;
+
+      const args = splitTopLevelArgs(scriptBody.slice(openParenIndex + 1, closeParenIndex));
+      if (args.length < 4) continue;
+
+      const statId = Number(args[0]);
+      const arrMatch = args[1].match(/^\[([\s\S]*)\]$/);
+      const nationCds = arrMatch
+        ? arrMatch[1]
+            .split(',')
+            .map((s) => Number(s.trim()))
+            .filter((n) => !Number.isNaN(n))
+        : [];
+      const targetIdMatch = args[2].match(/^['"]([^'"]*)['"]$/);
+      if (!statId || nationCds.length === 0 || !targetIdMatch) continue;
+
+      const titleMatch = args[3].match(/title:\s*'([^']*)'/);
+      const title = (titleMatch ? titleMatch[1] : '').replace(/"/g, '&quot;');
+      const paramsJson = JSON.stringify({ statistics_id: statId, params: nationCds }).replace(/"/g, '&quot;');
+
+      chartDirectives.set(
+        targetIdMatch[1],
+        `::chart{type="LineChart" dataset="statistics_line" params="${paramsJson}" title="${title}"}`
+      );
+    }
+    result += scriptBody.slice(cursor);
+    return result.trim() ? `<script type="text/javascript">${result}</script>` : '';
+  });
+
+  content = content.replace(/<div id="([^"]+)"[^>]*>\s*<\/div>/g, (match, targetId) =>
+    chartDirectives.has(targetId) ? chartDirectives.get(targetId) : match
+  );
+
+  return content;
+}
+
+/**
+ * <script>google.charts.load(...); google.charts.setOnLoadCallback(drawChart);
+ * function drawChart() { var data = google.visualization.arrayToDataTable([...]);
+ * var options = {...}; var chart = new google.visualization.XxxChart(document.getElementById('id'));
+ * chart.draw(data, options); }</script> という、PHPを介さずデータを直書きした手書きチャートを
+ * ::chart{dataset="static"}（データそのものをparamsに埋め込む）に変換する。
+ */
+function convertStaticGoogleChartScripts(content) {
+  const chartDirectives = new Map();
+
+  content = content.replace(/<script[^>]*>([\s\S]*?)<\/script>/g, (fullMatch, scriptBody) => {
+    if (!/google\.charts\.load|google\.load\s*\(/.test(scriptBody)) return fullMatch;
+
+    const dataCallMatch = scriptBody.match(/arrayToDataTable\s*\(/);
+    if (!dataCallMatch) return '';
+    const dataOpenParen = dataCallMatch.index + dataCallMatch[0].length - 1;
+    const dataCloseParen = findMatchingParen(scriptBody, dataOpenParen);
+    if (dataCloseParen === -1) return '';
+
+    let dataArr;
+    try {
+      // eslint-disable-next-line no-new-func
+      dataArr = new Function(`return (${scriptBody.slice(dataOpenParen + 1, dataCloseParen)});`)();
+    } catch (e) {
+      return '';
+    }
+
+    let options = {};
+    const optionsMatch = scriptBody.match(/options\s*=\s*\{/);
+    if (optionsMatch) {
+      const optOpenBrace = optionsMatch.index + optionsMatch[0].length - 1;
+      const optCloseBrace = findMatchingBracket(scriptBody, optOpenBrace, '{', '}');
+      if (optCloseBrace !== -1) {
+        try {
+          // eslint-disable-next-line no-new-func
+          options = new Function(`return (${scriptBody.slice(optOpenBrace, optCloseBrace + 1)});`)();
+        } catch (e) {
+          options = {};
+        }
+      }
+    }
+
+    const chartTypeMatch = scriptBody.match(/new google\.visualization\.(\w+)\(/);
+    const targetIdMatch = scriptBody.match(/getElementById\(['"]([^'"]+)['"]\)/);
+    if (!chartTypeMatch || !targetIdMatch) return '';
+
+    const title = String(options.title || '').replace(/"/g, '&quot;');
+    const paramsJson = JSON.stringify({ data: dataArr, options }).replace(/"/g, '&quot;');
+
+    chartDirectives.set(
+      targetIdMatch[1],
+      `::chart{type="${chartTypeMatch[1]}" dataset="static" params="${paramsJson}" title="${title}"}`
+    );
+    return '';
+  });
 
   content = content.replace(/<div id="([^"]+)"[^>]*>\s*<\/div>/g, (match, targetId) =>
     chartDirectives.has(targetId) ? chartDirectives.get(targetId) : match
@@ -571,6 +889,12 @@ function htmlToCustomMarkdown(html) {
 
   // createChartAsync()によるグラフ埋め込みを::chart{}ディレクティブに変換
   content = convertChartScripts(content);
+  // fetchChart()によるグラフ埋め込みを::chart{}ディレクティブに変換
+  content = convertFetchChartScripts(content);
+  // lineChartAsync()によるグラフ埋め込みを::chart{}ディレクティブに変換
+  content = convertLineChartAsyncScripts(content);
+  // データを直書きした手書きのgoogle.charts呼び出しを::chart{}ディレクティブに変換
+  content = convertStaticGoogleChartScripts(content);
 
   // コメントを削除（PHPタグはループ内でDB連動ディレクティブへの変換を試みてから削除する）
   content = content.replace(/<!--[\s\S]*?-->/g, '');

@@ -462,19 +462,7 @@ ASEANの加盟国
 </tr>
 </table>
 </div>
-<div id="asean_gdp" class="mx-auto" style="width: 80%;"></div>
-<script type="text/javascript">
-lineChartAsync(300, [764, 458, 702, 360, 608], 'asean_gdp', {
-title: 'ASEAN諸国の1人当たりGDPの推移(名目値)',
-hAxis: {
-title: '年'
-},
-vAxis: {
-title: 'ドル'
-},
-height: 500
-});
-</script>
+::chart{type="LineChart" dataset="statistics_line" params="{&quot;statistics_id&quot;:300,&quot;params&quot;:[764,458,702,360,608]}" title="ASEAN諸国の1人当たりGDPの推移(名目値)"}
 ### 貿易
 ::top
 1993年、AFTA(ASEAN自由貿易地域)の発足<div class="lead">ASEAN域内の関税撤廃や貿易拡大を目指す自由貿易協定
@@ -486,105 +474,17 @@ height: 500
 </div>
 #### 原加盟国の貿易品目の変化
 <h5>タイ</h5>
-<script type="text/javascript">
-createChartAsync(Chart.Bar, { "nation_cd": 764, "year": 1984, "total_amount": "74億ドル" }, 'export_Thai1984', {
-title: '輸出品目(%)',
-height: 250,
-legend: { position: 'top', maxLines: 3 },
-isStacked: true,
-titleTextStyle: {
-fontSize: 14,
-}
-}, "./php/export_items_bar.php");
-</script>
-<div id="export_Thai1984" class="mx-auto mt-10 mb-10" style="width: 80%;"></div>
-<script type="text/javascript">
-createChartAsync(Chart.Bar, { "nation_cd": 764, "year": 2019, "total_amount": "2337億ドル" }, 'export_Thai_latest', {
-title: '輸出品目(%)',
-height: 250,
-legend: { position: 'top', maxLines: 3 },
-isStacked: true,
-titleTextStyle: {
-fontSize: 14,
-}
-}, "./php/export_items_bar.php");
-</script>
-<div id="export_Thai_latest" class="mx-auto mt-10 mb-10" style="width: 80%;"></div>
+::chart{type="BarChart" dataset="export_items_bar" params="{&quot;nation_cd&quot;:764,&quot;year&quot;:1984,&quot;total_amount&quot;:&quot;74億ドル&quot;}" title="輸出品目(%)"}
+::chart{type="BarChart" dataset="export_items_bar" params="{&quot;nation_cd&quot;:764,&quot;year&quot;:2019,&quot;total_amount&quot;:&quot;2337億ドル&quot;}" title="輸出品目(%)"}
 <h5>マレーシア</h5>
-<script type="text/javascript">
-createChartAsync(Chart.Bar, { "nation_cd": 458, "year": 1984, "total_amount": "50億ドル" }, 'export_Malaysia1984', {
-title: '輸出品目(%)',
-height: 250,
-legend: { position: 'top', maxLines: 3 },
-isStacked: true,
-titleTextStyle: {
-fontSize: 14,
-}
-}, "./php/export_items_bar.php");
-</script>
-<div id="export_Malaysia1984" class="mx-auto mt-10 mb-10" style="width: 80%;"></div>
-<script type="text/javascript">
-createChartAsync(Chart.Bar, { "nation_cd": 458, "year": 2019, "total_amount": "703億ドル" }, 'export_Malaysia_latest', {
-title: '輸出品目(%)',
-height: 250,
-legend: { position: 'top', maxLines: 3 },
-isStacked: true,
-titleTextStyle: {
-fontSize: 14,
-}
-}, "./php/export_items_bar.php");
-</script>
-<div id="export_Malaysia_latest" class="mx-auto mt-10 mb-10" style="width: 80%;"></div>
+::chart{type="BarChart" dataset="export_items_bar" params="{&quot;nation_cd&quot;:458,&quot;year&quot;:1984,&quot;total_amount&quot;:&quot;50億ドル&quot;}" title="輸出品目(%)"}
+::chart{type="BarChart" dataset="export_items_bar" params="{&quot;nation_cd&quot;:458,&quot;year&quot;:2019,&quot;total_amount&quot;:&quot;703億ドル&quot;}" title="輸出品目(%)"}
 <h5>フィリピン</h5>
-<script type="text/javascript">
-createChartAsync(Chart.Bar, { "nation_cd": 608, "year": 1984, "total_amount": "141億ドル" }, 'export_Philippines1984', {
-title: '輸出品目(%)',
-height: 250,
-legend: { position: 'top', maxLines: 3 },
-isStacked: true,
-titleTextStyle: {
-fontSize: 14,
-}
-}, "./php/export_items_bar.php");
-</script>
-<div id="export_Philippines1984" class="mx-auto mt-10 mb-10" style="width: 80%;"></div>
-<script type="text/javascript">
-createChartAsync(Chart.Bar, { "nation_cd": 608, "year": 2019, "total_amount": "2381億ドル" }, 'export_Philippines_latest', {
-title: '輸出品目(%)',
-height: 250,
-legend: { position: 'top', maxLines: 3 },
-isStacked: true,
-titleTextStyle: {
-fontSize: 14,
-}
-}, "./php/export_items_bar.php");
-</script>
-<div id="export_Philippines_latest" class="mx-auto mt-10 mb-10" style="width: 80%;"></div>
+::chart{type="BarChart" dataset="export_items_bar" params="{&quot;nation_cd&quot;:608,&quot;year&quot;:1984,&quot;total_amount&quot;:&quot;141億ドル&quot;}" title="輸出品目(%)"}
+::chart{type="BarChart" dataset="export_items_bar" params="{&quot;nation_cd&quot;:608,&quot;year&quot;:2019,&quot;total_amount&quot;:&quot;2381億ドル&quot;}" title="輸出品目(%)"}
 <h5>インドネシア</h5>
-<script type="text/javascript">
-createChartAsync(Chart.Bar, { "nation_cd": 764, "year": 1984, "total_amount": "219億ドル" }, 'export_Indonesia1984', {
-title: '輸出品目(%)',
-height: 250,
-legend: { position: 'top', maxLines: 3 },
-isStacked: true,
-titleTextStyle: {
-fontSize: 14,
-}
-}, "./php/export_items_bar.php");
-</script>
-<div id="export_Indonesia1984" class="mx-auto mt-10 mb-10" style="width: 80%;"></div>
-<script type="text/javascript">
-createChartAsync(Chart.Bar, { "nation_cd": 764, "year": 2019, "total_amount": "1670億ドル" }, 'export_Indonesia_latest', {
-title: '輸出品目(%)',
-height: 250,
-legend: { position: 'top', maxLines: 3 },
-isStacked: true,
-titleTextStyle: {
-fontSize: 14,
-}
-}, "./php/export_items_bar.php");
-</script>
-<div id="export_Indonesia_latest" class="mx-auto mt-10 mb-10" style="width: 80%;"></div>
+::chart{type="BarChart" dataset="export_items_bar" params="{&quot;nation_cd&quot;:764,&quot;year&quot;:1984,&quot;total_amount&quot;:&quot;219億ドル&quot;}" title="輸出品目(%)"}
+::chart{type="BarChart" dataset="export_items_bar" params="{&quot;nation_cd&quot;:764,&quot;year&quot;:2019,&quot;total_amount&quot;:&quot;1670億ドル&quot;}" title="輸出品目(%)"}
 #### 加盟国の貿易の特徴
 ::top
 シンガポール:<div class="top">最初に経済発展、GNIは先進国並み

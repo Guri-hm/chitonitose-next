@@ -1,0 +1,122 @@
+[
+  {
+    "river_cd": 1,
+    "data_month": 1,
+    "data_val": 2837.61
+  },
+  {
+    "river_cd": 1,
+    "data_month": 2,
+    "data_val": 2320.37
+  },
+  {
+    "river_cd": 1,
+    "data_month": 3,
+    "data_val": 1804.16
+  },
+  {
+    "river_cd": 1,
+    "data_month": 4,
+    "data_val": 1525.99
+  },
+  {
+    "river_cd": 1,
+    "data_month": 5,
+    "data_val": 5231.91
+  },
+  {
+    "river_cd": 1,
+    "data_month": 6,
+    "data_val": 63670.7
+  },
+  {
+    "river_cd": 1,
+    "data_month": 7,
+    "data_val": 38649.1
+  },
+  {
+    "river_cd": 1,
+    "data_month": 8,
+    "data_val": 25894.8
+  },
+  {
+    "river_cd": 1,
+    "data_month": 9,
+    "data_val": 22409.9
+  },
+  {
+    "river_cd": 1,
+    "data_month": 10,
+    "data_val": 13426.4
+  },
+  {
+    "river_cd": 1,
+    "data_month": 11,
+    "data_val": 3523.24
+  },
+  {
+    "river_cd": 1,
+    "data_month": 12,
+    "data_val": 2947.22
+  },
+  {
+    "river_cd": 2,
+    "data_month": 1,
+    "data_val": 6866.06
+  },
+  {
+    "river_cd": 2,
+    "data_month": 2,
+    "data_val": 6874.23
+  },
+  {
+    "river_cd": 2,
+    "data_month": 3,
+    "data_val": 6693.44
+  },
+  {
+    "river_cd": 2,
+    "data_month": 4,
+    "data_val": 6891.64
+  },
+  {
+    "river_cd": 2,
+    "data_month": 5,
+    "data_val": 32337.1
+  },
+  {
+    "river_cd": 2,
+    "data_month": 6,
+    "data_val": 73396.4
+  },
+  {
+    "river_cd": 2,
+    "data_month": 7,
+    "data_val": 24822
+  },
+  {
+    "river_cd": 2,
+    "data_month": 8,
+    "data_val": 17500.2
+  },
+  {
+    "river_cd": 2,
+    "data_month": 9,
+    "data_val": 17263.3
+  },
+  {
+    "river_cd": 2,
+    "data_month": 10,
+    "data_val": 15184.9
+  },
+  {
+    "river_cd": 2,
+    "data_month": 11,
+    "data_val": 8110.04
+  },
+  {
+    "river_cd": 2,
+    "data_month": 12,
+    "data_val": 7134.64
+  }
+]

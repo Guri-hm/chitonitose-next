@@ -303,7 +303,7 @@
 ::last
 そのため、カナダでは水力発電が盛んになっています。
 ::
-::chart{type="PieChart" dataset="power_generation" filter="nation_cd=124" fields="thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス" title="カナダ (億kWh、2019年)"}
+::chart{type="PieChart" dataset="power_generation" params="{&quot;nation_cd&quot;:124}" title="カナダ (億kWh、2019年)"}
 <h5>ノルウェーの発電事情</h5>
 ::top
 安定した降水も水力発電を盛んにする条件の一つです。
@@ -328,7 +328,7 @@
 ![](Norway_rain.webp){.border}
 ノルウェーの降水
 ::
-::chart{type="PieChart" dataset="power_generation" filter="nation_cd=578" fields="thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス" title="ノルウェー (億kWh、2019年)"}
+::chart{type="PieChart" dataset="power_generation" params="{&quot;nation_cd&quot;:578}" title="ノルウェー (億kWh、2019年)"}
 <h5>ブラジルの発電事情</h5>
 ::top
 熱帯気候が広がるため、ブラジルは降水量が多く、流量の多い大河川があります。
@@ -336,7 +336,7 @@
 ::last
 このため、ブラジルの水力発電量は、総発電量の半数以上を占めています。
 ::
-::chart{type="PieChart" dataset="power_generation" filter="nation_cd=76" fields="thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス" title="ブラジル (億kWh、2019年)"}
+::chart{type="PieChart" dataset="power_generation" params="{&quot;nation_cd&quot;:76}" title="ブラジル (億kWh、2019年)"}
 #### 原子力発電
 <h5>フランスの発電事情</h5>
 ::top
@@ -349,7 +349,7 @@
 ::last
 これをうけ、フランスは原子力発電に力を入れてきました。
 ::
-::chart{type="PieChart" dataset="power_generation" filter="nation_cd=250" fields="thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス" title="フランス (億kWh、2019年)"}
+::chart{type="PieChart" dataset="power_generation" params="{&quot;nation_cd&quot;:250}" title="フランス (億kWh、2019年)"}
 <h5>原子力発電の問題</h5>
 ::top
 事故による放射能汚染の危険性や使用済み核燃料と放射性廃棄物の処理問題など解決しなければならない課題が多くあります。

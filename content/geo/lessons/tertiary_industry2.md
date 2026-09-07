@@ -153,52 +153,8 @@ class="true_choice">小さい</span></span></li>
 <ul class="circle">
 <li>山地や勾配など地形的な制約を受けやすく、トンネル・鉄道・新規線路の敷設に莫大な経費が必要</li>
 </ul>
-<script>
-fetchChart('./php/statistics_any_name.php'
-, {
-method: 'POST',
-body: JSON.stringify({
-"params": [
-{
-statistics_id: 323,
-},
-{
-statistics_id: 324,
-}
-]
-}),
-}
-, Chart.Bar
-, {
-title: '旅客輸送の機関別輸送量とエネルギー消費量（日本）',
-height: 500,
-isStacked: 'percent',
-}
-, 'jp_passenger_transport');
-fetchChart('./php/statistics_any_name.php'
-, {
-method: 'POST',
-body: JSON.stringify({
-"params": [
-{
-statistics_id: 325,
-},
-{
-statistics_id: 326,
-}
-]
-}),
-}
-, Chart.Bar
-, {
-title: '貨物輸送の機関別輸送量とエネルギー消費量（日本）',
-height: 500,
-isStacked: 'percent',
-}
-, 'jp_cargo_transport');
-</script>
-<div id="jp_passenger_transport" class="mx-auto mt-10 mb-10" style="width: 100%;max-width: 800px;"></div>
-<div id="jp_cargo_transport" class="mx-auto mt-10 mb-10" style="width: 100%;max-width: 800px;"></div>
+::chart{type="BarChart" dataset="statistics_any_name" params="{&quot;params&quot;:[323,324]}" title="旅客輸送の機関別輸送量とエネルギー消費量（日本）"}
+::chart{type="BarChart" dataset="statistics_any_name" params="{&quot;params&quot;:[325,326]}" title="貨物輸送の機関別輸送量とエネルギー消費量（日本）"}
 #### 各国の鉄道利用
 <div class="overflow-x-auto mt-10 mb-10">
 <div class="text-center">
@@ -532,31 +488,7 @@ LNG船
 ::last
 この理由で、[[パナマ]]や[[リベリア]]が世界の１・２位の商船保有国になっています。
 ::
-<script>
-fetchChart('./php/statistics_any_name.php'
-, {
-method: 'POST',
-body: JSON.stringify({
-"params": [
-{
-statistics_id: 285,
-}
-],
-"chart": [
-{
-"type": Chart.Pie,
-}
-]
-}),
-}
-, Chart.Pie
-, {
-title: '国別便宜置籍船（万総トン、2021年）',
-height: 500
-}
-, 'fc');
-</script>
-<div id="fc" class="mx-auto mt-10 mb-10" style="width: 100%;max-width: 800px;"></div>
+::chart{type="PieChart" dataset="statistics_any_name" params="{&quot;params&quot;:[285]}" title="国別便宜置籍船（万総トン、2021年）"}
 ## 情報通信業
 ### 時差
 ::top
@@ -730,35 +662,6 @@ Nokiaはフィンランドの通信機器メーカー。携帯電話の市場を
 タイ・マレーシアのインターネット利用者数の2012年のもの
 ::
 </div>
-<script>
-//  fetchChart('./php/statistics_nation.php'
-//    , {
-//      method: 'POST',
-//      body: JSON.stringify({
-//        "params": [
-//          {
-//            statistics_id: 301
-//          },
-//          {
-//            statistics_id: 333
-//          }
-//        ],
-//        "nations": [
-//          {
-//            cd: [36, 76, 124, 156, 250, 276, 356, 360, 380, 392, 410, 458, 484, 643, 702, 710, 764, 826, 840]
-//          }
-//        ],
-//        "chart": [
-//          {
-//            "type": Chart.Scatter,
-//          }
-//        ]
-//      }),
-//    }
-//    , Chart.Scatter
-//    , {
-//      title: '日本の食料自給率の推移',
-//      height: 500
-//    }
-//    , 'jp_food_self_sufficiency');
+<script type="text/javascript">
+//
 //</script>

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-06T11:05:05.481Z",
+  "generated": "2026-09-07T03:20:13.589Z",
   "database": "data.sqlite3",
   "files": {
     "basic": [
@@ -46,7 +46,19 @@
       "wood-area.json",
       "world-region-info.json",
       "item-info.json",
-      "import-partners-each-items.json"
+      "import-partners-each-items.json",
+      "wood-use.json",
+      "wood-supply.json",
+      "forestry-worker.json",
+      "fish-catche.json",
+      "foreign-population.json",
+      "nationality.json",
+      "production-per-ha.json",
+      "region-agricultural-production.json",
+      "region-info.json",
+      "per-unit-of-gdp.json",
+      "river-flow-rate.json",
+      "river-info.json"
     ],
     "production": [
       "production.json"

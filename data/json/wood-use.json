@@ -1,0 +1,1658 @@
+[
+  {
+    "nation_cd": 4,
+    "data_year": 2020,
+    "timber": 47.3,
+    "fuel_wood": 52.7,
+    "coniferous_tree": 42.7,
+    "broadleaf_tree": 57.3,
+    "production": 3.72
+  },
+  {
+    "nation_cd": 8,
+    "data_year": 2020,
+    "timber": 12.9,
+    "fuel_wood": 87.1,
+    "coniferous_tree": 5.5,
+    "broadleaf_tree": 94.5,
+    "production": 0.87
+  },
+  {
+    "nation_cd": 12,
+    "data_year": 2020,
+    "timber": 1.6,
+    "fuel_wood": 98.4,
+    "coniferous_tree": 68.5,
+    "broadleaf_tree": 31.5,
+    "production": 8.93
+  },
+  {
+    "nation_cd": 24,
+    "data_year": 2020,
+    "timber": 20.1,
+    "fuel_wood": 79.9,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 6.22
+  },
+  {
+    "nation_cd": 31,
+    "data_year": 2020,
+    "timber": 0.8,
+    "fuel_wood": 99.2,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 0.43
+  },
+  {
+    "nation_cd": 32,
+    "data_year": 2020,
+    "timber": 76,
+    "fuel_wood": 24,
+    "coniferous_tree": 43.4,
+    "broadleaf_tree": 56.6,
+    "production": 16.98
+  },
+  {
+    "nation_cd": 36,
+    "data_year": 2020,
+    "timber": 88.8,
+    "fuel_wood": 11.2,
+    "coniferous_tree": 46.7,
+    "broadleaf_tree": 53.3,
+    "production": 36.84
+  },
+  {
+    "nation_cd": 40,
+    "data_year": 2020,
+    "timber": 68.3,
+    "fuel_wood": 31.7,
+    "coniferous_tree": 83.1,
+    "broadleaf_tree": 16.9,
+    "production": 16.79
+  },
+  {
+    "nation_cd": 44,
+    "data_year": 2020,
+    "timber": 33.4,
+    "fuel_wood": 66.6,
+    "coniferous_tree": 29.5,
+    "broadleaf_tree": 70.5,
+    "production": 0.05
+  },
+  {
+    "nation_cd": 48,
+    "data_year": 2020,
+    "timber": 0,
+    "fuel_wood": 100,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 0.01
+  },
+  {
+    "nation_cd": 50,
+    "data_year": 2020,
+    "timber": 1.6,
+    "fuel_wood": 98.4,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 25.67
+  },
+  {
+    "nation_cd": 51,
+    "data_year": 2020,
+    "timber": 0,
+    "fuel_wood": 100,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 1.55
+  },
+  {
+    "nation_cd": 52,
+    "data_year": 2020,
+    "timber": 56.2,
+    "fuel_wood": 43.8,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 0.01
+  },
+  {
+    "nation_cd": 56,
+    "data_year": 2020,
+    "timber": 82.9,
+    "fuel_wood": 17.1,
+    "coniferous_tree": 64.8,
+    "broadleaf_tree": 35.2,
+    "production": 5.21
+  },
+  {
+    "nation_cd": 64,
+    "data_year": 2020,
+    "timber": 2.3,
+    "fuel_wood": 97.7,
+    "coniferous_tree": 0.6,
+    "broadleaf_tree": 99.4,
+    "production": 5.44
+  },
+  {
+    "nation_cd": 68,
+    "data_year": 2020,
+    "timber": 37.9,
+    "fuel_wood": 62.1,
+    "coniferous_tree": 1,
+    "broadleaf_tree": 99,
+    "production": 4.03
+  },
+  {
+    "nation_cd": 70,
+    "data_year": 2020,
+    "timber": 65.5,
+    "fuel_wood": 34.5,
+    "coniferous_tree": 49.4,
+    "broadleaf_tree": 50.6,
+    "production": 4.3
+  },
+  {
+    "nation_cd": 72,
+    "data_year": 2020,
+    "timber": 13.1,
+    "fuel_wood": 86.9,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 0.8
+  },
+  {
+    "nation_cd": 76,
+    "data_year": 2020,
+    "timber": 53.7,
+    "fuel_wood": 46.3,
+    "coniferous_tree": 16.9,
+    "broadleaf_tree": 83.1,
+    "production": 266.29
+  },
+  {
+    "nation_cd": 84,
+    "data_year": 2020,
+    "timber": 24.6,
+    "fuel_wood": 75.4,
+    "coniferous_tree": 4.8,
+    "broadleaf_tree": 95.2,
+    "production": 0.17
+  },
+  {
+    "nation_cd": 90,
+    "data_year": 2020,
+    "timber": 95.9,
+    "fuel_wood": 4.1,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 3.34
+  },
+  {
+    "nation_cd": 96,
+    "data_year": 2020,
+    "timber": 86,
+    "fuel_wood": 14,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 0.08
+  },
+  {
+    "nation_cd": 100,
+    "data_year": 2020,
+    "timber": 56.8,
+    "fuel_wood": 43.2,
+    "coniferous_tree": 52.5,
+    "broadleaf_tree": 47.5,
+    "production": 5.4
+  },
+  {
+    "nation_cd": 104,
+    "data_year": 2020,
+    "timber": 10.2,
+    "fuel_wood": 89.8,
+    "coniferous_tree": 0.8,
+    "broadleaf_tree": 99.2,
+    "production": 42.65
+  },
+  {
+    "nation_cd": 108,
+    "data_year": 2020,
+    "timber": 9.4,
+    "fuel_wood": 90.6,
+    "coniferous_tree": 2.1,
+    "broadleaf_tree": 97.9,
+    "production": 6.62
+  },
+  {
+    "nation_cd": 112,
+    "data_year": 2020,
+    "timber": 62.8,
+    "fuel_wood": 37.2,
+    "coniferous_tree": 75.3,
+    "broadleaf_tree": 24.7,
+    "production": 27.05
+  },
+  {
+    "nation_cd": 116,
+    "data_year": 2020,
+    "timber": 4.3,
+    "fuel_wood": 95.7,
+    "coniferous_tree": 0.2,
+    "broadleaf_tree": 99.8,
+    "production": 7.44
+  },
+  {
+    "nation_cd": 120,
+    "data_year": 2020,
+    "timber": 26.3,
+    "fuel_wood": 73.7,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 14.55
+  },
+  {
+    "nation_cd": 124,
+    "data_year": 2020,
+    "timber": 98.7,
+    "fuel_wood": 1.3,
+    "coniferous_tree": 82.1,
+    "broadleaf_tree": 17.9,
+    "production": 132.18
+  },
+  {
+    "nation_cd": 132,
+    "data_year": 2020,
+    "timber": 0,
+    "fuel_wood": 100,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 0.19
+  },
+  {
+    "nation_cd": 140,
+    "data_year": 2020,
+    "timber": 29.7,
+    "fuel_wood": 70.3,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 2.84
+  },
+  {
+    "nation_cd": 144,
+    "data_year": 2020,
+    "timber": 13.5,
+    "fuel_wood": 86.5,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 5.14
+  },
+  {
+    "nation_cd": 148,
+    "data_year": 2020,
+    "timber": 8.5,
+    "fuel_wood": 91.5,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 8.97
+  },
+  {
+    "nation_cd": 152,
+    "data_year": 2020,
+    "timber": 73.2,
+    "fuel_wood": 26.8,
+    "coniferous_tree": 51.5,
+    "broadleaf_tree": 48.5,
+    "production": 59.49
+  },
+  {
+    "nation_cd": 156,
+    "data_year": 2020,
+    "timber": 53.5,
+    "fuel_wood": 46.5,
+    "coniferous_tree": 27.3,
+    "broadleaf_tree": 72.7,
+    "production": 337.14
+  },
+  {
+    "nation_cd": 158,
+    "data_year": 2020,
+    "timber": 99.6,
+    "fuel_wood": 0.4,
+    "coniferous_tree": 75,
+    "broadleaf_tree": 25,
+    "production": 1.47
+  },
+  {
+    "nation_cd": 170,
+    "data_year": 2020,
+    "timber": 28.9,
+    "fuel_wood": 71.1,
+    "coniferous_tree": 26.8,
+    "broadleaf_tree": 73.2,
+    "production": 9.01
+  },
+  {
+    "nation_cd": 174,
+    "data_year": 2020,
+    "timber": 6.8,
+    "fuel_wood": 93.2,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 0.36
+  },
+  {
+    "nation_cd": 178,
+    "data_year": 2020,
+    "timber": 60.9,
+    "fuel_wood": 39.1,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 3.97
+  },
+  {
+    "nation_cd": 180,
+    "data_year": 2020,
+    "timber": 5,
+    "fuel_wood": 95,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 92.41
+  },
+  {
+    "nation_cd": 184,
+    "data_year": 2020,
+    "timber": 100,
+    "fuel_wood": 0,
+    "coniferous_tree": 100,
+    "broadleaf_tree": 0,
+    "production": 0.01
+  },
+  {
+    "nation_cd": 188,
+    "data_year": 2020,
+    "timber": 27.3,
+    "fuel_wood": 72.7,
+    "coniferous_tree": 2.2,
+    "broadleaf_tree": 97.8,
+    "production": 4.46
+  },
+  {
+    "nation_cd": 191,
+    "data_year": 2020,
+    "timber": 57.8,
+    "fuel_wood": 42.2,
+    "coniferous_tree": 16.7,
+    "broadleaf_tree": 83.3,
+    "production": 5.23
+  },
+  {
+    "nation_cd": 192,
+    "data_year": 2020,
+    "timber": 34.9,
+    "fuel_wood": 65.1,
+    "coniferous_tree": 10.8,
+    "broadleaf_tree": 89.2,
+    "production": 1.75
+  },
+  {
+    "nation_cd": 196,
+    "data_year": 2020,
+    "timber": 26.2,
+    "fuel_wood": 73.8,
+    "coniferous_tree": 86,
+    "broadleaf_tree": 14,
+    "production": 0.01
+  },
+  {
+    "nation_cd": 203,
+    "data_year": 2020,
+    "timber": 79.8,
+    "fuel_wood": 20.2,
+    "coniferous_tree": 96.1,
+    "broadleaf_tree": 3.9,
+    "production": 33.35
+  },
+  {
+    "nation_cd": 204,
+    "data_year": 2020,
+    "timber": 5.5,
+    "fuel_wood": 94.5,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 7.05
+  },
+  {
+    "nation_cd": 208,
+    "data_year": 2020,
+    "timber": 46.4,
+    "fuel_wood": 53.6,
+    "coniferous_tree": 75.8,
+    "broadleaf_tree": 24.2,
+    "production": 3.84
+  },
+  {
+    "nation_cd": 212,
+    "data_year": 2020,
+    "timber": 0,
+    "fuel_wood": 100,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 0.01
+  },
+  {
+    "nation_cd": 214,
+    "data_year": 2020,
+    "timber": 4.8,
+    "fuel_wood": 95.2,
+    "coniferous_tree": 1.5,
+    "broadleaf_tree": 98.5,
+    "production": 1.03
+  },
+  {
+    "nation_cd": 218,
+    "data_year": 2020,
+    "timber": 32.5,
+    "fuel_wood": 67.5,
+    "coniferous_tree": 22,
+    "broadleaf_tree": 78,
+    "production": 7.5
+  },
+  {
+    "nation_cd": 222,
+    "data_year": 2020,
+    "timber": 14.3,
+    "fuel_wood": 85.7,
+    "coniferous_tree": 0.3,
+    "broadleaf_tree": 99.7,
+    "production": 4.78
+  },
+  {
+    "nation_cd": 226,
+    "data_year": 2020,
+    "timber": 74.4,
+    "fuel_wood": 25.6,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 1.75
+  },
+  {
+    "nation_cd": 231,
+    "data_year": 2020,
+    "timber": 2.5,
+    "fuel_wood": 97.5,
+    "coniferous_tree": 6.8,
+    "broadleaf_tree": 93.2,
+    "production": 117.37
+  },
+  {
+    "nation_cd": 232,
+    "data_year": 2020,
+    "timber": 2.2,
+    "fuel_wood": 97.8,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 1.02
+  },
+  {
+    "nation_cd": 233,
+    "data_year": 2020,
+    "timber": 61.1,
+    "fuel_wood": 38.9,
+    "coniferous_tree": 55.1,
+    "broadleaf_tree": 44.9,
+    "production": 10.64
+  },
+  {
+    "nation_cd": 238,
+    "data_year": 2020,
+    "timber": 0,
+    "fuel_wood": 100,
+    "coniferous_tree": 100,
+    "broadleaf_tree": 0,
+    "production": 0
+  },
+  {
+    "nation_cd": 242,
+    "data_year": 2020,
+    "timber": 95.6,
+    "fuel_wood": 4.4,
+    "coniferous_tree": 66.9,
+    "broadleaf_tree": 33.1,
+    "production": 0.84
+  },
+  {
+    "nation_cd": 246,
+    "data_year": 2020,
+    "timber": 85.2,
+    "fuel_wood": 14.8,
+    "coniferous_tree": 78.6,
+    "broadleaf_tree": 21.4,
+    "production": 60.23
+  },
+  {
+    "nation_cd": 250,
+    "data_year": 2020,
+    "timber": 50.9,
+    "fuel_wood": 49.1,
+    "coniferous_tree": 39.2,
+    "broadleaf_tree": 60.8,
+    "production": 47.7
+  },
+  {
+    "nation_cd": 262,
+    "data_year": 2020,
+    "timber": 0,
+    "fuel_wood": 100,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 0.41
+  },
+  {
+    "nation_cd": 266,
+    "data_year": 2020,
+    "timber": 73.2,
+    "fuel_wood": 26.8,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 3.99
+  },
+  {
+    "nation_cd": 268,
+    "data_year": 2020,
+    "timber": 34.7,
+    "fuel_wood": 65.3,
+    "coniferous_tree": 38,
+    "broadleaf_tree": 62,
+    "production": 0.55
+  },
+  {
+    "nation_cd": 270,
+    "data_year": 2020,
+    "timber": 13,
+    "fuel_wood": 87,
+    "coniferous_tree": 0.1,
+    "broadleaf_tree": 99.9,
+    "production": 0.9
+  },
+  {
+    "nation_cd": 276,
+    "data_year": 2020,
+    "timber": 73.5,
+    "fuel_wood": 26.5,
+    "coniferous_tree": 77.8,
+    "broadleaf_tree": 22.2,
+    "production": 84.05
+  },
+  {
+    "nation_cd": 288,
+    "data_year": 2020,
+    "timber": 4.2,
+    "fuel_wood": 95.8,
+    "coniferous_tree": 0.1,
+    "broadleaf_tree": 99.9,
+    "production": 52.38
+  },
+  {
+    "nation_cd": 296,
+    "data_year": 2020,
+    "timber": 0,
+    "fuel_wood": 100,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 0
+  },
+  {
+    "nation_cd": 300,
+    "data_year": 2020,
+    "timber": 30.3,
+    "fuel_wood": 69.7,
+    "coniferous_tree": 19.7,
+    "broadleaf_tree": 80.3,
+    "production": 1.36
+  },
+  {
+    "nation_cd": 320,
+    "data_year": 2020,
+    "timber": 2.9,
+    "fuel_wood": 97.1,
+    "coniferous_tree": 61,
+    "broadleaf_tree": 39,
+    "production": 22.27
+  },
+  {
+    "nation_cd": 324,
+    "data_year": 2020,
+    "timber": 5,
+    "fuel_wood": 95,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 13.07
+  },
+  {
+    "nation_cd": 328,
+    "data_year": 2020,
+    "timber": 28,
+    "fuel_wood": 72,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 1.13
+  },
+  {
+    "nation_cd": 332,
+    "data_year": 2020,
+    "timber": 10,
+    "fuel_wood": 90,
+    "coniferous_tree": 11.4,
+    "broadleaf_tree": 88.6,
+    "production": 2.38
+  },
+  {
+    "nation_cd": 340,
+    "data_year": 2020,
+    "timber": 9.4,
+    "fuel_wood": 90.6,
+    "coniferous_tree": 39.2,
+    "broadleaf_tree": 60.8,
+    "production": 8.98
+  },
+  {
+    "nation_cd": 348,
+    "data_year": 2020,
+    "timber": 51.9,
+    "fuel_wood": 48.1,
+    "coniferous_tree": 16.5,
+    "broadleaf_tree": 83.5,
+    "production": 5.58
+  },
+  {
+    "nation_cd": 352,
+    "data_year": 2020,
+    "timber": 50,
+    "fuel_wood": 50,
+    "coniferous_tree": 90,
+    "broadleaf_tree": 10,
+    "production": 0
+  },
+  {
+    "nation_cd": 356,
+    "data_year": 2020,
+    "timber": 14.1,
+    "fuel_wood": 85.9,
+    "coniferous_tree": 4.3,
+    "broadleaf_tree": 95.7,
+    "production": 350.67
+  },
+  {
+    "nation_cd": 360,
+    "data_year": 2020,
+    "timber": 68.3,
+    "fuel_wood": 31.7,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 121.95
+  },
+  {
+    "nation_cd": 364,
+    "data_year": 2020,
+    "timber": 93.3,
+    "fuel_wood": 6.7,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 0.45
+  },
+  {
+    "nation_cd": 368,
+    "data_year": 2020,
+    "timber": 33.3,
+    "fuel_wood": 66.7,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 0.18
+  },
+  {
+    "nation_cd": 372,
+    "data_year": 2020,
+    "timber": 92.7,
+    "fuel_wood": 7.3,
+    "coniferous_tree": 99.4,
+    "broadleaf_tree": 0.6,
+    "production": 3.91
+  },
+  {
+    "nation_cd": 376,
+    "data_year": 2020,
+    "timber": 92.6,
+    "fuel_wood": 7.4,
+    "coniferous_tree": 90.7,
+    "broadleaf_tree": 9.3,
+    "production": 0.03
+  },
+  {
+    "nation_cd": 380,
+    "data_year": 2020,
+    "timber": 31.6,
+    "fuel_wood": 68.4,
+    "coniferous_tree": 33.5,
+    "broadleaf_tree": 66.5,
+    "production": 15.84
+  },
+  {
+    "nation_cd": 384,
+    "data_year": 2020,
+    "timber": 20.6,
+    "fuel_wood": 79.4,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 11.66
+  },
+  {
+    "nation_cd": 388,
+    "data_year": 2020,
+    "timber": 23.3,
+    "fuel_wood": 76.7,
+    "coniferous_tree": 0.1,
+    "broadleaf_tree": 99.9,
+    "production": 0.65
+  },
+  {
+    "nation_cd": 392,
+    "data_year": 2020,
+    "timber": 77.2,
+    "fuel_wood": 22.8,
+    "coniferous_tree": 69.3,
+    "broadleaf_tree": 30.7,
+    "production": 30.35
+  },
+  {
+    "nation_cd": 398,
+    "data_year": 2020,
+    "timber": 38.9,
+    "fuel_wood": 61.1,
+    "coniferous_tree": 16.5,
+    "broadleaf_tree": 83.5,
+    "production": 0.5
+  },
+  {
+    "nation_cd": 400,
+    "data_year": 2020,
+    "timber": 1,
+    "fuel_wood": 99,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 0.38
+  },
+  {
+    "nation_cd": 404,
+    "data_year": 2020,
+    "timber": 3.7,
+    "fuel_wood": 96.3,
+    "coniferous_tree": 11.7,
+    "broadleaf_tree": 88.3,
+    "production": 25.92
+  },
+  {
+    "nation_cd": 408,
+    "data_year": 2020,
+    "timber": 19.2,
+    "fuel_wood": 80.8,
+    "coniferous_tree": 65.5,
+    "broadleaf_tree": 34.5,
+    "production": 7.8
+  },
+  {
+    "nation_cd": 410,
+    "data_year": 2020,
+    "timber": 94.2,
+    "fuel_wood": 5.8,
+    "coniferous_tree": 58.5,
+    "broadleaf_tree": 41.5,
+    "production": 4.27
+  },
+  {
+    "nation_cd": 414,
+    "data_year": 2020,
+    "timber": 0,
+    "fuel_wood": 100,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 0.02
+  },
+  {
+    "nation_cd": 417,
+    "data_year": 2020,
+    "timber": 20.3,
+    "fuel_wood": 79.7,
+    "coniferous_tree": 30,
+    "broadleaf_tree": 70,
+    "production": 0.05
+  },
+  {
+    "nation_cd": 418,
+    "data_year": 2020,
+    "timber": 20.1,
+    "fuel_wood": 79.9,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 7.13
+  },
+  {
+    "nation_cd": 422,
+    "data_year": 2020,
+    "timber": 27.8,
+    "fuel_wood": 72.2,
+    "coniferous_tree": 41.6,
+    "broadleaf_tree": 58.4,
+    "production": 0.03
+  },
+  {
+    "nation_cd": 426,
+    "data_year": 2020,
+    "timber": 0.6,
+    "fuel_wood": 99.4,
+    "coniferous_tree": 0.6,
+    "broadleaf_tree": 99.4,
+    "production": 2.16
+  },
+  {
+    "nation_cd": 428,
+    "data_year": 2020,
+    "timber": 82.9,
+    "fuel_wood": 17.1,
+    "coniferous_tree": 56.6,
+    "broadleaf_tree": 43.4,
+    "production": 15.35
+  },
+  {
+    "nation_cd": 430,
+    "data_year": 2020,
+    "timber": 4.5,
+    "fuel_wood": 95.5,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 10.24
+  },
+  {
+    "nation_cd": 434,
+    "data_year": 2020,
+    "timber": 9.8,
+    "fuel_wood": 90.2,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 1.18
+  },
+  {
+    "nation_cd": 438,
+    "data_year": 2020,
+    "timber": 65.7,
+    "fuel_wood": 34.3,
+    "coniferous_tree": 69.5,
+    "broadleaf_tree": 30.5,
+    "production": 0.01
+  },
+  {
+    "nation_cd": 440,
+    "data_year": 2020,
+    "timber": 68.7,
+    "fuel_wood": 31.3,
+    "coniferous_tree": 56.1,
+    "broadleaf_tree": 43.9,
+    "production": 6.37
+  },
+  {
+    "nation_cd": 442,
+    "data_year": 2020,
+    "timber": 83.1,
+    "fuel_wood": 16.9,
+    "coniferous_tree": 70.2,
+    "broadleaf_tree": 29.8,
+    "production": 0.35
+  },
+  {
+    "nation_cd": 450,
+    "data_year": 2020,
+    "timber": 1.1,
+    "fuel_wood": 98.9,
+    "coniferous_tree": 0.7,
+    "broadleaf_tree": 99.3,
+    "production": 15.38
+  },
+  {
+    "nation_cd": 454,
+    "data_year": 2020,
+    "timber": 19.1,
+    "fuel_wood": 80.9,
+    "coniferous_tree": 1.4,
+    "broadleaf_tree": 98.6,
+    "production": 7.48
+  },
+  {
+    "nation_cd": 458,
+    "data_year": 2020,
+    "timber": 86.1,
+    "fuel_wood": 13.9,
+    "coniferous_tree": 0.1,
+    "broadleaf_tree": 99.9,
+    "production": 17.17
+  },
+  {
+    "nation_cd": 462,
+    "data_year": 2020,
+    "timber": 0,
+    "fuel_wood": 100,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 0.02
+  },
+  {
+    "nation_cd": 466,
+    "data_year": 2020,
+    "timber": 12.2,
+    "fuel_wood": 87.8,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 6.71
+  },
+  {
+    "nation_cd": 478,
+    "data_year": 2020,
+    "timber": 1.4,
+    "fuel_wood": 98.6,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 2.28
+  },
+  {
+    "nation_cd": 480,
+    "data_year": 2020,
+    "timber": 26.8,
+    "fuel_wood": 73.2,
+    "coniferous_tree": 42.5,
+    "broadleaf_tree": 57.5,
+    "production": 0
+  },
+  {
+    "nation_cd": 484,
+    "data_year": 2020,
+    "timber": 16.6,
+    "fuel_wood": 83.4,
+    "coniferous_tree": 38.2,
+    "broadleaf_tree": 61.8,
+    "production": 46.09
+  },
+  {
+    "nation_cd": 496,
+    "data_year": 2020,
+    "timber": 18.1,
+    "fuel_wood": 81.9,
+    "coniferous_tree": 88.6,
+    "broadleaf_tree": 11.4,
+    "production": 0.89
+  },
+  {
+    "nation_cd": 498,
+    "data_year": 2020,
+    "timber": 3.6,
+    "fuel_wood": 96.4,
+    "coniferous_tree": 0.2,
+    "broadleaf_tree": 99.8,
+    "production": 1.26
+  },
+  {
+    "nation_cd": 499,
+    "data_year": 2020,
+    "timber": 84.8,
+    "fuel_wood": 15.2,
+    "coniferous_tree": 71.4,
+    "broadleaf_tree": 28.6,
+    "production": 1.09
+  },
+  {
+    "nation_cd": 504,
+    "data_year": 2020,
+    "timber": 1.6,
+    "fuel_wood": 98.4,
+    "coniferous_tree": 15.8,
+    "broadleaf_tree": 84.2,
+    "production": 6.68
+  },
+  {
+    "nation_cd": 508,
+    "data_year": 2020,
+    "timber": 10.6,
+    "fuel_wood": 89.4,
+    "coniferous_tree": 0.1,
+    "broadleaf_tree": 99.9,
+    "production": 18.71
+  },
+  {
+    "nation_cd": 512,
+    "data_year": 2020,
+    "timber": 0,
+    "fuel_wood": 100,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 0.05
+  },
+  {
+    "nation_cd": 516,
+    "data_year": 2020,
+    "timber": 0,
+    "fuel_wood": 100,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 2.02
+  },
+  {
+    "nation_cd": 524,
+    "data_year": 2020,
+    "timber": 10,
+    "fuel_wood": 90,
+    "coniferous_tree": 0.4,
+    "broadleaf_tree": 99.6,
+    "production": 12.95
+  },
+  {
+    "nation_cd": 528,
+    "data_year": 2020,
+    "timber": 24.2,
+    "fuel_wood": 75.8,
+    "coniferous_tree": 29.2,
+    "broadleaf_tree": 70.8,
+    "production": 3.06
+  },
+  {
+    "nation_cd": 548,
+    "data_year": 2020,
+    "timber": 29.5,
+    "fuel_wood": 70.5,
+    "coniferous_tree": 7.8,
+    "broadleaf_tree": 92.2,
+    "production": 0.13
+  },
+  {
+    "nation_cd": 554,
+    "data_year": 2020,
+    "timber": 100,
+    "fuel_wood": 0,
+    "coniferous_tree": 99.2,
+    "broadleaf_tree": 0.8,
+    "production": 35.97
+  },
+  {
+    "nation_cd": 558,
+    "data_year": 2020,
+    "timber": 1.7,
+    "fuel_wood": 98.3,
+    "coniferous_tree": 12.2,
+    "broadleaf_tree": 87.8,
+    "production": 6.27
+  },
+  {
+    "nation_cd": 562,
+    "data_year": 2020,
+    "timber": 5.5,
+    "fuel_wood": 94.5,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 12.8
+  },
+  {
+    "nation_cd": 566,
+    "data_year": 2020,
+    "timber": 13,
+    "fuel_wood": 87,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 76.91
+  },
+  {
+    "nation_cd": 570,
+    "data_year": 2020,
+    "timber": 0,
+    "fuel_wood": 100,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 0
+  },
+  {
+    "nation_cd": 578,
+    "data_year": 2020,
+    "timber": 87,
+    "fuel_wood": 13,
+    "coniferous_tree": 89,
+    "broadleaf_tree": 11,
+    "production": 11.77
+  },
+  {
+    "nation_cd": 583,
+    "data_year": 2020,
+    "timber": 0,
+    "fuel_wood": 100,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 0
+  },
+  {
+    "nation_cd": 586,
+    "data_year": 2020,
+    "timber": 12.1,
+    "fuel_wood": 87.9,
+    "coniferous_tree": 8,
+    "broadleaf_tree": 92,
+    "production": 33.59
+  },
+  {
+    "nation_cd": 591,
+    "data_year": 2020,
+    "timber": 29.4,
+    "fuel_wood": 70.6,
+    "coniferous_tree": 0.5,
+    "broadleaf_tree": 99.5,
+    "production": 1.38
+  },
+  {
+    "nation_cd": 598,
+    "data_year": 2020,
+    "timber": 42.4,
+    "fuel_wood": 57.6,
+    "coniferous_tree": 0.4,
+    "broadleaf_tree": 99.6,
+    "production": 9.61
+  },
+  {
+    "nation_cd": 600,
+    "data_year": 2020,
+    "timber": 34.4,
+    "fuel_wood": 65.6,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 11.74
+  },
+  {
+    "nation_cd": 604,
+    "data_year": 2020,
+    "timber": 10.4,
+    "fuel_wood": 89.6,
+    "coniferous_tree": 0.1,
+    "broadleaf_tree": 99.9,
+    "production": 7.28
+  },
+  {
+    "nation_cd": 608,
+    "data_year": 2020,
+    "timber": 25.3,
+    "fuel_wood": 74.7,
+    "coniferous_tree": 0.3,
+    "broadleaf_tree": 99.7,
+    "production": 15.23
+  },
+  {
+    "nation_cd": 616,
+    "data_year": 2020,
+    "timber": 88.4,
+    "fuel_wood": 11.6,
+    "coniferous_tree": 76.1,
+    "broadleaf_tree": 23.9,
+    "production": 40.58
+  },
+  {
+    "nation_cd": 620,
+    "data_year": 2020,
+    "timber": 87.8,
+    "fuel_wood": 12.2,
+    "coniferous_tree": 32.8,
+    "broadleaf_tree": 67.2,
+    "production": 13.31
+  },
+  {
+    "nation_cd": 624,
+    "data_year": 2020,
+    "timber": 4.3,
+    "fuel_wood": 95.7,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 3.1
+  },
+  {
+    "nation_cd": 626,
+    "data_year": 2020,
+    "timber": 0,
+    "fuel_wood": 100,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 0.08
+  },
+  {
+    "nation_cd": 634,
+    "data_year": 2020,
+    "timber": 0,
+    "fuel_wood": 100,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 0.01
+  },
+  {
+    "nation_cd": 642,
+    "data_year": 2020,
+    "timber": 70.5,
+    "fuel_wood": 29.5,
+    "coniferous_tree": 41.6,
+    "broadleaf_tree": 58.4,
+    "production": 15.53
+  },
+  {
+    "nation_cd": 643,
+    "data_year": 2020,
+    "timber": 93,
+    "fuel_wood": 7,
+    "coniferous_tree": 79.2,
+    "broadleaf_tree": 20.8,
+    "production": 217
+  },
+  {
+    "nation_cd": 646,
+    "data_year": 2020,
+    "timber": 19.5,
+    "fuel_wood": 80.5,
+    "coniferous_tree": 1.6,
+    "broadleaf_tree": 98.4,
+    "production": 6.21
+  },
+  {
+    "nation_cd": 662,
+    "data_year": 2020,
+    "timber": 0,
+    "fuel_wood": 100,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 0.01
+  },
+  {
+    "nation_cd": 678,
+    "data_year": 2020,
+    "timber": 19.1,
+    "fuel_wood": 80.9,
+    "coniferous_tree": 2.3,
+    "broadleaf_tree": 97.7,
+    "production": 0.14
+  },
+  {
+    "nation_cd": 682,
+    "data_year": 2020,
+    "timber": 0,
+    "fuel_wood": 100,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 0.31
+  },
+  {
+    "nation_cd": 686,
+    "data_year": 2020,
+    "timber": 12.7,
+    "fuel_wood": 87.3,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 6.44
+  },
+  {
+    "nation_cd": 688,
+    "data_year": 2020,
+    "timber": 21.6,
+    "fuel_wood": 78.4,
+    "coniferous_tree": 6.2,
+    "broadleaf_tree": 93.8,
+    "production": 8.24
+  },
+  {
+    "nation_cd": 690,
+    "data_year": 2020,
+    "timber": 75.4,
+    "fuel_wood": 24.6,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 0.01
+  },
+  {
+    "nation_cd": 694,
+    "data_year": 2020,
+    "timber": 5.2,
+    "fuel_wood": 94.8,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 6.35
+  },
+  {
+    "nation_cd": 702,
+    "data_year": 2020,
+    "timber": 0,
+    "fuel_wood": 100,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 0.03
+  },
+  {
+    "nation_cd": 703,
+    "data_year": 2020,
+    "timber": 93,
+    "fuel_wood": 7,
+    "coniferous_tree": 54.2,
+    "broadleaf_tree": 45.8,
+    "production": 7.45
+  },
+  {
+    "nation_cd": 704,
+    "data_year": 2020,
+    "timber": 65.1,
+    "fuel_wood": 34.9,
+    "coniferous_tree": 2.3,
+    "broadleaf_tree": 97.7,
+    "production": 57.34
+  },
+  {
+    "nation_cd": 705,
+    "data_year": 2020,
+    "timber": 72.3,
+    "fuel_wood": 27.7,
+    "coniferous_tree": 54.3,
+    "broadleaf_tree": 45.7,
+    "production": 3.88
+  },
+  {
+    "nation_cd": 706,
+    "data_year": 2020,
+    "timber": 0.7,
+    "fuel_wood": 99.3,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 16.54
+  },
+  {
+    "nation_cd": 710,
+    "data_year": 2020,
+    "timber": 58.1,
+    "fuel_wood": 41.9,
+    "coniferous_tree": 23.6,
+    "broadleaf_tree": 76.4,
+    "production": 28.69
+  },
+  {
+    "nation_cd": 716,
+    "data_year": 2020,
+    "timber": 6.2,
+    "fuel_wood": 93.8,
+    "coniferous_tree": 5.9,
+    "broadleaf_tree": 94.1,
+    "production": 10.05
+  },
+  {
+    "nation_cd": 724,
+    "data_year": 2020,
+    "timber": 83.9,
+    "fuel_wood": 16.1,
+    "coniferous_tree": 55,
+    "broadleaf_tree": 45,
+    "production": 18.31
+  },
+  {
+    "nation_cd": 728,
+    "data_year": 2020,
+    "timber": 0,
+    "fuel_wood": 100,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 4.75
+  },
+  {
+    "nation_cd": 729,
+    "data_year": 2020,
+    "timber": 6.9,
+    "fuel_wood": 93.1,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 16.74
+  },
+  {
+    "nation_cd": 740,
+    "data_year": 2020,
+    "timber": 92.4,
+    "fuel_wood": 7.6,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 1.16
+  },
+  {
+    "nation_cd": 748,
+    "data_year": 2020,
+    "timber": 41.5,
+    "fuel_wood": 58.5,
+    "coniferous_tree": 43.7,
+    "broadleaf_tree": 56.3,
+    "production": 2.25
+  },
+  {
+    "nation_cd": 752,
+    "data_year": 2020,
+    "timber": 92.8,
+    "fuel_wood": 7.2,
+    "coniferous_tree": 87.8,
+    "broadleaf_tree": 12.2,
+    "production": 76.06
+  },
+  {
+    "nation_cd": 756,
+    "data_year": 2020,
+    "timber": 60.3,
+    "fuel_wood": 39.7,
+    "coniferous_tree": 68.6,
+    "broadleaf_tree": 31.4,
+    "production": 4.65
+  },
+  {
+    "nation_cd": 760,
+    "data_year": 2020,
+    "timber": 52.3,
+    "fuel_wood": 47.7,
+    "coniferous_tree": 54.8,
+    "broadleaf_tree": 45.2,
+    "production": 0.08
+  },
+  {
+    "nation_cd": 762,
+    "data_year": 2020,
+    "timber": 0,
+    "fuel_wood": 100,
+    "coniferous_tree": 50,
+    "broadleaf_tree": 50,
+    "production": 3.67
+  },
+  {
+    "nation_cd": 764,
+    "data_year": 2020,
+    "timber": 44.3,
+    "fuel_wood": 55.7,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 32.96
+  },
+  {
+    "nation_cd": 768,
+    "data_year": 2020,
+    "timber": 4.1,
+    "fuel_wood": 95.9,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 4.61
+  },
+  {
+    "nation_cd": 776,
+    "data_year": 2020,
+    "timber": 49.4,
+    "fuel_wood": 50.6,
+    "coniferous_tree": 24.7,
+    "broadleaf_tree": 75.3,
+    "production": 0
+  },
+  {
+    "nation_cd": 784,
+    "data_year": 2020,
+    "timber": 0,
+    "fuel_wood": 100,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 0.02
+  },
+  {
+    "nation_cd": 788,
+    "data_year": 2020,
+    "timber": 7.8,
+    "fuel_wood": 92.2,
+    "coniferous_tree": 23.5,
+    "broadleaf_tree": 76.5,
+    "production": 3.91
+  },
+  {
+    "nation_cd": 792,
+    "data_year": 2020,
+    "timber": 81.2,
+    "fuel_wood": 18.8,
+    "coniferous_tree": 62.2,
+    "broadleaf_tree": 37.8,
+    "production": 28.7
+  },
+  {
+    "nation_cd": 795,
+    "data_year": 2020,
+    "timber": 0,
+    "fuel_wood": 100,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 0.01
+  },
+  {
+    "nation_cd": 800,
+    "data_year": 2020,
+    "timber": 10.7,
+    "fuel_wood": 89.3,
+    "coniferous_tree": 1.9,
+    "broadleaf_tree": 98.1,
+    "production": 49.96
+  },
+  {
+    "nation_cd": 804,
+    "data_year": 2020,
+    "timber": 53.6,
+    "fuel_wood": 46.4,
+    "coniferous_tree": 65.1,
+    "broadleaf_tree": 34.9,
+    "production": 16.77
+  },
+  {
+    "nation_cd": 807,
+    "data_year": 2020,
+    "timber": 17,
+    "fuel_wood": 83,
+    "coniferous_tree": 10.5,
+    "broadleaf_tree": 89.5,
+    "production": 0.74
+  },
+  {
+    "nation_cd": 818,
+    "data_year": 2020,
+    "timber": 1.5,
+    "fuel_wood": 98.5,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 18.16
+  },
+  {
+    "nation_cd": 826,
+    "data_year": 2020,
+    "timber": 76.9,
+    "fuel_wood": 23.1,
+    "coniferous_tree": 93.1,
+    "broadleaf_tree": 6.9,
+    "production": 10.53
+  },
+  {
+    "nation_cd": 834,
+    "data_year": 2020,
+    "timber": 10.1,
+    "fuel_wood": 89.9,
+    "coniferous_tree": 3.9,
+    "broadleaf_tree": 96.1,
+    "production": 28.18
+  },
+  {
+    "nation_cd": 840,
+    "data_year": 2020,
+    "timber": 85.9,
+    "fuel_wood": 14.1,
+    "coniferous_tree": 74.3,
+    "broadleaf_tree": 25.7,
+    "production": 429.7
+  },
+  {
+    "nation_cd": 854,
+    "data_year": 2020,
+    "timber": 7.5,
+    "fuel_wood": 92.5,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 15.7
+  },
+  {
+    "nation_cd": 858,
+    "data_year": 2020,
+    "timber": 85.4,
+    "fuel_wood": 14.6,
+    "coniferous_tree": 19.5,
+    "broadleaf_tree": 80.5,
+    "production": 17.98
+  },
+  {
+    "nation_cd": 860,
+    "data_year": 2020,
+    "timber": 25.3,
+    "fuel_wood": 74.7,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 0.02
+  },
+  {
+    "nation_cd": 862,
+    "data_year": 2020,
+    "timber": 23.2,
+    "fuel_wood": 76.8,
+    "coniferous_tree": 7.5,
+    "broadleaf_tree": 92.5,
+    "production": 5.67
+  },
+  {
+    "nation_cd": 882,
+    "data_year": 2020,
+    "timber": 7.5,
+    "fuel_wood": 92.5,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 0.08
+  },
+  {
+    "nation_cd": 887,
+    "data_year": 2020,
+    "timber": 0.4,
+    "fuel_wood": 99.6,
+    "coniferous_tree": 0,
+    "broadleaf_tree": 100,
+    "production": 0.61
+  },
+  {
+    "nation_cd": 894,
+    "data_year": 2020,
+    "timber": 10.5,
+    "fuel_wood": 89.5,
+    "coniferous_tree": 3.5,
+    "broadleaf_tree": 96.5,
+    "production": 25.73
+  }
+]

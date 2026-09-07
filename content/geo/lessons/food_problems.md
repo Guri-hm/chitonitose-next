@@ -123,62 +123,7 @@
 食料自給率を高めるためには、食に関する知識や関心を向上させる必要があります。
 ::
 ::food-self-sufficiency{params="392,380,826,250,276,840" data_year="2017"}
-<script type="text/javascript">
-createChartAsync(Chart.Combo, {
-"params": [
-{
-statistics_id: 162,
-nation_cd: 392
-},
-{
-statistics_id: 163,
-nation_cd: 392
-},
-{
-statistics_id: 164,
-nation_cd: 392
-},
-{
-statistics_id: 165,
-nation_cd: 392
-},
-{
-statistics_id: 166,
-nation_cd: 392
-},
-{
-statistics_id: 168,
-nation_cd: 392
-},
-{
-statistics_id: 169,
-nation_cd: 392
-},
-{
-statistics_id: 167,
-nation_cd: 392
-}
-]
-}, 'jp_food_self_sufficiency'
-, {
-title: '日本の食料自給率の推移',
-height: 500,
-vAxes: {
-0: {
-title: '%'
-}
-},
-hAxis: { title: '年' },
-series: {
-// Left-Yの列のデータ
-0: { type: 'line', targetAxisIndex: 0 },
-// Right-Yの列のデータ
-1: { type: 'line', targetAxisIndex: 0 },
-},
-isStacked: true,
-}, "./php/statistics_combo.php");
-</script>
-<div id="jp_food_self_sufficiency" class="mx-auto mt-10 mb-10" style="width: 100%;max-width: 800px;"></div>
+::chart{type="ComboChart" dataset="statistics_combo" params="{&quot;params&quot;:[{&quot;statistics_id&quot;:162,&quot;nation_cd&quot;:392},{&quot;statistics_id&quot;:163,&quot;nation_cd&quot;:392},{&quot;statistics_id&quot;:164,&quot;nation_cd&quot;:392},{&quot;statistics_id&quot;:165,&quot;nation_cd&quot;:392},{&quot;statistics_id&quot;:166,&quot;nation_cd&quot;:392},{&quot;statistics_id&quot;:168,&quot;nation_cd&quot;:392},{&quot;statistics_id&quot;:169,&quot;nation_cd&quot;:392},{&quot;statistics_id&quot;:167,&quot;nation_cd&quot;:392}]}" title="日本の食料自給率の推移"}
 ### 自給率向上を意識させる言葉
 ::top
 食料自給率の向上を意識させる、次のような言葉があります。
@@ -198,20 +143,7 @@ isStacked: true,
 日本のフードマイレージは、他国と比べて著しく高い傾向
 :::</li>
 </ul>
-<script type="text/javascript">
-createChartAsync(Chart.Bar, { statistics_ids: [210], category: "nation" }, 'wood_importer', {
-title: 'フードマイレージ(百万t×㎞、2001年)',
-height: 500,
-hAxis: {
-title: '百万t×㎞',
-minValue: 0
-},
-vAxis: {
-title: '国'
-},
-}, "./php/statistics_bars2.php");
-</script>
-<div id="wood_importer" class="mx-auto mt-10 mb-10" style="width: 100%;max-width: 800px;"></div>
+::chart{type="BarChart" dataset="statistics_bars2" params="{&quot;statistics_ids&quot;:[210],&quot;category&quot;:&quot;nation&quot;}" title="フードマイレージ(百万t×㎞、2001年)"}
 ## 食の安全
 ### 「食の安全」を脅かした出来事
 ::top

@@ -249,7 +249,7 @@
 フランスの鉱工業
 ::
 ### 発電
-::chart{type="PieChart" dataset="power_generation" filter="nation_cd=250" fields="thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス" title="フランス (億kWh、2019年)"}
+::chart{type="PieChart" dataset="power_generation" params="{&quot;nation_cd&quot;:250}" title="フランス (億kWh、2019年)"}
 ### 貿易
 ::export-items{nation_cd="250"}
 ::import-items{nation_cd="250"}
@@ -478,7 +478,7 @@
 ![](offshore_wind_power.webp)
 デンマークの洋上風力発電
 ::
-::chart{type="PieChart" dataset="power_generation" filter="nation_cd=208" fields="thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス" title="デンマーク (億kWh、2019年)"}
+::chart{type="PieChart" dataset="power_generation" params="{&quot;nation_cd&quot;:208}" title="デンマーク (億kWh、2019年)"}
 ### 貿易
 ::export-items{nation_cd="208"}
 ::import-items{nation_cd="208"}

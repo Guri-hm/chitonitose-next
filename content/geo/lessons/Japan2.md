@@ -175,28 +175,5 @@
 ::top
 米軍基地がある沖縄で多く居住しています。
 ::
-<script type="text/javascript">
-createChartAsync(Chart.Line, { statistics_ids: "" }, 'foreign_population', {
-title: '国籍別総在留外国人人口',
-hAxis: {
-title: '年'
-},
-vAxis: {
-title: '人'
-},
-height: 500
-}, "./php/foreign_population.php");
-</script>
-<div id="foreign_population" class="mx-auto" style="width: 100%;max-width: 800px;"></div>
-<script type="text/javascript">
-createChartAsync(Chart.Bar, { statistics_ids: "" }, 'foreign_population_pref', {
-title: '都道府県別、国籍別在留外国人(2019年、%)',
-height: 500,
-legend: { position: 'top', maxLines: 3 },
-isStacked: 'percent',
-titleTextStyle: {
-fontSize: 14,
-}
-}, "./php/foreign_population_prefecture.php");
-</script>
-<div id="foreign_population_pref" class="mx-auto mt-10 mb-10" style="width: 100%;max-width: 800px;"></div>
+::chart{type="LineChart" dataset="foreign_population" params="{&quot;statistics_ids&quot;:&quot;&quot;}" title="国籍別総在留外国人人口"}
+::chart{type="BarChart" dataset="foreign_population_prefecture" params="{&quot;statistics_ids&quot;:&quot;&quot;}" title="都道府県別、国籍別在留外国人(2019年、%)"}

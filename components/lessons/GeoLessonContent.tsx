@@ -26,7 +26,7 @@ function parseChartAttrs(attrsStr: string): Record<string, string> {
 
 type Segment =
   | { type: 'html'; html: string }
-  | { type: 'chart'; chartType: string; dataset: string; filter: string; fields: string; title: string };
+  | { type: 'chart'; chartType: string; dataset: string; params: string; title: string };
 
 /**
  * htmlContent中の`.lesson-chart-placeholder`を実際のReactの子要素の境界として切り出す。
@@ -48,8 +48,7 @@ function splitIntoSegments(htmlContent: string): Segment[] {
       type: 'chart',
       chartType: attrs.type || 'PieChart',
       dataset: attrs.dataset || '',
-      filter: attrs.filter || '',
-      fields: attrs.fields || '',
+      params: attrs.params || '{}',
       title: attrs.title || '',
     });
     lastIndex = re.lastIndex;
@@ -98,10 +97,10 @@ export default function GeoLessonContent({ htmlContent, chartDatasets }: GeoLess
         segment.type === 'chart' ? (
           <LessonChart
             key={index}
-            chartType={segment.chartType as any}
-            rows={chartDatasets?.[segment.dataset] || []}
-            filter={segment.filter}
-            fields={segment.fields}
+            chartType={segment.chartType}
+            dataset={segment.dataset}
+            params={segment.params}
+            datasets={chartDatasets || {}}
             title={segment.title}
           />
         ) : (

@@ -44,18 +44,7 @@
 ::last
 この言葉は多数の人種・民族が文化的特色を失わすに共存する様を指しています。
 ::
-<script type="text/javascript">
-createChartAsync(Chart.Bar, { "statistics_id": 68 }, 'US_people', {
-title: 'アメリカの人種・民族構成(2015年、%)',
-height: 250,
-legend: { position: 'top', maxLines: 3 },
-isStacked: true,
-titleTextStyle: {
-fontSize: 14,
-}
-}, "./php/statistics_bar2.php");
-</script>
-<div id="US_people" class="mx-auto mt-10 mb-10" style="width: 100%;max-width: 600px;"></div>
+::chart{type="BarChart" dataset="statistics_bar2" params="{&quot;statistics_id&quot;:68}" title="アメリカの人種・民族構成(2015年、%)"}
 ::gazo
 ![](US_distribution_of_people.webp){.border}
 アメリカ合衆国の人種・民族の居住分布
@@ -449,7 +438,7 @@ Adobe本社
 ::top
 氷河湖の水を利用した水力発電が盛んです。
 ::
-::chart{type="PieChart" dataset="power_generation" filter="nation_cd=124" fields="thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス" title="カナダ (億kWh、2019年)"}
+::chart{type="PieChart" dataset="power_generation" params="{&quot;nation_cd&quot;:124}" title="カナダ (億kWh、2019年)"}
 <h5>原油</h5>
 ::statistics{id="221" order="desc" limit="7" offset="0"}
 <h5>天然ガス</h5>

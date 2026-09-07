@@ -1,0 +1,317 @@
+[
+  {
+    "data_year": 1955,
+    "domestic_timber": 6268.7,
+    "imported_timber": 251.9
+  },
+  {
+    "data_year": 1956,
+    "domestic_timber": 6488.1,
+    "imported_timber": 332.8
+  },
+  {
+    "data_year": 1957,
+    "domestic_timber": 6775.3,
+    "imported_timber": 355.1
+  },
+  {
+    "data_year": 1958,
+    "domestic_timber": 6081.7,
+    "imported_timber": 426.8
+  },
+  {
+    "data_year": 1959,
+    "domestic_timber": 6020.6,
+    "imported_timber": 570.6
+  },
+  {
+    "data_year": 1960,
+    "domestic_timber": 6376.2,
+    "imported_timber": 770.5
+  },
+  {
+    "data_year": 1961,
+    "domestic_timber": 6334.5,
+    "imported_timber": 1079.7
+  },
+  {
+    "data_year": 1962,
+    "domestic_timber": 6193.9,
+    "imported_timber": 1320.9
+  },
+  {
+    "data_year": 1963,
+    "domestic_timber": 6049.8,
+    "imported_timber": 1666.9
+  },
+  {
+    "data_year": 1964,
+    "domestic_timber": 5981.3,
+    "imported_timber": 1918.5
+  },
+  {
+    "data_year": 1965,
+    "domestic_timber": 5661.6,
+    "imported_timber": 2018.2
+  },
+  {
+    "data_year": 1966,
+    "domestic_timber": 5733.4,
+    "imported_timber": 2513.6
+  },
+  {
+    "data_year": 1967,
+    "domestic_timber": 5878.2,
+    "imported_timber": 3331.8
+  },
+  {
+    "data_year": 1968,
+    "domestic_timber": 5431.9,
+    "imported_timber": 4291.9
+  },
+  {
+    "data_year": 1969,
+    "domestic_timber": 5104,
+    "imported_timber": 4883
+  },
+  {
+    "data_year": 1970,
+    "domestic_timber": 4978,
+    "imported_timber": 5682.1
+  },
+  {
+    "data_year": 1971,
+    "domestic_timber": 4946.8,
+    "imported_timber": 5605.7
+  },
+  {
+    "data_year": 1972,
+    "domestic_timber": 4714.3,
+    "imported_timber": 6335.4
+  },
+  {
+    "data_year": 1973,
+    "domestic_timber": 4502.1,
+    "imported_timber": 7599.9
+  },
+  {
+    "data_year": 1974,
+    "domestic_timber": 4215.3,
+    "imported_timber": 7427.3
+  },
+  {
+    "data_year": 1975,
+    "domestic_timber": 3711.3,
+    "imported_timber": 6219
+  },
+  {
+    "data_year": 1976,
+    "domestic_timber": 3819.6,
+    "imported_timber": 6733.9
+  },
+  {
+    "data_year": 1977,
+    "domestic_timber": 3670.1,
+    "imported_timber": 6816
+  },
+  {
+    "data_year": 1978,
+    "domestic_timber": 3497.9,
+    "imported_timber": 7136.5
+  },
+  {
+    "data_year": 1979,
+    "domestic_timber": 3628.1,
+    "imported_timber": 7655.8
+  },
+  {
+    "data_year": 1980,
+    "domestic_timber": 3696.1,
+    "imported_timber": 7525
+  },
+  {
+    "data_year": 1981,
+    "domestic_timber": 3398.3,
+    "imported_timber": 6060.3
+  },
+  {
+    "data_year": 1982,
+    "domestic_timber": 3437.1,
+    "imported_timber": 5856.2
+  },
+  {
+    "data_year": 1983,
+    "domestic_timber": 3460,
+    "imported_timber": 5910.7
+  },
+  {
+    "data_year": 1984,
+    "domestic_timber": 3519.1,
+    "imported_timber": 5877.2
+  },
+  {
+    "data_year": 1985,
+    "domestic_timber": 3537.4,
+    "imported_timber": 6007.3
+  },
+  {
+    "data_year": 1986,
+    "domestic_timber": 3387.8,
+    "imported_timber": 6300.7
+  },
+  {
+    "data_year": 1987,
+    "domestic_timber": 3317,
+    "imported_timber": 7235.1
+  },
+  {
+    "data_year": 1988,
+    "domestic_timber": 3308.8,
+    "imported_timber": 7537.2
+  },
+  {
+    "data_year": 1989,
+    "domestic_timber": 3257.74,
+    "imported_timber": 8341.1
+  },
+  {
+    "data_year": 1990,
+    "domestic_timber": 3129.72,
+    "imported_timber": 8194.5
+  },
+  {
+    "data_year": 1991,
+    "domestic_timber": 2978.53,
+    "imported_timber": 8438.9
+  },
+  {
+    "data_year": 1992,
+    "domestic_timber": 2891.08,
+    "imported_timber": 8163.4
+  },
+  {
+    "data_year": 1993,
+    "domestic_timber": 2721.2,
+    "imported_timber": 8311.6
+  },
+  {
+    "data_year": 1994,
+    "domestic_timber": 2599.86,
+    "imported_timber": 8540.2
+  },
+  {
+    "data_year": 1995,
+    "domestic_timber": 2430.3,
+    "imported_timber": 8939.5
+  },
+  {
+    "data_year": 1996,
+    "domestic_timber": 2377,
+    "imported_timber": 9044.7
+  },
+  {
+    "data_year": 1997,
+    "domestic_timber": 2280.71,
+    "imported_timber": 8883.1
+  },
+  {
+    "data_year": 1998,
+    "domestic_timber": 2057.56,
+    "imported_timber": 7323.4
+  },
+  {
+    "data_year": 1999,
+    "domestic_timber": 1997.8,
+    "imported_timber": 7971.2
+  },
+  {
+    "data_year": 2000,
+    "domestic_timber": 1905.8,
+    "imported_timber": 8194.8
+  },
+  {
+    "data_year": 2001,
+    "domestic_timber": 1769.02,
+    "imported_timber": 7525.2
+  },
+  {
+    "data_year": 2002,
+    "domestic_timber": 1692.02,
+    "imported_timber": 7284.4
+  },
+  {
+    "data_year": 2003,
+    "domestic_timber": 1697,
+    "imported_timber": 7190.9
+  },
+  {
+    "data_year": 2004,
+    "domestic_timber": 1733.4,
+    "imported_timber": 7410.3
+  },
+  {
+    "data_year": 2005,
+    "domestic_timber": 1790,
+    "imported_timber": 6952.3
+  },
+  {
+    "data_year": 2006,
+    "domestic_timber": 1830,
+    "imported_timber": 7000.5
+  },
+  {
+    "data_year": 2007,
+    "domestic_timber": 1931.31,
+    "imported_timber": 6456.5
+  },
+  {
+    "data_year": 2008,
+    "domestic_timber": 1942.46,
+    "imported_timber": 6009.3
+  },
+  {
+    "data_year": 2009,
+    "domestic_timber": 1827.5,
+    "imported_timber": 4652.4
+  },
+  {
+    "data_year": 2010,
+    "domestic_timber": 1892.3,
+    "imported_timber": 5296.1
+  },
+  {
+    "data_year": 2011,
+    "domestic_timber": 2009.2,
+    "imported_timber": 5441
+  },
+  {
+    "data_year": 2012,
+    "domestic_timber": 2031.9,
+    "imported_timber": 5187
+  },
+  {
+    "data_year": 2013,
+    "domestic_timber": 2173.5,
+    "imported_timber": 5372.4
+  },
+  {
+    "data_year": 2014,
+    "domestic_timber": 2364.7,
+    "imported_timber": 5215.2
+  },
+  {
+    "data_year": 2015,
+    "domestic_timber": 2491.8,
+    "imported_timber": 5024.2
+  },
+  {
+    "data_year": 2016,
+    "domestic_timber": 2714.1,
+    "imported_timber": 5093.6
+  },
+  {
+    "data_year": 2017,
+    "domestic_timber": 2966,
+    "imported_timber": 5219.4
+  }
+]

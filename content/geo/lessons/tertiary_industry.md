@@ -22,43 +22,7 @@
 ::last
 例えば日本では、1951年から現在までに第１次産業の人口が<span onclick="choice(this)" class="choice"><span class="false_choice">増加</span>/<span class="true_choice">減少</span></span>し、また、第３次産業の人口が<span onclick="choice(this)" class="choice"><span class="true_choice">増加</span>/<span class="false_choice">減少</span></span>しました。
 ::
-<script type="text/javascript">
-createChartAsync(Chart.Combo, {
-"params": [
-{
-statistics_id: 320,
-nation_cd: 392
-},
-{
-statistics_id: 321,
-nation_cd: 392
-},
-{
-statistics_id: 322,
-nation_cd: 392
-}
-]
-}, 'japan_industrial_population_structure'
-, {
-title: '日本の産業別就業者数の推移',
-height: 500,
-vAxes: {
-0: {
-title: '就業者数年平均(万人)'
-}
-},
-hAxis: { title: '年' },
-series: {
-// Left-Yの列のデータ
-0: { type: 'area', targetAxisIndex: 0 },
-1: { type: 'area', targetAxisIndex: 0 },
-2: { type: 'area', targetAxisIndex: 0 },
-},
-isStacked: true,
-}, "./php/statistics_combo.php");
-</script>
-<div id="japan_industrial_population_structure" class="mx-auto mt-10 mb-10" style="width: 100%;max-width: 800px;">
-</div>
+::chart{type="ComboChart" dataset="statistics_combo" params="{&quot;params&quot;:[{&quot;statistics_id&quot;:320,&quot;nation_cd&quot;:392},{&quot;statistics_id&quot;:321,&quot;nation_cd&quot;:392},{&quot;statistics_id&quot;:322,&quot;nation_cd&quot;:392}]}" title="日本の産業別就業者数の推移"}
 #### 三角グラフ
 ::top
 産業別就業率をグラフにしたものとして、三角グラフがあります。
@@ -96,32 +60,6 @@ isStacked: true,
 ::
 <div id="retail_business" class="mx-auto mt-10 mb-10" style="width: 100%;max-width: 600px;"></div>
 <div class="text-center">小売業年間商品販売額（百万円，2019年）</div>
-<script type="text/javascript">
-fetchChart('./php/jp_prefectures_statistical_data_json.php'
-, {
-method: 'POST',
-body: JSON.stringify({ "statistics_id": 283, "data_year": 2019 }),
-}
-, Chart.Geo
-, {
-title: '卸売業年間商品販売額（百万円，2019年）',
-region: 'JP',
-resolution: 'provinces',
-}
-, 'wholesale_trade');
-fetchChart('./php/jp_prefectures_statistical_data_json.php'
-, {
-method: 'POST',
-body: JSON.stringify({ "statistics_id": 284, "data_year": 2019 }),
-}
-, Chart.Geo
-, {
-title: '小売業年間商品販売額（百万円，2019年）',
-region: 'JP',
-resolution: 'provinces',
-}
-, 'retail_business');
-</script>
 ### 小売業の業態
 #### 主な業態
 ::top
@@ -424,38 +362,7 @@ resolution: 'provinces',
 ::last
 2000年代まで国際観光収支は赤字でしたが、近年が訪日外国人数が増加して<span onclick="choice(this)" class="choice"><span class="true_choice">黒字</span>/<span class="false_choice">赤字</span></span>になりました。
 ::
-<script type="text/javascript">
-createChartAsync(Chart.Combo, {
-"params": [
-{
-statistics_id: 314,
-nation_cd: 392
-},
-{
-statistics_id: 315,
-nation_cd: 392
-}
-]
-}, 'jp_tourism'
-, {
-title: '訪日外国人数と日本人海外旅行者数の推移(万人)',
-height: 500,
-vAxes: {
-0: {
-title: '人数(万人)'
-}
-},
-hAxis: { title: '年' },
-series: {
-// Left-Yの列のデータ
-0: { type: 'line', targetAxisIndex: 0 },
-// Right-Yの列のデータ
-1: { type: 'line', targetAxisIndex: 0 },
-},
-isStacked: true,
-}, "./php/statistics_combo.php");
-</script>
-<div id="jp_tourism" class="mx-auto mt-10 mb-10" style="width: 100%;max-width: 800px;"></div>
+::chart{type="ComboChart" dataset="statistics_combo" params="{&quot;params&quot;:[{&quot;statistics_id&quot;:314,&quot;nation_cd&quot;:392},{&quot;statistics_id&quot;:315,&quot;nation_cd&quot;:392}]}" title="訪日外国人数と日本人海外旅行者数の推移(万人)"}
 <div class="overflow-x-auto mt-10 mb-10">
 <div class="text-center">各国・地域別日本人訪問者数人</div>
 ::statistics{id="316"}
