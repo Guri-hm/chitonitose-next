@@ -76,14 +76,7 @@
 ::last
 次いで水力発電が多く、安価に発電できた電力を利用してアルミニム生産をおこなっています。
 ::
-<script type="text/javascript">
-createChartAsync(Chart.Pie, { "nation_cd": 643 }, 'Russian_power_generation', {
-title: 'ロシア (億kWh、2019年)',
-colors: ['#dc3912', '#3366cc', '#990099', '#109618', '#ff9900', '#FBD01D', '#dd4477'],
-sliceVisibilityThreshold: 0
-}, "./php/power_generation.php");
-</script>
-<div id="Russian_power_generation" style="width: 100%; height: 350px"></div>
+::chart{type="PieChart" dataset="power_generation" filter="nation_cd=643" fields="thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス" title="ロシア (億kWh、2019年)"}
 ### 人口
 #### 人口ピラミッド
 ::top

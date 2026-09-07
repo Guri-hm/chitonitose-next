@@ -249,14 +249,7 @@
 フランスの鉱工業
 ::
 ### 発電
-<script type="text/javascript">
-createChartAsync(Chart.Pie, { "nation_cd": 250 }, 'France_power_generation', {
-title: 'フランス (億kWh、2019年)',
-colors: ['#dc3912', '#3366cc', '#990099', '#109618', '#ff9900', '#FBD01D', '#dd4477'],
-sliceVisibilityThreshold: 0
-}, "./php/power_generation.php");
-</script>
-<div id="France_power_generation" style="width: 100%; height: 350px"></div>
+::chart{type="PieChart" dataset="power_generation" filter="nation_cd=250" fields="thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス" title="フランス (億kWh、2019年)"}
 ### 貿易
 ::export-items{nation_cd="250"}
 ::import-items{nation_cd="250"}
@@ -485,14 +478,7 @@ sliceVisibilityThreshold: 0
 ![](offshore_wind_power.webp)
 デンマークの洋上風力発電
 ::
-<script type="text/javascript">
-createChartAsync(Chart.Pie, { "nation_cd": 208 }, 'Denmark_power_generation', {
-title: 'デンマーク (億kWh、2019年)',
-colors: ['#dc3912', '#3366cc', '#990099', '#109618', '#ff9900', '#FBD01D', '#dd4477'],
-sliceVisibilityThreshold: 0
-}, "./php/power_generation.php");
-</script>
-<div id="Denmark_power_generation" style="width: 100%; height: 350px"></div>
+::chart{type="PieChart" dataset="power_generation" filter="nation_cd=208" fields="thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス" title="デンマーク (億kWh、2019年)"}
 ### 貿易
 ::export-items{nation_cd="208"}
 ::import-items{nation_cd="208"}

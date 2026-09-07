@@ -541,14 +541,7 @@ fontSize: 14,
 ![](Ruapehu.webp)
 ルアペフ火山（NZ北島の最高峰の火山）
 ::
-<script type="text/javascript">
-createChartAsync(Chart.Pie, { "nation_cd": 554 }, 'NZ_power_generation', {
-title: 'ニュージーランド (億kWh、2019年)',
-colors: ['#dc3912', '#3366cc', '#990099', '#109618', '#ff9900', '#FBD01D', '#dd4477'],
-sliceVisibilityThreshold: 0
-}, "./php/power_generation.php");
-</script>
-<div id="NZ_power_generation" style="width: 100%; height: 350px"></div>
+::chart{type="PieChart" dataset="power_generation" filter="nation_cd=554" fields="thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス" title="ニュージーランド (億kWh、2019年)"}
 #### 南島
 <h5>沿岸</h5>
 ::top

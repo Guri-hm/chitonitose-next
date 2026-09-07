@@ -35,30 +35,9 @@
 ::top
 主な生産国は、<span onclick="choice(this)" class="choice"><span class="true_choice">石炭</span>/<span class="false_choice">石油</span>/<span class="false_choice">天然ガス</span></span>による火力発電が盛んなオーストラリア・中国・インド、<span onclick="choice(this)" class="choice"><span class="false_choice">火力</span>/<span class="true_choice">水力</span>/<span class="false_choice">風力</span>/<span class="false_choice">地熱</span>/<span class="false_choice">バイオマス</span></span>中心の発電をおこなうノルウェー・カナダ・ブラジルが該当します。
 ::
-<script type="text/javascript">
-createChartAsync(Chart.Pie, { "nation_cd": 578 }, 'Norway_power_generation', {
-title: 'ノルウェー (億kWh、2019年)',
-colors: ['#dc3912', '#3366cc', '#990099', '#109618', '#ff9900', '#FBD01D', '#dd4477'],
-sliceVisibilityThreshold: 0
-}, "./php/power_generation.php");
-</script>
-<script type="text/javascript">
-createChartAsync(Chart.Pie, { "nation_cd": 76 }, 'Brazil_power_generation', {
-title: 'ブラジル (億kWh、2019年)',
-colors: ['#dc3912', '#3366cc', '#990099', '#109618', '#ff9900', '#FBD01D', '#dd4477'],
-sliceVisibilityThreshold: 0
-}, "./php/power_generation.php");
-</script>
-<script type="text/javascript">
-createChartAsync(Chart.Pie, { "nation_cd": 124 }, 'Canada_power_generation', {
-title: 'カナダ (億kWh、2019年)',
-colors: ['#dc3912', '#3366cc', '#990099', '#109618', '#ff9900', '#FBD01D', '#dd4477'],
-sliceVisibilityThreshold: 0
-}, "./php/power_generation.php");
-</script>
-<div id="Norway_power_generation" style="width: 100%; height: 350px"></div>
-<div id="Brazil_power_generation" style="width: 100%; height: 350px"></div>
-<div id="Canada_power_generation" style="width: 100%; height: 350px"></div>
+::chart{type="PieChart" dataset="power_generation" filter="nation_cd=578" fields="thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス" title="ノルウェー (億kWh、2019年)"}
+::chart{type="PieChart" dataset="power_generation" filter="nation_cd=76" fields="thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス" title="ブラジル (億kWh、2019年)"}
+::chart{type="PieChart" dataset="power_generation" filter="nation_cd=124" fields="thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス" title="カナダ (億kWh、2019年)"}
 ### 鉄鋼業
 #### 立地
 ::top

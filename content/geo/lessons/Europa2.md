@@ -469,56 +469,14 @@ EUでは、輸出入時に価格を調節するようにしています。
 ::statistics{id="43" order="desc" limit="10" offset="0"}
 ## 一次エネルギーの構成
 ### ドイツ
-<script type="text/javascript">
-createChartAsync(Chart.Pie, { "nation_cd": 276 }, 'Germany_power_generation', {
-title: 'ドイツ (億kWh、2019年)',
-colors: ['#dc3912', '#3366cc', '#990099', '#109618', '#ff9900', '#FBD01D', '#dd4477'],
-sliceVisibilityThreshold: 0
-}, "./php/power_generation.php");
-</script>
-<div id="Germany_power_generation" style="width: 100%; height: 350px"></div>
+::chart{type="PieChart" dataset="power_generation" filter="nation_cd=276" fields="thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス" title="ドイツ (億kWh、2019年)"}
 ### フランス
-<script type="text/javascript">
-createChartAsync(Chart.Pie, { "nation_cd": 250 }, 'France_power_generation', {
-title: 'フランス (億kWh、2019年)',
-colors: ['#dc3912', '#3366cc', '#990099', '#109618', '#ff9900', '#FBD01D', '#dd4477'],
-sliceVisibilityThreshold: 0
-}, "./php/power_generation.php");
-</script>
-<div id="France_power_generation" style="width: 100%; height: 350px"></div>
+::chart{type="PieChart" dataset="power_generation" filter="nation_cd=250" fields="thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス" title="フランス (億kWh、2019年)"}
 ### ポーランド
-<script type="text/javascript">
-createChartAsync(Chart.Pie, { "nation_cd": 616 }, 'Poland_power_generation', {
-title: 'ポーランド (億kWh、2019年)',
-colors: ['#dc3912', '#3366cc', '#990099', '#109618', '#ff9900', '#FBD01D', '#dd4477'],
-sliceVisibilityThreshold: 0
-}, "./php/power_generation.php");
-</script>
-<div id="Poland_power_generation" style="width: 100%; height: 350px"></div>
+::chart{type="PieChart" dataset="power_generation" filter="nation_cd=616" fields="thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス" title="ポーランド (億kWh、2019年)"}
 ### デンマーク
-<script type="text/javascript">
-createChartAsync(Chart.Pie, { "nation_cd": 208 }, 'Denmark_power_generation', {
-title: 'デンマーク (億kWh、2019年)',
-colors: ['#dc3912', '#3366cc', '#990099', '#109618', '#ff9900', '#FBD01D', '#dd4477'],
-sliceVisibilityThreshold: 0
-}, "./php/power_generation.php");
-</script>
-<div id="Denmark_power_generation" style="width: 100%; height: 350px"></div>
+::chart{type="PieChart" dataset="power_generation" filter="nation_cd=208" fields="thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス" title="デンマーク (億kWh、2019年)"}
 ### ノルウェー
-<script type="text/javascript">
-createChartAsync(Chart.Pie, { "nation_cd": 578 }, 'Norway_power_generation', {
-title: 'ノルウェー (億kWh、2019年)',
-colors: ['#dc3912', '#3366cc', '#990099', '#109618', '#ff9900', '#FBD01D', '#dd4477'],
-sliceVisibilityThreshold: 0
-}, "./php/power_generation.php");
-</script>
-<div id="Norway_power_generation" style="width: 100%; height: 350px"></div>
+::chart{type="PieChart" dataset="power_generation" filter="nation_cd=578" fields="thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス" title="ノルウェー (億kWh、2019年)"}
 ### アイスランド
-<script type="text/javascript">
-createChartAsync(Chart.Pie, { "nation_cd": 352 }, 'Iceland_power_generation', {
-title: 'アイスランド (億kWh、2019年)',
-colors: ['#dc3912', '#3366cc', '#990099', '#109618', '#ff9900', '#FBD01D', '#dd4477'],
-sliceVisibilityThreshold: 0
-}, "./php/power_generation.php");
-</script>
-<div id="Iceland_power_generation" style="width: 100%; height: 350px"></div>
+::chart{type="PieChart" dataset="power_generation" filter="nation_cd=352" fields="thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス" title="アイスランド (億kWh、2019年)"}

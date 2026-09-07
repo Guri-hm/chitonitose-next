@@ -274,6 +274,39 @@ node scripts/regenerate-geo-lessons.js
   （親リポジトリ側は単にgitlinkの参照が変わるだけで、差分の中身は追えない）。
 - 今回の変更（コミット済み）を必要に応じて `git push` すること（本セッションではpushしていない）。
 
+### ✅ GoogleChartグラフが一切表示されない不具合を修正（追記）
+
+`::chart{}`ディレクティブ自体とレンダリング基盤（`LessonChart`/`GoogleChart`/`loadLessonChartDatasets`）は
+以前のセッションで実装済みだったが、以下2つの理由で実際には一切機能していなかった:
+
+1. **`htmlToCustomMarkdown`（逆変換）が元HTMLの`<script>createChartAsync(...)</script>`+
+   `<div id="...">`のペアを`::chart{}`に変換する処理を持っていなかった**ため、
+   `content/geo/lessons/*.md`には生の`<script>`/`<div>`がそのまま残っていた
+   （ブラウザは`dangerouslySetInnerHTML`経由で注入された`<script>`を実行しないため無害化されるだけ）。
+   → `convertChartScripts()`を追加し、`power_generation.php`（円グラフ、25箇所・12ファイルで使用）を
+   対象に自動変換するようにした。scriptとdivが同じ行の近くにあるとは限らない
+   （`Industry.html`は全script→全divの順でまとまっている）ため、2パス構成
+   （script側を除去しつつtargetIdごとの変換結果をMapに記録→対応するdivを置換）にしている。
+   `Chart.Pie`のような元サイトの型名をGoogle Charts本来の`PieChart`名に変換する
+   `CHART_TYPE_MAP`も追加（この変換漏れも表示されない原因の一つだった）。
+2. **`GeoLessonContent`が`.lesson-chart-placeholder`を`dangerouslySetInnerHTML`の子孫ノードに対して
+   `createRoot`でマウントしていた**ため、DBテーブルのときと全く同じ`createRoot`未定義動作
+   （facebook/react#32774）に該当し、プレースホルダー自体は正しく出力されていてもReactが
+   一切マウントされていなかった（`querySelectorAll('.lesson-chart-placeholder')`はヒットするが
+   `childCount`は常に0）。
+   → `GeoLessonContent`を全面的に書き換え、`htmlContent`文字列を`.lesson-chart-placeholder`の
+   位置で分割し、HTML断片は`<div style="display:contents" dangerouslySetInnerHTML>`で、
+   チャート部分は`<LessonChart>`を**最初から本来のReact子要素として**（`dangerouslySetInnerHTML`の
+   外側で）レンダリングするよう変更。`display:contents`によりラッパーdiv自体は見た目上
+   レイアウトに影響を与えない。画像プレースホルダー（`.lesson-image-placeholder`、現状geoでは未使用）の
+   `createRoot`マウント処理は変更していない（現状実害なしのため、根本修正は将来必要）。
+
+ブラウザで`/geo/energy_resources/`（カナダ/ノルウェー/ブラジル/フランスの円グラフ）と
+`/geo/Industry/`（scriptとdivが離れているケース）で実際にGoogle Charts製の円グラフ（SVG）が
+描画されることを確認済み。対象は`power_generation.php`のみ（他のエンドポイント、
+例えば`Chart.Bar`+`statistics_ids`系の棒グラフ等は今回未対応。必要になれば
+`CHART_ENDPOINT_CONFIGS`に追記し、`convertChartScripts()`と同じパターンで追加する）。
+
 ### `createRoot` マウント不具合の根本原因が判明（解決済み・要恒久対応）
 
 React公式リポジトリで該当する変更を発見した:

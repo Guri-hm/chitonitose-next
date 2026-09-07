@@ -199,14 +199,7 @@
 ::top
 ノルウェーは、偏西風の影響で降水が多く、また、急傾斜地が広いため、水力発電が盛んです。
 ::
-<script type="text/javascript">
-createChartAsync(Chart.Pie, { "nation_cd": 578 }, 'Norway_power_generation', {
-title: 'ノルウェー (億kWh、2019年)',
-colors: ['#dc3912', '#3366cc', '#990099', '#109618', '#ff9900', '#FBD01D', '#dd4477'],
-sliceVisibilityThreshold: 0
-}, "./php/power_generation.php");
-</script>
-<div id="Norway_power_generation" style="width: 100%; height: 350px"></div>
+::chart{type="PieChart" dataset="power_generation" filter="nation_cd=578" fields="thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス" title="ノルウェー (億kWh、2019年)"}
 ### 鉱工業
 #### アルミニウム工業
 ::top
@@ -361,14 +354,7 @@ sliceVisibilityThreshold: 0
 ::top
 水力発電とともに、地熱発電が中心です。
 ::
-<script type="text/javascript">
-createChartAsync(Chart.Pie, { "nation_cd": 352 }, 'Iceland_power_generation', {
-title: 'アイスランド (億kWh、2019年)',
-colors: ['#dc3912', '#3366cc', '#990099', '#109618', '#ff9900', '#FBD01D', '#dd4477'],
-sliceVisibilityThreshold: 0
-}, "./php/power_generation.php");
-</script>
-<div id="Iceland_power_generation" style="width: 100%; height: 350px"></div>
+::chart{type="PieChart" dataset="power_generation" filter="nation_cd=352" fields="thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス" title="アイスランド (億kWh、2019年)"}
 ### 貿易
 ::export-items{nation_cd="352"}
 ::import-items{nation_cd="352"}
@@ -395,14 +381,7 @@ sliceVisibilityThreshold: 0
 シロンスク地方
 ::
 ### 発電
-<script type="text/javascript">
-createChartAsync(Chart.Pie, { "nation_cd": 616 }, 'Poland_power_generation', {
-title: 'ポーランド (億kWh、2019年)',
-colors: ['#dc3912', '#3366cc', '#990099', '#109618', '#ff9900', '#FBD01D', '#dd4477'],
-sliceVisibilityThreshold: 0
-}, "./php/power_generation.php");
-</script>
-<div id="Poland_power_generation" style="width: 100%; height: 350px"></div>
+::chart{type="PieChart" dataset="power_generation" filter="nation_cd=616" fields="thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス" title="ポーランド (億kWh、2019年)"}
 ### 宗教
 ::top
 インド＝ヨーロッパ語族の語派（ラテン語派・ゲルマン語派・スラブ語派）とキリスト教の教派は、ある程度一致します。<a href="geo_lessons_Europa1.html#christianity_language" class="link-active link-icon"></a>

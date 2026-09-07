@@ -303,14 +303,7 @@
 ::last
 そのため、カナダでは水力発電が盛んになっています。
 ::
-<script type="text/javascript">
-createChartAsync(Chart.Pie, { "nation_cd": 124 }, 'Canada_power_generation', {
-title: 'カナダ (億kWh、2019年)',
-colors: ['#dc3912', '#3366cc', '#990099', '#109618', '#ff9900', '#FBD01D', '#dd4477'],
-sliceVisibilityThreshold: 0
-}, "./php/power_generation.php");
-</script>
-<div id="Canada_power_generation" style="width: 100%; height: 350px"></div>
+::chart{type="PieChart" dataset="power_generation" filter="nation_cd=124" fields="thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス" title="カナダ (億kWh、2019年)"}
 <h5>ノルウェーの発電事情</h5>
 ::top
 安定した降水も水力発電を盛んにする条件の一つです。
@@ -335,14 +328,7 @@ sliceVisibilityThreshold: 0
 ![](Norway_rain.webp){.border}
 ノルウェーの降水
 ::
-<script type="text/javascript">
-createChartAsync(Chart.Pie, { "nation_cd": 578 }, 'Norway_power_generation', {
-title: 'ノルウェー (億kWh、2019年)',
-colors: ['#dc3912', '#3366cc', '#990099', '#109618', '#ff9900', '#FBD01D', '#dd4477'],
-sliceVisibilityThreshold: 0
-}, "./php/power_generation.php");
-</script>
-<div id="Norway_power_generation" style="width: 100%; height: 350px"></div>
+::chart{type="PieChart" dataset="power_generation" filter="nation_cd=578" fields="thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス" title="ノルウェー (億kWh、2019年)"}
 <h5>ブラジルの発電事情</h5>
 ::top
 熱帯気候が広がるため、ブラジルは降水量が多く、流量の多い大河川があります。
@@ -350,14 +336,7 @@ sliceVisibilityThreshold: 0
 ::last
 このため、ブラジルの水力発電量は、総発電量の半数以上を占めています。
 ::
-<script type="text/javascript">
-createChartAsync(Chart.Pie, { "nation_cd": 76 }, 'Brazil_power_generation', {
-title: 'ブラジル (億kWh、2019年)',
-colors: ['#dc3912', '#3366cc', '#990099', '#109618', '#ff9900', '#FBD01D', '#dd4477'],
-sliceVisibilityThreshold: 0
-}, "./php/power_generation.php");
-</script>
-<div id="Brazil_power_generation" style="width: 100%; height: 350px"></div>
+::chart{type="PieChart" dataset="power_generation" filter="nation_cd=76" fields="thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス" title="ブラジル (億kWh、2019年)"}
 #### 原子力発電
 <h5>フランスの発電事情</h5>
 ::top
@@ -370,14 +349,7 @@ sliceVisibilityThreshold: 0
 ::last
 これをうけ、フランスは原子力発電に力を入れてきました。
 ::
-<script type="text/javascript">
-createChartAsync(Chart.Pie, { "nation_cd": 250 }, 'France_power_generation', {
-title: 'フランス (億kWh、2019年)',
-colors: ['#dc3912', '#3366cc', '#990099', '#109618', '#ff9900', '#FBD01D', '#dd4477'],
-sliceVisibilityThreshold: 0
-}, "./php/power_generation.php");
-</script>
-<div id="France_power_generation" style="width: 100%; height: 350px"></div>
+::chart{type="PieChart" dataset="power_generation" filter="nation_cd=250" fields="thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス" title="フランス (億kWh、2019年)"}
 <h5>原子力発電の問題</h5>
 ::top
 事故による放射能汚染の危険性や使用済み核燃料と放射性廃棄物の処理問題など解決しなければならない課題が多くあります。

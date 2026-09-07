@@ -494,6 +494,65 @@ function parsePhpVars(phpCode) {
   return vars;
 }
 
+// createChartAsync()呼び出しが参照するPHPエンドポイント名 -> ::chart{}ディレクティブ用の設定。
+// 対応表に無いエンドポイント（Chart.Bar+statistics_ids等）は現状未対応のためそのまま素通しする。
+const CHART_ENDPOINT_CONFIGS = {
+  power_generation: {
+    dataset: 'power_generation',
+    fields:
+      'thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス',
+  },
+};
+
+// 元PHPサイトの`Chart.XXX`名 -> Google Charts本来のコンストラクタ名の対応表
+const CHART_TYPE_MAP = {
+  Pie: 'PieChart',
+  Bar: 'BarChart',
+  Line: 'LineChart',
+  Column: 'ColumnChart',
+  Combo: 'ComboChart',
+  Geo: 'GeoChart',
+  Area: 'AreaChart',
+};
+
+/**
+ * <script>createChartAsync(Chart.XXX, {params}, 'targetId', {title:...}, "./php/YYY.php")</script>
+ * + 別途存在する <div id="targetId"></div> の組を ::chart{...} ディレクティブに変換する。
+ * scriptとdivが同じ行の近くにあるとは限らない（ファイルによっては全scriptの後に全divが
+ * まとまっている）ため、まずscript側を除去しつつtargetIdごとのディレクティブ文字列をMapに
+ * 記録し、その後で対応するdivをディレクティブ文字列に置き換える2パス構成にしている。
+ */
+function convertChartScripts(content) {
+  const chartDirectives = new Map();
+
+  content = content.replace(
+    /<script type="text\/javascript">\s*createChartAsync\(Chart\.(\w+),\s*(\{[\s\S]*?\}),\s*'([^']+)',\s*\{([\s\S]*?)\},\s*"\.\/php\/(\w+)\.php"\s*\)\s*;\s*<\/script>/g,
+    (match, chartType, paramsStr, targetId, optionsBody, phpName) => {
+      const config = CHART_ENDPOINT_CONFIGS[phpName];
+      if (!config) return match;
+
+      const filter = [...paramsStr.matchAll(/"(\w+)"\s*:\s*("[^"]*"|-?\d+(?:\.\d+)?)/g)]
+        .map((m) => `${m[1]}=${m[2].replace(/^"|"$/g, '')}`)
+        .join(',');
+      const titleMatch = optionsBody.match(/title:\s*'([^']*)'/);
+      const title = (titleMatch ? titleMatch[1] : '').replace(/"/g, '&quot;');
+      const googleChartType = CHART_TYPE_MAP[chartType] || chartType;
+
+      chartDirectives.set(
+        targetId,
+        `::chart{type="${googleChartType}" dataset="${config.dataset}" filter="${filter}" fields="${config.fields}" title="${title}"}`
+      );
+      return '';
+    }
+  );
+
+  content = content.replace(/<div id="([^"]+)"[^>]*>\s*<\/div>/g, (match, targetId) =>
+    chartDirectives.has(targetId) ? chartDirectives.get(targetId) : match
+  );
+
+  return content;
+}
+
 function htmlToCustomMarkdown(html) {
   // contentsクラス内のコンテンツだけを抽出
   let contentMatch = html.match(/<div id='toc-range' class="contents">([\s\S]*?)(?:<\/div>)?<!-- \/contents -->/);
@@ -509,7 +568,10 @@ function htmlToCustomMarkdown(html) {
   let content = contentMatch[1].trim();
   // CRLFを正規化（末尾に\rが残ると</div>除去の正規表現が一致しなくなるため）
   content = content.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
-  
+
+  // createChartAsync()によるグラフ埋め込みを::chart{}ディレクティブに変換
+  content = convertChartScripts(content);
+
   // コメントを削除（PHPタグはループ内でDB連動ディレクティブへの変換を試みてから削除する）
   content = content.replace(/<!--[\s\S]*?-->/g, '');
   

@@ -286,14 +286,7 @@ fontSize: 14,
 ::last
 発電量不足を補うために、[[石炭]]の消費量が先進国のなかでも増加
 ::
-<script type="text/javascript">
-createChartAsync(Chart.Pie, { "nation_cd": 392 }, 'Jp_power_generation', {
-title: '日本 (億kWh、2019年)',
-colors: ['#dc3912', '#3366cc', '#990099', '#109618', '#ff9900', '#FBD01D', '#dd4477'],
-sliceVisibilityThreshold: 0
-}, "./php/power_generation.php");
-</script>
-<div id="Jp_power_generation" style="width: 100%; height: 350px"></div>
+::chart{type="PieChart" dataset="power_generation" filter="nation_cd=392" fields="thermal_power:火力,hydroelectricity:水力,nuclear_power:原子力,wind_power:風力,solar_power:太陽光,geothermal_power:地熱,biomass_power:バイオマス" title="日本 (億kWh、2019年)"}
 <script type="text/javascript">
 createChartAsync(Chart.Bar, { statistics_ids: [130, 131, 132, 133, 134, 135, 136] }, 'primary_energy', {
 title: '日本の一次エネルギー供給量(%)',
