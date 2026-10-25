@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { ListIcon, LeftIcon, RightIcon } from '@/components/ui/Icons';
 import EnhancedAccordionMenu from './EnhancedAccordionMenu';
+import AdUnit from '@/components/AdUnit';
 
 interface Page {
   no: number;
@@ -100,6 +101,7 @@ export default function ThreeColumnLayout({
         {/* 中央カラム：メインコンテンツ */}
         <main className="center-column">
           {children}
+          <AdUnit />
         </main>
 
         {/* 右カラム：広告・その他（将来用） */}

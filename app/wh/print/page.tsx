@@ -20,7 +20,7 @@ export default async function PrintPage() {
         <div className="first-line">授業プリント（PDF配布）</div>
       </h1>
 
-      <div className="main-block bg-gray">
+      <div className="main-block">
         <div id="toc-range" className="contents">
           <div className="overview">
             リンク先は、授業で使用しているプリントのPDFです。学習・教材研究に役立てていただければ幸いです。再配布はご遠慮ください。

@@ -17,7 +17,7 @@ export default function ContactPage() {
         <div className="first-line">お問い合わせ</div>
       </h1>
 
-      <div className="main-block bg-gray">
+      <div className="main-block">
         <div className="lessons">
           <div className="overview">
             ご質問・ご意見・誤りのご指摘等がありましたら、下記フォームよりお気軽にご連絡ください。

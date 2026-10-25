@@ -95,7 +95,7 @@ export default async function CabinetPage() {
         <div className="first-line">歴代首相</div>
       </h1>
 
-      <div className="main-block bg-gray">
+      <div className="main-block">
         <div id="toc-range" className="contents">
           <div className="overview">
             内閣名をクリックすると表示・非表示が切り替わります。

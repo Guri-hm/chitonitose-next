@@ -17,7 +17,7 @@ export default async function OldCountryNamePage() {
         <div className="first-line">旧国名</div>
       </h1>
 
-      <div className="main-block bg-gray">
+      <div className="main-block">
         <div className="lessons">
           <div className="overview">
             地図上をクリックして、旧国名を確認しましょう。基本的には、京に近い方が「上」、遠い方が「下」という漢字が頭につきます。

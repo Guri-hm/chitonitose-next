@@ -88,7 +88,7 @@ export default async function CabinetEventsPage() {
         <div className="first-line">組閣中の出来事</div>
       </h1>
 
-      <div className="main-block bg-gray">
+      <div className="main-block">
         <div id="toc-range" className="contents">
           <div className="overview">
             下線部の語句をクリックすると表示・非表示が切り替わります。

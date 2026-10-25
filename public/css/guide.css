@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+/* ご利用ガイドページ */
+
+.guide-page section {
+	margin-bottom: 36px;
+}
+
+.guide-page section:last-child {
+	margin-bottom: 0;
+}
+
+.guide-page h2 {
+	font-size: 2rem;
+	margin-bottom: 16px;
+	padding-bottom: 8px;
+	border-bottom: 2px solid var(--link);
+}
+
+.guide-page h3 {
+	font-size: 1.6rem;
+	margin: 20px 0 8px;
+}
+
+.guide-page p {
+	line-height: 1.8;
+	margin-bottom: 10px;
+}
+
+.guide-page ul {
+	list-style: disc;
+	padding-left: 1.6em;
+}
+
+.guide-page li {
+	line-height: 1.8;
+	margin-bottom: 6px;
+}

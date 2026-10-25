@@ -59,9 +59,10 @@ export async function loadDataIndex() {
 export interface NewsItem {
   id: number;
   date: string;
-  title: string;
-  content?: string;
-  type_id?: number;
+  news_type?: string | null;
+  news_title: string;
+  news_text?: string | null;
+  path?: string | null;
 }
 
 export interface PageInfo {

@@ -957,6 +957,20 @@ div.iframeWrapper iframe {
 	font-weight: 600;
 }
 
+[data-theme="dark"] .contents table:not(.table) {
+	border-color: #444;
+}
+
+[data-theme="dark"] .contents table:not(.table) th,
+[data-theme="dark"] .contents table:not(.table) td {
+	border-color: #444;
+}
+
+[data-theme="dark"] .contents table:not(.table) th {
+	background-color: #333;
+	color: #e0e0e0;
+}
+
 /* 3カラムレイアウト */
 
 /* スマホ用：画面左下の操作ボタン（コンテンツ一覧／前へ／次へ）。
@@ -1212,6 +1226,13 @@ div.iframeWrapper iframe {
 
 .center-column {
 	min-width: 0;
+}
+
+/* 広告ユニット（オリジナルサイトのfooter_ads.phpと同じ配置：本文末尾） */
+.ad-unit {
+	margin: 1.5rem 0;
+	min-height: 100px;
+	text-align: center;
 }
 
 .right-column {

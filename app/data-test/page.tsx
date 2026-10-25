@@ -42,7 +42,7 @@ export default async function DataTestPage() {
           {news.slice(0, 5).map((item) => (
             <div key={item.id} className="p-4 bg-white border rounded-lg shadow-sm hover:shadow-md transition">
               <div className="text-sm text-gray-500">{item.date}</div>
-              <div className="font-semibold">{item.title}</div>
+              <div className="font-semibold">{item.news_title}</div>
             </div>
           ))}
         </div>

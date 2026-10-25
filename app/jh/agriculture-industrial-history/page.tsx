@@ -17,7 +17,7 @@ export default async function AgricultureIndustrialHistoryPage() {
         <div className="first-line">日本史 テーマ史</div>
       </h1>
       
-      <div className="main-block bg-gray">
+      <div className="main-block">
         <div className="lessons">
           <h2>農業・産業史</h2>
           <p style={{ padding: '20px', textAlign: 'center' }}>

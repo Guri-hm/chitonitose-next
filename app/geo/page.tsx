@@ -69,7 +69,7 @@ export default function Geography() {
         </div>
       </div>
 
-      <div className="main-block bg-gray">
+      <div className="main-block">
         <div className="lessons">
           {GEO_CATEGORIES.map((category, idx) => (
             <div key={idx}>

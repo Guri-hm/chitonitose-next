@@ -166,7 +166,7 @@ export default async function JapaneseHistory() {
       </div>
 
       {/* メインコンテンツ */}
-      <div className="main-block bg-gray">
+      <div className="main-block">
         <div className="lessons">
           {jhCategories.map((category) => (
             <div key={category.era}>

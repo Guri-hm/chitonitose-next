@@ -106,7 +106,7 @@ export default async function WorldHistory() {
       </div>
 
       {/* メインコンテンツ */}
-      <div className="main-block bg-gray">
+      <div className="main-block">
         <div className="lessons">
           {whCategories.map((category) => (
             <div key={category.era}>

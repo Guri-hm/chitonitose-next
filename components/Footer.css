@@ -6,3 +6,20 @@
   font-size: 1.2rem;
   margin-top: 40px;
 }
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 10px;
+}
+
+#footer .footer-links a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+#footer .footer-links a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
