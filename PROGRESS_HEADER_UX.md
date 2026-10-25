@@ -307,10 +307,14 @@ Webの～）は、要望に応じてやや端的な表現に調整した
 1. **AdSense管理画面での設定（コード外・手動）**: 対象サイトでAuto adsをON。
    フォーマットは「ページ内広告」のみ有効、「アンカー広告」「ベネット広告
    （インタースティシャル）」はOFF。広告密度の上限があれば低めに設定。
-2. **MDXコンパイルエラー（5ファイル、本番ビルドログで検出）**:
-   `npm run build`自体は成功（EXITCODE 0）するが、下記ページは本文の代わりに
-   エラー表示になる。原因はいずれも元HTMLの`<ruby>…<rt>…</rt>`内に改行があるものを
-   変換した際、閉じタグ`</ruby>`が欠落している／改行で分断されていること。
+2. **MDXコンパイルエラー（残り2件: cultural-history 2・3）**:
+   - ✅ 修正済み（未ビルド検証）: `lessons/27.md`・`lessons/73.md`（`<rt>`内の改行を1行化）、
+     `cultural-history/1.md`（`</ruby>`と続きの文、`勅撰`の`:::sup`注記を補完。
+     記法は`lessons/21.md`の同箇所と同じ）。
+   - ⏳ 未修正: `cultural-history/2.md`・`3.md`（下記）。ビルドは成功（EXITCODE 0）するが、
+     該当ページは本文の代わりにエラー表示になる。
+   原因はいずれも元HTMLの`<ruby>…<rt>…</rt>`の改行を含む箇所を変換した際、
+   閉じタグ`</ruby>`と後続の要素が欠落していること。
    - `content/jh/cultural-history/1.md` 142行目付近（`勅撰<rt>ちょくせん</rt>`の後ろに`</ruby>`と
      続きの文「による国史を…示そうとしました。」が欠落。元: `origin/chitonitose/jh/jh_omnibus_cultural_history1.html` 104行付近）
    - `content/jh/cultural-history/2.md` 10行目付近（`<ruby>郭`の`<rt>くるわ</rt></ruby>をもちました。`と
