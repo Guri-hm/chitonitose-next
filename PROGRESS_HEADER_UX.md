@@ -307,7 +307,19 @@ Webの～）は、要望に応じてやや端的な表現に調整した
 1. **AdSense管理画面での設定（コード外・手動）**: 対象サイトでAuto adsをON。
    フォーマットは「ページ内広告」のみ有効、「アンカー広告」「ベネット広告
    （インタースティシャル）」はOFF。広告密度の上限があれば低めに設定。
-2. **MDXコンパイルエラー（残り2件: cultural-history 2・3）**:
+2. **MDXコンパイルエラー: ✅ 全件解消（ビルド検証済み）**:
+   - `lessons/27.md`・`73.md`は`<rt>`内の改行を1行化。
+   - `cultural-history/1〜3.md`は、旧変換スクリプト(`convert-omnibus-simple.js`、行単位)が
+     複数行の要素を切り捨て、`:::lead`/`:::sup`の大半（約300箇所）も欠落させていた。
+     `scripts/batch-convert-jh-omnibus.js`に`--cultural`オプションを追加し、
+     `node scripts/batch-convert-jh-omnibus.js --cultural`でHTMLから再生成した
+     （omnibus側は上書きしない）。frontmatterのtitleも誤り（「女性の歴史」等）だったため
+     ページ側`culturalHistoryTitles`と同じ「文化史（…）」に修正。
+   - 検証: `npm run build` EXITCODE 0、`MDX ERROR`/`Failed to load`ゼロ、
+     出力HTMLにエラーブロックなし、ruby/rtタグの開閉数一致。
+   - 未確認: 再生成後の見た目（画像・:::lead表示）は目視していない。次回dev起動時に
+     `/jh/cultural-history/1〜3/`を軽く確認すること。
+   - ※旧メモの「文化史2・3は未修正」は解消済み。以下の古い記述は参考:
    - ✅ 修正済み（未ビルド検証）: `lessons/27.md`・`lessons/73.md`（`<rt>`内の改行を1行化）、
      `cultural-history/1.md`（`</ruby>`と続きの文、`勅撰`の`:::sup`注記を補完。
      記法は`lessons/21.md`の同箇所と同じ）。

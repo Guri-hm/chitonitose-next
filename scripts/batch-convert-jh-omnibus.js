@@ -351,8 +351,35 @@ function extractTitle($) {
   return h2 || 'タイトル未設定';
 }
 
+// テーマ史（文化史）: jh_omnibus_cultural_history*.html → content/jh/cultural-history/*.md
+// タイトルは app/jh/cultural-history/[id]/page.tsx の culturalHistoryTitles と揃える
+const culturalHistoryFiles = [
+  { id: 1, title: '文化史（飛鳥文化～室町文化）' },
+  { id: 2, title: '文化史（桃山文化～化政文化）' },
+  { id: 3, title: '文化史（明治～現代）' },
+];
+
+function convertCulturalHistory() {
+  const originDir = path.join(__dirname, '../origin/chitonitose/jh');
+  const outputDir = path.join(__dirname, '../content/jh/cultural-history');
+  fs.mkdirSync(outputDir, { recursive: true });
+
+  for (const { id, title } of culturalHistoryFiles) {
+    const htmlContent = fs.readFileSync(path.join(originDir, `jh_omnibus_cultural_history${id}.html`), 'utf-8');
+    const md = new HtmlToMdxConverter(htmlContent).convert(title);
+    fs.writeFileSync(path.join(outputDir, `${id}.md`), md + '\n', 'utf-8');
+    console.log(`✅ cultural-history/${id}.md - ${title}`);
+  }
+}
+
 // メイン処理
 function main() {
+  // node scripts/batch-convert-jh-omnibus.js --cultural でテーマ史のみ変換（omnibusは上書きしない）
+  if (process.argv.includes('--cultural')) {
+    convertCulturalHistory();
+    return;
+  }
+
   const originDir = path.join(__dirname, '../origin/chitonitose/jh');
   const outputDir = path.join(__dirname, '../content/jh/omnibus');
 
