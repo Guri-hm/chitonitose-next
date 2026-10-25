@@ -28,6 +28,13 @@ html {
   font-size: 62.5%; /* 10px = 1rem */
 }
 
+/* ウィンドウ幅を連続的にドラッグリサイズした際、ブレークポイントを跨ぐたびに
+   transitionが中途半端に再生されてちらつくのを防ぐ（BodyClassManagerが付与） */
+html.is-resizing * {
+  transition: none !important;
+  animation: none !important;
+}
+
 body {
   font-size: 1.6rem; /* 16px */
   line-height: 1.6;

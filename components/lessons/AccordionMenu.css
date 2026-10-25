@@ -349,3 +349,56 @@
   }
 }
 
+/* ==========================================================================
+   ダークモード
+   ========================================================================== */
+
+[data-theme="dark"] .accordion-item {
+  border-color: #333;
+  background-color: #1a1a1a;
+}
+
+[data-theme="dark"] .accordion-header,
+[data-theme="dark"] .accordion-section > .accordion-header,
+[data-theme="dark"] .era-header {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  border-color: #333;
+}
+
+[data-theme="dark"] .accordion-header:hover,
+[data-theme="dark"] .accordion-item.open .accordion-header,
+[data-theme="dark"] .accordion-section > .accordion-header:hover,
+[data-theme="dark"] .era-header:hover {
+  background-color: #2a2a2a;
+}
+
+[data-theme="dark"] .accordion-content {
+  background-color: #1a1a1a;
+}
+
+[data-theme="dark"] .accordion-content a,
+[data-theme="dark"] .lesson-list a {
+  color: #ddd;
+  border-bottom-color: #2a2a2a;
+}
+
+[data-theme="dark"] .accordion-content a:hover,
+[data-theme="dark"] .lesson-list a:hover {
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+[data-theme="dark"] .accordion-content .lesson-no,
+[data-theme="dark"] .lesson-list .lesson-no {
+  background-color: #333;
+  color: #e0e0e0;
+}
+
+[data-theme="dark"] .accordion-section {
+  border-bottom-color: #333;
+}
+
+[data-theme="dark"] .era-section {
+  border-bottom-color: #2a2a2a;
+}

@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { ListIcon } from '@/components/ui/Icons';
+import { ListIcon, LeftIcon, RightIcon } from '@/components/ui/Icons';
 import EnhancedAccordionMenu from './EnhancedAccordionMenu';
 
 interface Page {
@@ -42,6 +42,7 @@ export default function ThreeColumnLayout({
   children
 }: ThreeColumnLayoutProps) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isFabOpen, setIsFabOpen] = useState(false);
 
   const subjectNames: Record<string, string> = {
     jh: '日本史',
@@ -49,19 +50,15 @@ export default function ThreeColumnLayout({
     geo: '地理'
   };
 
+  const openSidebar = () => {
+    setIsFabOpen(false);
+    setIsSidebarOpen(true);
+  };
+
   return (
     <>
       {/* h1タイトル（画面横幅いっぱい） */}
       <h1><div className="first">{title}</div></h1>
-
-      {/* スマホ用：サイドバー表示ボタン */}
-      <button
-        className="sidebar-toggle-btn"
-        onClick={() => setIsSidebarOpen(true)}
-        aria-label="コンテンツ一覧を開く"
-      >
-        <ListIcon size={24} />
-      </button>
 
       {/* スマホ用：サイドバーモーダル */}
       {isSidebarOpen && (
@@ -110,6 +107,57 @@ export default function ThreeColumnLayout({
           {/* 将来的に広告などを配置 */}
         </aside>
       </div>
+
+      {/* スマホ用：画面左下の操作ボタン（コンテンツ一覧／前へ／次へ）
+          ヘッダーが常時表示（sticky）になったため、画面上下を固定要素で
+          挟むと閲覧できる範囲が狭くなってしまう。そこで小さなボタン1つに
+          まとめ、タップ時だけ選択肢を表示する方式にした。
+          一覧がサイドバーの左からのスライド表示であることに合わせ、
+          ボタンも左下に配置している。 */}
+      <div className="mobile-fab-wrapper">
+        {isFabOpen && (
+          <div className="mobile-fab-backdrop" onClick={() => setIsFabOpen(false)} />
+        )}
+        {isFabOpen && (
+          <div className="mobile-fab-menu">
+            {nextLesson ? (
+              <a href={nextLesson.href} className="mobile-fab-item">
+                <RightIcon size={18} />
+                <span>次のページ</span>
+              </a>
+            ) : (
+              <span className="mobile-fab-item disabled">
+                <RightIcon size={18} />
+                <span>次のページ</span>
+              </span>
+            )}
+            {prevLesson ? (
+              <a href={prevLesson.href} className="mobile-fab-item">
+                <LeftIcon size={18} />
+                <span>前のページ</span>
+              </a>
+            ) : (
+              <span className="mobile-fab-item disabled">
+                <LeftIcon size={18} />
+                <span>前のページ</span>
+              </span>
+            )}
+            <button className="mobile-fab-item" onClick={openSidebar}>
+              <ListIcon size={18} />
+              <span>コンテンツ一覧</span>
+            </button>
+          </div>
+        )}
+        <button
+          className={`mobile-fab-btn${isFabOpen ? ' open' : ''}`}
+          onClick={() => setIsFabOpen(!isFabOpen)}
+          aria-label={isFabOpen ? 'メニューを閉じる' : 'ページ操作メニューを開く'}
+          aria-expanded={isFabOpen}
+        >
+          <ListIcon size={24} />
+        </button>
+      </div>
     </>
   );
 }
+

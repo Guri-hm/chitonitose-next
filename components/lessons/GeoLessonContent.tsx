@@ -33,6 +33,13 @@ type Segment =
  * dangerouslySetInnerHTMLで描画したDOMの子孫ノードをcreateRoot/createPortalのコンテナに
  * 使うのはReact 19で未定義動作と明記されている（facebook/react#32774）ため、チャート部分は
  * 最初からdangerouslySetInnerHTMLの外側の、本来のReact子要素としてレンダリングする。
+ *
+ * 注意: この分割は「プレースホルダーの前後でHTMLタグの対応関係が閉じている」ことを前提に
+ * している。チャートのプレースホルダーはブロック要素として単独行に出力されるため問題ないが、
+ * 文中に埋め込む形式のプレースホルダー（例: e-Statの値）には使えない
+ * （分割位置が開きタグの途中になり得るため、ブラウザのHTMLパーサーがタグの対応関係を誤認し、
+ * ハイドレーションエラーの原因になる）。e-Statの値は lib/estat.ts 側でビルド時に
+ * プレーンテキストとして解決し、この分割処理を経由しない。
  */
 function splitIntoSegments(htmlContent: string): Segment[] {
   const segments: Segment[] = [];

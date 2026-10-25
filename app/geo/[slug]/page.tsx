@@ -13,6 +13,7 @@ import TableOfContents from '@/components/TableOfContents';
 import { loadCustomLesson } from '@/lib/markdownLoader';
 import { loadLessonChartDatasets, loadLessonDbDatasets, loadNations } from '@/lib/dataLoader';
 import { renderLessonDbTables } from '@/lib/renderLessonDbTables';
+import { resolveEstatPlaceholders } from '@/lib/estat';
 import { GEO_LESSONS } from '@/lib/geoLessons';
 import { LeftIcon, RightIcon } from '@/components/ui/Icons';
 
@@ -56,7 +57,9 @@ export default async function GeoLessonPage({ params }: LessonPageProps) {
   const lessonData = await loadCustomLesson('geo', 'lessons', lesson.contentId);
   const chartDatasets = await loadLessonChartDatasets();
   const [dbDatasetsRaw, nations] = await Promise.all([loadLessonDbDatasets(), loadNations()]);
-  const lessonContent = renderLessonDbTables(lessonData.content, { ...dbDatasetsRaw, nations });
+  const lessonContentRaw = renderLessonDbTables(lessonData.content, { ...dbDatasetsRaw, nations });
+  // e-Stat APIから取得する最新統計値（人口・出生率等）をビルド時に解決する
+  const lessonContent = await resolveEstatPlaceholders(lessonContentRaw);
 
   const prevLesson = lessonIndex > 0 ? lessons[lessonIndex - 1] : undefined;
   const nextLesson = lessonIndex < lessons.length - 1 ? lessons[lessonIndex + 1] : undefined;
@@ -74,6 +77,8 @@ export default async function GeoLessonPage({ params }: LessonPageProps) {
         currentSlug={slug}
         pages={pages}
         title={lesson.title}
+        prevLesson={prevLesson ? { title: prevLesson.title, href: `/geo/${prevLesson.slug}` } : undefined}
+        nextLesson={nextLesson ? { title: nextLesson.title, href: `/geo/${nextLesson.slug}` } : undefined}
       >
         <TermClickHandler />
         <ImageClickHandler />

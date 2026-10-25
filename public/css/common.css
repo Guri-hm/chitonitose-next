@@ -1,12 +1,9 @@
 @charset "utf-8";
 
-:root {
-	--gray: #F7F7F7;
-	--link: #337ab7;
-	--darkgray: #444444;
-	--pale-white: #fefefe;
-	--light-blue: #72c1d7;
-}
+/* CSS変数(--gray/--link/--darkgray/--pale-white/--light-blue等)は
+   app/globals.css側で一元管理している（ダークモード対応の[data-theme="dark"]
+   上書きも含む）。ここで重複定義すると、カスケードの順序次第でglobals.cssの
+   ダークモード上書きが無効化されてしまうため削除した。 */
 
 html {
 	width: 100%;
@@ -394,342 +391,13 @@ ins>div {
 }
 
 
-/* ナビゲーション */
-#top-head {
-	width: 100%;
-	z-index: 999;
-	border-bottom: solid #F2F2F2;
-	font-size: initial;
-}
-
-#top-head .inner {
-	position: relative;
-	height: 100%;
-}
-
-#top-head .logo {
-	font-size: 36px;
-}
-
-#top-head.fixed {
-	margin-top: 0;
-	top: 0;
-	position: fixed;
-	background: #fff;
-	background: rgba(255, 255, 255, 1);
-	transition: top 0.65s ease-in;
-	-webkit-transition: top 0.65s ease-in;
-	-moz-transition: top 0.65s ease-in;
-}
-
-#top-head.fixed .logo {
-	font-size: 24px;
-	color: #333;
-}
-
-#top-head.fixed #global-nav ul li a {
-	color: #333;
-}
-
-#nav-toggle {
-	display: none;
-	position: absolute;
-	right: 12px;
-	top: 14px;
-	height: 36px;
-	cursor: pointer;
-	z-index: 101;
-}
-
-#nav-toggle div {
-	position: relative;
-}
-
-#nav-toggle span {
-	display: block;
-	position: absolute;
-	height: 4px;
-	width: 100%;
-	background: #666;
-	left: 0;
-	-webkit-transition: .35s ease-in-out;
-	-moz-transition: .35s ease-in-out;
-	transition: .35s ease-in-out;
-}
-
-#global-nav ul {
-	text-align: center;
-}
-
-#global-nav ul>li {
-	vertical-align: middle;
-}
-
-#nav-toggle span:nth-of-type(1) {
-	top: 20px;
-}
-
-#nav-toggle span:nth-of-type(2) {
-	top: 30px;
-}
-
-#nav-toggle span:nth-of-type(3) {
-	top: 40px;
-}
-
-#cse-search-box {
-	display: none;
-}
-
-@media screen and (min-width: 561px) {
-	#top-head .inner {
-		display: table;
-		/* ブロックレベル要素をtableと同じように表示にする */
-	}
-
-	#top-head #mobile-head {
-		display: table-cell;
-		/* ブロックレベル要素をtd(th)と同じように表示にする */
-		vertical-align: middle;
-	}
-
-	#top-head .inner img {
-		float: right;
-	}
-
-	#top-head .inner img.smaller {
-		height: 55px;
-	}
-
-	#global-nav {
-		display: table-cell;
-		/* ブロックレベル要素をtd(th)と同じように表示にする */
-		vertical-align: middle;
-	}
-
-	#global-nav ul li a:hover {
-		color: #f96482;
-	}
-
-	#global-nav ul li div.second-line {
-		letter-spacing: 0.07em;
-		font-size: 13px;
-		margin-top: 3px;
-		color: var(--light-blue);
-	}
-
-	#head-logo {
-		margin-left: 10px;
-	}
-}
-
-@media screen and (min-width: 961px) {
-	#global-nav ul li {
-		margin: 10px 15px;
-		display: inline-block;
-	}
-}
-
-@media screen and (min-width: 561px) and (max-width: 960px) {
-	#top-head .inner {
-		display: table;
-		/* ブロックレベル要素をtableと同じように表示にする */
-	}
-
-	#top-head #mobile-head {
-		display: table-cell;
-		/* ブロックレベル要素をtd(th)と同じように表示にする */
-		vertical-align: middle;
-	}
-
-	#top-head .inner img {
-		float: right;
-		height: 70%;
-	}
-
-	#global-nav {
-		display: table-cell;
-		/* ブロックレベル要素をtd(th)と同じように表示にする */
-		vertical-align: middle;
-	}
-
-	#global-nav ul {
-		list-style: none;
-		font-size: 14px;
-		display: inline-block;
-	}
-
-	#global-nav ul li {
-		margin: 10px 10px;
-		display: inline-block;
-	}
-
-	#global-nav ul li a:hover {
-		color: #f96482;
-	}
-
-	#global-nav ul li div.second-line {
-		-spacing: 0.07em;
-		font-size: 13px;
-		margin-top: 3px;
-		color: var(--light-blue);
-	}
-}
-
+/* ナビゲーション(#top-head/#global-nav/#nav-toggle等)のスタイルは
+   components/Header.css に一本化した（旧PHP版と二重定義で競合していたため）。
+   ここでは他箇所でも使われるユーティリティクラスのみ残す。 */
 @media screen and (max-width: 560px) {
-	.inner {
-		width: 100%;
-		padding: 0;
-	}
-
-	#head-logo {
-		display: table-cell;
-		height: 72px;
-		vertical-align: middle;
-	}
-
-	#global-nav ul {
-		list-style: none;
-		right: 0;
-		bottom: 0;
-		font-size: 14px;
-	}
-
-	#top-head {
-		top: 0;
-		position: fixed;
-		margin-top: 0;
-		height: 72px;
-	}
-
-	/* Fixed reset */
-	#top-head.fixed {
-		padding-top: 0;
-		background: transparent;
-	}
-
-	#top-head img {
-		height: 80%;
-	}
-
-	#global-nav {
-		position: absolute;
-		/* 開いてないときは画面外に配置 */
-		top: -725px;
-		background: rgba(51, 51, 51, 0.9);
-		width: 100%;
-		text-align: center;
-		padding: 10px 0;
-		-webkit-transition: .5s ease-in-out;
-		-moz-transition: .5s ease-in-out;
-		transition: .5s ease-in-out;
-	}
-
-	#global-nav ul li {
-		float: none;
-		position: static;
-	}
-
-	#global-nav ul li img {
-		max-height: 30px;
-	}
-
-	#top-head #global-nav ul li a,
-	#top-head.fixed #global-nav ul li a,
-	label {
-		width: 100%;
-		color: #fff;
-		padding: 18px 0;
-	}
-
-	#nav-toggle {
-		display: block;
-	}
-
-	#nav-toggle div p {
-		position: relative;
-		top: -6px;
-	}
-
-	/* #nav-toggle 切り替えアニメーション */
-	.open #nav-toggle span:nth-of-type(1) {
-		top: 30px;
-		-webkit-transform: rotate(315deg);
-		-moz-transform: rotate(315deg);
-		transform: rotate(315deg);
-	}
-
-	.open #nav-toggle span:nth-of-type(2) {
-		width: 0;
-		left: 50%;
-	}
-
-	.open #nav-toggle span:nth-of-type(3) {
-		top: 30px;
-		-webkit-transform: rotate(-315deg);
-		-moz-transform: rotate(-315deg);
-		transform: rotate(-315deg);
-	}
-
-	/* #global-nav スライドアニメーション */
-	.open #global-nav {
-		/* #global-nav top + #mobile-head height */
-		-moz-transform: translateY(800px);
-		-webkit-transform: translateY(800px);
-		transform: translateY(800px);
-		height: 100vh;
-	}
-
-	.open #search_btn {
-		border: 0px;
-		width: 15%;
-		background: url(../img/search.svg) no-repeat;
-		background-size: 100% 100%;
-	}
-
-	.open #search-box {
-		border: 0px !important;
-		width: 75%;
-		color: white;
-		font-size: 20px;
-		background-color: transparent !important;
-	}
-
-	.open #cse-search-box {
-		width: 70%;
-		border: solid #FFFFFF;
-		border-radius: 10px;
-		margin-right: auto;
-		margin-left: auto;
-		display: block;
-	}
-
-	.open a.switch {
-		display: none;
-	}
-
-	#top-head #mobile-head {
-		background: rgba(255, 255, 255, 0.9);
-		transition: top 0.65s ease-in;
-		-webkit-transition: top 0.65s ease-in;
-		-moz-transition: top 0.65s ease-in;
-		height: 100%;
-	}
-
-	#global-nav ul li div.first-line {
-		font-size: 18px;
-		font-weight: bold;
-		margin: 15px 0;
-	}
-
-	#global-nav ul li div.second-line {
-		display: none;
-	}
-
 	.sm-flex-column {
 		flex-flow: column;
 	}
-
 }
 
 .bg-pale-blue {
@@ -748,4 +416,33 @@ div.footer {
 	vertical-align: middle;
 	background-color: #302e2e;
 	color: #ffffff;
+}
+
+/* ==========================================================================
+   ダークモード
+   a:link/a:visitedが黒固定のため、ダークモード時に本文は白くなるのにリンクだけ
+   黒いまま（見えない）という状態になっていた。表の罫線等もあわせて調整する。
+   ========================================================================== */
+
+[data-theme="dark"] a:link,
+[data-theme="dark"] a:visited {
+	color: var(--link);
+}
+
+[data-theme="dark"] .table td,
+[data-theme="dark"] .table th {
+	border-color: #666;
+}
+
+[data-theme="dark"] .bg-white {
+	background-color: #2a2a2a;
+	color: #e0e0e0;
+}
+
+[data-theme="dark"] .bg-pale-blue {
+	background-color: rgba(74, 144, 164, 0.25);
+}
+
+[data-theme="dark"] .bg-black {
+	background-color: #000000 !important;
 }

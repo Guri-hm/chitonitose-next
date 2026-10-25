@@ -1,19 +1,17 @@
+/* ==========================================================================
+   ヘッダー / グローバルナビゲーション
+   オリジナルサイトのデザイン（スクロール追従なし、モバイルは全画面の縦積み
+   ダークメニュー）を踏襲しつつ、Reactコンポーネントとして実装し直したもの。
+   ========================================================================== */
+
 #top-head {
+  position: sticky; /* 常時スクロール追従。JSによる状態切り替えがないためCLSは発生しない */
+  top: 0;
   width: 100%;
   z-index: 999;
   border-bottom: solid 1px #F2F2F2;
   font-size: initial;
-}
-
-#top-head.fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
   background-color: #fff;
-  background-color: rgba(255, 255, 255, 1);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  transition: top 0.65s ease-in;
 }
 
 #top-head .inner {
@@ -21,11 +19,17 @@
   margin: 0 auto;
 }
 
+/* ロゴ＋ハンバーガー行。スクロール追従させないため常に通常のブロックとして
+   文書内に流す（CLS対策）。 */
 #mobile-head {
+  position: relative;
+  z-index: 2; /* モバイル全画面メニュー(#global-nav)より手前に表示する */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  height: 70px;
+  padding: 0 20px;
+  background-color: #fff;
 }
 
 #head-logo img {
@@ -33,6 +37,7 @@
   width: auto;
 }
 
+/* ハンバーガーボタン */
 #nav-toggle {
   cursor: pointer;
 }
@@ -42,18 +47,31 @@
 }
 
 #nav-toggle p {
-  font-size: 12px;
+  font-size: 1.1rem;
   margin: 0 0 5px 0;
   color: #444;
 }
 
 #nav-toggle span {
   display: block;
-  width: 30px;
+  width: 28px;
   height: 3px;
   background-color: #444;
-  margin: 4px 0;
-  transition: 0.3s;
+  margin: 5px 0;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+/* ハンバーガー→×への変形アニメーション（オリジナル踏襲） */
+#top-head.open #nav-toggle span:nth-of-type(1) {
+  transform: translateY(8px) rotate(315deg);
+}
+
+#top-head.open #nav-toggle span:nth-of-type(2) {
+  opacity: 0;
+}
+
+#top-head.open #nav-toggle span:nth-of-type(3) {
+  transform: translateY(-8px) rotate(-315deg);
 }
 
 @media (min-width: 768px) {
@@ -62,23 +80,9 @@
   }
 }
 
-#global-nav {
-  display: none;
-}
-
-#global-nav.open {
-  display: block;
-}
-
-@media (min-width: 768px) {
-  #global-nav {
-    display: block !important;
-  }
-
-  #mobile-head {
-    display: none;
-  }
-}
+/* ==========================================================================
+   ナビゲーション本体
+   ========================================================================== */
 
 #global-nav ul {
   list-style: none;
@@ -87,7 +91,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #f8f8f8;
 }
 
 #global-nav li {
@@ -118,18 +121,87 @@
   margin-top: 3px;
 }
 
-#head-logo img.smaller {
-  height: 35px;
-  width: auto;
-  transition: height 0.3s ease;
+/* ==========================================================================
+   デスクトップ表示（768px以上）
+   ロゴ（アイコン）を先頭に固定し、検索ボックス・メニュー項目・文字サイズ/
+   テーマ切り替えまでを1つの横並びの流れとして扱う。画面幅が足りないときは
+   ロゴ以外の項目だけが自然に次の行へ折り返される。
+   ロゴより後ろの要素はdisplay:contentsで入れ子を「透明化」し、
+   .inner直下の対等なフレックスアイテムとして扱う。 */
+@media (min-width: 768px) {
+  #top-head .inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 4px;
+    row-gap: 2px;
+    padding: 4px 12px;
+  }
+
+  #mobile-head {
+    height: auto;
+    padding: 0;
+  }
+
+  #global-nav,
+  #global-nav ul,
+  .controls {
+    display: contents;
+  }
+
+  #global-nav a {
+    padding: 10px 14px;
+  }
 }
+
+/* キーワード検索フォーム */
+.nav-search form {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: 100%;
+  padding: 10px 12px;
+}
+
+.nav-search .search-input {
+  width: 140px;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1.2rem;
+}
+
+.nav-search .search-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #444;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.nav-search .search-submit:hover {
+  background-color: var(--light-blue);
+  border-color: var(--light-blue);
+  color: #fff;
+}
+
+/* ==========================================================================
+   文字サイズ・テーマ切り替え（新機能）
+   ========================================================================== */
 
 .controls {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 20px;
   padding: 10px;
-  background-color: #f8f8f8;
   flex-wrap: wrap;
 }
 
@@ -172,22 +244,100 @@
   font-weight: bold;
 }
 
-/* ダークモードのスタイル */
+/* ==========================================================================
+   モバイル表示（768px未満）
+   ハンバーガーを開くと、オリジナルサイトと同様に画面全体を覆う縦積みの
+   ダークメニューがスライド表示される。
+   ========================================================================== */
+
+@media (max-width: 767px) {
+  #global-nav {
+    position: fixed;
+    inset: 0;
+    height: 100vh;
+    height: 100dvh;
+    overflow-y: auto;
+    background-color: rgba(34, 34, 34, 0.96);
+    padding-top: 70px; /* #mobile-headの高さ分、項目が隠れないように */
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0.35s ease-in-out, opacity 0.35s ease-in-out, visibility 0s linear 0.35s;
+    z-index: 1;
+  }
+
+  #global-nav.open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    transition: transform 0.35s ease-in-out, opacity 0.35s ease-in-out;
+  }
+
+  #global-nav ul {
+    display: block;
+  }
+
+  #global-nav li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  #global-nav a {
+    color: #fff;
+    padding: 16px 0;
+  }
+
+  #global-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+  }
+
+  #global-nav .second-line {
+    display: none;
+  }
+
+  .nav-search form {
+    justify-content: center;
+    padding: 16px 20px;
+  }
+
+  .nav-search .search-input {
+    flex: 1;
+    max-width: 260px;
+    background-color: rgba(255, 255, 255, 0.95);
+  }
+
+  .controls {
+    padding: 16px 0 20px;
+  }
+
+  .font-size-control span {
+    color: #fff;
+  }
+}
+
+/* ==========================================================================
+   ダークモード（サイト全体のテーマ切り替え、新機能）
+   ========================================================================== */
+
 [data-theme="dark"] #top-head {
   background-color: #1a1a1a;
   border-bottom-color: #333;
-}
-
-[data-theme="dark"] #top-head.fixed {
-  background-color: rgba(26, 26, 26, 0.95);
 }
 
 [data-theme="dark"] #mobile-head {
   background-color: #1a1a1a;
 }
 
-[data-theme="dark"] .controls {
-  background-color: #2a2a2a;
+[data-theme="dark"] #nav-toggle p {
+  color: #e0e0e0;
+}
+
+[data-theme="dark"] #nav-toggle span {
+  background-color: #e0e0e0;
+}
+
+[data-theme="dark"] #global-nav a {
+  color: #e0e0e0;
 }
 
 [data-theme="dark"] .font-size-control button {
@@ -200,24 +350,8 @@
   color: #aaa;
 }
 
-[data-theme="dark"] #global-nav {
-  background-color: #1a1a1a;
-}
-
-[data-theme="dark"] #global-nav ul {
-  background-color: #2a2a2a;
-}
-
-[data-theme="dark"] #global-nav a {
-  color: #e0e0e0;
-}
-
-[data-theme="dark"] #global-nav a:hover {
-  background-color: #4a90a4;
-}
-
-[data-theme="dark"] #nav-toggle p,
-[data-theme="dark"] #nav-toggle span {
-  color: #e0e0e0;
-  background-color: #e0e0e0;
+@media (max-width: 767px) {
+  [data-theme="dark"] .controls {
+    background-color: transparent;
+  }
 }

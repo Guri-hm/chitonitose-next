@@ -415,6 +415,21 @@ function convertInlineMarkdown(text) {
   // 0. 旧変換の残淟で残った、閉じられていない onclick="chg(this)" class="all"> 断片を除去
   // （例: "n onclick=\"chg(this)\" class=\"all\">本文" のように先頭の<spanタグが欠落したまま残るケース）
   html = html.replace(/[A-Za-z]{0,3}\s*onclick="chg\(this\)"\s+class="all">/g, '');
+
+  // 0.5. ::estat{...} → e-Stat APIから取得する最新統計値のプレースホルダーSPAN。
+  // <ul><li>や:::top等のブロックハンドラはテキストを丸ごとconvertInlineMarkdownに渡すだけで
+  // 行単位のディレクティブ分岐を経由しないため、ここで（どの呼び出し元からでも）変換する。
+  html = html.replace(/::estat\{([^}]*)\}/g, (match, attrsStr) => {
+    const attrs = {};
+    const attrRegex = /(\w+)="([^"]*)"/g;
+    let am;
+    while ((am = attrRegex.exec(attrsStr)) !== null) {
+      attrs[am[1]] = am[2];
+    }
+    const escapeAttr = (s) => String(s || '').replace(/"/g, '&quot;');
+    return `<span class="lesson-estat-placeholder" data-estat-dataset="${escapeAttr(attrs.dataset)}" ` +
+      `data-estat-area="${escapeAttr(attrs.area)}"></span>`;
+  });
   
   // 1. マーカー（==...==）- 内部の記法も処理
   html = html.replace(/==([^=]+)==/g, (match, content) => {

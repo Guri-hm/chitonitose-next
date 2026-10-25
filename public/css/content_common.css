@@ -322,6 +322,15 @@ div.contents div.gazo {
 	div.contents div.gazo img.twice {
 		width: 600px;
 	}
+
+	/* 上記の min-width: 660px は、本文がページ全体の単一カラムだった頃の名残。
+	   3カラムレイアウト（.center-column）内の.contentsは列幅が660pxより
+	   狭くなり得るため、同じ701px以上のときだけ解除してオーバーフローを防ぐ
+	   （この範囲外、スマホ表示のwidth:88%等には影響させない）。 */
+	.center-column .contents {
+		width: auto;
+		min-width: 0;
+	}
 }
 
 @media screen and (min-width: 321px) and (max-width: 700px) {
@@ -911,69 +920,130 @@ div.iframeWrapper iframe {
 	border-color: var(--subject-color) !important;
 }
 
+/* e-Stat API(政府統計の総合窓口)から取得した最新統計値（ビルド時に解決済み） */
+.estat-value {
+	font-weight: bold;
+	color: var(--subject-color, #337ab7);
+}
+
+.estat-value-error {
+	font-weight: normal;
+	font-style: italic;
+	color: #888;
+}
+
 /* テーブルスタイル */
-.contents table {
+/* 移行元(class="table"/"w-auto"/"w-100"等)が付いた表は、common.cssのユーティリティ
+   クラスでオリジナルサイトと同じ見た目（細い黒枠・paddingなし・幅autoが基本）になる。
+   ここでは、それらのクラスを持たない新規追加分の表にのみ、読みやすいデフォルト
+   （幅100%・グレー系の太め罫線・padding付き）を与える。
+   align/valign属性はブラウザがネイティブに解釈するため、CSSでの指定は不要。 */
+.contents table:not(.table) {
 	width: 100%;
 	border-collapse: collapse;
 	border: 1px solid #dee2e6;
 	margin: 1rem 0;
 }
 
-.contents table th,
-.contents table td {
+.contents table:not(.table) th,
+.contents table:not(.table) td {
 	padding: 0.75rem;
 	border: 1px solid #dee2e6;
 }
 
-.contents table th {
+.contents table:not(.table) th {
 	text-align: center;
 	background-color: #f8f9fa;
 	font-weight: 600;
 }
 
-.contents table td[align="center"],
-.contents table th[align="center"] {
-	text-align: center;
-}
-
-.contents table td[align="left"],
-.contents table th[align="left"] {
-	text-align: left;
-}
-
-.contents table td[align="right"],
-.contents table th[align="right"] {
-	text-align: right;
-}
-
 /* 3カラムレイアウト */
-.sidebar-toggle-btn {
+
+/* スマホ用：画面左下の操作ボタン（コンテンツ一覧／前へ／次へ）。
+   ヘッダーが常時表示（sticky）になったため、画面の上下を固定要素で
+   挟むと閲覧できる範囲が狭くなる。そこで小さなFAB（floating action
+   button）1つにまとめ、タップ時だけ選択肢を表示する方式にした。
+   サイドバー（コンテンツ一覧）が画面左からスライド表示されることに
+   合わせ、ボタンも左下に配置している。 */
+.mobile-fab-wrapper {
+	display: none;
+}
+
+@media screen and (max-width: 560px) {
+	.mobile-fab-wrapper {
+		display: block;
+	}
+}
+
+.mobile-fab-backdrop {
 	position: fixed;
-	top: 80px;
-	left: 10px;
-	z-index: 1000;
-	background: var(--subject-color, #337ab7);
+	inset: 0;
+	z-index: 899;
+	background: transparent;
+}
+
+.mobile-fab-btn {
+	position: fixed;
+	left: 16px;
+	bottom: 16px;
+	z-index: 901;
+	width: 52px;
+	height: 52px;
 	border: none;
 	border-radius: 50%;
-	width: 50px;
-	height: 50px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	color: white;
-	box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+	background: var(--subject-color, #337ab7);
+	color: #fff;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 	cursor: pointer;
 	transition: transform 0.2s;
 }
 
-.sidebar-toggle-btn:hover {
-	transform: scale(1.1);
+.mobile-fab-btn.open {
+	transform: rotate(90deg);
 }
 
-@media screen and (min-width: 561px) {
-	.sidebar-toggle-btn {
-		display: none;
-	}
+.mobile-fab-menu {
+	position: fixed;
+	left: 16px;
+	bottom: 80px;
+	z-index: 900;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	align-items: flex-start;
+}
+
+.mobile-fab-item {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 10px 16px;
+	border: none;
+	border-radius: 24px;
+	background: #fff;
+	color: #333;
+	font-size: 1.3rem;
+	white-space: nowrap;
+	text-decoration: none;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+}
+
+.mobile-fab-item.disabled {
+	color: #bbb;
+	pointer-events: none;
+}
+
+[data-theme="dark"] .mobile-fab-item {
+	background: #2a2a2a;
+	color: #e0e0e0;
+}
+
+[data-theme="dark"] .mobile-fab-item.disabled {
+	color: #666;
 }
 
 .sidebar-modal-overlay {
@@ -1308,3 +1378,87 @@ div.iframeWrapper iframe {
 	text-align: center;
 	color: #aaa;
 }
+
+/* ==========================================================================
+   ダークモード（レッスン本文まわり）
+   bodyの文字色・背景色はCSS変数で自動的に切り替わるが、本文中の個別の
+   枠線・見出し・サイドバー等は固定色で指定されているため、ダークモード時に
+   文字だけ白くなって背景は明るいまま、という状態になっていた。
+   主要な構造要素についてここでまとめて上書きする。
+   ========================================================================== */
+
+[data-theme="dark"] th {
+	background-color: #333;
+	color: #e0e0e0;
+}
+
+[data-theme="dark"] h2 {
+	border-color: #666;
+	box-shadow: 3px 3px #000;
+}
+
+[data-theme="dark"] div div.title {
+	background-color: var(--pale-white);
+}
+
+[data-theme="dark"] div#toc {
+	background-color: #2a2a2a;
+}
+
+[data-theme="dark"] .accordion-menu {
+	--scrollbar-color: rgba(255, 255, 255, 0.25);
+	--scrollbar-hover-color: rgba(255, 255, 255, 0.4);
+}
+
+[data-theme="dark"] .sidebar-title {
+	color: #e0e0e0;
+}
+
+[data-theme="dark"] .sidebar-nav a,
+[data-theme="dark"] .lesson-list a {
+	color: #ddd;
+}
+
+[data-theme="dark"] .sidebar-nav a:hover,
+[data-theme="dark"] .lesson-list a:hover {
+	background-color: rgba(255, 255, 255, 0.08);
+	color: #fff;
+}
+
+[data-theme="dark"] .lesson-no {
+	background-color: #333;
+	color: #e0e0e0;
+}
+
+[data-theme="dark"] .sidebar-modal,
+[data-theme="dark"] .sidebar-modal-header {
+	background-color: #1a1a1a;
+	color: #e0e0e0;
+	border-color: #333;
+}
+
+[data-theme="dark"] .sidebar-modal-header button {
+	color: #ccc;
+}
+
+[data-theme="dark"] .qa-select,
+[data-theme="dark"] .qa-btn-outline {
+	background-color: #2a2a2a;
+	color: #e0e0e0;
+	border-color: #444;
+}
+
+[data-theme="dark"] .qa-item {
+	border-bottom-color: #333;
+}
+
+[data-theme="dark"] .select select {
+	background-color: #2a2a2a;
+	color: #e0e0e0;
+	border-color: #444;
+}
+
+[data-theme="dark"] .modal-image {
+	background-color: transparent;
+}
+
