@@ -46,13 +46,13 @@ export default function QAContent({ allItems, units, fileInfo }: QAContentProps)
   const [allOpen, setAllOpen] = useState(false);
   const [shuffled, setShuffled] = useState<QAItem[] | null>(null);
 
-  // URLの?unit=で単元を初期選択（静的書き出しのためsearchParamsではなくクライアント側で読む）
+  // URLの?unit=（単元）・?page=（授業番号）で初期選択（静的書き出しのためsearchParamsではなくクライアント側で読む）
   useEffect(() => {
-    const unitParam = new URLSearchParams(window.location.search).get('unit');
-    if (unitParam) {
-      const unitId = parseInt(unitParam, 10);
-      if (!isNaN(unitId)) setSelectedUnit(unitId);
-    }
+    const params = new URLSearchParams(window.location.search);
+    const unitId = parseInt(params.get('unit') ?? '', 10);
+    if (!isNaN(unitId)) setSelectedUnit(unitId);
+    const pageNo = parseInt(params.get('page') ?? '', 10);
+    if (!isNaN(pageNo)) setSelectedPage(pageNo);
   }, []);
 
   // 単元を変えたら授業番号をリセット

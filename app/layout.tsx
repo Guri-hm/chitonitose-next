@@ -9,6 +9,8 @@ export const metadata: Metadata = {
   title: "ちとにとせ｜地理と日本史と世界史のまとめサイト",
   description: "「ちとにとせ」は、大学受験用の日本史・世界史・地理（地理歴史）のまとめサイト。見やすくわかりやすく解説します。",
   keywords: ["社会科", "高校", "日本史", "世界史", "地理", "授業", "プリント", "ちとにとせ"],
+  // テスト公開中は旧サイトとの重複を避けるため、ワークフローで NEXT_PUBLIC_NOINDEX=true を設定してインデックスさせない
+  ...(process.env.NEXT_PUBLIC_NOINDEX === "true" ? { robots: { index: false, follow: false } } : {}),
 };
 
 export default function RootLayout({

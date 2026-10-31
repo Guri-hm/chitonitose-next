@@ -14,7 +14,7 @@
 
 ### 残作業
 
-未完了の作業は [TODO.md](./TODO.md) に集約している（このファイルには書かない）。
+未完了の作業は [TODO.md](../TODO.md) に集約している（このファイルには書かない）。
 
 ---
 
@@ -255,7 +255,7 @@ npm run data:convert   # SQLite→JSON変換
 
 ### 次のタスク
 
-→ [TODO.md](./TODO.md) を参照。
+→ [TODO.md](../TODO.md) を参照。
 
 ---
 

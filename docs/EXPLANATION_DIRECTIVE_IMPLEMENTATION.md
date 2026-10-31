@@ -205,7 +205,7 @@ if (node.name === 'explanation' && node.children) {
 
 ## 次のステップ
 
-[TODO.md](./TODO.md) に集約した（`54.md`・`145.md`の目視確認を含む）。
+[TODO.md](../TODO.md) に集約した（`54.md`・`145.md`の目視確認を含む）。
 `73.md`は`<rt>`内改行の修正済み（`PROGRESS_HEADER_UX.md`参照）。
 
 ## 補足: 不要ファイルの削除

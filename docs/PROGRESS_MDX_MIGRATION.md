@@ -50,7 +50,7 @@ npm run dev
   - カスタム構文は段階的に有効化して検証する
 
 備考
-- 今後のタスク（remark-custom-directivesのテスト追加、CIでのビルド）は [TODO.md](./TODO.md) に集約した。
+- 今後のタスク（remark-custom-directivesのテスト追加、CIでのビルド）は [TODO.md](../TODO.md) に集約した。
 
 連絡
 - 問題が出た箇所（例：どのプラグインを最優先で戻したいか）を教えてください。優先度に従って段階的に有効化/修正を進めます。

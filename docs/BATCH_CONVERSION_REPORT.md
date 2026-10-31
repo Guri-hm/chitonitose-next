@@ -80,7 +80,7 @@
 
 ## 次のステップ
 
-[TODO.md](./TODO.md) に集約した（フロントマターのタイトル整理、`69.md`・`72.md`の目視確認など）。
+[TODO.md](../TODO.md) に集約した（フロントマターのタイトル整理、`69.md`・`72.md`の目視確認など）。
 `jh/lessons`のタイトル表示はDBの値を使うため、フロントマターの「タイトル未設定」は表示に影響しない。
 特に以下の点を重点的に確認：
 
@@ -94,7 +94,7 @@
 
 ## 変換スクリプト情報
 
-- **スクリプトパス**: [scripts/batch-convert-jh-lessons.js](scripts/batch-convert-jh-lessons.js)
+- **スクリプトパス**: [scripts/batch-convert-jh-lessons.js](../scripts/batch-convert-jh-lessons.js)
 - **使用ライブラリ**: cheerio (HTMLパーサー)
 - **実行時間**: 約10秒（171ファイル処理）
 
@@ -109,7 +109,7 @@ const skipFiles = ['jh_lessons1.html', 'jh_lessons2.html', 'jh_lessons3.html', '
 ## 検証結果
 
 ### テスト済みファイル
-- ✅ [4.md](content/jh/lessons/4.md): 完全に正常（ルビ、用語、ディレクティブ、画像全て正常）
+- ✅ [4.md](../content/jh/lessons/4.md): 完全に正常（ルビ、用語、ディレクティブ、画像全て正常）
 - ⚠️ 69.md: 生成済みだが要確認
 - ⚠️ 72.md: 生成済みだが要確認
 

@@ -277,7 +277,7 @@
 日本の合計特殊出生率は、1947～49年頃では4.3を超えていましたが、2016年では1.44と低くなっています。
 ::
 ::gazo
-![](total_fertility_rate_jp.svg ){.twice}
+![](total_fertility_rate_jp.svg){.twice}
 日本の合計特殊出生率
 ::
 ---arrow---

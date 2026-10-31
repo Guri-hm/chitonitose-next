@@ -185,3 +185,12 @@ dl.inner-block {
 [data-theme="dark"] dl.inner-block dt.ribbon {
     color: var(--darkgray);
 }
+
+[data-theme="dark"] div.study img {
+    box-sizing: border-box;
+    aspect-ratio: 1;
+    object-fit: contain;
+    padding: 28px;
+    background: #fff;
+    border-radius: 50%;
+}

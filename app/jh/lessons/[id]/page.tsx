@@ -136,7 +136,7 @@ export default async function JHLessonPage({ params }: LessonPageProps) {
           {/* 一問一答リンク */}
           <div className="d-flex flex-wrap justify-content-center gy-10 mt-10 mb-20">
             <div className="d-flex align-center order-2 mx-10 border border-2 border-subject-color p-10 border-radius-5">
-              <a href={`/jh/exercises/q-a?page=${lessonNo}`} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <a href={`/jh/q-a?page=${lessonNo}`} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                 <PenIcon size={20} />
                 <span>このページの一問一答</span>
               </a>

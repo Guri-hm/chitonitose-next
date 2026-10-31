@@ -186,7 +186,7 @@ node scripts/regenerate-geo-lessons.js
 
 ## 残作業
 
-未完了の作業は [TODO.md](./TODO.md) に集約した。以下の1〜6は後述の追記で対応済み（`createRoot`の件のみ
+未完了の作業は [TODO.md](../TODO.md) に集約した。以下の1〜6は後述の追記で対応済み（`createRoot`の件のみ
 TODO.mdに残している）。
 
 ---

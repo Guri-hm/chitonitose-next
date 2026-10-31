@@ -1,17 +1,20 @@
 # 残作業（唯一の一覧）
 
-> **残作業はこのファイルだけで管理する。** 他の `*.md`（PROGRESS*.md / ROADMAP.md など）は
+> **残作業はこのファイルだけで管理する。** `docs/` 配下の `*.md`（PROGRESS*.md / ROADMAP.md など）は
 > 作業の経緯・設計メモとして残しているだけで、そこに未完了タスクは書かない。
 > 作業が終わったらこのファイルの項目を消し、新しい残作業はここに追記する。
 >
 > 最終整理: 2026-10-31（旧ドキュメントの未完了項目を現状のコードと突き合わせて再確認済み）
 
-## 1. 公開・運用（コード外／手動）
+## 1. 公開・運用
 
-- [ ] AdSense管理画面でAuto adsをON（「ページ内広告」のみ有効、アンカー広告・インタースティシャルはOFF）
-- [ ] GitHubへの移行：リポジトリ設定、GitHub Pages（basePath／カスタムドメイン）、`.github/workflows` の動作確認
-- [ ] 公開後の確認：AdSense審査・広告表示、CLS（PageSpeed Insights）、GTMタグ発火
-- [ ] 現在のローカル変更はすべて未コミット（`git status`）。レビュー後にコミット
+- テスト公開中: `https://test.solopg.com/`（GitHub Pages、`public/CNAME`、`.github/workflows/deploy.yml`）。
+  テスト中は `NEXT_PUBLIC_NOINDEX=true` でnoindexにしている
+- [ ] GitHub Pagesの「Enforce HTTPS」：証明書の発行待ち（DNS Check完了後に有効化される）
+- [ ] AdSense：自動広告の形式を見直す（推奨設定は下記「AdSense設定の方針」）
+- [ ] 公開後の確認：AdSenseの広告表示（テストドメインを承認済みサイトに追加する必要あり）、CLS（PageSpeed Insights）、GTMタグ発火
+- [ ] 本番ドメインへ切り替える際：`deploy.yml` の `NEXT_PUBLIC_NOINDEX` を削除、`public/CNAME` を本番ドメインに変更、
+      旧サイトからのリダイレクト設定
 
 ## 2. コンテンツ未移行（`準備中` と表示されているページ）
 
@@ -31,9 +34,9 @@
 ## 3. 不具合・技術的負債
 
 - [ ] `components/lessons/GeoLessonContent.tsx`：画像プレースホルダーを `dangerouslySetInnerHTML` の子孫に
-      `createRoot` でマウントしている（React 19で未定義動作。経緯は `PROGRESS_GEO_DB_TABLES.md`）。
+      `createRoot` でマウントしている（React 19で未定義動作。経緯は `docs/PROGRESS_GEO_DB_TABLES.md`）。
       チャートと同様に本文の外側へ出す、またはビルド時にHTML化する
-- [ ] ヘッダーのリサイズ時ちらつきの根本原因が未特定（`PROGRESS_HEADER_UX.md`）
+- [ ] ヘッダーのリサイズ時ちらつきの根本原因が未特定（`docs/PROGRESS_HEADER_UX.md`）
 - [ ] 561〜767px幅でモバイルFAB（クイックアクセス）が出ない
 - [ ] `/jh/cultural-history/1〜3` の再生成後の見た目（画像・`:::lead`）が未確認
 - [ ] `content/jh/lessons/54.md`・`145.md`（未閉じディレクティブ／空行後の閉じタグ）、`69.md`・`72.md` を目視確認
@@ -53,14 +56,40 @@
 - [ ] Lighthouse・クロスブラウザ（Chrome / Firefox / Safari / Edge）・リンク切れチェック
 - [ ] 運用ドキュメント（MDX編集ガイド、データ更新手順、ビルド・デプロイ手順）、SQLiteのバックアップ
 
-## 5. リポジトリの整理候補（削除してよいか要確認）
+## 5. リポジトリの整理（残り）
 
-- ルート直下の作業ログ：`build.log` / `build_out2.txt` / `test-clean.md` / `test-output.md` / `test-ruby-terms.md` / `package.json.test`
-- `lib/remark-custom-directives.js.backup*`、`lib/remark-temp.mjs`、`scripts/convert-omnibus-simple.js.orig`
-- 旧レポート類（`BATCH_CONVERSION_REPORT.md` / `WEBP_CONVERSION_REPORT.md` / `IMAGE_PATH_FIX.md` など）は履歴として残すか `docs/` へ移動
+- [ ] `sqlite-tools/`（sqlite3.exe 等のバイナリ4個）がリポジトリに入っている。PATHのsqlite3で足りるなら削除
+- [ ] `data/` の `database.sql` / `import.ps1`、`origin/*.sql`（MySQLダンプ）は移行元データ。移行が完全に終わったら削除または別保管
+- [ ] `scripts/` の残りは `package.json` のコマンドと変換ツール（`batch-convert-jh-*` / `regenerate-geo-lessons` /
+      `markdown-to-html` / `convert-images-to-webp`）、DB補助（`materialize-views` / `import-sqljs` / `import-to-sqlite`）。
+      不要と判断できたものから削除
+- [ ] `public/css/content_common.css` に、削除済みコンポーネント（`ImageModal` / `OptimizedImage`）向けの
+      ダークモード指定が残っている（無害。必要なら削除）
+
+## AdSense設定の方針（2026-10-31時点の推奨）
+
+サイトの構成（ヘッダー常時表示、モバイルは画面左下にFAB、ページ末尾に手動のMultiplex枠1つ）を踏まえた推奨。
+
+| 項目 | 推奨 | 理由 |
+|---|---|---|
+| 自動広告 | ON | 前提 |
+| ページ内：バナー | ON | 主力。本文を邪魔しにくい |
+| ページ内：Multiplex | OFF | ページ末尾に手動のMultiplex枠（`AdUnit.tsx`）が既にあり、自動と重複して広告過多になる |
+| オーバーレイ：アンカー | OFF | 画面下に固定され、モバイルの左下FAB・読み進める操作と干渉。常時固定のヘッダーと合わせて画面が狭くなる |
+| オーバーレイ：全面広告 | OFF | 画面遷移時に学習を中断させ、離脱・CLS悪化の原因 |
+| オーバーレイ：サイドレール | 様子見（迷うならOFF） | 広い画面の余白に出るだけだが、3カラムのレイアウトと重なって見えないか確認してから |
+| 広告インテント | OFF（効果を見てから） | 検索意図に連動する追加の広告UI。学習サイトでは優先度が低く、まず上記だけで計測する |
+
+あわせて：自動広告の「広告の読み込み量」は低〜中に抑える。`public/ads.txt` は元サイトのものを移した
+（AdSenseのads.txt警告対策）。テストドメイン（`test.solopg.com`）は、AdSenseの「サイト」に追加するまで広告は出ない。
 
 ## 完了済み（最近）
 
+- 2026-10-31 リポジトリ整理：作業ログ・バックアップ・テスト用ページ（`/test-ruby` `/data-test` `/charts`）・
+  未使用コンポーネント・旧変換スクリプト・デバッグスクリプトを削除。旧レポート類は `docs/` に移動
+- 2026-10-31 教科トップのアイコン（`.study`）のダークモード対応、壊れていた画像参照（`plain.md` ほか）、
+  `/jh/exercises/q-a` の誤リンク、`favicon.ico` を修正
+- 2026-10-31 テスト公開用に noindex を設定
 - 2026-10-31 地理「演習・その他」11ページを実装（雨温図／ハイサーグラフの演習・地図での演習、地形断面、
   国の位置クイズ3種、統計データ3種）。`components/geo-exercises/`・`lib/geoExercises.ts`・`lib/geoStatistics.ts`・
   `public/quiz-maps/`。サイドバーにも「演習・その他」を追加

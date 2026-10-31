@@ -175,9 +175,9 @@ export default async function Home() {
             <aside className="news-sidebar">
               <h3>おすすめコンテンツ</h3>
               <ul className="recommend-list">
-                <li><a href="https://chitonitose.com/geo/geo_exercises_climograph_map.html" target="_blank" rel="noopener noreferrer">雨温図の演習</a></li>
-                <li><a href="https://chitonitose.com/geo/geo_exercises_hythergraph_map.html" target="_blank" rel="noopener noreferrer">ハイサーグラフの演習</a></li>
-                <li><Link href="/charts">グラフ・統計データのサンプル</Link></li>
+                <li><Link href="/geo/geo_exercises_climograph_map">雨温図の演習</Link></li>
+                <li><Link href="/geo/geo_exercises_hythergraph_map">ハイサーグラフの演習</Link></li>
+                <li><Link href="/geo/geo_statistical_data_main">統計データ（世界地図）</Link></li>
               </ul>
 
               <h3>関連リンク</h3>

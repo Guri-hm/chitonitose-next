@@ -4,7 +4,7 @@
 
 ## 概要
 
-未完了の作業は [TODO.md](./TODO.md) に集約している。
+未完了の作業は [TODO.md](./TODO.md) に集約している。作業の経緯・設計メモ・MDX記法は [docs/](./docs) を参照。
 
 このプロジェクトは、chitonitose.comを従来のPHP/MySQL構成からNext.jsベースの静的サイトに移行するためのものです。
 
@@ -103,7 +103,7 @@ npm run test:mdx:geo  # 地理
 
 ## MDX構文ルール
 
-MDXファイルの書き方については [MDX_SYNTAX_RULES.md](./MDX_SYNTAX_RULES.md) を参照してください。
+MDXファイルの書き方については [MDX_SYNTAX_RULES.md](./docs/MDX_SYNTAX_RULES.md) を参照してください。
 
 **主なルール**:
 - ディレクティブ構文（`:::directive`）を使用

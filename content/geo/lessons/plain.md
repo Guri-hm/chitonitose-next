@@ -247,11 +247,11 @@
 :::</li>
 </ul>
 ::gazo
-![](alluvial_fan.webp ){.twice}
+![](alluvial_fan.webp){.twice}
 扇状地
 ::
 ::gazo
-![](alluvial_fan_cross_section.webp ){.twice}
+![](alluvial_fan_cross_section.webp){.twice}
 扇状地の断面
 ::
 <h5>天井川</h5>
@@ -265,7 +265,7 @@
 すると川底が次第に両側の平地を上回り、[[天井川]]が形成されます。
 ::
 ::gazo
-![](raised_bed_river.webp ){.twice}
+![](raised_bed_river.webp){.twice}
 天井川
 ::
 ::top
