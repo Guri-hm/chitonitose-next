@@ -342,9 +342,13 @@ async function main() {
     console.log('\n🌾 Production Data:');
 
     // 生産データ
-    const production = safeQuery(db, 'SELECT * FROM production LIMIT 100', 'production');
+    const production = safeQuery(db,     'SELECT * FROM production', 'production');
     if (production.length > 0) writeJSON('production.json', production);
     filesCreated++;
+
+        const nationPopulation = safeQuery(db, 'SELECT * FROM nation_population', 'nation population');
+        if (nationPopulation.length > 0) writeJSON('nation-population.json', nationPopulation);
+        filesCreated++;
 
     // ===== 気候データ（グラフ用） =====
     console.log('\n🌡️ Climate Data:');
@@ -352,6 +356,10 @@ async function main() {
     // 都市と気候区分の関連
     const cityClimate = safeQuery(db, 'SELECT * FROM city_climate_classification', 'city climate');
     if (cityClimate.length > 0) writeJSON('city-climate.json', cityClimate);
+    filesCreated++;
+
+    const topographicProfile = safeQuery(db, 'SELECT * FROM topographic_profile', 'topographic profile');
+    if (topographicProfile.length > 0) writeJSON('topographic-profile.json', topographicProfile);
     filesCreated++;
 
     // ===== 一問一答データ =====
@@ -483,10 +491,12 @@ async function main() {
           'river-info.json'
         ],
         production: [
-          'production.json'
+          'production.json',
+          'nation-population.json'
         ],
         climate: [
-          'city-climate.json'
+          'city-climate.json',
+          'topographic-profile.json'
         ],
         japan: [
           'prefectures.json',

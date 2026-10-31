@@ -127,17 +127,10 @@
 
 ## 残作業・未確認事項
 
-- 今回の変更はすべてローカルの未コミット状態（`git status`で確認可能）。
-  コミット・プッシュは未実施。
-- ダークモードは主要構造要素のみ対応済みで、全CSSファイルの網羅監査は
-  していない（上記4参照）。ただし下記「2026-10-25 追記②」で追加監査済み。
-- リサイズちらつきは一般的対策を入れたのみで、根本原因の確実な特定は
-  できていない。再発時は要再調査。
-- モバイルFAB（画面左下）は560px以下でのみ表示（561〜767pxの間は
-  クイックアクセスUIなし）。旧v2バー時代から同じ挙動を踏襲しているが、
-  この帯域を気にする場合は別途対応が必要。
-- 他の既存PROGRESS*.md（地理DB連動表・MDX移行・JH移行状況）は
-  今回のヘッダー／UX改修とは独立した内容のため更新していない。
+未完了の作業は [TODO.md](../TODO.md) に集約した（ここには書かない）。
+
+- 今回の改修の実施内容は以降の各セクションを参照。ダークモードの追加監査は
+  「2026-10-25 追記②」と、2026-10-31の追記⑤を参照。
 
 ---
 
@@ -209,16 +202,16 @@
 （開発サーバーと本番ビルドが`.next`を同時に触ると`EPERM`で止まる／
 ハングする既知の問題があるため）。
 
-### 残作業（新規）
+### 補足（新規）
 
 - `app/data-test/page.tsx`（データ読み込み確認用の内部テストページ）は
   `NewsItem`型修正に伴い`item.title`→`item.news_title`に追従修正した
   （ビルドが型エラーで失敗していたため）。
-- トップページの「お知らせ」は直近10件のみ表示。全履歴を見せる
-  アーカイブページは未実装（必要であれば別途ルートを追加する）。
 - NoCloudPDFのアイコンは独自画像を持っていないため、インラインSVG
-  （汎用的な書類＋チェックマーク）で代用した。公式ロゴ画像を使う場合は
-  差し替えが必要。
+  （汎用的な書類＋チェックマーク）で代用している。
+- 「お知らせ」は直近10件のみ表示。
+
+残作業は [TODO.md](../TODO.md) を参照。
 
 ---
 
@@ -302,12 +295,11 @@ Webの～）は、要望に応じてやや端的な表現に調整した
   autorelaxed`5152620413`、末尾の`9261924498`）で広告過多だったため、
   **復活させるのは末尾の1枠のみ**。離脱を避ける意図。
 
-### 残作業（優先順）
+### 残作業
 
-1. **AdSense管理画面での設定（コード外・手動）**: 対象サイトでAuto adsをON。
-   フォーマットは「ページ内広告」のみ有効、「アンカー広告」「ベネット広告
-   （インタースティシャル）」はOFF。広告密度の上限があれば低めに設定。
-2. **MDXコンパイルエラー: ✅ 全件解消（ビルド検証済み）**:
+未完了の作業は [TODO.md](../TODO.md) に集約した。以下は完了した作業の記録。
+
+- **MDXコンパイルエラー: ✅ 全件解消（ビルド検証済み）**:
    - `lessons/27.md`・`73.md`は`<rt>`内の改行を1行化。
    - `cultural-history/1〜3.md`は、旧変換スクリプト(`convert-omnibus-simple.js`、行単位)が
      複数行の要素を切り捨て、`:::lead`/`:::sup`の大半（約300箇所）も欠落させていた。
@@ -317,43 +309,10 @@ Webの～）は、要望に応じてやや端的な表現に調整した
      ページ側`culturalHistoryTitles`と同じ「文化史（…）」に修正。
    - 検証: `npm run build` EXITCODE 0、`MDX ERROR`/`Failed to load`ゼロ、
      出力HTMLにエラーブロックなし、ruby/rtタグの開閉数一致。
-   - 未確認: 再生成後の見た目（画像・:::lead表示）は目視していない。次回dev起動時に
-     `/jh/cultural-history/1〜3/`を軽く確認すること。
-   - ※旧メモの「文化史2・3は未修正」は解消済み。以下の古い記述は参考:
-   - ✅ 修正済み（未ビルド検証）: `lessons/27.md`・`lessons/73.md`（`<rt>`内の改行を1行化）、
-     `cultural-history/1.md`（`</ruby>`と続きの文、`勅撰`の`:::sup`注記を補完。
-     記法は`lessons/21.md`の同箇所と同じ）。
-   - ⏳ 未修正: `cultural-history/2.md`・`3.md`（下記）。ビルドは成功（EXITCODE 0）するが、
-     該当ページは本文の代わりにエラー表示になる。
-   原因はいずれも元HTMLの`<ruby>…<rt>…</rt>`の改行を含む箇所を変換した際、
-   閉じタグ`</ruby>`と後続の要素が欠落していること。
-   - `content/jh/cultural-history/1.md` 142行目付近（`勅撰<rt>ちょくせん</rt>`の後ろに`</ruby>`と
-     続きの文「による国史を…示そうとしました。」が欠落。元: `origin/chitonitose/jh/jh_omnibus_cultural_history1.html` 104行付近）
-   - `content/jh/cultural-history/2.md` 10行目付近（`<ruby>郭`の`<rt>くるわ</rt></ruby>をもちました。`と
-     続くlast/sup要素が欠落。元: `jh_omnibus_cultural_history2.html` 15行付近）。
-     またタイトルが「女性の歴史」になっており誤りの可能性（要確認）。
-   - `content/jh/cultural-history/3.md` 78行目付近（`<ruby>詔<rt>`以降が欠落）
-   - `content/jh/lessons/27.md` 183行目、`content/jh/lessons/73.md` 50行目
-     （`<rt>`の中に改行・インデントが入っている。1行にまとめれば直る可能性が高い）
-   - 文化史1〜3は変換スクリプト側が`</ruby>`以降を落としている可能性がある。
-     他の欠落が無いか、元HTMLと突き合わせて確認すること。
-   - ※調査のみで、**コンテンツファイルは未修正**（今回は編集していない）。
-3. **ビルド時に`Failed to load ...`／`[MDX ERROR]`が出ていないか確認**し、
-   エラーがあっても`EXITCODE=0`になる点に注意（ログをgrepして確認する）。
-4. **本番での広告確認**: 公開後、AdSenseの審査／広告表示、CLS（PageSpeed Insights）、
-   GTMのタグ発火（プレビュー）を確認。
-5. **GitHub移行**（ユーザーの次の大きな作業）: リポジトリ側の設定、GitHub Pages
-   （basePath／カスタムドメインの扱い）、`.github/workflows`の動作確認。
-   ローカル変更は**すべて未コミット**（`git status`参照）。
-6. 既存の未解決（上記「残作業・未確認事項」参照）: リサイズちらつきの根本原因、
-   561〜767px帯のクイックアクセスUI。
-7. 地理の演習・その他が実装されていない
 
 ### 進捗の目安
 
-ヘッダー／UX改修・トップページ刷新・ダークモード・GTM/AdSense導入は完了。
-残りは「AdSense管理画面設定」「MDXエラー5件の修正」「GitHub移行」の3つが中心で、
-コード面では**ほぼ完了**。
+ヘッダー／UX改修・トップページ刷新・ダークモード・GTM/AdSense導入・地理の演習・その他は完了。
 
 ### 作業上の注意（再掲）
 
@@ -362,3 +321,35 @@ Webの～）は、要望に応じてやや端的な表現に調整した
 - `common.css`（元サイトCSSの流用）はセレクタ詳細度が低く、新規CSSが負けやすい。
   上書きは親ID／親クラスを付けて詳細度を上げる。
 - ブラウザ自動操作では`setViewportSize`が`devicePixelRatio`(≈1.25)で拡大される。
+
+---
+
+## 2026-10-31 追記⑤ : トップ以外のダークモード対応
+
+- 日本史・地理・世界史トップ（`public/css/subject.css`）: `dl.inner-block dt.ribbon`の文字色、
+  h2の上下ボーダーと`:before`/`:after`の縦線（黒→`#888`）。
+- ヘッダーの文字サイズ切替（`components/Header.css`）: ダークモード用の既存ボタン指定が`.active`を
+  上書きして選択中が太字にしか見えなかったため、ダークモード用の`.active`（`var(--link)`背景）とhoverを追加。
+- 授業ページの空欄（`public/css/content_common.css`の`div.contents span.all`）: 下線が固定の`#000`で
+  見えなかったため、ダークモードでは`var(--darkgray)`に。
+- 透過画像: ダークモードのみ`.markdown-content img`・`.contents div.gazo img`・`.contents img.table`・
+  `.lesson-image img`・画像モーダル（`components/ui/ImageModal.css`、`LessonImage.tsx`に
+  `lesson-image-fullscreen`クラスを追加）の背景を白に。トップページ・アイコン・フッター画像は対象外。
+- 付随：`.explanation`/`.serif`の吹き出しが白背景＋明るい文字になっていたのを修正。
+- ブラウザ（`/geo`, 演習ページ）で表示を確認済み。
+
+## 2026-10-31 追記⑥ : 地理「演習・その他」の実装
+
+- ルート: `app/geo/<slug>/page.tsx`（旧URLと同じslug、11ページ）。共通枠は`components/geo-exercises/GeoExercisePage.tsx`
+  （ThreeColumnLayout・前後ナビ）。ページ一覧は`lib/geoLessons.ts`の`GEO_EXERCISE_SECTIONS`（トップとサイドバーで共有）。
+- 雨温図／ハイサーグラフ: `ClimateQa`（ランダム10問の一問一答）、`SelectionProblem`（地図上の地点→4択、
+  同じ気候区分の選択肢は出さない）。データは`lib/geoExercises.ts`（`city-climate.json`等を結合）。
+  地形断面も`SelectionProblem`を使用（`topographic-profile.json`を`sqlite-to-json.js`に追加）。
+- 国の位置クイズ: `MapQuiz`（Pointer Eventsによるドラッグ＆ドロップ。外部ライブラリなし）。元ページに埋め込まれていた
+  SVGを`public/quiz-maps/{Africa,Asia,West_Asia}.svg`に切り出した。地図のDOMはReactに管理させず直接挿入している
+  （再描画で配色が消えるため）。
+- 統計データ: `StatisticalDataSections`＋`StatsChart`（GeoChart／％積み上げ棒）。整形は`lib/geoStatistics.ts`。
+  `GoogleChart.tsx`のloaderに`geochart`パッケージを追加。`nation-population.json`を新規出力、
+  `production.json`の`LIMIT 100`を撤廃。
+- 統計27と281はDB上で名称・単位が入れ替わっているため、`geo_statistical_data_animal`でラベルを明示している。
+- 全ページ共通のハイドレーション警告（AdSenseが`<ins>`のstyleを書き換える）は`AdUnit.tsx`で抑止。

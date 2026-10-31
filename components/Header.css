@@ -346,6 +346,20 @@
   color: #e0e0e0;
 }
 
+[data-theme="dark"] .font-size-control button:hover {
+  background-color: var(--light-blue);
+  border-color: var(--light-blue);
+  color: #fff;
+}
+
+[data-theme="dark"] .font-size-control button.active,
+[data-theme="dark"] .font-size-control button.active:hover {
+  background-color: var(--link);
+  border-color: var(--link);
+  color: #111;
+  font-weight: bold;
+}
+
 [data-theme="dark"] .font-size-control span {
   color: #aaa;
 }

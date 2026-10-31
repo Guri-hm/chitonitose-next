@@ -184,25 +184,10 @@ node scripts/regenerate-geo-lessons.js
 - `data/json/basic-data.json`, `export-items.json`, `import-items.json`, `urban-population.json`,
   `_index.json`
 
-## 残作業（未着手、優先度順）
+## 残作業
 
-1. `China.md` 等、1つのgazo divに画像が2枚あるケースの2枚目欠落の確認・修正
-   （`htmlToCustomMarkdown` のgazo処理を複数img対応に拡張）。
-2. `projection.md` の `<span onclick="chg(this)" class="all" src="...">`（属性の並びが原因でクリック
-   用語変換の正規表現が不一致→生HTMLのまま残る）、`food_problems.md` の
-   `<a href=... src="...">` も同様の軽微な残存（表示上は無害。ブラウザが`<img>`以外の要素の
-   `src`属性を無視するため）。直すなら `convertHtmlToMarkdownInline` のクリック用語系正規表現を
-   `class="all"[^>]*>` のように寛容化する。
-3. `agriculture_self-sufficient.md` の「ラトソル」の元HTMLで `class="all"` が欠落しておりクリック不可
-   （元サイト自体の表記ゆれ、優先度低）。
-4. 残り約60種のPHPスクリプト（気候グラフ、人口ピラミッド、高齢化社会等、
-   `origin/chitonitose/geo/php/` 配下）は未移行。必要になったら同様のパターン
-   （`PHP_INCLUDE_DIRECTIVES` にエントリ追加 → `parseCustomMarkdown` にプレースホルダー変換追加 →
-   `lib/renderLessonDbTables.ts` に描画関数追加 → `regenerate-geo-lessons.js` 再実行）で追加する。
-5. 前述「⚠️ 未解決の懸念」の `createRoot` マウント不具合の根本原因調査
-   （Google Chartsなど、対話性が必要でReact化が避けられない機能を本格的に使う前に必要）。
-6. 今回の変更をレビュー後コミットすること。特に `content/geo/lessons/*.md` の差分は
-   `git diff` でスポットチェックしてからコミット推奨。
+未完了の作業は [TODO.md](./TODO.md) に集約した。以下の1〜6は後述の追記で対応済み（`createRoot`の件のみ
+TODO.mdに残している）。
 
 ---
 
@@ -259,20 +244,15 @@ node scripts/regenerate-geo-lessons.js
    `Japan5`（items-each-ports港別貿易額）、`food_problems`（食料自給率）、
    `Oceania`（city都市人口）、`Africa`/`Japan1`（continental-altitude/jp-natural-environment固定表）。
 
-### 未着手（次回優先）
+### 移行状況の補足
 
-- ✅ 2026-XX-XX追記: `eu`（EU加盟国）、`wood_area`（森林の増減）、
-  `import_partners_each_items`（主要輸入品の輸入先）、`urban_population`（都市人口率）の
-  4スクリプトを追加実装済み（Europa2/forestry/Japan5/Oceaniaページで動作確認済み）。
-- 残りの低頻度PHPスクリプト（使用1回のみのもの）を精査した結果、テーブル描画パターンに
-  当てはまるものはほぼ出尽くした。残るのは以下のみで、いずれも移行対象外と判断:
-  - `getXML_API.php`および`jp_population.php`/`jp_3age_categories_prefecture.php`等の
-    e-Stat外部API依存スクリプト（DBスナップショットで代替不可）。
-  - `set_per_capita_gni_variable.php`（表を描画しないデータ準備用ヘルパー、対象外）。
+- 残りの低頻度PHPスクリプトを精査した結果、テーブル描画パターンに当てはまるものは出尽くした。
+  残るのは移行対象外と判断したもののみ（e-Stat外部API依存の`getXML_API.php`・`jp_population.php`・
+  `jp_3age_categories_prefecture.php`等、データ準備用の`set_per_capita_gni_variable.php`）。
+- `eu` / `wood_area` / `import_partners_each_items` / `urban_population` は追加実装済み。
 - `origin/chitonitose` は**別のネストされたGitリポジトリ**（`.gitmodules`には未登録の生gitlink）。
   中を編集した場合は `cd origin/chitonitose && git add/commit` を忘れないこと
   （親リポジトリ側は単にgitlinkの参照が変わるだけで、差分の中身は追えない）。
-- 今回の変更（コミット済み）を必要に応じて `git push` すること（本セッションではpushしていない）。
 
 ### ✅ GoogleChartグラフが一切表示されない不具合を修正（追記）
 
@@ -359,15 +339,10 @@ node scripts/regenerate-geo-lessons.js
   属性無しの`<script>`（`fetchChart`/`google.load`系で使用）や、`type="text/javascript"`以外の
   属性を持つタグを見逃していた。`<script[^>]*>`に緩和して対応。
 
-**対象範囲外として意図的に除外したもの**:
-- `Chart.Geo`（世界地図・日本地図の色分け）系6エンドポイント
-  （`statistics_json`/`nation_population_json`/`birthrate_json`/`growth_json`/
-  `per_capita_gni_json`/`jp_prefectures_statistical_data_json`）は、対応する
-  `geo_statistical_data_*.html`が**そもそもNext.js側に移行されたページとして存在しない**ため
-  実質到達不可能と判断し未対応（`jp_prefectures_statistical_data_json`のみ`tertiary_industry.html`
-  内に存在するが、安全に除去するのみで変換はしていない）。
-- `production_bar.php`（`fetchChart`経由）も同様に到達不可能なページのみで使用のため未対応。
-- `fetchData('./php/request.php', ...)`（`geo_visualize_population.html`のみ、到達不可能）も未対応。
+**対象範囲外として意図的に除外したもの**（`Chart.Geo`系の世界地図は2026-10-31に`geo_statistical_data_*`として
+実装済み。`lib/geoStatistics.ts`参照）:
+- `jp_prefectures_statistical_data_json`（日本地図の色分け）は`tertiary_industry.html`内でスクリプトを除去しているだけ（TODO.md参照）。
+- `fetchData('./php/request.php', ...)`（`geo_visualize_population.html`のみ、元サイトでも到達不可）は未対応。
 
 新規実装したデータ層: `sqlite-to-json.js`に12テーブル追加
 （`wood_use`/`wood_supply`/`forestry_worker`/`fish_catche`/`foreign_population`/`nationality`/

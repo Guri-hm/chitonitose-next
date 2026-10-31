@@ -266,3 +266,64 @@ export const GEO_CATEGORIES: GeoCategory[] = [
 export const GEO_LESSONS: GeoLesson[] = GEO_CATEGORIES.flatMap((cat) =>
   cat.sections.flatMap((sec) => sec.lessons)
 );
+
+export interface GeoExerciseItem {
+  slug: string;
+  title: string;
+  /** サイドバー・前後ナビ用の表示名 */
+  pageTitle: string;
+}
+
+export interface GeoExerciseSection {
+  period: string;
+  image: string;
+  items: GeoExerciseItem[];
+}
+
+/** 演習・その他セクション（地理トップページとサイドバーで共有） */
+export const GEO_EXERCISE_SECTIONS: GeoExerciseSection[] = [
+  {
+    period: 'ハイサーグラフ',
+    image: '/share/img/hythergraph.webp',
+    items: [
+      { slug: 'geo_exercises_hythergraph', title: '演習', pageTitle: 'ハイサーグラフ演習' },
+      { slug: 'geo_exercises_hythergraph_map', title: '地図での演習', pageTitle: 'ハイサーグラフ 地図での演習' },
+    ],
+  },
+  {
+    period: '雨温図',
+    image: '/share/img/climograph.webp',
+    items: [
+      { slug: 'geo_exercises_climograph', title: '演習', pageTitle: '雨温図演習' },
+      { slug: 'geo_exercises_climograph_map', title: '地図での演習', pageTitle: '雨温図 地図での演習' },
+    ],
+  },
+  {
+    period: '地形断面',
+    image: '/share/img/topographic_profile.webp',
+    items: [
+      { slug: 'topographic_profile', title: '地図での演習', pageTitle: '地形断面 地図での演習' },
+    ],
+  },
+  {
+    period: '国の位置',
+    image: '/share/img/map_pin.webp',
+    items: [
+      { slug: 'geo_location_quiz_Asia', title: '東南アジア・南アジア', pageTitle: '国の位置 東南アジア・南アジア' },
+      { slug: 'geo_location_quiz_West_Asia', title: '西アジア', pageTitle: '国の位置 西アジア' },
+      { slug: 'geo_location_quiz_Africa', title: 'アフリカ', pageTitle: '国の位置 アフリカ' },
+    ],
+  },
+  {
+    period: '統計データ',
+    image: '/share/img/statistical_data.webp',
+    items: [
+      { slug: 'geo_statistical_data_main', title: '主要統計', pageTitle: '統計データ 主要統計' },
+      { slug: 'geo_statistical_data_animal', title: '動物', pageTitle: '統計データ 動物' },
+      { slug: 'geo_statistical_data_crops', title: '農作物', pageTitle: '統計データ 農作物' },
+    ],
+  },
+];
+
+/** 演習・その他のフラットなページ一覧（前後ナビの順序） */
+export const GEO_EXERCISE_PAGES: GeoExerciseItem[] = GEO_EXERCISE_SECTIONS.flatMap((sec) => sec.items);

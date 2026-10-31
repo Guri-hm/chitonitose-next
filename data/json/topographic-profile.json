@@ -1,0 +1,86 @@
+[
+  {
+    "id": 55,
+    "name": "Arabian_peninsula_to_Iranian_plateau",
+    "jp_name": "アラビア半島からザグロス山脈にかけての",
+    "explanation": "アラビア半島とザグロス山脈の間には、ティグリス川・ユーフラテス川が流れる低地が広がります。"
+  },
+  {
+    "id": 56,
+    "name": "west_to_east_of_USA",
+    "jp_name": "アメリカ合衆国を西から東に横断する",
+    "explanation": "西部ではシエラネヴァダ山脈～ロッキー山脈にかけて高峻な山脈が連なり、中央部のグレートプレーンズ・プレーリーではやや緩やかな斜面が続きます。東部には古期造山帯のアパラチア山脈が位置します。"
+  },
+  {
+    "id": 57,
+    "name": "Andes_to_Brazilian_Highlands",
+    "jp_name": "アンデス山脈からブラジル高原にかけての",
+    "explanation": null
+  },
+  {
+    "id": 58,
+    "name": "Tianshan_Mountains",
+    "jp_name": "シベリアからテンシャン山脈にかけての",
+    "explanation": null
+  },
+  {
+    "id": 59,
+    "name": "Canadian_Shield",
+    "jp_name": "カナダ楯状地の",
+    "explanation": "安定陸塊の楯状地のため、低平な地形が続きます。"
+  },
+  {
+    "id": 60,
+    "name": "Tibetan_Plateau",
+    "jp_name": "インド亜大陸からチベット高原にかけての",
+    "explanation": null
+  },
+  {
+    "id": 61,
+    "name": "Ural_Mountains",
+    "jp_name": "ウラル山脈を横断する",
+    "explanation": null
+  },
+  {
+    "id": 62,
+    "name": "Madagascar",
+    "jp_name": "マダガスカル島を横断する",
+    "explanation": "マダガスカル島には南東貿易風が吹き込むため、島の東部は多雨です。"
+  },
+  {
+    "id": 63,
+    "name": "Great_Dividing_Mountains",
+    "jp_name": "オーストラリア大陸を西から東に横断する",
+    "explanation": "オーストラリア大陸は安定陸塊がほとんどを占めますが、東部に古期造山帯のグレートディバイディング山脈が位置します。"
+  },
+  {
+    "id": 64,
+    "name": "Pyrenees",
+    "jp_name": "イベリア半島からピレネー山脈を通過する",
+    "explanation": "ピレネー山脈は新期造山帯に属すため、高峻な山脈です。"
+  },
+  {
+    "id": 65,
+    "name": "Scandinavian_Mountain",
+    "jp_name": "スカンディナヴィア山脈を通過する",
+    "explanation": null
+  },
+  {
+    "id": 66,
+    "name": "west_to_east_of_China",
+    "jp_name": "チベット高原から中国東部にかけての",
+    "explanation": null
+  },
+  {
+    "id": 67,
+    "name": "Arabian_Peninsula_crossing",
+    "jp_name": "アラビア半島を西から東へ横断する",
+    "explanation": "紅海は地溝帯に海水が侵入して形成されました。地溝帯が広がる場所ではマグマが噴出し、標高が高い地域になります。よって紅海に接する西側の標高が高い断面図が該当します。"
+  },
+  {
+    "id": 68,
+    "name": "IndoChina_crossing",
+    "jp_name": "インドシナ半島を西から東へ横断する",
+    "explanation": "インドシナ半島の西部には新期造山帯に属す険しい山脈が位置しています。また、東部にはアンナン山脈が位置しています。これら東西の山脈に挟まれた地域には、チャオプラヤ川がつくった沖積平野が広がります。"
+  }
+]

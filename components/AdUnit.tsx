@@ -29,6 +29,7 @@ export default function AdUnit() {
       <ins
         className="adsbygoogle"
         style={{ display: 'block' }}
+        suppressHydrationWarning
         data-ad-format="autorelaxed"
         data-ad-client="ca-pub-4825014479713194"
         data-ad-slot="9261924498"

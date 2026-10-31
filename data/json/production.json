@@ -598,5 +598,77 @@
     "nation_cd": 76,
     "data_year": 2020,
     "value": 1479
+  },
+  {
+    "statistics_id": 1036,
+    "nation_cd": 156,
+    "data_year": 2020,
+    "value": 4748
+  },
+  {
+    "statistics_id": 1036,
+    "nation_cd": 360,
+    "data_year": 2020,
+    "value": 3560
+  },
+  {
+    "statistics_id": 1036,
+    "nation_cd": 364,
+    "data_year": 2020,
+    "value": 1009
+  },
+  {
+    "statistics_id": 1036,
+    "nation_cd": 586,
+    "data_year": 2020,
+    "value": 1443
+  },
+  {
+    "statistics_id": 1036,
+    "nation_cd": 840,
+    "data_year": 2020,
+    "value": 9222
+  },
+  {
+    "statistics_id": 1036,
+    "nation_cd": 999,
+    "data_year": 2020,
+    "value": 33097
+  },
+  {
+    "statistics_id": 1039,
+    "nation_cd": 36,
+    "data_year": 2020,
+    "value": 63529
+  },
+  {
+    "statistics_id": 1039,
+    "nation_cd": 156,
+    "data_year": 2020,
+    "value": 173095
+  },
+  {
+    "statistics_id": 1039,
+    "nation_cd": 356,
+    "data_year": 2020,
+    "value": 68100
+  },
+  {
+    "statistics_id": 1039,
+    "nation_cd": 364,
+    "data_year": 2020,
+    "value": 46587
+  },
+  {
+    "statistics_id": 1039,
+    "nation_cd": 566,
+    "data_year": 2020,
+    "value": 47744
+  },
+  {
+    "statistics_id": 1039,
+    "nation_cd": 999,
+    "data_year": 2020,
+    "value": 1263140
   }
 ]

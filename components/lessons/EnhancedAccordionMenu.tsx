@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import './AccordionMenu.css';
-import { GEO_CATEGORIES } from '@/lib/geoLessons';
+import { GEO_CATEGORIES, GEO_EXERCISE_PAGES, GEO_EXERCISE_SECTIONS } from '@/lib/geoLessons';
 
 interface Page {
   no: number;
@@ -151,6 +151,44 @@ function GeoAccordionSection({
   );
 }
 
+// geo用：演習・その他アコーディオンセクション
+function GeoExerciseAccordionSection({ currentSlug }: { currentSlug?: string }) {
+  const [open, setOpen] = useState(() =>
+    GEO_EXERCISE_PAGES.some((p) => p.slug === currentSlug)
+  );
+  return (
+    <div className="accordion-section">
+      <button className="accordion-header" onClick={() => setOpen((v) => !v)}>
+        <span className="accordion-title">演習・その他</span>
+        <span className={`accordion-arrow ${open ? 'open' : ''}`}>▼</span>
+      </button>
+      {open && (
+        <div className="accordion-content">
+          {GEO_EXERCISE_SECTIONS.map((sec) => (
+            <div key={sec.period} className="era-section">
+              <div className="era-header" style={{ cursor: 'default' }}>
+                <span>{sec.period}</span>
+              </div>
+              <ul className="lesson-list">
+                {sec.items.map((item) => (
+                  <li key={item.slug}>
+                    <a
+                      href={`/geo/${item.slug}`}
+                      className={currentSlug === item.slug ? 'active' : ''}
+                    >
+                      <span className="lesson-title">{item.title}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
 export default function EnhancedAccordionMenu({
   subject,
   pages,
@@ -247,6 +285,7 @@ export default function EnhancedAccordionMenu({
             currentSlug={currentSlug}
           />
         ))}
+        <GeoExerciseAccordionSection currentSlug={currentSlug} />
       </div>
     );
   }

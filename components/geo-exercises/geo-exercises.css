@@ -1,0 +1,77 @@
+.map-quiz .quiz-nations {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.map-quiz .drag {
+  display: inline-block;
+  margin: 6px;
+  padding: 2px 10px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  touch-action: none;
+  user-select: none;
+  cursor: grab;
+  position: relative;
+}
+
+.map-quiz .drag.is-dragging {
+  z-index: 50;
+  cursor: grabbing;
+}
+
+/* 地図上に置いた国名は、白い縁取りで地図の色の上でも読めるようにする */
+.map-quiz .drag.ft-shadow {
+  color: #000;
+  z-index: 10;
+  text-shadow:
+    1px 1px 0 #fff, -1px -1px 0 #fff, -1px 1px 0 #fff, 1px -1px 0 #fff,
+    1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff;
+}
+
+.map-quiz .quiz-map svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #fff;
+}
+
+.map-quiz .quiz-map .drag-active,
+.map-quiz .quiz-map .drag-active > path {
+  fill: rgba(191, 222, 193, 0.692);
+}
+
+.map-quiz .quiz-map .drag-enter,
+.map-quiz .quiz-map .drag-enter > path {
+  fill: #000 !important;
+}
+
+.quiz-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.quiz-modal {
+  width: min(500px, 92vw);
+  max-height: 90vh;
+  padding: 30px;
+  overflow-y: auto;
+  background: #fff;
+  color: #000;
+}
+
+.quiz-modal-title {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+[data-theme="dark"] .quiz-modal {
+  background: #222;
+  color: #eee;
+}

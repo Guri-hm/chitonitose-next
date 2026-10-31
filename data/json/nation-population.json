@@ -1,0 +1,547 @@
+[
+  {
+    "nation_cd": 4,
+    "population": 3893,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 12,
+    "population": 4385,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 32,
+    "population": 4520,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 36,
+    "population": 2550,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 40,
+    "population": 901,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 50,
+    "population": 16469,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 56,
+    "population": 1159,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 68,
+    "population": 1167,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 76,
+    "population": 21256,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 96,
+    "population": 44,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 100,
+    "population": 695,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 104,
+    "population": 5441,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 116,
+    "population": 1672,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 120,
+    "population": 2655,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 124,
+    "population": 3774,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 144,
+    "population": 2141,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 152,
+    "population": 1912,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 156,
+    "population": 143932,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 170,
+    "population": 5088,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 180,
+    "population": 8956,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 188,
+    "population": 509,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 191,
+    "population": 411,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 192,
+    "population": 1133,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 196,
+    "population": 121,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 203,
+    "population": 1071,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 208,
+    "population": 579,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 218,
+    "population": 1764,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 222,
+    "population": 649,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 231,
+    "population": 11496,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 233,
+    "population": 133,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 246,
+    "population": 554,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 250,
+    "population": 6527,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 276,
+    "population": 8378,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 288,
+    "population": 3107,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 300,
+    "population": 1042,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 320,
+    "population": 1792,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 336,
+    "population": 0.08,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 348,
+    "population": 966,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 356,
+    "population": 138000,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 360,
+    "population": 27352,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 364,
+    "population": 8399,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 368,
+    "population": 4022,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 372,
+    "population": 494,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 376,
+    "population": 866,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 380,
+    "population": 6046,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 384,
+    "population": 2638,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 388,
+    "population": 296,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 392,
+    "population": 12648,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 404,
+    "population": 5377,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 408,
+    "population": 2578,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 410,
+    "population": 5127,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 414,
+    "population": 427,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 418,
+    "population": 728,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 428,
+    "population": 189,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 430,
+    "population": 506,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 434,
+    "population": 687,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 440,
+    "population": 272,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 442,
+    "population": 63,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 450,
+    "population": 2769,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 458,
+    "population": 3237,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 466,
+    "population": 2025,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 470,
+    "population": 44,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 484,
+    "population": 12893,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 496,
+    "population": 328,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 499,
+    "population": 63,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 504,
+    "population": 3691,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 508,
+    "population": 3126,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 528,
+    "population": 1713,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 554,
+    "population": 482,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 558,
+    "population": 662,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 566,
+    "population": 20614,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 578,
+    "population": 542,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 586,
+    "population": 22089,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 591,
+    "population": 431,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 598,
+    "population": 895,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 600,
+    "population": 713,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 604,
+    "population": 3297,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 608,
+    "population": 10958,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 616,
+    "population": 3785,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 620,
+    "population": 1020,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 642,
+    "population": 1924,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 643,
+    "population": 14593,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 646,
+    "population": 1295,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 682,
+    "population": 3481,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 686,
+    "population": 1674,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 688,
+    "population": 695,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 702,
+    "population": 585,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 703,
+    "population": 546,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 704,
+    "population": 9734,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 705,
+    "population": 208,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 706,
+    "population": 1589,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 710,
+    "population": 5931,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 716,
+    "population": 1486,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 724,
+    "population": 4675,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 729,
+    "population": 4385,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 752,
+    "population": 1010,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 764,
+    "population": 6980,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 784,
+    "population": 989,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 788,
+    "population": 1182,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 792,
+    "population": 8434,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 804,
+    "population": 4373,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 818,
+    "population": 10233,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 826,
+    "population": 6789,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 834,
+    "population": 5973,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 840,
+    "population": 33100,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 858,
+    "population": 347,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 860,
+    "population": 3347,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 862,
+    "population": 2844,
+    "data_year": 2020
+  },
+  {
+    "nation_cd": 894,
+    "population": 1838,
+    "data_year": 2020
+  }
+]

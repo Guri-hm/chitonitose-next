@@ -31,7 +31,7 @@ function loadGoogleChartsOnce(): Promise<void> {
     const script = document.createElement('script');
     script.src = 'https://www.gstatic.com/charts/loader.js';
     script.onload = () => {
-      window.google.charts.load('current', { packages: ['corechart'] });
+      window.google.charts.load('current', { packages: ['corechart', 'geochart'] });
       window.google.charts.setOnLoadCallback(resolve);
     };
     document.head.appendChild(script);

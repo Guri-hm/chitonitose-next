@@ -149,6 +149,6 @@ MarkdownContentと同じロジックを実装（WHページ用）
 
 ## 備考
 
-- 地理 (geo) のレッスンページは別の構造のため未対応
+- 地理 (geo) のレッスンページも `GeoLessonContent` が `LessonImage` と画像ギャラリーを使うため対応済み
 - MDX形式は廃止し、カスタムMarkdown + HTML変換方式に統一
 - 画像のalt/captionにHTMLタグが含まれる場合は `dangerouslySetInnerHTML` で表示

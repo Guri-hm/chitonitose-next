@@ -4,6 +4,8 @@
 
 ## 概要
 
+未完了の作業は [TODO.md](./TODO.md) に集約している。
+
 このプロジェクトは、chitonitose.comを従来のPHP/MySQL構成からNext.jsベースの静的サイトに移行するためのものです。
 
 ## 技術スタック

@@ -97,7 +97,7 @@ export default function LessonImage({ src, alt = '', caption, className = '', im
           
           {/* 画像表示 */}
           <div 
-            className="relative max-w-[90vw] max-h-[90vh]"
+            className="lesson-image-fullscreen relative max-w-[90vw] max-h-[90vh]"
             onClick={(e) => e.stopPropagation()}
           >
             <Image

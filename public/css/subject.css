@@ -171,3 +171,17 @@ dl.inner-block ul li {
 dl.inner-block {
     margin-bottom: 15px;
 }
+
+[data-theme="dark"] h2 {
+    border-top-color: #888;
+    border-bottom-color: #888;
+}
+
+[data-theme="dark"] h2:before,
+[data-theme="dark"] h2:after {
+    background-color: #888;
+}
+
+[data-theme="dark"] dl.inner-block dt.ribbon {
+    color: var(--darkgray);
+}

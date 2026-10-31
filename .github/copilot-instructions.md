@@ -37,12 +37,10 @@ chitonitose-next/
 └── .github/         # GitHub Actions workflows
 ```
 
-### Next Steps
-1. Convert MySQL dump to SQLite database
-2. Implement data conversion (SQLite → JSON)
-3. Create shared components (Header, Footer, Navigation)
-4. Migrate content pages (HTML → MDX)
-5. Implement chart functionality
+### Remaining Work
+
+All remaining work is tracked in `TODO.md` at the repository root (single source of truth).
+Do not add task lists to other markdown files.
 
 ## Development Commands
 
