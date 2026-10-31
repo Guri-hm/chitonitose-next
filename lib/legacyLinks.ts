@@ -17,6 +17,11 @@ function loadMap(): Map<string, string> {
   return cache;
 }
 
+/** 旧ファイル名（拡張子なし）に対応する新URL。無ければnull */
+export function legacyUrlFor(base: string): string | null {
+  return loadMap().get(base) ?? null;
+}
+
 /**
  * 本文中の旧サイトの相対リンク（href="geo_lessons_xxx.html#id" など）を新URLに書き換える。
  * 新サイトでは /geo/xxx/ のようなURLになり、相対のままでは404になるため。

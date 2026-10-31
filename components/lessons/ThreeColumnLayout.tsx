@@ -156,7 +156,11 @@ export default function ThreeColumnLayout({
           aria-label={isFabOpen ? 'メニューを閉じる' : 'ページ操作メニューを開く'}
           aria-expanded={isFabOpen}
         >
-          <ListIcon size={24} />
+          <span className="fab-kebab" aria-hidden="true">
+            <span />
+            <span />
+            <span />
+          </span>
         </button>
       </div>
     </>

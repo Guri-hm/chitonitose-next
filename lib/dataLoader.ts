@@ -57,11 +57,13 @@ export async function loadDataIndex() {
 // 型定義
 
 export interface NewsItem {
-  id: number;
+  /** 省略可（Reactのkeyには日付＋順番を使う） */
+  id?: number;
   date: string;
   news_type?: string | null;
   news_title: string;
   news_text?: string | null;
+  /** 省略するとリンクなしのお知らせになる。新サイトのURL（/geo/plain/ など）か旧サイトのファイル名 */
   path?: string | null;
 }
 

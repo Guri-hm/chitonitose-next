@@ -93,9 +93,9 @@ async function main() {
     // ===== 基本データ =====
     console.log('📌 Basic Data:');
     
-    // ニュース
-    const news = safeQuery(db, 'SELECT * FROM news ORDER BY date DESC', 'news');
-    if (news.length > 0) writeJSON('news.json', news);
+    // ニュース（news.json）は移行後、手で直接編集する正のデータなので上書きしない。
+    // 件数だけ読み取ってインデックスに載せる
+    const news = JSON.parse(fs.readFileSync(path.join(OUTPUT_DIR, 'news.json'), 'utf8'));
     filesCreated++;
 
     // ページ情報

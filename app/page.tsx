@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { loadNews, getPages, NewsItem } from '@/lib/dataLoader';
 import { GEO_LESSONS } from '@/lib/geoLessons';
+import { legacyUrlFor } from '@/lib/legacyLinks';
 import Link from 'next/link';
 import Image from 'next/image';
 import './page.css';
@@ -28,6 +29,8 @@ function resolveNewsHref(
   whNos: Set<number>
 ): string | null {
   if (!rawPath) return null;
+  // 新サイトのURL（/geo/plain/ など）はそのまま使う
+  if (rawPath.startsWith('/')) return rawPath;
   const p = rawPath.replace(/^https?:\/\/chitonitose\.com\//, '');
 
   let m = p.match(/(?:^|\/)geo_lessons_([A-Za-z0-9_-]+?)(?:\.html)+$/);
@@ -44,6 +47,13 @@ function resolveNewsHref(
 
   m = p.match(/(?:^|\/)wh_omnibus(\d+)\.html$/);
   if (m && Number(m[1]) === 1) return `/wh/omnibus/${m[1]}`;
+
+  // 演習・統計・印刷ページなど（レッスン以外）は、旧URL→新URLの対応表から引く
+  const base = p.split('/').pop()!.replace(/(\.html)+$/, '');
+  if (!/^(geo_lessons_|jh_lessons|wh_lessons|jh_omnibus|wh_omnibus)/.test(base)) {
+    const to = legacyUrlFor(base);
+    if (to) return to;
+  }
 
   return null;
 }
@@ -143,12 +153,12 @@ export default async function Home() {
             <div className="news-timeline">
               {news.length > 0 ? (
                 <ul>
-                  {news.map((item) => {
+                  {news.map((item, index) => {
                     const href = resolveNewsHref(item.path, geoSlugs, jhNos, whNos);
                     const title = cleanNewsTitle(item.news_title);
                     const typeClass = item.news_type ? NEWS_TYPE_CLASS[item.news_type] : undefined;
                     return (
-                      <li key={item.id} className="news-item">
+                      <li key={`${item.date}-${index}`} className="news-item">
                         <time className="news-date" dateTime={item.date}>{item.date}</time>
                         <div className="news-body">
                           <div className="news-title-row">

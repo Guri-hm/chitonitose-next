@@ -4,7 +4,7 @@ interface IconProps {
   fill?: string;
 }
 
-export function PenIcon({ className = '', size = 24, fill = '#1f1f1f' }: IconProps) {
+export function PenIcon({ className = '', size = 24, fill = 'currentColor' }: IconProps) {
   return (
     <svg 
       xmlns="http://www.w3.org/2000/svg" 
@@ -20,7 +20,7 @@ export function PenIcon({ className = '', size = 24, fill = '#1f1f1f' }: IconPro
   );
 }
 
-export function ListIcon({ className = '', size = 24, fill = '#1f1f1f' }: IconProps) {
+export function ListIcon({ className = '', size = 24, fill = 'currentColor' }: IconProps) {
   return (
     <svg 
       xmlns="http://www.w3.org/2000/svg" 
@@ -36,7 +36,7 @@ export function ListIcon({ className = '', size = 24, fill = '#1f1f1f' }: IconPr
   );
 }
 
-export function RightIcon({ className = '', size = 24, fill = '#1f1f1f' }: IconProps) {
+export function RightIcon({ className = '', size = 24, fill = 'currentColor' }: IconProps) {
   return (
     <svg 
       xmlns="http://www.w3.org/2000/svg" 
@@ -52,7 +52,7 @@ export function RightIcon({ className = '', size = 24, fill = '#1f1f1f' }: IconP
   );
 }
 
-export function LeftIcon({ className = '', size = 24, fill = '#1f1f1f' }: IconProps) {
+export function LeftIcon({ className = '', size = 24, fill = 'currentColor' }: IconProps) {
   return (
     <svg 
       xmlns="http://www.w3.org/2000/svg" 

@@ -101,6 +101,26 @@ npm run test:mdx:geo  # 地理
 - CI/CDパイプラインでの品質チェック
 - バッチ変換後の検証
 
+## お知らせの追加方法
+
+トップページの「お知らせ」は [data/json/news.json](./data/json/news.json) の先頭に1件足すだけです（`npm run data:convert` では上書きされません）。
+表示は日付の新しい順に直近10件です。
+
+```json
+{
+  "date": "2026-11-05",
+  "news_type": "更新",
+  "news_title": "平野の地形",
+  "news_text": "図を追加しました。",
+  "path": "/geo/plain/"
+}
+```
+
+- `date`・`news_title` 以外は省略できます。`id` は不要です
+- `news_type`：`作成` / `新規作成` / `更新` / `変更` / `誤植修正`（色付きのバッジになります。それ以外の文字でも表示されます）
+- `path` を省略すると、リンクなしのお知らせ（タイトルと本文だけ）になります
+- `path` には新サイトのURL（`/geo/plain/` など）を書きます。旧サイトのファイル名（`geo/geo_lessons_plain.html`）も変換されます
+
 ## MDX構文ルール
 
 MDXファイルの書き方については [MDX_SYNTAX_RULES.md](./docs/MDX_SYNTAX_RULES.md) を参照してください。
