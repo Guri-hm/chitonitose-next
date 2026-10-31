@@ -8,6 +8,15 @@ import { useEffect } from 'react';
  */
 export default function BodyClassManager() {
   useEffect(() => {
+    // 初期化直後（保存済みの文字サイズ・テーマの反映中）はtransitionを無効にし、
+    // 表示直後にスイッチやヘッダーが動いて見えるちらつきを防ぐ
+    const id = requestAnimationFrame(() =>
+      requestAnimationFrame(() => document.documentElement.classList.add('hydrated'))
+    );
+    return () => cancelAnimationFrame(id);
+  }, []);
+
+  useEffect(() => {
     // 初回マウント時にフォントサイズを設定
     if (typeof window !== 'undefined') {
       const savedFontSize = sessionStorage.getItem('fontSize') || 'm-size-font';

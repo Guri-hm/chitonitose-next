@@ -678,26 +678,42 @@ li:has(> input[type="radio"]:checked) {
 	border: dashed 2px gray;
 }
 
+/* アイコン（チェック付きの丸／○／×）はFont Awesomeを使わず、CSSのマスク（インラインSVG）で描画する */
+li:has(> input[type="radio"]:checked)::before,
+.correct::before,
+.incorrect::before {
+	content: "";
+	display: inline-block;
+	width: 1.1em;
+	height: 1.1em;
+	margin-right: 0.3em;
+	vertical-align: -0.2em;
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	mask-position: center;
+}
+
 /* 画像に重ねる文字 */
 li:has(> input[type="radio"]:checked)::before {
-	font-family: "Font Awesome 6 Free";
-	font-weight: bold;
-	content: "\f058";
 	position: relative;
+	background-color: currentColor;
+	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='10' fill='none' stroke='black' stroke-width='2.5'/%3E%3Cpath d='M7 12.5l3.5 3.5L17 9' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+	mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='10' fill='none' stroke='black' stroke-width='2.5'/%3E%3Cpath d='M7 12.5l3.5 3.5L17 9' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
 }
 
 .correct::before {
-	font-family: "Font Awesome 6 Free";
-	font-weight: 400;
-	color: #0000FF;
-	content: "\f111";
+	background-color: #0000FF;
+	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='9' fill='none' stroke='black' stroke-width='3'/%3E%3C/svg%3E");
+	mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='9' fill='none' stroke='black' stroke-width='3'/%3E%3C/svg%3E");
 }
 
 .incorrect::before {
-	font-family: "Font Awesome 6 Free";
-	font-weight: bold;
-	color: #FF0000;
-	content: "\f00d";
+	background-color: #FF0000;
+	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M5 5L19 19M19 5L5 19' stroke='black' stroke-width='3.5' stroke-linecap='round'/%3E%3C/svg%3E");
+	mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M5 5L19 19M19 5L5 19' stroke='black' stroke-width='3.5' stroke-linecap='round'/%3E%3C/svg%3E");
 }
 
 #overlay {
@@ -766,6 +782,22 @@ dl {
 .faqs dt {
 	display: flex;
 	align-items: flex-start;
+}
+
+.faqs dt,
+.faqs dd {
+	flex-wrap: wrap;
+}
+
+/* 問題文・解説の本文は、Q/Aアイコンの右に折り返さず表示し、画像は次の行に全幅で置く */
+.faqs .qa-text {
+	flex: 1 1 0;
+	min-width: 0;
+}
+
+.faqs dt > .gazo,
+.faqs dd > .gazo {
+	flex: 0 0 100%;
 }
 
 .faqs dt ul {

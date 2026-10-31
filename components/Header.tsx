@@ -29,6 +29,12 @@ export default function Header() {
     }
   }, []);
 
+  // モバイルのフルスクリーンメニューを開いている間は、背後のページをスクロールさせない
+  useEffect(() => {
+    document.documentElement.classList.toggle('menu-open', mobileMenuOpen);
+    return () => document.documentElement.classList.remove('menu-open');
+  }, [mobileMenuOpen]);
+
   const changeFontSize = (newSize: string) => {
     setFontSize(newSize);
     document.body.className = newSize;

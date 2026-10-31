@@ -19,11 +19,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ja">
+    <html lang="ja" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/favicon.ico" />
         {/* 元サイトのCSSを読み込み */}
         <link href="/css/common.css" rel="stylesheet" type="text/css" />
+        {/* 保存済みのテーマ（ダークモード）を描画前に適用し、ライト→ダークのちらつきを防ぐ */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `try{if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}`,
+          }}
+        />
         {/* Google Tag Manager */}
         <script
           dangerouslySetInnerHTML={{
@@ -38,7 +44,13 @@ export default function RootLayout({
           crossOrigin="anonymous"
         ></script>
       </head>
-      <body suppressHydrationWarning>
+      <body className="m-size-font" suppressHydrationWarning>
+        {/* 保存済みの文字サイズを描画前に適用し、表示後にサイズが切り替わるちらつきを防ぐ */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `try{var f=sessionStorage.getItem('fontSize');if(f)document.body.className=f;}catch(e){}`,
+          }}
+        />
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
@@ -57,7 +69,6 @@ export default function RootLayout({
           </main>
           <Footer />
         </ImageGalleryProvider>
-        <script src="/js/common.js"></script>
       </body>
     </html>
   );

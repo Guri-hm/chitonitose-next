@@ -281,8 +281,7 @@ h1 {
 }
 
 .link-icon:before {
-	font: var(--fa-font-solid);
-	content: "(\f08e関連)"
+	content: "(↗関連)"
 }
 
 ul.circle>li:before {

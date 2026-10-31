@@ -184,11 +184,7 @@ export default async function Home() {
               <div className="link-cards">
                 <a className="link-card" href="https://ncp.solopg.com/" target="_blank" rel="noopener noreferrer">
                   <span className="link-card-icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M7 3h7l5 5v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z" />
-                      <path d="M14 3v5h5" />
-                      <path d="m9.5 13.5 2 2 3-3.5" />
-                    </svg>
+                    <Image src="/images/share/logo_nocloudpdf.webp" alt="" width={40} height={40} />
                   </span>
                   <span className="link-card-text">
                     <strong>NoCloudPDF</strong>

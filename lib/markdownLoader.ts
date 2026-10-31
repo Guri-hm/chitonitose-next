@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import { rewriteLegacyLinks } from './legacyLinks';
 
 export interface LessonData {
   subject: string;
@@ -49,9 +50,11 @@ function loadCustomMarkdownFile(filePath: string, subject: string, lessonNo: num
   // カスタムMarkdownをHTMLに変換（科目情報を渡す）
   // 元サイト由来のインラインonclick（chg/choice）は、クリック処理をTermClickHandlerに一本化しているため除去する
   // 元サイトと同じURL配置（/jh/img/…）に画像を置いているため、旧パス表記（/images/jh/img/…）を読み替える
-  const htmlContent = parseCustomMarkdown(rawMarkdown, subject)
-    .replace(/\sonclick="(?:chg|choice)\(this\)"/g, '')
-    .replaceAll('/images/jh/img/', '/jh/img/');
+  const htmlContent = rewriteLegacyLinks(
+    parseCustomMarkdown(rawMarkdown, subject)
+      .replace(/\sonclick="(?:chg|choice)\(this\)"/g, '')
+      .replaceAll('/images/jh/img/', '/jh/img/')
+  );
 
   return {
     subject: subject,

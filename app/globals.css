@@ -35,6 +35,18 @@ html.is-resizing * {
   animation: none !important;
 }
 
+html {
+  /* 常時表示（sticky）のヘッダーに、ページ内リンクの移動先が隠れないようにする */
+  scroll-padding-top: 100px;
+}
+
+/* 初期表示中（hydrated付与前）はtransitionを止める */
+html:not(.hydrated) *,
+html:not(.hydrated) *::before,
+html:not(.hydrated) *::after {
+  transition: none !important;
+}
+
 body {
   font-size: 1.6rem; /* 16px */
   line-height: 1.6;

@@ -251,7 +251,14 @@
    ========================================================================== */
 
 @media (max-width: 767px) {
+  /* メニュー表示中は背後のコンテンツがタッチ操作でスクロールしないようにする */
+  html.menu-open,
+  html.menu-open body {
+    overflow: hidden;
+  }
+
   #global-nav {
+    overscroll-behavior: contain;
     position: fixed;
     inset: 0;
     height: 100vh;
