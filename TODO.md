@@ -64,7 +64,7 @@ GitHub Pagesはサーバー側の301リダイレクトが使えない。代わ�
   （`getXML_API.php` 等。e-Statの値は `lib/estat.ts` でビルド時に解決）
 
 ## 3. 不具合・技術的負債
-
+- [ ] チャットのやりとりで，npm run data:convert が旧DBの内容で news.json を上書きする危険がありました。上書きしないように止めました。とあったが，そもそもjsonはsqliteから生成し，sqliteで一元管理するって話だったよな。忘れていた。この仕様を戻して，お知らせを最新に更新する。
 - [ ] `components/lessons/GeoLessonContent.tsx`：画像プレースホルダーを `dangerouslySetInnerHTML` の子孫に
       `createRoot` でマウントしている（React 19で未定義動作。経緯は `docs/PROGRESS_GEO_DB_TABLES.md`）。
       チャートと同様に本文の外側へ出す、またはビルド時にHTML化する
