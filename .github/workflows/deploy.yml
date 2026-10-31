@@ -35,6 +35,7 @@ jobs:
         env:
           # 本番ドメインへ切り替える際はこの行を削除する
           NEXT_PUBLIC_NOINDEX: 'true'
+          SITE_URL: 'https://test.solopg.com'
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

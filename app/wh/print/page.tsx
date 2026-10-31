@@ -36,7 +36,7 @@ export default async function PrintPage() {
                   <td>
                     <a
                       className="link-active"
-                      href={`/pdf/wh_print/${pdf.file}`}
+                      href={`/wh/pdf/wh_print/${pdf.file}`}
                       target="_blank"
                       rel="noopener noreferrer"
                     >

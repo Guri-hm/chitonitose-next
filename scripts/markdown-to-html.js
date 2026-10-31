@@ -13,9 +13,15 @@
  * @returns {string} - 変換後の画像パス
  */
 function convertToWebP(imgPath, subject = '') {
-  // 相対パスの場合は/images/科目/を追加
+  // 相対パスは元サイトと同じURL配置（/geo/img/…、/wh/img/…、/jh/img/…）になるよう解決する
   if (!imgPath.startsWith('/') && !imgPath.startsWith('http') && subject) {
-    imgPath = `/images/${subject}/${imgPath}`;
+    const path = require('path');
+    if (imgPath.startsWith('../geo/')) {
+      imgPath = `/geo/img/${imgPath.slice('../geo/'.length)}`;
+    } else {
+      const base = subject === 'geo' && !imgPath.startsWith('../') ? 'img/' : '';
+      imgPath = path.posix.normalize(`/${subject}/${base}${imgPath}`);
+    }
   }
   
   // WebP変換は現時点では無効化（元の拡張子を使用）

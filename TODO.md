@@ -9,12 +9,40 @@
 ## 1. 公開・運用
 
 - テスト公開中: `https://test.solopg.com/`（GitHub Pages、`public/CNAME`、`.github/workflows/deploy.yml`）。
-  テスト中は `NEXT_PUBLIC_NOINDEX=true` でnoindexにしている
-- [ ] GitHub Pagesの「Enforce HTTPS」：証明書の発行待ち（DNS Check完了後に有効化される）
+  テスト中は `NEXT_PUBLIC_NOINDEX=true`（noindex＋`robots.txt`でDisallow）にしている
+- GitHub Pagesの **Settings → Pages → Source は「GitHub Actions」** にしておくこと
+  （「Deploy from a branch」だとワークフローの成果物（`out/`）ではなくリポジトリ直下が公開される）
 - [ ] AdSense：自動広告の形式を見直す（推奨設定は下記「AdSense設定の方針」）
-- [ ] 公開後の確認：AdSenseの広告表示（テストドメインを承認済みサイトに追加する必要あり）、CLS（PageSpeed Insights）、GTMタグ発火
-- [ ] 本番ドメインへ切り替える際：`deploy.yml` の `NEXT_PUBLIC_NOINDEX` を削除、`public/CNAME` を本番ドメインに変更、
-      旧サイトからのリダイレクト設定
+- [ ] 公開後の確認：CLS（PageSpeed Insights）、GTMタグ発火、AdSenseの広告表示
+
+### 本番ドメイン（chitonitose.com）への切り替え手順
+
+1. （前日まで）DNSのTTLを300秒程度に短縮。Search Consoleは旧サイトのまま所有権確認済みか確認
+   （確認用ファイル `public/google20e3b5533c8454ba.html` を移してある）
+2. コード側（1コミット）：`public/CNAME` を `chitonitose.com` に、`deploy.yml` の `SITE_URL` を
+   `https://chitonitose.com` に変更し、`NEXT_PUBLIC_NOINDEX` の行を削除してpush
+3. GitHub：Settings → Pages → Custom domain を `chitonitose.com` に変更
+4. DNS（ネームサーバーを管理している場所で。お名前.comのDNSか、さくらのDNSかは要確認）：
+   - apex（`chitonitose.com`）のAレコードを、さくらのIPから GitHub Pages の
+     `185.199.108.153` / `185.199.109.153` / `185.199.110.153` / `185.199.111.153` の4つに置き換える
+     （IPv6を使うならAAAAも `2606:50c0:8000::153` 〜 `8003::153`）
+   - `www` はCNAMEで `guri-hm.github.io`
+   - **MX・TXT（メール／SPF）レコードは触らない**
+5. Pages画面の「DNS check successful」を待ち、「Enforce HTTPS」をON（証明書の発行に数分〜数時間）
+6. 確認後、Search Consoleでsitemap（`/sitemap.xml`）を送信。さくらのサーバーは、しばらく解約せず残す
+   （独自ドメインを外しても `*.sakura.ne.jp` で旧ファイルを見られ、切り戻しやメール用に使える）
+
+### 旧URLの扱い
+
+GitHub Pagesはサーバー側の301リダイレクトが使えない。代わりに次の方式で旧URLを維持している。
+
+- 旧ページ（`/geo/geo_lessons_plain.html` など426件）：`data/legacy-urls.json` の対応表から、
+  ビルド後（`scripts/postbuild.mjs`）にリダイレクト用のHTMLを生成（meta refresh＋JS＋canonical。
+  `?unit=` などのクエリは引き継ぐ）。対応表は `node scripts/generate-legacy-urls.mjs` で再生成できる
+- 画像・PDF：転送ではなく、旧サイトと同じURLにファイルを置いている
+  （`/geo/img/…`、`/jh/img/…`、`/wh/img/…`、`/jh/pdf/jh_print/…`、`/wh/pdf/wh_print/…`、`/share/img/…`）
+- 対応していないもの：`/mail/mail.php`、`news.php` などPHPファイル。旧サイトで存在しなかったURLは404
+- より確実な301が必要になったら、DNSをCloudflare（無料）経由にしてRedirect Rulesを使う方法がある
 
 ## 2. コンテンツ未移行（`準備中` と表示されているページ）
 
@@ -84,6 +112,12 @@
 （AdSenseのads.txt警告対策）。テストドメイン（`test.solopg.com`）は、AdSenseの「サイト」に追加するまで広告は出ない。
 
 ## 完了済み（最近）
+
+- 2026-10-31 授業ページの選択肢（`span.choice`）のクリック表示が動かない不具合を修正（`TermClickHandler`・`AnswerButtons`・
+  CSS。表記説明の下線部が二重に切り替わる不具合も同時に修正）
+- 2026-10-31 教科トップのアイコンが円で見切れる不具合を修正（`clip-path`）
+- 2026-10-31 旧URLの維持：画像・PDFを旧サイトと同じURLに移動、旧ページ426件のリダイレクト生成、
+  `sitemap.xml`・`robots.txt` の自動生成（`scripts/postbuild.mjs`）
 
 - 2026-10-31 リポジトリ整理：作業ログ・バックアップ・テスト用ページ（`/test-ruby` `/data-test` `/charts`）・
   未使用コンポーネント・旧変換スクリプト・デバッグスクリプトを削除。旧レポート類は `docs/` に移動

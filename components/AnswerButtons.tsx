@@ -7,16 +7,14 @@
 export default function AnswerButtons() {
   // 答えの一括表示
   const showAllAnswers = () => {
-    const allElements = document.querySelectorAll('.all');
-    allElements.forEach(element => {
+    document.querySelectorAll('.all, .choice').forEach(element => {
       element.classList.add('show');
     });
   };
 
   // 答えの一括非表示
   const hideAllAnswers = () => {
-    const allElements = document.querySelectorAll('.all');
-    allElements.forEach(element => {
+    document.querySelectorAll('.all, .choice').forEach(element => {
       element.classList.remove('show');
     });
   };

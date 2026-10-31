@@ -7,8 +7,8 @@ export function buildClimateItems(cities: ClimateCity[], type: ClimateType): Sel
   return cities.map((c) => ({
     id: c.nameEg,
     groupKey: c.classCd,
-    mapSrc: `/images/geo/${c.nameEg}_map.webp`,
-    optionSrc: `/images/geo/${c.nameEg}_${type}.webp`,
+    mapSrc: `/geo/img/${c.nameEg}_map.webp`,
+    optionSrc: `/geo/img/${c.nameEg}_${type}.webp`,
     optionAlt: typeName,
     correctText: `${c.nationName}の${c.name}の${typeName}（${c.climateAlpha}、${c.climateJp}）です。`,
     otherText: `${c.nationName}の${c.name}の${typeName}（${c.climateAlpha}、${c.climateJp}）です。`,
@@ -20,8 +20,8 @@ export function buildTopographicItems(profiles: TopographicProfile[]): Selection
   return profiles.map((p) => ({
     id: p.name,
     groupKey: p.id,
-    mapSrc: `/images/geo/topographic_profile/${p.name}_map.webp`,
-    optionSrc: `/images/geo/topographic_profile/${p.name}.webp`,
+    mapSrc: `/geo/img/topographic_profile/${p.name}_map.webp`,
+    optionSrc: `/geo/img/topographic_profile/${p.name}.webp`,
     optionAlt: '地形断面',
     correctText: `${p.jpName}地形断面です。`,
     otherText: `${p.jpName}地形断面です。`,

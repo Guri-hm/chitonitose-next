@@ -57,7 +57,7 @@ export async function getMDXLesson(subject: string, lessonId: string): Promise<L
     let tocData: TocItem[] = [];
     
     const { content } = await compileMDX<LessonFrontmatter>({
-      source: mdxContent,
+      source: mdxContent.replaceAll('/images/jh/img/', '/jh/img/'),
       options: {
         parseFrontmatter: false,
         mdxOptions: {

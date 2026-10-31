@@ -1,5 +1,9 @@
 # 画像パス問題修正レポート
 
+> **2026-10-31 追記**: 画像の配置は旧サイトと同じURLに変更した（`public/geo/img/`・`public/jh/img/`・`public/wh/img/`、
+> PDFは`public/{jh,wh}/pdf/`）。以下の`/images/…`表記は当時のもの。jhの本文中の`/images/jh/img/…`は
+> ローダー（`lib/mdxLoader.ts`・`lib/markdownLoader.ts`）が`/jh/img/…`に読み替える。
+
 ## 問題の原因
 
 ### 1. 相対パスが絶対パスに変換されていない

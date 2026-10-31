@@ -56,7 +56,7 @@ export default function ClimateQa({ cities, type }: ClimateQaProps) {
                 <dt className={isOpen ? 'hover' : undefined} onClick={() => toggle(city.id)}>
                   次の{typeName}の気候区分を答えなさい。
                   <div className="gazo">
-                    <img src={`/images/geo/${city.nameEg}_${type}.webp`} alt={typeName} loading="lazy" />
+                    <img src={`/geo/img/${city.nameEg}_${type}.webp`} alt={typeName} loading="lazy" />
                   </div>
                 </dt>
                 <dd style={{ display: isOpen ? 'block' : 'none' }}>
@@ -66,7 +66,7 @@ export default function ClimateQa({ cities, type }: ClimateQaProps) {
                   <br />
                   {city.explanation}
                   <div className="gazo">
-                    <img className="border border-1" src={`/images/geo/${city.nameEg}_map.webp`} alt="都市の地図" loading="lazy" />
+                    <img className="border border-1" src={`/geo/img/${city.nameEg}_map.webp`} alt="都市の地図" loading="lazy" />
                   </div>
                 </dd>
               </dl>

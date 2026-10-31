@@ -190,7 +190,7 @@ dl.inner-block {
     box-sizing: border-box;
     aspect-ratio: 1;
     object-fit: contain;
-    padding: 28px;
+    padding: 36px;
     background: #fff;
-    border-radius: 50%;
+    clip-path: circle(50%);
 }

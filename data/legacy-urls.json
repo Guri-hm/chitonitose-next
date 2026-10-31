@@ -1,0 +1,2132 @@
+[
+  {
+    "from": "/geo/geo_exercises_climograph_map.html",
+    "to": "/geo/geo_exercises_climograph_map/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_exercises_climograph.html",
+    "to": "/geo/geo_exercises_climograph/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_exercises_hythergraph_map.html",
+    "to": "/geo/geo_exercises_hythergraph_map/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_exercises_hythergraph.html",
+    "to": "/geo/geo_exercises_hythergraph/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_Africa_countries.html",
+    "to": "/geo/Africa_countries/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_Africa.html",
+    "to": "/geo/Africa/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_agriculture_corporate.html",
+    "to": "/geo/agriculture_corporate/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_agriculture_self-sufficient.html",
+    "to": "/geo/agriculture_self-sufficient/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_agriculture_trade.html",
+    "to": "/geo/agriculture_trade/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_agriculture.html",
+    "to": "/geo/agriculture/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_Anglo_America_countries.html",
+    "to": "/geo/Anglo_America_countries/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_Anglo_America.html",
+    "to": "/geo/Anglo_America/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_asia.html",
+    "to": "/geo/asia/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_China.html",
+    "to": "/geo/China/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_city.html",
+    "to": "/geo/city/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_climate_alpine.html",
+    "to": "/geo/climate_alpine/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_climate_classification.html",
+    "to": "/geo/climate_classification/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_climate_continental.html",
+    "to": "/geo/climate_continental/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_climate_dry.html",
+    "to": "/geo/climate_dry/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_climate_polar.html",
+    "to": "/geo/climate_polar/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_climate_temperate.html",
+    "to": "/geo/climate_temperate/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_climate_tropical.html",
+    "to": "/geo/climate_tropical/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_climatic_element.html",
+    "to": "/geo/climatic_element/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_coastal_terrain.html",
+    "to": "/geo/coastal_terrain/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_commercial_farming.html",
+    "to": "/geo/commercial_farming/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_craton_orogeny.html",
+    "to": "/geo/craton_orogeny/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_demographic_transition.html",
+    "to": "/geo/demographic_transition/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_energy_problem.html",
+    "to": "/geo/energy_problem/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_energy_resources.html",
+    "to": "/geo/energy_resources/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_environment_issues.html",
+    "to": "/geo/environment_issues/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_ethnic_territorial_issues.html",
+    "to": "/geo/ethnic_territorial_issues/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_Europa_countries1.html",
+    "to": "/geo/Europa_countries1/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_Europa_countries2.html",
+    "to": "/geo/Europa_countries2/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_Europa1.html",
+    "to": "/geo/Europa1/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_Europa2.html",
+    "to": "/geo/Europa2/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_food_problems.html",
+    "to": "/geo/food_problems/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_forestry.html",
+    "to": "/geo/forestry/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_Indonesia.html",
+    "to": "/geo/Indonesia/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_industrial_location_european.html",
+    "to": "/geo/industrial_location_european/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_industrial_location_jp.html",
+    "to": "/geo/industrial_location_jp/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_industrial_location.html",
+    "to": "/geo/industrial_location/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_Industry.html",
+    "to": "/geo/Industry/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_investment_oda.html",
+    "to": "/geo/investment_oda/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_Japan_MAFF.html",
+    "to": "/geo/Japan_MAFF/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_Japan_natural_environment.html",
+    "to": "/geo/Japan_natural_environment/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_Japan_resources.html",
+    "to": "/geo/Japan_resources/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_Japan1.html",
+    "to": "/geo/Japan1/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_Japan2.html",
+    "to": "/geo/Japan2/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_Japan3.html",
+    "to": "/geo/Japan3/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_Japan4.html",
+    "to": "/geo/Japan4/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_Japan5.html",
+    "to": "/geo/Japan5/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_jp_terrain.html",
+    "to": "/geo/jp_terrain/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_Korea.html",
+    "to": "/geo/Korea/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_land_ocean.html",
+    "to": "/geo/land_ocean/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_language_religion.html",
+    "to": "/geo/language_religion/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_Latin_America_countries.html",
+    "to": "/geo/Latin_America_countries/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_Latin_America.html",
+    "to": "/geo/Latin_America/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_major_landforms.html",
+    "to": "/geo/major_landforms/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_map_history.html",
+    "to": "/geo/map_history/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_marine_products_industry.html",
+    "to": "/geo/marine_products_industry/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_migration_labor.html",
+    "to": "/geo/migration_labor/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_mineral_resources.html",
+    "to": "/geo/mineral_resources/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_mountainous_landforms.html",
+    "to": "/geo/mountainous_landforms/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_nation.html",
+    "to": "/geo/nation/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_Oceania.html",
+    "to": "/geo/Oceania/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_other_terrain.html",
+    "to": "/geo/other_terrain/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_plain.html",
+    "to": "/geo/plain/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_Polar_Regions.html",
+    "to": "/geo/Polar_Regions/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_projection.html",
+    "to": "/geo/projection/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_regional_development.html",
+    "to": "/geo/regional_development/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_resource_issues.html",
+    "to": "/geo/resource_issues/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_resource_trade.html",
+    "to": "/geo/resource_trade/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_Russia_neighboring_countries1.html",
+    "to": "/geo/Russia_neighboring_countries1/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_Russia_neighboring_countries2.html",
+    "to": "/geo/Russia_neighboring_countries2/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_South_Asia.html",
+    "to": "/geo/South_Asia/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_Southeast_Asia_countries.html",
+    "to": "/geo/Southeast_Asia_countries/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_Southeast_Asia.html",
+    "to": "/geo/Southeast_Asia/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_template.html",
+    "to": "/geo/template/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_tertiary_industry.html",
+    "to": "/geo/tertiary_industry/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_tertiary_industry2.html",
+    "to": "/geo/tertiary_industry2/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_time_difference.html",
+    "to": "/geo/time_difference/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_topographical_map.html",
+    "to": "/geo/topographical_map/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_trade.html",
+    "to": "/geo/trade/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_various_maps.html",
+    "to": "/geo/various_maps/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_vegetation_soil.html",
+    "to": "/geo/vegetation_soil/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_village.html",
+    "to": "/geo/village/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_West_Asia.html",
+    "to": "/geo/West_Asia/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_lessons_world_population.html",
+    "to": "/geo/world_population/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_location_quiz_Africa.html",
+    "to": "/geo/geo_location_quiz_Africa/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_location_quiz_Asia.html",
+    "to": "/geo/geo_location_quiz_Asia/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_location_quiz_West_Asia.html",
+    "to": "/geo/geo_location_quiz_West_Asia/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_statistical_data_animal.html",
+    "to": "/geo/geo_statistical_data_animal/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_statistical_data_crops.html",
+    "to": "/geo/geo_statistical_data_crops/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_statistical_data_main.html",
+    "to": "/geo/geo_statistical_data_main/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo_visualize_population.html",
+    "to": "/geo/geo_visualize_population/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/geo/geo.html",
+    "to": "/geo/",
+    "fallback": null
+  },
+  {
+    "from": "/geo/topographic_profile.html",
+    "to": "/geo/topographic_profile/",
+    "fallback": "/geo/"
+  },
+  {
+    "from": "/guide/guide.html",
+    "to": "/guide/",
+    "fallback": null
+  },
+  {
+    "from": "/index.html",
+    "to": "/",
+    "fallback": null
+  },
+  {
+    "from": "/jh/jh_cabinet.html",
+    "to": "/jh/cabinet/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_cabinet2.html",
+    "to": "/jh/cabinet-events/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_exercises_q_a.html",
+    "to": "/jh/q-a/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons_template.html",
+    "to": "/jh/",
+    "fallback": null
+  },
+  {
+    "from": "/jh/jh_lessons1.html",
+    "to": "/jh/lessons/1/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons10.html",
+    "to": "/jh/lessons/10/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons100.html",
+    "to": "/jh/lessons/100/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons101.html",
+    "to": "/jh/lessons/101/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons102.html",
+    "to": "/jh/lessons/102/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons103.html",
+    "to": "/jh/lessons/103/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons104.html",
+    "to": "/jh/lessons/104/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons105.html",
+    "to": "/jh/lessons/105/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons106.html",
+    "to": "/jh/lessons/106/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons107.html",
+    "to": "/jh/lessons/107/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons108.html",
+    "to": "/jh/lessons/108/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons109.html",
+    "to": "/jh/lessons/109/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons11.html",
+    "to": "/jh/lessons/11/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons110.html",
+    "to": "/jh/lessons/110/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons111.html",
+    "to": "/jh/lessons/111/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons112.html",
+    "to": "/jh/lessons/112/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons113.html",
+    "to": "/jh/lessons/113/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons114.html",
+    "to": "/jh/lessons/114/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons115.html",
+    "to": "/jh/lessons/115/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons116.html",
+    "to": "/jh/lessons/116/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons117.html",
+    "to": "/jh/lessons/117/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons118.html",
+    "to": "/jh/lessons/118/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons119.html",
+    "to": "/jh/lessons/119/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons12.html",
+    "to": "/jh/lessons/12/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons120.html",
+    "to": "/jh/lessons/120/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons121.html",
+    "to": "/jh/lessons/121/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons122.html",
+    "to": "/jh/lessons/122/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons123.html",
+    "to": "/jh/lessons/123/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons124.html",
+    "to": "/jh/lessons/124/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons125.html",
+    "to": "/jh/lessons/125/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons126.html",
+    "to": "/jh/lessons/126/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons127.html",
+    "to": "/jh/lessons/127/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons128.html",
+    "to": "/jh/lessons/128/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons129.html",
+    "to": "/jh/lessons/129/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons13.html",
+    "to": "/jh/lessons/13/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons130.html",
+    "to": "/jh/lessons/130/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons131.html",
+    "to": "/jh/lessons/131/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons132.html",
+    "to": "/jh/lessons/132/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons133.html",
+    "to": "/jh/lessons/133/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons134.html",
+    "to": "/jh/lessons/134/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons135.html",
+    "to": "/jh/lessons/135/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons136.html",
+    "to": "/jh/lessons/136/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons137.html",
+    "to": "/jh/lessons/137/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons138.html",
+    "to": "/jh/lessons/138/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons139.html",
+    "to": "/jh/lessons/139/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons14.html",
+    "to": "/jh/lessons/14/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons140.html",
+    "to": "/jh/lessons/140/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons141.html",
+    "to": "/jh/lessons/141/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons142.html",
+    "to": "/jh/lessons/142/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons143.html",
+    "to": "/jh/lessons/143/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons144.html",
+    "to": "/jh/lessons/144/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons145.html",
+    "to": "/jh/lessons/145/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons146.html",
+    "to": "/jh/lessons/146/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons147.html",
+    "to": "/jh/lessons/147/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons148.html",
+    "to": "/jh/lessons/148/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons149.html",
+    "to": "/jh/lessons/149/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons15.html",
+    "to": "/jh/lessons/15/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons150.html",
+    "to": "/jh/lessons/150/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons151.html",
+    "to": "/jh/lessons/151/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons152.html",
+    "to": "/jh/lessons/152/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons153.html",
+    "to": "/jh/lessons/153/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons154.html",
+    "to": "/jh/lessons/154/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons155.html",
+    "to": "/jh/lessons/155/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons156.html",
+    "to": "/jh/lessons/156/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons157.html",
+    "to": "/jh/lessons/157/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons158.html",
+    "to": "/jh/lessons/158/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons159.html",
+    "to": "/jh/lessons/159/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons16.html",
+    "to": "/jh/lessons/16/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons160.html",
+    "to": "/jh/lessons/160/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons161.html",
+    "to": "/jh/lessons/161/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons162.html",
+    "to": "/jh/lessons/162/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons163.html",
+    "to": "/jh/lessons/163/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons164.html",
+    "to": "/jh/lessons/164/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons165.html",
+    "to": "/jh/lessons/165/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons166.html",
+    "to": "/jh/lessons/166/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons167.html",
+    "to": "/jh/lessons/167/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons168.html",
+    "to": "/jh/lessons/168/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons169.html",
+    "to": "/jh/lessons/169/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons17.html",
+    "to": "/jh/lessons/17/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons170.html",
+    "to": "/jh/lessons/170/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons18.html",
+    "to": "/jh/lessons/18/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons19.html",
+    "to": "/jh/lessons/19/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons2.html",
+    "to": "/jh/lessons/2/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons20.html",
+    "to": "/jh/lessons/20/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons21.html",
+    "to": "/jh/lessons/21/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons22.html",
+    "to": "/jh/lessons/22/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons23.html",
+    "to": "/jh/lessons/23/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons24.html",
+    "to": "/jh/lessons/24/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons25.html",
+    "to": "/jh/lessons/25/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons26.html",
+    "to": "/jh/lessons/26/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons27.html",
+    "to": "/jh/lessons/27/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons28.html",
+    "to": "/jh/lessons/28/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons29.html",
+    "to": "/jh/lessons/29/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons3.html",
+    "to": "/jh/lessons/3/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons30.html",
+    "to": "/jh/lessons/30/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons31.html",
+    "to": "/jh/lessons/31/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons32.html",
+    "to": "/jh/lessons/32/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons33.html",
+    "to": "/jh/lessons/33/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons34.html",
+    "to": "/jh/lessons/34/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons35.html",
+    "to": "/jh/lessons/35/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons36.html",
+    "to": "/jh/lessons/36/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons37.html",
+    "to": "/jh/lessons/37/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons38.html",
+    "to": "/jh/lessons/38/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons39.html",
+    "to": "/jh/lessons/39/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons4.html",
+    "to": "/jh/lessons/4/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons40.html",
+    "to": "/jh/lessons/40/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons41.html",
+    "to": "/jh/lessons/41/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons42.html",
+    "to": "/jh/lessons/42/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons43.html",
+    "to": "/jh/lessons/43/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons44.html",
+    "to": "/jh/lessons/44/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons45.html",
+    "to": "/jh/lessons/45/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons46.html",
+    "to": "/jh/lessons/46/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons47.html",
+    "to": "/jh/lessons/47/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons48.html",
+    "to": "/jh/lessons/48/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons49.html",
+    "to": "/jh/lessons/49/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons5.html",
+    "to": "/jh/lessons/5/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons50.html",
+    "to": "/jh/lessons/50/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons51.html",
+    "to": "/jh/lessons/51/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons52.html",
+    "to": "/jh/lessons/52/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons53.html",
+    "to": "/jh/lessons/53/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons54.html",
+    "to": "/jh/lessons/54/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons55.html",
+    "to": "/jh/lessons/55/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons56.html",
+    "to": "/jh/lessons/56/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons57.html",
+    "to": "/jh/lessons/57/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons58.html",
+    "to": "/jh/lessons/58/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons59.html",
+    "to": "/jh/lessons/59/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons6.html",
+    "to": "/jh/lessons/6/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons60.html",
+    "to": "/jh/lessons/60/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons61.html",
+    "to": "/jh/lessons/61/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons62.html",
+    "to": "/jh/lessons/62/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons63.html",
+    "to": "/jh/lessons/63/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons64.html",
+    "to": "/jh/lessons/64/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons65.html",
+    "to": "/jh/lessons/65/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons66.html",
+    "to": "/jh/lessons/66/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons67.html",
+    "to": "/jh/lessons/67/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons68.html",
+    "to": "/jh/lessons/68/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons69.html",
+    "to": "/jh/lessons/69/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons7.html",
+    "to": "/jh/lessons/7/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons70.html",
+    "to": "/jh/lessons/70/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons71.html",
+    "to": "/jh/lessons/71/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons72.html",
+    "to": "/jh/lessons/72/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons73.html",
+    "to": "/jh/lessons/73/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons74.html",
+    "to": "/jh/lessons/74/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons75.html",
+    "to": "/jh/lessons/75/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons76.html",
+    "to": "/jh/lessons/76/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons77.html",
+    "to": "/jh/lessons/77/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons78.html",
+    "to": "/jh/lessons/78/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons79.html",
+    "to": "/jh/lessons/79/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons8.html",
+    "to": "/jh/lessons/8/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons80.html",
+    "to": "/jh/lessons/80/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons81.html",
+    "to": "/jh/lessons/81/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons82.html",
+    "to": "/jh/lessons/82/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons83.html",
+    "to": "/jh/lessons/83/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons84.html",
+    "to": "/jh/lessons/84/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons85.html",
+    "to": "/jh/lessons/85/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons86.html",
+    "to": "/jh/lessons/86/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons87.html",
+    "to": "/jh/lessons/87/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons88.html",
+    "to": "/jh/lessons/88/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons89.html",
+    "to": "/jh/lessons/89/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons9.html",
+    "to": "/jh/lessons/9/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons90.html",
+    "to": "/jh/lessons/90/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons91.html",
+    "to": "/jh/lessons/91/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons92.html",
+    "to": "/jh/lessons/92/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons93.html",
+    "to": "/jh/lessons/93/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons94.html",
+    "to": "/jh/lessons/94/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons95.html",
+    "to": "/jh/lessons/95/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons96.html",
+    "to": "/jh/lessons/96/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons97.html",
+    "to": "/jh/lessons/97/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons98.html",
+    "to": "/jh/lessons/98/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_lessons99.html",
+    "to": "/jh/lessons/99/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_old_country_name.html",
+    "to": "/jh/old-country-name/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_omnibus_agriculture_industrial_history.html",
+    "to": "/jh/agriculture-industrial-history/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_omnibus_cultural_history1.html",
+    "to": "/jh/cultural-history/1/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_omnibus_cultural_history2.html",
+    "to": "/jh/cultural-history/2/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_omnibus_cultural_history3.html",
+    "to": "/jh/cultural-history/3/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_omnibus1.html",
+    "to": "/jh/omnibus/1/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_omnibus10.html",
+    "to": "/jh/omnibus/10/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_omnibus11.html",
+    "to": "/jh/omnibus/11/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_omnibus12.html",
+    "to": "/jh/omnibus/12/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_omnibus13.html",
+    "to": "/jh/omnibus/13/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_omnibus14.html",
+    "to": "/jh/omnibus/14/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_omnibus15.html",
+    "to": "/jh/omnibus/15/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_omnibus16.html",
+    "to": "/jh/omnibus/16/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_omnibus17.html",
+    "to": "/jh/omnibus/17/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_omnibus18.html",
+    "to": "/jh/omnibus/18/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_omnibus19.html",
+    "to": "/jh/omnibus/19/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_omnibus2.html",
+    "to": "/jh/omnibus/2/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_omnibus20.html",
+    "to": "/jh/omnibus/20/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_omnibus21.html",
+    "to": "/jh/omnibus/21/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_omnibus22.html",
+    "to": "/jh/omnibus/22/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_omnibus23.html",
+    "to": "/jh/omnibus/23/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_omnibus24.html",
+    "to": "/jh/omnibus/24/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_omnibus25.html",
+    "to": "/jh/omnibus/25/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_omnibus26.html",
+    "to": "/jh/omnibus/26/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_omnibus3.html",
+    "to": "/jh/omnibus/3/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_omnibus4.html",
+    "to": "/jh/omnibus/4/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_omnibus5.html",
+    "to": "/jh/omnibus/5/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_omnibus6.html",
+    "to": "/jh/omnibus/6/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_omnibus7.html",
+    "to": "/jh/omnibus/7/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_omnibus8.html",
+    "to": "/jh/omnibus/8/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_omnibus9.html",
+    "to": "/jh/omnibus/9/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh_print.html",
+    "to": "/jh/print/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/jh/jh.html",
+    "to": "/jh/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/other/jh/kyukokumei.html",
+    "to": "/jh/old-country-name/",
+    "fallback": "/jh/"
+  },
+  {
+    "from": "/wh/wh_exercises_q_a.html",
+    "to": "/wh/q-a/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons_template.html",
+    "to": "/wh/",
+    "fallback": null
+  },
+  {
+    "from": "/wh/wh_lessons1.html",
+    "to": "/wh/lessons/1/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons10.html",
+    "to": "/wh/lessons/10/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons100.html",
+    "to": "/wh/lessons/100/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons101.html",
+    "to": "/wh/lessons/101/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons102.html",
+    "to": "/wh/lessons/102/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons103.html",
+    "to": "/wh/lessons/103/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons104.html",
+    "to": "/wh/lessons/104/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons105.html",
+    "to": "/wh/lessons/105/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons106.html",
+    "to": "/wh/lessons/106/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons107.html",
+    "to": "/wh/lessons/107/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons108.html",
+    "to": "/wh/lessons/108/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons109.html",
+    "to": "/wh/lessons/109/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons11.html",
+    "to": "/wh/lessons/11/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons110.html",
+    "to": "/wh/lessons/110/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons111.html",
+    "to": "/wh/lessons/111/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons112.html",
+    "to": "/wh/lessons/112/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons113.html",
+    "to": "/wh/lessons/113/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons114.html",
+    "to": "/wh/lessons/114/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons12.html",
+    "to": "/wh/lessons/12/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons13.html",
+    "to": "/wh/lessons/13/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons14.html",
+    "to": "/wh/lessons/14/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons15.html",
+    "to": "/wh/lessons/15/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons16.html",
+    "to": "/wh/lessons/16/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons17.html",
+    "to": "/wh/lessons/17/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons18.html",
+    "to": "/wh/lessons/18/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons19.html",
+    "to": "/wh/lessons/19/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons2.html",
+    "to": "/wh/lessons/2/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons20.html",
+    "to": "/wh/lessons/20/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons21.html",
+    "to": "/wh/lessons/21/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons22.html",
+    "to": "/wh/lessons/22/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons23.html",
+    "to": "/wh/lessons/23/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons24.html",
+    "to": "/wh/lessons/24/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons25.html",
+    "to": "/wh/lessons/25/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons26.html",
+    "to": "/wh/lessons/26/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons27.html",
+    "to": "/wh/lessons/27/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons28.html",
+    "to": "/wh/lessons/28/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons29.html",
+    "to": "/wh/lessons/29/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons3.html",
+    "to": "/wh/lessons/3/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons30.html",
+    "to": "/wh/lessons/30/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons31.html",
+    "to": "/wh/lessons/31/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons32.html",
+    "to": "/wh/lessons/32/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons33.html",
+    "to": "/wh/lessons/33/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons34.html",
+    "to": "/wh/lessons/34/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons35.html",
+    "to": "/wh/lessons/35/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons36.html",
+    "to": "/wh/lessons/36/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons37.html",
+    "to": "/wh/lessons/37/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons38.html",
+    "to": "/wh/lessons/38/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons39.html",
+    "to": "/wh/lessons/39/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons4.html",
+    "to": "/wh/lessons/4/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons40.html",
+    "to": "/wh/lessons/40/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons41.html",
+    "to": "/wh/lessons/41/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons42.html",
+    "to": "/wh/lessons/42/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons43.html",
+    "to": "/wh/lessons/43/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons44.html",
+    "to": "/wh/lessons/44/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons45.html",
+    "to": "/wh/lessons/45/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons46.html",
+    "to": "/wh/lessons/46/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons47.html",
+    "to": "/wh/lessons/47/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons48.html",
+    "to": "/wh/lessons/48/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons49.html",
+    "to": "/wh/lessons/49/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons5.html",
+    "to": "/wh/lessons/5/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons50.html",
+    "to": "/wh/lessons/50/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons51.html",
+    "to": "/wh/lessons/51/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons52.html",
+    "to": "/wh/lessons/52/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons53.html",
+    "to": "/wh/lessons/53/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons54.html",
+    "to": "/wh/lessons/54/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons55.html",
+    "to": "/wh/lessons/55/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons56.html",
+    "to": "/wh/lessons/56/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons57.html",
+    "to": "/wh/lessons/57/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons58.html",
+    "to": "/wh/lessons/58/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons59.html",
+    "to": "/wh/lessons/59/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons6.html",
+    "to": "/wh/lessons/6/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons60.html",
+    "to": "/wh/lessons/60/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons61.html",
+    "to": "/wh/lessons/61/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons62.html",
+    "to": "/wh/lessons/62/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons63.html",
+    "to": "/wh/lessons/63/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons64.html",
+    "to": "/wh/lessons/64/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons65.html",
+    "to": "/wh/lessons/65/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons66.html",
+    "to": "/wh/lessons/66/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons67.html",
+    "to": "/wh/lessons/67/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons68.html",
+    "to": "/wh/lessons/68/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons69.html",
+    "to": "/wh/lessons/69/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons7.html",
+    "to": "/wh/lessons/7/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons70.html",
+    "to": "/wh/lessons/70/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons71.html",
+    "to": "/wh/lessons/71/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons72.html",
+    "to": "/wh/lessons/72/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons73.html",
+    "to": "/wh/lessons/73/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons74.html",
+    "to": "/wh/lessons/74/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons75.html",
+    "to": "/wh/lessons/75/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons76.html",
+    "to": "/wh/lessons/76/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons77.html",
+    "to": "/wh/lessons/77/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons78.html",
+    "to": "/wh/lessons/78/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons79.html",
+    "to": "/wh/lessons/79/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons8.html",
+    "to": "/wh/lessons/8/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons80.html",
+    "to": "/wh/lessons/80/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons81.html",
+    "to": "/wh/lessons/81/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons82.html",
+    "to": "/wh/lessons/82/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons83.html",
+    "to": "/wh/lessons/83/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons84.html",
+    "to": "/wh/lessons/84/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons85.html",
+    "to": "/wh/lessons/85/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons86.html",
+    "to": "/wh/lessons/86/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons87.html",
+    "to": "/wh/lessons/87/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons88.html",
+    "to": "/wh/lessons/88/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons89.html",
+    "to": "/wh/lessons/89/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons9.html",
+    "to": "/wh/lessons/9/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons90.html",
+    "to": "/wh/lessons/90/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons91.html",
+    "to": "/wh/lessons/91/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons92.html",
+    "to": "/wh/lessons/92/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons93.html",
+    "to": "/wh/lessons/93/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons94.html",
+    "to": "/wh/lessons/94/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons95.html",
+    "to": "/wh/lessons/95/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons96.html",
+    "to": "/wh/lessons/96/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons97.html",
+    "to": "/wh/lessons/97/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons98.html",
+    "to": "/wh/lessons/98/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_lessons99.html",
+    "to": "/wh/lessons/99/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_nomad.html",
+    "to": "/wh/omnibus/1/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh_print.html",
+    "to": "/wh/print/",
+    "fallback": "/wh/"
+  },
+  {
+    "from": "/wh/wh.html",
+    "to": "/wh/",
+    "fallback": "/wh/"
+  }
+]

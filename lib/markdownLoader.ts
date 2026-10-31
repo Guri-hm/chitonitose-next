@@ -47,7 +47,11 @@ function loadCustomMarkdownFile(filePath: string, subject: string, lessonNo: num
   const rawMarkdown = fileContent;
 
   // カスタムMarkdownをHTMLに変換（科目情報を渡す）
-  const htmlContent = parseCustomMarkdown(rawMarkdown, subject);
+  // 元サイト由来のインラインonclick（chg/choice）は、クリック処理をTermClickHandlerに一本化しているため除去する
+  // 元サイトと同じURL配置（/jh/img/…）に画像を置いているため、旧パス表記（/images/jh/img/…）を読み替える
+  const htmlContent = parseCustomMarkdown(rawMarkdown, subject)
+    .replace(/\sonclick="(?:chg|choice)\(this\)"/g, '')
+    .replaceAll('/images/jh/img/', '/jh/img/');
 
   return {
     subject: subject,

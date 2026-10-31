@@ -537,6 +537,15 @@ div.contents span.choice::after {
 	content: "》";
 }
 
+div.contents span.choice.show span.true_choice {
+	border: 3px solid #FF0000;
+	border-radius: 5px;
+}
+
+div.contents span.choice.show span.false_choice {
+	text-decoration: line-through;
+}
+
 .explanation {
 	font-size: 1.1rem;
 	position: relative;
